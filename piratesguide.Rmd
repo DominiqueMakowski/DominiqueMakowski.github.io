@@ -1,0 +1,40 @@
+---
+title: "YaRrr! The Pirate's Guide to R"
+bibliography: homepage.bib
+---
+
+```{r, out.width = "300px", echo = FALSE, fig.align='center', eval = FALSE}
+knitr::include_graphics("media/YaRrr_Cover.jpg")
+```
+
+<p style="text-align: center;"><a href="https://bookdown.org/ndphillips/YaRrr/"><img src="http://ndphillips.github.io/media/YaRrr_Cover.jpg" alt="YaRrr Cover 2.001" width="300" /></a></p>
+
+<p style="text-align: center;"><a href="https://bookdown.org/ndphillips/YaRrr/">Click Here to Read YaRrr! The Pirate's Guide to R</a></p>
+
+
+*YaRrr! The Pirate's Guide to R*, is an introductory e-book to the R programming language written for people with little to no programming experience.
+
+This whole story started in the summer of 2015. I was taking a late night swim on the Bodensee in Konstanz and saw a rusty object sticking out of the water. Upon digging it out, I realised it was an ancient usb-stick with the word YaRrr inscribed on the side. Intrigued, I brought it home and plugged it into my laptop. Inside the stick, I found a single pdf file written entirely in pirate. After watching several pirate movies (ok, maybe just the Goonies 10,000 times), I learned enough pirate to begin translating the text to English. Sure enough, the book turned out to be an introduction to R called *YaRrr! The Pirate’s Guide to R*.
+
+This book clearly has both massive historical and pedagogical significance. Most importantly, it turns out that pirates were programming in R well before the earliest known advent of computers. Of slightly less significance is that the book has turned out to be a surprisingly up-to-date and approachable introductory text to R. For both of these reasons, I felt it was my duty to share the book with the world.
+
+## View or download the book for free
+
+I originally wrote the book in LaTeX for a traditional PDF output. This version works great for printing. However, it is difficult to update, and cannot be easily displayed online. For these reasons, I am in the process of converting the book to a web-friendly, HTML format using the fantastic [Bookdown](https://bookdown.org) package. This version will continually be updated whie the original LaTeX version will (most likely) not.
+
+
+| Version| In development?| GitHub Link
+|------:|----:|:-----|
+| [Online Book Link](https://bookdown.org/ndphillips/YaRrr/)|    Yes!|[https://github.com/ndphillips/ThePiratesGuideToR](https://github.com/ndphillips/ThePiratesGuideToR)     |
+| [PDF Book Link](https://drive.google.com/file/d/0B4udF24Yxab0S1hnZlBBTmgzM3M/view?usp=sharing)|    No| -     |
+
+
+
+## Support YaRrr! with a donation!
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" /><input name="hosted_button_id" type="hidden" value="NWE3NP9LHDQ6J" /><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/silver-pill-paypal-34px.png" type="image" /><img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></form>
+
+I am a huge proponent of open source software (like R) and open science. So a version of this book will always be freely available! That said translating and updating the book takes quite a bit of time. So if you like the book, and want to see it get even better with more pirate-speak and terrible jokes, consider throwing some gold my way by clicking the donation button!
+
+
+

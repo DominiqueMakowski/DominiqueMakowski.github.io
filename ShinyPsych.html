@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>ShinyPsych</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Nathaniel D. Phillips</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="about.html">
+    <span class="fa fa-user"></span>
+     
+     About
+  </a>
+</li>
+<li>
+  <a href="research.html">
+    <span class="fa fa-leaf"></span>
+     
+    Research
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-dropbox"></span>
+     
+    R Packages
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="packages.html">Overview</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="yarrr.html">yarrr</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="FFTrees.html">FFTrees</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="VisualResume.html">VisualResume</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-users"></span>
+     
+    ShinyPsych
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="ShinyPsych.html">Overview</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="ShinyBandit.html">ShinyBandit</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="ShinyBART.html">ShinyBART</a>
+    </li>
+    <li class="divider"></li>
+  </ul>
+</li>
+<li>
+  <a href="piratesguide.html">
+    <span class="fa fa-book"></span>
+     
+    YaRrr!
+  </a>
+</li>
+<li>
+  <a href="tutorials.html">
+    <span class="fa fa-graduation-cap"></span>
+     
+    Tutorials
+  </a>
+</li>
+<li>
+  <a href="https://ndphillips.github.io/blog/">
+    <span class="fa fa-rss"></span>
+     
+    Blog
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:Nathaniel.D.Phillips.is@gmail.com">
+    <span class="fa fa-envelope-o"></span>
+     
+    Email
+  </a>
+</li>
+<li>
+  <a href="https://github.com/ndphillips">
+    <span class="fa fa-github"></span>
+     
+    
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/nathanieldphillips">
+    <span class="fa fa-linkedin"></span>
+     
+    
+  </a>
+</li>
+<li>
+  <a href="https://www.twitter.com/YaRrrBook">
+    <span class="fa fa-twitter"></span>
+     
+    
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">ShinyPsych</h1>
+
+</div>
+
+
+<p>ShinyPsych is an collection of psychology tasks (mostly decision making) written in <a href="http://shiny.rstudio.com">Shiny</a>, a web application framework built on the R programming language. The purpose of ShinyPsych is to give researchers the tools to create and impliment their own experiments online as easily as possible.</p>
+<div id="shinypsych-applications" class="section level2">
+<h2>ShinyPsych Applications</h2>
+<p>Here are the applications currently available (in one stage or another) in the ShinyPsych collection. The best way to see what the applications do is to play them yourself! To see the underlying code and accompanying tutorials, click the code link:</p>
+<table>
+<colgroup>
+<col width="12%" />
+<col width="13%" />
+<col width="31%" />
+<col width="21%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name / Page Link</th>
+<th>Example</th>
+<th>Description</th>
+<th>Repository (code and guide)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="ShinyBART.html">ShinyBART</a></td>
+<td><a href="https://econpsychbasel.shinyapps.io/ShinyBART/">Play ShinyBART</a></td>
+<td>The Balloon Analogue Risk Task <span class="citation">(Lejuez et al. 2002)</span></td>
+<td><a href="http://www.github.com/ndphillips/ShinyBART">www.github.com/ndphillips/ShinyBART</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="ShinyBandit.html">ShinyBandit</a></td>
+<td><a href="https://econpsychbasel.shinyapps.io/ShinyBandit/">Play ShinyBandit</a></td>
+<td>An N-armed bandit task <span class="citation">(Sutton and Barto 1998)</span></td>
+<td><a href="http://www.github.com/ndphillips/ShinyBandit">www.github.com/ndphillips/ShinyBandit</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="please-contribute" class="section level2">
+<h2>Please contribute!</h2>
+<p>ShinyPsych is currently in the very early stages of development and I welcome comments, suggestions, and new applications. Github users can post issues or pull requests at <a href="http://www.github.com/ndphillips/ShinyPsych">www.github.com/ndphillips/ShinyPsych</a> or at individual repositories.</p>
+<p>In depth tutorials, from Markdown to YouTube videos, are coming…</p>
+</div>
+<div id="what-is-shiny" class="section level2">
+<h2>What is Shiny?</h2>
+<p>Shiny is a web application framework for the R programming language. It allows you to create interactive web applications without knowing any HTML, CSS or JavaScript.</p>
+</div>
+<div id="why-is-shiny-so-great-for-creating-online-experiments" class="section level2">
+<h2>Why is Shiny so great for creating online experiments?</h2>
+<p>Most reseachers I know who program online experiments use one of two methods. They either rely on <em>survey software</em> such as Unipark or Qualtrics, or they program their experiments from scratch in JavaScript, HTML and CSS. Let’s contrast Shiny with two other common solutions for running online experiments</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Survey Software<br>(e.g.; Unipark, Qualtrics)</th>
+<th align="left">JavaScript/HTML/PHP</th>
+<th align="left">Shiny</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Cost</td>
+<td align="left">High</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+</tr>
+<tr class="even">
+<td align="left">Ease of learning</td>
+<td align="left">Medium</td>
+<td align="left">Low</td>
+<td align="left">High*<br>(assuming you know R!)</td>
+</tr>
+<tr class="odd">
+<td align="left">Ease of writing</td>
+<td align="left">Medium</td>
+<td align="left">Medium</td>
+<td align="left">High</td>
+</tr>
+<tr class="even">
+<td align="left">Customisation</td>
+<td align="left">Low</td>
+<td align="left">High</td>
+<td align="left">High</td>
+</tr>
+<tr class="odd">
+<td align="left">Data and Statistics Integration</td>
+<td align="left">Low</td>
+<td align="left">Low</td>
+<td align="left">High</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Shiny is free!</strong>: Because R is open source, and RStudio will run apps for free (with some small restrictions), you can use the Shiny framework to write and run your experiments completely for free.</p>
+<p><strong>Shiny easy to learn</strong>: The <a href="http://www.shiny.rstudio.com">Shiny website</a> has a huge body of very helpful tutorials that will get you writing your own applications in minutes. Even better, while Shiny is relatively new, there is already a huge community of developers writing and sharing Shiny apps online. Just Google a Shiny question, and you’ll almost certainly find the answer.</p>
+<p><strong>Shiny is easy to write</strong>: As Shiny is built on R, it is very easy to write and understand. This is in contrast to HTML and JavaScript which can becomine quite messy. As R and Shiny take care of all the data management, processing, and displays, you can program complex experiments in a single language.</p>
+<p><strong>Shiny is easy to customize</strong>: Is there something missing in Shiny that you wish you could add with HTML, CSS or JavaScript? No problem! Just add the code and it will be integrated into your app.</p>
+<p><strong>Shiny gives you all the beautiful data management and statistics of R</strong>: Because Shiny is built on R, you get to take advantage of all the beautiful data management and statistical power of R when running your experiments. This means that, unlike commercial survey software such as Unipark, and Qualtrics, with Shiny you can store, manipulate, and save your data in the exact format you want to conduct your analysis.</p>
+<div id="references" class="section level3 unnumbered">
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-lejuez2002evaluation">
+<p>Lejuez, Carl W, Jennifer P Read, Christopher W Kahler, Jerry B Richards, Susan E Ramsey, Gregory L Stuart, David R Strong, and Richard A Brown. 2002. “Evaluation of a Behavioral Measure of Risk Taking: The Balloon Analogue Risk Task (Bart).” <em>Journal of Experimental Psychology: Applied</em> 8 (2). American Psychological Association: 75.</p>
+</div>
+<div id="ref-sutton1998reinforcement">
+<p>Sutton, Richard S, and Andrew G Barto. 1998. <em>Reinforcement Learning: An Introduction</em>. Vol. 1. 1. MIT press Cambridge.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+---
+title: "R Packages"
+bibliography: homepage.bib
+---
+
+Here is a list of my R packages available either on CRAN or GitHub:
+
+
+| Name / Link         | Description |  Package Guide | Source Code | R Installation |
+|---------|-----------------------------------------| --------------------- | -------- | ----- | 
+| [yarrr](yarrr.html)| Mixture of datasets, functions, and tutorials accompanying *YaRrr! The Pirate's Guide to R* | [yarrr Guide](https://cran.r-project.org/web/packages/yarrr/vignettes/guide.html) | [www.github.com/ndphillips/yarrr](http://www.github.com/ndphillips/yarrr) | `install.packages("yarrr")`
+| [FFTrees](FFTrees.html) | Create, visualise, and impliment fast and frugal decision trees | [FFTrees Guide](https://cran.r-project.org/web/packages/FFTrees/vignettes/guide.html)| [www.github.com/ndphillips/FFTrees](http://www.github.com/ndphillips/FFTrees) | `install.packages("FFTrees")`
+| [VisualResume](VisualResume.html) | Create a visual resume | COming soon...| [www.github.com/ndphillips/VisualResume](http://www.github.com/ndphillips/VisualResume) | `devtools::install_github("ndphillips/VisualResume")`

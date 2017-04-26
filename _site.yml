@@ -1,0 +1,64 @@
+name: "Nathaniel D. Phillips" 
+output_dir: "."
+navbar:
+  title: "Nathaniel D. Phillips"                               
+  type: inverse
+  left:
+    - text: " About"
+      icon: fa-user 
+      href: about.html
+    - text: "Research"
+      icon: fa-leaf
+      href: research.html
+    - text: "R Packages"
+      icon: fa-dropbox
+      menu:
+        - text: "Overview"
+          href: packages.html
+        - text: "---------"
+        - text: "yarrr"
+          href: yarrr.html
+        - text: "---------"
+        - text: "FFTrees"
+          href: FFTrees.html
+        - text: "---------"
+        - text: "VisualResume"
+          href: VisualResume.html
+    - text: "ShinyPsych"
+      icon: fa-users
+      menu:
+        - text: "Overview"
+          href: ShinyPsych.html
+        - text: "---------"
+        - text: "ShinyBandit"
+          href: ShinyBandit.html
+        - text: "---------"
+        - text: "ShinyBART"
+          href: ShinyBART.html
+        - text: "---------"
+    - text: "YaRrr!"
+      icon: fa-book 
+      href: piratesguide.html
+    - text: "Tutorials"
+      icon: fa-graduation-cap
+      href: tutorials.html
+    - text: "Blog"
+      icon: fa-rss
+      href: https://ndphillips.github.io/blog/ 
+  right:
+    - text: "Email"
+      icon: fa-envelope-o
+      href: mailto:Nathaniel.D.Phillips.is@gmail.com                      
+    - text: ""
+      icon: fa-github
+      href: https://github.com/ndphillips
+    - text: ""
+      icon: fa-linkedin
+      href: https://www.linkedin.com/in/nathanieldphillips
+    - text: ""
+      icon: fa-twitter
+      href: https://www.twitter.com/YaRrrBook
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate

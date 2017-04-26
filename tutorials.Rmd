@@ -1,0 +1,30 @@
+---
+title: "Tutorials"
+bibliography: homepage.bib
+---
+
+
+## R
+
+| Link          | Description |
+|------------------------------|------------------------------------|
+| [R Markdown](http://rpubs.com/YaRrr/markdownbasics)| Writing dynamic documents with R Markdown
+| [Writing R packages for research documentation](http://rpubs.com/ndphillips/rpackagescience) | Document your research, including raw data, documentation, analyses, and tutorials using a custom R package that anyone can easily install and use|
+
+## Statistical Programming
+
+| Link          | Description |
+|------------------------------|--------------------------------------|
+| [Maximum Likelihood parameter estimation with R](http://rpubs.com/YaRrr/MLTutorial)| Calculating maximum likelihood parameter estimates in R using a probabilistic model of choice from @gonzalez2002making| 
+
+
+## Miscellaneous
+
+
+| Link          | Description |
+|------------------------------|--------------------------------------|
+| [Writing APA papers in LaTeX with ShareLaTeX](http://rpubs.com/YaRrr/apalatex)| Write APA style papers with ease using LaTeX| 
+
+
+
+# References

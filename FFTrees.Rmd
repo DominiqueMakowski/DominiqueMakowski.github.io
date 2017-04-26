@@ -1,0 +1,31 @@
+---
+title: "FFTrees"
+bibliography: homepage.bib
+---
+
+The `FFTrees` package creates fast and frugal decision trees (FFTs). Fast and frugal decision trees are very simple [heuristics](https://en.wikipedia.org/wiki/Heuristic) decision algorithms that, in contrast to regression and more complex algorithms such as [random forests](https://en.wikipedia.org/wiki/Random_forest) and (non-frugal) [decision trees](https://en.wikipedia.org/wiki/Decision_tree), allow people to make fast decisions based on minimal information. FFTs are not just easy to use, they can also predict data as well, if not better, than more complex algorithms such as regression [@gigerenzer1999simple;@martignon2008categorization]. Because they are so effective and easy to use and, fast and frugal trees have been used to improve decision making in medical [@green1997alters; @jenny2013simple] and financial [@neth2014homo] contexts.
+
+The purpose of `FFTrees` is to allow anyone to quickly and easily generate, visualise, and use FFTs for their own data.
+
+```{r eval = FALSE}
+install.packages("FFTrees")
+# devtools::install_github("ndphillips/FFTrees", build_vignettes = TRUE) # developer version
+```
+
+
+
+```{r, fig.width = 8, fig.height = 7, message = FALSE, warning = FALSE}
+library(FFTrees)
+
+set.seed(100) # For cross validation replication
+heart.fft <- FFTrees(formula = diagnosis ~.,        # formula
+                     data = heartdisease,           # dataframe
+                     train.p = .5)                  # cross validation split
+
+plot(heart.fft,                                     # FFTrees object
+     main = "Heart Disease",                        # Plot title
+     decision.names = c("Healthy", "Diseased"),     # Decision names
+     data = "test")                                 # Show statistics for test data
+```
+
+# References

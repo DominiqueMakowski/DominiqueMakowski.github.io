@@ -1,0 +1,120 @@
+---
+title: "ShinyBART"
+bibliography: homepage.bib
+---
+
+ShinyBART runs the Balloon Analogue Risk Task (BART), a measure developed by @lejuez2002evaluation as a behavioral measure of risk taking.
+
+```{r, echo = FALSE, fig.width = 5, fig.height = 4, fig.align = 'center', eval = FALSE}
+bart.display <- function(balloon, 
+                         pumps, 
+                         points.cum = 0,
+                         pop = FALSE,
+                         saveballoon = FALSE,
+                         balloons.n = 100,
+                         max.pumps = 100,
+                         show.max = TRUE,
+                         balloon.col = gray(.5, .5),
+                         pop.col = "indianred1",
+                         saveballoon.col = "green3") {
+  
+  # Plotting space
+  par(mar = c(0, 0, 0, 0))
+  layout(matrix(c(1, 2), nrow = 2, ncol = 1, byrow = TRUE), heights = c(4, 7), widths = c(9))
+  
+  # Title row
+  plot.new()
+  text(c(.1, .5, .9), c(.7, .7, .7), labels = c("Balloon", "Pumps", "Points"), cex = 1, font = 3)
+  text(c(.1, .5, .9), c(.4, .4, .4), labels = c(paste(balloon, "of", balloons.n), pumps, points.cum), cex = 1.5)
+  
+  # text(c(.1, .5, .9), c(.5, .5, .5), labels = c(paste(balloon, "of", balloons.n), pumps, points.cum), cex = 3)
+
+  
+  par(mar = c(0, 0, 1, 0))
+  # Balloon display
+  plot(1, xlim = c(0, 1), ylim = c(0, 1), 
+       type = "n", xaxt = "n", yaxt = "n", 
+       bty = "n", xlab = "", ylab = "")
+  
+  if(show.max) {
+    
+    points(x = .5, y = .5, 
+           cex = (max.pumps + 1) / 2.5, 
+           pch = 1, col = gray(.3))
+  }
+  
+  if(pop == FALSE) {
+  
+  points(x = .5, 
+         y = .5, 
+         cex = (pumps + 1) / 2.5, 
+         pch = 21, 
+         bg = balloon.col, 
+         col = "black")
+    
+  }
+  
+  if(pop == TRUE) {
+    
+    points(x = .5, 
+           y = .5, 
+           cex = (pumps + 1) / 2.5, 
+           pch = 21, 
+           bg = pop.col, 
+           col = "black")
+    
+    text(.5, 1, labels = paste("POPPED at pump", pumps), 
+         cex = 1, font = 3)
+
+    
+     text(.8, .5, labels = paste("No Points"), cex = 1, font = 3)
+    
+
+    
+  }
+  
+  if(saveballoon == TRUE) {
+    
+    points(x = .5, 
+           y = .5, 
+           cex = (pumps + 1) / 2.5, 
+           pch = 21, 
+           bg = saveballoon.col, 
+           col = "black")
+    
+    text(.5, .9, labels = paste("Saved at pump", pumps), 
+          cex = 1, font = 3)
+    
+    text(.7, .5, labels = paste("+", pumps, "Points"), cex = 1, font = 3)
+    
+    
+  }
+  
+}
+
+bart.display(1, 40, 0, pop = TRUE, balloons.n = 15, max.pumps = 50)
+```
+
+In the task, you are presented with several (e.g.; 15) balloons sequentially. When you see a balloon, you can pump it by pressing a 'Pump' button. If you save a balloon before it pops, you will earn points for that balloon. If it pops, you earn no points for that balloon!
+
+You can pump balloons by clicking the 'Pump' button below each balloon. Each time you pump a balloon, it will get a bit larger and has the potential to give you more points.
+
+To earn points, you need to SAVE a balloon before it pops! You can save a balloon at any time by clicking the 'Save' button. If you save a balloon, you will earn points equal to the number of pumps you put into it. You will then move on to the next balloon
+
+However -- if you pump a balloon too much it might pop! If a balloon pops, you cannot save it and will not earn any points for that balloon. You will then move on to the next balloon.
+
+Different balloons have different popping points and you never know exactly when each balloon will pop. However, you know for sure that the maximum possible number of pumps for a balloon is a certain value (e.g.; 50).
+
+## Play ShinyBART
+
+You can play ShinyBART at [https://econpsychbasel.shinyapps.io/ShinyBART/](https://econpsychbasel.shinyapps.io/ShinyBART/) or in the window below (Note that the app runs smoother in a separate window):
+
+<iframe src="https://econpsychbasel.shinyapps.io/ShinyBART/", height = 500px, width = 900px, align = middle></iframe>
+
+
+## Source code
+
+See [http://www.github.com/ndphillips/ShinyBART](http://www.github.com/ndphillips/ShinyBART) for additional details of the code
+
+
+# References
