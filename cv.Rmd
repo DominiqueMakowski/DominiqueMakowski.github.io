@@ -2,74 +2,10 @@
 title: "CV / Resume"
 ---
 
-Here is my visual resume built using my `VisualResume` R package (see [Visual Resume R Package](VisualResume.html)).
-
-```{r, fig.width = 13, fig.height = 10, echo = FALSE}
-VisualResume::VisualResume(
-  titles.left = c("Nathaniel D. Phillips, PhD.", "R, Data, and Decision Science", "*Built with love in R using the InfoResume package"),
-  titles.right = c("www.nathanieldphillips.com", "Nathaniel.D.Phillips.is@gmail.com", "Full Resume Link: www.ndphillips.github.io/cv.html"),
-  timeline.labels = c("Education", "Teaching"),
-  timeline = data.frame(title = c("Grinnell College", "Ohio U", "U of Basel", "MPIB", "U of Konstanz", "U of Basel", "Musician's Friend", "Statistics", "Research Methods", "Information Search", "R", "R", "R", "R"),
-                   sub = c("BA. Student", "MS. Student", "PhD. Student", "PhD. Researcher", "PostDoc", "PostDoc", "Statistician", "OhioU", "OhioU", "Konstanz", "Konstanz", "Konstanz", "Basel", "Basel"),
-                   start = c(2001.5, 2006.5, 2011, 2012, 2014.7, 2016.1, 2005.5, 2009.5, 2010, 2014.8, 2014.8, 2015.4, 2016.1, 2016.7),
-                   end = c(2005.5, 2010.9, 2014.5, 2014.6, 2016, 2018, 2006.5, 2010, 2011, 2015.3, 2015.3, 2015.9, 2016.6, 2018),
-                   side = c(1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0)),
-  milestones = data.frame(title = c("BA Math", "MS Psych", "Ph.D Psych"),
-                          sub = c("2005", "2010", "2014"),
-                          year = c(2005.5, 2010.9, 2014.5)),
-  events = data.frame(year = c(2016, 2015, 2014, 2013, 2012),
-                      title = c("Phillips (in prep). YaRrr! The Pirate's Guide to R.\nSelf-published e-book.",
-                                "Hintze et al. (2015). The Janus face of Darwinian competition.\nScientific Reports, 5.",
-                                "Phillips et al. (2014). Rivals in the Dark: How competition influences [...].\nCognition, 113(1), 104-119.",
-                                "Gonzalez-Vallejo et al. (2013). Early positive information impacts final [...].\nJournal of Behavioral Decision Making, 27.",
-                                "Gonzalez-Vallejo & Phillips, N. D. (2012). Predicting soccer matches [...].\nJudgment and Decision Making. 5(3). 200-206.")),
-  interests = list("programming" = c(rep("R", 20), rep("Python", 1), rep("JavaScript", 2), rep("STAN", 5)),
-                   "statistics" = c(rep("Dec. Trees", 10), rep("Bayesian", 5), rep("Regression", 3)),
-                   "research" = c(rep("Search", 10), rep("Dec Making", 5), rep("Competition", 3), rep("Learning", 8))),
-  col = "xmen",
-  trans = .6)
-```
-
-
 # Download
 
 You can download my resume and CV with the following links:
 
-- <a href="resume.pdf#" class="download" title="Download resume as PDF">Download Resume as PDF</a>
+- <a href="DominiqueMakowski_CV.pdf#" class="download" title="Download resume as PDF">Download Resume as PDF</a>
 
-# Publications
-
-Phillips, N. D., Neth, H., Woike, J., & Gaissmaier W. (*under review*). FFTrees: An R package to create, visualise, and use fast and frugal decision trees.
-
-Phillips, N. (2017). YaRrr! The pirate's guide to R. <em>APS Observer, 30.3</em>. <a href="http://ndphillips.github.io/media/phillipsyarrr2017">PDF</a>
-
-Hintze, A., Phillips, N. &amp; Hertwig, R. (2015). The Janus face of Darwinian competition. <em>Scientific Reports, 5. </em><a href="http://ndphillips.github.io/media/hintze2015janus.pdf">PDF</a>
-
-Phillips, N. D.,Hertwig, R., Kareev, Y., &amp; Avrahami, J. (2014). Rivals in the dark: How competition influences search in decisions under uncertainty. <i>Cognition, 133(1), </i>104-119. <a href="http://ndphillips.github.io/media/phillips2014rivals.pdf">PDF</a>
-
-González Vallejo, C., Cheng, J., Phillips, N. D., Chimeli, J., Bellezza, F., Harman, J., & Lindberg, M. J. (2013). Early Positive Information Impacts Final Evaluations: No Deliberation‐Without‐Attention Effect and a Test of a Dynamic Judgment Model. <i>Journal of Behavioral Decision Making, 27(3)</i>, 209-225. <a href="http://ndphillips.github.io/media/gonzalez2013early.pdf">PDF</a>
-
-González-Vallejo, C. &amp; Phillips, N. D. (2010). Predicting soccer matches: A reassessment of the benefit of unconscious thinking. <i>Judgment and Decision Making, 5(3), </i>200-206.  <a href="http://ndphillips.github.io/media/gonzalez2010soccer.pdf">PDF</a>
-
-Lassiter, G. D., Lindberg, M. J, Gonzalez-Vallejo, C., Bellezza, F. S., & Phillips, N. D. (2009). The deliberation-without-attention effect: Evidence for an artifactual interpretation. <i>Psychological Science, 20(6)</i>, 671-675. <a href="http://ndphillips/github.io/media/lassiter2009deliberation.pdf">PDF</a>
-
-# Workshops
-
-Phillips, N. (in prep). R: The solution to (almost) all of your life's problems. Congress for psychology students (psyKo). Schuepfheim, Switzerland.
-
-Phillips, N. (2016). Creating R packages for research documentation. Early career judgment and decision making workshop, Basel, Switzerland. <a href="http://www.rpubs.com/ndphillips/rpackagescience">Link</a>
-
-# Recent Presentations
-
-Phillips, N. (2017). Simplify your life with R: From documenting and sharing data to modeling simple decision strategies. Department of Economics, Zuerich, Switzerland  <a href="https://ndphillips.github.io/UZurich-6April2017/">HTML</a>
-
-
-Phillips, N., Neth, H,. Woike, J., & Gaissmaeier, W. (2017). FFTrees: An R package to create and visualise fast and frugal decision trees. BaselR, Basel, Switzerland <a href="http://ndphillips.github.io/BaselR">PDF</a>
-
-Phillips, N., Neth, H,. Woike, J., & Gaissmaeier, W. (2016). FFTrees: An R package to create and visualise fast and frugal decision trees. Annual meeting of the society for Judgment and Decision Making, Boston, MA. <a href="http://ndphillips.github.io/media/phillips2016BostonFFTrees.pdf">PDF</a>
-
-Phillips, N., Neth, H., Gaissmaeier, W., Navarro, D., Newell, B. & Rieskamp, J. (2016). Peeks and Keeps: Optional risk reinforcement learning. Annual meeting for the Deutschen Gesellschaft fuer Psychologie. Leipzig, Germany. <a href="http://ndphillips.github.io/media/phillips2016Leipzigpak.pdf">PDF</a>
-
-Phillips, N., Neth, H., Gaissmaeier, W., Navarro, D., Newell, B. & Rieskamp, J. (2016). Peeks and Keeps: Optional risk decisions from experience. Annual meeting for the Society for Mathematical Psychology, New Brunswick, NJ.
-
-
+- <a href="DominiqueMakowski_CV_fr.pdf#" class="download" title="Download resume (FRENCH) as PDF">Download Resume (FRENCH) as PDF</a>

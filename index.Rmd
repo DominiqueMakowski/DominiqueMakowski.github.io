@@ -11,7 +11,7 @@ knitr::include_graphics("media/budapest1.jpg")
 
 You have reached the personal webpage of Dominique Makowski. If you're looking to learn about me, you're in the right place! Otherwise, you can visit [this](http://existentialcomics.com/) website that I like, mainly because it's funny.
 
-I am a currently post-doctoral researcher in the department of [Economic Psychology](https://psycho.unibas.ch/en/centers/abteilung-details/home/abteilung/economic-psychology/) at the University of Basel.
+I am a currently PhD student in the [Memory & Cognition Lab'](http://recherche.parisdescartes.fr/LaboratoireMemoireCognition) at the University of Sorbonne Paris Cité.
 
 To learn more about [me](about.html), my book [YaRrr! The Pirate's Guide to R](piratesguide.html), [tutorials](tutorials.html), [R packages](packages.html), or to check out my [blog](https://ndphillips.github.io/blog/), click one of the buttons in the Navigation bar.
 
