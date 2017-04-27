@@ -2,8 +2,8 @@
 title: "About me"
 ---
 
-```{r, out.width = "200px", echo = FALSE, eval = TRUE, fig.align='center'}
-knitr::include_graphics("media/Profile.png")
+```{r, out.width = "500px", echo = FALSE, eval = TRUE, fig.align='center'}
+knitr::include_graphics("media/tree.jpg")
 ```
 
 

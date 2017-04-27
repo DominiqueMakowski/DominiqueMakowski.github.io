@@ -5,7 +5,7 @@ navbar:
   type: inverse
   left:
     - text: " About"
-      icon: fa-user-circle
+      icon: fa-user
       href: about.html
     - text: " Research"
       icon: fa-rebel

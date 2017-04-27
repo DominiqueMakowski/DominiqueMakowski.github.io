@@ -3,7 +3,7 @@ title: "Dominique Makowski, MSc."
 ---
 
 ```{r, out.width = "1000px", echo = FALSE, fig.align='center'}
-knitr::include_graphics("media/playa.jpg")
+knitr::include_graphics("media/cambodia.jpg")
 
 # USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
 ```
