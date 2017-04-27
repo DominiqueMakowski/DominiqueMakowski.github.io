@@ -19,20 +19,18 @@ navbar:
         - text: "neuropsychology.R"
           href: neuropsychology.R.html
         - text: "---------"
-        - text: "yarrr"
-          href: yarrr.html
+        - text: "Neuropsydia.py"
+          href: Neuropsydia.py.html
         - text: "---------"
-        - text: "FFTrees"
-          href: FFTrees.html
+        - text: "NeuroKit.py"
+          href: NeuroKit.py.html
         - text: "---------"
-        - text: "VisualResume"
-          href: VisualResume.html
     - text: "Tutorials"
       icon: fa-graduation-cap
       href: tutorials.html
     - text: "Blog"
       icon: fa-rss
-      href: https://ndphillips.github.io/blog/ 
+      href: https://biblineuropsy.com/
   right:
     - text: "Email"
       icon: fa-envelope-o
