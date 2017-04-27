@@ -1,0 +1,61 @@
+---
+title: "yarrr"
+bibliography: homepage.bib
+---
+
+The `yarrr` package contains a mixture of functions and datasets that support my e-book [YaRrr! The pirate's guide to R](http://www.thepiratesguidetor.com). The most notable function in the package is `pirateplot()`. A pirateplot shows the relationship between a categorical independent variable and a numeric dependent variable. However, in contrast to notoriously deceptive barplots, a pirateplot reveals patterns in data by showing Raw data (as points), Descriptive statistics (as lines and/or bars), and Inferential statistics (as bands).
+
+
+```{r, echo = FALSE, fig.width = 6, fig.height = 5, message = FALSE, warning = FALSE, fig.align='center'}
+library(yarrr)
+pirateplot(formula = weight ~ Diet,
+           data = ChickWeight,
+           theme = 1,
+           back.col = "white",
+           gl.col = "white",
+           bean.f.o = c(0, .1, .7, .1),
+        #   bean.b.o = c(0, .1, 1, .1),
+           point.o = c(.4, .1, .1, .1),
+           avg.line.o = c(.3, 1, .3, .3),
+           inf.f.o = c(.1, .1, .1, .9),
+           bar.f.o = c(.1, .8, .1, .1),
+           inf.f.col = c("white", "white", "white", piratepal("xmen")[4]),
+           main = "4 Elements of a pirateplot", 
+           pal = "xmen")
+
+
+text(.7, 350, labels = "Points")
+text(.7, 345, labels = "Raw Data", pos = 1, cex = .8)
+arrows(.7, 310, .97, 270, length = .1)
+
+text(1.4, 200, labels = "Bar/Line")
+text(1.4, 200, labels = "Center", pos = 1, cex = .8)
+arrows(1.4, 170, 1.54, 125, length = .1)
+
+text(2.4, 250, labels = "Bean")
+text(2.4, 250, labels = "Density", pos = 1, cex = .8)
+arrows(2.4, 220, 2.85, 200, length = .1)
+
+text(3.55, 300, labels = "Band")
+text(3.55, 290, labels = "Inference\n95% HDI or CI", pos = 1, cex = .8)
+
+arrows(3.55, 240, 3.8, 150, length = .1)
+```
+
+You can install the most stable version of `yarrr` from CRAN, or the latest developer version from GitHub as follows:
+
+```{r eval = FALSE}
+install.packages("yarrr")
+# devtools::install_github("ndphillips/yarrr", build_vignettes = TRUE) # developer version
+```
+
+Here is an example of a pirateplot showing the relationship between the age and weight of chickens:
+
+```{r fig.width = 8, fig.height = 6, fig.align='center'}
+# Create a pirateplot from the ChickWeight data
+yarrr::pirateplot(formula = weight ~ Time,
+                  data = ChickWeight,
+                  main = "A Pirateplot of chicken weights by time")
+```
+
+The `pirateplot()` function contains many arguments that allow you to easily customise the look of the plot, from the colors, to the element transparencies. To learn more, look at the `pirateplot()` vignette [on CRAN](https://cran.r-project.org/web/packages/yarrr/vignettes/pirateplot.html).

@@ -5,16 +5,19 @@ navbar:
   type: inverse
   left:
     - text: " About"
-      icon: fa-user-circle-o
+      icon: fa-user-circle
       href: about.html
-    - text: "Research"
+    - text: " Research"
       icon: fa-rebel
       href: research.html
-    - text: "R Packages"
+    - text: " Packages"
       icon: fa-dropbox
       menu:
         - text: "Overview"
           href: packages.html
+        - text: "---------"
+        - text: "neuropsychology.R"
+          href: neuropsychology.R.html
         - text: "---------"
         - text: "yarrr"
           href: yarrr.html
@@ -41,7 +44,7 @@ navbar:
       icon: fa-linkedin
       href: https://www.linkedin.com/in/dominiquemakowski/
     - text: ""
-      icon: fa-trophy
+      icon: fa-rocket
       href: https://www.researchgate.net/profile/Dominique_Makowski
 output:
   html_document:
