@@ -2,7 +2,7 @@
 title: "Dominique Makowski, MSc."
 ---
 
-```{r, out.width = "800px", echo = FALSE, fig.align='center'}
+```{r, out.width = "1000px", echo = FALSE, fig.align='center'}
 knitr::include_graphics("media/playa.jpg")
 
 # USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
@@ -11,7 +11,7 @@ knitr::include_graphics("media/playa.jpg")
 
 You have reached the personal webpage of Dominique Makowski. If you're looking to learn about me, you're in the right place! Otherwise, you can visit [this](http://existentialcomics.com/) website, mainly because it's funny.
 
-I am a currently PhD student in the [Memory & Cognition Lab'](http://recherche.parisdescartes.fr/LaboratoireMemoireCognition) at the University of Sorbonne Paris Cité.
+I am a currently PhD student in the [Memory & Cognition Lab'](http://recherche.parisdescartes.fr/LaboratoireMemoireCognition) at the University of Sorbonne Paris CitÃ©.
 
 
 
