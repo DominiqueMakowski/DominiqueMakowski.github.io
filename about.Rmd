@@ -10,10 +10,10 @@ knitr::include_graphics("media/cambodia.jpg")
 
 
 
-# Resume
+# Resume / CV
 
-You can download my resume and CV with the following links:
+You can download my full CV with the following links:
 
-- <a href="DominiqueMakowski_CV.pdf#" class="download" title="Download resume as PDF">Download Resume as PDF</a>
+- <a target="_blank" href="DominiqueMakowski_CV.pdf#" class="download" title="English">English</a>
 
-- <a href="DominiqueMakowski_CV_fr.pdf#" class="download" title="Download resume (FRENCH) as PDF">Download Resume (FRENCH) as PDF</a>
+- <a target="_blank" href="DominiqueMakowski_CV_fr.pdf#" class="download" title="French">French</a>
