@@ -11,7 +11,7 @@
 
 
 
-<title>FFTrees</title>
+<title>NeuroKit.py</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -270,47 +270,12 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">FFTrees</h1>
+<h1 class="title toc-ignore">NeuroKit.py</h1>
 
 </div>
 
 
-<p>The <code>FFTrees</code> package creates fast and frugal decision trees (FFTs). Fast and frugal decision trees are very simple <a href="https://en.wikipedia.org/wiki/Heuristic">heuristics</a> decision algorithms that, in contrast to regression and more complex algorithms such as <a href="https://en.wikipedia.org/wiki/Random_forest">random forests</a> and (non-frugal) <a href="https://en.wikipedia.org/wiki/Decision_tree">decision trees</a>, allow people to make fast decisions based on minimal information. FFTs are not just easy to use, they can also predict data as well, if not better, than more complex algorithms such as regression <span class="citation">(Gigerenzer and Todd 1999; Martignon, Katsikopoulos, and Woike 2008)</span>. Because they are so effective and easy to use and, fast and frugal trees have been used to improve decision making in medical <span class="citation">(Green and Mehr 1997; Jenny et al. 2013)</span> and financial <span class="citation">(Neth et al. 2014)</span> contexts.</p>
-<p>The purpose of <code>FFTrees</code> is to allow anyone to quickly and easily generate, visualise, and use FFTs for their own data.</p>
-<pre class="r"><code>install.packages(&quot;FFTrees&quot;)
-# devtools::install_github(&quot;ndphillips/FFTrees&quot;, build_vignettes = TRUE) # developer version</code></pre>
-<pre class="r"><code>library(FFTrees)
-
-set.seed(100) # For cross validation replication
-heart.fft &lt;- FFTrees(formula = diagnosis ~.,        # formula
-                     data = heartdisease,           # dataframe
-                     train.p = .5)                  # cross validation split
-
-plot(heart.fft,                                     # FFTrees object
-     main = &quot;Heart Disease&quot;,                        # Plot title
-     decision.names = c(&quot;Healthy&quot;, &quot;Diseased&quot;),     # Decision names
-     data = &quot;test&quot;)                                 # Show statistics for test data</code></pre>
-<p><img src="NeuroKit.py_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
-<div id="references" class="section level1 unnumbered">
-<h1>References</h1>
-<div id="refs" class="references">
-<div id="ref-gigerenzer1999simple">
-<p>Gigerenzer, Gerd, and Peter M Todd. 1999. <em>Simple Heuristics That Make Us Smart</em>. Oxford University Press, USA.</p>
-</div>
-<div id="ref-green1997alters">
-<p>Green, Lee, and David R Mehr. 1997. “What Alters Physicians’ Decisions to Admit to the Coronary Care Unit?” <em>Journal of Family Practice</em> 45 (3). [New York, Appleton-Century-Crofts]: 219–26.</p>
-</div>
-<div id="ref-jenny2013simple">
-<p>Jenny, Mirjam A, Thorsten Pachur, S Lloyd Williams, Eni Becker, and Jürgen Margraf. 2013. “Simple Rules for Detecting Depression.” <em>Journal of Applied Research in Memory and Cognition</em> 2 (3). Elsevier: 149–57.</p>
-</div>
-<div id="ref-martignon2008categorization">
-<p>Martignon, Laura, Konstantinos V Katsikopoulos, and Jan K Woike. 2008. “Categorization with Limited Resources: A Family of Simple Heuristics.” <em>Journal of Mathematical Psychology</em> 52 (6). Elsevier: 352–61.</p>
-</div>
-<div id="ref-neth2014homo">
-<p>Neth, Hansjörg, Björn Meder, Amit Kothiyal, and Gerd Gigerenzer. 2014. “Homo Heuristicus in the Financial World: From Risk Management to Managing Uncertainty.” <em>Journal of Risk Management in Financial Institutions</em> 7 (2). Henry Stewart Publications: 134–44.</p>
-</div>
-</div>
-</div>
+<p>A Python Toolbox for Statistics and Neurophysiological Signal Processing (EEG, EDA, ECG, EMG…).</p>
 
 
 
