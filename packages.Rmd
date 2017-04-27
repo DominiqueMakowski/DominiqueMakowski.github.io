@@ -3,11 +3,11 @@ title: "R Packages"
 bibliography: homepage.bib
 ---
 
-Here is a list of my R packages available either on CRAN or GitHub:
+Here is a list of my packages:
 
 
-| Name / Link         | Description |  Package Guide | Source Code | R Installation |
-|---------|-----------------------------------------| --------------------- | -------- | ----- | 
-| [yarrr](yarrr.html)| Mixture of datasets, functions, and tutorials accompanying *YaRrr! The Pirate's Guide to R* | [yarrr Guide](https://cran.r-project.org/web/packages/yarrr/vignettes/guide.html) | [www.github.com/ndphillips/yarrr](http://www.github.com/ndphillips/yarrr) | `install.packages("yarrr")`
-| [FFTrees](FFTrees.html) | Create, visualise, and impliment fast and frugal decision trees | [FFTrees Guide](https://cran.r-project.org/web/packages/FFTrees/vignettes/guide.html)| [www.github.com/ndphillips/FFTrees](http://www.github.com/ndphillips/FFTrees) | `install.packages("FFTrees")`
-| [VisualResume](VisualResume.html) | Create a visual resume | COming soon...| [www.github.com/ndphillips/VisualResume](http://www.github.com/ndphillips/VisualResume) | `devtools::install_github("ndphillips/VisualResume")`
+| Name / Link         | Description |  Package Guide | Source Code |
+|---------|-----------------------------------------| --------------------- | -------- |
+| [neuropsychology.R](neuropsychology.R)| An R Toolbox for Psychologists, Neuropsychologists and Neuroscientists. | [Documentation](https://www.rdocumentation.org/packages/neuropsychology/) | [https://github.com/neuropsychology/neuropsychology.R](https://github.com/neuropsychology/neuropsychology.R)
+| [Neuropsydia.py](Neuropsydia.py) | A Python Module for Creating Experiments, Tasks and Questionnaires. | [Documentation / Guide](http://neuropsydia.readthedocs.io/en/latest/])| [https://github.com/neuropsychology/Neuropsydia.py](https://github.com/neuropsychology/Neuropsydia.py)
+| [NeuroKit.py](NeuroKit.py) | A Python Toolbox for Statistics and Neurophysiological Signal Processing (EEG, EDA, ECG, EMG...). | [Documentation / Guide](http://neurokit.readthedocs.io/en/latest/index.html)| [https://github.com/neuropsychology/NeuroKit.py](https://github.com/neuropsychology/NeuroKit.py)

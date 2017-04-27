@@ -3,7 +3,6 @@ title: "Research"
 bibliography: homepage.bib
 ---
 
-*Note: This page is under construction!*
 
 ```{r, out.width = "500px", echo = FALSE, eval = TRUE, fig.align='center'}
 knitr::include_graphics("media/braincloud.png")

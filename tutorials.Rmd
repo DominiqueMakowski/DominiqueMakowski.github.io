@@ -4,27 +4,17 @@ bibliography: homepage.bib
 ---
 
 
-## R
+## Neuroimaging
 
 | Link          | Description |
 |------------------------------|------------------------------------|
-| [R Markdown](http://rpubs.com/YaRrr/markdownbasics)| Writing dynamic documents with R Markdown
-| [Writing R packages for research documentation](http://rpubs.com/ndphillips/rpackagescience) | Document your research, including raw data, documentation, analyses, and tutorials using a custom R package that anyone can easily install and use|
+| [Biosignals processing in Python](http://neurokit.readthedocs.io/en/latest/tutorials/Bio.html)| Process biosignals, such as electrodermal (EDA), cardiac (ECG), respiratory (RSP) or muscular (EMG) data with Python and NeuroKit.
+| [EEG](http://neurokit.readthedocs.io/en/latest/tutorials/EEG.html) | EEG and MEG processing using Python and NeuroKit (currently under developpment).|
 
-## Statistical Programming
-
-| Link          | Description |
-|------------------------------|--------------------------------------|
-| [Maximum Likelihood parameter estimation with R](http://rpubs.com/YaRrr/MLTutorial)| Calculating maximum likelihood parameter estimates in R using a probabilistic model of choice from @gonzalez2002making| 
-
-
-## Miscellaneous
-
+## Statistics
 
 | Link          | Description |
 |------------------------------|--------------------------------------|
-| [Writing APA papers in LaTeX with ShareLaTeX](http://rpubs.com/YaRrr/apalatex)| Write APA style papers with ease using LaTeX| 
+| [To Do](http://rpubs.com/YaRrr/MLTutorial)| The basics of R for psychology and neuroscience.| 
 
 
-
-# References
