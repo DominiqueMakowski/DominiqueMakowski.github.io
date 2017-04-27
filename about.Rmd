@@ -1,11 +1,9 @@
 ---
 title: "About me"
-bibliography: homepage.bib
 ---
 
 ```{r, out.width = "500px", echo = FALSE, eval = TRUE, fig.align='center'}
-# knitr::include_graphics("media/phillips_portrait_red.jpg")
-knitr::include_graphics("media/cambodia.jpg")
+knitr::include_graphics("media/Profile.jpg")
 ```
 
 
@@ -18,7 +16,4 @@ You can download my full CV with the following links:
 
 - <a target="_blank" href="DominiqueMakowski_CV_fr.pdf#" class="download" title="French">French</a>
 
-[@surowiecki2005wisdom]
-
-# References
 
