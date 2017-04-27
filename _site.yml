@@ -1,10 +1,10 @@
-name: "Nathaniel D. Phillips" 
+name: "Dominique Makowski" 
 output_dir: "."
 navbar:
-  title: "Nathaniel D. Phillips"                               
+  title: "Dominique Makowski"                               
   type: inverse
   left:
-    - text: " About"
+    - text: "About"
       icon: fa-user 
       href: about.html
     - text: "Research"
@@ -24,21 +24,6 @@ navbar:
         - text: "---------"
         - text: "VisualResume"
           href: VisualResume.html
-    - text: "ShinyPsych"
-      icon: fa-users
-      menu:
-        - text: "Overview"
-          href: ShinyPsych.html
-        - text: "---------"
-        - text: "ShinyBandit"
-          href: ShinyBandit.html
-        - text: "---------"
-        - text: "ShinyBART"
-          href: ShinyBART.html
-        - text: "---------"
-    - text: "YaRrr!"
-      icon: fa-book 
-      href: piratesguide.html
     - text: "Tutorials"
       icon: fa-graduation-cap
       href: tutorials.html
@@ -48,16 +33,16 @@ navbar:
   right:
     - text: "Email"
       icon: fa-envelope-o
-      href: mailto:Nathaniel.D.Phillips.is@gmail.com                      
+      href: mailto:dom.makowski@gmail.com                      
     - text: ""
       icon: fa-github
-      href: https://github.com/ndphillips
+      href: https://github.com/DominiqueMakowski
     - text: ""
       icon: fa-linkedin
-      href: https://www.linkedin.com/in/nathanieldphillips
+      href: https://www.linkedin.com/in/dominiquemakowski/
     - text: ""
-      icon: fa-twitter
-      href: https://www.twitter.com/YaRrrBook
+      icon: fa-researchgate
+      href: https://www.researchgate.net/profile/Dominique_Makowski
 output:
   html_document:
     theme: cosmo
