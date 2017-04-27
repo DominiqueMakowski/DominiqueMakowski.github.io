@@ -2,7 +2,7 @@
 title: "About me"
 ---
 
-```{r, out.width = "750px", echo = FALSE, eval = TRUE, fig.align='center'}
+```{r, out.width = "700px", echo = FALSE, eval = TRUE, fig.align='center'}
 knitr::include_graphics("media/tree.jpg")
 ```
 
