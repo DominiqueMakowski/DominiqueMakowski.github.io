@@ -4,7 +4,7 @@ navbar:
   title: "Dominique Makowski"                               
   type: inverse
   left:
-    - text: " About"
+    - text: " About / CV"
       icon: fa-user
       href: about.html
     - text: " Research"
