@@ -3,11 +3,11 @@ title: "R Packages"
 bibliography: homepage.bib
 ---
 
-Here is a list of my packages:
+Here is a list of my packages.
 
 
 | Name / Link         | Description |  Package Guide | Source Code |
 |---------|-----------------------------------------| --------------------- | -------- |
 | [neuropsychology.R](neuropsychology.R)| An R Toolbox for Psychologists, Neuropsychologists and Neuroscientists. | [Documentation](https://www.rdocumentation.org/packages/neuropsychology/) | [https://github.com/neuropsychology/neuropsychology.R](https://github.com/neuropsychology/neuropsychology.R)
-| [Neuropsydia.py](Neuropsydia.py) | A Python Module for Creating Experiments, Tasks and Questionnaires. | [Documentation / Guide](http://neuropsydia.readthedocs.io/en/latest/])| [https://github.com/neuropsychology/Neuropsydia.py](https://github.com/neuropsychology/Neuropsydia.py)
-| [NeuroKit.py](NeuroKit.py) | A Python Toolbox for Statistics and Neurophysiological Signal Processing (EEG, EDA, ECG, EMG...). | [Documentation / Guide](http://neurokit.readthedocs.io/en/latest/index.html)| [https://github.com/neuropsychology/NeuroKit.py](https://github.com/neuropsychology/NeuroKit.py)
+| [Neuropsydia.py](Neuropsydia.py) | A Python Module for Creating Experiments, Tasks and Questionnaires. | [Documentation / Guide](http://neuropsydia.readthedocs.io/])| [https://github.com/neuropsychology/Neuropsydia.py](https://github.com/neuropsychology/Neuropsydia.py)
+| [NeuroKit.py](NeuroKit.py) | A Python Toolbox for Statistics and Neurophysiological Signal Processing (EEG, EDA, ECG, EMG...). | [Documentation / Guide](http://neurokit.readthedocs.io/)| [https://github.com/neuropsychology/NeuroKit.py](https://github.com/neuropsychology/NeuroKit.py)
