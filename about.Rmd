@@ -3,9 +3,11 @@ title: "About me"
 ---
 
 ```{r, out.width = "700px", echo = FALSE, eval = TRUE, fig.align='center'}
-knitr::include_graphics("media/tree.jpg")
+knitr::include_graphics("media/snow.jpg")
 ```
 
+
+I'm a neuropsychologist, psychotherapist, pizza lover, living currently in Paris, France.
 
 
 # Resume / CV
