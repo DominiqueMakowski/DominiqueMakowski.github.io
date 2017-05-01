@@ -25,9 +25,9 @@ navbar:
         - text: "NeuroKit.py"
           href: NeuroKit.py.html
         - text: "---------"
-    - text: "Tutorials"
+    - text: "Courses / Trainings"
       icon: fa-graduation-cap
-      href: tutorials.html
+      href: courses.html
     - text: "Blog"
       icon: fa-rss
       href: https://biblineuropsy.com/
