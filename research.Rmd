@@ -5,7 +5,7 @@ bibliography: homepage.bib
 
 
 ```{r, out.width = "500px", echo = FALSE, eval = TRUE, fig.align='center'}
-knitr::include_graphics("media/braincloud.png")
+knitr::include_graphics("media/conf.png")
 ```
 
 ### Research Topics
@@ -23,3 +23,36 @@ More generally, my scientific interests also include the following topics:
 - **Statistics, Programing and Methodology.** The application of cutting-edge statistical procedures (artificial intelligence) on neuropsychological data. Also interested in scientific good practises and reportability (with a special focus on open-access and reproducibility).
 - **History of Psychiatry/Neuroscience.** The origin of modern neuroscience and psychology, with a special focus on the romantic era and *La belle époque* (19-20th centuries).
 - **Philosophy.** Phenomenology, radical determinism, transhumanism as well as the links between oriental philosophies/religions (*e.g.,* Buddhism and Hinduism) and modern knowledge.
+
+
+### Papers
+
+#### Journal articles
+
+
+**Makowski, D.**, Sperduti, M., Lavallée, S., Nicolas, S. & Piolino, P. (*under review*). *Interindividual Variability in Emotion Regulation: Relationship with Mindfulness, Life Satisfaction, Physical Activity and Mood Disorders*, Assessment.
+
+Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (*under review*). *Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information*, Experimental Brain Research.
+
+**Makowski, D.**\*, Sperduti, M.\*, Nicolas, S. & Piolino, P. (*under review*). "Being there" *and remembering it: Presence improves Memory Encoding*. Consciousness & Cognition.
+
+Sperduti, M., **Makowski, D.** & Piolino, P. (*under review*). *Méditer pour bien vieillir ? Les possibles bienfaits des pratiques méditatives sur le déclin cognitif lié à l’âge | Meditation and Successful Ageing: can Meditative Practices Counteract Age-related Cognitive Decline?*, Psychologie Française.
+
+Sperduti, M.\*, **Makowski, D.**\*, Arcangeli, M., Wantzen, P., Zalla, T., Lemaire, S., Dokic, J., Pelletier, J. & Piolino, P. (2017). *The Distinctive Role of Executive Functions in Implicit Emotion Regulation*. Acta Psychologica, 173, 13-20.
+
+Nicolas, S., & **Makowski, D**. (2016). *Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)*. Bulletin de Psychologie, 69, *in press*.
+
+Nicolas, S., & **Makowski, D**. (2016). *Can mental fatigue be measured by Weber's compass? Alfred Binet's answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue.* European Yearbook of the History of Psychology, vol. 2, *in press*.
+
+Sperduti, M., **Makowski, D.**, & Piolino, P. (2016). *The protective role of long-term meditation on the decline of the executive component of attention in aging: a preliminary cross-sectional study*. Aging, Neuropsychology, and Cognition, 1-12.
+
+Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemaire, S., Dokic, J., Pelletier, J. \& Piolino, P. (2016). *The paradox of fiction: Emotional response toward fiction and the modulatory role of self-relevance*. Acta psychologica, 165, 53-59.
+
+**Makowski, D.**, Sperduti, M., Blanchet, S., Nicolas, S. & Piolino, P. (2015). *Régulation Emotionnelle face au Déclin Cognitif dans le Vieillissement : Un Faux Paradoxe ? | Emotion regulation and the cognitive decline in aging: beyond the paradox*. Gériatrie et Psychologie Neuropsychiatrie du Vieillissement, 13 (3), 301-8.
+
+
+#### Technical Publications
+
+**Makowski, D.**, Dutriaux, L., (*under review*). *Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires*, The Journal of Open Source Software.
+
+**Makowski, D.** (2016). R Package neuropsychology: A Toolbox for Psychologists, Neuropsychologists and Neuroscientists. Available from [https://github.com/neuropsychology/neuropsychology.R](https://github.com/neuropsychology/neuropsychology.R). The Comprehensive R Archive Network (CRAN).

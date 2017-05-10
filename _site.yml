@@ -12,19 +12,6 @@ navbar:
       href: research.html
     - text: " Packages"
       icon: fa-dropbox
-      menu:
-        - text: "Overview"
-          href: packages.html
-        - text: "---------"
-        - text: "neuropsychology.R"
-          href: neuropsychology.R.html
-        - text: "---------"
-        - text: "Neuropsydia.py"
-          href: Neuropsydia.py.html
-        - text: "---------"
-        - text: "NeuroKit.py"
-          href: NeuroKit.py.html
-        - text: "---------"
     - text: "Courses / Trainings"
       icon: fa-graduation-cap
       href: courses.html

@@ -1,6 +1,0 @@
----
-title: "NeuroKit.py"
-bibliography: homepage.bib
----
-
-A Python Toolbox for Statistics and Neurophysiological Signal Processing (EEG, EDA, ECG, EMG...).

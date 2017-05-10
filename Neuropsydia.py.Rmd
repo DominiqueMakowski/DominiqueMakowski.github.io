@@ -1,6 +1,0 @@
----
-title: "Neuropsydia.py"
-bibliography: homepage.bib
----
-
-A Python Module for Creating Experiments, Tasks and Questionnaires.

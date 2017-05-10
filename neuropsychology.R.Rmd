@@ -1,6 +1,0 @@
----
-title: "neuropsychology.R"
-bibliography: homepage.bib
----
-
-An R Toolbox for Psychologists, Neuropsychologists and Neuroscientists.
