@@ -3,6 +3,10 @@ title: "Courses / Trainings"
 bibliography: homepage.bib
 ---
 
+```{r, out.width = "700px", echo = FALSE, eval = TRUE, fig.align='center'}
+knitr::include_graphics("media/conf.jpg")
+```
+
 
 ## Neuroimaging
 

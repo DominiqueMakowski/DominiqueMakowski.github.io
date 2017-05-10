@@ -25,11 +25,6 @@ More generally, my scientific interests also include the following topics:
 - **Philosophy.** Phenomenology, radical determinism, transhumanism as well as the links between oriental philosophies/religions (*e.g.,* Buddhism and Hinduism) and modern knowledge.
 
 
-```{r, out.width = "700px", echo = FALSE, eval = TRUE, fig.align='center'}
-knitr::include_graphics("media/conf.jpg")
-```
-
-
 # Publications
 
 <p align="center">*2017*</p>
