@@ -43,7 +43,7 @@ Sperduti, M.\*, **Makowski, D.**\*, Arcangeli, M., Wantzen, P., Zalla, T., Lemai
 
 <p align="center">*2016*</p>
 
-**Makowski, D.** (2016). [R Package neuropsychology: A Toolbox for Psychologists, Neuropsychologists and Neuroscientists](https://cran.r-project.org/web/packages/neuropsychology/neuropsychology.pdf). Available from [https://github.com/neuropsychology/neuropsychology.R](https://github.com/neuropsychology/neuropsychology.R). The Comprehensive R Archive Network (CRAN).
+**Makowski, D.** (2016). [R Package neuropsychology: A Toolbox for Psychologists, Neuropsychologists and Neuroscientists](https://cran.r-project.org/web/packages/neuropsychology/neuropsychology.pdf). The Comprehensive R Archive Network (CRAN).
 
 Nicolas, S., & **Makowski, D**. (2016). *Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)*. Bulletin de Psychologie, 69, *in press*.
 
