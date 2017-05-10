@@ -12,6 +12,7 @@ navbar:
       href: research.html
     - text: " Packages"
       icon: fa-dropbox
+      href: packages.html
     - text: "Courses / Trainings"
       icon: fa-graduation-cap
       href: courses.html

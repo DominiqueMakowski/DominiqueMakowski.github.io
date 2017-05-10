@@ -7,7 +7,7 @@ knitr::include_graphics("media/snow.jpg")
 ```
 
 
-I'm a neuropsychologist, psychotherapist, pizza lover, currently living in Paris, France.
+I'm a neuropsychologist, psychotherapist & pizza lover, currently living in Paris, France.
 
 
 # Resume / CV

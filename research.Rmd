@@ -4,11 +4,11 @@ bibliography: homepage.bib
 ---
 
 
-```{r, out.width = "500px", echo = FALSE, eval = TRUE, fig.align='center'}
-knitr::include_graphics("media/conf.png")
+```{r, out.width = "400px", echo = FALSE, eval = TRUE, fig.align='center'}
+knitr::include_graphics("media/braincloud.png")
 ```
 
-### Research Topics
+# Research Topics
 
 
 In 1896, the Lumière brothers presented a 50-seconds long movie of a train's arrival at a station. Intense fear and awe rose up among the audience, as if they could not believe that it was not a real train. Several decades later, the edges of our reality still continue to fade. Through virtual reality, augmented reality and new forms of fictions, simulations of all kind populate our everyday experience and challenge our intuitive *feeling* and *belief* concerning its reality. Understanding the neurocognitive processes underlying this sense of reality is what drives my research. This topic is heavily connected with others levels and states of the Self such as minimal consciousness, mindfulness, attentional absorption, presence or dreams and has an obvious echo in several neuropsychiatric diseases such as schizophrenia, PTSD or depersonalisation-derealization disorder. As it also shares a strong relationship with emotional processing, modifications of the sense of reality might be at stake in some forms of voluntary or involuntary emotion regulation mechanisms (such as distancing, decoupling, defusion, decentering or fictional reappraisal).
@@ -25,10 +25,16 @@ More generally, my scientific interests also include the following topics:
 - **Philosophy.** Phenomenology, radical determinism, transhumanism as well as the links between oriental philosophies/religions (*e.g.,* Buddhism and Hinduism) and modern knowledge.
 
 
-### Papers
+```{r, out.width = "700px", echo = FALSE, eval = TRUE, fig.align='center'}
+knitr::include_graphics("media/conf.jpg")
+```
 
-#### Journal articles
 
+# Publications
+
+<p align="center">*2017*</p>
+
+**Makowski, D.**, Dutriaux, L., (*under review*). *Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires*, The Journal of Open Source Software.
 
 **Makowski, D.**, Sperduti, M., Lavallée, S., Nicolas, S. & Piolino, P. (*under review*). *Interindividual Variability in Emotion Regulation: Relationship with Mindfulness, Life Satisfaction, Physical Activity and Mood Disorders*, Assessment.
 
@@ -38,21 +44,24 @@ Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (*under review*). *In
 
 Sperduti, M., **Makowski, D.** & Piolino, P. (*under review*). *Méditer pour bien vieillir ? Les possibles bienfaits des pratiques méditatives sur le déclin cognitif lié à l’âge | Meditation and Successful Ageing: can Meditative Practices Counteract Age-related Cognitive Decline?*, Psychologie Française.
 
-Sperduti, M.\*, **Makowski, D.**\*, Arcangeli, M., Wantzen, P., Zalla, T., Lemaire, S., Dokic, J., Pelletier, J. & Piolino, P. (2017). *The Distinctive Role of Executive Functions in Implicit Emotion Regulation*. Acta Psychologica, 173, 13-20.
+Sperduti, M.\*, **Makowski, D.**\*, Arcangeli, M., Wantzen, P., Zalla, T., Lemaire, S., Dokic, J., Pelletier, J. & Piolino, P. (2017). [*The Distinctive Role of Executive Functions in Implicit Emotion Regulation*](https://dominiquemakowski.github.io/papers/sperduti2017.pdf). Acta Psychologica, 173, 13-20.
+
+<p align="center">*2016*</p>
+
+**Makowski, D.** (2016). [R Package neuropsychology: A Toolbox for Psychologists, Neuropsychologists and Neuroscientists](https://cran.r-project.org/web/packages/neuropsychology/neuropsychology.pdf). Available from [https://github.com/neuropsychology/neuropsychology.R](https://github.com/neuropsychology/neuropsychology.R). The Comprehensive R Archive Network (CRAN).
 
 Nicolas, S., & **Makowski, D**. (2016). *Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)*. Bulletin de Psychologie, 69, *in press*.
 
 Nicolas, S., & **Makowski, D**. (2016). *Can mental fatigue be measured by Weber's compass? Alfred Binet's answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue.* European Yearbook of the History of Psychology, vol. 2, *in press*.
 
-Sperduti, M., **Makowski, D.**, & Piolino, P. (2016). *The protective role of long-term meditation on the decline of the executive component of attention in aging: a preliminary cross-sectional study*. Aging, Neuropsychology, and Cognition, 1-12.
+Sperduti, M., **Makowski, D.**, & Piolino, P. (2016). [*The protective role of long-term meditation on the decline of the executive component of attention in aging: a preliminary cross-sectional study*](https://dominiquemakowski.github.io/papers/sperduti2016b.pdf). Aging, Neuropsychology, and Cognition, 1-12.
 
-Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemaire, S., Dokic, J., Pelletier, J. \& Piolino, P. (2016). *The paradox of fiction: Emotional response toward fiction and the modulatory role of self-relevance*. Acta psychologica, 165, 53-59.
+Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemaire, S., Dokic, J., Pelletier, J. \& Piolino, P. (2016). [*The paradox of fiction: Emotional response toward fiction and the modulatory role of self-relevance*](https://dominiquemakowski.github.io/papers/sperduti2016.pdf). Acta psychologica, 165, 53-59.
 
-**Makowski, D.**, Sperduti, M., Blanchet, S., Nicolas, S. & Piolino, P. (2015). *Régulation Emotionnelle face au Déclin Cognitif dans le Vieillissement : Un Faux Paradoxe ? | Emotion regulation and the cognitive decline in aging: beyond the paradox*. Gériatrie et Psychologie Neuropsychiatrie du Vieillissement, 13 (3), 301-8.
+<p align="center">*2015*</p>
+
+**Makowski, D.**, Sperduti, M., Blanchet, S., Nicolas, S. & Piolino, P. (2015). [*Régulation Emotionnelle face au Déclin Cognitif dans le Vieillissement : Un Faux Paradoxe ? | Emotion regulation and the cognitive decline in aging: beyond the paradox*](https://dominiquemakowski.github.io/papers/makowski2015.pdf). Gériatrie et Psychologie Neuropsychiatrie du Vieillissement, 13 (3), 301-8.
 
 
-#### Technical Publications
 
-**Makowski, D.**, Dutriaux, L., (*under review*). *Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires*, The Journal of Open Source Software.
 
-**Makowski, D.** (2016). R Package neuropsychology: A Toolbox for Psychologists, Neuropsychologists and Neuroscientists. Available from [https://github.com/neuropsychology/neuropsychology.R](https://github.com/neuropsychology/neuropsychology.R). The Comprehensive R Archive Network (CRAN).
