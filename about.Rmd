@@ -1,13 +1,16 @@
 ---
 title: "About me"
 ---
-<style>
-.image{float: left;}
-</style>
+```{r, out.width = "800px", echo = FALSE, eval = TRUE, fig.align='center'}
+knitr::include_graphics("media/cambodia.JPG")
+```
+<!-- <style> -->
+<!-- .image{float: left;} -->
+<!-- </style> -->
 
-<div style="float:right">
-<img src="media/museum.png" style="width: 50%; height: 50%"/>
-</div>
+<!-- <div style="float:right"> -->
+<!-- <img src="media/cambodia.JPG" style="width: 50%; height: 50%"/> -->
+<!-- </div> -->
 
 I'm a neuropsychologist, psychotherapist & pizza lover, currently living in Paris, France.
 
