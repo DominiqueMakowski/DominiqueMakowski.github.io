@@ -3,9 +3,21 @@ title: "Courses / Trainings"
 bibliography: homepage.bib
 ---
 
-```{r, out.width = "800px", echo = FALSE, eval = TRUE, fig.align='center'}
-knitr::include_graphics("media/conf.jpg")
+```{r, out.width = "550px", echo = FALSE, eval = TRUE, fig.align='center'}
+knitr::include_graphics("media/conf3.jpg")
 ```
+
+
+My technical field of expertise lies in applied statistics with R, complex experiment creation, EEG and biosignal processing with Python.
+
+
+
+
+## Neuropsychology
+
+| Link          | Description |
+|------------------------------|--------------------------------------|
+| [Experiment Creation](http://neuropsydia.readthedocs.io/en/latest/tutorials/index.html)| Create experiments, tasks or questionnaires with Neuropsydia for Python.| 
 
 
 ## Neuroimaging

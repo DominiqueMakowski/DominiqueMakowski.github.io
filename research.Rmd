@@ -29,7 +29,7 @@ More generally, my scientific interests also include the following topics:
 
 <p align="center">*2017*</p>
 
-**Makowski, D.**, Dutriaux, L., (*under review*). *Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires*, The Journal of Open Source Software.
+**Makowski, D.**, Dutriaux, L., ([*under review*](https://github.com/openjournals/joss-reviews/issues/259)). *Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires*, The Journal of Open Source Software.
 
 **Makowski, D.**, Sperduti, M., Lavallée, S., Nicolas, S. & Piolino, P. (*under review*). *Interindividual Variability in Emotion Regulation: Relationship with Mindfulness, Life Satisfaction, Physical Activity and Mood Disorders*, Assessment.
 

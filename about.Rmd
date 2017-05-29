@@ -1,11 +1,13 @@
 ---
 title: "About me"
 ---
+<style>
+.image{float: left;}
+</style>
 
-```{r, out.width = "700px", echo = FALSE, eval = TRUE, fig.align='center'}
-knitr::include_graphics("media/snow.jpg")
-```
-
+<div style="float:right">
+<img src="media/museum.png" style="width: 50%; height: 50%"/>
+</div>
 
 I'm a neuropsychologist, psychotherapist & pizza lover, currently living in Paris, France.
 
@@ -17,5 +19,7 @@ You can download my full CV with the following links:
 - <a target="_blank" href="DominiqueMakowski_CV.pdf#" class="download" title="English">English</a>
 
 - <a target="_blank" href="DominiqueMakowski_CV_fr.pdf#" class="download" title="French">French</a>
+
+
 
 
