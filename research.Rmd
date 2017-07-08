@@ -35,6 +35,8 @@ More generally, my scientific interests also include the following topics:
 
 Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (*under review*). *Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information*, Experimental Brain Research.
 
+Nicolas, S., & **Makowski, D**. (2017). [*Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)*](https://dominiquemakowski.github.io/papers/nicolas2017a.pdf). Bulletin de Psychologie, 70 (3), n°549, 163-178.
+
 **Makowski, D.**\*, Sperduti, M.\*, Nicolas, S. & Piolino, P. (*under review*). "Being there" *and remembering it: Presence improves Memory Encoding*. Consciousness & Cognition.
 
 Sperduti, M., **Makowski, D.** & Piolino, P. (2017). [*Méditer pour bien vieillir ? Les possibles bienfaits des pratiques méditatives sur le déclin cognitif lié à l’âge | Meditation and successful aging: can meditative practices counteract age-related cognitive decline?*](https://dominiquemakowski.github.io/papers/sperduti2017b.pdf), Gériatrie et Psychologie Neuropsychiatrie du Vieillissement, 15 (2),  205-13.
@@ -45,9 +47,8 @@ Sperduti, M.\*, **Makowski, D.**\*, Arcangeli, M., Wantzen, P., Zalla, T., Lemai
 
 **Makowski, D.** (2016). [R Package neuropsychology: A Toolbox for Psychologists, Neuropsychologists and Neuroscientists](https://cran.r-project.org/web/packages/neuropsychology/neuropsychology.pdf). The Comprehensive R Archive Network (CRAN).
 
-Nicolas, S., & **Makowski, D**. (2016). *Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)*. Bulletin de Psychologie, 69, *in press*.
 
-Nicolas, S., & **Makowski, D**. (2016). *Can mental fatigue be measured by Weber's compass? Alfred Binet's answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue.* European Yearbook of the History of Psychology, vol. 2, *in press*.
+Nicolas, S., & **Makowski, D**. (2016). *Can mental fatigue be measured by Weber's compass? Alfred Binet's answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue.* European Yearbook of the History of Psychology, 2, *in press*.
 
 Sperduti, M., **Makowski, D.**, & Piolino, P. (2016). [*The protective role of long-term meditation on the decline of the executive component of attention in aging: a preliminary cross-sectional study*](https://dominiquemakowski.github.io/papers/sperduti2016b.pdf). Aging, Neuropsychology, and Cognition, 1-12.
 

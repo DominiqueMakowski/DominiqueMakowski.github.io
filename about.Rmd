@@ -2,7 +2,7 @@
 title: "About me"
 ---
 ```{r, out.width = "800px", echo = FALSE, eval = TRUE, fig.align='center'}
-knitr::include_graphics("media/cambodia.JPG")
+knitr::include_graphics("media/conf4.jpg")
 ```
 <!-- <style> -->
 <!-- .image{float: left;} -->
