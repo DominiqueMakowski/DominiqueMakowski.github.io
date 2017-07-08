@@ -1,7 +1,7 @@
 ---
 title: "About me"
 ---
-```{r, out.width = "800px", echo = FALSE, eval = TRUE, fig.align='center'}
+```{r, out.width = "600px", echo = FALSE, eval = TRUE, fig.align='center'}
 knitr::include_graphics("media/conf4.jpg")
 ```
 <!-- <style> -->
