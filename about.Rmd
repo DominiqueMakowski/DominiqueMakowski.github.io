@@ -12,7 +12,7 @@ knitr::include_graphics("media/conf4.jpg")
 <!-- <img src="media/cambodia.JPG" style="width: 50%; height: 50%"/> -->
 <!-- </div> -->
 
-I'm a neuropsychologist, psychotherapist & pizza lover, currently living in Paris, France.
+I'm a neuropsychologist, psychotherapist & pizza addict, currently living in Paris, France.
 
 
 # Resume / CV
