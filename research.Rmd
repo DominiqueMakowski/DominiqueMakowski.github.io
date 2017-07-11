@@ -31,11 +31,11 @@ More generally, my scientific interests also include the following topics:
 
 **Makowski, D.**, Dutriaux, L., ([*under review*](https://github.com/openjournals/joss-reviews/issues/259)). *Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires*, The Journal of Open Source Software.
 
-**Makowski, D.**, Sperduti, M., Lavallée, S., Nicolas, S. & Piolino, P. (*under review*). *Interindividual Variability in Emotion Regulation: Relationship with Mindfulness, Life Satisfaction, Physical Activity and Mood Disorders*, Assessment.
+**Makowski, D.**, Sperduti, M., Lavallée, S., Nicolas, S. & Piolino, P. (*under review*). *Interindividual Variability in Emotion Regulation: Relationship with Mindfulness, Life Satisfaction, Physical Activity and Mood Disorders*.
 
-Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (*under review*). *Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information*, Experimental Brain Research.
+Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (*under review*). *Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information*.
 
-**Makowski, D.**\*, Sperduti, M.\*, Nicolas, S. & Piolino, P. (*2017*). ["Being there" *and remembering it: Presence improves Memory Encoding*](https://dominiquemakowski.github.io/papers/makowski2017.pdf). Consciousness & Cognition, 53, 194–202.
+**Makowski, D.**\*, Sperduti, M.\*, Nicolas, S. & Piolino, P. (2017). ["Being there" *and remembering it: Presence improves Memory Encoding*](https://dominiquemakowski.github.io/papers/makowski2017.pdf). Consciousness & Cognition, 53, 194–202.
 
 Nicolas, S., & **Makowski, D**. (2017). [*Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)*](https://dominiquemakowski.github.io/papers/nicolas2017a.pdf). Bulletin de Psychologie, 70 (3), 163-178.
 
