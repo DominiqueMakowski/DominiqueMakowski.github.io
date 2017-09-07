@@ -6,6 +6,8 @@ bibliography: homepage.bib
 
 ```{r, out.width = "400px", echo = FALSE, eval = TRUE, fig.align='center'}
 knitr::include_graphics("media/braincloud.png")
+
+# USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
 ```
 
 # Research Topics
