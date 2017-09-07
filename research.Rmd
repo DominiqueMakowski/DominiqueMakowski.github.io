@@ -33,11 +33,11 @@ More generally, my scientific interests also include the following topics:
 
 **Makowski, D.**, Sperduti, M., Lavallée, S., Nicolas, S. & Piolino, P. (*under review*). *Interindividual Variability in Emotion Regulation: Relationship with Mindfulness, Life Satisfaction, Physical Activity and Mood Disorders*.
 
-Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (*under review*). *Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information*.
+Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (2017). [*Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information*](https://dominiquemakowski.github.io/papers/sperduti2017c.pdf), Experimental Brain Research.
 
 **Makowski, D.**\*, Sperduti, M.\*, Nicolas, S. & Piolino, P. (2017). ["Being there" *and remembering it: Presence improves Memory Encoding*](https://dominiquemakowski.github.io/papers/makowski2017.pdf). Consciousness & Cognition, 53, 194–202.
 
-Nicolas, S., & **Makowski, D**. (2017). [*Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)*](https://dominiquemakowski.github.io/papers/nicolas2017a.pdf). Bulletin de Psychologie, 70 (3), 163-178.
+Nicolas, S., & **Makowski, D**. (2017). [*Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)*](https://dominiquemakowski.github.io/papers/nicolas2017.pdf). Bulletin de Psychologie, 70 (3), 163-178.
 
 
 Sperduti, M., **Makowski, D.**, Blondé, P. & Piolino, P. (2017). [*Méditer pour bien vieillir ? Les possibles bienfaits des pratiques méditatives sur le déclin cognitif lié à l’âge | Meditation and successful aging: can meditative practices counteract age-related cognitive decline?*](https://dominiquemakowski.github.io/papers/sperduti2017b.pdf), Gériatrie et Psychologie Neuropsychiatrie du Vieillissement, 15 (2),  205-13.
@@ -49,7 +49,7 @@ Sperduti, M.\*, **Makowski, D.**\*, Arcangeli, M., Wantzen, P., Zalla, T., Lemai
 **Makowski, D.** (2016). [R Package neuropsychology: A Toolbox for Psychologists, Neuropsychologists and Neuroscientists](https://cran.r-project.org/web/packages/neuropsychology/neuropsychology.pdf). The Comprehensive R Archive Network (CRAN).
 
 
-Nicolas, S., & **Makowski, D**. (2016). *Can mental fatigue be measured by Weber's compass? Alfred Binet's answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue.* European Yearbook of the History of Psychology, 2, *in press*.
+Nicolas, S., & **Makowski, D**. (2016). [*Can mental fatigue be measured by Weber's compass? Alfred Binet's answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue*](https://dominiquemakowski.github.io/papers/nicolas2016.pdf). European Yearbook of the History of Psychology, 2, 11-46.
 
 Sperduti, M., **Makowski, D.**, & Piolino, P. (2016). [*The protective role of long-term meditation on the decline of the executive component of attention in aging: a preliminary cross-sectional study*](https://dominiquemakowski.github.io/papers/sperduti2016b.pdf). Aging, Neuropsychology, and Cognition, 1-12.
 
