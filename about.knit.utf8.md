@@ -2,15 +2,6 @@
 title: "About me"
 ---
 
-
-
----------------
-<p align="center">
-**NOTE: I'm currently looking for postdoc opportunities (I'm finishing my current contract in July 2018)**
-</p>
----------------
-
-
 <!-- <style> -->
 <!-- .image{float: left;} -->
 <!-- </style> -->
@@ -19,8 +10,7 @@ title: "About me"
 <!-- <img src="media/cambodia.JPG" style="width: 50%; height: 50%"/> -->
 <!-- </div> -->
 
-
-I'm a neuropsychologist, psychotherapist & pizza addict, currently living in Paris, France. I'm fluent in French, Polish, English, Python, and I can pretend to speak Italian. My main figures of reference are Friston, Epictetus and Iron Man. You can find many other details in my CV below.
+I'm a neuropsychologist, psychotherapist & pizza addict, currently living in Paris, France.
 
 ---------
 
@@ -34,9 +24,7 @@ You can download my **full CV** with the following links:
 
 ---------
 
-```{r, out.width = "600px", echo = FALSE, eval = TRUE, fig.align='center', fig.cap="**A picture of myself showing some amazing results.**"}
-knitr::include_graphics("media/conf4.jpg")
-```
+<img src="media/conf4.jpg" width="600px" style="display: block; margin: auto;" />
 
 ---------
 

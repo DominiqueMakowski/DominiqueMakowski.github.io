@@ -8,6 +8,11 @@ knitr::include_graphics("media/ski.jpg")
 # USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
 ```
 
+---------------
+<p align="center">
+**NOTE: I'm currently looking for postdoc opportunities (I'm finishing my current contract in July 2018)**
+</p>
+---------------
 
 You have reached my personal webpage. If you're looking to learn about what I'm doing, you're in the right place!
 

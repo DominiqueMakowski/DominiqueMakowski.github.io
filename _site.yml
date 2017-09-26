@@ -29,8 +29,8 @@ navbar:
     - text: ""
       icon: fa-linkedin
       href: https://www.linkedin.com/in/dominiquemakowski/
-    - text: ""
-      icon: fa-rocket
+    - text: "RG"
+      # icon: fa-rocket
       href: https://www.researchgate.net/profile/Dominique_Makowski
 output:
   html_document:

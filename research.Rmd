@@ -4,11 +4,54 @@ bibliography: homepage.bib
 ---
 
 
-```{r, out.width = "400px", echo = FALSE, eval = TRUE, fig.align='center'}
-knitr::include_graphics("media/braincloud.png")
 
-# USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
+---------------
+<p align="center">
+**NOTE: I'm currently looking for postdoc opportunities (I'm finishing my current contract in July 2018)**
+</p>
+---------------
+
+<!-- ```{r, out.width = "400px", echo = FALSE, eval = TRUE, fig.align='center'} -->
+<!-- knitr::include_graphics("media/braincloud.png") -->
+
+<!-- # USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github. -->
+<!-- ``` -->
+<!-- --------- -->
+
+<p align="center">
+```{r echo = FALSE, echo=FALSE, message=FALSE, warning=FALSE, echo=FALSE, fig.align='center', fig.cap="**My research wordcloud, based on the most frequent words of my papers (done using R).**"}
+
+
+library(stringr)
+library(wordcloud2)
+
+sources <- list.files(path = "./papers", pattern = "pdf$")
+
+text <- c()
+for (source in sources) {
+  text <- c(text, pdftools::pdf_text(paste("./papers/", source, sep="")))
+}
+text <- unlist(text)
+
+text_clean <- tm::termFreq(text, control = list(removePunctuation = TRUE, tolower = TRUE, removeNumbers = TRUE, stopwords = TRUE, wordLengths = c(4, Inf)))
+
+data <- data.frame(word = rownames(text_clean), freq = rowSums(as.matrix(text_clean))) %>% 
+  dplyr::arrange_("desc(freq)") %>% 
+  filter_(paste("freq > ", 50)) %>% 
+  filter_(paste("freq < ", Inf)) %>% 
+  filter(!word %in% c("dans", "plus", "pour", "avec", "cette", "comme", "sont", "tion", "also"))
+
+data$word <- stringi::stri_trans_general(data$word, "latin-ascii")
+# colours <- rep(c("#f44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#2196F3", "#03A9F4", "#00BCD4", "#009688", "#4CAF50", "#8BC34A", "#CDDC39", "#FFEB3B", "#FFC107", "#FF9800", "#FF5722", "#795548", "#9E9E9E", "#607D8B"), length.out = nrow(data))
+colours <- c("#f44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#2196F3", "#03A9F4", "#00BCD4", "#009688", "#4CAF50", "#8BC34A", "#CDDC39", "#FFEB3B", "#FFC107", "#FF9800", "#FF5722", "#795548", "#9E9E9E", "#607D8B")
+
+
+# wordcloud2(data, size = 0.25, color=colours, figPath = "media/brain.png")
+wordcloud2(data, size = 0.5, color=colours)
 ```
+</p>
+
+----------------
 
 # Research Topics
 
@@ -26,6 +69,48 @@ More generally, my scientific interests also include the following topics:
 - **History of Psychiatry/Neuroscience.** The origin of modern neuroscience and psychology, with a special focus on the romantic era and *La belle époque* (19-20th centuries).
 - **Philosophy.** Phenomenology, radical determinism, transhumanism as well as the links between oriental philosophies/religions (*e.g.,* Buddhism and Hinduism) and modern knowledge.
 
+
+---------
+
+# Statistics
+
+
+
+
+<!-- <p align="center">*Citations & Publications*</p> -->
+
+
+
+```{r echo = FALSE, echo=FALSE, message=FALSE, warning=FALSE, echo=FALSE, fig.width=10, fig.align='center', fig.cap="**Citations and publications number, automatically scrapped from Google Scholar.**"}
+library(plotly)
+library(scholar)
+
+
+stats <- scholar::get_publications("bg0BZ-QAAAAJ", flush=T) %>% 
+  filter(year > 1950) %>% 
+  group_by(year) %>%
+  summarise(Publications = n(),
+            Citations = sum(cites)) %>% 
+  mutate(Publications = cumsum(Publications),
+         Citations = cumsum(Citations)) %>% 
+  rename(Year=year) %>% 
+  gather(Index, Number, -Year)
+
+p <- stats %>% 
+  ggplot(aes(x=Year, y=Number, colour=Index)) +
+  geom_line(size=1) +
+  theme_bw()  +
+  scale_x_continuous(breaks = seq(min(stats$Year), max(stats$Year), by = 1)) +
+  scale_color_manual(values=c("#E91E63", "#2196F3")) +
+  facet_wrap(~Index, scales="free") + theme(strip.background = element_blank(),
+                                            strip.text.y = element_blank(),
+                                            legend.position="none")
+ggplotly(p)
+```
+
+
+
+---------
 
 # Publications
 
@@ -58,6 +143,9 @@ Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemai
 <p align="center">*2015*</p>
 
 **Makowski, D.**, Sperduti, M., Blanchet, S., Nicolas, S. & Piolino, P. (2015). [Régulation Emotionnelle face au Déclin Cognitif dans le Vieillissement : Un Faux Paradoxe ? | Emotion regulation and the cognitive decline in aging: beyond the paradox](https://dominiquemakowski.github.io/papers/makowski2015.pdf). *Gériatrie et Psychologie Neuropsychiatrie du Vieillissement*, 13 (3), 301-8.
+
+
+
 
 
 
