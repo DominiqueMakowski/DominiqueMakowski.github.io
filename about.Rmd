@@ -20,7 +20,7 @@ title: "About me"
 <!-- </div> -->
 
 
-I'm a neuropsychologist, psychotherapist & pizza addict, currently living in Paris, France. I'm fluent in French, Polish, English, Python, and I can pretend to speak Italian. My main figures of reference are Friston, Epictetus and Iron Man. You can find many other details in my CV below.
+I'm a neuropsychologist, psychotherapist & pizza addict, currently living in Paris, France. I'm fluent in French, Polish, English, Python, and I can pretend to speak Italian. My main figures of reference are Friston, Epictetus and Iron Man. You can find many other details in my CV below. You can also *illegally* download my papers from the [research](https://dominiquemakowski.github.io/research.html) page.
 
 ---------
 
