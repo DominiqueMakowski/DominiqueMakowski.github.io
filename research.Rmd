@@ -115,7 +115,7 @@ ggplotly(p)
 
 **Makowski, D.**, Dutriaux, L., ([*under review*](https://github.com/openjournals/joss-reviews/issues/259)). Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires, *The Journal of Open Source Software*.
 
-Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (2017). [Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information](https://dominiquemakowski.github.io/papers/sperduti2017c.pdf), *Experimental Brain Research*.
+Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (2017). [Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information](https://dominiquemakowski.github.io/papers/sperduti2017c.pdf), *Experimental Brain Research*, 1-8.
 
 **Makowski, D.**\*, Sperduti, M.\*, Nicolas, S. & Piolino, P. (2017). ["*Being there*" and remembering it: Presence improves Memory Encoding](https://dominiquemakowski.github.io/papers/makowski2017.pdf). *Consciousness & Cognition*, 53, 194–202.
 
