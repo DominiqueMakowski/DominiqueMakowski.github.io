@@ -5,12 +5,6 @@ bibliography: homepage.bib
 
 
 
----------------
-<p align="center">
-**NOTE: I'm currently looking for postdoc opportunities (I'm finishing my current contract in July 2018)**
-</p>
----------------
-
 <!-- ```{r, out.width = "400px", echo = FALSE, eval = TRUE, fig.align='center'} -->
 <!-- knitr::include_graphics("media/braincloud.png") -->
 
