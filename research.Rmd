@@ -18,6 +18,9 @@ bibliography: homepage.bib
 
 library(stringr)
 library(wordcloud2)
+library(pdftools)
+library(tidyverse)
+
 
 sources <- list.files(path = "./papers", pattern = "pdf$")
 
