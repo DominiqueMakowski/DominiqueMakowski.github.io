@@ -3,14 +3,25 @@ title: "Dominique Makowski, MSc."
 ---
 
 ```{r, out.width = 600, echo = FALSE, fig.align='center'}
+library(devtools)
+# devtools::install_github("hadley/emo")
+# library(emo)
+# ji_find("british")
+
 knitr::include_graphics("media/ski.jpg")
 
 # USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
+
+
 ```
 
+---------------
+<p align="center">
+**`r emo::ji("warning")` I'm currently looking for postdoc opportunities (my current contract ends in July 2018) `r emo::ji("warning")`**
+</p>
+---------------
 
-
-You have reached my personal webpage. If you're looking to learn about what I'm doing, you're in the right place!
+You have reached my personal webpage. If you're looking to learn about what I'm doing, you're in the right place `r emo::ji("fist_oncoming")`
 
 I'm currently a PhD student in the [Memory & Cognition Lab'](http://recherche.parisdescartes.fr/LaboratoireMemoireCognition) at the University of Sorbonne Paris Cité.
 
@@ -18,11 +29,7 @@ I'm currently a PhD student in the [Memory & Cognition Lab'](http://recherche.pa
 *PS: I made this website using R.*
 
 
----------------
-<p align="center">
-**NOTE: I'm currently looking for postdoc opportunities (my current contract ends in July 2018)**
-</p>
----------------
+
 
 
 

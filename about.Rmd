@@ -12,7 +12,7 @@ title: "About me"
 <!-- </div> -->
 
 
-I'm a neuropsychologist, psychotherapist & pizza addict, currently living in Paris, France. I'm fluent in French, Polish, English, Python, and somehow good in pretending to speak Italian. My main figures of reference are Friston, Epictetus and Batman. My interests are as broad as open-science, history of arts and transhumanism. You can find many other details in my CV below. I encourage you to *illegally* download my papers from the [research](https://dominiquemakowski.github.io/research.html) page.
+I'm a neuropsychologist, psychotherapist & pizza addict, currently living in Paris, France. I'm fluent in French, Polish, English, Python, and somehow good in pretending to speak Italian. My main figures of reference are Friston, Epictetus and Batman. My interests are as broad as open-science, history of arts and transhumanism. You can find many other details in my CV below. I encourage you to *illegally* download my papers from the [research](https://dominiquemakowski.github.io/research.html) page `r emo::ji("raised_hands")`
 
 ---------
 
@@ -20,9 +20,9 @@ I'm a neuropsychologist, psychotherapist & pizza addict, currently living in Par
 
 You can download my **full CV** with the following links:
 
-- <a target="_blank" href="DominiqueMakowski_CV.pdf#" class="download" title="English">English</a>
+- `r emo::ji("guardsman")` <a target="_blank" href="DominiqueMakowski_CV.pdf#" class="download" title="English">English</a>
 
-- <a target="_blank" href="DominiqueMakowski_CV_fr.pdf#" class="download" title="French">French</a>
+- `r emo::ji("croissant")` <a target="_blank" href="DominiqueMakowski_CV_fr.pdf#" class="download" title="French">French</a>
 
 ---------
 
