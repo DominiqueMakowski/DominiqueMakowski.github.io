@@ -3,6 +3,14 @@ title: "Packages & Tools"
 bibliography: homepage.bib
 ---
 
+
+```{r, out.width = 650, echo = FALSE, fig.align='center', fig.cap="**Writing a program to answer the hard problem of consciousness.**"}
+knitr::include_graphics("media/code.jpg")
+# USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
+```
+
+----------------
+
 Here is a list of my packages.
 
 

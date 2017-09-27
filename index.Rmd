@@ -17,7 +17,7 @@ knitr::include_graphics("media/ski.jpg")
 
 ---------------
 <p align="center">
-**`r emo::ji("warning")` I'm currently looking for postdoc opportunities (my current contract ends in July 2018) `r emo::ji("warning")`**
+**`r emo::ji("warning")` I'm currently looking for postdoc opportunities (*my current contract ends in July 2018*) `r emo::ji("warning")`**
 </p>
 ---------------
 
