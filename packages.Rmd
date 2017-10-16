@@ -4,18 +4,58 @@ bibliography: homepage.bib
 ---
 
 
-```{r, out.width = 650, echo = FALSE, fig.align='center', fig.cap="**Writing a program to answer the hard problem of consciousness.**"}
-knitr::include_graphics("media/code.jpg")
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width=700}
+# library(png)
+# library(grid)
+# library(gridExtra)
+# n <-  rasterGrob(as.raster(readPNG("media/neuropsydia.png")))
+# nk <-  rasterGrob(as.raster(readPNG("media/neurokit.png")))
+# psy <-  rasterGrob(as.raster(readPNG("media/psycho.png")))
+# grid.arrange(n, psy, nk, ncol = 3)
 # USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
 ```
 
+
+
+
+I'm the author of 3 open-source packages, respectively devoted to experiment creation, EEG and biosignals analysis and statistics.
+
 ----------------
 
-Here is a list of my packages.
+```{r, out.width = 300, echo = FALSE, fig.align='center'}
+knitr::include_graphics("media/neuropsydia.png")
+# USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
+```
 
 
-| Name / Link         | Description |  Package Guide | Source Code |
-|---------|-----------------------------------------| --------------------- | -------- |
-| [neuropsychology.R](neuropsychology.R)| An R Toolbox for Psychologists, Neuropsychologists and Neuroscientists. | [Documentation](https://www.rdocumentation.org/packages/neuropsychology/) | [https://github.com/neuropsychology/neuropsychology.R](https://github.com/neuropsychology/neuropsychology.R)
-| [Neuropsydia.py](Neuropsydia.py) | A Python Module for Creating Experiments, Tasks and Questionnaires. | [Documentation / Guide](http://neuropsydia.readthedocs.io/])| [https://github.com/neuropsychology/Neuropsydia.py](https://github.com/neuropsychology/Neuropsydia.py)
-| [NeuroKit.py](NeuroKit.py) | A Python Toolbox for Statistics and Neurophysiological Signal Processing (EEG, EDA, ECG, EMG...). | [Documentation / Guide](http://neurokit.readthedocs.io/)| [https://github.com/neuropsychology/NeuroKit.py](https://github.com/neuropsychology/NeuroKit.py)
+### **Neuropsydia**
+  - A Python Module for Creating Experiments, Tasks and Questionnaires.
+  - [https://github.com/neuropsychology/Neuropsydia.py](https://github.com/neuropsychology/Neuropsydia.py)
+    
+----------------
+
+
+```{r, out.width = 300, echo = FALSE, fig.align='center'}
+knitr::include_graphics("media/neurokit.png")
+# USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
+```
+
+
+### **NeuroKit** 
+  - A Python Toolbox for Statistics and Neurophysiological Signal Processing (EEG, EDA, ECG, EMG...).
+  - [https://github.com/neuropsychology/NeuroKit.py](https://github.com/neuropsychology/NeuroKit.py)
+    
+----------------
+
+```{r, out.width = 300, echo = FALSE, fig.align='center'}
+knitr::include_graphics("media/psycho.png")
+# USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
+```
+
+
+### **Psycho**
+  - An R package for Efficient and Publishing-Oriented Workflow for Psychological Science.
+  - [https://github.com/neuropsychology/psycho.R](https://github.com/neuropsychology/psycho.R)
+    
+----------------
+

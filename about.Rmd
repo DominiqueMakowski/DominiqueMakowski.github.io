@@ -12,7 +12,14 @@ title: "About me"
 <!-- </div> -->
 
 
-I'm a neuropsychologist, psychotherapist & pizza addict, currently living in Paris, France. I'm fluent in French, Polish, English, Python, and somehow good in pretending to speak Italian. My main figures of reference are Churchill, Epictetus and Batman. My interests are as broad as open-science, history of arts and transhumanism. Finally, I encourage you to *illegally* download my papers from the [research](https://dominiquemakowski.github.io/research.html) page `r emo::ji("raised_hands")`
+```{r, out.width = "600px", echo = FALSE, eval = TRUE, fig.align='center', fig.cap="**Showing some ground-breaking results.**"}
+knitr::include_graphics("media/conf4.jpg")
+```
+
+---------
+
+
+I'm a neuropsychologist, psychotherapist & PhD student, currently living in Paris, France. I'm fluent in French, Polish, English, Python, and somehow good at pretending to speak Italian. My main figures of reference are Epictetus, Churchill and Batman. My interests are as broad as open-science, history of arts and transhumanism. My papers are available on the [research](https://dominiquemakowski.github.io/research.html) page `r emo::ji("raised_hands")`
 
 ---------
 
@@ -26,11 +33,6 @@ You can download my **full CV** with the following links:
 
 ---------
 
-```{r, out.width = "600px", echo = FALSE, eval = TRUE, fig.align='center', fig.cap="**Me showing some ground-breaking results.**"}
-knitr::include_graphics("media/conf4.jpg")
-```
-
----------
 
 
 ### In Short

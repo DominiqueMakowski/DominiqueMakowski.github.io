@@ -13,7 +13,7 @@ navbar:
     - text: " Packages"
       icon: fa-dropbox
       href: packages.html
-    - text: "Courses / Trainings"
+    - text: "Teaching"
       icon: fa-graduation-cap
       href: courses.html
     - text: "Blog"
