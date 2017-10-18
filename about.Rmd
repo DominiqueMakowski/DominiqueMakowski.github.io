@@ -14,6 +14,7 @@ title: "About me"
 
 ```{r, out.width = "600px", echo = FALSE, eval = TRUE, fig.align='center', fig.cap="**Showing some ground-breaking results.**"}
 knitr::include_graphics("media/conf4.jpg")
+# USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
 ```
 
 ---------
@@ -41,14 +42,28 @@ You can download my **full CV** with the following links:
 
 
 
-- Clinical Neuropsychologist (2014, University of Sorbonne Paris Cité)
-- Cognitive and Behavioural Psychotherapist (2017, AFTCC)
+- Clinical Neuropsychologist (2014, University of Sorbonne Paris Cité, France)
+- Cognitive and Behavioural Psychotherapist (2017, AFTCC, France)
 
 <p align="center">*Certifications*</p>
 
 
-- Academic Teaching (2017, University of Sorbonne Paris Cité)
-- Mindfulness based on Compassion and Insight (2016, Sainte-Anne Hospital)
-- First Aid (2016, University of Sorbonne Paris Cité)
+- Academic Teaching (2017, University of Sorbonne Paris Cité, France)
+- Mindfulness based on Compassion and Insight (2016, Sainte-Anne Hospital, France)
+- First Aid (2016, University of Sorbonne Paris Cité, France)
 
+<p align="center">*Trainings*</p>
 
+- Neuroimagery
+    - Multiscale neurodynamics of emotions: from oscillations to complex networks (2017, University of Lille, France)
+    - Introduction to eye tracking (2016, University of Sorbonne Paris Cité, France)
+    - fMRI and Connectivity (2017, INSTN, France)
+    - fMRI : preprocessing and analysis (2017, Sainte-Anne Hospital, France)
+    - Signal Processing Theory and Application for EEG (ESPCI, France)
+- Statistics
+    - Statistics and R for the Life Sciences (2015, Harvard University EDx)
+    - Machine Learning and Brain-to-Computer Interfaces (2014, ESPCI, France)
+    - {Introduction to Statistics with R (2014, Paris Sud University, France)
+- Programming
+    - Scientific Programming with Python and Software Engineering Best Practices (2016, Telecom ParisTech, France)
+    - P4N 2016: Python for Neuroscience (and Psychology) (2016, University of Nottingham, UK)
