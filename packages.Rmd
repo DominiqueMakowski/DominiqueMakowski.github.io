@@ -18,7 +18,7 @@ bibliography: homepage.bib
 
 
 
-I'm the author of 3 open-source packages, respectively devoted to experiment creation, EEG and biosignals analysis and statistics.
+I'm the author of 3 open-source packages, respectively devoted to experiment creation, physiological signals analysis and statistics.
 
 ----------------
 

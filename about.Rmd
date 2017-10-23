@@ -24,7 +24,7 @@ I'm a neuropsychologist, psychotherapist & PhD student, currently living in Pari
 
 ---------
 
-### Download
+### **Download**
 
 You can download my **full CV** with the following links:
 
@@ -36,34 +36,81 @@ You can download my **full CV** with the following links:
 
 
 
-### In Short
+### **In Short**
 
-<p align="center">*Titles and Licenses*</p>
-
+<!-- <p align="center">*Titles and Licenses*</p> -->
+#### Titles and Licenses
 
 
 - Clinical Neuropsychologist (2014, University of Sorbonne Paris Cité, France)
 - Cognitive and Behavioural Psychotherapist (2017, AFTCC, France)
 
-<p align="center">*Certifications*</p>
-
+<!-- <p align="center">*Certifications*</p> -->
+#### Certifications
 
 - Academic Teaching (2017, University of Sorbonne Paris Cité, France)
 - Mindfulness based on Compassion and Insight (2016, Sainte-Anne Hospital, France)
 - First Aid (2016, University of Sorbonne Paris Cité, France)
 
-<p align="center">*Trainings*</p>
+<!-- <p align="center">*Trainings*</p> -->
+#### Trainings
 
-- Neuroimagery
-    - Multiscale neurodynamics of emotions: from oscillations to complex networks (2017, University of Lille, France)
-    - Introduction to eye tracking (2016, University of Sorbonne Paris Cité, France)
-    - fMRI and Connectivity (2017, INSTN, France)
-    - fMRI : preprocessing and analysis (2017, Sainte-Anne Hospital, France)
-    - Signal Processing Theory and Application for EEG (ESPCI, France)
+- Neuroimagering
+    - Multiscale Neurodynamics of Emotions and their Pathologies: from Oscillations to Complex Networks (2017, University of Lille, France)
+    - Introduction to Eye Tracking (2016, University of Sorbonne Paris Cité, France)
+    - Signal Processing Theory and Application for EEG (2016, ESPCI, France)
+    - fMRI and Connectivity (2015, INSTN, France)
+    - fMRI : Preprocessing and Analysis (2015, Sainte-Anne Hospital, France)
 - Statistics
     - Statistics and R for the Life Sciences (2015, Harvard University EDx)
     - Machine Learning and Brain-to-Computer Interfaces (2014, ESPCI, France)
-    - {Introduction to Statistics with R (2014, Paris Sud University, France)
+    - Introduction to Statistics with R (2014, Paris Sud University, France)
 - Programming
-    - Scientific Programming with Python and Software Engineering Best Practices (2016, Telecom ParisTech, France)
     - P4N 2016: Python for Neuroscience (and Psychology) (2016, University of Nottingham, UK)
+    - Scientific Programming with Python and Software Engineering Best Practices (2016, Telecom ParisTech, France)
+    
+#### Technical Skills
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE,fig.width=10, fig.align='center'}
+library(tidyverse)
+library(plotly)
+
+df <- data.frame(Skill = c("ERP", "Complexity", "Time/Frequency", "Source Reconstruction", 
+                      "fMRI", "Connectivity",
+                      "EDA", "ECG", "EMG", "BVP/PPG",
+                      "Mixed-Modelling", "Bayesian Analyses", "Structural Equation Modelling", "Multivariate Statistics",
+                      "R", "Python", "Matlab", "Julia"), 
+           Efficiency = c(100, 80, 75, 40, 
+                          30, 15,
+                          100, 100, 100, 90,
+                          100, 90, 95, 95,
+                          100, 100, 80, 70),
+           Area = c("EEG", "EEG", "EEG", "EEG",
+                       "MRI", "MRI",
+                       "Biosignals", "Biosignals", "Biosignals", "Biosignals",
+                    "Statistics", "Statistics", "Statistics", "Statistics",
+                    "Programming", "Programming", "Programming", "Programming")) %>% 
+  mutate(Skill = factor(Skill, levels=c("EDA", "ECG", "EMG", "BVP/PPG",
+                                        "ERP", "Complexity", "Time/Frequency", "Source Reconstruction", 
+                      "fMRI", "Connectivity",
+                      "Mixed-Modelling", "Bayesian Analyses", "Structural Equation Modelling", "Multivariate Statistics",
+                      "R", "Python", "Matlab", "Julia")),
+         Area = factor(Area, levels=c("Biosignals", "EEG", "MRI", "Statistics", "Programming")),
+         Efficiency = as.numeric(Efficiency))
+
+
+p <- ggplot(df, aes(y=Efficiency, x=Skill, fill=Area, label=Skill)) + 
+  geom_bar(stat = "identity", color = "white") +
+  # geom_text(position = "stack", check_overlap=T) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust=1)) +
+  # coord_flip() +
+  # coord_polar() +
+  scale_fill_manual(values=c("#E91E63", "#2196F3", "#4CAF50", "#FFC107", "#FF5722"))
+
+p
+# plotly::ggplotly(p)
+```
+
+
