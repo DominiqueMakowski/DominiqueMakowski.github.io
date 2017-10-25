@@ -111,6 +111,7 @@ p <- ggplot(df, aes(y=Efficiency, x=Skill, fill=Area, label=Skill)) +
 
 p
 # plotly::ggplotly(p)
+# as_widget(ggplotly(p))
 ```
 
 
