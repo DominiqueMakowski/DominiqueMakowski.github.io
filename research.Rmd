@@ -1,9 +1,9 @@
 ---
-title: "Research"
+title: "Research."
 bibliography: homepage.bib
 ---
 
-
+--------------------
 
 <!-- ```{r, out.width = "400px", echo = FALSE, eval = TRUE, fig.align='center'} -->
 <!-- knitr::include_graphics("media/braincloud.png") -->
@@ -69,7 +69,7 @@ More generally, my scientific interests also include the following topics:
 
 ---------
 
-# Statistics
+# Impact
 
 
 

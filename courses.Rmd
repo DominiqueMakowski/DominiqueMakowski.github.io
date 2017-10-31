@@ -1,9 +1,9 @@
 ---
-title: "Teaching"
+title: "Teaching."
 bibliography: homepage.bib
 ---
 
-
+--------------------
 
 
 ```{r, out.width = 650, echo = FALSE, fig.align='center', fig.cap="**Writing a program to solve the hard problem of consciousness.**"}
@@ -33,7 +33,7 @@ I've already give academic lectures on the following topics (see [CV](https://do
 My technical expertise covers the following topics (see [CV](https://dominiquemakowski.github.io/about.html) for details):
 
 - **EEG**: Theory, aquisition (Brain Products and Geodesic) and processing (using [MNE](http://martinos.org/mne/stable/index.html))
-- **Biosignals**: ECG, EDA, RSP, BVP and facial EMG theory, aquisition (Biopac) and processing (using [NeuroKit](https://github.com/neuropsychology/NeuroKit.py))
+- **Biosignals**: ECG, EDA, RSP, BVP and facial EMG theory, acquisition (Biopac) and processing (using [NeuroKit](https://github.com/neuropsychology/NeuroKit.py))
 - **MRI**: Beginner (see [CV](https://dominiquemakowski.github.io/about.html) for details about the trainings)
 - **Statistics**: Bayesian (or frequentist) mixed modelling, machine Learning, structural equation modelling
 - **Programming**: Python, R, matlab, currently learning Julia

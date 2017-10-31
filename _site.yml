@@ -2,7 +2,7 @@ name: "Dominique Makowski"
 output_dir: "."
 navbar:
   title: "Dominique Makowski"                               
-  type: inverse
+  type: default
   left:
     - text: " About / CV"
       icon: fa-user
@@ -34,5 +34,7 @@ navbar:
       href: https://www.researchgate.net/profile/Dominique_Makowski
 output:
   html_document:
-    theme: cosmo
+    theme: paper
     highlight: textmate
+    #include:
+      #after_body: footer.html

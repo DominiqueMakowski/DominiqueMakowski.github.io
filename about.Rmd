@@ -1,7 +1,8 @@
 ---
-title: "About me"
+title: "About me."
 ---
 
+--------------------
 
 <!-- <style> -->
 <!-- .image{float: left;} -->
@@ -28,9 +29,9 @@ I'm a neuropsychologist, psychotherapist & PhD student, currently living in Pari
 
 You can download my **full CV** with the following links:
 
-- `r emo::ji("guardsman")` <a target="_blank" href="DominiqueMakowski_CV.pdf#" class="download" title="English">English</a>
+- <a target="_blank" href="DominiqueMakowski_CV.pdf#" class="download" title="English">English</a>
 
-- `r emo::ji("croissant")` <a target="_blank" href="DominiqueMakowski_CV_fr.pdf#" class="download" title="French">French</a>
+- <a target="_blank" href="DominiqueMakowski_CV_fr.pdf#" class="download" title="French">French</a>
 
 ---------
 

@@ -1,6 +1,10 @@
 ---
-title: "Dominique Makowski, MSc."
+title: "Welcome."
 ---
+
+
+----------
+
 
 ```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width=600}
 library(devtools)
@@ -8,7 +12,7 @@ library(devtools)
 # library(emo)
 # ji_find("british")
 
-knitr::include_graphics("media/ski.jpg")
+knitr::include_graphics("media/paris.png")
 
 # USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
 

@@ -1,5 +1,5 @@
 ---
-title: "Packages & Tools"
+title: "Packages & Tools."
 bibliography: homepage.bib
 ---
 
