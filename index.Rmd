@@ -6,13 +6,13 @@ title: "Welcome."
 ----------
 
 
-```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width=600}
+```{r echo=FALSE, fig.align='center', message=FALSE, warning=FALSE, out.width=750}
 library(devtools)
 # devtools::install_github("hadley/emo")
 # library(emo)
 # ji_find("british")
 
-knitr::include_graphics("media/paris.png")
+knitr::include_graphics("media/paris2.png")
 
 # USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
 
