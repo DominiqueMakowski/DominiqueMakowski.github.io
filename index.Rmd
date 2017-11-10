@@ -12,7 +12,7 @@ library(devtools)
 # library(emo)
 # ji_find("british")
 
-knitr::include_graphics("media/paris.png")
+knitr::include_graphics("media/paris_bw.png")
 
 # USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
 
