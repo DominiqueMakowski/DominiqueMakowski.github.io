@@ -24,19 +24,25 @@ library(tidyverse)
 
 sources <- list.files(path = "./papers", pattern = "pdf$")
 
+
 text <- c()
 for (source in sources) {
   text <- c(text, pdftools::pdf_text(paste("./papers/", source, sep="")))
 }
+
 text <- unlist(text)
+text <- paste(text, sep=" ", collapse="") 
+text <- iconv(text, "UTF-8", "ASCII", sub="")
+
 
 text_clean <- tm::termFreq(text, control = list(removePunctuation = TRUE, tolower = TRUE, removeNumbers = TRUE, stopwords = TRUE, wordLengths = c(4, Inf)))
 
-data <- data.frame(word = rownames(text_clean), freq = rowSums(as.matrix(text_clean))) %>% 
-  dplyr::arrange_("desc(freq)") %>% 
-  filter_(paste("freq > ", 50)) %>% 
-  filter_(paste("freq < ", Inf)) %>% 
-  filter(!word %in% c("dans", "plus", "pour", "avec", "cette", "comme", "sont", "tion", "also"))
+data <- data.frame(word = rownames(as.matrix(text_clean)), freq = rowSums(as.matrix(text_clean))) %>% 
+  dplyr::arrange(desc(freq)) %>% 
+  filter(freq >  50) %>% 
+  filter(freq < Inf) %>% 
+  filter(!word %in% c("dans", "plus", "pour", "avec", "cette", "comme", "sont", "tion", "also", "france", "ction", "nature"))
+
 
 data$word <- stringi::stri_trans_general(data$word, "latin-ascii")
 # colours <- rep(c("#f44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#2196F3", "#03A9F4", "#00BCD4", "#009688", "#4CAF50", "#8BC34A", "#CDDC39", "#FFEB3B", "#FFC107", "#FF9800", "#FF5722", "#795548", "#9E9E9E", "#607D8B"), length.out = nrow(data))
@@ -78,7 +84,7 @@ More generally, my scientific interests also include the following topics:
 
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.align='center', fig.cap="**Cumulative citations and publications number, automatically scrapped from Google Scholar.**"}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.align='center', fig.cap="**Cumulative citations and publication number, automatically scrapped from Google Scholar.**"}
 library(plotly)
 library(scholar)
 
@@ -113,7 +119,8 @@ ggplotly(p)
 
 <p align="center">*2017*</p>
 
-**Makowski, D.**, Dutriaux, L., ([*under review*](https://github.com/openjournals/joss-reviews/issues/259)). Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires, *The Journal of Open Source Software*.
+**Makowski, D.**, Dutriaux, L., (2017). [Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires](https://dominiquemakowski.github.io/papers/makowski2017b.pdf), *Journal of Open Source Software*, 2(19), 259.
+
 
 Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (2017). [Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information](https://dominiquemakowski.github.io/papers/sperduti2017c.pdf), *Experimental Brain Research*, 1-8.
 
