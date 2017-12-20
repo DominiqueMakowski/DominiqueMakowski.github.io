@@ -123,14 +123,14 @@ ggplotly(p)
 
 Tuena, C., Serino, S., Gaston-Bellegarde, A., Orriols, E., **Makowski, D.**, Riva, G. & Piolino, P. (2017). [How Virtual Embodiment Affects Episodic Memory Functioning: a Proof-of-Concept Study](https://dominiquemakowski.github.io/papers/tuena2017.pdf), *Annual Review of Cybertherapy and Telemedicine*, 15, 93-107.
 
-Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (2017). [Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information](https://dominiquemakowski.github.io/papers/sperduti2017c.pdf), *Experimental Brain Research*, 1-8.
+Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (2017). [Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information](https://dominiquemakowski.github.io/papers/sperduti2017c.pdf), *Experimental Brain Research*, 235(12), 3553-3560.
 
 **Makowski, D.**\*, Sperduti, M.\*, Nicolas, S. & Piolino, P. (2017). ["*Being there*" and remembering it: Presence improves Memory Encoding](https://dominiquemakowski.github.io/papers/makowski2017.pdf). *Consciousness & Cognition*, 53, 194–202.
 
-Nicolas, S., & **Makowski, D**. (2017). [Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)](https://dominiquemakowski.github.io/papers/nicolas2017.pdf). *Bulletin de Psychologie*, 70 (3), 163-178.
+Nicolas, S., & **Makowski, D**. (2017). [Centenaire Ribot (I). La réception de l'oeuvre de Théodule Ribot chez l'éditeur Ladrange (1870-1873)](https://dominiquemakowski.github.io/papers/nicolas2017.pdf). *Bulletin de Psychologie*, 70(3), 163-178.
 
 
-Sperduti, M., **Makowski, D.**, Blondé, P. & Piolino, P. (2017). [Méditer pour bien vieillir ? Les possibles bienfaits des pratiques méditatives sur le déclin cognitif lié à l’âge | Meditation and successful aging: can meditative practices counteract age-related cognitive decline?](https://dominiquemakowski.github.io/papers/sperduti2017b.pdf), *Gériatrie et Psychologie Neuropsychiatrie du Vieillissement*, 15 (2), 205-13.
+Sperduti, M., **Makowski, D.**, Blondé, P. & Piolino, P. (2017). [Méditer pour bien vieillir ? Les possibles bienfaits des pratiques méditatives sur le déclin cognitif lié à l’âge | Meditation and successful aging: can meditative practices counteract age-related cognitive decline?](https://dominiquemakowski.github.io/papers/sperduti2017b.pdf), *Gériatrie et Psychologie Neuropsychiatrie du Vieillissement*, 15(2), 205-13.
 
 Sperduti, M.\*, **Makowski, D.**\*, Arcangeli, M., Wantzen, P., Zalla, T., Lemaire, S., Dokic, J., Pelletier, J. & Piolino, P. (2017). [The Distinctive Role of Executive Functions in Implicit Emotion Regulation](https://dominiquemakowski.github.io/papers/sperduti2017.pdf). *Acta Psychologica*, 173, 13-20.
 
@@ -147,7 +147,7 @@ Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemai
 
 <p align="center">*2015*</p>
 
-**Makowski, D.**, Sperduti, M., Blanchet, S., Nicolas, S. & Piolino, P. (2015). [Régulation Emotionnelle face au Déclin Cognitif dans le Vieillissement : Un Faux Paradoxe ? | Emotion regulation and the cognitive decline in aging: beyond the paradox](https://dominiquemakowski.github.io/papers/makowski2015.pdf). *Gériatrie et Psychologie Neuropsychiatrie du Vieillissement*, 13 (3), 301-8.
+**Makowski, D.**, Sperduti, M., Blanchet, S., Nicolas, S. & Piolino, P. (2015). [Régulation Emotionnelle face au Déclin Cognitif dans le Vieillissement : Un Faux Paradoxe ? | Emotion regulation and the cognitive decline in aging: beyond the paradox](https://dominiquemakowski.github.io/papers/makowski2015.pdf). *Gériatrie et Psychologie Neuropsychiatrie du Vieillissement*, 13(3), 301-8.
 
 
 ---------
