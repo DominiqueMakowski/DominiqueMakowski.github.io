@@ -121,6 +121,7 @@ ggplotly(p)
 
 **Makowski, D.**, Dutriaux, L., (2017). [Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires](https://dominiquemakowski.github.io/papers/makowski2017b.pdf), *Journal of Open Source Software*, 2(19), 259.
 
+Tuena, C., Serino, S., Gaston-Bellegarde, A., Orriols, E., **Makowski, D.**, Riva, G. & Piolino, P. (2017). [How Virtual Embodiment Affects Episodic Memory Functioning: a Proof-of-Concept Study](https://dominiquemakowski.github.io/papers/tuena2017.pdf), *Annual Review of Cybertherapy and Telemedicine*, 15, 93-107.
 
 Sperduti, M., Armougum, A., **Makowski, D.** & Piolino, P. (2017). [Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information](https://dominiquemakowski.github.io/papers/sperduti2017c.pdf), *Experimental Brain Research*, 1-8.
 
@@ -169,7 +170,6 @@ Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemai
 
 Sperduti, M., **Makowski, D.** & Piolino, P. (2017). *The Role of Self-Relevance and Interindividual Variability in Executive Functions in Implicit Emotion Regulation*. International Society for the Study of Interindividual Differences (ISSID), 24-28 July, Warsaw, Poland.
 
-Tuena, C., Serino, S., Gaston-Bellegarde, A., Orriols, E., **Makowski, D.**, Riva, G. & Piolino, P. (2017). *How Virtual Embodiment Affects Episodic Memory Functioning: a Proof-of-Concept Study*, 27 June, Milano, Italy.
 
 **Makowski, D.**, Sperduti, M. & Piolino, P. (2017). *The Distinctive Effect of Emotion Regulation andMindfulness on Attentional Capture*. 1ère Journée Scientifique des Jeunes Chercheurs du Centre de Recherches sur la Cognition et l’Apprentissage, 8 June, Poitiers, France.
 
@@ -179,9 +179,9 @@ Tuena, C., Serino, S., Gaston-Bellegarde, A., Orriols, E., **Makowski, D.**, Riv
 
 **Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *The Sense of Reality as a feature of proto-Consciousness, its Alteration and Generation induced by Fictional Worlds*. Literary States of Consciousness, 2 June, Paris, France.
 
-**Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *Does Mindfulness ability differently affect Implicit and Explicit Emotion Regulation?* 2nd International Conference on Mindfulness (ICM), 11-15 May,Roma, Italy.
+**Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *Does Mindfulness ability differently affect Implicit and Explicit Emotion Regulation?* 2nd International Conference on Mindfulness (ICM), 11-15 May, Roma, Italy.
 
-Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does mindfulness enhances interoception? Dissociation between different interoceptive abilities*. 2nd International Conference on Mindfulness, 11-15May, Roma, Italy.
+Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does mindfulness enhances interoception? Dissociation between different interoceptive abilities*. 2nd International Conference on Mindfulness, 11-15 May, Roma, Italy.
 
 <p align="center">*2015*</p>
 
