@@ -14,13 +14,30 @@ bibliography: homepage.bib
 
 <p align="center">
 ```{r echo = FALSE, echo=FALSE, message=FALSE, warning=FALSE, echo=FALSE, fig.align='center', fig.cap="**My research wordcloud, based on the most frequent words of my papers (done using R).**"}
-
-
 library(stringr)
 library(wordcloud2)
 library(pdftools)
 library(tidyverse)
 
+
+replace_and_add <- function(data, target, add_to, delete=T){
+  if (!add_to %in% data$word){
+    data[nrow(data) + 1,] = c(add_to, 0)
+  }
+  data <- data %>% 
+    mutate(
+      newfreq=freq[word==target],
+      newfreq=replace(newfreq, !(word %in% c(add_to)), 0),
+      freq=as.numeric(freq)+as.numeric(newfreq)) %>% 
+    select(-newfreq)
+
+  if (delete==T){
+    data <- filter(data, word!=target)
+  }
+  return(data)
+}
+
+# ------------------------------
 
 sources <- list.files(path = "./papers", pattern = "pdf$")
 
@@ -35,13 +52,23 @@ text <- paste(text, sep=" ", collapse="")
 text <- iconv(text, "UTF-8", "ASCII", sub="")
 
 
-text_clean <- tm::termFreq(text, control = list(removePunctuation = TRUE, tolower = TRUE, removeNumbers = TRUE, stopwords = TRUE, wordLengths = c(4, Inf)))
+text_clean <- tm::termFreq(text, control = list(removePunctuation = TRUE, tolower = TRUE, removeNumbers = TRUE, stopwords = TRUE, wordLengths = c(2, Inf)))
 
 data <- data.frame(word = rownames(as.matrix(text_clean)), freq = rowSums(as.matrix(text_clean))) %>% 
-  dplyr::arrange(desc(freq)) %>% 
-  filter(freq >  50) %>% 
-  filter(freq < Inf) %>% 
-  filter(!word %in% c("dans", "plus", "pour", "avec", "cette", "comme", "sont", "tion", "also", "france", "ction", "nature"))
+  arrange(desc(freq)) %>% 
+  replace_and_add("er", "emotion", delete=F) %>% 
+  replace_and_add("er", "regulation") %>% 
+  replace_and_add("psychologie", "psychology") %>% 
+  replace_and_add("psychologique", "psychological") %>% 
+  replace_and_add("mditation", "meditation") %>% 
+  replace_and_add("ction", "fiction") %>% 
+  replace_and_add("ctional", "fiction") %>% 
+  dplyr::mutate(length=stringr::str_length(word)) %>%
+  dplyr::filter(freq >  50) %>% 
+  dplyr::filter(freq < Inf) %>% 
+  dplyr::filter(length >= 4) %>%
+  dplyr::select(-length) %>% 
+  dplyr::filter(!word %in% c("dans", "plus", "pour", "avec", "cette", "comme", "sont", "tion", "also", "france", "nature", "lhrdit"))
 
 
 data$word <- stringi::stri_trans_general(data$word, "latin-ascii")
@@ -50,7 +77,7 @@ colours <- c("#f44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#2196F3", "
 
 
 # wordcloud2(data, size = 0.25, color=colours, figPath = "media/brain.png")
-wordcloud2(data, size = 0.5, color=colours)
+wordcloud2::wordcloud2(data, size = 0.5, color=colours, shape="circle")
 ```
 </p>
 
@@ -87,16 +114,16 @@ More generally, my scientific interests also include the following topics:
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.align='center', fig.cap="**Cumulative citations and publication number, automatically scrapped from Google Scholar.**"}
 library(plotly)
 library(scholar)
-
+library(tidyverse)
 
 stats <- scholar::get_publications("bg0BZ-QAAAAJ", flush=T) %>% 
   filter(year > 1950) %>% 
-  group_by(year) %>%
-  summarise(Publications = n(),
+  dplyr::group_by(year) %>%
+  dplyr::summarise(Publications = n(),
             Citations = sum(cites)) %>% 
   mutate(Publications = cumsum(Publications),
          Citations = cumsum(Citations)) %>% 
-  rename(Year=year) %>% 
+  dplyr::rename(Year=year) %>% 
   gather(Index, Number, -Year)
 
 p <- stats %>% 
@@ -113,13 +140,64 @@ ggplotly(p)
 
 
 
+
 ---------
 
 # Publications
 
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
+library(slickR)
+# library(imager)
+# library(stringr)
+
+height_image <- 200
+image_list <- c("media/makowski2017_Fig.png", 
+                "media/sperduti2017_Fig.png",
+                "media/makowski2015_Fig.jpg",
+                "media/makowski2018.PNG")
+
+
+# new_image_list <- c()
+# for (image in image_list){
+#   image_name <- gsub("/", "/autocreated/", image)
+#   image <- imager::load.image(image)
+#   image <- imager::resize(image, round(width(image)/height(image)*height_image), round(height(image)/height(image)*height_image))
+#   new_image_list <- c(new_image_list, image_name)
+#   imager::save.image(image, image_name)
+# }
+# cP1=JS("function(slick,index) {return '<a>'+(index+1)+'</a>';}")
+
+slickR::slickR(obj = image_list,
+               slideId = 'ex1',
+               width = "100%",
+               height=height_image,
+               slickOpts = list(
+                 initialSlide = 0,
+                 slidesToShow = 3,
+                 slidesToScroll = 1,
+                 dots = T,
+                 focusOnSelect=F,
+                 centerMode=T
+                 # customPaging = cP1
+                 ),
+               objLinks = list(list("https://dominiquemakowski.github.io/papers/makowski2017.pdf",
+                                'https://dominiquemakowski.github.io/papers/sperduti2017.pdf',
+                                "https://dominiquemakowski.github.io/papers/makowski2015.pdf",
+                                "https://dominiquemakowski.github.io/papers/makowski2018.pdf"))
+               )
+
+```
+
+-------------
+
+<p align="center">*2018*</p>
+
+**Makowski, D** (2018). [The psycho Package: an Efficient and Publishing-Oriented Workflow for Psychological Science](https://dominiquemakowski.github.io/papers/makowski2018.pdf). Journal of Open Source Software, 3(22), 470.
+
+
 <p align="center">*2017*</p>
 
-**Makowski, D.**, Dutriaux, L., (2017). [Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires](https://dominiquemakowski.github.io/papers/makowski2017b.pdf), *Journal of Open Source Software*, 2(19), 259.
+**Makowski, D.**, Dutriaux, L. (2017). [Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires](https://dominiquemakowski.github.io/papers/makowski2017b.pdf), *Journal of Open Source Software*, 2(19), 259.
 
 Tuena, C., Serino, S., Gaston-Bellegarde, A., Orriols, E., **Makowski, D.**, Riva, G. & Piolino, P. (2017). [How Virtual Embodiment Affects Episodic Memory Functioning: a Proof-of-Concept Study](https://dominiquemakowski.github.io/papers/tuena2017.pdf), *Annual Review of Cybertherapy and Telemedicine*, 15, 93-107.
 

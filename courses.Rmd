@@ -15,14 +15,34 @@ knitr::include_graphics("media/code.jpg")
 
 # Academic
 
+I've already give academic lectures (total hours since 2014: **400**) on the following topics (see [CV](https://dominiquemakowski.github.io/about.html) for details):
 
+- **Neuropsychology** (*192 hours, 2nd year, 3rd year and master level*): 
+    - Clinical Neuropsychology:
+        - Neuropsychological syndromes
+        - Neuropsychological examination and diagnostic
+        - Cognitive rehabilitation
+        - Clinical practice supervision
+        - Neuropsychology in psychiatry
+    - Cognitive Neuroscience:
+        - Neuroanatomy
+        - Emotion Regulation
+        - Mindfulness
+        - Memory
+        - Neuroimaging
+- **Differential Psychology** (*144 hours, 1st year level*):
+    - Practice:
+        - Experimental methodology
+        - Scientific reasoning
+        - Psychometric properties of tests and questionnaires
+        - Statistics (correlations)
+    - Theory:
+        - Intelligence
+        - Personality
+        - Creativity
+- **Cognitive Psychology** (*48 hours, 3rd year level*): Models of working memory, mental imagery and categorisation
+- **Other** (*16 hours*): Internet, ethics, digital rights
 
-I've already give academic lectures on the following topics (see [CV](https://dominiquemakowski.github.io/about.html) for details):
-
-- **General Neuroscience and Psychology**: Neuroanatomy, emotion regulation, mindfulness, psychological trauma and handicap
-- **Clinical Neuropsychology**: Main neurodegenerative, neurological and psychiatric disorders, neuropsychological examination and diagnostic, psychometry, cognitive rehabilitation, practice supervision
-- **Cognitive Psychology**: Models of working memory, mental imagery and categorisation
-- **Differential Psychology**: Experimental methodology, scientific reasoning, psychometric properties of tests and questionnaires, statistics and introduction to concepts such as intelligence, personality and creativity
 
 --------------------
 
