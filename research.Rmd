@@ -135,6 +135,7 @@ p <- stats %>%
   facet_wrap(~Index, scales="free") + theme(strip.background = element_blank(),
                                             strip.text.y = element_blank(),
                                             legend.position="none")
+# p
 ggplotly(p)
 ```
 
@@ -192,7 +193,7 @@ slickR::slickR(obj = image_list,
 
 <p align="center">*2018*</p>
 
-**Makowski, D** (2018). [The psycho Package: an Efficient and Publishing-Oriented Workflow for Psychological Science](https://dominiquemakowski.github.io/papers/makowski2018.pdf). Journal of Open Source Software, 3(22), 470.
+**Makowski, D** (2018). [The psycho Package: an Efficient and Publishing-Oriented Workflow for Psychological Science](https://dominiquemakowski.github.io/papers/makowski2018.pdf). *Journal of Open Source Software*, 3(22), 470.
 
 
 <p align="center">*2017*</p>
