@@ -47,15 +47,15 @@ You can download my **full CV** with the following links:
 - Cognitive and Behavioural Psychotherapist (2017, AFTCC, France)
 
 <!-- <p align="center">*Certifications*</p> -->
-#### Certifications
-
-- Academic Teaching (2017, University of Sorbonne Paris Cité, France)
-- Mindfulness based on Compassion and Insight (2016, Sainte-Anne Hospital, France)
-- First Aid (2016, University of Sorbonne Paris Cité, France)
 
 <!-- <p align="center">*Trainings*</p> -->
 #### Trainings
 
+- Teaching
+    - Academic Teaching (2017, University of Sorbonne Paris Cité, France)
+- Clinical
+    - Mindfulness based on Compassion and Insight (2016, Sainte-Anne Hospital, France)
+    - First Aid (2016, University of Sorbonne Paris Cité, France)
 - Neuroimagering
     - Multiscale Neurodynamics of Emotions and their Pathologies: from Oscillations to Complex Networks (2017, University of Lille, France)
     - Introduction to Eye Tracking (2016, University of Sorbonne Paris Cité, France)
@@ -73,7 +73,7 @@ You can download my **full CV** with the following links:
 #### Technical Skills
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE,fig.width=10, fig.align='center'}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
 library(tidyverse)
 library(plotly)
 
@@ -105,10 +105,19 @@ p <- ggplot(df, aes(y=Efficiency, x=Skill, fill=Area, label=Skill)) +
   geom_bar(stat = "identity", color = "white") +
   # geom_text(position = "stack", check_overlap=T) +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust=1)) +
-  # coord_flip() +
+  # theme(axis.text.x = element_text(angle = -20, hjust=1)) +
+  # theme(axis.text.x = element_text(hjust=1)) +
+  # xlab("") +
+  coord_flip() +
   # coord_polar() +
-  scale_fill_manual(values=c("#E91E63", "#2196F3", "#4CAF50", "#FFC107", "#FF5722"))
+  scale_fill_manual(values=c("#E91E63", "#2196F3", "#4CAF50", "#FFC107", "#FF5722")) +
+  theme(axis.title.y=element_blank(),
+        # axis.text.y=element_blank(),
+        # axis.ticks.y=element_blank()
+        axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()
+        )
 
 p
 # plotly::ggplotly(p)
