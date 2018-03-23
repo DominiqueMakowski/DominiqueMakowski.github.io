@@ -13,7 +13,7 @@ title: "About me."
 <!-- </div> -->
 
 
-```{r, out.width = "800px", echo = FALSE, eval = TRUE, fig.align='center', fig.cap="**Pondering on the nature of reality.**"}
+```{r, out.width = "800px", echo = FALSE, eval = TRUE, fig.align='center', fig.cap="**Pondering over the nature of reality.**"}
 knitr::include_graphics("media/conf5.jpg")
 # USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
 ```
