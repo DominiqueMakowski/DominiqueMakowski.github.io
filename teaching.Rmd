@@ -1,0 +1,78 @@
+---
+title: "Teaching."
+bibliography: homepage.bib
+---
+
+--------------------
+
+
+```{r, out.width = 650, echo = FALSE, fig.align='center', fig.cap="**Writing a program to solve the hard problem of consciousness.**"}
+knitr::include_graphics("media/code.jpg")
+# USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
+```
+
+--------------------
+
+# Academic
+
+I've already give academic lectures (total hours since 2014: **400**) on the following topics (see [CV](https://dominiquemakowski.github.io/about.html) for details):
+
+- **Neuropsychology** (*192 hours, 2nd year, 3rd year and master level*): 
+    - Clinical Neuropsychology:
+        - Neuropsychological syndromes
+        - Neuropsychological examination and diagnostic
+        - Cognitive rehabilitation
+        - Clinical practice supervision
+        - Neuropsychology in psychiatry
+    - Cognitive Neuroscience:
+        - Neuroanatomy
+        - Emotion Regulation
+        - Mindfulness
+        - Memory
+        - Neuroimaging
+- **Differential Psychology** (*144 hours, 1st year level*):
+    - Practice:
+        - Experimental methodology
+        - Scientific reasoning
+        - Psychometric properties of tests and questionnaires
+        - Statistics (correlations)
+    - Theory:
+        - Intelligence
+        - Personality
+        - Creativity
+- **Cognitive Psychology** (*48 hours, 3rd year level*): Models of working memory, mental imagery and categorisation
+- **Other** (*16 hours*): Internet, ethics, digital rights
+
+
+--------------------
+
+# Technical
+
+
+
+My technical expertise covers the following topics (see [CV](https://dominiquemakowski.github.io/about.html) for details):
+
+- **EEG**: Theory, aquisition (Brain Products and Geodesic) and processing (using [MNE](http://martinos.org/mne/stable/index.html))
+- **Biosignals**: ECG, EDA, RSP, BVP and facial EMG theory, acquisition (Biopac) and processing (using [NeuroKit](https://github.com/neuropsychology/NeuroKit.py))
+- **MRI**: Beginner (see [CV](https://dominiquemakowski.github.io/about.html) for details about the trainings)
+- **Statistics**: Bayesian (or frequentist) mixed modelling, machine Learning, structural equation modelling
+- **Programming**: Python, R, matlab, currently learning Julia
+
+--------------------
+
+# Blog Posts
+
+### Statistics
+
+- [How Many Factors to Retain in Factor Analysis](https://neuropsychology.github.io/psycho.R/2018/05/24/n_factors.html), May 24, 2018
+- [Beautiful and Powerful Correlation Tables in R](https://neuropsychology.github.io/psycho.R/2018/05/20/correlation.html), May 20, 2018
+- [Format and Interpret Linear Mixed Models](https://neuropsychology.github.io/psycho.R/2018/05/10/interpret_mixed_models.html), May 10, 2018
+- [How to do Repeated Measures ANOVAs in R](https://neuropsychology.github.io/psycho.R/2018/05/01/repeated_measure_anovas.html), May 1, 2018
+- [Standardize (Z-score) a dataframe](https://neuropsychology.github.io/psycho.R/2018/03/29/standardize.html), Mar 29, 2018
+- [Compute Signal Detection Theory Indices with R](https://neuropsychology.github.io/psycho.R/2018/03/29/SDT.html), Mar 29, 2018
+
+
+
+<!-- ```{r, out.width = "500px", echo = FALSE, eval = TRUE, fig.align='center'} -->
+<!-- knitr::include_graphics("media/conf3.jpg") -->
+<!-- ``` -->

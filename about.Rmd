@@ -49,7 +49,7 @@ You can download my **full CV** with the following links:
 <!-- <p align="center">*Certifications*</p> -->
 
 <!-- <p align="center">*Trainings*</p> -->
-#### Trainings
+#### Additional Trainings
 
 - Teaching
     - Academic Teaching (2017, University of Sorbonne Paris Cité, France)
@@ -69,8 +69,12 @@ You can download my **full CV** with the following links:
 - Programming
     - P4N 2016: Python for Neuroscience (and Psychology) (2016, University of Nottingham, UK)
     - Scientific Programming with Python and Software Engineering Best Practices (2016, Telecom ParisTech, France)
+- Miscellaneous
+    - History of Arts (2017-2018, École du Louvre, Paris)
+    
     
 #### Technical Skills
+
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}

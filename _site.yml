@@ -15,7 +15,7 @@ navbar:
       href: packages.html
     - text: "Teaching"
       icon: fa-graduation-cap
-      href: courses.html
+      href: teaching.html
     - text: "Blog"
       icon: fa-rss
       href: https://biblineuropsy.com/

@@ -18,21 +18,10 @@ bibliography: homepage.bib
 
 
 
-I'm the author of 3 open-source packages, respectively devoted to experiment creation, signal processing and statistics.
+I'm the author of 3 open-source packages, respectively devoted to statistics, signal processing and experiment creation.
 
 ----------------
 
-```{r, out.width = 300, echo = FALSE, fig.align='center'}
-knitr::include_graphics("media/neuropsydia.png")
-# USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
-```
-
-
-### **Neuropsydia**
-  - A Python Module for Creating Experiments, Tasks and Questionnaires.
-  - [https://github.com/neuropsychology/Neuropsydia.py](https://github.com/neuropsychology/Neuropsydia.py)
-    
-----------------
 
 
 ```{r, out.width = 300, echo = FALSE, fig.align='center'}
@@ -55,7 +44,20 @@ knitr::include_graphics("media/psycho.png")
 
 ### **Psycho**
   - An R package for Efficient and Publishing-Oriented Workflow for Psychological Science.
+  - [Blog](https://neuropsychology.github.io/psycho.R/)
   - [https://github.com/neuropsychology/psycho.R](https://github.com/neuropsychology/psycho.R)
     
 ----------------
 
+
+```{r, out.width = 300, echo = FALSE, fig.align='center'}
+knitr::include_graphics("media/neuropsydia.png")
+# USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github.
+```
+
+
+### **Neuropsydia**
+  - A Python Module for Creating Experiments, Tasks and Questionnaires.
+  - [https://github.com/neuropsychology/Neuropsydia.py](https://github.com/neuropsychology/Neuropsydia.py)
+    
+----------------

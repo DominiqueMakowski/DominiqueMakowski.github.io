@@ -1,5 +1,6 @@
 ---
 title: "Research."
+output: pdf_document
 bibliography: homepage.bib
 ---
 
@@ -13,8 +14,7 @@ bibliography: homepage.bib
 <!-- --------- -->
 
 <p align="center">
-```{r echo = FALSE, echo=FALSE, message=FALSE, warning=FALSE, echo=FALSE, fig.align='center', fig.cap="**My research wordcloud, based on the most frequent words of my papers (done using R).**"}
-library(stringr)
+```{r echo = FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap="**My research wordcloud, based on the most frequent words of my papers (done using R).**"}
 library(wordcloud2)
 library(pdftools)
 library(tidyverse)
@@ -24,11 +24,11 @@ replace_and_add <- function(data, target, add_to, delete=T){
   if (!add_to %in% data$word){
     data[nrow(data) + 1,] = c(add_to, 0)
   }
-  data <- data %>% 
+  data <- data %>%
     mutate(
       newfreq=freq[word==target],
       newfreq=replace(newfreq, !(word %in% c(add_to)), 0),
-      freq=as.numeric(freq)+as.numeric(newfreq)) %>% 
+      freq=as.numeric(freq)+as.numeric(newfreq)) %>%
     select(-newfreq)
 
   if (delete==T){
@@ -48,26 +48,26 @@ for (source in sources) {
 }
 
 text <- unlist(text)
-text <- paste(text, sep=" ", collapse="") 
+text <- paste(text, sep=" ", collapse="")
 text <- iconv(text, "UTF-8", "ASCII", sub="")
 
 
 text_clean <- tm::termFreq(text, control = list(removePunctuation = TRUE, tolower = TRUE, removeNumbers = TRUE, stopwords = TRUE, wordLengths = c(2, Inf)))
 
-data <- data.frame(word = rownames(as.matrix(text_clean)), freq = rowSums(as.matrix(text_clean))) %>% 
-  arrange(desc(freq)) %>% 
-  replace_and_add("er", "emotion", delete=F) %>% 
-  replace_and_add("er", "regulation") %>% 
-  replace_and_add("psychologie", "psychology") %>% 
-  replace_and_add("psychologique", "psychological") %>% 
-  replace_and_add("mditation", "meditation") %>% 
-  replace_and_add("ction", "fiction") %>% 
-  replace_and_add("ctional", "fiction") %>% 
+data <- data.frame(word = rownames(as.matrix(text_clean)), freq = rowSums(as.matrix(text_clean))) %>%
+  arrange(desc(freq)) %>%
+  replace_and_add("er", "emotion", delete=F) %>%
+  replace_and_add("er", "regulation") %>%
+  replace_and_add("psychologie", "psychology") %>%
+  replace_and_add("psychologique", "psychological") %>%
+  replace_and_add("mditation", "meditation") %>%
+  replace_and_add("ction", "fiction") %>%
+  replace_and_add("ctional", "fiction") %>%
   dplyr::mutate(length=stringr::str_length(word)) %>%
-  dplyr::filter(freq >  50) %>% 
-  dplyr::filter(freq < Inf) %>% 
+  dplyr::filter(freq >  50) %>%
+  dplyr::filter(freq < Inf) %>%
   dplyr::filter(length >= 4) %>%
-  dplyr::select(-length) %>% 
+  dplyr::select(-length) %>%
   dplyr::filter(!word %in% c("dans", "plus", "pour", "avec", "cette", "comme", "sont", "tion", "also", "france", "nature", "lhrdit"))
 
 
@@ -89,7 +89,7 @@ wordcloud2::wordcloud2(data, size = 0.5, color=colours, shape="circle")
 In 1896, the Lumière brothers presented a 50-seconds long movie of a train's arrival at a station. Intense fear and awe rose up among the audience, as if they could not believe that it was not a real train. Several decades later, the edges of our reality still continue to fade. Through virtual reality, augmented reality and new forms of fictions, simulations of all kind populate our everyday experience and challenge our intuitive *feeling* and *belief* concerning its reality. Understanding the neurocognitive processes underlying this sense of reality is what drives my research. This topic is heavily connected with others levels and states of the Self such as minimal consciousness, mindfulness, attentional absorption, presence or dreams and has an obvious echo in several neuropsychiatric diseases such as schizophrenia, PTSD or depersonalisation-derealization disorder. As it also shares a strong relationship with emotional processing, modifications of the sense of reality might be at stake in some forms of voluntary or involuntary emotion regulation mechanisms (such as distancing, decoupling, defusion, decentering or fictional reappraisal).
 
 
-More generally, my scientific interests also include the following topics: 
+More generally, my scientific interests also include the following topics:
 
 - **Emotion Regulation.** The unicity and diversity of emotion regulation strategies, its structure and alteration in neuropsychiatric diseases.
 - **Consciousness.** The different levels and states of consciousness and their neural correlates.
@@ -106,27 +106,24 @@ More generally, my scientific interests also include the following topics:
 
 
 
-
-<!-- <p align="center">*Citations & Publications*</p> -->
-
-
-
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.align='center', fig.cap="**Cumulative citations and publication number, automatically scrapped from Google Scholar.**"}
+library(tidyverse)
+library(ggplot2)
 library(plotly)
 library(scholar)
-library(tidyverse)
 
-stats <- scholar::get_publications("bg0BZ-QAAAAJ", flush=T) %>% 
-  filter(year > 1950) %>% 
+
+stats <- scholar::get_publications("bg0BZ-QAAAAJ", flush=T) %>%
+  dplyr::filter(year > 1950) %>%
   dplyr::group_by(year) %>%
   dplyr::summarise(Publications = n(),
-            Citations = sum(cites)) %>% 
-  mutate(Publications = cumsum(Publications),
-         Citations = cumsum(Citations)) %>% 
-  dplyr::rename(Year=year) %>% 
-  gather(Index, Number, -Year)
+            Citations = sum(cites)) %>%
+  dplyr::mutate(Publications = cumsum(Publications),
+         Citations = cumsum(Citations)) %>%
+  dplyr::rename(Year=year) %>%
+  tidyr::gather(Index, Number, -Year)
 
-p <- stats %>% 
+p <- stats %>%
   ggplot(aes(x=Year, y=Number, colour=Index)) +
   geom_line(size=1) +
   theme_bw()  +
@@ -135,24 +132,35 @@ p <- stats %>%
   facet_wrap(~Index, scales="free") + theme(strip.background = element_blank(),
                                             strip.text.y = element_blank(),
                                             legend.position="none")
-# p
-ggplotly(p)
+
+# ggplotly(p)
+p
 ```
 
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
+stats <- scholar::get_profile("bg0BZ-QAAAAJ")
+n_pub <- scholar::get_num_articles("bg0BZ-QAAAAJ")
+n_cit <- sum(scholar::get_citation_history("bg0BZ-QAAAAJ")$cites)
 
+knitr::kable(data.frame(n_publications=n_pub,
+                 `n_citations`=n_cit,
+                 `h_index`=stats$h_index,
+                 `i10_index`=stats$h_index),
+             caption = "Summary")
+```
 
 
 ---------
 
 # Publications
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', include=FALSE}
 library(slickR)
 # library(imager)
 # library(stringr)
 
 height_image <- 200
-image_list <- c("media/makowski2017_Fig.png", 
+image_list <- c("media/makowski2017_Fig.png",
                 "media/sperduti2017_Fig.png",
                 "media/makowski2015_Fig.jpg",
                 "media/makowski2018.PNG")
@@ -193,7 +201,7 @@ slickR::slickR(obj = image_list,
 
 <p align="center">*2018*</p>
 
-**Makowski, D** (2018). [The psycho Package: an Efficient and Publishing-Oriented Workflow for Psychological Science](https://dominiquemakowski.github.io/papers/makowski2018.pdf). *Journal of Open Source Software*, 3(22), 470.
+**Makowski, D** (2018). [The psycho Package: An Efficient and Publishing-Oriented Workflow for Psychological Science](https://dominiquemakowski.github.io/papers/makowski2018.pdf). *Journal of Open Source Software*, 3(22), 470.
 
 
 <p align="center">*2017*</p>
@@ -230,7 +238,8 @@ Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemai
 
 # Public Popularisation
 
-- Public Debate, [*Art & science discussion on sensory illusions*](http://www.facts-bordeaux.fr/FESTIVAL/Programme/Agenda-2017/Rencards-du-savoir-Les-illusions-sensorielles). 24 November 2017, Bordeaux,France.
+- Pint of Science, ["Back to the Matrix : pilule bleue ou rouge ?"](https://pintofscience.fr/event/back-to-the-matrix--pilule-bleue-ou-rouge-). 16 May 2018, Paris, France.
+- Public Debate, [*Art & science discussion on sensory illusions*](http://www.facts-bordeaux.fr/FESTIVAL/Programme/Agenda-2017/Rencards-du-savoir-Les-illusions-sensorielles). 24 November 2017, Bordeaux, France.
 - Magazine, [*Neuroanatomie de la réalité : quand le réel n’est plus*](https://biblineuropsy.com/2016/04/19/les-yeux-brouilles/). 2016, Les yeux brouillés, 1, 48-55.
 - National TV, [*The effect of violent images on the brain and body*](https://www.youtube.com/watch?v=ihGs1V9kz4w). 2015, Testé sous contrôle médical, France 4
 - Online journal, [*”Avengers, l’ère d’Ultron” en 3D : aussitôt vu, aussitôt oublié ?*](http://blog.francetvinfo.fr/actu-cine/2015/05/07/avengers-lere-dultron-en-3d-aussitot-vu-aussitot-oublie.html) 2015, francetvinfos.fr
@@ -263,21 +272,21 @@ Sperduti, M., **Makowski, D.** & Piolino, P. (2017). *The Role of Self-Relevance
 
 **Makowski, D.**, Sperduti, M. & Piolino, P. (2016). *Does Mindfulness ability differently affect Implicit and Explicit Emotion Regulation?* 2nd International Conference on Mindfulness (ICM), 11-15 May, Roma, Italy.
 
-Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does mindfulness enhances interoception? Dissociation between different interoceptive abilities*. 2nd International Conference on Mindfulness, 11-15 May, Roma, Italy.
+Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does mindfulness enhance interoception? Dissociation between different interoceptive abilities*. 2nd International Conference on Mindfulness, 11-15 May, Roma, Italy.
 
 <p align="center">*2015*</p>
 
-**Makowski, D.**, Sperduti, M. & Piolino, P. (2015). *Bon et Mauvais Régulateurs Emotionnels: Un RôleSpécifique de l’Inhibition ?* 56è Congrès National de la Société Française de Psychologie (SFP), 2-4 September, Strasbourg, France.
- 
+**Makowski, D.**, Sperduti, M. & Piolino, P. (2015). *Bon et Mauvais Régulateurs Emotionnels: Un Rôle Spécifique de l’Inhibition ?* 56è Congrès National de la Société Française de Psychologie (SFP), 2-4 September, Strasbourg, France.
+
 **Makowski, D.**, Sperduti, M., Pelletier, J. & Piolino, P. (2015). *Régulation émotionnelle et Self Control : De la recherche Fondamentale à l’Application Clinique*. 1er Congrès Francophone de TCC, 27-29 May, Lyon, France.
 
 <p align="center">*2014*</p>
- 
+
 **Makowski, D.**, Sperduti, M., Arcangeli, M., Pelletier, J. & Piolino, P. (2014). *From Philosophy to the Rehabilitation of Psychiatric Patients: Fiction/Reality, Emotion et Cognitive Control*. Journée d’hiver de l’IUPDP, 19 December, Boulogne-Billancourt, France.
- 
+
 **Makowski, D.**, Sperduti, M. & Piolino, P. (2014). *L’émotion face à la fiction : l’étude de patientsschizophrènes éclaire le paradoxe de la fiction*. 27 June, Fête de la Recherche, Boulogne-Billancourt,France.
- 
+
 <p align="center">*2013*</p>
- 
+
 **Makowski, D.**, & Rossi, S. (2013). [*Le jugement esthétique chez l’enfant*](https://www.youtube.com/watch?v=Hvs7t5G_dLM). Journées Neurosciences, Esthétique, et Complexité, 28 September, Paris, France.
 
