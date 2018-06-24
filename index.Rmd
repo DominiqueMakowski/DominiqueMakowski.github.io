@@ -21,7 +21,7 @@ knitr::include_graphics("media/paris_bw.png")
 
 ---------------
 <p align="center">
-**`r emo::ji("warning")` Looking for postdoc opportunities (*my current contract ends in June 2018*) `r emo::ji("warning")`**
+**`r emo::ji("warning")` Looking for postdoc opportunities (*my current contract ends in August 2018*) `r emo::ji("warning")`**
 </p>
 ---------------
 

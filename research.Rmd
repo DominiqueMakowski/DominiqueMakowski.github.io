@@ -1,6 +1,6 @@
 ---
 title: "Research."
-output: pdf_document
+output: html_document
 bibliography: homepage.bib
 ---
 
@@ -111,6 +111,8 @@ library(tidyverse)
 library(ggplot2)
 library(plotly)
 library(scholar)
+library(webshot)
+ 
 
 
 stats <- scholar::get_publications("bg0BZ-QAAAAJ", flush=T) %>%
@@ -250,6 +252,8 @@ Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemai
 # Talks
 
 <p align="center">*2018*</p>
+
+**Makowski, D.**, Sperduti, M., Nicolas, S. & Piolino, P. (2017). *Interindividual Determinants of Emotion Regulation through Fiction*. 2ème Congrès Francophone de TCC, 14-16 June, Geneva, Switzerland.
 
 **Makowski, D.** (2018, *invited*). *How Reality can Modulate Memory and Emotions*. CRPCPO's monthly seminar, 23 March, Amiens, France.
 

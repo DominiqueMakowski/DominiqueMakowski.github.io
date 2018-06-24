@@ -30,7 +30,7 @@ navbar:
       icon: fa-linkedin
       href: https://www.linkedin.com/in/dominiquemakowski/
     - text: "RG"
-      # icon: fa-rocket
+      # icon: fa-researchgate
       href: https://www.researchgate.net/profile/Dominique_Makowski
 output:
   html_document:

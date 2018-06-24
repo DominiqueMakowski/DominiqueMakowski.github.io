@@ -33,7 +33,9 @@
 <script src="site_libs/slick-1.6.0/slick/slick.min.js"></script>
 <link href="site_libs/slickR-0.0.1/slickR.css" rel="stylesheet" />
 <script src="site_libs/slickR-binding-0.2.4/slickR.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -101,6 +103,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -272,8 +277,8 @@ $(document).ready(function () {
 <!-- --------- -->
 <p align="center">
 <div class="figure" style="text-align: center">
-<div id="htmlwidget-bfd9b7eb0c0f1bdb8c73" style="width:672px;height:480px;" class="wordcloud2 html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bfd9b7eb0c0f1bdb8c73">{"x":{"word":["memory","emotion","emotional","presence","cognitive","study","fatigue","attentional","condition","attention","binet","mental","studies","meditation","participants","ribot","encoding","paris","aging","effect","results","executive","work","regulation","real","presented","negative","psychology","journal","intensity","cognition","showed","reported","nicolas","response","virtual","psychol","task","control","subjective","brain","experience","episodic","experimental","scenes","stimuli","using","source","sperduti","positive","processes","signicant","scores","makowski","adults","neuroscience","stimulus","functions","time","valence","reappraisal","compared","university","model","psychological","fiction"],"freq":[334,258,156,155,151,131,129,125,123,121,115,114,114,180,112,112,111,103,101,100,100,96,96,146,88,87,85,238,83,77,76,75,71,70,70,70,68,68,67,67,65,64,63,61,61,61,61,60,60,59,59,59,58,57,56,56,56,55,55,55,54,53,53,52,108,156],"fontFamily":"Segoe UI","fontWeight":"bold","color":["#f44336","#E91E63","#9C27B0","#673AB7","#3F51B5","#2196F3","#03A9F4","#00BCD4","#009688","#4CAF50","#8BC34A","#CDDC39","#FFEB3B","#FFC107","#FF9800","#FF5722","#795548","#9E9E9E","#607D8B"],"minSize":0,"weightFactor":0.269461077844311,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+<div id="htmlwidget-048152eb4c24b4a6a305" style="width:672px;height:480px;" class="wordcloud2 html-widget"></div>
+<script type="application/json" data-for="htmlwidget-048152eb4c24b4a6a305">{"x":{"word":["memory","emotion","emotional","presence","cognitive","study","fatigue","attentional","condition","attention","binet","mental","studies","meditation","participants","ribot","encoding","paris","aging","effect","results","executive","work","regulation","real","presented","negative","psychology","journal","intensity","cognition","showed","reported","nicolas","response","virtual","psychol","task","control","subjective","brain","experience","episodic","experimental","scenes","stimuli","using","source","sperduti","positive","processes","signicant","scores","makowski","adults","neuroscience","stimulus","functions","time","valence","reappraisal","compared","university","model","psychological","fiction"],"freq":[334,258,156,155,151,131,129,125,123,121,115,114,114,180,112,112,111,103,101,100,100,96,96,146,88,87,85,238,83,77,76,75,71,70,70,70,68,68,67,67,65,64,63,61,61,61,61,60,60,59,59,59,58,57,56,56,56,55,55,55,54,53,53,52,108,156],"fontFamily":"Segoe UI","fontWeight":"bold","color":["#f44336","#E91E63","#9C27B0","#673AB7","#3F51B5","#2196F3","#03A9F4","#00BCD4","#009688","#4CAF50","#8BC34A","#CDDC39","#FFEB3B","#FFC107","#FF9800","#FF5722","#795548","#9E9E9E","#607D8B"],"minSize":0,"weightFactor":0.269461077844311,"backgroundColor":"white","gridSize":0,"minRotation":-0.785398163397448,"maxRotation":0.785398163397448,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
 <p class="caption">
 <strong>My research wordcloud, based on the most frequent words of my papers (done using R).</strong>
 </p>
@@ -316,9 +321,9 @@ $(document).ready(function () {
 <tbody>
 <tr class="odd">
 <td align="right">13</td>
-<td align="right">30</td>
-<td align="right">3</td>
-<td align="right">3</td>
+<td align="right">35</td>
+<td align="right">4</td>
+<td align="right">4</td>
 </tr>
 </tbody>
 </table>
@@ -369,6 +374,7 @@ $(document).ready(function () {
 <p align="center">
 <em>2018</em>
 </p>
+<p><strong>Makowski, D.</strong>, Sperduti, M., Nicolas, S. &amp; Piolino, P. (2017). <em>Interindividual Determinants of Emotion Regulation through Fiction</em>. 2ème Congrès Francophone de TCC, 14-16 June, Geneva, Switzerland.</p>
 <p><strong>Makowski, D.</strong> (2018, <em>invited</em>). <em>How Reality can Modulate Memory and Emotions</em>. CRPCPO’s monthly seminar, 23 March, Amiens, France.</p>
 <p><strong>Makowski, D.</strong>, Sperduti, M., Nicolas, S. &amp; Piolino, P. (2018). <em>Engagement in Fiction as an Altered State of Consciousness</em>. 6th Mind, Brain &amp; Body Symposium, 15-16 March, Berlin, Germany.</p>
 <p align="center">
