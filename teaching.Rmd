@@ -64,6 +64,13 @@ My technical expertise covers the following topics (see [CV](https://dominiquema
 
 ### Statistics
 
+- [The end of errors in ANOVA reporting](https://neuropsychology.github.io/psycho.R/2018/07/20/analyze_anova.html), July 20, 2018
+- [Variable vs. Participant-wise Standardization](https://neuropsychology.github.io/psycho.R/2018/07/14/standardize_grouped_df.html), July 14, 2018
+- [Formatted Correlation with Effect Size](https://neuropsychology.github.io/psycho.R/2018/06/28/analyze_correlation.html), June 28, 2018
+- [Extracting a Reference Grid of your Data for Machine Learning Models Visualization](https://neuropsychology.github.io/psycho.R/2018/06/25/refdata.html), June 25, 2018
+- [Copy/paste t-tests Directly to Manuscripts](https://neuropsychology.github.io/psycho.R/2018/06/19/analyze_ttest.html), June 19, 2018
+- [Easy APA Formatted Bayesian Correlation](https://neuropsychology.github.io/psycho.R/2018/06/11/bayesian_correlation.html), June 11, 2018
+- [Fancy Plot (with Posterior Samples) for Bayesian Regressions](https://neuropsychology.github.io/psycho.R/2018/06/03/plot_bayesian_model.html), June 3, 2018
 - [How Many Factors to Retain in Factor Analysis](https://neuropsychology.github.io/psycho.R/2018/05/24/n_factors.html), May 24, 2018
 - [Beautiful and Powerful Correlation Tables in R](https://neuropsychology.github.io/psycho.R/2018/05/20/correlation.html), May 20, 2018
 - [Format and Interpret Linear Mixed Models](https://neuropsychology.github.io/psycho.R/2018/05/10/interpret_mixed_models.html), May 10, 2018

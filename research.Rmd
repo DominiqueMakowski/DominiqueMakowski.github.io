@@ -2,6 +2,8 @@
 title: "Research."
 output: html_document
 bibliography: homepage.bib
+editor_options: 
+  chunk_output_type: console
 ---
 
 --------------------
@@ -14,8 +16,8 @@ bibliography: homepage.bib
 <!-- --------- -->
 
 <p align="center">
-```{r echo = FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.cap="**My research wordcloud, based on the most frequent words of my papers (done using R).**"}
-library(wordcloud2)
+```{r echo = FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.align='center', fig.cap="**My research wordcloud, based on the most frequent words of my papers (done using R).**"}
+library(ggwordcloud)
 library(pdftools)
 library(tidyverse)
 
@@ -58,26 +60,41 @@ data <- data.frame(word = rownames(as.matrix(text_clean)), freq = rowSums(as.mat
   arrange(desc(freq)) %>%
   replace_and_add("er", "emotion", delete=F) %>%
   replace_and_add("er", "regulation") %>%
+  replace_and_add("emotional", "emotion") %>%
   replace_and_add("psychologie", "psychology") %>%
   replace_and_add("psychologique", "psychological") %>%
   replace_and_add("mditation", "meditation") %>%
   replace_and_add("ction", "fiction") %>%
   replace_and_add("ctional", "fiction") %>%
   dplyr::mutate(length=stringr::str_length(word)) %>%
-  dplyr::filter(freq >  50) %>%
+  dplyr::filter(freq > 30) %>%
   dplyr::filter(freq < Inf) %>%
   dplyr::filter(length >= 4) %>%
   dplyr::select(-length) %>%
-  dplyr::filter(!word %in% c("dans", "plus", "pour", "avec", "cette", "comme", "sont", "tion", "also", "france", "nature", "lhrdit"))
+  dplyr::filter(!word %in% c("dans", "plus", "pour", "avec", "cette", "comme", "sont", "tion", "also", "france", "nature", "lhrdit")) %>% 
+  mutate(word = stringi::stri_trans_general(word, "latin-ascii"))
 
 
-data$word <- stringi::stri_trans_general(data$word, "latin-ascii")
-# colours <- rep(c("#f44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#2196F3", "#03A9F4", "#00BCD4", "#009688", "#4CAF50", "#8BC34A", "#CDDC39", "#FFEB3B", "#FFC107", "#FF9800", "#FF5722", "#795548", "#9E9E9E", "#607D8B"), length.out = nrow(data))
-colours <- c("#f44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#2196F3", "#03A9F4", "#00BCD4", "#009688", "#4CAF50", "#8BC34A", "#CDDC39", "#FFEB3B", "#FFC107", "#FF9800", "#FF5722", "#795548", "#9E9E9E", "#607D8B")
+colours <- c("#f44336", "#E91E63", "#9C27B0", "#673AB7", "#3F51B5", "#2196F3", "#03A9F4", "#00BCD4", "#009688", "#4CAF50", "#8BC34A", "#CDDC39", "#FFEB3B", "#FFC107", "#FF9800", "#FF5722", "#795548", "#9E9E9E")
+colours <- c(colours, rep("#607D8B", length.out=nrow(data)-length(colours)))
 
 
-# wordcloud2(data, size = 0.25, color=colours, figPath = "media/brain.png")
-wordcloud2::wordcloud2(data, size = 0.5, color=colours, shape="circle")
+data %>% 
+  arrange(desc(freq)) %>% 
+  mutate(word = factor(word, unique(word)),
+         colours = colours, 
+         angle = 45/3 * sample(-2:2, n(), replace = TRUE, prob = c(1, 1, 4, 1, 1))) %>% 
+  ggplot(aes(label = word, size = freq, color=word, angle = angle)) +
+  scale_color_manual(values=colours) +
+  geom_text_wordcloud(
+    grid_margin=0.5,
+    area_corr = TRUE,
+    area_corr_power = 1,
+    mask = png::readPNG("media/brain.png"),
+    rm_outside = TRUE
+    ) +
+  scale_size_area(max_size = 13) +
+  theme_minimal()
 ```
 </p>
 
@@ -125,18 +142,25 @@ stats <- scholar::get_publications("bg0BZ-QAAAAJ", flush=T) %>%
   dplyr::rename(Year=year) %>%
   tidyr::gather(Index, Number, -Year)
 
+
+
 p <- stats %>%
   ggplot(aes(x=Year, y=Number, colour=Index)) +
   geom_line(size=1) +
-  theme_bw()  +
-  scale_x_continuous(breaks = seq(min(stats$Year), max(stats$Year), by = 1)) +
+  theme_classic()  +
+  ylab("") +
+  # scale_x_continuous(breaks = seq(min(stats$Year), max(stats$Year), by = 1)) +
   scale_color_manual(values=c("#E91E63", "#2196F3")) +
-  facet_wrap(~Index, scales="free") + theme(strip.background = element_blank(),
-                                            strip.text.y = element_blank(),
-                                            legend.position="none")
-
-# ggplotly(p)
-p
+  facet_wrap(~Index, scales="free", strip.position = "left") + 
+  theme(strip.background = element_blank(),
+        strip.placement = "outside",
+        # strip.text.y = element_blank(),
+        strip.text = element_text(face="bold", size=10),
+        axis.title = element_text(face="bold", size=10),
+        legend.position="none")
+# p
+plotly::ggplotly(p)
+# p
 ```
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
@@ -156,13 +180,14 @@ knitr::kable(data.frame(n_publications=n_pub,
 
 # Publications
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', include=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', include=TRUE}
 library(slickR)
 # library(imager)
 # library(stringr)
 
 height_image <- 200
-image_list <- c("media/makowski2017_Fig.png",
+image_list <- c("media/makowski2019_Fig.png",
+                "media/makowski2017_Fig.png",
                 "media/sperduti2017_Fig.png",
                 "media/makowski2015_Fig.jpg",
                 "media/makowski2018.PNG")
@@ -191,15 +216,24 @@ slickR::slickR(obj = image_list,
                  centerMode=T
                  # customPaging = cP1
                  ),
-               objLinks = list(list("https://dominiquemakowski.github.io/papers/makowski2017.pdf",
-                                'https://dominiquemakowski.github.io/papers/sperduti2017.pdf',
-                                "https://dominiquemakowski.github.io/papers/makowski2015.pdf",
-                                "https://dominiquemakowski.github.io/papers/makowski2018.pdf"))
+               objLinks = list(list(
+                 "https://dominiquemakowski.github.io/papers/makowski2019.pdf",
+                 "https://dominiquemakowski.github.io/papers/makowski2017.pdf",
+                 'https://dominiquemakowski.github.io/papers/sperduti2017.pdf',
+                 "https://dominiquemakowski.github.io/papers/makowski2015.pdf",
+                 "https://dominiquemakowski.github.io/papers/makowski2018.pdf"))
                )
 
 ```
 
 -------------
+
+
+<p align="center">*2019*</p>
+
+**Makowski, D.**, Sperduti, M., Pelletier, J., Blondé, P., La Corte, V., Arcangeli, M., Zalla, T., Lemaire, S., Dokic, J., Nicolas, S., & Piolino, P. (*in press*). Phenomenal, Bodily and Brain Correlates of Fictional Reappraisal as an Implicit Emotion Regulation Strategy. *Cognitive, Affective, & Behavioral Neuroscience*.
+
+**Makowski, D.**\*, Sperduti, M.\*, Lavallée, S., Nicolas, S. & Piolino, P. (2019). [Dispositional mindfulness attenuates the emotional attentional blink](https://dominiquemakowski.github.io/papers/makowski2019.pdf). *Consciousness & Cognition*, 67, 16–25.
 
 <p align="center">*2018*</p>
 
@@ -293,4 +327,19 @@ Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does mindfulness enhance i
 <p align="center">*2013*</p>
 
 **Makowski, D.**, & Rossi, S. (2013). [*Le jugement esthétique chez l’enfant*](https://www.youtube.com/watch?v=Hvs7t5G_dLM). Journées Neurosciences, Esthétique, et Complexité, 28 September, Paris, France.
+
+
+---------
+
+# Coauthors and Collaborations
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=13, fig.width=13, fig.align='center', include=TRUE, fig.cap="*Based on the Google Scholar list, thus not 100% accurate.*"}
+library(scholar)
+
+coauthors <- scholar::get_coauthors("bg0BZ-QAAAAJ", n_coauthors=5, n_deep=2)
+p <- scholar::plot_coauthors(coauthors)
+p
+```
+
 

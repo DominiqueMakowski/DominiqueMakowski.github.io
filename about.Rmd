@@ -72,65 +72,65 @@ You can download my **full CV** with the following links:
 - Miscellaneous
     - History of Arts (2017-2018, École du Louvre, Paris)
     
-    
-#### Technical Skills
+
+<!-- #### Technical Skills -->
 
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'}
-library(tidyverse)
-library(plotly)
+<!-- ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'} -->
+<!-- library(tidyverse) -->
+<!-- library(plotly) -->
 
-df <- data.frame(Skill = c("ERP", "Complexity", "Time / Frequency", "Source Reconstruction", 
-                           "Functional MRI", "Structural MRI", "Connectivity",
-                           "EDA", "ECG", "EMG", "BVP / PPG",
-                           "Mixed-Modelling", "Bayesian Analyses", "Structural Equation Modelling", "Machine Learning", "Network Theory",
-                           "R", "Python", "Matlab", "Julia"), 
-           Efficiency = c(100, 80, 75, 40, 
-                          30, 20, 15,
-                          100, 100, 100, 100,
-                          100, 100, 95, 90, 50,
-                          100, 100, 80, 70),
-           Area = c("EEG", "EEG", "EEG", "EEG",
-                    "MRI", "MRI", "MRI",
-                    "Biosignals", "Biosignals", "Biosignals", "Biosignals",
-                    "Statistics", "Statistics", "Statistics", "Statistics", "Statistics",
-                    "Programming", "Programming", "Programming", "Programming")) %>% 
-  mutate(Skill = factor(Skill, levels=c("EDA", "ECG", "EMG", "BVP / PPG",
-                                        "ERP", "Complexity", "Time / Frequency", "Source Reconstruction", 
-                                        "Functional MRI", "Structural MRI", "Connectivity",
-                                        "Mixed-Modelling", "Bayesian Analyses", "Structural Equation Modelling", "Machine Learning", "Network Theory",
-                                        "R", "Python", "Matlab", "Julia")),
-         Area = factor(Area, levels=c("Biosignals", "EEG", "MRI", "Statistics", "Programming")),
-         Efficiency = as.numeric(Efficiency))
+<!-- df <- data.frame(Skill = c("ERP", "Complexity", "Time / Frequency", "Source Reconstruction",  -->
+<!--                            "Functional MRI", "Structural MRI", "Connectivity", -->
+<!--                            "EDA", "ECG", "EMG", "BVP / PPG", -->
+<!--                            "Mixed-Modelling", "Bayesian Analyses", "Structural Equation Modelling", "Machine Learning", "Network Theory", -->
+<!--                            "R", "Python", "Matlab", "Julia"),  -->
+<!--            Efficiency = c(100, 80, 75, 40,  -->
+<!--                           30, 20, 15, -->
+<!--                           100, 100, 100, 100, -->
+<!--                           100, 100, 95, 90, 50, -->
+<!--                           100, 100, 80, 70), -->
+<!--            Area = c("EEG", "EEG", "EEG", "EEG", -->
+<!--                     "MRI", "MRI", "MRI", -->
+<!--                     "Biosignals", "Biosignals", "Biosignals", "Biosignals", -->
+<!--                     "Statistics", "Statistics", "Statistics", "Statistics", "Statistics", -->
+<!--                     "Programming", "Programming", "Programming", "Programming")) %>%  -->
+<!--   mutate(Skill = factor(Skill, levels=c("EDA", "ECG", "EMG", "BVP / PPG", -->
+<!--                                         "ERP", "Complexity", "Time / Frequency", "Source Reconstruction",  -->
+<!--                                         "Functional MRI", "Structural MRI", "Connectivity", -->
+<!--                                         "Mixed-Modelling", "Bayesian Analyses", "Structural Equation Modelling", "Machine Learning", "Network Theory", -->
+<!--                                         "R", "Python", "Matlab", "Julia")), -->
+<!--          Area = factor(Area, levels=c("Biosignals", "EEG", "MRI", "Statistics", "Programming")), -->
+<!--          Efficiency = as.numeric(Efficiency)) -->
 
 
-p <- ggplot(df, aes(y=Efficiency, x=Skill, fill=Area, label=Skill)) + 
-  geom_bar(stat = "identity", color = "white") +
-  # geom_text(position = "stack", check_overlap=T) +
-  theme_minimal() +
-  coord_flip() +
-  # theme(axis.text.x = element_text(angle = -20, hjust=1)) +
-  # theme(axis.text.x = element_text(hjust=1)) +
-  # xlab("") +
-  
-  # coord_polar() +
-  scale_fill_manual(values=c("#E91E63", "#2196F3", "#4CAF50", "#FFC107", "#FF5722")) +
-  scale_y_continuous(breaks = NULL) +
-  theme(axis.title.y=element_blank(),
-        # axis.text.y=element_blank(),
-        panel.background = element_blank(),
-        # axis.ticks.y=element_blank(),
-        axis.title.x=element_blank(),
-        axis.text.x=element_blank()
-        # axis.ticks.x=element_blank(),
-        ) + 
-  guides(fill = guide_legend(reverse=T))
+<!-- p <- ggplot(df, aes(y=Efficiency, x=Skill, fill=Area, label=Skill)) +  -->
+<!--   geom_bar(stat = "identity", color = "white") + -->
+<!--   # geom_text(position = "stack", check_overlap=T) + -->
+<!--   theme_minimal() + -->
+<!--   coord_flip() + -->
+<!--   # theme(axis.text.x = element_text(angle = -20, hjust=1)) + -->
+<!--   # theme(axis.text.x = element_text(hjust=1)) + -->
+<!--   # xlab("") + -->
 
-p
-ggsave("Efficiency.png", p, dpi=300, height=4, width=8)
-# plotly::ggplotly(p)
-# as_widget(ggplotly(p))
-```
+<!--   # coord_polar() + -->
+<!--   scale_fill_manual(values=c("#E91E63", "#2196F3", "#4CAF50", "#FFC107", "#FF5722")) + -->
+<!--   scale_y_continuous(breaks = NULL) + -->
+<!--   theme(axis.title.y=element_blank(), -->
+<!--         # axis.text.y=element_blank(), -->
+<!--         panel.background = element_blank(), -->
+<!--         # axis.ticks.y=element_blank(), -->
+<!--         axis.title.x=element_blank(), -->
+<!--         axis.text.x=element_blank() -->
+<!--         # axis.ticks.x=element_blank(), -->
+<!--         ) +  -->
+<!--   guides(fill = guide_legend(reverse=T)) -->
+
+<!-- p -->
+<!-- # ggsave("Efficiency.png", p, dpi=300, height=4, width=8) -->
+<!-- # plotly::ggplotly(p) -->
+<!-- # as_widget(ggplotly(p)) -->
+<!-- ``` -->
 
 

@@ -22,9 +22,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -99,6 +98,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -113,7 +115,6 @@ body {
   padding-top: 69px;
   margin-top: -69px;
 }
-
 .section h2 {
   padding-top: 69px;
   margin-top: -69px;
@@ -133,6 +134,43 @@ body {
 .section h6 {
   padding-top: 69px;
   margin-top: -69px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -154,18 +192,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -243,6 +340,13 @@ $(document).ready(function () {
 </li>
 <li>
   <a href="https://www.researchgate.net/profile/Dominique_Makowski">RG</a>
+</li>
+<li>
+  <a href="https://twitter.com/Dom_Makowski">
+    <span class="fa fa-twitter"></span>
+     
+    
+  </a>
 </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -331,10 +435,57 @@ $(document).ready(function () {
 <li>History of Arts (2017-2018, École du Louvre, Paris)</li>
 </ul></li>
 </ul>
-</div>
-<div id="technical-skills" class="section level4">
-<h4>Technical Skills</h4>
-<p><img src="about_files/figure-html/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<!-- #### Technical Skills -->
+<!-- ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.align='center'} -->
+<!-- library(tidyverse) -->
+<!-- library(plotly) -->
+<!-- df <- data.frame(Skill = c("ERP", "Complexity", "Time / Frequency", "Source Reconstruction",  -->
+<!--                            "Functional MRI", "Structural MRI", "Connectivity", -->
+<!--                            "EDA", "ECG", "EMG", "BVP / PPG", -->
+<!--                            "Mixed-Modelling", "Bayesian Analyses", "Structural Equation Modelling", "Machine Learning", "Network Theory", -->
+<!--                            "R", "Python", "Matlab", "Julia"),  -->
+<!--            Efficiency = c(100, 80, 75, 40,  -->
+<!--                           30, 20, 15, -->
+<!--                           100, 100, 100, 100, -->
+<!--                           100, 100, 95, 90, 50, -->
+<!--                           100, 100, 80, 70), -->
+<!--            Area = c("EEG", "EEG", "EEG", "EEG", -->
+<!--                     "MRI", "MRI", "MRI", -->
+<!--                     "Biosignals", "Biosignals", "Biosignals", "Biosignals", -->
+<!--                     "Statistics", "Statistics", "Statistics", "Statistics", "Statistics", -->
+<!--                     "Programming", "Programming", "Programming", "Programming")) %>%  -->
+<!--   mutate(Skill = factor(Skill, levels=c("EDA", "ECG", "EMG", "BVP / PPG", -->
+<!--                                         "ERP", "Complexity", "Time / Frequency", "Source Reconstruction",  -->
+<!--                                         "Functional MRI", "Structural MRI", "Connectivity", -->
+<!--                                         "Mixed-Modelling", "Bayesian Analyses", "Structural Equation Modelling", "Machine Learning", "Network Theory", -->
+<!--                                         "R", "Python", "Matlab", "Julia")), -->
+<!--          Area = factor(Area, levels=c("Biosignals", "EEG", "MRI", "Statistics", "Programming")), -->
+<!--          Efficiency = as.numeric(Efficiency)) -->
+<!-- p <- ggplot(df, aes(y=Efficiency, x=Skill, fill=Area, label=Skill)) +  -->
+<!--   geom_bar(stat = "identity", color = "white") + -->
+<!--   # geom_text(position = "stack", check_overlap=T) + -->
+<!--   theme_minimal() + -->
+<!--   coord_flip() + -->
+<!--   # theme(axis.text.x = element_text(angle = -20, hjust=1)) + -->
+<!--   # theme(axis.text.x = element_text(hjust=1)) + -->
+<!--   # xlab("") + -->
+<!--   # coord_polar() + -->
+<!--   scale_fill_manual(values=c("#E91E63", "#2196F3", "#4CAF50", "#FFC107", "#FF5722")) + -->
+<!--   scale_y_continuous(breaks = NULL) + -->
+<!--   theme(axis.title.y=element_blank(), -->
+<!--         # axis.text.y=element_blank(), -->
+<!--         panel.background = element_blank(), -->
+<!--         # axis.ticks.y=element_blank(), -->
+<!--         axis.title.x=element_blank(), -->
+<!--         axis.text.x=element_blank() -->
+<!--         # axis.ticks.x=element_blank(), -->
+<!--         ) +  -->
+<!--   guides(fill = guide_legend(reverse=T)) -->
+<!-- p -->
+<!-- # ggsave("Efficiency.png", p, dpi=300, height=4, width=8) -->
+<!-- # plotly::ggplotly(p) -->
+<!-- # as_widget(ggplotly(p)) -->
+<!-- ``` -->
 </div>
 </div>
 

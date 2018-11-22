@@ -1,0 +1,57 @@
+---
+title: "Research."
+output: html_document
+bibliography: homepage.bib
+editor_options: 
+  chunk_output_type: console
+---
+
+--------------------
+
+<!-- ```{r, out.width = "400px", echo = FALSE, eval = TRUE, fig.align='center'} -->
+<!-- knitr::include_graphics("media/braincloud.png") -->
+
+<!-- # USE rmarkdown::render_site(encoding = "UTF-8") to render the website. Then push with github. -->
+<!-- ``` -->
+<!-- --------- -->
+
+<p align="center">
+<div class="figure" style="text-align: center">
+<img src="research_files/figure-html/unnamed-chunk-1-1.png" alt="**My research wordcloud, based on the most frequent words of my papers (done using R).**" width="960" />
+<p class="caption">**My research wordcloud, based on the most frequent words of my papers (done using R).**</p>
+</div>
+</p>
+
+----------------
+
+# Research Topics
+
+
+In 1896, the Lumière brothers presented a 50-seconds long movie of a train's arrival at a station. Intense fear and awe rose up among the audience, as if they could not believe that it was not a real train. Several decades later, the edges of our reality still continue to fade. Through virtual reality, augmented reality and new forms of fictions, simulations of all kind populate our everyday experience and challenge our intuitive *feeling* and *belief* concerning its reality. Understanding the neurocognitive processes underlying this sense of reality is what drives my research. This topic is heavily connected with others levels and states of the Self such as minimal consciousness, mindfulness, attentional absorption, presence or dreams and has an obvious echo in several neuropsychiatric diseases such as schizophrenia, PTSD or depersonalisation-derealization disorder. As it also shares a strong relationship with emotional processing, modifications of the sense of reality might be at stake in some forms of voluntary or involuntary emotion regulation mechanisms (such as distancing, decoupling, defusion, decentering or fictional reappraisal).
+
+
+More generally, my scientific interests also include the following topics:
+
+- **Emotion Regulation.** The unicity and diversity of emotion regulation strategies, its structure and alteration in neuropsychiatric diseases.
+- **Consciousness.** The different levels and states of consciousness and their neural correlates.
+- **Neuropsychological Practice.** Developing tools that will improve the efficiency and accuracy of neuropsychological examination and diagnostic.
+- **Neuroaesthetics.** The cognitive processes involved in the aesthetic experience and judgement.
+- **Statistics, Programing and Methodology.** The application of cutting-edge statistical procedures (artificial intelligence) on neuropsychological data. Also interested in scientific good practises and reportability (with a special focus on open-access and reproducibility).
+- **History of Psychiatry/Neuroscience.** The origin of modern neuroscience and psychology, with a special focus on the romantic era and *La belle époque* (19-20th centuries).
+- **Philosophy.** Phenomenology, radical determinism, transhumanism as well as the links between oriental philosophies/religions (*e.g.,* Buddhism and Hinduism) and modern knowledge.
+
+
+---------
+
+# Impact
+
+
+
+
+
+
+
+
+
+
+
