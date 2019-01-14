@@ -186,11 +186,11 @@ library(slickR)
 # library(stringr)
 
 height_image <- 200
-image_list <- c("media/makowski2019_Fig.png",
+image_list <- c("media/makowski2019b_Fig.png",
+                "media/makowski2019_Fig.png",
                 "media/makowski2017_Fig.png",
                 "media/sperduti2017_Fig.png",
-                "media/makowski2015_Fig.jpg",
-                "media/makowski2018.PNG")
+                "media/makowski2018_Fig.PNG")
 
 
 # new_image_list <- c()
@@ -216,12 +216,12 @@ slickR::slickR(obj = image_list,
                  centerMode=T
                  # customPaging = cP1
                  ),
-               objLinks = list(list(
+               objLinks = list(
+                 "https://dominiquemakowski.github.io/papers/makowski2019.pdf",
                  "https://dominiquemakowski.github.io/papers/makowski2019.pdf",
                  "https://dominiquemakowski.github.io/papers/makowski2017.pdf",
                  'https://dominiquemakowski.github.io/papers/sperduti2017.pdf',
-                 "https://dominiquemakowski.github.io/papers/makowski2015.pdf",
-                 "https://dominiquemakowski.github.io/papers/makowski2018.pdf"))
+                 "https://dominiquemakowski.github.io/papers/makowski2018.pdf")
                )
 
 ```
@@ -229,9 +229,10 @@ slickR::slickR(obj = image_list,
 -------------
 
 
+
 <p align="center">*2019*</p>
 
-**Makowski, D.**, Sperduti, M., Pelletier, J., Blondé, P., La Corte, V., Arcangeli, M., Zalla, T., Lemaire, S., Dokic, J., Nicolas, S., & Piolino, P. (*in press*). Phenomenal, Bodily and Brain Correlates of Fictional Reappraisal as an Implicit Emotion Regulation Strategy. *Cognitive, Affective, & Behavioral Neuroscience*.
+**Makowski, D.**, Sperduti, M., Pelletier, J., Blondé, P., La Corte, V., Arcangeli, M., Zalla, T., Lemaire, S., Dokic, J., Nicolas, S., & Piolino, P. (2019). [Phenomenal, Bodily and Brain Correlates of Fictional Reappraisal as an Implicit Emotion Regulation Strategy](https://dominiquemakowski.github.io/papers/makowski2019b.pdf). *Cognitive, Affective, & Behavioral Neuroscience*, 1-21.
 
 **Makowski, D.**\*, Sperduti, M.\*, Lavallée, S., Nicolas, S. & Piolino, P. (2019). [Dispositional mindfulness attenuates the emotional attentional blink](https://dominiquemakowski.github.io/papers/makowski2019.pdf). *Consciousness & Cognition*, 67, 16–25.
 
@@ -272,7 +273,7 @@ Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemai
 
 ---------
 
-# Public Popularisation
+# General Audience / Media Coverage
 
 - Pint of Science, ["Back to the Matrix : pilule bleue ou rouge ?"](https://pintofscience.fr/event/back-to-the-matrix--pilule-bleue-ou-rouge-). 16 May 2018, Paris, France.
 - Public Debate, [*Art & science discussion on sensory illusions*](http://www.facts-bordeaux.fr/FESTIVAL/Programme/Agenda-2017/Rencards-du-savoir-Les-illusions-sensorielles). 24 November 2017, Bordeaux, France.
@@ -337,7 +338,7 @@ Sperduti, M., **Makowski, D.** & Piolino, P. (2016). *Does mindfulness enhance i
 ```{r echo=FALSE, message=FALSE, warning=FALSE, fig.height=13, fig.width=13, fig.align='center', include=TRUE, fig.cap="*Based on the Google Scholar list, thus not 100% accurate.*"}
 library(scholar)
 
-coauthors <- scholar::get_coauthors("bg0BZ-QAAAAJ", n_coauthors=5, n_deep=2)
+coauthors <- scholar::get_coauthors("bg0BZ-QAAAAJ", n_coauthors=5, n_deep=1)
 p <- scholar::plot_coauthors(coauthors)
 p
 ```

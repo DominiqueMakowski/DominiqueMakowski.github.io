@@ -1,7 +1,7 @@
 name: "Dominique Makowski" 
 output_dir: "."
 navbar:
-  title: "Dominique Makowski"                               
+  title: "Dr. Dominique Makowski"                               
   type: default
   left:
     - text: " About / CV"

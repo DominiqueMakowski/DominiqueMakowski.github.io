@@ -21,7 +21,7 @@ knitr::include_graphics("media/conf5.jpg")
 ---------
 
 
-I'm a neuropsychologist, psychotherapist & PhD student, currently living in Paris, France. I'm fluent in French, Polish, English, Python, and somehow good at pretending to speak Italian. My main figures of reference are Epictetus, Churchill and Batman. My interests are as broad as open-science, history of arts and transhumanism. My papers are available on the [research](https://dominiquemakowski.github.io/research.html) page `r emo::ji("raised_hands")`
+I'm a neuropsychologist & psychotherapist, currently living in Paris, France. I'm fluent in French, Polish, English, Python, and somehow good at pretending to speak Italian. My main figures of reference are Epictetus, Churchill and Batman. My interests are as broad as open-science, history of arts and transhumanism. My papers are available on the [research](https://dominiquemakowski.github.io/research.html) page `r emo::ji("raised_hands")`
 
 ---------
 
@@ -42,7 +42,7 @@ You can download my **full CV** with the following links:
 <!-- <p align="center">*Titles and Licenses*</p> -->
 #### Titles and Licenses
 
-
+- Doctor in Psychology (2018, University of Sorbonne Paris Cité, France)
 - Clinical Neuropsychologist (2014, University of Sorbonne Paris Cité, France)
 - Cognitive and Behavioural Psychotherapist (2017, AFTCC, France)
 

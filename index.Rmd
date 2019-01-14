@@ -25,7 +25,7 @@ knitr::include_graphics("media/firenze.JPG")
 <!-- </p> -->
 <!-- --------------- -->
 
-Welcome to my personal webpage. I'm a PhD student in the [Memory & Cognition Lab'](http://recherche.parisdescartes.fr/LaboratoireMemoireCognition) at the University of Sorbonne Paris Cité, and I made this website using R.
+Welcome to my personal webpage. I am currently a postdoc in Singapore.
 
 
 
