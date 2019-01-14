@@ -229,7 +229,6 @@ slickR::slickR(obj = image_list,
 -------------
 
 
-
 <p align="center">*2019*</p>
 
 **Makowski, D.**, Sperduti, M., Pelletier, J., Blondé, P., La Corte, V., Arcangeli, M., Zalla, T., Lemaire, S., Dokic, J., Nicolas, S., & Piolino, P. (2019). [Phenomenal, Bodily and Brain Correlates of Fictional Reappraisal as an Implicit Emotion Regulation Strategy](https://dominiquemakowski.github.io/papers/makowski2019b.pdf). *Cognitive, Affective, & Behavioral Neuroscience*, 1-21.
@@ -269,6 +268,8 @@ Sperduti, M.\*, Arcangeli, M.\*, **Makowski, D.**, Wantzen, P., Zalla, T., Lemai
 <p align="center">*2015*</p>
 
 **Makowski, D.**, Sperduti, M., Blanchet, S., Nicolas, S. & Piolino, P. (2015). [Régulation Emotionnelle face au Déclin Cognitif dans le Vieillissement : Un Faux Paradoxe ? | Emotion regulation and the cognitive decline in aging: beyond the paradox](https://dominiquemakowski.github.io/papers/makowski2015.pdf). *Gériatrie et Psychologie Neuropsychiatrie du Vieillissement*, 13(3), 301-8.
+
+<sup>*Note: Electronic versions are provided to ensure timely dissemination of academic work. They can be downloaded for noncommercial purposes. Copyright resides with the respective copyright holders as stated in each article. The files may not be reposted without permission from copyright holders.*</sub> 
 
 
 ---------

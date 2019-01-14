@@ -19,15 +19,14 @@ knitr::include_graphics("media/firenze.JPG")
 
 ```
 
-<!-- --------------- -->
-<!-- <p align="center"> -->
-<!-- **`r emo::ji("warning")` Looking for postdoc opportunities (*my current contract ends in August 2018*) `r emo::ji("warning")`** -->
-<!-- </p> -->
-<!-- --------------- -->
-
-Welcome to my personal webpage. I am currently a postdoc in Singapore.
+---------------
+<p align="center">
+**Welcome to my personal webpage. Currently a postdoc in Singapore `r emo::flag("Singapore")`.**
+</p>
+---------------
 
 
+<sup>*PS: I made this website using R.*</sub> 
 
 
 
