@@ -5,7 +5,7 @@
     <link>https://dominiquemakowski.github.io/authors/</link>
       <atom:link href="https://dominiquemakowski.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
       <title>Authors</title>
@@ -13,10 +13,138 @@
     </image>
     
     <item>
+      <title>Daniel Lüdecke</title>
+      <link>https://dominiquemakowski.github.io/authors/daniel-ludecke/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/daniel-ludecke/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dominique Makowski</title>
+      <link>https://dominiquemakowski.github.io/authors/dominique-makowski/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/dominique-makowski/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marco Sperduti</title>
+      <link>https://dominiquemakowski.github.io/authors/marco-sperduti/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/marco-sperduti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mattan Ben-Shachar</title>
+      <link>https://dominiquemakowski.github.io/authors/mattan-ben-shachar/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/mattan-ben-shachar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pascale Piolino</title>
+      <link>https://dominiquemakowski.github.io/authors/pascale-piolino/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/pascale-piolino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Philip D Waggoner</title>
+      <link>https://dominiquemakowski.github.io/authors/philip-d-waggoner/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/philip-d-waggoner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Philippe Blondé</title>
+      <link>https://dominiquemakowski.github.io/authors/philippe-blonde/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/philippe-blonde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serge Nicolas</title>
+      <link>https://dominiquemakowski.github.io/authors/serge-nicolas/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/serge-nicolas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>admin</title>
       <link>https://dominiquemakowski.github.io/authors/admin/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/authors/admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Samantha Lavallée</title>
+      <link>https://dominiquemakowski.github.io/authors/samantha-lavallee/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/samantha-lavallee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jérôme Dokic</title>
+      <link>https://dominiquemakowski.github.io/authors/jerome-dokic/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/jerome-dokic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jérôme Pelletier</title>
+      <link>https://dominiquemakowski.github.io/authors/jerome-pelletier/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/jerome-pelletier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Margherita Arcangeli</title>
+      <link>https://dominiquemakowski.github.io/authors/margherita-arcangeli/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/margherita-arcangeli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phillippe Blondé</title>
+      <link>https://dominiquemakowski.github.io/authors/phillippe-blonde/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/phillippe-blonde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stéphane Lemaire</title>
+      <link>https://dominiquemakowski.github.io/authors/stephane-lemaire/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/stephane-lemaire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tiziana Zalla</title>
+      <link>https://dominiquemakowski.github.io/authors/tiziana-zalla/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/tiziana-zalla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Valentina La Corte</title>
+      <link>https://dominiquemakowski.github.io/authors/valentina-la-corte/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/valentina-la-corte/</guid>
       <description></description>
     </item>
     
@@ -29,18 +157,18 @@
     </item>
     
     <item>
-      <title>Cosimo Tuena</title>
-      <link>https://dominiquemakowski.github.io/authors/cosimo-tuena/</link>
+      <title>Allan Armougum</title>
+      <link>https://dominiquemakowski.github.io/authors/allan-armougum/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/cosimo-tuena/</guid>
+      <guid>https://dominiquemakowski.github.io/authors/allan-armougum/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Dominique Makowski</title>
-      <link>https://dominiquemakowski.github.io/authors/dominique-makowski/</link>
+      <title>Cosimo Tuena</title>
+      <link>https://dominiquemakowski.github.io/authors/cosimo-tuena/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/dominique-makowski/</guid>
+      <guid>https://dominiquemakowski.github.io/authors/cosimo-tuena/</guid>
       <description></description>
     </item>
     
@@ -61,58 +189,10 @@
     </item>
     
     <item>
-      <title>Jérôme Dokic</title>
-      <link>https://dominiquemakowski.github.io/authors/jerome-dokic/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/jerome-dokic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jérôme Pelletier</title>
-      <link>https://dominiquemakowski.github.io/authors/jerome-pelletier/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/jerome-pelletier/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Léo Dutriaux</title>
       <link>https://dominiquemakowski.github.io/authors/leo-dutriaux/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/authors/leo-dutriaux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Marco Sperduti</title>
-      <link>https://dominiquemakowski.github.io/authors/marco-sperduti/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/marco-sperduti/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Margherita Arcangeli</title>
-      <link>https://dominiquemakowski.github.io/authors/margherita-arcangeli/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/margherita-arcangeli/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pascale Piolino</title>
-      <link>https://dominiquemakowski.github.io/authors/pascale-piolino/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/pascale-piolino/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Philippe Blondé</title>
-      <link>https://dominiquemakowski.github.io/authors/philippe-blonde/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/philippe-blonde/</guid>
       <description></description>
     </item>
     
@@ -125,34 +205,10 @@
     </item>
     
     <item>
-      <title>Serge Nicolas</title>
-      <link>https://dominiquemakowski.github.io/authors/serge-nicolas/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/serge-nicolas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Silvia Serino</title>
       <link>https://dominiquemakowski.github.io/authors/silvia-serino/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/authors/silvia-serino/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stéphane Lemaire</title>
-      <link>https://dominiquemakowski.github.io/authors/stephane-lemaire/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/stephane-lemaire/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tiziana Zalla</title>
-      <link>https://dominiquemakowski.github.io/authors/tiziana-zalla/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/tiziana-zalla/</guid>
       <description></description>
     </item>
     
