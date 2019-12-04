@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Marco Sperduti | Dr. Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/authors/marco-sperduti/</link>
-      <atom:link href="https://dominiquemakowski.github.io/authors/marco-sperduti/index.xml" rel="self" type="application/rss+xml" />
-    <description>Marco Sperduti</description>
+    <title>Tiziana Zalla | Dr. Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/tiziana-zalla/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/tiziana-zalla/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tiziana Zalla</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Sep 2016 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
-      <title>Marco Sperduti</title>
-      <link>https://dominiquemakowski.github.io/authors/marco-sperduti/</link>
+      <title>Tiziana Zalla</title>
+      <link>https://dominiquemakowski.github.io/authors/tiziana-zalla/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2015 - Emotion regulation and the cognitive decline in aging; beyond the paradox</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2015emotion/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2015emotion/</guid>
       <description></description>
     </item>
     
