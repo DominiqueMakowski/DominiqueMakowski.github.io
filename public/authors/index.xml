@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Dr. Dominique Makowski</title>
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/icon-192.png</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
+    
+    <item>
+      <title>admin</title>
+      <link>/authors/admin/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dominique Makowski</title>
+      <link>/authors/dominique-makowski/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/dominique-makowski/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marco Sperduti</title>
+      <link>/authors/marco-sperduti/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/marco-sperduti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pascale Piolino</title>
+      <link>/authors/pascale-piolino/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/pascale-piolino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serge Nicolas</title>
+      <link>/authors/serge-nicolas/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/serge-nicolas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sophie Blanchet</title>
+      <link>/authors/sophie-blanchet/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/sophie-blanchet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/dom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/dom/</guid>
+      <description>&lt;p&gt;Trained as neuropsychologist, CBT psychotherapist &lt;sub&gt;&lt;sup&gt;(&lt;em&gt;and hypnotherapist but that doesn&amp;rsquo;t count&lt;/em&gt;)&lt;/sup&gt;&lt;/sub&gt; , I am currently working as a postdoc at the &lt;a href=&#34;http://www.clinicalbrain.org/&#34; target=&#34;_blank&#34;&gt;Clinical Brain Lab&lt;/a&gt; in Singapore on the neuroscience of deception 😏. I&amp;rsquo;m fluent in French, English, Polish, Python, and somehow good at pretending to speak Italian. My main figures of reference are Epictetus, Churchill and Yoda. My interests include scientific methodology, history of arts and religions and philosophy of mind. My research focuses on aspects of &lt;strong&gt;&lt;em&gt;reality bending&lt;/em&gt;&lt;/strong&gt; (e.g., fiction, deception or altered states of consciousness such as through meditation or immersion).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

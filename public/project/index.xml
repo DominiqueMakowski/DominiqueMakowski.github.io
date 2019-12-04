@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Dr. Dominique Makowski</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>img/icon-192.png</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>Cognitive Control</title>
+      <link>/project/cognitivecontrol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/cognitivecontrol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>easystats</title>
+      <link>/project/easystats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/easystats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NeuroKit</title>
+      <link>/project/neurokit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/neurokit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neuropsydia</title>
+      <link>/project/neuropsydia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/neuropsydia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Patient Assessment</title>
+      <link>/project/patientassessmentapp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/patientassessmentapp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>psycho</title>
+      <link>/project/psycho/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project/psycho/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
