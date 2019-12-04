@@ -3,205 +3,195 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/example/example1/</loc>
+    <loc>https://dominiquemakowski.github.io/courses/example/example1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/example/</loc>
+    <loc>https://dominiquemakowski.github.io/courses/example/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/example/example2/</loc>
+    <loc>https://dominiquemakowski.github.io/courses/example/example2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://dominiquemakowski.github.io/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/example/</loc>
+    <loc>https://dominiquemakowski.github.io/talk/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/</loc>
+    <loc>https://dominiquemakowski.github.io/talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://dominiquemakowski.github.io/post/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/writing-technical-content/</loc>
+    <loc>https://dominiquemakowski.github.io/post/writing-technical-content/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/admin/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/jupyter/</loc>
+    <loc>https://dominiquemakowski.github.io/post/jupyter/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/</loc>
+    <loc>https://dominiquemakowski.github.io/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/example/</loc>
+    <loc>https://dominiquemakowski.github.io/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/academic/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/academic/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/getting-started/</loc>
+    <loc>https://dominiquemakowski.github.io/post/getting-started/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://dominiquemakowski.github.io/categories/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/demo/</loc>
+    <loc>https://dominiquemakowski.github.io/categories/demo/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/2/</loc>
+    <loc>https://dominiquemakowski.github.io/publication_types/2/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/makowski2015emotion/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2015emotion/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/dominique-makowski/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/dominique-makowski/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/marco-sperduti/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/marco-sperduti/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/pascale-piolino/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/pascale-piolino/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
+    <loc>https://dominiquemakowski.github.io/publication_types/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/serge-nicolas/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/serge-nicolas/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/sophie-blanchet/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/sophie-blanchet/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/source-themes/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/source-themes/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/dom/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/dom/</loc>
   </url>
   
   <url>
-    <loc>/project/cognitivecontrol/</loc>
+    <loc>https://dominiquemakowski.github.io/project/cognitivecontrol/</loc>
   </url>
   
   <url>
-    <loc>/courses/</loc>
+    <loc>https://dominiquemakowski.github.io/courses/</loc>
   </url>
   
   <url>
-    <loc>/project/easystats/</loc>
+    <loc>https://dominiquemakowski.github.io/project/easystats/</loc>
   </url>
   
   <url>
-    <loc>/project/neurokit/</loc>
+    <loc>https://dominiquemakowski.github.io/project/neurokit/</loc>
   </url>
   
   <url>
-    <loc>/tags/neuropsychology/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/neuropsychology/</loc>
   </url>
   
   <url>
-    <loc>/project/neuropsydia/</loc>
+    <loc>https://dominiquemakowski.github.io/project/neuropsydia/</loc>
   </url>
   
   <url>
-    <loc>/project/patientassessmentapp/</loc>
+    <loc>https://dominiquemakowski.github.io/project/patientassessmentapp/</loc>
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>https://dominiquemakowski.github.io/project/</loc>
   </url>
   
   <url>
-    <loc>/project/psycho/</loc>
+    <loc>https://dominiquemakowski.github.io/project/psycho/</loc>
   </url>
   
   <url>
-    <loc>/tags/python/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/python/</loc>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/r/</loc>
   </url>
   
   <url>
-    <loc>/tags/statistics/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/statistics/</loc>
   </url>
   
 </urlset>

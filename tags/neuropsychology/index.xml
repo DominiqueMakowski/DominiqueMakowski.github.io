@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Neuropsychology | Dr. Dominique Makowski</title>
-    <link>/tags/neuropsychology/</link>
-      <atom:link href="/tags/neuropsychology/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/tags/neuropsychology/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tags/neuropsychology/index.xml" rel="self" type="application/rss+xml" />
     <description>Neuropsychology</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
       <title>Neuropsychology</title>
-      <link>/tags/neuropsychology/</link>
+      <link>https://dominiquemakowski.github.io/tags/neuropsychology/</link>
     </image>
     
     <item>
       <title>Cognitive Control</title>
-      <link>/project/cognitivecontrol/</link>
+      <link>https://dominiquemakowski.github.io/project/cognitivecontrol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/cognitivecontrol/</guid>
+      <guid>https://dominiquemakowski.github.io/project/cognitivecontrol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neuropsydia</title>
-      <link>/project/neuropsydia/</link>
+      <link>https://dominiquemakowski.github.io/project/neuropsydia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/neuropsydia/</guid>
+      <guid>https://dominiquemakowski.github.io/project/neuropsydia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Patient Assessment</title>
-      <link>/project/patientassessmentapp/</link>
+      <link>https://dominiquemakowski.github.io/project/patientassessmentapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/patientassessmentapp/</guid>
+      <guid>https://dominiquemakowski.github.io/project/patientassessmentapp/</guid>
       <description></description>
     </item>
     

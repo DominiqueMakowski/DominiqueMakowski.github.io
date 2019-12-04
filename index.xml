@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dr. Dominique Makowski</title>
-    <link>/</link>
-      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/</link>
+      <atom:link href="https://dominiquemakowski.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Dr. Dominique Makowski</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
       <title>Dr. Dominique Makowski</title>
-      <link>/</link>
+      <link>https://dominiquemakowski.github.io/</link>
     </image>
     
     <item>
       <title>Example Page 1</title>
-      <link>/courses/example/example1/</link>
+      <link>https://dominiquemakowski.github.io/courses/example/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example1/</guid>
+      <guid>https://dominiquemakowski.github.io/courses/example/example1/</guid>
       <description>
 
 &lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
@@ -49,9 +49,9 @@
     
     <item>
       <title>Example Page 2</title>
-      <link>/courses/example/example2/</link>
+      <link>https://dominiquemakowski.github.io/courses/example/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example2/</guid>
+      <guid>https://dominiquemakowski.github.io/courses/example/example2/</guid>
       <description>
 
 &lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
@@ -84,9 +84,9 @@
     
     <item>
       <title>Example Talk</title>
-      <link>/talk/example/</link>
+      <link>https://dominiquemakowski.github.io/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>/talk/example/</guid>
+      <guid>https://dominiquemakowski.github.io/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -107,9 +107,9 @@
     
     <item>
       <title>Writing technical content in Academic</title>
-      <link>/post/writing-technical-content/</link>
+      <link>https://dominiquemakowski.github.io/post/writing-technical-content/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/post/writing-technical-content/</guid>
+      <guid>https://dominiquemakowski.github.io/post/writing-technical-content/</guid>
       <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
@@ -318,9 +318,9 @@ gantt
     
     <item>
       <title>Display Jupyter Notebooks with Academic</title>
-      <link>/post/jupyter/</link>
+      <link>https://dominiquemakowski.github.io/post/jupyter/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/post/jupyter/</guid>
+      <guid>https://dominiquemakowski.github.io/post/jupyter/</guid>
       <description>
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
@@ -385,9 +385,9 @@ date: 2019-09-01
     
     <item>
       <title>Slides</title>
-      <link>/slides/example/</link>
+      <link>https://dominiquemakowski.github.io/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/slides/example/</guid>
+      <guid>https://dominiquemakowski.github.io/slides/example/</guid>
       <description>
 
 &lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
@@ -565,28 +565,10 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/terms/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Academic: the website builder for Hugo</title>
-      <link>/post/getting-started/</link>
+      <link>https://dominiquemakowski.github.io/post/getting-started/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/getting-started/</guid>
+      <guid>https://dominiquemakowski.github.io/post/getting-started/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
@@ -704,57 +686,57 @@ $$&lt;/p&gt;
     
     <item>
       <title>2015 - Emotion regulation and the cognitive decline in aging; beyond the paradox</title>
-      <link>/publication/makowski2015emotion/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2015emotion/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2015emotion/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2015emotion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cognitive Control</title>
-      <link>/project/cognitivecontrol/</link>
+      <link>https://dominiquemakowski.github.io/project/cognitivecontrol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/cognitivecontrol/</guid>
+      <guid>https://dominiquemakowski.github.io/project/cognitivecontrol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>easystats</title>
-      <link>/project/easystats/</link>
+      <link>https://dominiquemakowski.github.io/project/easystats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/easystats/</guid>
+      <guid>https://dominiquemakowski.github.io/project/easystats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NeuroKit</title>
-      <link>/project/neurokit/</link>
+      <link>https://dominiquemakowski.github.io/project/neurokit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/neurokit/</guid>
+      <guid>https://dominiquemakowski.github.io/project/neurokit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neuropsydia</title>
-      <link>/project/neuropsydia/</link>
+      <link>https://dominiquemakowski.github.io/project/neuropsydia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/neuropsydia/</guid>
+      <guid>https://dominiquemakowski.github.io/project/neuropsydia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Patient Assessment</title>
-      <link>/project/patientassessmentapp/</link>
+      <link>https://dominiquemakowski.github.io/project/patientassessmentapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/patientassessmentapp/</guid>
+      <guid>https://dominiquemakowski.github.io/project/patientassessmentapp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>psycho</title>
-      <link>/project/psycho/</link>
+      <link>https://dominiquemakowski.github.io/project/psycho/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/psycho/</guid>
+      <guid>https://dominiquemakowski.github.io/project/psycho/</guid>
       <description></description>
     </item>
     

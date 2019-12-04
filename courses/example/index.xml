@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview | Dr. Dominique Makowski</title>
-    <link>/courses/example/</link>
-      <atom:link href="/courses/example/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/courses/example/</link>
+      <atom:link href="https://dominiquemakowski.github.io/courses/example/index.xml" rel="self" type="application/rss+xml" />
     <description>Overview</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
       <title>Overview</title>
-      <link>/courses/example/</link>
+      <link>https://dominiquemakowski.github.io/courses/example/</link>
     </image>
     
     <item>
       <title>Example Page 1</title>
-      <link>/courses/example/example1/</link>
+      <link>https://dominiquemakowski.github.io/courses/example/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example1/</guid>
+      <guid>https://dominiquemakowski.github.io/courses/example/example1/</guid>
       <description>
 
 &lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
@@ -49,9 +49,9 @@
     
     <item>
       <title>Example Page 2</title>
-      <link>/courses/example/example2/</link>
+      <link>https://dominiquemakowski.github.io/courses/example/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example2/</guid>
+      <guid>https://dominiquemakowski.github.io/courses/example/example2/</guid>
       <description>
 
 &lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;

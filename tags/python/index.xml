@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python | Dr. Dominique Makowski</title>
-    <link>/tags/python/</link>
-      <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/tags/python/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <description>Python</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
       <title>Python</title>
-      <link>/tags/python/</link>
+      <link>https://dominiquemakowski.github.io/tags/python/</link>
     </image>
     
     <item>
       <title>Cognitive Control</title>
-      <link>/project/cognitivecontrol/</link>
+      <link>https://dominiquemakowski.github.io/project/cognitivecontrol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/cognitivecontrol/</guid>
+      <guid>https://dominiquemakowski.github.io/project/cognitivecontrol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NeuroKit</title>
-      <link>/project/neurokit/</link>
+      <link>https://dominiquemakowski.github.io/project/neurokit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/neurokit/</guid>
+      <guid>https://dominiquemakowski.github.io/project/neurokit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neuropsydia</title>
-      <link>/project/neuropsydia/</link>
+      <link>https://dominiquemakowski.github.io/project/neuropsydia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/neuropsydia/</guid>
+      <guid>https://dominiquemakowski.github.io/project/neuropsydia/</guid>
       <description></description>
     </item>
     
