@@ -5,7 +5,7 @@
     <link>https://dominiquemakowski.github.io/tags/</link>
       <atom:link href="https://dominiquemakowski.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Sep 2016 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
       <title>Tags</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>Academic</title>
-      <link>https://dominiquemakowski.github.io/tags/academic/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/tags/academic/</guid>
+      <title>Source Themes</title>
+      <link>https://dominiquemakowski.github.io/tags/source-themes/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/tags/source-themes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Source Themes</title>
-      <link>https://dominiquemakowski.github.io/tags/source-themes/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/tags/source-themes/</guid>
+      <title>Academic</title>
+      <link>https://dominiquemakowski.github.io/tags/academic/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/tags/academic/</guid>
       <description></description>
     </item>
     
