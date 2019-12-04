@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Léo Dutriaux | Dr. Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/leo-dutriaux/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/leo-dutriaux/index.xml" rel="self" type="application/rss+xml" />
+    <description>Léo Dutriaux</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
+      <title>Léo Dutriaux</title>
+      <link>https://dominiquemakowski.github.io/authors/leo-dutriaux/</link>
+    </image>
+    
+    <item>
+      <title>2017 - Neuropsydia. py; A Python Module for Creating Experiments, Tasks and Questionnaires</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

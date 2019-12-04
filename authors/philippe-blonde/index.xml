@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Philippe Blondé | Dr. Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/philippe-blonde/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/philippe-blonde/index.xml" rel="self" type="application/rss+xml" />
+    <description>Philippe Blondé</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
+      <title>Philippe Blondé</title>
+      <link>https://dominiquemakowski.github.io/authors/philippe-blonde/</link>
+    </image>
+    
+    <item>
+      <title>2017 - Meditation and successful aging: can meditative practices counteract age-related cognitive decline?</title>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2017meditation/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2017meditation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

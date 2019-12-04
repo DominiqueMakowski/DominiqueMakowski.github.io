@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Giuseppe Riva | Dr. Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/giuseppe-riva/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/giuseppe-riva/index.xml" rel="self" type="application/rss+xml" />
+    <description>Giuseppe Riva</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
+      <title>Giuseppe Riva</title>
+      <link>https://dominiquemakowski.github.io/authors/giuseppe-riva/</link>
+    </image>
+    
+    <item>
+      <title>2017 - How virtual embodiment affects episodic memory functioning: a proof-of-concept study</title>
+      <link>https://dominiquemakowski.github.io/publication/tuena2017virtual/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/tuena2017virtual/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
