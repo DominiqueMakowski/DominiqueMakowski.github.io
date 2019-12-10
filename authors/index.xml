@@ -5,7 +5,7 @@
     <link>https://dominiquemakowski.github.io/authors/</link>
       <atom:link href="https://dominiquemakowski.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Daniel Lüdecke</title>
       <link>https://dominiquemakowski.github.io/authors/daniel-ludecke/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/authors/daniel-ludecke/</guid>
       <description></description>
     </item>
@@ -23,16 +23,56 @@
     <item>
       <title>Dominique Makowski</title>
       <link>https://dominiquemakowski.github.io/authors/dominique-makowski/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/authors/dominique-makowski/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mattan S. Ben-Shachar</title>
+      <link>https://dominiquemakowski.github.io/authors/mattan-s.-ben-shachar/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/mattan-s.-ben-shachar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>S. H. Annabel Chen</title>
+      <link>https://dominiquemakowski.github.io/authors/s.-h.-annabel-chen/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/s.-h.-annabel-chen/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Marco Sperduti</title>
       <link>https://dominiquemakowski.github.io/authors/marco-sperduti/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/authors/marco-sperduti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pascale Piolino</title>
+      <link>https://dominiquemakowski.github.io/authors/pascale-piolino/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/pascale-piolino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Samantha Lavallée,</title>
+      <link>https://dominiquemakowski.github.io/authors/samantha-lavallee/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/samantha-lavallee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serge Nicolas</title>
+      <link>https://dominiquemakowski.github.io/authors/serge-nicolas/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/authors/serge-nicolas/</guid>
       <description></description>
     </item>
     
@@ -41,14 +81,6 @@
       <link>https://dominiquemakowski.github.io/authors/mattan-ben-shachar/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/authors/mattan-ben-shachar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pascale Piolino</title>
-      <link>https://dominiquemakowski.github.io/authors/pascale-piolino/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/pascale-piolino/</guid>
       <description></description>
     </item>
     
@@ -69,26 +101,10 @@
     </item>
     
     <item>
-      <title>Serge Nicolas</title>
-      <link>https://dominiquemakowski.github.io/authors/serge-nicolas/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/serge-nicolas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>admin</title>
       <link>https://dominiquemakowski.github.io/authors/admin/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/authors/admin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Samantha Lavallée</title>
-      <link>https://dominiquemakowski.github.io/authors/samantha-lavallee/</link>
-      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/authors/samantha-lavallee/</guid>
       <description></description>
     </item>
     
@@ -225,7 +241,7 @@
       <link>https://dominiquemakowski.github.io/authors/dom/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/authors/dom/</guid>
-      <description>&lt;p&gt;Trained as neuropsychologist, CBT psychotherapist &lt;sub&gt;&lt;sup&gt;(&lt;em&gt;and hypnotherapist but that doesn&amp;rsquo;t count&lt;/em&gt;)&lt;/sup&gt;&lt;/sub&gt; , I am currently working as a postdoc at the &lt;a href=&#34;http://www.clinicalbrain.org/&#34; target=&#34;_blank&#34;&gt;Clinical Brain Lab&lt;/a&gt; in Singapore on the neuroscience of deception 😏. I&amp;rsquo;m fluent in French, English, Polish, Python, and somehow good at pretending to speak Italian. My main figures of reference are Epictetus, Churchill and Yoda. My interests include scientific methodology, history of arts and religions and philosophy of mind. My research focuses on aspects of &lt;strong&gt;&lt;em&gt;reality bending&lt;/em&gt;&lt;/strong&gt; (e.g., fiction, deception or altered states of consciousness such as through meditation or immersion).&lt;/p&gt;
+      <description>&lt;p&gt;Trained as neuropsychologist, CBT psychotherapist &lt;sub&gt;&lt;sup&gt;(&lt;em&gt;and hypnotherapist&lt;/em&gt;)&lt;/sup&gt;&lt;/sub&gt; , I am currently working as a postdoc at the &lt;a href=&#34;http://www.clinicalbrain.org/&#34; target=&#34;_blank&#34;&gt;Clinical Brain Lab&lt;/a&gt; in Singapore on the neuroscience of deception 😏. I&amp;rsquo;m fluent in French, English, Polish, Python, and somehow good at pretending to speak Italian. My main figures of reference are Epictetus, Churchill and Yoda. My interests include scientific methodology, history of arts and religions and philosophy of mind. My research focuses on aspects of &lt;strong&gt;&lt;em&gt;reality bending&lt;/em&gt;&lt;/strong&gt; (e.g., fiction, deception or altered states of consciousness such as through meditation or immersion).&lt;/p&gt;
 </description>
     </item>
     

@@ -5,12 +5,20 @@
     <link>https://dominiquemakowski.github.io/authors/daniel-ludecke/</link>
       <atom:link href="https://dominiquemakowski.github.io/authors/daniel-ludecke/index.xml" rel="self" type="application/rss+xml" />
     <description>Daniel Lüdecke</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/img/icon-192.png</url>
       <title>Daniel Lüdecke</title>
       <link>https://dominiquemakowski.github.io/authors/daniel-ludecke/</link>
     </image>
+    
+    <item>
+      <title>2019 - Indices of Effect Existence and Significance in the Bayesian Framework</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019indices/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019indices/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2019 - bayestestR: Describing effects and their uncertainty, existence and significance within the Bayesian framework</title>
