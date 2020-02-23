@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.6.2">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -44,11 +44,14 @@
 
   
   
+
+  
+  
   
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -72,6 +75,118 @@
 
     
 
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
   
 
   
@@ -91,17 +206,56 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98191491-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-98191491-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://dominiquemakowski.github.io/publication/makowski2019indices/">
 
+  
   
   
   
@@ -114,9 +268,9 @@
   <meta property="twitter:site" content="@Dom_Makowski">
   <meta property="twitter:creator" content="@Dom_Makowski">
   
-  <meta property="og:site_name" content="Dr. Dominique Makowski">
+  <meta property="og:site_name" content="Dr Dominique Makowski">
   <meta property="og:url" content="https://dominiquemakowski.github.io/publication/makowski2019indices/">
-  <meta property="og:title" content="2019 - Indices of Effect Existence and Significance in the Bayesian Framework | Dr. Dominique Makowski">
+  <meta property="og:title" content="2019 - Indices of Effect Existence and Significance in the Bayesian Framework | Dr Dominique Makowski">
   <meta property="og:description" content="Turmoil has engulfed psychological science. Causes and consequences of the reproducibility crisis are in dispute. With the hope of addressing some of its aspects, Bayesian methods are gaining increasing attention in psychological science. Some of their advantages, as opposed to the frequentist framework, are the ability to describe parameters in probabilistic terms and explicitly incorporate prior knowledge about them into the model. These issues are crucial in particular regarding the current debate about statistical significance. Bayesian methods are not necessarily the only remedy against incorrect interpretations or wrong conclusions, but there is an increasing agreement that they are one of the keys to avoid such fallacies. Nevertheless, its flexible nature is its power and weakness, for there is no agreement about what indices of “significance” should be computed or reported. This lack of a consensual index or guidelines, such as the frequentist p-value, further contributes to the unnecessary opacity that many non-familiar readers perceive in Bayesian statistics. Thus, this study describes and compares several Bayesian indices, provide intuitive visual representation of their “behavior” in relationship with common sources of variance such as sample size, magnitude of effects and also frequentist significance. The results contribute to the development of an intuitive understanding of the values that researchers report, allowing to draw sensible recommendations for Bayesian statistics description, critical for the standardization of scientific reporting."><meta property="og:image" content="https://dominiquemakowski.github.io/publication/makowski2019indices/featured.png">
   <meta property="twitter:image" content="https://dominiquemakowski.github.io/publication/makowski2019indices/featured.png"><meta property="og:locale" content="en-us">
   
@@ -130,8 +284,6 @@
 
 
     
-
-
 
 
 
@@ -165,10 +317,10 @@
   
   "publisher": {
     "@type": "Organization",
-    "name": "Dr. Dominique Makowski",
+    "name": "Dr Dominique Makowski",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://dominiquemakowski.github.io/img/icon-512.png"
+      "url": "https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "Turmoil has engulfed psychological science. Causes and consequences of the reproducibility crisis are in dispute. With the hope of addressing some of its aspects, Bayesian methods are gaining increasing attention in psychological science. Some of their advantages, as opposed to the frequentist framework, are the ability to describe parameters in probabilistic terms and explicitly incorporate prior knowledge about them into the model. These issues are crucial in particular regarding the current debate about statistical significance. Bayesian methods are not necessarily the only remedy against incorrect interpretations or wrong conclusions, but there is an increasing agreement that they are one of the keys to avoid such fallacies. Nevertheless, its flexible nature is its power and weakness, for there is no agreement about what indices of “significance” should be computed or reported. This lack of a consensual index or guidelines, such as the frequentist p-value, further contributes to the unnecessary opacity that many non-familiar readers perceive in Bayesian statistics. Thus, this study describes and compares several Bayesian indices, provide intuitive visual representation of their “behavior” in relationship with common sources of variance such as sample size, magnitude of effects and also frequentist significance. The results contribute to the development of an intuitive understanding of the values that researchers report, allowing to draw sensible recommendations for Bayesian statistics description, critical for the standardization of scientific reporting."
@@ -189,7 +341,7 @@
 
 
 
-  <title>2019 - Indices of Effect Existence and Significance in the Bayesian Framework | Dr. Dominique Makowski</title>
+  <title>2019 - Indices of Effect Existence and Significance in the Bayesian Framework | Dr Dominique Makowski</title>
 
 </head>
 
@@ -228,13 +380,20 @@
 
 
   
+
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
-    
-    
-      <a class="navbar-brand" href="/">Dr. Dominique Makowski</a>
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Dr Dominique Makowski</a>
+    </div>
     
 
     
@@ -242,6 +401,12 @@
             data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span><i class="fas fa-bars"></i></span>
     </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Dr Dominique Makowski</a>
+    </div>
     
 
     
@@ -368,6 +533,28 @@
         
         
 
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/CV_DominiqueMakowski.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
       
 
         
@@ -442,7 +629,7 @@
 
 
   
-  <span><a href="/authors/dominique-makowski/">Dominique Makowski</a></span>, <span><a href="/authors/mattan-s.-ben-shachar/">Mattan S. Ben-Shachar</a></span>, <span><a href="/authors/s.-h.-annabel-chen/">S. H. Annabel Chen</a></span>, <span><a href="/authors/daniel-ludecke/">Daniel Lüdecke</a></span>
+  <span><a href="/authors/dominique-makowski/">Dominique Makowski</a></span>, <span>Mattan S. Ben-Shachar</span>, <span>S. H. Annabel Chen</span>, <span>Daniel Lüdecke</span>
 
   </div>
   
@@ -718,6 +905,7 @@
   
   
   
+  
   <div class="media author-card content-widget-hr">
     
 
@@ -769,9 +957,6 @@
 
     
     
-
-    
-    
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
@@ -788,8 +973,6 @@
         
       
 
-      
-      
     
 
     
@@ -800,6 +983,11 @@
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -864,7 +1052,7 @@
     
     
     
-    <script src="/js/academic.min.bcfae8267aba63cc55af53a503896bd9.js"></script>
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
 
     
 

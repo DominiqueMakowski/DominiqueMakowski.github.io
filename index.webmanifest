@@ -1,15 +1,15 @@
 {
-  "name": "Dr. Dominique Makowski",
-  "short_name": "Dr. Dominique Makowski",
+  "name": "Dr Dominique Makowski",
+  "short_name": "Dr Dominique Makowski",
   "lang": "en-us",
   "theme_color": "#2962ff",
   "background_color": "#2962ff",
   "icons": [{
-    "src": "../img/icon-192.png",
+    "src": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png",
     "sizes": "192x192",
     "type": "image/png"
     }, {
-    "src": "../img/icon-512.png",
+    "src": "/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png",
     "sizes": "512x512",
     "type": "image/png"
      }],

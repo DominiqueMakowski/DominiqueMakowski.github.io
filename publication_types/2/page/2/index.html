@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.6.2">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
 
   
 
@@ -44,11 +44,14 @@
 
   
   
+
+  
+  
   
   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -72,6 +75,118 @@
 
     
 
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
   
 
   
@@ -91,19 +206,58 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98191491-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-98191491-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
   
 
 
   
-  <link rel="alternate" href="/publication_types/2/index.xml" type="application/rss+xml" title="Dr. Dominique Makowski">
+  <link rel="alternate" href="/publication_types/2/index.xml" type="application/rss+xml" title="Dr Dominique Makowski">
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon-32.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="https://dominiquemakowski.github.io/publication_types/2/">
 
+  
   
   
   
@@ -117,11 +271,11 @@
   <meta property="twitter:site" content="@Dom_Makowski">
   <meta property="twitter:creator" content="@Dom_Makowski">
   
-  <meta property="og:site_name" content="Dr. Dominique Makowski">
+  <meta property="og:site_name" content="Dr Dominique Makowski">
   <meta property="og:url" content="https://dominiquemakowski.github.io/publication_types/2/">
-  <meta property="og:title" content="2 | Dr. Dominique Makowski">
-  <meta property="og:description" content="The personal website of Dr. Dominique Makowski, containing his CV, publications, and more."><meta property="og:image" content="https://dominiquemakowski.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="https://dominiquemakowski.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:title" content="2 | Dr Dominique Makowski">
+  <meta property="og:description" content="The personal website of Dr. Dominique Makowski, containing his CV, publications, and more."><meta property="og:image" content="https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2019-12-01T00:00:00&#43;00:00">
   
@@ -140,7 +294,7 @@
 
 
 
-  <title>2 | Dr. Dominique Makowski</title>
+  <title>2 | Dr Dominique Makowski</title>
 
 </head>
 
@@ -179,13 +333,20 @@
 
 
   
+
+
+
+
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
 
     
-    
-    
-      <a class="navbar-brand" href="/">Dr. Dominique Makowski</a>
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Dr Dominique Makowski</a>
+    </div>
     
 
     
@@ -193,6 +354,12 @@
             data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span><i class="fas fa-bars"></i></span>
     </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Dr Dominique Makowski</a>
+    </div>
     
 
     
@@ -319,6 +486,28 @@
         
         
 
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/CV_DominiqueMakowski.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
       
 
         
@@ -381,86 +570,113 @@
 
   
   
-  <div>
-    <h2><a href="/publication/tuena2017virtual/">2017 - How virtual embodiment affects episodic memory functioning: a proof-of-concept study</a></h2>
-    <div class="article-style">
-      
-      Recent theories in the field of embodied cognition have pointed out the role of the body for episodic memory, ie the memory for personally experienced events. Although virtual embodiment has been used traditionally to investigate the different components of bodily self, it provides great advantages to manipulate the whole embodied experience. In the current study, we manipulated three different levels of virtual embodiment (“full embodiment”,“medium embodiment”, and “low embodiment”). All participants were asked to navigate in three different virtual cities and memorize all the events that they encountered within each environment. We evaluated the effect of different level of embodiment on the main feature of the recall and recognition (ie, what events have occurred) and sense of presence. Data emerge with interesting consequences on embodied cognition hypothesis. Accordingly, findings are discussed giving an innovative view of virtual reality as an embodied tool able to influence cognitive processes such as episodic memory.
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/tuena2017virtual/" >2017 - How virtual embodiment affects episodic memory functioning: a proof-of-concept study</a></h2>
+      <div class="article-style">
+        
+          Recent theories in the field of embodied cognition have pointed out the role of the body for episodic memory, ie the memory for personally experienced events. Although virtual embodiment has been used traditionally to investigate the different components of bodily self, it provides great advantages to manipulate the whole embodied experience. In the current study, we manipulated three different levels of virtual embodiment (“full embodiment”,“medium embodiment”, and “low embodiment”). All participants were asked to navigate in three different virtual cities and memorize all the events that they encountered within each environment. We evaluated the effect of different level of embodiment on the main feature of the recall and recognition (ie, what events have occurred) and sense of presence. Data emerge with interesting consequences on embodied cognition hypothesis. Accordingly, findings are discussed giving an innovative view of virtual reality as an embodied tool able to influence cognitive processes such as episodic memory.
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/sperduti2017interaction/">2017 - Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information</a></h2>
-    <div class="article-style">
-      
-      Episodic memory (EM) is defined as a long-term memory system that stores information that can be retrieved along with details of the context of the original events (binding). Several studies have shown that manipulation of attention during encoding can impact subsequent memory performance. An influential model of attention distinguishes between three partially independent attentional networks: the alerting, the orienting and the executive or conflict resolution component. To date, the impact of the engagement of these sub-systems during encoding on item and relational context binding has not been investigated. Here, we developed a new task combining the Attentional Network Test and an incidental episodic memory encoding task to study this issue. We reported that when the alerting network was not solicited, resolving conflict hindered item encoding. Moreover, resolving conflict, independently of the cueing condition, had a negative impact on context binding. These novel findings could have a potential impact in the understanding EM formation, and memory disorders in different populations, including healthy elderly people.
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/sperduti2017interaction/" >2017 - Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information</a></h2>
+      <div class="article-style">
+        
+          Episodic memory (EM) is defined as a long-term memory system that stores information that can be retrieved along with details of the context of the original events (binding). Several studies have shown that manipulation of attention during encoding can impact subsequent memory performance. An influential model of attention distinguishes between three partially independent attentional networks: the alerting, the orienting and the executive or conflict resolution component. To date, the impact of the engagement of these sub-systems during encoding on item and relational context binding has not been investigated. Here, we developed a new task combining the Attentional Network Test and an incidental episodic memory encoding task to study this issue. We reported that when the alerting network was not solicited, resolving conflict hindered item encoding. Moreover, resolving conflict, independently of the cueing condition, had a negative impact on context binding. These novel findings could have a potential impact in the understanding EM formation, and memory disorders in different populations, including healthy elderly people.
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/sperduti2017meditation/">2017 - Meditation and successful aging: can meditative practices counteract age-related cognitive decline?</a></h2>
-    <div class="article-style">
-      
-      Life expectancy is constantly increasing in the developed countries due to medical, hygiene and socio-economic advances. Unfortunately, a longer life not always corresponds to a healthier life. Indeed, aging is associated with growing risk factors for illness associated with societal conditions (isolation, maltreatment), and neurodegenerative diseases. Even normal aging is associated with a cognitive decline that can hinder independence and quality of life of elderly. Thus, one major societal challenge is to build policies that support people of all ages to maintain a maximum health and functional capacity throughout their lives. Meditation could be a promising intervention in contrasting the negative effects of aging. Indeed, it has been shown to enhance cognitive efficiency in several domains, such as attention and executive functions in young adults. Nevertheless, whether these effects extend to old participants is still a matter of debate. Few studies have directly investigated this issue, reporting encouraging results in a large panel of cognitive functions, such as: attention, executive functions and memory. However, a final conclusion about the causal role of meditation and the generalization of these results is made difficult due to several methodological limitations. We propose a roadmap for future studies to pass these limitations with the hope that the present work would contribute to the development of the young research field of meditation in gerontology.
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/sperduti2017meditation/" >2017 - Meditation and successful aging: can meditative practices counteract age-related cognitive decline?</a></h2>
+      <div class="article-style">
+        
+          Life expectancy is constantly increasing in the developed countries due to medical, hygiene and socio-economic advances. Unfortunately, a longer life not always corresponds to a healthier life. Indeed, aging is associated with growing risk factors for illness associated with societal conditions (isolation, maltreatment), and neurodegenerative diseases. Even normal aging is associated with a cognitive decline that can hinder independence and quality of life of elderly. Thus, one major societal challenge is to build policies that support people of all ages to maintain a maximum health and functional capacity throughout their lives. Meditation could be a promising intervention in contrasting the negative effects of aging. Indeed, it has been shown to enhance cognitive efficiency in several domains, such as attention and executive functions in young adults. Nevertheless, whether these effects extend to old participants is still a matter of debate. Few studies have directly investigated this issue, reporting encouraging results in a large panel of cognitive functions, such as: attention, executive functions and memory. However, a final conclusion about the causal role of meditation and the generalization of these results is made difficult due to several methodological limitations. We propose a roadmap for future studies to pass these limitations with the hope that the present work would contribute to the development of the young research field of meditation in gerontology.
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/makowski2017neuropsydia/">2017 - Neuropsydia. py: A Python Module for Creating Experiments, Tasks and Questionnaires</a></h2>
-    <div class="article-style">
-      
-      Neuropsychology encompasses two intimately related aspects: experimental research and clinical activity. Yet, the gap between these two facets has been severely increasing over the last decades due to the developpement of new technological ressources employed in research paradigms, often lacking portability to clinical practice. This gap restrains direct results application and generalization from research to clinical practice, and vice versa. Neuropsydia. py is a Python module that provides a high-level set of tools to quickly and easily create computerized experiments, cognitive tests or questionnaires, offering the possibility to heighten up the quality and accuracy of clinical neuropsychology. This free, open-source solution allows neuropsychologists, psychologists and neuroscientists to build sophisticated tasks and focus on what is important: the results and their interpretation.
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/makowski2017neuropsydia/" >2017 - Neuropsydia. py: A Python Module for Creating Experiments, Tasks and Questionnaires</a></h2>
+      <div class="article-style">
+        
+          Neuropsychology encompasses two intimately related aspects: experimental research and clinical activity. Yet, the gap between these two facets has been severely increasing over the last decades due to the developpement of new technological ressources employed in research paradigms, often lacking portability to clinical practice. This gap restrains direct results application and generalization from research to clinical practice, and vice versa. Neuropsydia. py is a Python module that provides a high-level set of tools to quickly and easily create computerized experiments, cognitive tests or questionnaires, offering the possibility to heighten up the quality and accuracy of clinical neuropsychology. This free, open-source solution allows neuropsychologists, psychologists and neuroscientists to build sophisticated tasks and focus on what is important: the results and their interpretation.
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/sperduti2017distinctive/">2017 - The distinctive role of executive functions in implicit emotion regulation</a></h2>
-    <div class="article-style">
-      
-      Several theoretical models stress the role of executive functions in emotion regulation (ER). However, most of the previous studies on ER employed explicit regulatory strategies that could have engaged executive functions, beyond regulatory processes per se. Recently, there has been renewed interest in implicit forms of ER, believed to be closer to daily-life requirements. While various studies have shown that implicit and explicit ER engage partially overlapping neurocognitive processes, the contribution of different executive functions in implicit ER has not been investigated. In the present study, we presented participants with negatively valenced pictures of varying emotional intensity preceded by short texts describing them as either fictional or real. This manipulation was meant to induce a spontaneous emotional down-regulation. We recorded electrodermal activity (EDA) and subjective reports of emotion arousal. Executive functions (updating, switching, and inhibition) were also assessed. No difference was found between the fictional and real condition on EDA. A diminished self-reported arousal was observed, however, when pictures were described as fictional for high- and mild-intensity material, but not for neutral material. The amount of down-regulation in the fictional condition was found to be predicted by interindividual variability in updating performances, but not by the other measures of executive functions, suggesting its implication even in implicit forms of ER. The relationship between down-regulation and updating was significant only for high-intensity material. We discuss the role of updating in relation to the consciousness of one's emotional state.
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/sperduti2017distinctive/" >2017 - The distinctive role of executive functions in implicit emotion regulation</a></h2>
+      <div class="article-style">
+        
+          Several theoretical models stress the role of executive functions in emotion regulation (ER). However, most of the previous studies on ER employed explicit regulatory strategies that could have engaged executive functions, beyond regulatory processes per se. Recently, there has been renewed interest in implicit forms of ER, believed to be closer to daily-life requirements. While various studies have shown that implicit and explicit ER engage partially overlapping neurocognitive processes, the contribution of different executive functions in implicit ER has not been investigated. In the present study, we presented participants with negatively valenced pictures of varying emotional intensity preceded by short texts describing them as either fictional or real. This manipulation was meant to induce a spontaneous emotional down-regulation. We recorded electrodermal activity (EDA) and subjective reports of emotion arousal. Executive functions (updating, switching, and inhibition) were also assessed. No difference was found between the fictional and real condition on EDA. A diminished self-reported arousal was observed, however, when pictures were described as fictional for high- and mild-intensity material, but not for neutral material. The amount of down-regulation in the fictional condition was found to be predicted by interindividual variability in updating performances, but not by the other measures of executive functions, suggesting its implication even in implicit forms of ER. The relationship between down-regulation and updating was significant only for high-intensity material. We discuss the role of updating in relation to the consciousness of one's emotional state.
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/nicolas2016can/">2016 - Can mental fatigue be measured by Weber’s compass? Alfred Binet’s answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue</a></h2>
-    <div class="article-style">
-      
-      In 1834, the German physiologist Ernst Heinrich Weber (1795-1878) measured for the first time the tactile discrimination threshold with a compass. This paper describes an application of this technique to measure mental fatigue on students by Hermann Adolf Griesbach (1854-1941) and Alfred Binet (1857-1911). The former was the first to suggest, in 1895, the use of this technique, and Binet and his collaborator Victor Henri (1872-1940) published in 1898 the first monograph on mental fatigue, in which they devoted a chapter to the innovative work by Griesbach. The analysis of this book’s content shows the origins of Binet’s interest in aesthesiometry as related to mental fatigue. The second part of this paper examines Binet’s work using aesthesiometry as an objective measure of mental fatigue.
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/nicolas2016can/" >2016 - Can mental fatigue be measured by Weber’s compass? Alfred Binet’s answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue</a></h2>
+      <div class="article-style">
+        
+          In 1834, the German physiologist Ernst Heinrich Weber (1795-1878) measured for the first time the tactile discrimination threshold with a compass. This paper describes an application of this technique to measure mental fatigue on students by Hermann Adolf Griesbach (1854-1941) and Alfred Binet (1857-1911). The former was the first to suggest, in 1895, the use of this technique, and Binet and his collaborator Victor Henri (1872-1940) published in 1898 the first monograph on mental fatigue, in which they devoted a chapter to the innovative work by Griesbach. The analysis of this book’s content shows the origins of Binet’s interest in aesthesiometry as related to mental fatigue. The second part of this paper examines Binet’s work using aesthesiometry as an objective measure of mental fatigue.
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/sperduti2016paradox/">2016 - The paradox of fiction: Emotional response toward fiction and the modulatory role of self-relevance</a></h2>
-    <div class="article-style">
-      
-      For over forty years, philosophers have struggled with the “paradox of fiction”, which is the issue of how we can get emotionally involved with fictional characters and events. The few neuroscientific studies investigating the distinction between the processing of real and fictional entities have evidenced that midline cortical structures and lateral fronto-parietal regions are more engaged for real and fictional entities, respectively. Interestingly, the former network is engaged in autobiographical memory retrieval and self-reference, processes that are known to boost emotional reactivity, while the latter underpins emotion regulation. Thus, a possible modulation of the emotional response according to the nature (real or fictional) of the stimulus is conceivable. To test this hypothesis, we presented short emotional (negative and positive) and neutral video as fictional or real. For negative material, we found that subjective emotional experience, but not physiological arousal measured by electrodermal activity, was reduced in the fictional condition. Moreover, the amount of personal memories linked to the scenes counteracted this effect boosting the subjective emotional response. On the contrary, personal memories elicited by the scenes, but not fiction, modulate the emotional response for positive material. These results suggest that when a stimulus triggers a personal memory, the emotional response is less prone to be modulated by contextual factors, and suggest that personal engagement could be responsible for emotional reaction toward fiction. We discuss these results in the emotion regulation framework and underline their implications in informing theoretical accounts of emotion in the neuroscientific domain and the philosophical debate on the paradox of emotional response to fiction.
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/sperduti2016paradox/" >2016 - The paradox of fiction: Emotional response toward fiction and the modulatory role of self-relevance</a></h2>
+      <div class="article-style">
+        
+          For over forty years, philosophers have struggled with the “paradox of fiction”, which is the issue of how we can get emotionally involved with fictional characters and events. The few neuroscientific studies investigating the distinction between the processing of real and fictional entities have evidenced that midline cortical structures and lateral fronto-parietal regions are more engaged for real and fictional entities, respectively. Interestingly, the former network is engaged in autobiographical memory retrieval and self-reference, processes that are known to boost emotional reactivity, while the latter underpins emotion regulation. Thus, a possible modulation of the emotional response according to the nature (real or fictional) of the stimulus is conceivable. To test this hypothesis, we presented short emotional (negative and positive) and neutral video as fictional or real. For negative material, we found that subjective emotional experience, but not physiological arousal measured by electrodermal activity, was reduced in the fictional condition. Moreover, the amount of personal memories linked to the scenes counteracted this effect boosting the subjective emotional response. On the contrary, personal memories elicited by the scenes, but not fiction, modulate the emotional response for positive material. These results suggest that when a stimulus triggers a personal memory, the emotional response is less prone to be modulated by contextual factors, and suggest that personal engagement could be responsible for emotional reaction toward fiction. We discuss these results in the emotion regulation framework and underline their implications in informing theoretical accounts of emotion in the neuroscientific domain and the philosophical debate on the paradox of emotional response to fiction.
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/sperduti2016protective/">2016 - The protective role of long-term meditation on the decline of the executive component of attention in aging: a preliminary cross-sectional study</a></h2>
-    <div class="article-style">
-      
-      Life expectancy is constantly increasing. However, a longer life not always corresponds to a healthier life. Indeed, even normal aging is associated with a decline in different cognitive functions. It has been proposed that a central mechanism that could contribute to this widespread cognitive decline is an ineffective inhibitory attentional control. Meditation, to the other hand, has been associated, in young adults, to enhancement of several attentional processes. Nevertheless, attention is not a unitary construct. An influent model proposed the distinction of three subsystems: the alerting (the ability to reach and maintain a vigilance state), the orienting (the capacity of focusing attention on a subset of stimuli), and the conflict resolution or executive component (the ability to resolve conflict or allocate limited resources between competing stimuli). Here, we investigated, employing the Attentional Network Task (ANT), the specific impact of age on these three subcomponents, and the protective role of long-term meditation testing a group of older adults naïve to meditation, a group of age-matched adults with long-term practice of meditation, and a group of young adults with no previous meditation experience. We reported a specific decline of the efficiency of the executive component in elderly that was not observed in age-matched meditators. Our results are encouraging for the investigation of the potential beneficial impact of meditation on other cognitive processes that decline in aging such as memory. Moreover, they could inform geriatric healthcare prevention and intervention strategies, proposing a new approach for cognitive remediation in elderly populations.
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/sperduti2016protective/" >2016 - The protective role of long-term meditation on the decline of the executive component of attention in aging: a preliminary cross-sectional study</a></h2>
+      <div class="article-style">
+        
+          Life expectancy is constantly increasing. However, a longer life not always corresponds to a healthier life. Indeed, even normal aging is associated with a decline in different cognitive functions. It has been proposed that a central mechanism that could contribute to this widespread cognitive decline is an ineffective inhibitory attentional control. Meditation, to the other hand, has been associated, in young adults, to enhancement of several attentional processes. Nevertheless, attention is not a unitary construct. An influent model proposed the distinction of three subsystems: the alerting (the ability to reach and maintain a vigilance state), the orienting (the capacity of focusing attention on a subset of stimuli), and the conflict resolution or executive component (the ability to resolve conflict or allocate limited resources between competing stimuli). Here, we investigated, employing the Attentional Network Task (ANT), the specific impact of age on these three subcomponents, and the protective role of long-term meditation testing a group of older adults naïve to meditation, a group of age-matched adults with long-term practice of meditation, and a group of young adults with no previous meditation experience. We reported a specific decline of the efficiency of the executive component in elderly that was not observed in age-matched meditators. Our results are encouraging for the investigation of the potential beneficial impact of meditation on other cognitive processes that decline in aging such as memory. Moreover, they could inform geriatric healthcare prevention and intervention strategies, proposing a new approach for cognitive remediation in elderly populations.
+        
+      </div>
     </div>
-  </div>
   
-  <div>
-    <h2><a href="/publication/makowski2015emotion/">2015 - Emotion regulation and the cognitive decline in aging: beyond the paradox</a></h2>
-    <div class="article-style">
-      
-      Aging is usually associated with cognitive decline, specifically of the executive functions supported by the frontal lobe. However, in line with observations about the preservation or even the increase of well-being with age, it has been suggested that emotion regulation efficiency follows the same developmental trajectory, remaining stable over time, or even increasing. Emotion regulation refers to a family of strategies aiming at modifying the nature, the intensity, the duration or the expression of emotions. These various strategies rely on different neurocognitive processes in order to be efficient. As these processes are differently affected by aging, some of those strategies appear more affected than others. Thus, elderly people tend to use more frequently situation selection strategies, such as avoiding potentially negative situations, while their ability to regulate an emotion using cognitive reappraisal (ie, changing the meaning of the situation), a strategy drawing heavily on executive resources, appears less efficient than in younger people.
-      
+    
+    
+    
+    <div>
+      <h2><a href="/publication/makowski2015emotion/" >2015 - Emotion regulation and the cognitive decline in aging: beyond the paradox</a></h2>
+      <div class="article-style">
+        
+          Aging is usually associated with cognitive decline, specifically of the executive functions supported by the frontal lobe. However, in line with observations about the preservation or even the increase of well-being with age, it has been suggested that emotion regulation efficiency follows the same developmental trajectory, remaining stable over time, or even increasing. Emotion regulation refers to a family of strategies aiming at modifying the nature, the intensity, the duration or the expression of emotions. These various strategies rely on different neurocognitive processes in order to be efficient. As these processes are differently affected by aging, some of those strategies appear more affected than others. Thus, elderly people tend to use more frequently situation selection strategies, such as avoiding potentially negative situations, while their ability to regulate an emotion using cognitive reappraisal (ie, changing the meaning of the situation), a strategy drawing heavily on executive resources, appears less efficient than in younger people.
+        
+      </div>
     </div>
-  </div>
   
 
   
@@ -480,9 +696,6 @@
 
     
     
-
-    
-    
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
@@ -499,8 +712,6 @@
         
       
 
-      
-      
     
 
     
@@ -511,6 +722,11 @@
     
     
     <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
     
 
     
@@ -575,7 +791,7 @@
     
     
     
-    <script src="/js/academic.min.bcfae8267aba63cc55af53a503896bd9.js"></script>
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
 
     
 
