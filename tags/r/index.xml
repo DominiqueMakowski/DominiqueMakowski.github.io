@@ -5,12 +5,31 @@
     <link>https://dominiquemakowski.github.io/tags/r/</link>
       <atom:link href="https://dominiquemakowski.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>R</title>
       <link>https://dominiquemakowski.github.io/tags/r/</link>
     </image>
+    
+    <item>
+      <title>Introduction to Bayesian statistics with R</title>
+      <link>https://dominiquemakowski.github.io/post/2020_05_15_intro_bayestestr/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020_05_15_intro_bayestestr/</guid>
+      <description>&lt;p&gt;You are a student or a researcher interested in Bayesian statistics and R? But all the tutorials and courses that you have found are too intimidating?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fear no more!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;With the 
+&lt;a href=&#34;https://github.com/easystats/easystats&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;easystats team&lt;/a&gt;, we have created a very &lt;strong&gt;gentle&lt;/strong&gt; and &lt;strong&gt;introductory&lt;/strong&gt; course for beginners.&lt;/p&gt;
+&lt;p&gt;You can find the link here:&lt;/p&gt;
+&lt;p&gt;👉 
+&lt;a href=&#34;https://easystats.github.io/bayestestR/articles/bayestestR.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Get Started with Bayesian Statistics using R&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>easystats</title>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R | Dr. Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/categories/r/</link>
+      <atom:link href="https://dominiquemakowski.github.io/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <description>R</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>R</title>
+      <link>https://dominiquemakowski.github.io/categories/r/</link>
+    </image>
+    
+    <item>
+      <title>Introduction to Bayesian statistics with R</title>
+      <link>https://dominiquemakowski.github.io/post/2020_05_15_intro_bayestestr/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020_05_15_intro_bayestestr/</guid>
+      <description>&lt;p&gt;You are a student or a researcher interested in Bayesian statistics and R? But all the tutorials and courses that you have found are too intimidating?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fear no more!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;With the 
+&lt;a href=&#34;https://github.com/easystats/easystats&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;easystats team&lt;/a&gt;, we have created a very &lt;strong&gt;gentle&lt;/strong&gt; and &lt;strong&gt;introductory&lt;/strong&gt; course for beginners.&lt;/p&gt;
+&lt;p&gt;You can find the link here:&lt;/p&gt;
+&lt;p&gt;👉 
+&lt;a href=&#34;https://easystats.github.io/bayestestR/articles/bayestestR.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Get Started with Bayesian Statistics using R&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tips for writing blog posts using Academic-hugo</title>
+      <link>https://dominiquemakowski.github.io/post/2019_07_12_tips_blogposts/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2019_07_12_tips_blogposts/</guid>
+      <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
+&lt;h2 id=&#34;embedded-tweet&#34;&gt;Embedded Tweet&lt;/h2&gt;
+&lt;p&gt;Simply add the identifier of a tweet (in the URL) in as follows: &lt;code&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/NeuroKit2?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#NeuroKit2&lt;/a&gt; is now the first &lt;a href=&#34;https://twitter.com/hashtag/Python?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Python&lt;/a&gt; package implementing not one, but several methods for &lt;a href=&#34;https://twitter.com/hashtag/ECG?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#ECG&lt;/a&gt; QRS delineation 💓 allowing you to identify cardiac phases and other components with great precision! 👇&lt;a href=&#34;https://t.co/3HijOqB8FG&#34;&gt;https://t.co/3HijOqB8FG&lt;/a&gt;&lt;br&gt;&lt;br&gt;Made possible by the brilliant work of &lt;a href=&#34;https://twitter.com/tampham94?ref_src=twsrc%5Etfw&#34;&gt;@tampham94&lt;/a&gt; 🙌 &lt;a href=&#34;https://t.co/RQiANqW8Yi&#34;&gt;pic.twitter.com/RQiANqW8Yi&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dominique Makowski (@Dom_Makowski) &lt;a href=&#34;https://twitter.com/Dom_Makowski/status/1247905942001287168?ref_src=twsrc%5Etfw&#34;&gt;April 8, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/NeuroKit2?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#NeuroKit2&lt;/a&gt; is now the first &lt;a href=&#34;https://twitter.com/hashtag/Python?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Python&lt;/a&gt; package implementing not one, but several methods for &lt;a href=&#34;https://twitter.com/hashtag/ECG?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#ECG&lt;/a&gt; QRS delineation 💓 allowing you to identify cardiac phases and other components with great precision! 👇&lt;a href=&#34;https://t.co/3HijOqB8FG&#34;&gt;https://t.co/3HijOqB8FG&lt;/a&gt;&lt;br&gt;&lt;br&gt;Made possible by the brilliant work of &lt;a href=&#34;https://twitter.com/tampham94?ref_src=twsrc%5Etfw&#34;&gt;@tampham94&lt;/a&gt; 🙌 &lt;a href=&#34;https://t.co/RQiANqW8Yi&#34;&gt;pic.twitter.com/RQiANqW8Yi&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dominique Makowski (@Dom_Makowski) &lt;a href=&#34;https://twitter.com/Dom_Makowski/status/1247905942001287168?ref_src=twsrc%5Etfw&#34;&gt;April 8, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;embedded-video&#34;&gt;Embedded Video&lt;/h2&gt;
+&lt;p&gt;Similarly to tweets, one can embedd youtube videos by using the following format: &lt;code&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pqoeM18vCaU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pqoeM18vCaU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
+&lt;p&gt;Citations only work with you use an &lt;code&gt;.Rmd&lt;/code&gt; file (in which you can cite like this @makowski2017being) instead of a &lt;code&gt;.md.&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;p&gt;Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the &lt;code&gt;highlight&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```python
+import pandas as pd
+data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
+data.head()
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
+data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data.csv&amp;#34;&lt;/span&gt;)
+data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;Academic supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file and adding &lt;code&gt;markup: mmark&lt;/code&gt; to your page front matter.&lt;/p&gt;
+&lt;p&gt;To render block* math, wrap your LaTeX math with &lt;code&gt;$$...$$&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```tex
+$$\gamma_{n} = \frac{ 
+\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
+\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
+{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;p&gt;$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left |\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right |^2}$$&lt;/p&gt;
+&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the &lt;code&gt;\\&lt;/code&gt; math linebreak:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$$&lt;/span&gt;f&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;k;p_&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;^&lt;span style=&#34;color:#f92672&#34;&gt;*)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; \begin{cases} p_&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;^&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &amp;amp; \text{if }k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, \\
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;p_&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;^&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &amp;amp; \text {if }k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.\end{cases}&lt;span style=&#34;color:#e6db74&#34;&gt;$$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
+&lt;p&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \&lt;br&gt;
+1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$&lt;/p&gt;
+&lt;h2 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h2&gt;
+&lt;p&gt;Academic supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code&gt;diagram&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file or by adding &lt;code&gt;diagram: true&lt;/code&gt; to your page front matter.&lt;/p&gt;
+&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+graph TD;
+  A--&amp;gt;B;
+  A--&amp;gt;C;
+  B--&amp;gt;D;
+  C--&amp;gt;D;
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
+  A--&amp;gt;B;
+  A--&amp;gt;C;
+  B--&amp;gt;D;
+  C--&amp;gt;D;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice-&amp;gt;John: Hello John, how are you?
+  loop Healthcheck
+      John-&amp;gt;John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts &amp;lt;br/&amp;gt;prevail...
+  John--&amp;gt;Alice: Great!
+  John-&amp;gt;Bob: How about you?
+  Bob--&amp;gt;John: Jolly good!
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice-&amp;gt;John: Hello John, how are you?
+  loop Healthcheck
+      John-&amp;gt;John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts &amp;lt;br/&amp;gt;prevail...
+  John--&amp;gt;Alice: Great!
+  John-&amp;gt;Bob: How about you?
+  Bob--&amp;gt;John: Jolly good!
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+gantt
+  dateFormat  YYYY-MM-DD
+  section Section
+  A task           :a1, 2014-01-01, 30d
+  Another task     :after a1  , 20d
+  section Another
+  Task in sec      :2014-01-12  , 12d
+  another task      : 24d
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;gantt
+  dateFormat  YYYY-MM-DD
+  section Section
+  A task           :a1, 2014-01-01, 30d
+  Another task     :after a1  , 20d
+  section Another
+  Task in sec      :2014-01-12  , 12d
+  another task      : 24d
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
+&lt;p&gt;Represent your data in tables:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

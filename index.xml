@@ -73,6 +73,65 @@
     </item>
     
     <item>
+      <title>One Python code line for a Mandelbrot fractal</title>
+      <link>https://dominiquemakowski.github.io/post/2020_05_16_python_mandelbrot/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020_05_16_python_mandelbrot/</guid>
+      <description>&lt;h2 id=&#34;mandelbrot-set&#34;&gt;Mandelbrot Set&lt;/h2&gt;
+&lt;p&gt;I wrote a small Python function to easily generate and plot a 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Mandelbrot_set&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mandelbrot set&lt;/a&gt;. This function is now available through the 
+&lt;a href=&#34;https://github.com/neuropsychology/NeuroKit#quick-example&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;NeuroKit2 package&lt;/strong&gt;&lt;/a&gt;, and can be used as follows:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; neurokit2 &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; nk
+
+nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;fractal_mandelbrot(show&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;True)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The Mandelbrot set is defined in the between &lt;code&gt;-2&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt; on the &lt;em&gt;x&lt;/em&gt; (real) and &lt;em&gt;y&lt;/em&gt; (imaginary) axes. Following that, the image can be cropped accodingly by changing the coordinates. Moreover, the colors can be tweaked by changing the the colormap (&lt;code&gt;cmap&lt;/code&gt;).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;m &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;fractal_mandelbrot(real_range&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.75&lt;/span&gt;), imaginary_range&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.25&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1.25&lt;/span&gt;))
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;imshow(m&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;T, cmap&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;viridis&amp;#34;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;axis(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;off&amp;#34;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;buddhabrot-set&#34;&gt;Buddhabrot Set&lt;/h2&gt;
+&lt;p&gt;It is also possible to generate a 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Buddhabrot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Buddhabrot&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;fractal_mandelbrot(size&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1500&lt;/span&gt;,
+                          real_range&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.75&lt;/span&gt;), imaginary_range&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1.25&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1.25&lt;/span&gt;),
+                          buddha&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;True, iterations&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;imshow(b&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;T, cmap&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;gray&amp;#34;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;axis(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;off&amp;#34;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Added the option to return a so-called &amp;#39;Buddhabrot&amp;#39;🧘 Amazing to see these shapes emerging from such a simple formula 🤯 &lt;a href=&#34;https://twitter.com/hashtag/fractalart?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#fractalart&lt;/a&gt; &lt;a href=&#34;https://t.co/7nzxsvQa6R&#34;&gt;pic.twitter.com/7nzxsvQa6R&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dominique Makowski (@Dom_Makowski) &lt;a href=&#34;https://twitter.com/Dom_Makowski/status/1258376273451053056?ref_src=twsrc%5Etfw&#34;&gt;May 7, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Althoug the NeuroKit Python package is primarily devoted at physiological signal processing, in also includes tons of other useful features.&lt;/p&gt;
+&lt;p&gt;👉 
+&lt;a href=&#34;https://github.com/neuropsychology/NeuroKit#quick-example&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Discover more about NeuroKit here&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;p&gt;Have fun!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Bayesian statistics with R</title>
+      <link>https://dominiquemakowski.github.io/post/2020_05_15_intro_bayestestr/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020_05_15_intro_bayestestr/</guid>
+      <description>&lt;p&gt;You are a student or a researcher interested in Bayesian statistics and R? But all the tutorials and courses that you have found are too intimidating?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fear no more!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;With the 
+&lt;a href=&#34;https://github.com/easystats/easystats&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;easystats team&lt;/a&gt;, we have created a very &lt;strong&gt;gentle&lt;/strong&gt; and &lt;strong&gt;introductory&lt;/strong&gt; course for beginners.&lt;/p&gt;
+&lt;p&gt;You can find the link here:&lt;/p&gt;
+&lt;p&gt;👉 
+&lt;a href=&#34;https://easystats.github.io/bayestestR/articles/bayestestR.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Get Started with Bayesian Statistics using R&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>2020 - The impact of state and dispositional mindfulness on prospective memory: A virtual reality study</title>
       <link>https://dominiquemakowski.github.io/publication/girardeau2020impact/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
@@ -129,59 +188,66 @@
     </item>
     
     <item>
-      <title>Writing technical content in Academic</title>
-      <link>https://dominiquemakowski.github.io/post/writing-technical-content/</link>
+      <title>Tips for writing blog posts using Academic-hugo</title>
+      <link>https://dominiquemakowski.github.io/post/2019_07_12_tips_blogposts/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/writing-technical-content/</guid>
+      <guid>https://dominiquemakowski.github.io/post/2019_07_12_tips_blogposts/</guid>
       <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
+&lt;h2 id=&#34;embedded-tweet&#34;&gt;Embedded Tweet&lt;/h2&gt;
+&lt;p&gt;Simply add the identifier of a tweet (in the URL) in as follows: &lt;code&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/NeuroKit2?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#NeuroKit2&lt;/a&gt; is now the first &lt;a href=&#34;https://twitter.com/hashtag/Python?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Python&lt;/a&gt; package implementing not one, but several methods for &lt;a href=&#34;https://twitter.com/hashtag/ECG?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#ECG&lt;/a&gt; QRS delineation 💓 allowing you to identify cardiac phases and other components with great precision! 👇&lt;a href=&#34;https://t.co/3HijOqB8FG&#34;&gt;https://t.co/3HijOqB8FG&lt;/a&gt;&lt;br&gt;&lt;br&gt;Made possible by the brilliant work of &lt;a href=&#34;https://twitter.com/tampham94?ref_src=twsrc%5Etfw&#34;&gt;@tampham94&lt;/a&gt; 🙌 &lt;a href=&#34;https://t.co/RQiANqW8Yi&#34;&gt;pic.twitter.com/RQiANqW8Yi&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dominique Makowski (@Dom_Makowski) &lt;a href=&#34;https://twitter.com/Dom_Makowski/status/1247905942001287168?ref_src=twsrc%5Etfw&#34;&gt;April 8, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/NeuroKit2?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#NeuroKit2&lt;/a&gt; is now the first &lt;a href=&#34;https://twitter.com/hashtag/Python?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Python&lt;/a&gt; package implementing not one, but several methods for &lt;a href=&#34;https://twitter.com/hashtag/ECG?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#ECG&lt;/a&gt; QRS delineation 💓 allowing you to identify cardiac phases and other components with great precision! 👇&lt;a href=&#34;https://t.co/3HijOqB8FG&#34;&gt;https://t.co/3HijOqB8FG&lt;/a&gt;&lt;br&gt;&lt;br&gt;Made possible by the brilliant work of &lt;a href=&#34;https://twitter.com/tampham94?ref_src=twsrc%5Etfw&#34;&gt;@tampham94&lt;/a&gt; 🙌 &lt;a href=&#34;https://t.co/RQiANqW8Yi&#34;&gt;pic.twitter.com/RQiANqW8Yi&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dominique Makowski (@Dom_Makowski) &lt;a href=&#34;https://twitter.com/Dom_Makowski/status/1247905942001287168?ref_src=twsrc%5Etfw&#34;&gt;April 8, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;p&gt;On this page, you&#39;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
+&lt;h2 id=&#34;embedded-video&#34;&gt;Embedded Video&lt;/h2&gt;
+&lt;p&gt;Similarly to tweets, one can embedd youtube videos by using the following format: &lt;code&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pqoeM18vCaU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/pqoeM18vCaU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
-&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
-
+&lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
+&lt;p&gt;Citations only work with you use an &lt;code&gt;.Rmd&lt;/code&gt; file (in which you can cite like this @makowski2017being) instead of a &lt;code&gt;.md.&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
 &lt;p&gt;Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the &lt;code&gt;highlight&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;```python
 import pandas as pd
-data = pd.read_csv(&amp;#34;data.csv&amp;#34;)
+data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
 data.head()
-```&lt;/code&gt;&lt;/pre&gt;
+```
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; pandas &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; pd
 data &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; pd&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;read_csv(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;data.csv&amp;#34;&lt;/span&gt;)
-data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&#34;math&#34;&gt;Math&lt;/h3&gt;
-
+data&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;head()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
 &lt;p&gt;Academic supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file and adding &lt;code&gt;markup: mmark&lt;/code&gt; to your page front matter.&lt;/p&gt;
-
-&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;$$...$$&lt;/code&gt;.&lt;/p&gt;
-
+&lt;p&gt;To render block* math, wrap your LaTeX math with &lt;code&gt;$$...$$&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$$&lt;/span&gt;\gamma_{n} &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; \frac{ 
-\left | \left &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;\mathbf x_{n} &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; \mathbf x_{n&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;} \right &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;^T 
-\left &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;\nabla F &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;\mathbf x_{n}&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; \nabla F &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;\mathbf x_{n&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;}&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; \right &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; \right |}
-{\left \|\nabla F&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;\mathbf{x}_{n}&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; \nabla F&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;\mathbf{x}_{n&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;}&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; \right \|^&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;}&lt;span style=&#34;color:#e6db74&#34;&gt;$$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;```tex
+$$\gamma_{n} = \frac{ 
+\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
+\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
+{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
+```
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
-
-&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}\]&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$$\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2$$&lt;/code&gt; renders as &lt;span  class=&#34;math&#34;&gt;\(\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2\)&lt;/span&gt; .&lt;/p&gt;
-
+&lt;p&gt;$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left |\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right |^2}$$&lt;/p&gt;
 &lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the &lt;code&gt;\\&lt;/code&gt; math linebreak:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$$&lt;/span&gt;f&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;k;p_&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;^&lt;span style=&#34;color:#f92672&#34;&gt;*)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; \begin{cases} p_&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;^&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &amp;amp; \text{if }k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, \\
-&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;p_&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;^&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &amp;amp; \text {if }k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.\end{cases}&lt;span style=&#34;color:#e6db74&#34;&gt;$$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[f(k;p_0^*) = \begin{cases} p_0^* &amp; \text{if }k=1, \\
-1-p_0^* &amp; \text {if }k=0.\end{cases}\]&lt;/span&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h3&gt;
-
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;p_&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;^&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &amp;amp; \text {if }k&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;.\end{cases}&lt;span style=&#34;color:#e6db74&#34;&gt;$$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
+&lt;p&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \&lt;br&gt;
+1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$&lt;/p&gt;
+&lt;h2 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h2&gt;
 &lt;p&gt;Academic supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code&gt;diagram&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file or by adding &lt;code&gt;diagram: true&lt;/code&gt; to your page front matter.&lt;/p&gt;
-
 &lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;```mermaid
 graph TD;
@@ -189,14 +255,15 @@ graph TD;
   A--&amp;gt;C;
   B--&amp;gt;D;
   C--&amp;gt;D;
-```&lt;/code&gt;&lt;/pre&gt;
+```
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;graph TD;
   A--&amp;gt;B;
   A--&amp;gt;C;
   B--&amp;gt;D;
-  C--&amp;gt;D;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
+  C--&amp;gt;D;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;```mermaid
 sequenceDiagram
   participant Alice
@@ -209,7 +276,8 @@ sequenceDiagram
   John--&amp;gt;Alice: Great!
   John-&amp;gt;Bob: How about you?
   Bob--&amp;gt;John: Jolly good!
-```&lt;/code&gt;&lt;/pre&gt;
+```
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;sequenceDiagram
   participant Alice
@@ -221,8 +289,8 @@ sequenceDiagram
   Note right of John: Rational thoughts &amp;lt;br/&amp;gt;prevail...
   John--&amp;gt;Alice: Great!
   John-&amp;gt;Bob: How about you?
-  Bob--&amp;gt;John: Jolly good!&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
+  Bob--&amp;gt;John: Jolly good!
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;```mermaid
 gantt
   dateFormat  YYYY-MM-DD
@@ -232,7 +300,8 @@ gantt
   section Another
   Task in sec      :2014-01-12  , 12d
   another task      : 24d
-```&lt;/code&gt;&lt;/pre&gt;
+```
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mermaid&#34; data-lang=&#34;mermaid&#34;&gt;gantt
   dateFormat  YYYY-MM-DD
@@ -241,30 +310,14 @@ gantt
   Another task     :after a1  , 20d
   section Another
   Task in sec      :2014-01-12  , 12d
-  another task      : 24d&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;todo-lists&#34;&gt;Todo lists&lt;/h3&gt;
-
-&lt;p&gt;You can even write your todo lists in Academic too:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;- [x]&lt;/span&gt; Write math example
-&lt;span style=&#34;color:#66d9ef&#34;&gt;- [x]&lt;/span&gt; Write diagram example
-- [ ] Do something else&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34;&gt; Write math example&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked=&#34;&#34; disabled=&#34;&#34;&gt; Write diagram example&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled=&#34;&#34;&gt; Do something else&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
-
+  another task      : 24d
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
 &lt;p&gt;Represent your data in tables:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;| First Header  | Second Header |
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-
+| Content Cell  | Content Cell  |
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -272,75 +325,21 @@ gantt
 &lt;th&gt;Second Header&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Content Cell&lt;/td&gt;
 &lt;td&gt;Content Cell&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Content Cell&lt;/td&gt;
 &lt;td&gt;Content Cell&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
-&lt;h3 id=&#34;asides&#34;&gt;Asides&lt;/h3&gt;
-
-&lt;p&gt;Academic supports a Markdown extension for asides, also referred to as &lt;em&gt;notices&lt;/em&gt; or &lt;em&gt;hints&lt;/em&gt;. By prefixing a paragraph with &lt;code&gt;A&amp;gt;&lt;/code&gt;, it will render as an aside. You can enable this feature by adding &lt;code&gt;markup: mmark&lt;/code&gt; to your page front matter, or alternatively using the &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts&#34;&gt;&lt;em&gt;Alert&lt;/em&gt; shortcode&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;A&amp;gt; A Markdown aside is useful for displaying notices, hints, or definitions to your readers.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-
-&lt;aside&gt;
-&lt;p&gt;A Markdown aside is useful for displaying notices, hints, or definitions to your readers.&lt;/p&gt;
-&lt;/aside&gt;
-
-&lt;h3 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>https://dominiquemakowski.github.io/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/jupyter/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; IPython.core.display &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; Image
-Image(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&amp;#39;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Welcome to Academic!&amp;#34;&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Welcome to Academic!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and JupyterLab.&lt;/p&gt;
-&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-jupyter lab index.ipynb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;front matter&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: My post&#39;s title
-date: 2019-09-01
-
-# Put any other Academic metadata here...
----
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Edit the metadata of your post, using the 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation&lt;/a&gt; as a guide to the available options.&lt;/p&gt;
-&lt;p&gt;To set a 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-&lt;p&gt;For other tips, such as using math, see the guide on 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
-&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -574,150 +573,6 @@ Three
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/publication/sperduti2016protective/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Academic: the website builder for Hugo</title>
-      <link>https://dominiquemakowski.github.io/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/getting-started/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or 
-&lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;👉 
-&lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📚 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the &lt;strong&gt;documentation&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💬 
-&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Ask a question&lt;/strong&gt; on the forum&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👥 
-&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: 
-&lt;a href=&#34;https://twitter.com/source_themes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@source_themes&lt;/a&gt; 
-&lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; 
-&lt;a href=&#34;https://twitter.com/search?q=%23MadeWithAcademic&amp;amp;src=typd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithAcademic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💡 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating?&lt;/strong&gt; View the 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Guide&lt;/a&gt; and 
-&lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;❤️ &lt;strong&gt;Support development&lt;/strong&gt; of Academic:
-&lt;ul&gt;
-&lt;li&gt;☕️ 
-&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Donate a coffee&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💵 
-&lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Become a backer on &lt;strong&gt;Patreon&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🖼️ 
-&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Decorate your laptop or journal with an Academic &lt;strong&gt;sticker&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👕 
-&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wear the &lt;strong&gt;T-shirt&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👩‍💻 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/contribute/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Contribute&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; data-caption=&#34;Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
-
-
-  &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable 
-&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and 
-&lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - 
-&lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, 
-&lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;p&gt;Academic comes with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can  choose their preferred mode - click the sun/moon icon in the top right of the 
-&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/customization/#custom-theme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;customizable&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Then 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; to help keep track of 
-&lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;Copyright 2016-present 
-&lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Released under the 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-</description>
     </item>
     
     <item>
