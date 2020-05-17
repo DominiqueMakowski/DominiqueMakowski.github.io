@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artificial | Dr. Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/tags/artificial/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tags/artificial/index.xml" rel="self" type="application/rss+xml" />
+    <description>Artificial</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Artificial</title>
+      <link>https://dominiquemakowski.github.io/tags/artificial/</link>
+    </image>
+    
+    <item>
+      <title>Generate an Articial ECG Signal in Python</title>
+      <link>https://dominiquemakowski.github.io/post/2020_05_17_simulate_ecg/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020_05_17_simulate_ecg/</guid>
+      <description>&lt;h1 id=&#34;create-a-natural-ecg-signal&#34;&gt;Create a natural ECG signal&lt;/h1&gt;
+&lt;p&gt;Generating artificial physiological signals can be very useful to build, test your analysis pipeline or develop and validate a new algorithm.&lt;/p&gt;
+&lt;p&gt;Generating a synthetic, yet realistic, ECG signal in Python can be easily achieved with the &lt;code&gt;ecg_simulate()&lt;/code&gt; function available in the 
+&lt;a href=&#34;https://github.com/neuropsychology/NeuroKit#quick-example&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;NeuroKit2&lt;/strong&gt;&lt;/a&gt; package.&lt;/p&gt;
+&lt;p&gt;In the example below, we will generate &lt;strong&gt;8&lt;/strong&gt; seconds of ECG, sampled at &lt;strong&gt;200 Hz&lt;/strong&gt; (i.e., 200 points per second) - hence the length of the signal will be &lt;code&gt;8 * 200 = 1600&lt;/code&gt; data points. We can also specify the average heart rate, although note that there will be some natural variability (which is a good thing, because it makes it realistic).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; neurokit2 &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; nk  &lt;span style=&#34;color:#75715e&#34;&gt;# Load the package&lt;/span&gt;
+
+simulated_ecg &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ecg_simulate(duration&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;, sampling_rate&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;, heart_rate&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;80&lt;/span&gt;)
+
+nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;signal_plot(simulated_ecg, sampling_rate&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)  &lt;span style=&#34;color:#75715e&#34;&gt;# Visualize the signal&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;output_1_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The simulation is based on the &lt;strong&gt;ECGSYN&lt;/strong&gt; algorithm (McSharry et al., 2003).&lt;/p&gt;
+&lt;p&gt;However, for fast and stable results (as the realistic algorithm naturally generates some variability), one can approximate the QRS complex by a &lt;strong&gt;Daubechies&lt;/strong&gt; wavelet. An ECG based on this method can also be obtained in &lt;strong&gt;NeuroKit&lt;/strong&gt; by changing the &lt;code&gt;method&lt;/code&gt; as follows:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;simulated_ecg &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ecg_simulate(duration&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;, sampling_rate&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;, method&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;daubechies&amp;#34;&lt;/span&gt;)
+
+nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;signal_plot(simulated_ecg, sampling_rate&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;output_2_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;While faster and stable, the generated ECG is far from being realistic.&lt;/p&gt;
+&lt;p&gt;👉 
+&lt;a href=&#34;https://github.com/neuropsychology/NeuroKit#quick-example&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Discover more about NeuroKit here&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;p&gt;Have fun!&lt;/p&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;p&gt;McSharry, P. E., Clifford, G. D., Tarassenko, L., &amp;amp; Smith, L. A. (2003). A dynamical model for generating synthetic electrocardiogram signals. IEEE transactions on biomedical engineering, 50(3), 289-294.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -34,26 +34,96 @@
   
   <url>
     <loc>https://dominiquemakowski.github.io/authors/dom/</loc>
-    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/artificial/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://dominiquemakowski.github.io/authors/</loc>
-    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dominiquemakowski.github.io/tags/buddhabrot/</loc>
-    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
+    <loc>https://dominiquemakowski.github.io/tags/biosignals/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/categories/biosignals/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://dominiquemakowski.github.io/categories/</loc>
-    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://dominiquemakowski.github.io/authors/dominique-makowski/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/ecg/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/ekg/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/post/2020_05_17_simulate_ecg/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/neurokit/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/categories/neurokit/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/physiological/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/post/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/python/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/categories/python/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/simulate/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/</loc>
+    <lastmod>2020-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/buddhabrot/</loc>
     <lastmod>2020-05-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -68,37 +138,7 @@
   </url>
   
   <url>
-    <loc>https://dominiquemakowski.github.io/tags/neurokit/</loc>
-    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/categories/neurokit/</loc>
-    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dominiquemakowski.github.io/post/2020_05_16_python_mandelbrot/</loc>
-    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/post/</loc>
-    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/tags/python/</loc>
-    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/categories/python/</loc>
-    <lastmod>2020-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/tags/</loc>
     <lastmod>2020-05-16T00:00:00+00:00</lastmod>
   </url>
   
