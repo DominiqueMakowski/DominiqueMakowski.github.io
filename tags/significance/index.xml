@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Significance | Dr. Dominique Makowski</title>
+    <link>/tags/significance/</link>
+      <atom:link href="/tags/significance/index.xml" rel="self" type="application/rss+xml" />
+    <description>Significance</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Significance</title>
+      <link>/tags/significance/</link>
+    </image>
+    
+    <item>
+      <title>The Null Hypothesis Fallacy</title>
+      <link>/post/null_hypothesis_fallacy/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/null_hypothesis_fallacy/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The null hypothesis is a hallmark of experimental science, and the paradigm derived from it - the &lt;strong&gt;null hypothesis testing&lt;/strong&gt; - has dominated the world of applied statistics in the last century. It has led to the invention and widespread usage of the infamous &lt;strong&gt;&lt;em&gt;p&lt;/em&gt;-value&lt;/strong&gt; and the related concept of &lt;strong&gt;significance&lt;/strong&gt;, but it can alkso be present in alternative frameworks such as Bayesian statistics. It became one of the combustible fuelling the recent controversies related to the &lt;strong&gt;reproducibility&lt;/strong&gt; and &lt;strong&gt;replicability&lt;/strong&gt; crises.&lt;/p&gt;
+&lt;p&gt;In this series of posts, I will argue that the null hypothesis is not plausible, and examine the consequences of this fact, that will naturally lead me to elaborate an alternative framework for significance testing.&lt;/p&gt;
+&lt;h2 id=&#34;the-null-hypothesis&#34;&gt;The Null Hypothesis&lt;/h2&gt;
+&lt;p&gt;As most scientists are interested in &lt;strong&gt;effects&lt;/strong&gt; (i.e., the parameters - or coefficients - of some statistical models), a natural comparison appears to be the &lt;strong&gt;absence of effect&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;a-null-effect-is-not-a-very-small-effect&#34;&gt;A Null Effect is not a Very Small Effect&lt;/h2&gt;
+&lt;h2 id=&#34;null-effects-do-not-exist&#34;&gt;Null Effects Do Not Exist&lt;/h2&gt;
+&lt;p&gt;Meehl’s (1967, 1978, 1990, 1997), in a series of demonstration (see also Waller, 2004), suggested that&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;Waller, N. G. (2004). The fallacy of the null hypothesis in soft psychology. Applied and Preventive Psychology, 11(1), 83-86.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1967). Theory-testing in psychology and physics: A methodological paradox. Philosophy of Science, 34, 103–115.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1978). Theoretical risks and tabular asterisks: Sir Karl, Sir Ronald, and the slow progress of soft psychology. Journal of Consulting and Clinical Psychology, 46, 806–834.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1990). Appraising and amending theories: The strategy of Lakatosian defense and two principles that warrant using it. Psychological Inquiry, 1, 108–141, 173–180.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1997). The problem is epistemology, not statistics: Replace significance tests by confidence intervals and quantify accuracy of risky numerical predictions. In L. L. Harlow, S. A. Mulaik, &amp;amp; J.H. Steiger (Eds.), What if there were no significance tests? (pp. 393–425). Mahwah, NJ: Erlbaum.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

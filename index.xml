@@ -148,6 +148,22 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     </item>
     
     <item>
+      <title>In defence of the 95% CI</title>
+      <link>https://dominiquemakowski.github.io/post/2020_05_15_ci95/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020_05_15_ci95/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; 
+&lt;a href=&#34;https://github.com/easystats/bayestestR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;BayestestR&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;currently uses a 89% threshold by default for Credible Intervals (CI). Should we change that? If so, by what?&lt;/strong&gt; 
+&lt;a href=&#34;https://github.com/easystats/bayestestR/issues/250&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;&lt;strong&gt;Join the discussion here.&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Magical numbers, or conventional thresholds, have bad press in statistics, and there are many of them. For instance, &lt;strong&gt;.05&lt;/strong&gt; (for the &lt;em&gt;p&lt;/em&gt;-value), or the &lt;strong&gt;95%&lt;/strong&gt; range for the &lt;strong&gt;Confidence Interval&lt;/strong&gt; (CI). Indeed, why 95 and not 94 or 90?&lt;/p&gt;
+&lt;p&gt;👉 
+&lt;a href=&#34;https://easystats.github.io/blog/posts/bayestestr_95/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Read my complete post on the easystats&amp;rsquo; blog&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Introduction to Bayesian statistics with R</title>
       <link>https://dominiquemakowski.github.io/post/2020_05_15_intro_bayestestr/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>

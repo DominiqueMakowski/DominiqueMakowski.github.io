@@ -153,6 +153,26 @@
   </url>
   
   <url>
+    <loc>https://dominiquemakowski.github.io/tags/ci/</loc>
+    <lastmod>2020-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/confidence-interval/</loc>
+    <lastmod>2020-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/credible-interval/</loc>
+    <lastmod>2020-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/post/2020_05_15_ci95/</loc>
+    <lastmod>2020-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dominiquemakowski.github.io/post/2020_05_15_intro_bayestestr/</loc>
     <lastmod>2020-05-15T00:00:00+00:00</lastmod>
   </url>
@@ -164,6 +184,11 @@
   
   <url>
     <loc>https://dominiquemakowski.github.io/categories/r/</loc>
+    <lastmod>2020-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/statistics/</loc>
     <lastmod>2020-05-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -517,10 +542,6 @@
   
   <url>
     <loc>https://dominiquemakowski.github.io/project/psycho/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/tags/statistics/</loc>
   </url>
   
 </urlset>
