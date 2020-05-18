@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mattan S. Ben-Shachar | Dr. Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/authors/mattan-s.-ben-shachar/</link>
-      <atom:link href="https://dominiquemakowski.github.io/authors/mattan-s.-ben-shachar/index.xml" rel="self" type="application/rss+xml" />
+    <link>/authors/mattan-s.-ben-shachar/</link>
+      <atom:link href="/authors/mattan-s.-ben-shachar/index.xml" rel="self" type="application/rss+xml" />
     <description>Mattan S. Ben-Shachar</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Mattan S. Ben-Shachar</title>
-      <link>https://dominiquemakowski.github.io/authors/mattan-s.-ben-shachar/</link>
+      <link>/authors/mattan-s.-ben-shachar/</link>
     </image>
     
     <item>
       <title>2019 - Indices of Effect Existence and Significance in the Bayesian Framework</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2019indices/</link>
+      <link>/publication/makowski2019indices/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2019indices/</guid>
+      <guid>/publication/makowski2019indices/</guid>
       <description></description>
     </item>
     

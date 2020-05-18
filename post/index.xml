@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Dr. Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/post/</link>
-      <atom:link href="https://dominiquemakowski.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>/post/</link>
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
-      <link>https://dominiquemakowski.github.io/post/</link>
+      <link>/post/</link>
     </image>
     
     <item>
       <title>How to correctly analyze reaction time (RT) data</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_18_analyze_rt/</link>
+      <link>/post/analyze_rt/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_18_analyze_rt/</guid>
+      <guid>/post/analyze_rt/</guid>
       <description>&lt;p&gt;This is a very, very important topic given the widespread usage of reaction times in psychology. Most of the time, we analyze it as a regular variable, using traditional models such as &lt;em&gt;linear models&lt;/em&gt;, &lt;em&gt;ANOVAs&lt;/em&gt; etc. The problem is that these models &lt;strong&gt;assume that the RT is normally distributed, which is false&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This leads us to adjustements like &lt;strong&gt;outliers removal&lt;/strong&gt; or &lt;strong&gt;log-transformation&lt;/strong&gt;, distorting the data because of our non-appropriate models.&lt;/p&gt;
 &lt;p&gt;The good news is, it&amp;rsquo;s very easy to use better models, that account for the non-normal distribution of RT. And these alternatives are beautifully presented by 
@@ -33,9 +33,9 @@
     
     <item>
       <title>Generate an articial ECG signal in Python</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_17_simulate_ecg/</link>
+      <link>/post/simulate_ecg/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_17_simulate_ecg/</guid>
+      <guid>/post/simulate_ecg/</guid>
       <description>&lt;h1 id=&#34;create-a-natural-ecg-signal&#34;&gt;Create a natural ECG signal&lt;/h1&gt;
 &lt;p&gt;Generating artificial physiological signals can be very useful to build, test your analysis pipeline or develop and validate a new algorithm.&lt;/p&gt;
 &lt;p&gt;Generating a synthetic, yet realistic, ECG signal in Python can be easily achieved with the &lt;code&gt;ecg_simulate()&lt;/code&gt; function available in the 
@@ -68,9 +68,9 @@ nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;signal_plot(simulated_
     
     <item>
       <title>One Python code line for a Mandelbrot fractal</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_16_python_mandelbrot/</link>
+      <link>/post/python_mandelbrot/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_16_python_mandelbrot/</guid>
+      <guid>/post/python_mandelbrot/</guid>
       <description>&lt;h2 id=&#34;mandelbrot-set&#34;&gt;Mandelbrot Set&lt;/h2&gt;
 &lt;p&gt;I wrote a small Python function to easily generate and plot a 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Mandelbrot_set&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mandelbrot set&lt;/a&gt;. This function is now available through the 
@@ -108,9 +108,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>In defence of the 95% CI</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_15_ci95/</link>
+      <link>/post/defence_ci95/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_15_ci95/</guid>
+      <guid>/post/defence_ci95/</guid>
       <description>&lt;p&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;BayestestR&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;currently uses a 89% threshold by default for Credible Intervals (CI). Should we change that? If so, by what?&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR/issues/250&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;&lt;strong&gt;Join the discussion here.&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
@@ -124,9 +124,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>Introduction to Bayesian statistics with R</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_14_intro_bayestestr/</link>
+      <link>/post/intro_bayestestr/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_14_intro_bayestestr/</guid>
+      <guid>/post/intro_bayestestr/</guid>
       <description>&lt;p&gt;You are a student or a researcher interested in Bayesian statistics and R? But all the tutorials and courses that you have found are too intimidating?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fear no more!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;With the 
@@ -143,9 +143,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>A compilation of the best visual illusions</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_13_visual_illusions/</link>
+      <link>/post/visual_illusions/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_13_visual_illusions/</guid>
+      <guid>/post/visual_illusions/</guid>
       <description>&lt;h3 id=&#34;illusion-of-different-luminance&#34;&gt;Illusion of different luminance&lt;/h3&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Both pears are the same colour and luminance, despite one seeming brighter than the other &lt;a href=&#34;https://t.co/KkUJlTI82R&#34;&gt;pic.twitter.com/KkUJlTI82R&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gavin Buckingham (@DrGBuckingham) &lt;a href=&#34;https://twitter.com/DrGBuckingham/status/1262127098644377601?ref_src=twsrc%5Etfw&#34;&gt;May 17, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
@@ -199,9 +199,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>The funniest academic tweets</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_12_funny_academic/</link>
+      <link>/post/funny_academic/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_12_funny_academic/</guid>
+      <guid>/post/funny_academic/</guid>
       <description>&lt;hr&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Academics looking for happiness be like...  &lt;a href=&#34;https://t.co/dR3ZUQsJ7G&#34;&gt;pic.twitter.com/dR3ZUQsJ7G&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝙹𝚘𝚜𝚑 𝙶𝚛𝚞𝚋𝚋𝚜 (@JoshuaGrubbsPhD) &lt;a href=&#34;https://twitter.com/JoshuaGrubbsPhD/status/1260592038350897152?ref_src=twsrc%5Etfw&#34;&gt;May 13, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
@@ -323,9 +323,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>Tips for writing blog posts using Academic-hugo</title>
-      <link>https://dominiquemakowski.github.io/post/2019_07_12_tips_blogposts/</link>
+      <link>/post/tips_blogposts/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2019_07_12_tips_blogposts/</guid>
+      <guid>/post/tips_blogposts/</guid>
       <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statistics | Dr. Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/categories/statistics/</link>
-      <atom:link href="https://dominiquemakowski.github.io/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <link>/categories/statistics/</link>
+      <atom:link href="/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
     <description>Statistics</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Statistics</title>
-      <link>https://dominiquemakowski.github.io/categories/statistics/</link>
+      <link>/categories/statistics/</link>
     </image>
     
     <item>
       <title>How to correctly analyze reaction time (RT) data</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_18_analyze_rt/</link>
+      <link>/post/analyze_rt/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_18_analyze_rt/</guid>
+      <guid>/post/analyze_rt/</guid>
       <description>&lt;p&gt;This is a very, very important topic given the widespread usage of reaction times in psychology. Most of the time, we analyze it as a regular variable, using traditional models such as &lt;em&gt;linear models&lt;/em&gt;, &lt;em&gt;ANOVAs&lt;/em&gt; etc. The problem is that these models &lt;strong&gt;assume that the RT is normally distributed, which is false&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This leads us to adjustements like &lt;strong&gt;outliers removal&lt;/strong&gt; or &lt;strong&gt;log-transformation&lt;/strong&gt;, distorting the data because of our non-appropriate models.&lt;/p&gt;
 &lt;p&gt;The good news is, it&amp;rsquo;s very easy to use better models, that account for the non-normal distribution of RT. And these alternatives are beautifully presented by 
@@ -33,9 +33,9 @@
     
     <item>
       <title>In defence of the 95% CI</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_15_ci95/</link>
+      <link>/post/defence_ci95/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_15_ci95/</guid>
+      <guid>/post/defence_ci95/</guid>
       <description>&lt;p&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;BayestestR&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;currently uses a 89% threshold by default for Credible Intervals (CI). Should we change that? If so, by what?&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR/issues/250&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;&lt;strong&gt;Join the discussion here.&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
@@ -49,9 +49,9 @@
     
     <item>
       <title>Introduction to Bayesian statistics with R</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_14_intro_bayestestr/</link>
+      <link>/post/intro_bayestestr/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_14_intro_bayestestr/</guid>
+      <guid>/post/intro_bayestestr/</guid>
       <description>&lt;p&gt;You are a student or a researcher interested in Bayesian statistics and R? But all the tutorials and courses that you have found are too intimidating?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fear no more!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;With the 

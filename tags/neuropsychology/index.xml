@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Neuropsychology | Dr. Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/tags/neuropsychology/</link>
-      <atom:link href="https://dominiquemakowski.github.io/tags/neuropsychology/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/neuropsychology/</link>
+      <atom:link href="/tags/neuropsychology/index.xml" rel="self" type="application/rss+xml" />
     <description>Neuropsychology</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Neuropsychology</title>
-      <link>https://dominiquemakowski.github.io/tags/neuropsychology/</link>
+      <link>/tags/neuropsychology/</link>
     </image>
     
     <item>
       <title>Cognitive Control</title>
-      <link>https://dominiquemakowski.github.io/project/cognitivecontrol/</link>
+      <link>/project/cognitivecontrol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/cognitivecontrol/</guid>
+      <guid>/project/cognitivecontrol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neuropsydia</title>
-      <link>https://dominiquemakowski.github.io/project/neuropsydia/</link>
+      <link>/project/neuropsydia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/neuropsydia/</guid>
+      <guid>/project/neuropsydia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Patient Assessment</title>
-      <link>https://dominiquemakowski.github.io/project/patientassessmentapp/</link>
+      <link>/project/patientassessmentapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/patientassessmentapp/</guid>
+      <guid>/project/patientassessmentapp/</guid>
       <description></description>
     </item>
     

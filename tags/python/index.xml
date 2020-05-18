@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python | Dr. Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/tags/python/</link>
-      <atom:link href="https://dominiquemakowski.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/python/</link>
+      <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <description>Python</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Python</title>
-      <link>https://dominiquemakowski.github.io/tags/python/</link>
+      <link>/tags/python/</link>
     </image>
     
     <item>
       <title>Generate an articial ECG signal in Python</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_17_simulate_ecg/</link>
+      <link>/post/simulate_ecg/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_17_simulate_ecg/</guid>
+      <guid>/post/simulate_ecg/</guid>
       <description>&lt;h1 id=&#34;create-a-natural-ecg-signal&#34;&gt;Create a natural ECG signal&lt;/h1&gt;
 &lt;p&gt;Generating artificial physiological signals can be very useful to build, test your analysis pipeline or develop and validate a new algorithm.&lt;/p&gt;
 &lt;p&gt;Generating a synthetic, yet realistic, ECG signal in Python can be easily achieved with the &lt;code&gt;ecg_simulate()&lt;/code&gt; function available in the 
@@ -49,9 +49,9 @@ nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;signal_plot(simulated_
     
     <item>
       <title>One Python code line for a Mandelbrot fractal</title>
-      <link>https://dominiquemakowski.github.io/post/2020_05_16_python_mandelbrot/</link>
+      <link>/post/python_mandelbrot/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2020_05_16_python_mandelbrot/</guid>
+      <guid>/post/python_mandelbrot/</guid>
       <description>&lt;h2 id=&#34;mandelbrot-set&#34;&gt;Mandelbrot Set&lt;/h2&gt;
 &lt;p&gt;I wrote a small Python function to easily generate and plot a 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Mandelbrot_set&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mandelbrot set&lt;/a&gt;. This function is now available through the 
@@ -89,25 +89,25 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>Cognitive Control</title>
-      <link>https://dominiquemakowski.github.io/project/cognitivecontrol/</link>
+      <link>/project/cognitivecontrol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/cognitivecontrol/</guid>
+      <guid>/project/cognitivecontrol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NeuroKit</title>
-      <link>https://dominiquemakowski.github.io/project/neurokit/</link>
+      <link>/project/neurokit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/neurokit/</guid>
+      <guid>/project/neurokit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neuropsydia</title>
-      <link>https://dominiquemakowski.github.io/project/neuropsydia/</link>
+      <link>/project/neuropsydia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/neuropsydia/</guid>
+      <guid>/project/neuropsydia/</guid>
       <description></description>
     </item>
     

@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Dr. Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/project/</link>
-      <atom:link href="https://dominiquemakowski.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
-      <link>https://dominiquemakowski.github.io/project/</link>
+      <link>/project/</link>
     </image>
     
     <item>
       <title>Cognitive Control</title>
-      <link>https://dominiquemakowski.github.io/project/cognitivecontrol/</link>
+      <link>/project/cognitivecontrol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/cognitivecontrol/</guid>
+      <guid>/project/cognitivecontrol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>easystats</title>
-      <link>https://dominiquemakowski.github.io/project/easystats/</link>
+      <link>/project/easystats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/easystats/</guid>
+      <guid>/project/easystats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NeuroKit</title>
-      <link>https://dominiquemakowski.github.io/project/neurokit/</link>
+      <link>/project/neurokit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/neurokit/</guid>
+      <guid>/project/neurokit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neuropsydia</title>
-      <link>https://dominiquemakowski.github.io/project/neuropsydia/</link>
+      <link>/project/neuropsydia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/neuropsydia/</guid>
+      <guid>/project/neuropsydia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Patient Assessment</title>
-      <link>https://dominiquemakowski.github.io/project/patientassessmentapp/</link>
+      <link>/project/patientassessmentapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/patientassessmentapp/</guid>
+      <guid>/project/patientassessmentapp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>psycho</title>
-      <link>https://dominiquemakowski.github.io/project/psycho/</link>
+      <link>/project/psycho/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/psycho/</guid>
+      <guid>/project/psycho/</guid>
       <description></description>
     </item>
     
