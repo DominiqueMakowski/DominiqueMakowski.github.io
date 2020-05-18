@@ -667,7 +667,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min read
+    5 min read
   </span>
   
 
@@ -717,11 +717,32 @@
       <h2 id="introduction">Introduction</h2>
 <p>The null hypothesis is a hallmark of experimental science, and the paradigm derived from it - the <strong>null hypothesis testing</strong> - has dominated the world of applied statistics in the last century. It has led to the invention and widespread usage of the infamous <strong><em>p</em>-value</strong> and the related concept of <strong>significance</strong>, but it can alkso be present in alternative frameworks such as Bayesian statistics. It became one of the combustible fuelling the recent controversies related to the <strong>reproducibility</strong> and <strong>replicability</strong> crises.</p>
 <p>In this series of posts, I will argue that the null hypothesis is not plausible, and examine the consequences of this fact, that will naturally lead me to elaborate an alternative framework for significance testing.</p>
-<h2 id="the-null-hypothesis">The Null Hypothesis</h2>
-<p>As most scientists are interested in <strong>effects</strong> (i.e., the parameters - or coefficients - of some statistical models), a natural comparison appears to be the <strong>absence of effect</strong>.</p>
+<h2 id="absence-of-effect-vs-null-effect">Absence of effect <em>vs.</em> Null Effect</h2>
+<p>Most scientists are designing experiments to quantify or assess the existence of an <strong>effect</strong> (a relationship between two things), to which a natural opposite seems to be the <strong>absence of effect</strong>. These effects are usually operationalized as parameters - or coefficients - of some statistical models. Such models are akin to a simplified version of the world, which can be more or less complex, accurate, appropriate or sensitive to investigate a given effect.</p>
+<p>Interestingly, in most of statistical models, the existence of effects (i.e., coefficients) is predetermined. We could, in theory, imagine a model in which we say <em>&ldquo;here&rsquo;s 3 variables, V1, V2 and V3&rdquo;</em>, and the model would create a parameter, for instance the correlation between <em>V1</em> and <em>V3</em>, only if said effect <em>is present</em>. With such model, it would be possible to tell wether an effect exists, and if so investigate its properties (size, range, &hellip;).</p>
+<p>But that&rsquo;s not what happens. In general, the existence of a given parameter depends on the model specification, rather than on the data. This means that the researcher has to specify wether he wants to include the correlation between <em>V1</em> and <em>V3</em> in order to estimate it. This might seem trivial, but it has important consequences, as it leads to the <em>de facto</em> swapping of <strong>absence of effects</strong> for <strong>null effects</strong>, which shifts the focus to the value of the effect. Note that most people would argue that <strong>no effect</strong> and <strong>null effect</strong> are equivalent, merely representing two ways of looking at the same phenomenon (&ldquo;null effect&rdquo; being the numerical, coefficient-focused, version of &ldquo;no effect&rdquo;).</p>
 <h2 id="a-null-effect-is-not-a-very-small-effect">A Null Effect is not a Very Small Effect</h2>
+<p>The focus on the effect value is a double edged sword. Let&rsquo;s take an effect (i.e., a coefficient) of <code>0.000001</code>.</p>
+<p>We all have a tentency to equate very small effects as &ldquo;null&rdquo; effects.</p>
 <h2 id="null-effects-do-not-exist">Null Effects Do Not Exist</h2>
-<p>Meehl’s (1967, 1978, 1990, 1997), in a series of demonstration (see also Waller, 2004), suggested that</p>
+<p>Meehl’s (1967, 1978, 1990, 1997), in a series of demonstration (see also Waller, 2004), suggested that <em>&ldquo;the null hypothesis, taken literally, is always false&rdquo;</em> (Meehl, 1978, p. 822). Based on strongly-powered personality datasets, he realised that the probability of two variables being significantly related is a function of sample size, and concluded that <em>&ldquo;in social science everything correlates with almost everything else, theory aside&rdquo;</em> (Meehl, 1997, p. 393).</p>
+<p>I would like to extent this conclusion beyond social sciences or, as coined by Meehl or Waller (2004), <em>&ldquo;soft psychology&rdquo;</em> (a term that I do not particularly like). Example of air pression.</p>
+<p>This is a <strong>major issue</strong>, as it means that any effect for which we cannot reject the null hypothesis (where <em>p</em> &gt; .05) can be interpreted as <em>&quot;&quot;</em></p>
+<h2 id="no-effects-do-not-exist-either">No Effects Do Not Exist Either</h2>
+<h2 id="solutions">Solutions</h2>
+<ul>
+<li>
+<p>Bayesian: quantify support in favour of the null</p>
+</li>
+<li>
+<p>Effect size &amp; region of equivalence</p>
+</li>
+<li>
+<p>Third solution: change paradigm (SexIt).</p>
+</li>
+</ul>
+<p>Taken literally, the null hypothesis is always false. (as cited in Meehl, 1990, p 205). When this phenomenon is combined with the fact that very large samples can make every small effect a significant effect, one has to conclude that with the ideal sample (as large as possible) one have to reject every null hypothesis.</p>
+<p>This is problematic because this will turn research into a tautology. Every experiment that has a p-value &gt; .05, will become a type II error since the sample was just not big enough to detect the effect. A solution could be to attach more importance to effect sizes and make them decisive in whether a null hypothesis should be rejected.</p>
 <h2 id="references">References</h2>
 <p>Waller, N. G. (2004). The fallacy of the null hypothesis in soft psychology. Applied and Preventive Psychology, 11(1), 83-86.</p>
 <p>Meehl, P. E. (1967). Theory-testing in psychology and physics: A methodological paradox. Philosophy of Science, 34, 103–115.</p>

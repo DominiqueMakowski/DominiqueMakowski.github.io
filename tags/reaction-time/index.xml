@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reaction time | Dr. Dominique Makowski</title>
+    <link>/tags/reaction-time/</link>
+      <atom:link href="/tags/reaction-time/index.xml" rel="self" type="application/rss+xml" />
+    <description>Reaction time</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Reaction time</title>
+      <link>/tags/reaction-time/</link>
+    </image>
+    
+    <item>
+      <title>How to correctly analyze reaction time (RT) data</title>
+      <link>/post/2020_05_18_analyze_rt/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020_05_18_analyze_rt/</guid>
+      <description>&lt;p&gt;This is a very, very important topic given the widespread usage of reaction times in psychology. Most of the time, we analyze it as a regular variable, using traditional models such as &lt;strong&gt;linear models&lt;/strong&gt;, &lt;strong&gt;ANOVAs&lt;/strong&gt; etc. The problem is that these models &lt;strong&gt;assume that the RT is normally distributed, which is false&lt;/strong&gt;. This leads us to adjustements like &lt;strong&gt;outliers removal&lt;/strong&gt; or &lt;strong&gt;log-transformation&lt;/strong&gt;, distorting the data because of our non-appropriate models.&lt;/p&gt;
+&lt;p&gt;The good news is, it&amp;rsquo;s very easy to use better models, that account for the non-normal distribution of RT. And these alternatives are beautifully presented by 
+&lt;a href=&#34;https://vbn.aau.dk/da/persons/117060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jonas K. Lindeløv&lt;/strong&gt;&lt;/a&gt; in the guide below:&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href=&#34;https://lindeloev.github.io/shiny-rt/&#34;&gt;https://lindeloev.github.io/shiny-rt/&lt;/a&gt; 👈&lt;/p&gt;
+&lt;p&gt;It is a must-read for all psychologist. Do check-it out!!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;And don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
