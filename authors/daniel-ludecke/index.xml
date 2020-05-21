@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Daniel Lüdecke | Dr. Dominique Makowski</title>
-    <link>/authors/daniel-ludecke/</link>
-      <atom:link href="/authors/daniel-ludecke/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/authors/daniel-ludecke/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/daniel-ludecke/index.xml" rel="self" type="application/rss+xml" />
     <description>Daniel Lüdecke</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Daniel Lüdecke</title>
-      <link>/authors/daniel-ludecke/</link>
+      <link>https://dominiquemakowski.github.io/authors/daniel-ludecke/</link>
     </image>
     
     <item>
       <title>2019 - Indices of Effect Existence and Significance in the Bayesian Framework</title>
-      <link>/publication/makowski2019indices/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019indices/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019indices/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019indices/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - bayestestR: Describing effects and their uncertainty, existence and significance within the Bayesian framework</title>
-      <link>/publication/makowski2019bayestestr/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019bayestestr/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - insight: A Unified Interface to Access Information from Model Objects in R</title>
-      <link>/publication/ludecke2019insight/</link>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2019insight/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/ludecke2019insight/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2019insight/</guid>
       <description></description>
     </item>
     

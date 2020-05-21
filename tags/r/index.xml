@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R | Dr. Dominique Makowski</title>
-    <link>/tags/r/</link>
-      <atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/tags/r/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://dominiquemakowski.github.io/tags/r/</link>
     </image>
     
     <item>
       <title>How to correctly analyze reaction time (RT) data</title>
-      <link>/post/analyze_rt/</link>
+      <link>https://dominiquemakowski.github.io/post/analyze_rt/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/analyze_rt/</guid>
+      <guid>https://dominiquemakowski.github.io/post/analyze_rt/</guid>
       <description>&lt;p&gt;This is a very, very important topic given the widespread usage of reaction times in psychology. Most of the time, we analyze it as a regular variable, using traditional models such as &lt;em&gt;linear models&lt;/em&gt;, &lt;em&gt;ANOVAs&lt;/em&gt; etc. The problem is that these models &lt;strong&gt;assume that the RT is normally distributed, which is false&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This leads us to adjustements like &lt;strong&gt;outliers removal&lt;/strong&gt; or &lt;strong&gt;log-transformation&lt;/strong&gt;, distorting the data because of our non-appropriate models.&lt;/p&gt;
 &lt;p&gt;The good news is, it&amp;rsquo;s very easy to use better models, that account for the non-normal distribution of RT. And these alternatives are beautifully presented by 
@@ -33,9 +33,9 @@
     
     <item>
       <title>Introduction to Bayesian statistics with R</title>
-      <link>/post/intro_bayestestr/</link>
+      <link>https://dominiquemakowski.github.io/post/intro_bayestestr/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/intro_bayestestr/</guid>
+      <guid>https://dominiquemakowski.github.io/post/intro_bayestestr/</guid>
       <description>&lt;p&gt;You are a student or a researcher interested in Bayesian statistics and R? But all the tutorials and courses that you have found are too intimidating?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fear no more!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;With the 
@@ -52,25 +52,25 @@
     
     <item>
       <title>easystats</title>
-      <link>/project/easystats/</link>
+      <link>https://dominiquemakowski.github.io/project/easystats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/easystats/</guid>
+      <guid>https://dominiquemakowski.github.io/project/easystats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Patient Assessment</title>
-      <link>/project/patientassessmentapp/</link>
+      <link>https://dominiquemakowski.github.io/project/patientassessmentapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/patientassessmentapp/</guid>
+      <guid>https://dominiquemakowski.github.io/project/patientassessmentapp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>psycho</title>
-      <link>/project/psycho/</link>
+      <link>https://dominiquemakowski.github.io/project/psycho/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project/psycho/</guid>
+      <guid>https://dominiquemakowski.github.io/project/psycho/</guid>
       <description></description>
     </item>
     

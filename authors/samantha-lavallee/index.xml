@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Samantha Lavallée, | Dr. Dominique Makowski</title>
-    <link>/authors/samantha-lavallee/</link>
-      <atom:link href="/authors/samantha-lavallee/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/authors/samantha-lavallee/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/samantha-lavallee/index.xml" rel="self" type="application/rss+xml" />
     <description>Samantha Lavallée,</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Samantha Lavallée,</title>
-      <link>/authors/samantha-lavallee/</link>
+      <link>https://dominiquemakowski.github.io/authors/samantha-lavallee/</link>
     </image>
     
     <item>
       <title>2019 - Adaptation and Validation of a Short French Version of the Affective Style Questionnaire</title>
-      <link>/publication/makowski2019adaptation/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019adaptation/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Dispositional mindfulness attenuates the emotional attentional blink</title>
-      <link>/publication/makowski2019dispositional/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019dispositional/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</guid>
       <description></description>
     </item>
     

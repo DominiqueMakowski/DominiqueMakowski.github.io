@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RT | Dr. Dominique Makowski</title>
-    <link>/tags/rt/</link>
-      <atom:link href="/tags/rt/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/tags/rt/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tags/rt/index.xml" rel="self" type="application/rss+xml" />
     <description>RT</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>RT</title>
-      <link>/tags/rt/</link>
+      <link>https://dominiquemakowski.github.io/tags/rt/</link>
     </image>
     
     <item>
       <title>How to correctly analyze reaction time (RT) data</title>
-      <link>/post/analyze_rt/</link>
+      <link>https://dominiquemakowski.github.io/post/analyze_rt/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/analyze_rt/</guid>
+      <guid>https://dominiquemakowski.github.io/post/analyze_rt/</guid>
       <description>&lt;p&gt;This is a very, very important topic given the widespread usage of reaction times in psychology. Most of the time, we analyze it as a regular variable, using traditional models such as &lt;em&gt;linear models&lt;/em&gt;, &lt;em&gt;ANOVAs&lt;/em&gt; etc. The problem is that these models &lt;strong&gt;assume that the RT is normally distributed, which is false&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This leads us to adjustements like &lt;strong&gt;outliers removal&lt;/strong&gt; or &lt;strong&gt;log-transformation&lt;/strong&gt;, distorting the data because of our non-appropriate models.&lt;/p&gt;
 &lt;p&gt;The good news is, it&amp;rsquo;s very easy to use better models, that account for the non-normal distribution of RT. And these alternatives are beautifully presented by 

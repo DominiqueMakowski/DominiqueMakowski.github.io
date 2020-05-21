@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dominique Makowski | Dr. Dominique Makowski</title>
-    <link>/authors/dominique-makowski/</link>
-      <atom:link href="/authors/dominique-makowski/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/authors/dominique-makowski/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/dominique-makowski/index.xml" rel="self" type="application/rss+xml" />
     <description>Dominique Makowski</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Dominique Makowski</title>
-      <link>/authors/dominique-makowski/</link>
+      <link>https://dominiquemakowski.github.io/authors/dominique-makowski/</link>
     </image>
     
     <item>
       <title>How to correctly analyze reaction time (RT) data</title>
-      <link>/post/analyze_rt/</link>
+      <link>https://dominiquemakowski.github.io/post/analyze_rt/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/analyze_rt/</guid>
+      <guid>https://dominiquemakowski.github.io/post/analyze_rt/</guid>
       <description>&lt;p&gt;This is a very, very important topic given the widespread usage of reaction times in psychology. Most of the time, we analyze it as a regular variable, using traditional models such as &lt;em&gt;linear models&lt;/em&gt;, &lt;em&gt;ANOVAs&lt;/em&gt; etc. The problem is that these models &lt;strong&gt;assume that the RT is normally distributed, which is false&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This leads us to adjustements like &lt;strong&gt;outliers removal&lt;/strong&gt; or &lt;strong&gt;log-transformation&lt;/strong&gt;, distorting the data because of our non-appropriate models.&lt;/p&gt;
 &lt;p&gt;The good news is, it&amp;rsquo;s very easy to use better models, that account for the non-normal distribution of RT. And these alternatives are beautifully presented by 
@@ -33,9 +33,9 @@
     
     <item>
       <title>Generate an articial ECG signal in Python</title>
-      <link>/post/simulate_ecg/</link>
+      <link>https://dominiquemakowski.github.io/post/simulate_ecg/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/simulate_ecg/</guid>
+      <guid>https://dominiquemakowski.github.io/post/simulate_ecg/</guid>
       <description>&lt;h1 id=&#34;create-a-natural-ecg-signal&#34;&gt;Create a natural ECG signal&lt;/h1&gt;
 &lt;p&gt;Generating artificial physiological signals can be very useful to build, test your analysis pipeline or develop and validate a new algorithm.&lt;/p&gt;
 &lt;p&gt;Generating a synthetic, yet realistic, ECG signal in Python can be easily achieved with the &lt;code&gt;ecg_simulate()&lt;/code&gt; function available in the 
@@ -68,9 +68,9 @@ nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;signal_plot(simulated_
     
     <item>
       <title>One Python code line for a Mandelbrot fractal</title>
-      <link>/post/python_mandelbrot/</link>
+      <link>https://dominiquemakowski.github.io/post/python_mandelbrot/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/python_mandelbrot/</guid>
+      <guid>https://dominiquemakowski.github.io/post/python_mandelbrot/</guid>
       <description>&lt;h2 id=&#34;mandelbrot-set&#34;&gt;Mandelbrot Set&lt;/h2&gt;
 &lt;p&gt;I wrote a small Python function to easily generate and plot a 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Mandelbrot_set&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mandelbrot set&lt;/a&gt;. This function is now available through the 
@@ -108,9 +108,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>In defence of the 95% CI</title>
-      <link>/post/defence_ci95/</link>
+      <link>https://dominiquemakowski.github.io/post/defence_ci95/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/defence_ci95/</guid>
+      <guid>https://dominiquemakowski.github.io/post/defence_ci95/</guid>
       <description>&lt;p&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;BayestestR&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;currently uses a 89% threshold by default for Credible Intervals (CI). Should we change that? If so, by what?&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR/issues/250&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;&lt;strong&gt;Join the discussion here.&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
@@ -124,9 +124,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>Introduction to Bayesian statistics with R</title>
-      <link>/post/intro_bayestestr/</link>
+      <link>https://dominiquemakowski.github.io/post/intro_bayestestr/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/intro_bayestestr/</guid>
+      <guid>https://dominiquemakowski.github.io/post/intro_bayestestr/</guid>
       <description>&lt;p&gt;You are a student or a researcher interested in Bayesian statistics and R? But all the tutorials and courses that you have found are too intimidating?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fear no more!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;With the 
@@ -143,9 +143,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>A compilation of the best visual illusions</title>
-      <link>/post/visual_illusions/</link>
+      <link>https://dominiquemakowski.github.io/post/visual_illusions/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/visual_illusions/</guid>
+      <guid>https://dominiquemakowski.github.io/post/visual_illusions/</guid>
       <description>&lt;h3 id=&#34;illusion-of-different-luminance&#34;&gt;Illusion of different luminance&lt;/h3&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Both pears are the same colour and luminance, despite one seeming brighter than the other &lt;a href=&#34;https://t.co/KkUJlTI82R&#34;&gt;pic.twitter.com/KkUJlTI82R&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gavin Buckingham (@DrGBuckingham) &lt;a href=&#34;https://twitter.com/DrGBuckingham/status/1262127098644377601?ref_src=twsrc%5Etfw&#34;&gt;May 17, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
@@ -199,9 +199,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>The funniest academic tweets</title>
-      <link>/post/funny_academic/</link>
+      <link>https://dominiquemakowski.github.io/post/funny_academic/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/funny_academic/</guid>
+      <guid>https://dominiquemakowski.github.io/post/funny_academic/</guid>
       <description>&lt;hr&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Academics looking for happiness be like...  &lt;a href=&#34;https://t.co/dR3ZUQsJ7G&#34;&gt;pic.twitter.com/dR3ZUQsJ7G&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝙹𝚘𝚜𝚑 𝙶𝚛𝚞𝚋𝚋𝚜 (@JoshuaGrubbsPhD) &lt;a href=&#34;https://twitter.com/JoshuaGrubbsPhD/status/1260592038350897152?ref_src=twsrc%5Etfw&#34;&gt;May 13, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
@@ -323,169 +323,169 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>2020 - The impact of state and dispositional mindfulness on prospective memory: A virtual reality study</title>
-      <link>/publication/girardeau2020impact/</link>
+      <link>https://dominiquemakowski.github.io/publication/girardeau2020impact/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/girardeau2020impact/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/girardeau2020impact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2020 - The Structure of Deception: Validation of the Lying Profile Questionnaire</title>
-      <link>/publication/makowski2020structure/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2020structure/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2020structure/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2020structure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Indices of Effect Existence and Significance in the Bayesian Framework</title>
-      <link>/publication/makowski2019indices/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019indices/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019indices/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019indices/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Adaptation and Validation of a Short French Version of the Affective Style Questionnaire</title>
-      <link>/publication/makowski2019adaptation/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019adaptation/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - bayestestR: Describing effects and their uncertainty, existence and significance within the Bayesian framework</title>
-      <link>/publication/makowski2019bayestestr/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019bayestestr/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - insight: A Unified Interface to Access Information from Model Objects in R</title>
-      <link>/publication/ludecke2019insight/</link>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2019insight/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/ludecke2019insight/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2019insight/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - The heart of cognitive control: Cardiac phase modulates processing speed and inhibition</title>
-      <link>/publication/makowski2019heart/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019heart/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019heart/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019heart/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Dispositional mindfulness attenuates the emotional attentional blink</title>
-      <link>/publication/makowski2019dispositional/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019dispositional/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Phenomenal, bodily and brain correlates of fictional reappraisal as an implicit emotion regulation strategy</title>
-      <link>/publication/makowski2019phenomenal/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019phenomenal/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019phenomenal/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019phenomenal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2018 - The psycho Package: an Efficient and Publishing-Oriented Workflow for Psychological Science</title>
-      <link>/publication/makowski2018psycho/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2018psycho/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2018psycho/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2018psycho/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - &#34;Being there&#34; and remembering it: Presence improves memory encoding</title>
-      <link>/publication/makowski2017being/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2017being/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2017being/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2017being/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Centenaire Ribot (première partie). La réception de l’œuvre de Théodule Ribot publiée chez l’éditeur Ladrange (1870-1873)</title>
-      <link>/publication/nicolas2017centenaire/</link>
+      <link>https://dominiquemakowski.github.io/publication/nicolas2017centenaire/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/nicolas2017centenaire/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/nicolas2017centenaire/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - How virtual embodiment affects episodic memory functioning: a proof-of-concept study</title>
-      <link>/publication/tuena2017virtual/</link>
+      <link>https://dominiquemakowski.github.io/publication/tuena2017virtual/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/tuena2017virtual/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/tuena2017virtual/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information</title>
-      <link>/publication/sperduti2017interaction/</link>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2017interaction/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/sperduti2017interaction/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2017interaction/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Meditation and successful aging: can meditative practices counteract age-related cognitive decline?</title>
-      <link>/publication/sperduti2017meditation/</link>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2017meditation/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/sperduti2017meditation/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2017meditation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Neuropsydia. py: A Python Module for Creating Experiments, Tasks and Questionnaires</title>
-      <link>/publication/makowski2017neuropsydia/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2017neuropsydia/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - The distinctive role of executive functions in implicit emotion regulation</title>
-      <link>/publication/sperduti2017distinctive/</link>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/sperduti2017distinctive/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2016 - Can mental fatigue be measured by Weber’s compass? Alfred Binet’s answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue</title>
-      <link>/publication/nicolas2016can/</link>
+      <link>https://dominiquemakowski.github.io/publication/nicolas2016can/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/nicolas2016can/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/nicolas2016can/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2016 - The paradox of fiction: Emotional response toward fiction and the modulatory role of self-relevance</title>
-      <link>/publication/sperduti2016paradox/</link>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/sperduti2016paradox/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2016 - The protective role of long-term meditation on the decline of the executive component of attention in aging: a preliminary cross-sectional study</title>
-      <link>/publication/sperduti2016protective/</link>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2016protective/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/sperduti2016protective/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2016protective/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2015 - Emotion regulation and the cognitive decline in aging: beyond the paradox</title>
-      <link>/publication/makowski2015emotion/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2015emotion/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2015emotion/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2015emotion/</guid>
       <description></description>
     </item>
     

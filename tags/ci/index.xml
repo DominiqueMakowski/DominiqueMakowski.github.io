@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CI | Dr. Dominique Makowski</title>
-    <link>/tags/ci/</link>
-      <atom:link href="/tags/ci/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/tags/ci/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tags/ci/index.xml" rel="self" type="application/rss+xml" />
     <description>CI</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>CI</title>
-      <link>/tags/ci/</link>
+      <link>https://dominiquemakowski.github.io/tags/ci/</link>
     </image>
     
     <item>
       <title>In defence of the 95% CI</title>
-      <link>/post/defence_ci95/</link>
+      <link>https://dominiquemakowski.github.io/post/defence_ci95/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/defence_ci95/</guid>
+      <guid>https://dominiquemakowski.github.io/post/defence_ci95/</guid>
       <description>&lt;p&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;BayestestR&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;currently uses a 89% threshold by default for Credible Intervals (CI). Should we change that? If so, by what?&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR/issues/250&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;&lt;strong&gt;Join the discussion here.&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;

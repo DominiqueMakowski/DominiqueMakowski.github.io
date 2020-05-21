@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Buddhabrot | Dr. Dominique Makowski</title>
-    <link>/tags/buddhabrot/</link>
-      <atom:link href="/tags/buddhabrot/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/tags/buddhabrot/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tags/buddhabrot/index.xml" rel="self" type="application/rss+xml" />
     <description>Buddhabrot</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 16 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Buddhabrot</title>
-      <link>/tags/buddhabrot/</link>
+      <link>https://dominiquemakowski.github.io/tags/buddhabrot/</link>
     </image>
     
     <item>
       <title>One Python code line for a Mandelbrot fractal</title>
-      <link>/post/python_mandelbrot/</link>
+      <link>https://dominiquemakowski.github.io/post/python_mandelbrot/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/python_mandelbrot/</guid>
+      <guid>https://dominiquemakowski.github.io/post/python_mandelbrot/</guid>
       <description>&lt;h2 id=&#34;mandelbrot-set&#34;&gt;Mandelbrot Set&lt;/h2&gt;
 &lt;p&gt;I wrote a small Python function to easily generate and plot a 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Mandelbrot_set&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mandelbrot set&lt;/a&gt;. This function is now available through the 

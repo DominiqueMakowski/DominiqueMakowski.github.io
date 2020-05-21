@@ -3,650 +3,640 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/example/example1/</loc>
+    <loc>https://dominiquemakowski.github.io/courses/example/example1/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/example/</loc>
+    <loc>https://dominiquemakowski.github.io/courses/example/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/example/example2/</loc>
+    <loc>https://dominiquemakowski.github.io/courses/example/example2/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/example/</loc>
+    <loc>https://dominiquemakowski.github.io/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/</loc>
+    <loc>https://dominiquemakowski.github.io/talk/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/dom/</loc>
+    <loc>https://dominiquemakowski.github.io/talk/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/authors/dom/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://dominiquemakowski.github.io/categories/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/dominique-makowski/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/dominique-makowski/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/analyze_rt/</loc>
+    <loc>https://dominiquemakowski.github.io/post/analyze_rt/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://dominiquemakowski.github.io/post/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/r/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>https://dominiquemakowski.github.io/categories/r/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/reaction-time/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/reaction-time/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/rt/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/rt/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/statistics/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/statistics/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/statistics/</loc>
+    <loc>https://dominiquemakowski.github.io/categories/statistics/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/art/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/art/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/artificial/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/artificial/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/biosignals/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/biosignals/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/biosignals/</loc>
+    <loc>https://dominiquemakowski.github.io/categories/biosignals/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ecg/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/ecg/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ekg/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/ekg/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/simulate_ecg/</loc>
+    <loc>https://dominiquemakowski.github.io/post/simulate_ecg/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/neurokit/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/neurokit/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/neurokit/</loc>
+    <loc>https://dominiquemakowski.github.io/categories/neurokit/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/physiological/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/physiological/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/python/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/python/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/python/</loc>
+    <loc>https://dominiquemakowski.github.io/categories/python/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/simulate/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/simulate/</loc>
     <lastmod>2020-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/buddhabrot/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/buddhabrot/</loc>
     <lastmod>2020-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/fractal/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/fractal/</loc>
     <lastmod>2020-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/mandelbrot/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/mandelbrot/</loc>
     <lastmod>2020-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/python_mandelbrot/</loc>
+    <loc>https://dominiquemakowski.github.io/post/python_mandelbrot/</loc>
     <lastmod>2020-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ci/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/ci/</loc>
     <lastmod>2020-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/confidence-interval/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/confidence-interval/</loc>
     <lastmod>2020-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/credible-interval/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/credible-interval/</loc>
     <lastmod>2020-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/defence_ci95/</loc>
+    <loc>https://dominiquemakowski.github.io/post/defence_ci95/</loc>
     <lastmod>2020-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/bayes/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/bayes/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/bayestestr/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/bayestestr/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/intro_bayestestr/</loc>
+    <loc>https://dominiquemakowski.github.io/post/intro_bayestestr/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/stats/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/stats/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/tutorial/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/tutorial/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/visual_illusions/</loc>
+    <loc>https://dominiquemakowski.github.io/post/visual_illusions/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/art/</loc>
+    <loc>https://dominiquemakowski.github.io/categories/art/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/neuroscience/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/neuroscience/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/neuroscience/</loc>
+    <loc>https://dominiquemakowski.github.io/categories/neuroscience/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/optical-illusions/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/optical-illusions/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/perception/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/perception/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/predictive-coding/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/predictive-coding/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/visual-illusions/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/visual-illusions/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/academia/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/academia/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/academia/</loc>
+    <loc>https://dominiquemakowski.github.io/categories/academia/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/academic-life/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/academic-life/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/funny/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/funny/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/memes/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/memes/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/research/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/research/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/funny_academic/</loc>
+    <loc>https://dominiquemakowski.github.io/post/funny_academic/</loc>
     <lastmod>2020-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/2/</loc>
+    <loc>https://dominiquemakowski.github.io/publication_types/2/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/girardeau2020impact/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/girardeau2020impact/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/jean-charles-girardeau/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/jean-charles-girardeau/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/marco-sperduti/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/marco-sperduti/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/maria-abram/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/maria-abram/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/pascale-piolino/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/pascale-piolino/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/philippe-blonde/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/philippe-blonde/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
+    <loc>https://dominiquemakowski.github.io/publication_types/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/source-themes/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/source-themes/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/makowski2020structure/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2020structure/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/adrian-raine/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/adrian-raine/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/dayton-leow/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/dayton-leow/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/s.-h.-annabel-chen/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/s.-h.-annabel-chen/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/tam-pham/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/tam-pham/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/zen-j.-lau/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/zen-j.-lau/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/makowski2019indices/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2019indices/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/daniel-ludecke/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/daniel-ludecke/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/mattan-s.-ben-shachar/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/mattan-s.-ben-shachar/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/makowski2019adaptation/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/samantha-lavallee/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/samantha-lavallee/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/serge-nicolas/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/serge-nicolas/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/makowski2019bayestestr/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/ludecke2019insight/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/ludecke2019insight/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/makowski2019heart/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2019heart/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/mattan-ben-shachar/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/mattan-ben-shachar/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/philip-d-waggoner/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/philip-d-waggoner/</loc>
     <lastmod>2019-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/tips_blogposts/</loc>
+    <loc>https://dominiquemakowski.github.io/post/tips_blogposts/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/</loc>
+    <loc>https://dominiquemakowski.github.io/courses/</loc>
     <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/</loc>
+    <loc>https://dominiquemakowski.github.io/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/example/</loc>
+    <loc>https://dominiquemakowski.github.io/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/makowski2019dispositional/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/makowski2019phenomenal/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2019phenomenal/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/jerome-dokic/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/jerome-dokic/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/jerome-pelletier/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/jerome-pelletier/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/margherita-arcangeli/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/margherita-arcangeli/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/phillippe-blonde/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/phillippe-blonde/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/stephane-lemaire/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/stephane-lemaire/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/tiziana-zalla/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/tiziana-zalla/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/valentina-la-corte/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/valentina-la-corte/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/makowski2018psycho/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2018psycho/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/makowski2017being/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2017being/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/nicolas2017centenaire/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/nicolas2017centenaire/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/tuena2017virtual/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/tuena2017virtual/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/sperduti2017interaction/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/sperduti2017interaction/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/sperduti2017meditation/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/sperduti2017meditation/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/makowski2017neuropsydia/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/sperduti2017distinctive/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/alexandre-gaston-bellegarde/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/alexandre-gaston-bellegarde/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/allan-armougum/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/allan-armougum/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/cosimo-tuena/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/cosimo-tuena/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/eric-orriols/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/eric-orriols/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/giuseppe-riva/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/giuseppe-riva/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/leo-dutriaux/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/leo-dutriaux/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/prany-wantzen/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/prany-wantzen/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/silvia-serino/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/silvia-serino/</loc>
     <lastmod>2017-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/nicolas2016can/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/nicolas2016can/</loc>
     <lastmod>2016-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/sperduti2016paradox/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</loc>
     <lastmod>2016-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/sperduti2016protective/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/sperduti2016protective/</loc>
     <lastmod>2016-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/makowski2015emotion/</loc>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2015emotion/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/sophie-blanchet/</loc>
+    <loc>https://dominiquemakowski.github.io/authors/sophie-blanchet/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/cognitivecontrol/</loc>
+    <loc>https://dominiquemakowski.github.io/project/cognitivecontrol/</loc>
   </url>
   
   <url>
-    <loc>/project/easystats/</loc>
+    <loc>https://dominiquemakowski.github.io/project/easystats/</loc>
   </url>
   
   <url>
-    <loc>/project/neurokit/</loc>
+    <loc>https://dominiquemakowski.github.io/project/neurokit/</loc>
   </url>
   
   <url>
-    <loc>/tags/neuropsychology/</loc>
+    <loc>https://dominiquemakowski.github.io/tags/neuropsychology/</loc>
   </url>
   
   <url>
-    <loc>/project/neuropsydia/</loc>
+    <loc>https://dominiquemakowski.github.io/project/neuropsydia/</loc>
   </url>
   
   <url>
-    <loc>/project/patientassessmentapp/</loc>
+    <loc>https://dominiquemakowski.github.io/project/patientassessmentapp/</loc>
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>https://dominiquemakowski.github.io/project/</loc>
   </url>
   
   <url>
-    <loc>/project/psycho/</loc>
+    <loc>https://dominiquemakowski.github.io/project/psycho/</loc>
   </url>
   
 </urlset>
