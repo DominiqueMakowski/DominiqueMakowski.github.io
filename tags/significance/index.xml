@@ -14,9 +14,9 @@
     
     <item>
       <title>The Null Hypothesis Fallacy</title>
-      <link>/post/2020_05_18_analyze_rt/</link>
+      <link>/post/null_hypothesis_fallacy/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020_05_18_analyze_rt/</guid>
+      <guid>/post/null_hypothesis_fallacy/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;The null hypothesis is a hallmark of experimental science, and the paradigm derived from it - the &lt;strong&gt;null hypothesis testing&lt;/strong&gt; - has dominated the world of applied statistics in the last century. It has led to the invention and widespread usage of the infamous &lt;strong&gt;&lt;em&gt;p&lt;/em&gt;-value&lt;/strong&gt; and the related concept of &lt;strong&gt;significance&lt;/strong&gt;, but it can alkso be present in alternative frameworks such as Bayesian statistics. It became one of the combustible fuelling the recent controversies related to the &lt;strong&gt;reproducibility&lt;/strong&gt; and &lt;strong&gt;replicability&lt;/strong&gt; crises.&lt;/p&gt;
 &lt;p&gt;In this series of posts, I will argue that the null hypothesis is not plausible, and examine the consequences of this fact, that will naturally lead me to elaborate an alternative framework for significance testing.&lt;/p&gt;
