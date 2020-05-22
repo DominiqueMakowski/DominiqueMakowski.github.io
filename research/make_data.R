@@ -96,7 +96,7 @@ p <- data %>%
   theme_minimal()
 # p
 ggsave("img/plot_wordcloud.png", p, dpi=600, width=10)
-
+ggsave("../../static/img/plot_wordcloud.png", p, dpi=600, width=10)
 
 
 # ------------------------------
@@ -127,9 +127,51 @@ save(data_scholar, file="data_scholar.Rdata")
 
 
 
+# library(patchwork)
+
+load("data_scholar.Rdata")
+
+history <- data_scholar$scholar_history
+publications <- data_scholar$scholar_publications
+
+
+p1 <- history %>%
+  ggplot(aes(x = Year, y = Number)) +
+  geom_bar(aes(alpha=Year), stat="identity") +
+  geom_line(aes(colour = Index), size = 2) +
+  see::theme_modern() +
+  ylab("") +
+  # scale_x_continuous(breaks = seq(min(stats$Year), max(stats$Year), by = 1)) +
+  scale_color_manual(values = c("#2196F3", "#E91E63")) +
+  facet_wrap(~Index, scales = "free", strip.position = "top") +
+  theme(
+    strip.background = element_blank(),
+    strip.placement = "outside",
+    # strip.text.y = element_blank(),
+    strip.text = element_text(face = "plain", size = 16),
+    axis.title = element_text(face = "plain", size = 16),
+    axis.title.x = element_blank(),
+    legend.position = "none"
+  )
+p1
 
 
 
+# p2 <- publications %>%
+#   ggplot(aes(x = cites)) +
+#   geom_histogram(bins = 30) +
+#   geom_density(aes(y = 3 * stat(count)), bw="SJ") +
+#   see::theme_modern() +
+#   theme(
+#     strip.background = element_blank(),
+#     axis.title = element_text(face = "plain", size = 16),
+#     legend.position = "none"
+#   )
+# p2
+
+# p1 / p2
+ggsave("img/plot_impact.png", p1, dpi=450, width=10)
+ggsave("../../static/img/plot_impact.png", p1, dpi=450, width=10)
 
 # ------------------------------
 # Network data
@@ -241,6 +283,7 @@ p_semi <- tidygraph::tbl_graph(nodes=data_semi$nodes, edges=data_semi$edges, dir
   see::scale_color_material_d(palette="rainbow", reverse=TRUE)
 
 ggsave("img/plot_network.png", p_semi, dpi=450, width=10, height=10)
+ggsave("../../static/img/plot_network.png", p_semi, dpi=450, width=10, height=10)
 
 
 

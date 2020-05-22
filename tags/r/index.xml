@@ -50,45 +50,67 @@
 &lt;a href=&#34;https://rstudio.github.io/reticulate/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;reticulate&lt;/strong&gt;&lt;/a&gt; that allow you to use one language directly inside the other).&lt;/p&gt;
 &lt;p&gt;That being said, Python and R remain very different languages at their core, with a different feel and vibe to it. R was made by statisticians for statistics, and the majority of its users are academics and researchers. On the contrary, Python is a true general-purpose &amp;ldquo;programming&amp;rdquo; language, widely used outside of academia, in the private sector.&lt;/p&gt;
 &lt;p&gt;Here are some things to consider when deciding on what language to learn:&lt;/p&gt;
+&lt;h3 id=&#34;reasons-to-choose-python&#34;&gt;Reasons to choose Python&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Reasons to choose Python&lt;/strong&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You have some basic knowledge or familiarity with programming: For instance, you know what a loop is. Python being a true programming language, having any prior experience will be useful.&lt;/li&gt;
-&lt;li&gt;You are good with logic and spatial representation (like imagining shapes in 3D, rotating them, etc.): In Python, you will have to think with a &amp;ldquo;programming&amp;rdquo; mindset. That means perceiving things in terms of logical statements and blocks, understanding data as 2D or 3D tables that you have to slice and recombine.&lt;/li&gt;
-&lt;li&gt;You are comfortable with maths: in Python, numbers and numbers combinations are used a lot. Paradoxically, you will see a lot more of maths in some Python code than in R.&lt;/li&gt;
-&lt;li&gt;You plan to do signal processing or experimental tasks creation: These are some of the domains where Python is well-established (which doesn&amp;rsquo;t mean that R doesn&amp;rsquo;t have some great tools in development).&lt;/li&gt;
-&lt;li&gt;You are good at googling and don&amp;rsquo;t mind spending time looking for the right answer: Python has so much material online that it&amp;rsquo;s sometimes hard to find the appropriate thing. Harder than in R, in my opinion.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;You have some basic knowledge or familiarity with programming&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Reasons to choose R&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;For instance, you know what a loop is. Python being a true programming language, having any prior experience will be useful.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;If you have no experience with programming whatsoever: R is not made to be used as a traditional &lt;em&gt;programming&lt;/em&gt; language. It&amp;rsquo;s more of finding what functions to apply to what, and that makes it easy for beginners.&lt;/li&gt;
-&lt;li&gt;You are interested in statistical analyses, modelling things, and making inferences from data: R excels at this. You can create powerful models super easily and jump into their understanding and interpretation.&lt;/li&gt;
-&lt;li&gt;You like making nice figures and plots: R, through the 
+&lt;li&gt;&lt;strong&gt;You are good with logic and spatial representation (like imagining shapes in 3D, rotating them, etc.)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Python, you will have to think with a &amp;ldquo;programming&amp;rdquo; mindset. That means perceiving things in terms of logical statements and blocks, understanding data as 2D or 3D tables that you have to slice and recombine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are comfortable with maths&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Python, numbers and numbers combinations are used a lot. Paradoxically, you will see a lot more of maths in some Python code than in R.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You plan to do signal processing or experimental tasks creation&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are some of the domains where Python is well-established (which doesn&amp;rsquo;t mean that R doesn&amp;rsquo;t have some great tools in development).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are good at googling and don&amp;rsquo;t mind spending time looking for the right answer&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python has so much material online that it&amp;rsquo;s sometimes hard to find the appropriate thing. Harder than in R, in my opinion.&lt;/p&gt;
+&lt;h3 id=&#34;reasons-to-choose-r&#34;&gt;Reasons to choose R&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;If you have no experience with programming whatsoever&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;R is not made to be used as a traditional &lt;em&gt;programming&lt;/em&gt; language. It&amp;rsquo;s more of finding what functions to apply to what, and that makes it easy for beginners.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are interested in statistical analyses, modelling things, and making inferences from data&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;R excels at this. You can create powerful models super easily and jump into their understanding and interpretation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You like making nice figures and plots&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;R, through the 
 &lt;a href=&#34;https://ggplot2.tidyverse.org/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;ggplot&lt;/strong&gt;&lt;/a&gt; ecosystem, has hands down the best tools for visualization. Your imagination is the limit (check-out the artworks by 
 &lt;a href=&#34;https://www.data-imaginist.com/art&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thomas Lin Pedersen&lt;/a&gt; abd 
-&lt;a href=&#34;https://art.djnavarro.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Danielle Navarro&lt;/a&gt; 😍).&lt;/li&gt;
-&lt;li&gt;You are &lt;strong&gt;not&lt;/strong&gt; so good with stats or maths: you heard it right! To start with R you don&amp;rsquo;t need to know stats or maths like a boss. R, in fact, will help you to become proficient at it, by slowly opening more and more layers of complexity to you, if you are deemed worthy.&lt;/li&gt;
-&lt;li&gt;You are interested in joining the academic community: because most of its users are academics, R has a fantastic community online, for instance on 
-&lt;a href=&#34;https://twitter.com/hashtag/rstats&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Twitter #rstats&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Other considerations&lt;/strong&gt;&lt;/p&gt;
+&lt;a href=&#34;https://art.djnavarro.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Danielle Navarro&lt;/a&gt; 😍).&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;What your peers are learning: it&amp;rsquo;s easier to learn together, so try to discuss it with your class or lab mates if you can.&lt;/li&gt;
-&lt;li&gt;What your lab is using: it might be easier if you have mentors that can understand what you are doing and guide you. But that should not be a priority, as it can lead to old habits reproduction (especially if your lab has a tradition of Matlab 🤭).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;You are &lt;em&gt;not&lt;/em&gt; so good with stats or maths&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
+&lt;p&gt;You heard it right! To start with R you don&amp;rsquo;t need to know stats or maths like a boss. R, in fact, will help you to become proficient at it, by slowly opening more and more layers of complexity to you, if you are deemed worthy.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are interested in joining the academic community&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Because most of its users are academics, R has a fantastic community online, for instance on 
+&lt;a href=&#34;https://twitter.com/hashtag/rstats&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Twitter #rstats&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;other-considerations&#34;&gt;Other considerations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What your peers are learning&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&amp;rsquo;s easier to learn together, so try to discuss it with your class or lab mates if you can.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What your lab is using&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It might be easier if you have mentors that can understand what you are doing and guide you. But that should not be a priority, as it can lead to old habits reproduction (especially if your lab has a tradition of Matlab 🤭).&lt;/p&gt;
 &lt;p&gt;👉 Looking for places to start? Check out this 
 &lt;a href=&#34;https://neurokit2.readthedocs.io/en/latest/tutorials/learnpython.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;10-min crash course introduction to Python&lt;/strong&gt;&lt;/a&gt; and this 
 &lt;a href=&#34;https://easystats.github.io/blog/resources/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;collection of resources for R&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Thanks for reading!&lt;/em&gt; 🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter (&lt;/em&gt;
-&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;em&gt;) and leave a comment below&lt;/em&gt; 👇&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading!&lt;/em&gt; 🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; (
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;) &lt;em&gt;and leave a comment below&lt;/em&gt; 👇&lt;/p&gt;
 </description>
     </item>
     
@@ -159,6 +181,14 @@
       <link>https://dominiquemakowski.github.io/project/psycho/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/project/psycho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>report</title>
+      <link>https://dominiquemakowski.github.io/project/report/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/project/report/</guid>
       <description></description>
     </item>
     
