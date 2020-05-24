@@ -38,6 +38,16 @@
   </url>
   
   <url>
+    <loc>https://dominiquemakowski.github.io/publication_types/2/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/publication/blonde2020medio/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dominiquemakowski.github.io/authors/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
   </url>
@@ -63,6 +73,21 @@
   </url>
   
   <url>
+    <loc>https://dominiquemakowski.github.io/authors/marco-sperduti/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/authors/pascale-piolino/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/authors/philippe-blonde/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dominiquemakowski.github.io/post/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
   </url>
@@ -79,6 +104,16 @@
   
   <url>
     <loc>https://dominiquemakowski.github.io/tags/psychology/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/publication_types/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/publication/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -104,6 +139,11 @@
   
   <url>
     <loc>https://dominiquemakowski.github.io/post/r_or_python/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/source-themes/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -333,11 +373,6 @@
   </url>
   
   <url>
-    <loc>https://dominiquemakowski.github.io/publication_types/2/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dominiquemakowski.github.io/publication/girardeau2020impact/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
@@ -348,37 +383,7 @@
   </url>
   
   <url>
-    <loc>https://dominiquemakowski.github.io/authors/marco-sperduti/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dominiquemakowski.github.io/authors/maria-abram/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/authors/pascale-piolino/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/authors/philippe-blonde/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/publication_types/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/publication/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/tags/source-themes/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -633,6 +638,10 @@
   </url>
   
   <url>
+    <loc>https://dominiquemakowski.github.io/cv/</loc>
+  </url>
+  
+  <url>
     <loc>https://dominiquemakowski.github.io/project/bayestestr/</loc>
   </url>
   
@@ -670,10 +679,6 @@
   
   <url>
     <loc>https://dominiquemakowski.github.io/project/report/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dominiquemakowski.github.io/research/</loc>
   </url>
   
 </urlset>
