@@ -58,6 +58,11 @@
   </url>
   
   <url>
+    <loc>https://dominiquemakowski.github.io/post/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dominiquemakowski.github.io/categories/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
   </url>
@@ -88,11 +93,6 @@
   </url>
   
   <url>
-    <loc>https://dominiquemakowski.github.io/post/</loc>
-    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dominiquemakowski.github.io/tags/programming/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
   </url>
@@ -104,6 +104,11 @@
   
   <url>
     <loc>https://dominiquemakowski.github.io/tags/psychology/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiquemakowski.github.io/categories/psychology/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
   </url>
   

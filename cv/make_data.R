@@ -195,7 +195,6 @@ library(scholar)
 library(igraph)
 library(ggraph)
 library(tidygraph)
-library(patchwork)
 
 
 # Functions --------------------
@@ -215,7 +214,7 @@ list_coauthors <- function(df, sleep=0, silent=FALSE){
       cat(paste0(round(i/nrow(df)*100, 2), "%\n"))
     }
 
-    Sys.sleep(sleep)
+    Sys.sleep(runif(1, 1, sleep))
 
     if(!df$coauthors[i] %in% unique(df$author)){
       data <- rbind(data, find_coauthors(df$id[i]))
@@ -259,10 +258,10 @@ create_graph <- function(data){
     tidygraph::activate(nodes) %>%
     dplyr::filter(!name %in% c("Sort By Citations", "Sort By Year", "Sort By Title")) %>%
     dplyr::mutate(name = stringr::str_remove(name, ",.*"),
-                  group1 = as.factor(tidygraph::group_edge_betweenness()),
+                  # group1 = as.factor(tidygraph::group_edge_betweenness()),
                   group2 = as.factor(tidygraph::group_optimal()),
-                  group3 = as.factor(tidygraph::group_walktrap()),
-                  group4 = as.factor(tidygraph::group_spinglass()),
+                  # group3 = as.factor(tidygraph::group_walktrap()),
+                  # group4 = as.factor(tidygraph::group_spinglass()),
                   group5 = as.factor(tidygraph::group_louvain())) %>%
     as.list()
 }
@@ -270,13 +269,19 @@ create_graph <- function(data){
 # Get data --------------------------------
 
 # Scrap data from google scholar
-data <- get_coauthors("bg0BZ-QAAAAJ", n_deep=2, sleep=3)
+data <- get_coauthors("bg0BZ-QAAAAJ", n_deep=2, sleep=15)
+write.csv(data, "data_network.csv", row.names = FALSE)
+data <- read.csv("data_network.csv", stringsAsFactors = FALSE)
 
+# Prune
+data1 <- data[(data$author=="Dominique Makowski" | data$coauthors=="Dominique Makowski"), ]
+firstlevel <- unique(c(data1$author, data1$coauthors))
 
+data2 <- data[(data$author %in% firstlevel | data$coauthors %in% firstlevel), ]
+secondlevel <- unique(c(data2$author, data2$coauthors))
 
-
-
-
+data3 <- data[(data$author %in% secondlevel & data$coauthors %in% secondlevel) |
+                (data$author %in% secondlevel & data$coauthors %in% secondlevel), ]
 
 
 # Make plots --------------------------------
@@ -284,7 +289,7 @@ data <- get_coauthors("bg0BZ-QAAAAJ", n_deep=2, sleep=3)
 
 
 # Plot
-data_semi <- create_graph(data)
+data_semi <- create_graph(data3)
 
 
 p_semi <- tidygraph::tbl_graph(nodes=data_semi$nodes, edges=data_semi$edges, directed=FALSE) %>%
@@ -294,31 +299,10 @@ p_semi <- tidygraph::tbl_graph(nodes=data_semi$nodes, edges=data_semi$edges, dir
   ggraph::geom_node_text(aes(label = name, size=degree), repel = TRUE, check_overlap = TRUE, show.legend = FALSE) +
   ggraph::theme_graph() +
   scale_size_continuous(range = c(2, 6)) +
+  scale_edge_alpha_continuous(range=c(0.1, 0.8)) +
+  # scale_color_viridis_d() +
   see::scale_color_material_d(palette="rainbow", reverse=TRUE)
 
-ggsave("img/plot_network.png", p_semi, dpi=450, width=10, height=10)
-ggsave("../../static/img/plot_network.png", p_semi, dpi=450, width=10, height=10)
+ggsave("img/plot_network.png", p_semi, dpi=500, width=10, height=10)
+ggsave("../../static/img/plot_network.png", p_semi, dpi=500, width=10, height=10)
 
-
-
-
-# Simplify
-# direct_connections <- data[data$author=="Dominique Makowski"|data$coauthors=="Dominique Makowski", ]
-# direct_connections <- unique(data$author, data$coauthors)
-# data_close <- dplyr::filter(data, coauthors %in% direct_connections, author %in% direct_connections)
-#
-# data_close <- create_graph(data_close)
-# p_close <- tidygraph::tbl_graph(nodes=data_close$nodes, edges=data_close$edges, directed=FALSE) %>%
-#   ggraph::ggraph(layout = 'fr') +
-#   ggraph::geom_edge_arc(aes(alpha=importance), show.legend = FALSE, strength=0.1) +
-#   ggraph::geom_node_point(aes(size = degree, colour=group4), show.legend = FALSE) +
-#   ggraph::geom_node_text(aes(label = name, size=degree), repel = TRUE, check_overlap = TRUE, show.legend = FALSE) +
-#   ggraph::theme_graph() +
-#   scale_size_continuous(range = c(2, 6)) +
-#   see::scale_color_material_d(palette="rainbow", reverse=TRUE)
-
-
-
-# data_network <- list("data_large"=data_large, "data_close"=data_close)
-#
-# save(data_network, file="data_network.Rdata")

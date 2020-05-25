@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github | Dr. Dominique Makowski</title>
+    <link>/tags/github/</link>
+      <atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <description>Github</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Github</title>
+      <link>/tags/github/</link>
+    </image>
+    
+    <item>
+      <title>Why should psychologists subscribe to GitHub</title>
+      <link>/post/github_psychologists/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/github_psychologists/</guid>
+      <description>&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Disclaimer:&lt;/strong&gt; I don&amp;rsquo;t have anything to do with GitHub, aside from being a simple user. This article is not an advertisement for GitHub, but rather a perspective on the role of technical social networks in psychology.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I already mentioned in 
+&lt;a href=&#34;https://dominiquemakowski.github.io/post/r_or_python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;another post&lt;/a&gt; that &lt;strong&gt;technical aspects and skills will play an increasing role in psychology studies&lt;/strong&gt;. This relationship isn&amp;rsquo;t by any means new. More than a century ago, pioneering psychologists needed formidable engineering and craftsmanship skills to build new tools and apparatuses to measure what they were interested in (see for instance 
+&lt;a href=&#34;https://dominiquemakowski.github.io/publication/nicolas2016can/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicolas &amp;amp; Makowski, 2016&lt;/a&gt;). But years have gone by, and the digital revolution happened. As a result, most of the &amp;ldquo;technical&amp;rdquo; aspects (a rather vague term covering everything that is not related to the semantic knowledge of psychological theories and facts) are now ultimately tied to software. Critically, &lt;strong&gt;from your ability to use these software will depend the speed, ease and quality level at which you can achieve your goals and assignments&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;As an example, during my studies, most of the statistics course was delivered through the usage of one particular software (Statistica© 🤮). At the exam, your score didn&amp;rsquo;t much depend on your understanding of what a &lt;em&gt;t&lt;/em&gt;-test is, when to use it or anything like that; but rather on your knowledge of the software, and your ability to click at the right buttons faster than your peers. While this is an unfortunate example, it tells something about the reality of the current world. In research, the better you are are for instance at data processing (not only the software, but also the knowledge of what to do in general), the faster and you will be able to carry it out, and the less stressed you will be, resulting in a cascade of other positive outcomes.&lt;/p&gt;
+&lt;p&gt;Additionally, one common mistake is to delay learning new stuff until we have no choice. You should start investing in your technical skills as soon as possible (as the time devoted to learning will only shrink as you advance) if you don&amp;rsquo;t want to become close friends with pressure, stress, hatred, frustration and despair. So stay on the light side of the force and embrace the future.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;vader.jpg&#34; alt=&#34;github for psychologists&#34;/&gt;
+  &lt;figcaption&gt;A psychology researcher realizing that he should have learned programming earlier.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&#34;open-access-software&#34;&gt;Open-access software&lt;/h2&gt;
+&lt;p&gt;And there is another reason to get&lt;/p&gt;
+&lt;p&gt;A lot of science is done through software. People are discussing new methods, algorithms and tools that expand like never before the possibilities.&lt;/p&gt;
+&lt;p&gt;In conclusion, you better dive into the world of software.&lt;/p&gt;
+&lt;h2 id=&#34;software-as-a-social-network&#34;&gt;Software as a social network&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    There a few alternatives go GitHub, like GitLab, BitBucket, etc. The reason why I&amp;rsquo;m mainly talking about GitHub here is because this post is not about the intrinsic quality or features of these platforms &lt;em&gt;for developers&lt;/em&gt;, but rather as a social network. And an important part of any social network is its popularity, and as of for now, GitHub is the most popular.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Find a package / software that you like&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Watch it&amp;rdquo;, so you&amp;rsquo;ll be notified of its activity&lt;/li&gt;
+&lt;li&gt;Check-out the issues&lt;/li&gt;
+&lt;li&gt;Check-out the code&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading!&lt;/em&gt; 🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; (
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;) &lt;em&gt;and leave a comment below&lt;/em&gt; 👇&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
