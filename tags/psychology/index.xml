@@ -5,12 +5,100 @@
     <link>https://dominiquemakowski.github.io/tags/psychology/</link>
       <atom:link href="https://dominiquemakowski.github.io/tags/psychology/index.xml" rel="self" type="application/rss+xml" />
     <description>Psychology</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Psychology</title>
       <link>https://dominiquemakowski.github.io/tags/psychology/</link>
     </image>
+    
+    <item>
+      <title>Why psychologists should join GitHub</title>
+      <link>https://dominiquemakowski.github.io/post/github_psychologists/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/github_psychologists/</guid>
+      <description>&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Disclaimer:&lt;/strong&gt; I don&amp;rsquo;t have anything to do with GitHub, aside from being a simple user. This article is not an advertisement for it, but rather a perspective on the role of technical social networks in psychology.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I already mentioned in 
+&lt;a href=&#34;https://dominiquemakowski.github.io/post/r_or_python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;another post&lt;/a&gt; that &lt;strong&gt;technical aspects and skills will play an increasing role in psychology&lt;/strong&gt;. This relationship isn&amp;rsquo;t by any means new. More than a century ago, pioneering psychologists were demonstrating formidable engineering and craftsmanship skills to build new tools and apparatuses to measure what they were interested in (see for instance 
+&lt;a href=&#34;https://dominiquemakowski.github.io/publication/nicolas2016can/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicolas &amp;amp; Makowski, 2016&lt;/a&gt;). But years have gone by, and the digital revolution has happened. As a result, most of the &amp;ldquo;technical&amp;rdquo; aspects (a rather vague term covering everything that is not related to the semantic knowledge of psychological theories and facts) are now ultimately tied to &lt;em&gt;software&lt;/em&gt;. Critically, &lt;strong&gt;your ability to use these softwares will determine the speed and ease at which you can achieve your goals and produce high quality assignments&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;As an example, during my studies, most of the statistics course was delivered through the usage of one particular software (Statistica© 🤮). At the exam, your score didn&amp;rsquo;t much depend on your understanding of what a &lt;em&gt;t&lt;/em&gt;-test is, when to use it or anything like that; but rather on your knowledge of the software, and your ability to &lt;strong&gt;click on the right buttons faster than your peers&lt;/strong&gt;. While this is an unfortunate example that can be used to criticize the reliance on tools rather than fundamental knowledge, it also tells us something about the reality of the current world. In research, the better you are for instance at data processing (which involves both the knowledge of how to navigate the software &lt;em&gt;and&lt;/em&gt; the knowledge of what to do in general), the faster you will be able to carry it out, and the less stressed you will be, resulting in a cascade of other positive outcomes (increased well-being, work-quality, productivity, opportunities, etc.).&lt;/p&gt;
+&lt;p&gt;However, &lt;strong&gt;one common mistake is to delay learning&lt;/strong&gt; new stuff (especially things outside our comfort zone) until we have no choice. This is understandable given that in the short term, certain skills may not be absolutely needed (i.e., you can manage without them) and acquiring them can be a steep learning curve (which can be hard, frustrating and effortful). However, you should start investing in your technical skills as soon as possible (as the time devoted to learning will only shrink as you advance) if you don&amp;rsquo;t want to become very &lt;strong&gt;close friends with pressure, stress, hatred, frustration and despair&lt;/strong&gt;. So stay on the light side of the force and embrace the future.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;vader.jpg&#34; alt=&#34;github for psychologists&#34;/&gt;
+  &lt;figcaption&gt;A psychology researcher realizing that he should have learned programming earlier.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;And it&amp;rsquo;s not just about learning to &lt;strong&gt;use&lt;/strong&gt; some software just for the sake of having things done and getting faster results. A lot of science is done &lt;em&gt;through&lt;/em&gt; software, not only &lt;em&gt;with&lt;/em&gt; them. People are actively discussing new methods, algorithms and tools that then expand like never before the possibilities of researchers. &lt;strong&gt;Flaming debates have been going on with frameworks and workflows clashing with thunderous sparks&lt;/strong&gt; (for instance, Bayesian &lt;em&gt;vs.&lt;/em&gt; frequentist statistics, ANOVAs &lt;em&gt;vs.&lt;/em&gt; (mixed) regressions, etc.), and these calls for change find echo because of developments of software, allowing initiated users to test, validate and use new methods.&lt;/p&gt;
+&lt;h2 id=&#34;open-access-software&#34;&gt;Open-access software&lt;/h2&gt;
+&lt;p&gt;It might not seem like it when you&amp;rsquo;re studying it at the university, but science is currently in the middle of a &lt;strong&gt;revolution&lt;/strong&gt;. A massive paradigmatic change, partly fuelled by the growth of &lt;strong&gt;open-science&lt;/strong&gt;, which covers aspects like open-access and open-source. This means, for software, that they are no longer being developed by private companies and sold for money. Instead, they are developed in a public fashion, and &lt;strong&gt;everybody is welcome to chime in and provide input, suggestions, report bugs or improve the code&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Open-source development means faster and better software, and more importantly, the creation of a &lt;strong&gt;true connection between developers and users&lt;/strong&gt;. In fact, the former are often first and foremost also the latter, meaning that in a lot of cases (at least, mine 😅), people started writing a software because they needed it for their own personal job.&lt;/p&gt;
+&lt;p&gt;But the beauty lies in the fact that &lt;strong&gt;users can seemingly become developers&lt;/strong&gt; too, or &lt;strong&gt;contributors&lt;/strong&gt;, at the very least. Sometimes, users end up on a software development page to solve a bug or an issue that they encountered. From there, there can start following the developments, and getting involved. And &lt;strong&gt;not necessarily be writing code&lt;/strong&gt;. It can be by answering to other issues, helping other users, reporting bugs and typos, improving the documentation, giving ideas and suggestions, testing new features and encouraging the developers. There are so many to contribute to the development and, as a result, become an active member of the open-science community. And moreover, doing so is also a great way to learn the theoretical bits. For instance, the most efficient way of learning the complexities of EEG acquisition and processing was to follow the development of an EEG-processing software (namely, 
+&lt;a href=&#34;https://mne.tools/stable/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;MNE-Python&lt;/em&gt;&lt;/a&gt;). Reading issues that users encountered, and replies from experts and developers, trying to understand what functions do, what are the different parameters, what are the possibilities, the limits and so on.&lt;/p&gt;
+&lt;p&gt;All in all, engaging in open-source software is a great way to increase your technical expertise and get involved in the community of researchers. And who knows, you might meet cool people, create new connections, and that&amp;rsquo;s always great!&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;expectations.jpg&#34; alt=&#34;open source software expectations&#34;/&gt;
+  &lt;figcaption&gt;Help making the world like the first pane.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&#34;software-as-a-social-network&#34;&gt;Software as a social network&lt;/h2&gt;
+&lt;p&gt;Now that you&amp;rsquo;ve buckled up, ready to engage in open-source software, you might wonder; &lt;strong&gt;where does that happen?&lt;/strong&gt; Ladies and gentlemen, let me introduce 
+&lt;a href=&#34;https://github.com/neuropsychology/NeuroKit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Several years ago, when I was an undergrad student, I had to write a lot of stuff, such as for instance reports, project and theses. All of these documents went through several back and forths with supervisors, which made comments and modifications. But I was terribly afraid to remove some paragraph or sentence that I would need later on. As a result, I ended up in a hell in which my tormentors were named &lt;code&gt;project.docx&lt;/code&gt;, &lt;code&gt;project_v2.docx&lt;/code&gt;, &lt;code&gt;project_v3.docx&lt;/code&gt;, &lt;code&gt;project_v3_modifs.docx&lt;/code&gt;, &lt;code&gt;project_v3_final.docx&lt;/code&gt;, &lt;code&gt;project_v4_comments.docx&lt;/code&gt;, &lt;code&gt;project_v4_final.docx&lt;/code&gt;, &lt;code&gt;project_v4final2.docx&lt;/code&gt;, &lt;code&gt;project_v4_finalfinal.docx&lt;/code&gt;. And what if my computer broke &lt;sub&gt;&lt;sup&gt;(that was before Dropbox)&lt;/sup&gt;&lt;/sub&gt;? I could lose everything 😱&lt;/p&gt;
+&lt;p&gt;This is when I heard about something called &lt;strong&gt;version control&lt;/strong&gt;. Apparently, there was a system out there that allowed you to save &lt;strong&gt;all&lt;/strong&gt; your modifications, and be able to go back at &lt;em&gt;any&lt;/em&gt; point in time. This system was called &lt;em&gt;git&lt;/em&gt;, and it was super obscure. However, I discovered that this system had a, online interface, in the form of a website, on which you can go and upload files and documents for free. This is how &lt;strong&gt;I discovered GitHub&lt;/strong&gt;. And back in the days, it was really mostly used by programmers (because the nature of code makes it very suited for &lt;em&gt;version control&lt;/em&gt;), a world I didn&amp;rsquo;t belong to.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    There several great alternatives go &lt;em&gt;GitHub&lt;/em&gt;, like &lt;em&gt;GitLab&lt;/em&gt;, &lt;em&gt;BitBucket&lt;/em&gt;, etc., that might be just as good, if not better. The reason why I&amp;rsquo;m mainly talking about &lt;em&gt;GitHub&lt;/em&gt; here is because this post is not about the intrinsic quality or features of these platforms &lt;em&gt;for developers&lt;/em&gt;, but rather as a social network. An important part of any social network is its popularity and, - as of for now - &lt;em&gt;GitHub&lt;/em&gt; is the most popular.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I witnessed &lt;strong&gt;GitHub&lt;/strong&gt; growing and becoming a true &lt;em&gt;social network&lt;/em&gt;, improving its accessibility and user-friendliness. It is now more like a hub where all kinds of people gather to discuss software and technical bits, than a den for hairy geeks. There are also many users who are new to programming (e.g. researchers who are using software as a means to an end) and if you belong to this category of people, don&amp;rsquo;t underestimate your contribution to developers! Often it is such users that help developers improve user friendliness and identify code bugs (for example, when running the code on actual data sets). It is also used as a public technical portfolio, in which you can display your achievements, your projects and your interests. And while it was originally centred around programming, it has extended its audience quite a bit, and people are now using GitHub to store data (for instance the COVID-19 data), books, create websites (for instance, this website is stored on GitHub) or write scientific papers!&lt;/p&gt;
+&lt;p&gt;The reason why I&amp;rsquo;m writing this is because I know all too many young researchers, grappling with some software, struggling to find help, that are too shy to just contact the developers or the community. Just jump in there, create a public issue (instead of writing an email, so that your question will benefit future users). Most of the developers will be happy to help, and glad to see their software and code actually used by others.&lt;/p&gt;
+&lt;p&gt;In conclusion, go and dive into the world of open-science and open-source software, you&amp;rsquo;ll be on the right side of history. 😎&lt;/p&gt;
+&lt;h2 id=&#34;what-to-do-once-youre-on-github&#34;&gt;What to do once you&amp;rsquo;re on GitHub&lt;/h2&gt;
+&lt;p&gt;At the very least, the very first step is to create an account. Even if you don&amp;rsquo;t use it now, it will be useful in the future (it shows that you are interested in technical stuff, it allows you to post issues and connect to other platforms, and support developers).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Find&lt;/strong&gt; a package / software that you like. Super biased suggestions include:
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/neuropsychology/NeuroKit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;NeuroKit&lt;/em&gt;&lt;/a&gt;: a Python package for Neurophysiological Signal Processing&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/easystats/bayestestR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;bayestestR&lt;/em&gt;&lt;/a&gt;: an R package for Bayesian statistics&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/easystats/correlation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;correlation&lt;/em&gt;&lt;/a&gt;: an R package for correlations&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/easystats/report&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;report&lt;/em&gt;&lt;/a&gt;: an R package to report statistics&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/easystats/effectsize&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;effectsize&lt;/em&gt;&lt;/a&gt;: an R package for effect sizes&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/easystats/parameters&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;parameters&lt;/em&gt;&lt;/a&gt;: an R package for understanding statistical models&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/easystats/performance&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;performance&lt;/em&gt;&lt;/a&gt;: an R package for testing how good your model is&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;&lt;strong&gt;Watch it&lt;/strong&gt;&amp;rdquo; (the button in the top-right corner), so you&amp;rsquo;ll be notified of its activity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Read&lt;/strong&gt; the README file (the &amp;ldquo;front page&amp;rdquo;), check-out the issues, understand how to navigate the repository&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Engage&lt;/strong&gt; with the developers, create an issue to report bugs or problems, or just to express support - developing a software takes time and effort, and is often done out of passion and for free. Words of encouragement are always appreciated 🤗&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; your own 
+&lt;a href=&#34;https://guides.github.com/activities/hello-world/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;repository&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make&lt;/strong&gt; your own 
+&lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;website&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And if you want to learn how to use &lt;strong&gt;GitHub&lt;/strong&gt; to make contributions, check-out our 
+&lt;a href=&#34;https://neurokit2.readthedocs.io/en/latest/tutorials/contributing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;tutorial&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Thanks for reading! Let me know if I forgot something by adding a comment below 👇
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>R or Python for Psychologists</title>
