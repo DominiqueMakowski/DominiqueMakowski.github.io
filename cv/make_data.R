@@ -102,26 +102,34 @@ ggsave("../../static/img/plot_wordcloud.png", p, dpi=600, width=10)
 # ------------------------------
 # Scholar data
 # ------------------------------
+library(tidyverse)
 library(scholar)
 
 data_scholar <- list()
 
 data_scholar[["scholar_stats"]] <- scholar::get_profile("bg0BZ-QAAAAJ")
-data_scholar[["scholar_publications"]] <- scholar::get_publications("bg0BZ-QAAAAJ", flush = TRUE)
-data_scholar[["scholar_history"]] <- data_scholar[["scholar_publications"]]  %>%
+data_scholar[["scholar_publications"]] <- scholar::get_citation_history("bg0BZ-QAAAAJ")
+data_scholar[["scholar_history"]] <-  scholar::get_publications("bg0BZ-QAAAAJ", flush = TRUE)  %>%
   dplyr::filter(year > 1950) %>%
   dplyr::group_by(year) %>%
   dplyr::summarise(
     Publications = n(),
-    Citations = sum(cites)
+    # Citations = sum(cites)
   ) %>%
   dplyr::mutate(
-    Publications = cumsum(Publications),
-    Citations = cumsum(Citations)
+    Publications = cumsum(Publications)
+    # Citations = cumsum(Citations)
   ) %>%
   dplyr::rename(Year = year) %>%
   tidyr::gather(Index, Number, -Year) %>%
-  dplyr::mutate(Index = fct_rev(Index))
+  dplyr::mutate(Index = fct_rev(Index)) %>%
+  rbind(data_scholar[["scholar_publications"]] %>%
+          dplyr::rename(Number = cites,
+                        Year = year) %>%
+          mutate(Index = "Citations",
+                 Number = cumsum(Number)))
+
+
 
 save(data_scholar, file="data_scholar.Rdata")
 
