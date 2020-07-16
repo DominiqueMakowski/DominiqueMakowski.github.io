@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Indrajeet Patil | Dr. Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/indrajeet-patil/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/indrajeet-patil/index.xml" rel="self" type="application/rss+xml" />
+    <description>Indrajeet Patil</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Indrajeet Patil</title>
+      <link>https://dominiquemakowski.github.io/authors/indrajeet-patil/</link>
+    </image>
+    
+    <item>
+      <title>2020 - Methods and Algorithms for Correlation Analysis in R</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2020correlation/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2020correlation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

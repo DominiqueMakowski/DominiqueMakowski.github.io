@@ -5,12 +5,20 @@
     <link>https://dominiquemakowski.github.io/publication/</link>
       <atom:link href="https://dominiquemakowski.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
       <link>https://dominiquemakowski.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>2020 - Methods and Algorithms for Correlation Analysis in R</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2020correlation/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2020correlation/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2020 - In Medio Stat Virtus: intermediate levels of mind wandering improve episodic memory encoding in a virtual environment</title>
