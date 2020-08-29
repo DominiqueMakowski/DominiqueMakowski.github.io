@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | Dr. Dominique Makowski</title>
+    <title>Projects | Dr Dominique Makowski</title>
     <link>https://dominiquemakowski.github.io/project/</link>
       <atom:link href="https://dominiquemakowski.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
@@ -65,6 +65,14 @@
       <link>https://dominiquemakowski.github.io/project/psycho/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/project/psycho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pyllusion</title>
+      <link>https://dominiquemakowski.github.io/project/pyllusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/project/pyllusion/</guid>
       <description></description>
     </item>
     
