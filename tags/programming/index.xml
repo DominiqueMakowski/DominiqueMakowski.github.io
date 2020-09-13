@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming | Dr Dominique Makowski</title>
-    <link>/tags/programming/</link>
-      <atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/tags/programming/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <description>Programming</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Programming</title>
-      <link>/tags/programming/</link>
+      <link>https://dominiquemakowski.github.io/tags/programming/</link>
     </image>
     
     <item>
       <title>Why psychologists should join GitHub</title>
-      <link>/post/github_psychologists/</link>
+      <link>https://dominiquemakowski.github.io/post/github_psychologists/</link>
       <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/github_psychologists/</guid>
+      <guid>https://dominiquemakowski.github.io/post/github_psychologists/</guid>
       <description>&lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
     &lt;strong&gt;Disclaimer:&lt;/strong&gt; I don&amp;rsquo;t have anything to do with GitHub, aside from being a simple user. This article is not an advertisement for it, but rather a perspective on the role of technical social networks in psychology.
@@ -102,9 +102,9 @@
     
     <item>
       <title>R or Python for Psychologists</title>
-      <link>/post/r_or_python/</link>
+      <link>https://dominiquemakowski.github.io/post/r_or_python/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/r_or_python/</guid>
+      <guid>https://dominiquemakowski.github.io/post/r_or_python/</guid>
       <description>&lt;p&gt;Many psychology students or researchers are faced with the challenge - &lt;em&gt;or the opportunity&lt;/em&gt; - of learning a programming language. &lt;strong&gt;Which one should you learn?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;As an ex- psych student and a daily user and developer of both, here&amp;rsquo;s my take on this hot debate.&lt;/p&gt;
 &lt;h2 id=&#34;what-has-programming-to-do-with-psychology&#34;&gt;What has programming to do with psychology?&lt;/h2&gt;

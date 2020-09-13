@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python | Dr Dominique Makowski</title>
-    <link>/categories/python/</link>
-      <atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/categories/python/</link>
+      <atom:link href="https://dominiquemakowski.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <description>Python</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Python</title>
-      <link>/categories/python/</link>
+      <link>https://dominiquemakowski.github.io/categories/python/</link>
     </image>
     
     <item>
       <title>R or Python for Psychologists</title>
-      <link>/post/r_or_python/</link>
+      <link>https://dominiquemakowski.github.io/post/r_or_python/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/r_or_python/</guid>
+      <guid>https://dominiquemakowski.github.io/post/r_or_python/</guid>
       <description>&lt;p&gt;Many psychology students or researchers are faced with the challenge - &lt;em&gt;or the opportunity&lt;/em&gt; - of learning a programming language. &lt;strong&gt;Which one should you learn?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;As an ex- psych student and a daily user and developer of both, here&amp;rsquo;s my take on this hot debate.&lt;/p&gt;
 &lt;h2 id=&#34;what-has-programming-to-do-with-psychology&#34;&gt;What has programming to do with psychology?&lt;/h2&gt;
@@ -118,9 +118,9 @@
     
     <item>
       <title>Generate an articial ECG signal in Python</title>
-      <link>/post/simulate_ecg/</link>
+      <link>https://dominiquemakowski.github.io/post/simulate_ecg/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/simulate_ecg/</guid>
+      <guid>https://dominiquemakowski.github.io/post/simulate_ecg/</guid>
       <description>&lt;h1 id=&#34;create-a-natural-ecg-signal&#34;&gt;Create a natural ECG signal&lt;/h1&gt;
 &lt;p&gt;Generating artificial physiological signals can be very useful to build, test your analysis pipeline or develop and validate a new algorithm.&lt;/p&gt;
 &lt;p&gt;Generating a synthetic, yet realistic, ECG signal in Python can be easily achieved with the &lt;code&gt;ecg_simulate()&lt;/code&gt; function available in the 
@@ -153,9 +153,9 @@ nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;signal_plot(simulated_
     
     <item>
       <title>One Python code line for a Mandelbrot fractal</title>
-      <link>/post/python_mandelbrot/</link>
+      <link>https://dominiquemakowski.github.io/post/python_mandelbrot/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/python_mandelbrot/</guid>
+      <guid>https://dominiquemakowski.github.io/post/python_mandelbrot/</guid>
       <description>&lt;h2 id=&#34;mandelbrot-set&#34;&gt;Mandelbrot Set&lt;/h2&gt;
 &lt;p&gt;I wrote a small Python function to easily generate and plot a 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Mandelbrot_set&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mandelbrot set&lt;/a&gt;. This function is now available through the 

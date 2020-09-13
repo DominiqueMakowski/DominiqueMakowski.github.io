@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Silvia Serino | Dr Dominique Makowski</title>
-    <link>/authors/silvia-serino/</link>
-      <atom:link href="/authors/silvia-serino/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/authors/silvia-serino/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/silvia-serino/index.xml" rel="self" type="application/rss+xml" />
     <description>Silvia Serino</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Silvia Serino</title>
-      <link>/authors/silvia-serino/</link>
+      <link>https://dominiquemakowski.github.io/authors/silvia-serino/</link>
     </image>
     
     <item>
       <title>2017 - How virtual embodiment affects episodic memory functioning: a proof-of-concept study</title>
-      <link>/publication/tuena2017virtual/</link>
+      <link>https://dominiquemakowski.github.io/publication/tuena2017virtual/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/tuena2017virtual/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/tuena2017virtual/</guid>
       <description></description>
     </item>
     

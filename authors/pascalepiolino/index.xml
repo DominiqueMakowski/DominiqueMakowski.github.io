@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dr Dominique Makowski</title>
-    <link>/authors/pascalepiolino/</link>
-      <atom:link href="/authors/pascalepiolino/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/authors/pascalepiolino/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/pascalepiolino/index.xml" rel="self" type="application/rss+xml" />
     <description>Dr Dominique Makowski</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Dr Dominique Makowski</title>
-      <link>/authors/pascalepiolino/</link>
+      <link>https://dominiquemakowski.github.io/authors/pascalepiolino/</link>
     </image>
     
   </channel>

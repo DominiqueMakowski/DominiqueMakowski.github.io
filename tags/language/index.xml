@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Language | Dr Dominique Makowski</title>
-    <link>/tags/language/</link>
-      <atom:link href="/tags/language/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/tags/language/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tags/language/index.xml" rel="self" type="application/rss+xml" />
     <description>Language</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Language</title>
-      <link>/tags/language/</link>
+      <link>https://dominiquemakowski.github.io/tags/language/</link>
     </image>
     
     <item>
       <title>R or Python for Psychologists</title>
-      <link>/post/r_or_python/</link>
+      <link>https://dominiquemakowski.github.io/post/r_or_python/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/r_or_python/</guid>
+      <guid>https://dominiquemakowski.github.io/post/r_or_python/</guid>
       <description>&lt;p&gt;Many psychology students or researchers are faced with the challenge - &lt;em&gt;or the opportunity&lt;/em&gt; - of learning a programming language. &lt;strong&gt;Which one should you learn?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;As an ex- psych student and a daily user and developer of both, here&amp;rsquo;s my take on this hot debate.&lt;/p&gt;
 &lt;h2 id=&#34;what-has-programming-to-do-with-psychology&#34;&gt;What has programming to do with psychology?&lt;/h2&gt;

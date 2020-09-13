@@ -2,205 +2,205 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Source Themes | Dr Dominique Makowski</title>
-    <link>/tags/source-themes/</link>
-      <atom:link href="/tags/source-themes/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/tags/source-themes/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tags/source-themes/index.xml" rel="self" type="application/rss+xml" />
     <description>Source Themes</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 10 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Source Themes</title>
-      <link>/tags/source-themes/</link>
+      <link>https://dominiquemakowski.github.io/tags/source-themes/</link>
     </image>
     
     <item>
       <title>2020 - Extracting, Computing and Exploring the Parameters of Statistical Models using R</title>
-      <link>/publication/ludecke2020parameters/</link>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2020parameters/</link>
       <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/ludecke2020parameters/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2020parameters/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2020 - Methods and Algorithms for Correlation Analysis in R</title>
-      <link>/publication/makowski2020correlation/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2020correlation/</link>
       <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2020correlation/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2020correlation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2020 - In Medio Stat Virtus: intermediate levels of mind wandering improve episodic memory encoding in a virtual environment</title>
-      <link>/publication/blonde2020medio/</link>
+      <link>https://dominiquemakowski.github.io/publication/blonde2020medio/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/blonde2020medio/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/blonde2020medio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2020 - The impact of state and dispositional mindfulness on prospective memory: A virtual reality study</title>
-      <link>/publication/girardeau2020impact/</link>
+      <link>https://dominiquemakowski.github.io/publication/girardeau2020impact/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/girardeau2020impact/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/girardeau2020impact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2020 - The Structure of Deception: Validation of the Lying Profile Questionnaire</title>
-      <link>/publication/makowski2020structure/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2020structure/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2020structure/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2020structure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Indices of Effect Existence and Significance in the Bayesian Framework</title>
-      <link>/publication/makowski2019indices/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019indices/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019indices/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019indices/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Adaptation and Validation of a Short French Version of the Affective Style Questionnaire</title>
-      <link>/publication/makowski2019adaptation/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019adaptation/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - bayestestR: Describing effects and their uncertainty, existence and significance within the Bayesian framework</title>
-      <link>/publication/makowski2019bayestestr/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019bayestestr/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - insight: A Unified Interface to Access Information from Model Objects in R</title>
-      <link>/publication/ludecke2019insight/</link>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2019insight/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/ludecke2019insight/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2019insight/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - The heart of cognitive control: Cardiac phase modulates processing speed and inhibition</title>
-      <link>/publication/makowski2019heart/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019heart/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019heart/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019heart/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Dispositional mindfulness attenuates the emotional attentional blink</title>
-      <link>/publication/makowski2019dispositional/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019dispositional/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Phenomenal, bodily and brain correlates of fictional reappraisal as an implicit emotion regulation strategy</title>
-      <link>/publication/makowski2019phenomenal/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019phenomenal/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2019phenomenal/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019phenomenal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2018 - The psycho Package: an Efficient and Publishing-Oriented Workflow for Psychological Science</title>
-      <link>/publication/makowski2018psycho/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2018psycho/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2018psycho/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2018psycho/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - &#34;Being there&#34; and remembering it: Presence improves memory encoding</title>
-      <link>/publication/makowski2017being/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2017being/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2017being/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2017being/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Centenaire Ribot (première partie). La réception de l’œuvre de Théodule Ribot publiée chez l’éditeur Ladrange (1870-1873)</title>
-      <link>/publication/nicolas2017centenaire/</link>
+      <link>https://dominiquemakowski.github.io/publication/nicolas2017centenaire/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/nicolas2017centenaire/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/nicolas2017centenaire/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - How virtual embodiment affects episodic memory functioning: a proof-of-concept study</title>
-      <link>/publication/tuena2017virtual/</link>
+      <link>https://dominiquemakowski.github.io/publication/tuena2017virtual/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/tuena2017virtual/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/tuena2017virtual/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information</title>
-      <link>/publication/sperduti2017interaction/</link>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2017interaction/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/sperduti2017interaction/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2017interaction/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Meditation and successful aging: can meditative practices counteract age-related cognitive decline?</title>
-      <link>/publication/sperduti2017meditation/</link>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2017meditation/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/sperduti2017meditation/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2017meditation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Neuropsydia. py: A Python Module for Creating Experiments, Tasks and Questionnaires</title>
-      <link>/publication/makowski2017neuropsydia/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2017neuropsydia/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - The distinctive role of executive functions in implicit emotion regulation</title>
-      <link>/publication/sperduti2017distinctive/</link>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/sperduti2017distinctive/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2016 - Can mental fatigue be measured by Weber’s compass? Alfred Binet’s answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue</title>
-      <link>/publication/nicolas2016can/</link>
+      <link>https://dominiquemakowski.github.io/publication/nicolas2016can/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/nicolas2016can/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/nicolas2016can/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2016 - The paradox of fiction: Emotional response toward fiction and the modulatory role of self-relevance</title>
-      <link>/publication/sperduti2016paradox/</link>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/sperduti2016paradox/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2016 - The protective role of long-term meditation on the decline of the executive component of attention in aging: a preliminary cross-sectional study</title>
-      <link>/publication/sperduti2016protective/</link>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2016protective/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/sperduti2016protective/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2016protective/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2015 - Emotion regulation and the cognitive decline in aging: beyond the paradox</title>
-      <link>/publication/makowski2015emotion/</link>
+      <link>https://dominiquemakowski.github.io/publication/makowski2015emotion/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/makowski2015emotion/</guid>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2015emotion/</guid>
       <description></description>
     </item>
     

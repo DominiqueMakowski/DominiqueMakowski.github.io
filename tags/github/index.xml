@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github | Dr Dominique Makowski</title>
-    <link>/tags/github/</link>
-      <atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://dominiquemakowski.github.io/tags/github/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <description>Github</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Github</title>
-      <link>/tags/github/</link>
+      <link>https://dominiquemakowski.github.io/tags/github/</link>
     </image>
     
     <item>
       <title>Why psychologists should join GitHub</title>
-      <link>/post/github_psychologists/</link>
+      <link>https://dominiquemakowski.github.io/post/github_psychologists/</link>
       <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
-      <guid>/post/github_psychologists/</guid>
+      <guid>https://dominiquemakowski.github.io/post/github_psychologists/</guid>
       <description>&lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
     &lt;strong&gt;Disclaimer:&lt;/strong&gt; I don&amp;rsquo;t have anything to do with GitHub, aside from being a simple user. This article is not an advertisement for it, but rather a perspective on the role of technical social networks in psychology.
