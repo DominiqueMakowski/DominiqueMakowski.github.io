@@ -2,85 +2,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Dr Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/project/</link>
-      <atom:link href="https://dominiquemakowski.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
-      <link>https://dominiquemakowski.github.io/project/</link>
+      <link>/project/</link>
     </image>
     
     <item>
       <title>bayestestR</title>
-      <link>https://dominiquemakowski.github.io/project/bayestestr/</link>
+      <link>/project/bayestestr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/bayestestr/</guid>
+      <guid>/project/bayestestr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cognitive Control</title>
-      <link>https://dominiquemakowski.github.io/project/cognitivecontrol/</link>
+      <link>/project/cognitivecontrol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/cognitivecontrol/</guid>
+      <guid>/project/cognitivecontrol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>easystats</title>
-      <link>https://dominiquemakowski.github.io/project/easystats/</link>
+      <link>/project/easystats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/easystats/</guid>
+      <guid>/project/easystats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NeuroKit</title>
-      <link>https://dominiquemakowski.github.io/project/neurokit/</link>
+      <link>/project/neurokit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/neurokit/</guid>
+      <guid>/project/neurokit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neuropsydia</title>
-      <link>https://dominiquemakowski.github.io/project/neuropsydia/</link>
+      <link>/project/neuropsydia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/neuropsydia/</guid>
+      <guid>/project/neuropsydia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Patient Assessment</title>
-      <link>https://dominiquemakowski.github.io/project/patientassessmentapp/</link>
+      <link>/project/patientassessmentapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/patientassessmentapp/</guid>
+      <guid>/project/patientassessmentapp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>psycho</title>
-      <link>https://dominiquemakowski.github.io/project/psycho/</link>
+      <link>/project/psycho/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/psycho/</guid>
+      <guid>/project/psycho/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pyllusion</title>
-      <link>https://dominiquemakowski.github.io/project/pyllusion/</link>
+      <link>/project/pyllusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/pyllusion/</guid>
+      <guid>/project/pyllusion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>report</title>
-      <link>https://dominiquemakowski.github.io/project/report/</link>
+      <link>/project/report/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/report/</guid>
+      <guid>/project/report/</guid>
       <description></description>
     </item>
     

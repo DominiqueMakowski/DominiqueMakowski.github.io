@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Artificial | Dr Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/tags/artificial/</link>
-      <atom:link href="https://dominiquemakowski.github.io/tags/artificial/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/artificial/</link>
+      <atom:link href="/tags/artificial/index.xml" rel="self" type="application/rss+xml" />
     <description>Artificial</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Artificial</title>
-      <link>https://dominiquemakowski.github.io/tags/artificial/</link>
+      <link>/tags/artificial/</link>
     </image>
     
     <item>
       <title>Generate an articial ECG signal in Python</title>
-      <link>https://dominiquemakowski.github.io/post/simulate_ecg/</link>
+      <link>/post/simulate_ecg/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/simulate_ecg/</guid>
+      <guid>/post/simulate_ecg/</guid>
       <description>&lt;h1 id=&#34;create-a-natural-ecg-signal&#34;&gt;Create a natural ECG signal&lt;/h1&gt;
 &lt;p&gt;Generating artificial physiological signals can be very useful to build, test your analysis pipeline or develop and validate a new algorithm.&lt;/p&gt;
 &lt;p&gt;Generating a synthetic, yet realistic, ECG signal in Python can be easily achieved with the &lt;code&gt;ecg_simulate()&lt;/code&gt; function available in the 

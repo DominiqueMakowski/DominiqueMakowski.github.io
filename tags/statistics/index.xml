@@ -2,21 +2,211 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statistics | Dr Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/tags/statistics/</link>
-      <atom:link href="https://dominiquemakowski.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/statistics/</link>
+      <atom:link href="/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     <description>Statistics</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 18 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 29 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Statistics</title>
-      <link>https://dominiquemakowski.github.io/tags/statistics/</link>
+      <link>/tags/statistics/</link>
     </image>
     
     <item>
+      <title>Extract individual scores from repeated measures</title>
+      <link>/post/individual_scores/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/individual_scores/</guid>
+      <description>
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Introduction&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;div id=&#34;generate-data&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Generate Data&lt;/h4&gt;
+&lt;p&gt;See the functions’ definition below.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(easystats)
+
+data &amp;lt;- get_data(n_participants=100, n_trials=20, d=1, var=4, noise=0.33)
+results &amp;lt;- get_results(data)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fit-model&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Fit model&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;model &amp;lt;- lm(Diff_Abs ~ Method, data=results)
+
+modelbased::estimate_contrasts(model) %&amp;gt;%
+  arrange(Difference) %&amp;gt;%
+  mutate(Level1 = stringr::str_remove(Level1, &amp;quot;Diff_&amp;quot;),
+         Level2 = stringr::str_remove(Level2, &amp;quot;Diff_&amp;quot;)) %&amp;gt;% 
+  select(Level1, Level2, Difference, CI_low, CI_high, p)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    Level1                 Level2    Difference      CI_low
+## 1         PopulationModel                    Raw -4.711656e-03 -0.02437159
+## 2  IndividualModel_Priors                    Raw -2.441615e-03 -0.02210155
+## 3   IndividualModel_Bayes                    Raw -9.318125e-05 -0.01975312
+## 4   IndividualModel_Bayes   IndividualModel_Freq -9.318125e-05 -0.01975312
+## 5    IndividualModel_Freq                    Raw -1.348883e-16 -0.01965993
+## 6  IndividualModel_Priors        PopulationModel  2.270041e-03 -0.01738989
+## 7   IndividualModel_Bayes IndividualModel_Priors  2.348434e-03 -0.01731150
+## 8    IndividualModel_Freq IndividualModel_Priors  2.441615e-03 -0.01721832
+## 9   IndividualModel_Bayes        PopulationModel  4.618475e-03 -0.01504146
+## 10   IndividualModel_Freq        PopulationModel  4.711656e-03 -0.01494828
+##       CI_high p
+## 1  0.01494828 1
+## 2  0.01721832 1
+## 3  0.01956675 1
+## 4  0.01956675 1
+## 5  0.01965993 1
+## 6  0.02192997 1
+## 7  0.02200837 1
+## 8  0.02210155 1
+## 9  0.02427841 1
+## 10 0.02437159 1&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visualize-the-means&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Visualize the means&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;means &amp;lt;- modelbased::estimate_means(model) %&amp;gt;%
+  arrange(Mean) %&amp;gt;%
+  mutate(Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;),
+         Method = factor(Method, levels=Method))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;means %&amp;gt;%
+  ggplot(aes(x=Method, y=Mean, color=Method)) +
+  geom_line(aes(group=1)) +
+  geom_pointrange(aes(ymin=CI_low, ymax=CI_high), size=1) +
+  theme_modern() + 
+  theme(axis.text.x = element_text(angle = 45, hjust=1)) +
+  scale_color_material(palette=&amp;quot;rainbow&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/individual_scores/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;
+Though not significant, using the whole population model seems the most robust option when the whole dataset is available. Otherwise, using an individual model with informative priors appears as a potential alternative.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;functions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Functions&lt;/h3&gt;
+&lt;div id=&#34;generate-data-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Generate data&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;get_data &amp;lt;- function(n_participants=1000, n_trials=20, d=1, var=3, noise=0){
+
+  scores_baseline &amp;lt;- rnorm(n_participants, 0, 1)
+  scores_condition &amp;lt;- rnorm(n_participants, d, 1)
+  variances &amp;lt;- rbeta(n_participants, 2, 8)
+  variances &amp;lt;- 0.1 + variances * (var / max(variances))  # Rescale
+  noise_sd &amp;lt;- abs(rnorm(n_participants, 0, noise))
+
+  data &amp;lt;- data.frame()
+  for (i in 1:n_participants){
+    a &amp;lt;- rnorm(n_trials, scores_baseline[i], variances[i])
+    b &amp;lt;- rnorm(n_trials, scores_condition[i], variances[i])
+    a &amp;lt;- a + rnorm(n_trials, 0, noise_sd[i]) # Add noise
+    b &amp;lt;- b + rnorm(n_trials, 0, noise_sd[i]) # Add noise
+    data &amp;lt;- rbind(data, data.frame(&amp;quot;Participant&amp;quot; = sprintf(&amp;quot;S%02d&amp;quot;, i),
+                                   &amp;quot;Y&amp;quot; = c(a, b),
+                                   &amp;quot;Score_True&amp;quot; = rep(c(scores_baseline[i], scores_condition[i]), each=n_trials),
+                                   &amp;quot;Condition&amp;quot; = rep(c(&amp;quot;Baseline&amp;quot;, &amp;quot;Manipulation&amp;quot;), each=n_trials)))
+  }
+  data
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;compute-individual-scores&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Compute individual scores&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(easystats)
+library(rstanarm)
+
+get_results &amp;lt;- function(data){
+  # Raw method --------------------------------------------------------------
+
+  results &amp;lt;- data %&amp;gt;%
+    group_by(Participant, Condition) %&amp;gt;%
+    summarise_all(mean) %&amp;gt;%
+    rename(&amp;quot;Score_Raw&amp;quot; = &amp;quot;Y&amp;quot;) %&amp;gt;%
+    arrange(Condition, Participant) %&amp;gt;%
+    ungroup()
+
+
+  # Population model --------------------------------------------------------
+
+  model &amp;lt;- lme4::lmer(Y ~ Condition + (1 + Condition|Participant), data=data)
+  # parameters::parameters(model)
+
+  fixed &amp;lt;- insight::get_parameters(model, effects =&amp;quot;fixed&amp;quot;)$Estimate
+  random &amp;lt;- insight::get_parameters(model, effects =&amp;quot;random&amp;quot;)$Participant
+
+  # Transform coefs into scores
+  pop_baseline &amp;lt;- random[, 1] + fixed[1]
+  pop_manipulation &amp;lt;- pop_baseline + random[, 2] + fixed[2]
+
+  results$Score_PopulationModel &amp;lt;- c(pop_baseline, pop_manipulation)
+
+
+# Individual model --------------------------------------------------------
+
+individual_model_data &amp;lt;- data.frame()
+for(participant in unique(data$Participant)){
+  cat(&amp;quot;.&amp;quot;)
+
+  dat &amp;lt;- data[data$Participant==participant, ]
+  # Without priors
+  model1 &amp;lt;-lm(Y ~ Condition, data=dat)
+  nopriors &amp;lt;- parameters::parameters(model1)$Coefficient
+
+  # Bayesian
+  model2 &amp;lt;-stan_glm(Y ~ Condition, data=dat, refresh=0)
+  bayes &amp;lt;- parameters::parameters(model2)$Median
+
+  # Bayesian with Priors
+  model3 &amp;lt;-stan_glm(Y ~ Condition, data=dat, refresh=0,
+                    prior = normal(fixed[1]),
+                    prior_intercept = normal(fixed[2]))
+  priors &amp;lt;- parameters::parameters(model3)$Median
+
+
+
+  individual_model_data &amp;lt;- rbind(individual_model_data,
+                                 data.frame(
+    &amp;quot;Participant&amp;quot; = c(participant, participant),
+    &amp;quot;Condition&amp;quot; = c(&amp;quot;Baseline&amp;quot;, &amp;quot;Manipulation&amp;quot;),
+    &amp;quot;Score_IndividualModel_Freq&amp;quot; = c(nopriors[1], nopriors[1] + nopriors[2]),
+    &amp;quot;Score_IndividualModel_Bayes&amp;quot; = c(bayes[1], bayes[1] + bayes[2]),
+    &amp;quot;Score_IndividualModel_Priors&amp;quot; = c(priors[1], priors[1] + priors[2])
+  ))
+
+  # With priors
+
+}
+
+  results &amp;lt;- merge(results, individual_model_data)
+
+
+
+
+  # Output ------------------------------------------------------------------
+  diff &amp;lt;- results %&amp;gt;%
+    mutate(Diff_Raw = Score_True - Score_Raw,
+           Diff_PopulationModel = Score_True - Score_PopulationModel,
+           Diff_IndividualModel_Freq = Score_True - Score_IndividualModel_Freq,
+           Diff_IndividualModel_Bayes = Score_True - Score_IndividualModel_Bayes,
+           Diff_IndividualModel_Priors = Score_True - Score_IndividualModel_Priors) %&amp;gt;%
+    select(Participant, Condition, starts_with(&amp;quot;Diff&amp;quot;)) %&amp;gt;%
+    pivot_longer(starts_with(&amp;quot;Diff&amp;quot;), names_to=&amp;quot;Method&amp;quot;, values_to=&amp;quot;Diff&amp;quot;) %&amp;gt;%
+    mutate(Diff_Abs = abs(Diff))
+  diff
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;And don’t forget to join me on Twitter&lt;/em&gt; &lt;span class=&#34;citation&#34;&gt;[@Dom_Makowski]&lt;/span&gt;(&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; class=&#34;uri&#34;&gt;https://twitter.com/Dom_Makowski&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to correctly analyze reaction time (RT) data</title>
-      <link>https://dominiquemakowski.github.io/post/analyze_rt/</link>
+      <link>/post/analyze_rt/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/analyze_rt/</guid>
+      <guid>/post/analyze_rt/</guid>
       <description>&lt;p&gt;This is a very, very important topic given the widespread usage of reaction times in psychology. Most of the time, we analyze it as a regular variable, using traditional models such as &lt;em&gt;linear models&lt;/em&gt;, &lt;em&gt;ANOVAs&lt;/em&gt; etc. The problem is that these models &lt;strong&gt;assume that the RT is normally distributed, which is false&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This leads us to adjustements like &lt;strong&gt;outliers removal&lt;/strong&gt; or &lt;strong&gt;log-transformation&lt;/strong&gt;, distorting the data because of our non-appropriate models.&lt;/p&gt;
 &lt;p&gt;The good news is, it&amp;rsquo;s very easy to use better models, that account for the non-normal distribution of RT. And these alternatives are beautifully presented by 
@@ -32,10 +222,58 @@
     </item>
     
     <item>
+      <title>The Null Hypothesis Fallacy</title>
+      <link>/post/null_hypothesis_fallacy/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/null_hypothesis_fallacy/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The null hypothesis is a hallmark of experimental science, and the paradigm derived from it - the **null hypothesis significance testing (NHST) ** - has dominated the world of applied statistics in the last century. It has led to the invention and widespread usage of the infamous &lt;strong&gt;&lt;em&gt;p&lt;/em&gt;-value&lt;/strong&gt; and the related concept of &lt;strong&gt;significance&lt;/strong&gt;, but it can also be present in alternative frameworks such as Bayesian statistics. Interestingly, it became one of the combustible fuelling the recent controversies related to the &lt;strong&gt;reproducibility&lt;/strong&gt; and &lt;strong&gt;replicability&lt;/strong&gt; crises.&lt;/p&gt;
+&lt;p&gt;In this series of posts, I will argue that the null hypothesis is not plausible, and examine the consequences of this fact, that will naturally lead me to elaborate an alternative framework for significance testing.&lt;/p&gt;
+&lt;h2 id=&#34;absence-of-effect-vs-null-effect&#34;&gt;Absence of effect &lt;em&gt;vs.&lt;/em&gt; Null Effect&lt;/h2&gt;
+&lt;p&gt;Most scientists are designing experiments to quantify or assess the existence of an &lt;strong&gt;effect&lt;/strong&gt; (a relationship between two things), to which a natural opposite seems to be the &lt;strong&gt;absence of effect&lt;/strong&gt;. These effects are usually operationalized as parameters - or coefficients - of some statistical models. Such models are akin to a simplified version of the world, which can be more or less complex, accurate, appropriate or sensitive to investigate a given effect.&lt;/p&gt;
+&lt;p&gt;Interestingly, in most of statistical models, the &lt;em&gt;existence&lt;/em&gt; of effects (i.e., coefficients) is predetermined. We could, in theory, imagine a model in which we say &lt;em&gt;&amp;ldquo;here are 3 variables, V1, V2 and V3&amp;rdquo;&lt;/em&gt;, and the model would create parameters, for instance the correlation between &lt;em&gt;V1&lt;/em&gt; and &lt;em&gt;V3&lt;/em&gt;, only if said effect &lt;em&gt;is present&lt;/em&gt; (exists in the data). With such a model, it would be possible to tell whether an effect exists (i.e., if it&amp;rsquo;s present as a parameter), and if so investigate its properties (size, range, &amp;hellip;). The presence/absence of effects, a dichotomous concept by nature, would be directly transposable to the mathematics.&lt;/p&gt;
+&lt;p&gt;But that&amp;rsquo;s not what happens. In general, the existence of a given parameter depends on the model specification, rather than on the data. This means that the researcher has to specify whether he wants to include the correlation between &lt;em&gt;V1&lt;/em&gt; and &lt;em&gt;V3&lt;/em&gt; in order to estimate it. This might seem trivial, but it has important consequences, as it leads to the &lt;em&gt;de facto&lt;/em&gt; swapping of &lt;strong&gt;absence of effects&lt;/strong&gt; for &lt;strong&gt;null effects&lt;/strong&gt;, which shifts the focus to the value of the effect, which is by nature a continuous concept.&lt;/p&gt;
+&lt;p&gt;While most people would argue that &lt;strong&gt;no effect&lt;/strong&gt; and &lt;strong&gt;null effect&lt;/strong&gt; are equivalent, merely representing two ways of looking at the same phenomenon (&amp;ldquo;null effect&amp;rdquo; being the numerical, coefficient-focused, version of &amp;ldquo;no effect&amp;rdquo;), it is still important to note that null &lt;em&gt;vs.&lt;/em&gt; non-null effect is most of the time an artificial dichotomization of a continuous measure.&lt;/p&gt;
+&lt;h2 id=&#34;a-null-effect-is-not-a-very-small-effect&#34;&gt;A Null Effect is not a Very Small Effect&lt;/h2&gt;
+&lt;p&gt;The focus on the effect value is a double edged sword. Let&amp;rsquo;s take an effect (i.e., a coefficient) of &lt;code&gt;0.000001&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We all have a tendency to equate very small effects as &amp;ldquo;null&amp;rdquo; effects.&lt;/p&gt;
+&lt;h2 id=&#34;null-effects-do-not-exist&#34;&gt;Null Effects Do Not Exist&lt;/h2&gt;
+&lt;p&gt;Meehl’s (1967, 1978, 1990, 1997), in a series of demonstration (see also Waller, 2004), suggested that &lt;em&gt;&amp;ldquo;the null hypothesis, taken literally, is always false&amp;rdquo;&lt;/em&gt; (Meehl, 1978, p. 822). Based on strongly-powered personality datasets, he realised that the probability of two variables being significantly related is a function of sample size, and concluded that &lt;em&gt;&amp;ldquo;in social science everything correlates with almost everything else, theory aside&amp;rdquo;&lt;/em&gt; (Meehl, 1997, p. 393).&lt;/p&gt;
+&lt;p&gt;I would like to extent this conclusion beyond social sciences or, as coined by Meehl or Waller (2004), &lt;em&gt;&amp;ldquo;soft psychology&amp;rdquo;&lt;/em&gt; (a term that I do not particularly like). Example of air pressure.&lt;/p&gt;
+&lt;p&gt;This is a &lt;strong&gt;major issue&lt;/strong&gt;, as it means that any effect for which we cannot reject the null hypothesis (where &lt;em&gt;p&lt;/em&gt; &amp;gt; .05) can be interpreted as &lt;em&gt;&amp;quot;&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;no-effects-do-not-exist-either&#34;&gt;No Effects Do Not Exist Either&lt;/h2&gt;
+&lt;h2 id=&#34;solutions&#34;&gt;Solutions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Bayesian: quantify support in favour of the null&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Effect size &amp;amp; region of equivalence&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Third solution: change paradigm (SexIt).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Taken literally, the null hypothesis is always false. (as cited in Meehl, 1990, p 205). When this phenomenon is combined with the fact that very large samples can make every small effect a significant effect, one has to conclude that with the ideal sample (as large as possible) one have to reject every null hypothesis.&lt;/p&gt;
+&lt;p&gt;This is problematic because this will turn research into a tautology. Every experiment that has a p-value &amp;gt; .05, will become a type II error since the sample was just not big enough to detect the effect. A solution could be to attach more importance to effect sizes and make them decisive in whether a null hypothesis should be rejected.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;Waller, N. G. (2004). The fallacy of the null hypothesis in soft psychology. Applied and Preventive Psychology, 11(1), 83-86.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1967). Theory-testing in psychology and physics: A methodological paradox. Philosophy of Science, 34, 103–115.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1978). Theoretical risks and tabular asterisks: Sir Karl, Sir Ronald, and the slow progress of soft psychology. Journal of Consulting and Clinical Psychology, 46, 806–834.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1990). Appraising and amending theories: The strategy of Lakatosian defense and two principles that warrant using it. Psychological Inquiry, 1, 108–141, 173–180.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1997). The problem is epistemology, not statistics: Replace significance tests by confidence intervals and quantify accuracy of risky numerical predictions. In L. L. Harlow, S. A. Mulaik, &amp;amp; J.H. Steiger (Eds.), What if there were no significance tests? (pp. 393–425). Mahwah, NJ: Erlbaum.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>In defence of the 95% CI</title>
-      <link>https://dominiquemakowski.github.io/post/defence_ci95/</link>
+      <link>/post/defence_ci95/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/defence_ci95/</guid>
+      <guid>/post/defence_ci95/</guid>
       <description>&lt;p&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;BayestestR&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;currently uses a 89% threshold by default for Credible Intervals (CI). Should we change that? If so, by what?&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR/issues/250&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;&lt;strong&gt;Join the discussion here.&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
@@ -49,25 +287,25 @@
     
     <item>
       <title>bayestestR</title>
-      <link>https://dominiquemakowski.github.io/project/bayestestr/</link>
+      <link>/project/bayestestr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/bayestestr/</guid>
+      <guid>/project/bayestestr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>easystats</title>
-      <link>https://dominiquemakowski.github.io/project/easystats/</link>
+      <link>/project/easystats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/easystats/</guid>
+      <guid>/project/easystats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>report</title>
-      <link>https://dominiquemakowski.github.io/project/report/</link>
+      <link>/project/report/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/report/</guid>
+      <guid>/project/report/</guid>
       <description></description>
     </item>
     

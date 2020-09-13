@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Philip D Waggoner | Dr Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/authors/philip-d-waggoner/</link>
-      <atom:link href="https://dominiquemakowski.github.io/authors/philip-d-waggoner/index.xml" rel="self" type="application/rss+xml" />
+    <link>/authors/philip-d-waggoner/</link>
+      <atom:link href="/authors/philip-d-waggoner/index.xml" rel="self" type="application/rss+xml" />
     <description>Philip D Waggoner</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Philip D Waggoner</title>
-      <link>https://dominiquemakowski.github.io/authors/philip-d-waggoner/</link>
+      <link>/authors/philip-d-waggoner/</link>
     </image>
     
     <item>
       <title>2019 - insight: A Unified Interface to Access Information from Model Objects in R</title>
-      <link>https://dominiquemakowski.github.io/publication/ludecke2019insight/</link>
+      <link>/publication/ludecke2019insight/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/ludecke2019insight/</guid>
+      <guid>/publication/ludecke2019insight/</guid>
       <description></description>
     </item>
     

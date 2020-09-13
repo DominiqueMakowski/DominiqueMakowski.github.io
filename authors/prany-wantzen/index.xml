@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prany Wantzen | Dr Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/authors/prany-wantzen/</link>
-      <atom:link href="https://dominiquemakowski.github.io/authors/prany-wantzen/index.xml" rel="self" type="application/rss+xml" />
+    <link>/authors/prany-wantzen/</link>
+      <atom:link href="/authors/prany-wantzen/index.xml" rel="self" type="application/rss+xml" />
     <description>Prany Wantzen</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Prany Wantzen</title>
-      <link>https://dominiquemakowski.github.io/authors/prany-wantzen/</link>
+      <link>/authors/prany-wantzen/</link>
     </image>
     
     <item>
       <title>2017 - The distinctive role of executive functions in implicit emotion regulation</title>
-      <link>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</link>
+      <link>/publication/sperduti2017distinctive/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</guid>
+      <guid>/publication/sperduti2017distinctive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2016 - The paradox of fiction: Emotional response toward fiction and the modulatory role of self-relevance</title>
-      <link>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</link>
+      <link>/publication/sperduti2016paradox/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</guid>
+      <guid>/publication/sperduti2016paradox/</guid>
       <description></description>
     </item>
     

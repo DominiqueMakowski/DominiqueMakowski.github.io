@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dr Dominique Makowski</title>
-    <link>https://dominiquemakowski.github.io/</link>
-      <atom:link href="https://dominiquemakowski.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Dr Dominique Makowski</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Dr Dominique Makowski</title>
-      <link>https://dominiquemakowski.github.io/</link>
+      <link>/</link>
     </image>
     
     <item>
       <title>Example Page 1</title>
-      <link>https://dominiquemakowski.github.io/courses/example/example1/</link>
+      <link>/courses/example/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://dominiquemakowski.github.io/courses/example/example1/</guid>
+      <guid>/courses/example/example1/</guid>
       <description>&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -35,9 +35,9 @@
     
     <item>
       <title>Example Page 2</title>
-      <link>https://dominiquemakowski.github.io/courses/example/example2/</link>
+      <link>/courses/example/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>https://dominiquemakowski.github.io/courses/example/example2/</guid>
+      <guid>/courses/example/example2/</guid>
       <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -56,9 +56,9 @@
     
     <item>
       <title>Example Talk</title>
-      <link>https://dominiquemakowski.github.io/talk/example/</link>
+      <link>/talk/example/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/talk/example/</guid>
+      <guid>/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -77,18 +77,315 @@
     </item>
     
     <item>
-      <title>2020 - Methods and Algorithms for Correlation Analysis in R</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2020correlation/</link>
-      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2020correlation/</guid>
+      <title>What is neuropsychology?</title>
+      <link>/post/what_is_neuropsychology/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/what_is_neuropsychology/</guid>
+      <description>&lt;h2 id=&#34;the-place-of-neuropsychology&#34;&gt;The place of neuropsychology&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Let&amp;rsquo;s make a simple experiment&lt;/strong&gt;. Pick one young and brilliant neuropsychologist and ask &amp;ldquo;what is neuropsychology?&amp;quot;. In some cases, after a few seconds of hesitation, you could hear answers like &amp;ldquo;being a neuropsychologist means doing &lt;em&gt;this&lt;/em&gt; or &lt;em&gt;that&lt;/em&gt;&amp;quot;. In other cases, you might come across incomplete - or even false - responses, such as &amp;ldquo;neuropsychology is a tool&amp;rdquo;, &amp;ldquo;a method&amp;rdquo;, &amp;ldquo;a paradigm&amp;rdquo;, or even worse, &amp;ldquo;a point of view&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;That does not mean that our neuropsychologist is incompetent, far from it. But formally defining our field as a whole is not an exercise that we are used to do. Indeed, &lt;strong&gt;the training in neuropsychology usually comes in a fragmented way&lt;/strong&gt;, little by little. &lt;em&gt;A bit of cognitive neuroscience here, a bit of neuropsychological syndromes there, some cognitive tests administration over here, and some cortical neuroanatomy over there&amp;hellip;&lt;/em&gt; Though we might, &lt;em&gt;in fine&lt;/em&gt;, acquire a global vision and understanding of neuropsychology, verbalizing it is seldom necessary.&lt;/p&gt;
+&lt;p&gt;The definition of neuropsychology is actually quite complex to formalize, and can even be hotly debated. The jobs and positions that stem out of this field are many, and &lt;strong&gt;practitioners often tend to circumscribe neuropsychology to their own activity&lt;/strong&gt;. For instance, a neuropsychologist that mainly does cognitive rehabilitation with psychiatric patients might have quite a different vision from another that does, day after day, presurgical cognitive assessments. And that is without mentioning the neuropsychologists pursuing an academic career, or even the ones that have moved to the private sector.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;No problem&lt;/em&gt;, would argue the careful reader, &lt;em&gt;if the definitions are too narrow, let&amp;rsquo;s take more general one&lt;/em&gt;. &lt;strong&gt;It&amp;rsquo;s not that simple&lt;/strong&gt;. Indeed, neuropsychology occupies a very particular place in the network of science, as it is at &lt;strong&gt;the crossroads between social sciences, biological sciences and medical fields&lt;/strong&gt;. Giving a definition that is too large would lose its essence in the nebulous depths of neuroscience and psychology, which would be not be accurate; neuropsychologists, whether they are clinical practitioners or not, have a common training, a specific theoretical grounding, as well as a unique interpretation and analysis framework underpinned by a scientifically rigorous method. Taking these elements into account, I will attempt to give a &lt;strong&gt;simple, comprehensive and informative definition of neuropsychology&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The first axiom that we need to discuss is the notion of science. &lt;strong&gt;Is neuropsychology its &amp;ldquo;own&amp;rdquo; scientific field&lt;/strong&gt;, or is it a mere portion of another one, such as cognitive neuroscience or psychology, which differs from other specializations only through its object of interest? &lt;em&gt;&amp;ldquo;By science&amp;rdquo;&lt;/em&gt;, says Schopenhauer in his PhD thesis with a baroque title (On the Fourfold Root of the Principle of Sufficient Reason), &lt;em&gt;&amp;ldquo;we understand a system of notions, i.e. a totality of connected, as opposed to a mere aggregate of disconnected, notions.&amp;quot;&lt;/em&gt; This definition applies well to neuropsychology, that contains a set of theories, hypotheses, methods and proofs feeding from one another and creating a coherent ensemble. As such, neuropsychology is its own scientific discipline, although a singular one&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Indeed, &lt;strong&gt;what is the &amp;ldquo;bigger&amp;rdquo; box in which neuropsychology fits?&lt;/strong&gt; While neuropsychologists are often initially trained in psychology, one could argue that the focus on the brain makes it more belonging to neuroscience. Well, the organization and structure of Science is a complicated issue. However, the particularity of the topographical location of neuropsychology is quite apparent.&lt;/p&gt;
+&lt;p&gt;On the one hand, neuropsychology belongs to a cluster of sciences interested a specific biological organ: the brain. As such, &lt;strong&gt;neuropsychology is an integral part of neuroscience&lt;/strong&gt;. On the other hand, neuropsychology is interested in the productions of the brain (e.g., thoughts, feelings and behaviours) with a focus on the cognitive level (analyzing things in terms of cognitive processes and mechanisms), which makes it also &lt;strong&gt;belonging to psychology&lt;/strong&gt;. Moreover, one could argue that neuropsychology, through its integration of the study of what we are biologically, and who we are mentally, has been connected to, and used as evidence in, &lt;strong&gt;philosophy of mind&lt;/strong&gt; debates (for instance, famous neuropsychological cases studied by Sacks, Ramachandran or Milner have been widely discussed by contemporary philosophers). Finally, contrary to many other domains, neuropsychology has also an applied, practical component, that can be used in clinical practice. This clinical aspect, registering &lt;strong&gt;neuropsychology withing medical fields&lt;/strong&gt;, takes multiple forms, such as assessment, diagnostic or therapeutic care, and can be used with a wide variety of patients and illnesses. These multiple facets make the wealth of &lt;strong&gt;neuropsychology, which offers an exceptional freedom of practice&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;As we have seen, &lt;strong&gt;neuropsychology is located at the centre of colliding galaxies of knowledge&lt;/strong&gt;, such as neuroscience, psychology, medicine and philosophy. However, the fast development of neuropsychology is gradually leading to the creation of subcomponents within itself, corresponding to different practices and theoretical steps. And these clusters are themselves growing. For instance, clinical neuropsychology was historically focused on diagnostic cognitive assessments, but has recently expanded on the treatment-side of things, with innovations like cognitive training and rehabilitation. This underlines neuropsychology as a rapidly evolving field, moving its potential towards yet uncharted territories.&lt;/p&gt;
+&lt;h2 id=&#34;the-fourfold-structure-of-neuropsychology&#34;&gt;The fourfold structure of neuropsychology&lt;/h2&gt;
+&lt;p&gt;Neuropsychology is born from the convergence of &lt;strong&gt;cognitive neurology&lt;/strong&gt;, with pioneers such as 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Paul_Broca&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Broca&lt;/a&gt; and 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Carl_Wernicke&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wernicke&lt;/a&gt; (which made inferences about brain functioning based on the observations of patients with brain lesions) and psychologists such as 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Th%C3%A9odule-Armand_Ribot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ribot&lt;/a&gt; (focusing on the organization and semiology of cognitive deficits). This history has shaped neuropsychology as a two-faced entity, with one &lt;strong&gt;experimental side&lt;/strong&gt; dedicated to understand the relationship between brain and cognition (by using pathological cases or natural variability of neurocognitive characteristics), and one &lt;strong&gt;clinical aspect&lt;/strong&gt;, focusing on bringing this knowledge to the benefit of the patients suffering from brain disorders.&lt;/p&gt;
+&lt;p&gt;However, recent advances have outlined a more &lt;strong&gt;theoretical level&lt;/strong&gt; of neuropsychology, dedicated to a high-level integration of the data at hand to elaborate general theories and interfacing them with evolutionary or philosophical principles. Similarly, a &lt;strong&gt;computational&lt;/strong&gt; facet, referring to the operationalization of the functioning in statistical terms, starts to emerge as a pseudo-independent aspect, propelled by the regain of interest and focus on the methodological and statistical aspects of psychology and neuroscience.&lt;/p&gt;
+&lt;p&gt;This structure is not fixed, but driven by the evolution of the field. It is possible that new poles will emerge, or differentiate over time, until maybe they separate from - or create new clusters within - neuropsychology.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;cycle.png&#34; alt=&#34;Structure of neuropsychology&#34;/&gt;
+  &lt;figcaption&gt;The fourfold structure of neuropsychology.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&#34;the-definition-of-neuropsychology&#34;&gt;The definition of neuropsychology&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Neuropsychology is a theoretical and practical science investigating the relationship between 1) the structure and functioning of the brain, and 2) cognitive processes and their related derivatives, such as thoughts, feelings and behaviours.&lt;/strong&gt; It is organised in four interconnected and overlapping dimensions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Experimental neuropsychology&lt;/strong&gt; studies the variability of the brain and cognition (whether from pathological origin or not) to test theories and models through empirical experimentation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clinical neuropsychology&lt;/strong&gt; uses theories and models about mental functioning to better detect and assess disorders and deficits, leading to a precise diagnostic and an adapted treatment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Computational neuropsychology&lt;/strong&gt; transforms the data acquired through experiments and observation into logical or statistical models of mental functioning that are used to operationalize the processes at stake.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theoretical neuropsychology&lt;/strong&gt; integrates the evidence to elaborate and develop unifying theories to address fundamental questions about mental functioning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Neuropsychology is located at the crossroads between neuroscience and psychology, at the interface between theory and practice. &lt;strong&gt;Its practitioners, the neuropsychologists&lt;/strong&gt;, are bound by a specific training, by unique theoretical and historical references, and are endowed with an analysis and interpretation framework backed by a rigorous and scientific investigation methodology.&lt;/p&gt;
+&lt;!-- La neuropsychologie expérimentale étudie les variabilités du cerveau et de la cognition (qu’elles soient d’origine pathologique ou non) pour tester des modèles et développer des théories sur le fonctionnement mental, visant ainsi à une meilleure compréhension de l’Homme. --&gt;
+&lt;!-- La neuropsychologie clinique utilise les théories et les modèles sur le fonctionnement mental pour mieux détecter et appréhender les troubles et les déficits d’une pathologie, menant à un diagnostic précis, tout en développant et appliquant des prises en charges modernes et adaptées. --&gt;
+&lt;!-- La neuropsychologie se situe au centre de la nébuleuse des neurosciences, au carrefour de la théorie et de la pratique. Ses praticiens, les neuropsychologues, sont liés par une formation commune, des bases théoriques spécifiques, un canevas d’analyse et d’interprétation sous-tendu par une méthode d’investigation rigoureuse et scientifique.  --&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nicolas, S., &amp;amp; Murray, D. J. (1999). Théodule Ribot (1839–1916), founder of French psychology: A biographical introduction. History of Psychology, 2(4), 277.&lt;/li&gt;
+&lt;li&gt;Schopenhauer, A. (1813). &lt;em&gt;On the Fourfold Root of the Principle of Sufficient Reason&lt;/em&gt;. PhD dissertation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;sub&gt;You can reference this post as follows:&lt;/sub&gt;&lt;/p&gt;
+&lt;p&gt;&lt;sub&gt;- Makowski, D. (2020, October 13). What is Neuropsychology?. Retrieved from &lt;a href=&#34;https://dominiquemakowski.github.io/post/what_is_neuropsychology/&#34;&gt;https://dominiquemakowski.github.io/post/what_is_neuropsychology/&lt;/a&gt;&lt;/sub&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is Reality Bending?</title>
+      <link>/post/what_is_realitybending/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/what_is_realitybending/</guid>
+      <description>&lt;p&gt;The study of our subjective experience of reality.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take as an example a person watching a movie.&lt;/p&gt;
+&lt;p&gt;We study internal and external determinants of subjective reality. External means characteristics of the environment ()&lt;/p&gt;
+&lt;p&gt;Because it is subjective, it means that is is intrisically connected to the Self (i.e., ).&lt;/p&gt;
+&lt;p&gt;We study how our sense of reality is influenced by external and internal factors, but also the reverse relationship. We investigate how the variability of our sense of reality can inform us about oneself.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2020 - Extracting, Computing and Exploring the Parameters of Statistical Models using R</title>
+      <link>/publication/ludecke2020parameters/</link>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/ludecke2020parameters/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Extract individual scores from repeated measures</title>
+      <link>/post/individual_scores/</link>
+      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/individual_scores/</guid>
+      <description>
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Introduction&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;div id=&#34;generate-data&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Generate Data&lt;/h4&gt;
+&lt;p&gt;See the functions’ definition below.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(easystats)
+
+data &amp;lt;- get_data(n_participants=100, n_trials=20, d=1, var=4, noise=0.33)
+results &amp;lt;- get_results(data)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fit-model&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Fit model&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;model &amp;lt;- lm(Diff_Abs ~ Method, data=results)
+
+modelbased::estimate_contrasts(model) %&amp;gt;%
+  arrange(Difference) %&amp;gt;%
+  mutate(Level1 = stringr::str_remove(Level1, &amp;quot;Diff_&amp;quot;),
+         Level2 = stringr::str_remove(Level2, &amp;quot;Diff_&amp;quot;)) %&amp;gt;% 
+  select(Level1, Level2, Difference, CI_low, CI_high, p)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                    Level1                 Level2    Difference      CI_low
+## 1         PopulationModel                    Raw -4.711656e-03 -0.02437159
+## 2  IndividualModel_Priors                    Raw -2.441615e-03 -0.02210155
+## 3   IndividualModel_Bayes                    Raw -9.318125e-05 -0.01975312
+## 4   IndividualModel_Bayes   IndividualModel_Freq -9.318125e-05 -0.01975312
+## 5    IndividualModel_Freq                    Raw -1.348883e-16 -0.01965993
+## 6  IndividualModel_Priors        PopulationModel  2.270041e-03 -0.01738989
+## 7   IndividualModel_Bayes IndividualModel_Priors  2.348434e-03 -0.01731150
+## 8    IndividualModel_Freq IndividualModel_Priors  2.441615e-03 -0.01721832
+## 9   IndividualModel_Bayes        PopulationModel  4.618475e-03 -0.01504146
+## 10   IndividualModel_Freq        PopulationModel  4.711656e-03 -0.01494828
+##       CI_high p
+## 1  0.01494828 1
+## 2  0.01721832 1
+## 3  0.01956675 1
+## 4  0.01956675 1
+## 5  0.01965993 1
+## 6  0.02192997 1
+## 7  0.02200837 1
+## 8  0.02210155 1
+## 9  0.02427841 1
+## 10 0.02437159 1&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visualize-the-means&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Visualize the means&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;means &amp;lt;- modelbased::estimate_means(model) %&amp;gt;%
+  arrange(Mean) %&amp;gt;%
+  mutate(Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;),
+         Method = factor(Method, levels=Method))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;means %&amp;gt;%
+  ggplot(aes(x=Method, y=Mean, color=Method)) +
+  geom_line(aes(group=1)) +
+  geom_pointrange(aes(ymin=CI_low, ymax=CI_high), size=1) +
+  theme_modern() + 
+  theme(axis.text.x = element_text(angle = 45, hjust=1)) +
+  scale_color_material(palette=&amp;quot;rainbow&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/individual_scores/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;
+Though not significant, using the whole population model seems the most robust option when the whole dataset is available. Otherwise, using an individual model with informative priors appears as a potential alternative.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;functions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Functions&lt;/h3&gt;
+&lt;div id=&#34;generate-data-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Generate data&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;get_data &amp;lt;- function(n_participants=1000, n_trials=20, d=1, var=3, noise=0){
+
+  scores_baseline &amp;lt;- rnorm(n_participants, 0, 1)
+  scores_condition &amp;lt;- rnorm(n_participants, d, 1)
+  variances &amp;lt;- rbeta(n_participants, 2, 8)
+  variances &amp;lt;- 0.1 + variances * (var / max(variances))  # Rescale
+  noise_sd &amp;lt;- abs(rnorm(n_participants, 0, noise))
+
+  data &amp;lt;- data.frame()
+  for (i in 1:n_participants){
+    a &amp;lt;- rnorm(n_trials, scores_baseline[i], variances[i])
+    b &amp;lt;- rnorm(n_trials, scores_condition[i], variances[i])
+    a &amp;lt;- a + rnorm(n_trials, 0, noise_sd[i]) # Add noise
+    b &amp;lt;- b + rnorm(n_trials, 0, noise_sd[i]) # Add noise
+    data &amp;lt;- rbind(data, data.frame(&amp;quot;Participant&amp;quot; = sprintf(&amp;quot;S%02d&amp;quot;, i),
+                                   &amp;quot;Y&amp;quot; = c(a, b),
+                                   &amp;quot;Score_True&amp;quot; = rep(c(scores_baseline[i], scores_condition[i]), each=n_trials),
+                                   &amp;quot;Condition&amp;quot; = rep(c(&amp;quot;Baseline&amp;quot;, &amp;quot;Manipulation&amp;quot;), each=n_trials)))
+  }
+  data
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;compute-individual-scores&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Compute individual scores&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(easystats)
+library(rstanarm)
+
+get_results &amp;lt;- function(data){
+  # Raw method --------------------------------------------------------------
+
+  results &amp;lt;- data %&amp;gt;%
+    group_by(Participant, Condition) %&amp;gt;%
+    summarise_all(mean) %&amp;gt;%
+    rename(&amp;quot;Score_Raw&amp;quot; = &amp;quot;Y&amp;quot;) %&amp;gt;%
+    arrange(Condition, Participant) %&amp;gt;%
+    ungroup()
+
+
+  # Population model --------------------------------------------------------
+
+  model &amp;lt;- lme4::lmer(Y ~ Condition + (1 + Condition|Participant), data=data)
+  # parameters::parameters(model)
+
+  fixed &amp;lt;- insight::get_parameters(model, effects =&amp;quot;fixed&amp;quot;)$Estimate
+  random &amp;lt;- insight::get_parameters(model, effects =&amp;quot;random&amp;quot;)$Participant
+
+  # Transform coefs into scores
+  pop_baseline &amp;lt;- random[, 1] + fixed[1]
+  pop_manipulation &amp;lt;- pop_baseline + random[, 2] + fixed[2]
+
+  results$Score_PopulationModel &amp;lt;- c(pop_baseline, pop_manipulation)
+
+
+# Individual model --------------------------------------------------------
+
+individual_model_data &amp;lt;- data.frame()
+for(participant in unique(data$Participant)){
+  cat(&amp;quot;.&amp;quot;)
+
+  dat &amp;lt;- data[data$Participant==participant, ]
+  # Without priors
+  model1 &amp;lt;-lm(Y ~ Condition, data=dat)
+  nopriors &amp;lt;- parameters::parameters(model1)$Coefficient
+
+  # Bayesian
+  model2 &amp;lt;-stan_glm(Y ~ Condition, data=dat, refresh=0)
+  bayes &amp;lt;- parameters::parameters(model2)$Median
+
+  # Bayesian with Priors
+  model3 &amp;lt;-stan_glm(Y ~ Condition, data=dat, refresh=0,
+                    prior = normal(fixed[1]),
+                    prior_intercept = normal(fixed[2]))
+  priors &amp;lt;- parameters::parameters(model3)$Median
+
+
+
+  individual_model_data &amp;lt;- rbind(individual_model_data,
+                                 data.frame(
+    &amp;quot;Participant&amp;quot; = c(participant, participant),
+    &amp;quot;Condition&amp;quot; = c(&amp;quot;Baseline&amp;quot;, &amp;quot;Manipulation&amp;quot;),
+    &amp;quot;Score_IndividualModel_Freq&amp;quot; = c(nopriors[1], nopriors[1] + nopriors[2]),
+    &amp;quot;Score_IndividualModel_Bayes&amp;quot; = c(bayes[1], bayes[1] + bayes[2]),
+    &amp;quot;Score_IndividualModel_Priors&amp;quot; = c(priors[1], priors[1] + priors[2])
+  ))
+
+  # With priors
+
+}
+
+  results &amp;lt;- merge(results, individual_model_data)
+
+
+
+
+  # Output ------------------------------------------------------------------
+  diff &amp;lt;- results %&amp;gt;%
+    mutate(Diff_Raw = Score_True - Score_Raw,
+           Diff_PopulationModel = Score_True - Score_PopulationModel,
+           Diff_IndividualModel_Freq = Score_True - Score_IndividualModel_Freq,
+           Diff_IndividualModel_Bayes = Score_True - Score_IndividualModel_Bayes,
+           Diff_IndividualModel_Priors = Score_True - Score_IndividualModel_Priors) %&amp;gt;%
+    select(Participant, Condition, starts_with(&amp;quot;Diff&amp;quot;)) %&amp;gt;%
+    pivot_longer(starts_with(&amp;quot;Diff&amp;quot;), names_to=&amp;quot;Method&amp;quot;, values_to=&amp;quot;Diff&amp;quot;) %&amp;gt;%
+    mutate(Diff_Abs = abs(Diff))
+  diff
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;And don’t forget to join me on Twitter&lt;/em&gt; &lt;span class=&#34;citation&#34;&gt;[@Dom_Makowski]&lt;/span&gt;(&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; class=&#34;uri&#34;&gt;https://twitter.com/Dom_Makowski&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2020 - Methods and Algorithms for Correlation Analysis in R</title>
+      <link>/publication/makowski2020correlation/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/makowski2020correlation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reality can be whatever you want</title>
+      <link>/post/superstoicism/</link>
+      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/superstoicism/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Stoicism teaches the development of self-control as a mean of overcoming emotions, which are seen as a threat to reason and rationality.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Controlled hallucinations&amp;rdquo; (Anil Seth), &amp;ldquo;the Consensus&amp;rdquo; (Vampire the Masquerade)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Sophrosyne&#34;&gt;https://en.wikipedia.org/wiki/Sophrosyne&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Super-stoicism. Or, Aletheism Enkrateia&lt;/p&gt;
+&lt;p&gt;It has ramifications for personal responsibility.&lt;/p&gt;
+&lt;h2 id=&#34;the-purpose-of-reality&#34;&gt;The purpose of reality&lt;/h2&gt;
+&lt;p&gt;Anil Seth: the purpose of reality is to survive. Not to be true.&lt;/p&gt;
+&lt;h2 id=&#34;masters-of-reality&#34;&gt;Masters of Reality&lt;/h2&gt;
+&lt;p&gt;Does it mean that you can entirely control your reality? It&amp;rsquo;s unlikely, example of visual illusions. Objectivity does not disappear, nor physical laws or biological facts.&lt;/p&gt;
+&lt;p&gt;That being said, masters means acknowledging the existence of the mechanisms and elements biasing our reality.&lt;/p&gt;
+&lt;h2 id=&#34;about-interpretation&#34;&gt;About Interpretation&lt;/h2&gt;
+&lt;p&gt;There is no insult in itself, just an interpretation of something as an insult.&lt;/p&gt;
+&lt;p&gt;Example of same insult to a friend between bros vs. to someone less.&lt;/p&gt;
+&lt;p&gt;You could argue that the intent is different, in one case it&amp;rsquo;s almost &amp;ldquo;as a joke&amp;rdquo;, within an understood social game (philosopher that suggested that language is a social mind game), whereas in the other the intent it&amp;rsquo;s to harm the other.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s possible, but the important element here is not the true intent, but the &lt;em&gt;perceived&lt;/em&gt; intent. And this, again, boils down to interpretation.&lt;/p&gt;
+&lt;h2 id=&#34;emotional-reification&#34;&gt;Emotional Reification&lt;/h2&gt;
+&lt;p&gt;We tend to consider emotional events as more real (cf. my thesis). But that doesn&amp;rsquo;t mean it&amp;rsquo;s real.&lt;/p&gt;
+&lt;p&gt;Just because you are offended by your interpretation of something doesn&amp;rsquo;t mean it&amp;rsquo;s correct.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;Waller, N. G. (2004). The fallacy of the null hypothesis in soft psychology. Applied and Preventive Psychology, 11(1), 83-86.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Why psychologists should join GitHub</title>
-      <link>https://dominiquemakowski.github.io/post/github_psychologists/</link>
+      <link>/post/github_psychologists/</link>
       <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/github_psychologists/</guid>
+      <guid>/post/github_psychologists/</guid>
       <description>&lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
     &lt;strong&gt;Disclaimer:&lt;/strong&gt; I don&amp;rsquo;t have anything to do with GitHub, aside from being a simple user. This article is not an advertisement for it, but rather a perspective on the role of technical social networks in psychology.
@@ -174,17 +471,17 @@
     
     <item>
       <title>2020 - In Medio Stat Virtus: intermediate levels of mind wandering improve episodic memory encoding in a virtual environment</title>
-      <link>https://dominiquemakowski.github.io/publication/blonde2020medio/</link>
+      <link>/publication/blonde2020medio/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/blonde2020medio/</guid>
+      <guid>/publication/blonde2020medio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R or Python for Psychologists</title>
-      <link>https://dominiquemakowski.github.io/post/r_or_python/</link>
+      <link>/post/r_or_python/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/r_or_python/</guid>
+      <guid>/post/r_or_python/</guid>
       <description>&lt;p&gt;Many psychology students or researchers are faced with the challenge - &lt;em&gt;or the opportunity&lt;/em&gt; - of learning a programming language. &lt;strong&gt;Which one should you learn?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;As an ex- psych student and a daily user and developer of both, here&amp;rsquo;s my take on this hot debate.&lt;/p&gt;
 &lt;h2 id=&#34;what-has-programming-to-do-with-psychology&#34;&gt;What has programming to do with psychology?&lt;/h2&gt;
@@ -286,9 +583,9 @@
     
     <item>
       <title>How to correctly analyze reaction time (RT) data</title>
-      <link>https://dominiquemakowski.github.io/post/analyze_rt/</link>
+      <link>/post/analyze_rt/</link>
       <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/analyze_rt/</guid>
+      <guid>/post/analyze_rt/</guid>
       <description>&lt;p&gt;This is a very, very important topic given the widespread usage of reaction times in psychology. Most of the time, we analyze it as a regular variable, using traditional models such as &lt;em&gt;linear models&lt;/em&gt;, &lt;em&gt;ANOVAs&lt;/em&gt; etc. The problem is that these models &lt;strong&gt;assume that the RT is normally distributed, which is false&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This leads us to adjustements like &lt;strong&gt;outliers removal&lt;/strong&gt; or &lt;strong&gt;log-transformation&lt;/strong&gt;, distorting the data because of our non-appropriate models.&lt;/p&gt;
 &lt;p&gt;The good news is, it&amp;rsquo;s very easy to use better models, that account for the non-normal distribution of RT. And these alternatives are beautifully presented by 
@@ -305,9 +602,9 @@
     
     <item>
       <title>Generate an articial ECG signal in Python</title>
-      <link>https://dominiquemakowski.github.io/post/simulate_ecg/</link>
+      <link>/post/simulate_ecg/</link>
       <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/simulate_ecg/</guid>
+      <guid>/post/simulate_ecg/</guid>
       <description>&lt;h1 id=&#34;create-a-natural-ecg-signal&#34;&gt;Create a natural ECG signal&lt;/h1&gt;
 &lt;p&gt;Generating artificial physiological signals can be very useful to build, test your analysis pipeline or develop and validate a new algorithm.&lt;/p&gt;
 &lt;p&gt;Generating a synthetic, yet realistic, ECG signal in Python can be easily achieved with the &lt;code&gt;ecg_simulate()&lt;/code&gt; function available in the 
@@ -339,10 +636,58 @@ nk&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;signal_plot(simulated_
     </item>
     
     <item>
+      <title>The Null Hypothesis Fallacy</title>
+      <link>/post/null_hypothesis_fallacy/</link>
+      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/null_hypothesis_fallacy/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The null hypothesis is a hallmark of experimental science, and the paradigm derived from it - the **null hypothesis significance testing (NHST) ** - has dominated the world of applied statistics in the last century. It has led to the invention and widespread usage of the infamous &lt;strong&gt;&lt;em&gt;p&lt;/em&gt;-value&lt;/strong&gt; and the related concept of &lt;strong&gt;significance&lt;/strong&gt;, but it can also be present in alternative frameworks such as Bayesian statistics. Interestingly, it became one of the combustible fuelling the recent controversies related to the &lt;strong&gt;reproducibility&lt;/strong&gt; and &lt;strong&gt;replicability&lt;/strong&gt; crises.&lt;/p&gt;
+&lt;p&gt;In this series of posts, I will argue that the null hypothesis is not plausible, and examine the consequences of this fact, that will naturally lead me to elaborate an alternative framework for significance testing.&lt;/p&gt;
+&lt;h2 id=&#34;absence-of-effect-vs-null-effect&#34;&gt;Absence of effect &lt;em&gt;vs.&lt;/em&gt; Null Effect&lt;/h2&gt;
+&lt;p&gt;Most scientists are designing experiments to quantify or assess the existence of an &lt;strong&gt;effect&lt;/strong&gt; (a relationship between two things), to which a natural opposite seems to be the &lt;strong&gt;absence of effect&lt;/strong&gt;. These effects are usually operationalized as parameters - or coefficients - of some statistical models. Such models are akin to a simplified version of the world, which can be more or less complex, accurate, appropriate or sensitive to investigate a given effect.&lt;/p&gt;
+&lt;p&gt;Interestingly, in most of statistical models, the &lt;em&gt;existence&lt;/em&gt; of effects (i.e., coefficients) is predetermined. We could, in theory, imagine a model in which we say &lt;em&gt;&amp;ldquo;here are 3 variables, V1, V2 and V3&amp;rdquo;&lt;/em&gt;, and the model would create parameters, for instance the correlation between &lt;em&gt;V1&lt;/em&gt; and &lt;em&gt;V3&lt;/em&gt;, only if said effect &lt;em&gt;is present&lt;/em&gt; (exists in the data). With such a model, it would be possible to tell whether an effect exists (i.e., if it&amp;rsquo;s present as a parameter), and if so investigate its properties (size, range, &amp;hellip;). The presence/absence of effects, a dichotomous concept by nature, would be directly transposable to the mathematics.&lt;/p&gt;
+&lt;p&gt;But that&amp;rsquo;s not what happens. In general, the existence of a given parameter depends on the model specification, rather than on the data. This means that the researcher has to specify whether he wants to include the correlation between &lt;em&gt;V1&lt;/em&gt; and &lt;em&gt;V3&lt;/em&gt; in order to estimate it. This might seem trivial, but it has important consequences, as it leads to the &lt;em&gt;de facto&lt;/em&gt; swapping of &lt;strong&gt;absence of effects&lt;/strong&gt; for &lt;strong&gt;null effects&lt;/strong&gt;, which shifts the focus to the value of the effect, which is by nature a continuous concept.&lt;/p&gt;
+&lt;p&gt;While most people would argue that &lt;strong&gt;no effect&lt;/strong&gt; and &lt;strong&gt;null effect&lt;/strong&gt; are equivalent, merely representing two ways of looking at the same phenomenon (&amp;ldquo;null effect&amp;rdquo; being the numerical, coefficient-focused, version of &amp;ldquo;no effect&amp;rdquo;), it is still important to note that null &lt;em&gt;vs.&lt;/em&gt; non-null effect is most of the time an artificial dichotomization of a continuous measure.&lt;/p&gt;
+&lt;h2 id=&#34;a-null-effect-is-not-a-very-small-effect&#34;&gt;A Null Effect is not a Very Small Effect&lt;/h2&gt;
+&lt;p&gt;The focus on the effect value is a double edged sword. Let&amp;rsquo;s take an effect (i.e., a coefficient) of &lt;code&gt;0.000001&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We all have a tendency to equate very small effects as &amp;ldquo;null&amp;rdquo; effects.&lt;/p&gt;
+&lt;h2 id=&#34;null-effects-do-not-exist&#34;&gt;Null Effects Do Not Exist&lt;/h2&gt;
+&lt;p&gt;Meehl’s (1967, 1978, 1990, 1997), in a series of demonstration (see also Waller, 2004), suggested that &lt;em&gt;&amp;ldquo;the null hypothesis, taken literally, is always false&amp;rdquo;&lt;/em&gt; (Meehl, 1978, p. 822). Based on strongly-powered personality datasets, he realised that the probability of two variables being significantly related is a function of sample size, and concluded that &lt;em&gt;&amp;ldquo;in social science everything correlates with almost everything else, theory aside&amp;rdquo;&lt;/em&gt; (Meehl, 1997, p. 393).&lt;/p&gt;
+&lt;p&gt;I would like to extent this conclusion beyond social sciences or, as coined by Meehl or Waller (2004), &lt;em&gt;&amp;ldquo;soft psychology&amp;rdquo;&lt;/em&gt; (a term that I do not particularly like). Example of air pressure.&lt;/p&gt;
+&lt;p&gt;This is a &lt;strong&gt;major issue&lt;/strong&gt;, as it means that any effect for which we cannot reject the null hypothesis (where &lt;em&gt;p&lt;/em&gt; &amp;gt; .05) can be interpreted as &lt;em&gt;&amp;quot;&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;no-effects-do-not-exist-either&#34;&gt;No Effects Do Not Exist Either&lt;/h2&gt;
+&lt;h2 id=&#34;solutions&#34;&gt;Solutions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Bayesian: quantify support in favour of the null&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Effect size &amp;amp; region of equivalence&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Third solution: change paradigm (SexIt).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Taken literally, the null hypothesis is always false. (as cited in Meehl, 1990, p 205). When this phenomenon is combined with the fact that very large samples can make every small effect a significant effect, one has to conclude that with the ideal sample (as large as possible) one have to reject every null hypothesis.&lt;/p&gt;
+&lt;p&gt;This is problematic because this will turn research into a tautology. Every experiment that has a p-value &amp;gt; .05, will become a type II error since the sample was just not big enough to detect the effect. A solution could be to attach more importance to effect sizes and make them decisive in whether a null hypothesis should be rejected.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;p&gt;Waller, N. G. (2004). The fallacy of the null hypothesis in soft psychology. Applied and Preventive Psychology, 11(1), 83-86.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1967). Theory-testing in psychology and physics: A methodological paradox. Philosophy of Science, 34, 103–115.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1978). Theoretical risks and tabular asterisks: Sir Karl, Sir Ronald, and the slow progress of soft psychology. Journal of Consulting and Clinical Psychology, 46, 806–834.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1990). Appraising and amending theories: The strategy of Lakatosian defense and two principles that warrant using it. Psychological Inquiry, 1, 108–141, 173–180.&lt;/p&gt;
+&lt;p&gt;Meehl, P. E. (1997). The problem is epistemology, not statistics: Replace significance tests by confidence intervals and quantify accuracy of risky numerical predictions. In L. L. Harlow, S. A. Mulaik, &amp;amp; J.H. Steiger (Eds.), What if there were no significance tests? (pp. 393–425). Mahwah, NJ: Erlbaum.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 
+&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>One Python code line for a Mandelbrot fractal</title>
-      <link>https://dominiquemakowski.github.io/post/python_mandelbrot/</link>
+      <link>/post/python_mandelbrot/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/python_mandelbrot/</guid>
+      <guid>/post/python_mandelbrot/</guid>
       <description>&lt;h2 id=&#34;mandelbrot-set&#34;&gt;Mandelbrot Set&lt;/h2&gt;
 &lt;p&gt;I wrote a small Python function to easily generate and plot a 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Mandelbrot_set&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mandelbrot set&lt;/a&gt;. This function is now available through the 
@@ -380,9 +725,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>In defence of the 95% CI</title>
-      <link>https://dominiquemakowski.github.io/post/defence_ci95/</link>
+      <link>/post/defence_ci95/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/defence_ci95/</guid>
+      <guid>/post/defence_ci95/</guid>
       <description>&lt;p&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;BayestestR&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;currently uses a 89% threshold by default for Credible Intervals (CI). Should we change that? If so, by what?&lt;/strong&gt; 
 &lt;a href=&#34;https://github.com/easystats/bayestestR/issues/250&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;&lt;strong&gt;Join the discussion here.&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
@@ -396,9 +741,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>Introduction to Bayesian statistics with R</title>
-      <link>https://dominiquemakowski.github.io/post/intro_bayestestr/</link>
+      <link>/post/intro_bayestestr/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/intro_bayestestr/</guid>
+      <guid>/post/intro_bayestestr/</guid>
       <description>&lt;p&gt;You are a student or a researcher interested in Bayesian statistics and R? But all the tutorials and courses that you have found are too intimidating?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fear no more!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;With the 
@@ -415,9 +760,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>A compilation of the best visual illusions</title>
-      <link>https://dominiquemakowski.github.io/post/visual_illusions/</link>
+      <link>/post/visual_illusions/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/visual_illusions/</guid>
+      <guid>/post/visual_illusions/</guid>
       <description>&lt;h3 id=&#34;comic&#34;&gt;Comic&lt;/h3&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A perceptual illusion walks into the bar... &lt;a href=&#34;https://t.co/svD1rtRcpT&#34;&gt;pic.twitter.com/svD1rtRcpT&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jay Van Bavel (@jayvanbavel) &lt;a href=&#34;https://twitter.com/jayvanbavel/status/1295757004124848130?ref_src=twsrc%5Etfw&#34;&gt;August 18, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
@@ -511,9 +856,9 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>The funniest academic tweets</title>
-      <link>https://dominiquemakowski.github.io/post/funny_academic/</link>
+      <link>/post/funny_academic/</link>
       <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/funny_academic/</guid>
+      <guid>/post/funny_academic/</guid>
       <description>&lt;hr&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Every. Damn. Time. &lt;a href=&#34;https://t.co/Bs8NzSLz00&#34;&gt;pic.twitter.com/Bs8NzSLz00&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dan Quintana (@dsquintana) &lt;a href=&#34;https://twitter.com/dsquintana/status/1284177394052534274?ref_src=twsrc%5Etfw&#34;&gt;July 17, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
@@ -599,7 +944,7 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;How reimbursements in academia work: &lt;a href=&#34;https://t.co/XWEtz3rfXO&#34;&gt;pic.twitter.com/XWEtz3rfXO&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dani Beck ❼ (@_DaniBeck) &lt;a href=&#34;https://twitter.com/_DaniBeck/status/1164511425257189378?ref_src=twsrc%5Etfw&#34;&gt;August 22, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;How reimbursements in academia work: &lt;a href=&#34;https://t.co/XWEtz3rfXO&#34;&gt;pic.twitter.com/XWEtz3rfXO&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dani Beck (@_DaniBeck) &lt;a href=&#34;https://twitter.com/_DaniBeck/status/1164511425257189378?ref_src=twsrc%5Etfw&#34;&gt;August 22, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
@@ -619,7 +964,7 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;There&amp;#39;s free food at this conference&amp;quot;&lt;br&gt;&lt;br&gt;Me: &lt;a href=&#34;https://t.co/DMsXarXqRz&#34;&gt;pic.twitter.com/DMsXarXqRz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dani Beck ❼ (@_DaniBeck) &lt;a href=&#34;https://twitter.com/_DaniBeck/status/1131863630264320001?ref_src=twsrc%5Etfw&#34;&gt;May 24, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;There&amp;#39;s free food at this conference&amp;quot;&lt;br&gt;&lt;br&gt;Me: &lt;a href=&#34;https://t.co/DMsXarXqRz&#34;&gt;pic.twitter.com/DMsXarXqRz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dani Beck (@_DaniBeck) &lt;a href=&#34;https://twitter.com/_DaniBeck/status/1131863630264320001?ref_src=twsrc%5Etfw&#34;&gt;May 24, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
@@ -643,73 +988,73 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
     
     <item>
       <title>2020 - The impact of state and dispositional mindfulness on prospective memory: A virtual reality study</title>
-      <link>https://dominiquemakowski.github.io/publication/girardeau2020impact/</link>
+      <link>/publication/girardeau2020impact/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/girardeau2020impact/</guid>
+      <guid>/publication/girardeau2020impact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2020 - The Structure of Deception: Validation of the Lying Profile Questionnaire</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2020structure/</link>
+      <link>/publication/makowski2020structure/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2020structure/</guid>
+      <guid>/publication/makowski2020structure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Research</title>
-      <link>https://dominiquemakowski.github.io/research/</link>
+      <link>/research/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/research/</guid>
+      <guid>/research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Indices of Effect Existence and Significance in the Bayesian Framework</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2019indices/</link>
+      <link>/publication/makowski2019indices/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2019indices/</guid>
+      <guid>/publication/makowski2019indices/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Adaptation and Validation of a Short French Version of the Affective Style Questionnaire</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</link>
+      <link>/publication/makowski2019adaptation/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</guid>
+      <guid>/publication/makowski2019adaptation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - bayestestR: Describing effects and their uncertainty, existence and significance within the Bayesian framework</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</link>
+      <link>/publication/makowski2019bayestestr/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</guid>
+      <guid>/publication/makowski2019bayestestr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - insight: A Unified Interface to Access Information from Model Objects in R</title>
-      <link>https://dominiquemakowski.github.io/publication/ludecke2019insight/</link>
+      <link>/publication/ludecke2019insight/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/ludecke2019insight/</guid>
+      <guid>/publication/ludecke2019insight/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - The heart of cognitive control: Cardiac phase modulates processing speed and inhibition</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2019heart/</link>
+      <link>/publication/makowski2019heart/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2019heart/</guid>
+      <guid>/publication/makowski2019heart/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tips for writing blog posts using Academic-hugo</title>
-      <link>https://dominiquemakowski.github.io/post/tips_blogposts/</link>
+      <link>/post/tips_blogposts/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/tips_blogposts/</guid>
+      <guid>/post/tips_blogposts/</guid>
       <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
@@ -863,9 +1208,9 @@ gantt
     
     <item>
       <title>Slides</title>
-      <link>https://dominiquemakowski.github.io/slides/example/</link>
+      <link>/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/slides/example/</guid>
+      <guid>/slides/example/</guid>
       <description>&lt;h1 id=&#34;welcome-to-slides&#34;&gt;Welcome to Slides&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
@@ -991,185 +1336,203 @@ Three
     
     <item>
       <title>2019 - Dispositional mindfulness attenuates the emotional attentional blink</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</link>
+      <link>/publication/makowski2019dispositional/</link>
       <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</guid>
+      <guid>/publication/makowski2019dispositional/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2019 - Phenomenal, bodily and brain correlates of fictional reappraisal as an implicit emotion regulation strategy</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2019phenomenal/</link>
+      <link>/publication/makowski2019phenomenal/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2019phenomenal/</guid>
+      <guid>/publication/makowski2019phenomenal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2018 - The psycho Package: an Efficient and Publishing-Oriented Workflow for Psychological Science</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2018psycho/</link>
+      <link>/publication/makowski2018psycho/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2018psycho/</guid>
+      <guid>/publication/makowski2018psycho/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/terms/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>2017 - &#34;Being there&#34; and remembering it: Presence improves memory encoding</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2017being/</link>
+      <link>/publication/makowski2017being/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2017being/</guid>
+      <guid>/publication/makowski2017being/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Centenaire Ribot (première partie). La réception de l’œuvre de Théodule Ribot publiée chez l’éditeur Ladrange (1870-1873)</title>
-      <link>https://dominiquemakowski.github.io/publication/nicolas2017centenaire/</link>
+      <link>/publication/nicolas2017centenaire/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/nicolas2017centenaire/</guid>
+      <guid>/publication/nicolas2017centenaire/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - How virtual embodiment affects episodic memory functioning: a proof-of-concept study</title>
-      <link>https://dominiquemakowski.github.io/publication/tuena2017virtual/</link>
+      <link>/publication/tuena2017virtual/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/tuena2017virtual/</guid>
+      <guid>/publication/tuena2017virtual/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information</title>
-      <link>https://dominiquemakowski.github.io/publication/sperduti2017interaction/</link>
+      <link>/publication/sperduti2017interaction/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/sperduti2017interaction/</guid>
+      <guid>/publication/sperduti2017interaction/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Meditation and successful aging: can meditative practices counteract age-related cognitive decline?</title>
-      <link>https://dominiquemakowski.github.io/publication/sperduti2017meditation/</link>
+      <link>/publication/sperduti2017meditation/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/sperduti2017meditation/</guid>
+      <guid>/publication/sperduti2017meditation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - Neuropsydia. py: A Python Module for Creating Experiments, Tasks and Questionnaires</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</link>
+      <link>/publication/makowski2017neuropsydia/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</guid>
+      <guid>/publication/makowski2017neuropsydia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2017 - The distinctive role of executive functions in implicit emotion regulation</title>
-      <link>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</link>
+      <link>/publication/sperduti2017distinctive/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</guid>
+      <guid>/publication/sperduti2017distinctive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2016 - Can mental fatigue be measured by Weber’s compass? Alfred Binet’s answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue</title>
-      <link>https://dominiquemakowski.github.io/publication/nicolas2016can/</link>
+      <link>/publication/nicolas2016can/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/nicolas2016can/</guid>
+      <guid>/publication/nicolas2016can/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2016 - The paradox of fiction: Emotional response toward fiction and the modulatory role of self-relevance</title>
-      <link>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</link>
+      <link>/publication/sperduti2016paradox/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</guid>
+      <guid>/publication/sperduti2016paradox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2016 - The protective role of long-term meditation on the decline of the executive component of attention in aging: a preliminary cross-sectional study</title>
-      <link>https://dominiquemakowski.github.io/publication/sperduti2016protective/</link>
+      <link>/publication/sperduti2016protective/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/sperduti2016protective/</guid>
+      <guid>/publication/sperduti2016protective/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2015 - Emotion regulation and the cognitive decline in aging: beyond the paradox</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2015emotion/</link>
+      <link>/publication/makowski2015emotion/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2015emotion/</guid>
+      <guid>/publication/makowski2015emotion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bayestestR</title>
-      <link>https://dominiquemakowski.github.io/project/bayestestr/</link>
+      <link>/project/bayestestr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/bayestestr/</guid>
+      <guid>/project/bayestestr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cognitive Control</title>
-      <link>https://dominiquemakowski.github.io/project/cognitivecontrol/</link>
+      <link>/project/cognitivecontrol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/cognitivecontrol/</guid>
+      <guid>/project/cognitivecontrol/</guid>
       <description></description>
     </item>
     
     <item>
       <title>easystats</title>
-      <link>https://dominiquemakowski.github.io/project/easystats/</link>
+      <link>/project/easystats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/easystats/</guid>
+      <guid>/project/easystats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NeuroKit</title>
-      <link>https://dominiquemakowski.github.io/project/neurokit/</link>
+      <link>/project/neurokit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/neurokit/</guid>
+      <guid>/project/neurokit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neuropsydia</title>
-      <link>https://dominiquemakowski.github.io/project/neuropsydia/</link>
+      <link>/project/neuropsydia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/neuropsydia/</guid>
+      <guid>/project/neuropsydia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Patient Assessment</title>
-      <link>https://dominiquemakowski.github.io/project/patientassessmentapp/</link>
+      <link>/project/patientassessmentapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/patientassessmentapp/</guid>
+      <guid>/project/patientassessmentapp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>psycho</title>
-      <link>https://dominiquemakowski.github.io/project/psycho/</link>
+      <link>/project/psycho/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/psycho/</guid>
+      <guid>/project/psycho/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pyllusion</title>
-      <link>https://dominiquemakowski.github.io/project/pyllusion/</link>
+      <link>/project/pyllusion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/pyllusion/</guid>
+      <guid>/project/pyllusion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>report</title>
-      <link>https://dominiquemakowski.github.io/project/report/</link>
+      <link>/project/report/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/project/report/</guid>
+      <guid>/project/report/</guid>
       <description></description>
     </item>
     
