@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hyojun Lee | Dr Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/hyojun-lee/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/hyojun-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hyojun Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
+      <title>Hyojun Lee</title>
+      <link>https://dominiquemakowski.github.io/authors/hyojun-lee/</link>
+    </image>
+    
+    <item>
+      <title>Preprint - Beauty is in the eye of the beholder: Evidence from a common mnemonic advantage between aesthetics judgement and self-reference</title>
+      <link>https://dominiquemakowski.github.io/publication/lee2021beauty/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/lee2021beauty/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

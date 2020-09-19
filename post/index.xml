@@ -26,18 +26,18 @@
 &lt;p&gt;However, we can intuitively feel that we &lt;strong&gt;lose a lot of information&lt;/strong&gt; when averaging these scores. Do we deal appropriately with the variability related to individuals, conditions, or the noise aggravated by potential outliers? This is especially important when working with a limited amount of trials.&lt;/p&gt;
 &lt;p&gt;With the advent of recent computational advances, new easy-to-implement alternatives emerge. For instance, &lt;strong&gt;one can “model” the effects at an individual level&lt;/strong&gt; (e.g., the simplest case, for the two conditions paradigm described above, would be a linear regression with the condition as a unique predictor), and use the &lt;strong&gt;parameters&lt;/strong&gt; of each model as individual scores (e.g., the “slope” coefficient of the effect of the manipulation), rather than the raw mean. This opens up the possibility of including covariates and take into account other sources of known variability, which could lead to better estimates.&lt;/p&gt;
 &lt;p&gt;However, individual models are also sensitive to outliers and noise. Thus, another possibility is to &lt;strong&gt;model the effects at the population level&lt;/strong&gt; and, &lt;em&gt;at the same time&lt;/em&gt;, at the individual level. This can be achieved by modelling the participants as a &lt;strong&gt;random factor in a mixed model&lt;/strong&gt;. In this case, the individual estimates might benefit from the population estimates. In other words, the effects at the population level will “constrain” or “guide” the estimation at an individual level to potentially limit extreme parameters.&lt;/p&gt;
-&lt;p&gt;Unfortunately, the above method requires to have all the data at hand, to be able to fit the population model. This is often not the case in on-going acquisition, or in neuropsychological contexts, in which the practitioners simply acquire data for one patient, and have to compute individual scores, without having access to the detailed population data. Thus, an in-between alternative could make use of &lt;strong&gt;Bayesian models&lt;/strong&gt;, in which the population effects (for instance, the mean effect of the condition) could be entered as a &lt;strong&gt;prior&lt;/strong&gt; in the individual models to, again, “guide” the estimation at an individual level and hopefully limit the impact of noise or outliers observations.&lt;/p&gt;
-&lt;p&gt;In this post, the aim is to compare these 4 methods (raw mean, individual model, population model, individual model with priors) in recovering the “true” effects using a simulated dataset.&lt;/p&gt;
+&lt;p&gt;Unfortunately, the above method requires to have all the data at hand, to be able to fit the population model. This is often not the case in on-going acquisition, or in neuropsychological contexts, in which the practitioners simply acquire data for one patient, and have to compute individual scores, without having access to the detailed population data. Thus, an in-between alternative could make use of &lt;strong&gt;Bayesian models&lt;/strong&gt;, in which the population effects (for instance, the mean effect of the condition) could be entered as an informative &lt;strong&gt;prior&lt;/strong&gt; in the individual models to, again, “guide” the estimation at an individual level and hopefully limit the impact of noise or outliers observations.&lt;/p&gt;
+&lt;p&gt;In this post, the aim is to compare these 4 methods (basic individual model - equivalent to using the raw mean, population model, individual model with informative priors) in recovering the “true” effects using a simulated dataset.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;results&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Results&lt;/h3&gt;
 &lt;div id=&#34;generate-data&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Generate Data&lt;/h4&gt;
-&lt;p&gt;We generate several datasets with varying random noise in which the score of interest is the effect of a manipulation as compared to a baseline condition. 20 trials per condition will be generated for 1000 participants with a known “true” effect. Gaussian noise of varying standard deviation will be added to create a natural variability (See the functions’ definition below).&lt;/p&gt;
+&lt;p&gt;We generate several datasets in which we manipulate the number of participants, in which the score of interest is the effect of a manipulation as compared to a baseline condition. 20 trials per condition will be generated with a known “true” effect (the centre of the distribution from which the data is generated). Gaussian noise of varying standard deviation will be added to create a natural variability (See the functions’ definition below).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
 library(easystats)
 
-data &amp;lt;- get_data(n_participants=1000, n_trials=20, d=1, var=4, noise=0.33)
+data &amp;lt;- get_data(n_participants=1000, n_trials=20)
 results &amp;lt;- get_results(data)&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-3&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;individual.png&#34; alt=&#34;*Example of a dataset containing 20 participants (shown with different colors). As can be seen, we introduced modulations in the inter- and intra- individual variability.*&#34; width=&#34;1575&#34; /&gt;
@@ -57,48 +57,34 @@ modelbased::estimate_contrasts(model) %&amp;gt;%
   mutate(Level1 = stringr::str_remove(Level1, &amp;quot;Diff_&amp;quot;),
          Level2 = stringr::str_remove(Level2, &amp;quot;Diff_&amp;quot;)) %&amp;gt;% 
   select(Level1, Level2, Difference, CI_low, CI_high, p)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##                    Level1                 Level2    Difference      CI_low
-## 1  IndividualModel_Priors                    Raw -6.530961e-03 -0.02880842
-## 2         PopulationModel                    Raw -5.105364e-03 -0.02738282
-## 3  IndividualModel_Priors        PopulationModel -1.425597e-03 -0.02370305
-## 4    IndividualModel_Freq                    Raw -3.191891e-16 -0.02227746
-## 5   IndividualModel_Bayes                    Raw  4.476532e-05 -0.02223269
-## 6   IndividualModel_Bayes   IndividualModel_Freq  4.476532e-05 -0.02223269
-## 7    IndividualModel_Freq        PopulationModel  5.105364e-03 -0.01717209
-## 8   IndividualModel_Bayes        PopulationModel  5.150130e-03 -0.01712733
-## 9    IndividualModel_Freq IndividualModel_Priors  6.530961e-03 -0.01574650
-## 10  IndividualModel_Bayes IndividualModel_Priors  6.575726e-03 -0.01570173
+&lt;pre&gt;&lt;code&gt;##                   Level1                 Level2   Difference       CI_low
+## 1 IndividualModel_Priors        PopulationModel -0.001846824 -0.011537451
+## 2   IndividualModel_Freq        PopulationModel  0.001704568 -0.007986059
+## 3   IndividualModel_Freq IndividualModel_Priors  0.003551392 -0.006139235
 ##       CI_high p
-## 1  0.01574650 1
-## 2  0.01717209 1
-## 3  0.02085186 1
-## 4  0.02227746 1
-## 5  0.02232222 1
-## 6  0.02232222 1
-## 7  0.02738282 1
-## 8  0.02742759 1
-## 9  0.02880842 1
-## 10 0.02885318 1&lt;/code&gt;&lt;/pre&gt;
+## 1 0.007843802 1
+## 2 0.011395194 1
+## 3 0.013242019 1&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;div id=&#34;visualize-the-means&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;Visualize the means&lt;/h4&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;means &amp;lt;- modelbased::estimate_means(model) %&amp;gt;%
-  arrange(Mean) %&amp;gt;%
-  mutate(Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;),
-         Method = factor(Method, levels=Method))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;means %&amp;gt;%
-  ggplot(aes(x=Method, y=Mean, color=Method)) +
-  geom_line(aes(group=1)) +
-  geom_pointrange(aes(ymin=CI_low, ymax=CI_high), size=1) +
-  theme_modern() + 
-  theme(axis.text.x = element_text(angle = 45, hjust=1)) +
-  scale_color_material(palette=&amp;quot;rainbow&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://dominiquemakowski.github.io/post/individual_scores/index_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;visualize-the-results&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Visualize the results&lt;/h4&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-6&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;featured.png&#34; alt=&#34;*Average accuracy of the different methods (the closest to 0 the better).*&#34; width=&#34;2250&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: &lt;em&gt;Average accuracy of the different methods (the closest to 0 the better).&lt;/em&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-7&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;n_participants.png&#34; alt=&#34;*Accuracy depending on the number of total participants in the dataset.*&#34; width=&#34;2250&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: &lt;em&gt;Accuracy depending on the number of total participants in the dataset.&lt;/em&gt;
+&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;conclusion&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;Though not significant, using the whole population model seems the most robust option when the whole dataset is available. Otherwise, using an individual model with informative priors (derived from the population model) appears as a good alternative.&lt;/p&gt;
+&lt;p&gt;Though not significantly different, it seems that &lt;strong&gt;raw basic estimates&lt;/strong&gt; (that rely only on the individual data) &lt;strong&gt;perform consistently worse than the population model or individual models informed by priors&lt;/strong&gt;, especially for small datasets (between 10 and 100 participants) - though again, the difference is tiny in our simulated dataset. In the absence of the whole population dataset, it seems that using individual Bayesian model with informative priors (derived from the population model) is a safe alternative.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;functions&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Functions&lt;/h3&gt;
@@ -110,26 +96,25 @@ library(ggdist)
 
 # Get data ----------------------------------------------------------------
 
-
-
-get_data &amp;lt;- function(n_participants=10, n_trials=20, d=1, var=3, noise=0){
-
+get_data &amp;lt;- function(n_participants = 10, n_trials = 20, d = 1.5, var = 3, noise = 0.1) {
   scores_baseline &amp;lt;- rnorm(n_participants, 0, 1)
   scores_condition &amp;lt;- rnorm(n_participants, d, 1)
   variances &amp;lt;- rbeta(n_participants, 2, 8)
-  variances &amp;lt;- 0.1 + variances * (var / max(variances))  # Rescale
+  variances &amp;lt;- 0.1 + variances * (var / max(variances)) # Rescale
   noise_sd &amp;lt;- abs(rnorm(n_participants, 0, noise))
 
   data &amp;lt;- data.frame()
-  for (i in 1:n_participants){
+  for (i in 1:n_participants) {
     a &amp;lt;- rnorm(n_trials, scores_baseline[i], variances[i])
     b &amp;lt;- rnorm(n_trials, scores_condition[i], variances[i])
     a &amp;lt;- a + rnorm(n_trials, 0, noise_sd[i]) # Add noise
     b &amp;lt;- b + rnorm(n_trials, 0, noise_sd[i]) # Add noise
-    data &amp;lt;- rbind(data, data.frame(&amp;quot;Participant&amp;quot; = sprintf(&amp;quot;S%02d&amp;quot;, i),
-                                   &amp;quot;Y&amp;quot; = c(a, b),
-                                   &amp;quot;Score_True&amp;quot; = rep(c(scores_baseline[i], scores_condition[i]), each=n_trials),
-                                   &amp;quot;Condition&amp;quot; = rep(c(&amp;quot;Baseline&amp;quot;, &amp;quot;Manipulation&amp;quot;), each=n_trials)))
+    data &amp;lt;- rbind(data, data.frame(
+      &amp;quot;Participant&amp;quot; = sprintf(&amp;quot;S%02d&amp;quot;, i),
+      &amp;quot;Y&amp;quot; = c(a, b),
+      &amp;quot;Score_True&amp;quot; = rep(c(scores_baseline[i], scores_condition[i]), each = n_trials),
+      &amp;quot;Condition&amp;quot; = rep(c(&amp;quot;Baseline&amp;quot;, &amp;quot;Manipulation&amp;quot;), each = n_trials)
+    ))
   }
   data
 }
@@ -138,22 +123,22 @@ get_data &amp;lt;- function(n_participants=10, n_trials=20, d=1, var=3, noise=0)
 
 # Visualize data -----------------------------------------------------------
 
-p &amp;lt;- get_data(n_participants=20) %&amp;gt;%
+p &amp;lt;- get_data(n_participants = 20) %&amp;gt;%
   group_by(Participant, Condition) %&amp;gt;%
   mutate(mean = mean(Y)) %&amp;gt;%
-  ggplot(aes(y=Y, x=Condition, fill=Participant, color=Participant, group=Participant)) +
-  geom_line(aes(y=mean), position=position_dodge(width=0.66)) +
-  ggdist::stat_eye(point_interval=ggdist::mean_hdi, alpha=0.66, position=position_dodge(width=0.66), .width = c(0.95)) +
+  ggplot(aes(y = Y, x = Condition, fill = Participant, color = Participant, group = Participant)) +
+  geom_line(aes(y = mean), position = position_dodge(width = 0.66)) +
+  ggdist::stat_eye(point_interval = ggdist::mean_hdi, alpha = 0.66, position = position_dodge(width = 0.66), .width = c(0.95)) +
   ylab(&amp;quot;Score&amp;quot;) +
   theme_modern() +
   theme(legend.position = &amp;quot;none&amp;quot;)
-ggsave(&amp;quot;individual.png&amp;quot;, p, width=7, height=7, dpi=450)
+ggsave(&amp;quot;individual.png&amp;quot;, p, width = 7, height = 7, dpi = 450)
 
 
 # Get results -------------------------------------------------------------
 
 
-get_results &amp;lt;- function(data){
+get_results &amp;lt;- function(data) {
 
   # Raw method ----
 
@@ -167,10 +152,10 @@ get_results &amp;lt;- function(data){
 
   # Population model ----
 
-  model &amp;lt;- lme4::lmer(Y ~ Condition + (1 + Condition|Participant), data=data)
+  model &amp;lt;- lme4::lmer(Y ~ Condition + (1 + Condition | Participant), data = data)
 
-  fixed &amp;lt;- insight::get_parameters(model, effects =&amp;quot;fixed&amp;quot;)$Estimate
-  random &amp;lt;- insight::get_parameters(model, effects =&amp;quot;random&amp;quot;)$Participant
+  fixed &amp;lt;- insight::get_parameters(model, effects = &amp;quot;fixed&amp;quot;)$Estimate
+  random &amp;lt;- insight::get_parameters(model, effects = &amp;quot;random&amp;quot;)$Participant
 
   # Transform coefs into scores
   pop_baseline &amp;lt;- random[, 1] + fixed[1]
@@ -182,33 +167,38 @@ get_results &amp;lt;- function(data){
   # Individual model ----
 
   individual_model_data &amp;lt;- data.frame()
-  for(participant in unique(data$Participant)){
-    cat(&amp;quot;.&amp;quot;)  # Print progress
+  for (participant in unique(data$Participant)) {
+    cat(&amp;quot;.&amp;quot;) # Print progress
 
-    dat &amp;lt;- data[data$Participant==participant, ]
+    dat &amp;lt;- data[data$Participant == participant, ]
 
     # Frequentist
-    model1 &amp;lt;-lm(Y ~ Condition, data=dat)
+    model1 &amp;lt;- lm(Y ~ Condition, data = dat)
     nopriors &amp;lt;- parameters::parameters(model1)$Coefficient
 
     # Bayesian without priors
-    model2 &amp;lt;-stan_glm(Y ~ Condition, data=dat, refresh=0)
-    bayes &amp;lt;- parameters::parameters(model2)$Median
+    # model2 &amp;lt;- stan_glm(Y ~ Condition, data = dat, refresh = 0)
+    # bayes &amp;lt;- parameters::parameters(model2)$Median
 
     # Bayesian with Priors
-    model3 &amp;lt;-stan_glm(Y ~ Condition, data=dat, refresh=0,
-                      prior = normal(fixed[1]),
-                      prior_intercept = normal(fixed[2]))
+    model3 &amp;lt;- stan_glm(Y ~ Condition,
+      data = dat,
+      refresh = 0,
+      prior = normal(fixed[1]),
+      prior_intercept = normal(fixed[2])
+    )
     priors &amp;lt;- parameters::parameters(model3)$Median
 
-    individual_model_data &amp;lt;- rbind(individual_model_data,
-                                   data.frame(
-      &amp;quot;Participant&amp;quot; = c(participant, participant),
-      &amp;quot;Condition&amp;quot; = c(&amp;quot;Baseline&amp;quot;, &amp;quot;Manipulation&amp;quot;),
-      &amp;quot;Score_IndividualModel_Freq&amp;quot; = c(nopriors[1], nopriors[1] + nopriors[2]),
-      &amp;quot;Score_IndividualModel_Bayes&amp;quot; = c(bayes[1], bayes[1] + bayes[2]),
-      &amp;quot;Score_IndividualModel_Priors&amp;quot; = c(priors[1], priors[1] + priors[2])
-    ))
+    individual_model_data &amp;lt;- rbind(
+      individual_model_data,
+      data.frame(
+        &amp;quot;Participant&amp;quot; = c(participant, participant),
+        &amp;quot;Condition&amp;quot; = c(&amp;quot;Baseline&amp;quot;, &amp;quot;Manipulation&amp;quot;),
+        &amp;quot;Score_IndividualModel&amp;quot; = c(nopriors[1], nopriors[1] + nopriors[2]),
+        # &amp;quot;Score_IndividualModel_Bayes&amp;quot; = c(bayes[1], bayes[1] + bayes[2]),
+        &amp;quot;Score_IndividualModel_Priors&amp;quot; = c(priors[1], priors[1] + priors[2])
+      )
+    )
   }
 
   results &amp;lt;- merge(results, individual_model_data)
@@ -217,13 +207,15 @@ get_results &amp;lt;- function(data){
   # Clean output ----
 
   diff &amp;lt;- results %&amp;gt;%
-    mutate(Diff_Raw = Score_True - Score_Raw,
-           Diff_PopulationModel = Score_True - Score_PopulationModel,
-           Diff_IndividualModel_Freq = Score_True - Score_IndividualModel_Freq,
-           Diff_IndividualModel_Bayes = Score_True - Score_IndividualModel_Bayes,
-           Diff_IndividualModel_Priors = Score_True - Score_IndividualModel_Priors) %&amp;gt;%
+    mutate(
+      # Diff_Raw = Score_True - Score_Raw,
+      Diff_PopulationModel = Score_True - Score_PopulationModel,
+      Diff_IndividualModel = Score_True - Score_IndividualModel,
+      # Diff_IndividualModel_Bayes = Score_True - Score_IndividualModel_Bayes,
+      Diff_IndividualModel_Priors = Score_True - Score_IndividualModel_Priors
+    ) %&amp;gt;%
     select(Participant, Condition, starts_with(&amp;quot;Diff&amp;quot;)) %&amp;gt;%
-    pivot_longer(starts_with(&amp;quot;Diff&amp;quot;), names_to=&amp;quot;Method&amp;quot;, values_to=&amp;quot;Diff&amp;quot;) %&amp;gt;%
+    pivot_longer(starts_with(&amp;quot;Diff&amp;quot;), names_to = &amp;quot;Method&amp;quot;, values_to = &amp;quot;Diff&amp;quot;) %&amp;gt;%
     mutate(Diff_Abs = abs(Diff))
 
   diff
@@ -232,40 +224,74 @@ get_results &amp;lt;- function(data){
 
 
 # Analysis ----------------------------------------------------------------
+results &amp;lt;- data.frame()
+for(n in seq.int(10, 300, length.out = 10)){
+  data &amp;lt;- get_data(n_participants = round(n), n_trials = 20)
+  rez &amp;lt;- get_results(data) %&amp;gt;%
+    select(-Participant) %&amp;gt;%
+    group_by(Condition, Method) %&amp;gt;%
+    summarise_all(mean) %&amp;gt;%
+    mutate(n_Participants = n,
+           Method = as.factor(Method),
+           Dataset=paste0(&amp;quot;Dataset&amp;quot;, round(n, 2)))
+  results &amp;lt;- rbind(results, rez)
 
-data &amp;lt;- get_data(n_participants=1000, n_trials=20, d=1, var=4, noise=0.3)
-results &amp;lt;- get_results(data)
+  print(n) # Print progress
+}
 
-model &amp;lt;- lm(Diff_Abs ~ Method, data=results)
+# model &amp;lt;- mgcv::gam(Diff_Abs ~ Method + s(n_Participants, by = Method), data = results)
+model &amp;lt;- lm(Diff_Abs ~ Method * poly(n_Participants, 3), data = results)
 
 parameters::parameters(model)
 
-means &amp;lt;- modelbased::estimate_means(model) %&amp;gt;%
-  arrange(Mean) %&amp;gt;%
-  mutate(Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;),
-         Method = factor(Method, levels=Method))
 
 contrasts &amp;lt;- modelbased::estimate_contrasts(model) %&amp;gt;%
   arrange(Difference) %&amp;gt;%
-  mutate(Level1 = stringr::str_remove(Level1, &amp;quot;Diff_&amp;quot;),
-         Level2 = stringr::str_remove(Level2, &amp;quot;Diff_&amp;quot;)) %&amp;gt;%
+  mutate(
+    Level1 = stringr::str_remove(Level1, &amp;quot;Diff_&amp;quot;),
+    Level2 = stringr::str_remove(Level2, &amp;quot;Diff_&amp;quot;)
+  ) %&amp;gt;%
   select(Level1, Level2, Difference, CI_low, CI_high, p)
 
-d &amp;lt;- list(&amp;quot;results&amp;quot;=results, &amp;quot;model&amp;quot;=model, &amp;quot;means&amp;quot;=means, &amp;quot;contrasts&amp;quot;=contrasts)
-save(d, file=&amp;quot;data.Rdata&amp;quot;)
 
 
 
-# Visualize means ---------------------------------------------------------
-
-p &amp;lt;- means %&amp;gt;%
-  ggplot(aes(x=Method, y=Mean, color=Method)) +
-  geom_line(aes(group=1)) +
-  geom_pointrange(aes(ymin=CI_low, ymax=CI_high), size=1) +
+# Visualize results ---------------------------------------------------------
+p &amp;lt;- modelbased::estimate_means(model) %&amp;gt;%
+  arrange(Mean) %&amp;gt;%
+  mutate(
+    Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;),
+    Method = factor(Method, levels = Method)
+  )  %&amp;gt;%
+  ggplot(aes(x = Method, y = Mean, color = Method)) +
+  geom_line(aes(group = 1)) +
+  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size = 1) +
   theme_modern() +
-  theme(axis.text.x = element_text(angle = 45, hjust=1)) +
-  scale_color_material(palette=&amp;quot;rainbow&amp;quot;)
-ggsave(&amp;quot;featured.png&amp;quot;, p, width=10, height=6, dpi=450)&lt;/code&gt;&lt;/pre&gt;
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_color_material()
+ggsave(&amp;quot;featured.png&amp;quot;, p, width = 10, height = 6, dpi = 450)
+
+
+
+p &amp;lt;- modelbased::estimate_link(model) %&amp;gt;%
+  mutate(Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;))  %&amp;gt;%
+  ggplot(aes(x = n_Participants, y = Predicted)) +
+  geom_point(data=mutate(results, Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;)),
+             aes(y=Diff_Abs, color = Method)) +
+  geom_ribbon(aes(ymin=CI_low, ymax=CI_high, fill=Method), alpha=0.1) +
+  geom_line(aes(color = Method), size=1) +
+  theme_modern() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_color_material() +
+  scale_fill_material()
+ggsave(&amp;quot;n_participants.png&amp;quot;, p, width = 10, height = 6, dpi = 450)
+
+
+# Save results ------------------------------------------------------------
+
+
+d &amp;lt;- list(&amp;quot;results&amp;quot; = results, &amp;quot;model&amp;quot; = model, &amp;quot;contrasts&amp;quot; = contrasts)
+save(d, file = &amp;quot;data.Rdata&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;References&lt;/h3&gt;
@@ -652,7 +678,11 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
       <link>https://dominiquemakowski.github.io/post/visual_illusions/</link>
       <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/post/visual_illusions/</guid>
-      <description>&lt;h3 id=&#34;comic&#34;&gt;Comic&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;the-main-source-for-visual-illusions&#34;&gt;The main source for visual illusions&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Welcome to my illusion website!&lt;a href=&#34;https://t.co/1DJIwbj0P9&#34;&gt;https://t.co/1DJIwbj0P9&lt;/a&gt; &lt;a href=&#34;https://t.co/SYiK0JvJJl&#34;&gt;pic.twitter.com/SYiK0JvJJl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Akiyoshi Kitaoka (@AkiyoshiKitaoka) &lt;a href=&#34;https://twitter.com/AkiyoshiKitaoka/status/1253137100582449152?ref_src=twsrc%5Etfw&#34;&gt;April 23, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;comic&#34;&gt;Comic&lt;/h3&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A perceptual illusion walks into the bar... &lt;a href=&#34;https://t.co/svD1rtRcpT&#34;&gt;pic.twitter.com/svD1rtRcpT&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jay Van Bavel (@jayvanbavel) &lt;a href=&#34;https://twitter.com/jayvanbavel/status/1295757004124848130?ref_src=twsrc%5Etfw&#34;&gt;August 18, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
