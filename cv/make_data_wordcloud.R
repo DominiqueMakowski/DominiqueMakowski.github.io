@@ -104,5 +104,5 @@ p <- data %>%
 p
 
 Sys.sleep(10)
-ggsave(paste0(path, "content/cv/img/plot_wordcloud.png"), p, dpi=600, width=10)
+ggsave(paste0(path, "content/cv/img/plot_wordcloud.png"), p, dpi=600, width=10, height=5)
 Sys.sleep(10)
