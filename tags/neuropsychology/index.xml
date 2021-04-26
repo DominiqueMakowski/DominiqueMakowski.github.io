@@ -53,7 +53,7 @@
       <description>&lt;p&gt;As you know, &lt;strong&gt;reality bending&lt;/strong&gt; is my primary research direction. However, it is not (yet) a well-established scientific topic, nor is it clearly defined. In fact, &lt;strong&gt;it is not defined at all, hence the purpose of this article&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;But what does it refer too? Is it some kind of 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Avatar: The Last Airbender&lt;/em&gt;&lt;/a&gt; thing? Or some 
-&lt;a href=&#34;https://marvel-movies.fandom.com/wiki/Reality_Stone&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Avengers&lt;/em&gt;&lt;/a&gt;-style superpower? Well&amp;hellip; I sure wish it was 😁&lt;/p&gt;
+&lt;a href=&#34;https://marvel-movies.fandom.com/wiki/Reality_Stone&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Avengers&lt;/em&gt;&lt;/a&gt;-style superpower? Well&amp;hellip; I sure wish it was 😄&lt;/p&gt;
 &lt;p&gt;Essentially, &lt;strong&gt;reality bending&lt;/strong&gt; refers to the study of the internal and external determinants of subjective reality. In other words, we seek to understand the processes that modulate our conscious experience of reality. The word &amp;ldquo;bending&amp;rdquo; encapsulates the active nature of the mechanisms at stake. Indeed, being anything but stable, our perception of reality can be quite easily influenced, whether voluntarily or not, sometimes to extreme degrees of alteration.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img src=&#34;DonQuixote.jpg&#34; alt=&#34;github for psychologists&#34;/&gt;
@@ -82,9 +82,6 @@
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/post/individual_scores/</guid>
       <description>
-&lt;script src=&#34;https://dominiquemakowski.github.io/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://dominiquemakowski.github.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://dominiquemakowski.github.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;introduction&#34; class=&#34;section level3&#34;&gt;
@@ -124,14 +121,11 @@ modelbased::estimate_contrasts(model) %&amp;gt;%
   mutate(Level1 = stringr::str_remove(Level1, &amp;quot;Diff_&amp;quot;),
          Level2 = stringr::str_remove(Level2, &amp;quot;Diff_&amp;quot;)) %&amp;gt;% 
   select(Level1, Level2, Difference, CI_low, CI_high, p)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##                   Level1                 Level2   Difference       CI_low
-## 1 IndividualModel_Priors        PopulationModel -0.001846824 -0.011537451
-## 2   IndividualModel_Freq        PopulationModel  0.001704568 -0.007986059
-## 3   IndividualModel_Freq IndividualModel_Priors  0.003551392 -0.006139235
-##       CI_high p
-## 1 0.007843802 1
-## 2 0.011395194 1
-## 3 0.013242019 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Level1                 |                 Level2 | Difference |            CI |      p
+## -------------------------------------------------------------------------------------
+## IndividualModel_Priors |        PopulationModel |  -1.85e-03 | [-0.01, 0.01] | &amp;gt; .999
+## IndividualModel_Freq   |        PopulationModel |   1.70e-03 | [-0.01, 0.01] | &amp;gt; .999
+## IndividualModel_Freq   | IndividualModel_Priors |   3.55e-03 | [-0.01, 0.01] | &amp;gt; .999&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;visualize-the-results&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Visualize the results&lt;/h4&gt;
@@ -340,7 +334,7 @@ ggsave(&amp;quot;featured.png&amp;quot;, p, width = 10, height = 6, dpi = 450)
 
 
 
-p &amp;lt;- modelbased::estimate_link(model) %&amp;gt;%
+p &amp;lt;- modelbased::estimate_relation(model) %&amp;gt;%
   mutate(Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;))  %&amp;gt;%
   ggplot(aes(x = n_Participants, y = Predicted)) +
   geom_point(data=mutate(results, Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;)),

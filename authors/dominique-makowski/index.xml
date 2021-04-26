@@ -5,12 +5,28 @@
     <link>https://dominiquemakowski.github.io/authors/dominique-makowski/</link>
       <atom:link href="https://dominiquemakowski.github.io/authors/dominique-makowski/index.xml" rel="self" type="application/rss+xml" />
     <description>Dominique Makowski</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 10 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>Dominique Makowski</title>
       <link>https://dominiquemakowski.github.io/authors/dominique-makowski/</link>
     </image>
+    
+    <item>
+      <title>2021 - The Structure of Deception: Validation of the Lying Profile Questionnaire</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2021structure/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2021structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2021 - performance: An R Package for Assessment, Comparison and Testing of Statistical Models</title>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2021performance/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2021performance/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>How to share data analysis scripts with publications?</title>
@@ -245,7 +261,7 @@
 &lt;figure&gt;
   &lt;img src=&#34;determinism.jpg&#34; alt=&#34;determinism&#34;/&gt;
 &lt;/figure&gt;
-&lt;p&gt;Note that this position is not incompatible with a &lt;strong&gt;probabilistic view of the world&lt;/strong&gt; (I am also a rather radical Bayesianist 😁). In this context, the probabilistic perspective is mostly a framework to describe uncertainty and hidden mechanisms. For instance, if I flip a coin, a probabilistic approach would be to consider that there is a 50/50 probability on the outcome. That said, if we manage to gather information on all the parameters (the starting position of the coin, the velocity and angle of the tossing, gravity, the weight distribution on the coin, its resistance to air, characteristics of air pressure, wind etc.), one could pretty much accurately predict what the outcome would be. In other words, the outcome is already &amp;ldquo;determined&amp;rdquo; once the coined has been tossed. That doesn&amp;rsquo;t mean that a probabilistic model is not convenient to describe it, especially when we don&amp;rsquo;t have access to all these parameters (or powerful enough models to integrate them).&lt;/p&gt;
+&lt;p&gt;Note that this position is not incompatible with a &lt;strong&gt;probabilistic view of the world&lt;/strong&gt; (I am also a rather radical Bayesianist 😄). In this context, the probabilistic perspective is mostly a framework to describe uncertainty and hidden mechanisms. For instance, if I flip a coin, a probabilistic approach would be to consider that there is a 50/50 probability on the outcome. That said, if we manage to gather information on all the parameters (the starting position of the coin, the velocity and angle of the tossing, gravity, the weight distribution on the coin, its resistance to air, characteristics of air pressure, wind etc.), one could pretty much accurately predict what the outcome would be. In other words, the outcome is already &amp;ldquo;determined&amp;rdquo; once the coined has been tossed. That doesn&amp;rsquo;t mean that a probabilistic model is not convenient to describe it, especially when we don&amp;rsquo;t have access to all these parameters (or powerful enough models to integrate them).&lt;/p&gt;
 &lt;p&gt;Many attempts have been made to attack determinism (and especially by people trying to defend the possibility of free will), and recent advances in physics have giving them a lot of ammunition (the most striking example being the - often misunderstood - usage of &lt;strong&gt;quantum uncertainty to explain randomness, free-will, consciousness, god&lt;/strong&gt; and pretty much everything). Nonetheless, determinism is one of the simplest assumption that can be made regarding causality and evolution.&lt;/p&gt;
 &lt;h2 id=&#34;the-future-is-now&#34;&gt;The future is now&lt;/h2&gt;
 &lt;p&gt;Determinism has one important consequence. As all events stem one from the others, in a unique chain of causal events, then if we know the exact state of the system (i.e., you know the state of &lt;em&gt;all&lt;/em&gt; of the variables of the system) at one point in time, as well as the rules governing the system, we can predict with certainty the system&amp;rsquo;s state at the next point in time, at &lt;em&gt;t&lt;/em&gt;+1. If we repeat the process, &lt;strong&gt;we know the state of the system at &lt;em&gt;t&lt;/em&gt;+2, and so on, until the end of times.&lt;/strong&gt;&lt;/p&gt;
@@ -284,7 +300,7 @@
       <description>&lt;p&gt;As you know, &lt;strong&gt;reality bending&lt;/strong&gt; is my primary research direction. However, it is not (yet) a well-established scientific topic, nor is it clearly defined. In fact, &lt;strong&gt;it is not defined at all, hence the purpose of this article&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;But what does it refer too? Is it some kind of 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Avatar: The Last Airbender&lt;/em&gt;&lt;/a&gt; thing? Or some 
-&lt;a href=&#34;https://marvel-movies.fandom.com/wiki/Reality_Stone&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Avengers&lt;/em&gt;&lt;/a&gt;-style superpower? Well&amp;hellip; I sure wish it was 😁&lt;/p&gt;
+&lt;a href=&#34;https://marvel-movies.fandom.com/wiki/Reality_Stone&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Avengers&lt;/em&gt;&lt;/a&gt;-style superpower? Well&amp;hellip; I sure wish it was 😄&lt;/p&gt;
 &lt;p&gt;Essentially, &lt;strong&gt;reality bending&lt;/strong&gt; refers to the study of the internal and external determinants of subjective reality. In other words, we seek to understand the processes that modulate our conscious experience of reality. The word &amp;ldquo;bending&amp;rdquo; encapsulates the active nature of the mechanisms at stake. Indeed, being anything but stable, our perception of reality can be quite easily influenced, whether voluntarily or not, sometimes to extreme degrees of alteration.&lt;/p&gt;
 &lt;figure&gt;
   &lt;img src=&#34;DonQuixote.jpg&#34; alt=&#34;github for psychologists&#34;/&gt;
@@ -321,9 +337,6 @@
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/post/individual_scores/</guid>
       <description>
-&lt;script src=&#34;https://dominiquemakowski.github.io/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://dominiquemakowski.github.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://dominiquemakowski.github.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;introduction&#34; class=&#34;section level3&#34;&gt;
@@ -363,14 +376,11 @@ modelbased::estimate_contrasts(model) %&amp;gt;%
   mutate(Level1 = stringr::str_remove(Level1, &amp;quot;Diff_&amp;quot;),
          Level2 = stringr::str_remove(Level2, &amp;quot;Diff_&amp;quot;)) %&amp;gt;% 
   select(Level1, Level2, Difference, CI_low, CI_high, p)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##                   Level1                 Level2   Difference       CI_low
-## 1 IndividualModel_Priors        PopulationModel -0.001846824 -0.011537451
-## 2   IndividualModel_Freq        PopulationModel  0.001704568 -0.007986059
-## 3   IndividualModel_Freq IndividualModel_Priors  0.003551392 -0.006139235
-##       CI_high p
-## 1 0.007843802 1
-## 2 0.011395194 1
-## 3 0.013242019 1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Level1                 |                 Level2 | Difference |            CI |      p
+## -------------------------------------------------------------------------------------
+## IndividualModel_Priors |        PopulationModel |  -1.85e-03 | [-0.01, 0.01] | &amp;gt; .999
+## IndividualModel_Freq   |        PopulationModel |   1.70e-03 | [-0.01, 0.01] | &amp;gt; .999
+## IndividualModel_Freq   | IndividualModel_Priors |   3.55e-03 | [-0.01, 0.01] | &amp;gt; .999&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;visualize-the-results&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Visualize the results&lt;/h4&gt;
@@ -579,7 +589,7 @@ ggsave(&amp;quot;featured.png&amp;quot;, p, width = 10, height = 6, dpi = 450)
 
 
 
-p &amp;lt;- modelbased::estimate_link(model) %&amp;gt;%
+p &amp;lt;- modelbased::estimate_relation(model) %&amp;gt;%
   mutate(Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;))  %&amp;gt;%
   ggplot(aes(x = n_Participants, y = Predicted)) +
   geom_point(data=mutate(results, Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;)),
@@ -1185,7 +1195,7 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;when your deep learning model is literally just a logistic regression &lt;a href=&#34;https://t.co/YB1j1qqML0&#34;&gt;pic.twitter.com/YB1j1qqML0&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kareem Carr 🙃 (@kareem_carr) &lt;a href=&#34;https://twitter.com/kareem_carr/status/1167081972453109760?ref_src=twsrc%5Etfw&#34;&gt;August 29, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;when your deep learning model is literally just a logistic regression &lt;a href=&#34;https://t.co/YB1j1qqML0&#34;&gt;pic.twitter.com/YB1j1qqML0&lt;/a&gt;&lt;/p&gt;&amp;mdash; 🔥 Kareem Carr 🔥 (@kareem_carr) &lt;a href=&#34;https://twitter.com/kareem_carr/status/1167081972453109760?ref_src=twsrc%5Etfw&#34;&gt;August 29, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
@@ -1236,14 +1246,6 @@ plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
       <link>https://dominiquemakowski.github.io/publication/girardeau2020impact/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/publication/girardeau2020impact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2020 - The Structure of Deception: Validation of the Lying Profile Questionnaire</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2020structure/</link>
-      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2020structure/</guid>
       <description></description>
     </item>
     

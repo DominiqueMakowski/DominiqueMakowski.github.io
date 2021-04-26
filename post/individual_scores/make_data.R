@@ -184,7 +184,7 @@ ggsave("featured.png", p, width = 10, height = 6, dpi = 450)
 
 
 
-p <- modelbased::estimate_link(model) %>%
+p <- modelbased::estimate_relation(model) %>%
   mutate(Method = stringr::str_remove(Method, "Diff_"))  %>%
   ggplot(aes(x = n_Participants, y = Predicted)) +
   geom_point(data=mutate(results, Method = stringr::str_remove(Method, "Diff_")),

@@ -5,7 +5,7 @@
     <link>https://dominiquemakowski.github.io/authors/s.-h.-annabel-chen/</link>
       <atom:link href="https://dominiquemakowski.github.io/authors/s.-h.-annabel-chen/index.xml" rel="self" type="application/rss+xml" />
     <description>S. H. Annabel Chen</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/images/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_2.png</url>
       <title>S. H. Annabel Chen</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>2021 - NeuroKit2: A Python toolbox for neurophysiological signal processing</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2021neurokit/</link>
-      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2021neurokit/</guid>
+      <title>2021 - The Structure of Deception: Validation of the Lying Profile Questionnaire</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2021structure/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2021structure/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>2020 - The Structure of Deception: Validation of the Lying Profile Questionnaire</title>
-      <link>https://dominiquemakowski.github.io/publication/makowski2020structure/</link>
-      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/makowski2020structure/</guid>
+      <title>2021 - NeuroKit2: A Python toolbox for neurophysiological signal processing</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2021neurokit/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2021neurokit/</guid>
       <description></description>
     </item>
     

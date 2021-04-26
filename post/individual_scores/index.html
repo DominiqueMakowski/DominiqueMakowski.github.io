@@ -732,9 +732,6 @@
 
     <div class="article-style">
       
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
-<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
 <div id="introduction" class="section level3">
@@ -774,14 +771,11 @@ modelbased::estimate_contrasts(model) %&gt;%
   mutate(Level1 = stringr::str_remove(Level1, &quot;Diff_&quot;),
          Level2 = stringr::str_remove(Level2, &quot;Diff_&quot;)) %&gt;% 
   select(Level1, Level2, Difference, CI_low, CI_high, p)</code></pre>
-<pre><code>##                   Level1                 Level2   Difference       CI_low
-## 1 IndividualModel_Priors        PopulationModel -0.001846824 -0.011537451
-## 2   IndividualModel_Freq        PopulationModel  0.001704568 -0.007986059
-## 3   IndividualModel_Freq IndividualModel_Priors  0.003551392 -0.006139235
-##       CI_high p
-## 1 0.007843802 1
-## 2 0.011395194 1
-## 3 0.013242019 1</code></pre>
+<pre><code>## Level1                 |                 Level2 | Difference |            CI |      p
+## -------------------------------------------------------------------------------------
+## IndividualModel_Priors |        PopulationModel |  -1.85e-03 | [-0.01, 0.01] | &gt; .999
+## IndividualModel_Freq   |        PopulationModel |   1.70e-03 | [-0.01, 0.01] | &gt; .999
+## IndividualModel_Freq   | IndividualModel_Priors |   3.55e-03 | [-0.01, 0.01] | &gt; .999</code></pre>
 </div>
 <div id="visualize-the-results" class="section level4">
 <h4>Visualize the results</h4>
@@ -990,7 +984,7 @@ ggsave(&quot;featured.png&quot;, p, width = 10, height = 6, dpi = 450)
 
 
 
-p &lt;- modelbased::estimate_link(model) %&gt;%
+p &lt;- modelbased::estimate_relation(model) %&gt;%
   mutate(Method = stringr::str_remove(Method, &quot;Diff_&quot;))  %&gt;%
   ggplot(aes(x = n_Participants, y = Predicted)) +
   geom_point(data=mutate(results, Method = stringr::str_remove(Method, &quot;Diff_&quot;)),
