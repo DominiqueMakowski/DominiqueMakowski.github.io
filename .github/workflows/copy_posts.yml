@@ -18,7 +18,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }} # ${{ secrets.API_TOKEN_GITHUB }}
       with:
         source_file: 'content/post/'
-        destination_repo: 'RealityBending/RealityBending.github.io'
+        destination_repo: 'https://github.com/RealityBending/RealityBending.github.io'
         destination_folder: 'content/post/'
         user_email: 'dom.makowski@gmail.com'
         user_name: 'DominiqueMakowski'
