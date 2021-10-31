@@ -1,0 +1,38 @@
+on:
+  push:
+     branches:
+       - main
+
+
+name: 🚀 Build and Deploy
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+
+      - name: Setup Pandoc
+        uses: r-lib/actions/setup-pandoc@v1
+
+      - name: Install rmarkdown, blogdown # might need knitr
+        run: Rscript -e 'install.packages(c("rmarkdown","blogdown"))'
+
+      - name: Install hugo
+        run: Rscript -e 'blogdown::install_hugo()'
+
+      - name: Build site with blogdown
+        run: Rscript -e "blogdown::build_site()"
+
+      - name: Deploy 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+
+
+

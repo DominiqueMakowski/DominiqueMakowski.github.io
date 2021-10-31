@@ -1,0 +1,33 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: About
+    url: '#about'
+    weight: 10
+  - name: CV
+    url: 'cv/'
+    weight: 20
+  - name: Publications
+    url: 'publication/'
+    weight: 30
+  - name: Blog
+    url: 'post/'
+    weight: 40
+  - name: ReBeL
+    url: 'https://realitybending.github.io/'
+    weight: 50
+  - name: "<i class=\"fab fa-twitter\"; font-size: 1rem; line-height: 1.25\"></i>" # "<i class=\"fab fa-twitter\" style=\"color: #55acee; font-size: 1rem; line-height: 1.25\"></i>"
+    url: 'https://twitter.com/Dom_Makowski'
+    weight: 60
+  - name: "<i class=\"fab fa-github\"; font-size: 1rem; line-height: 1.25\"></i>" # "<i class=\"fab fa-twitter\" style=\"color: #55acee; font-size: 1rem; line-height: 1.25\"></i>"
+    url: 'https://github.com/DominiqueMakowski'
+    weight: 70
+
+# Link to a PDF of your resume/CV from the menu.
+# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
+#  - name: CV
+#    url: uploads/resume.pdf
+#    weight: 70
