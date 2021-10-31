@@ -59,7 +59,7 @@ subtitle = ""
 {{% callout note %}}
 You can download the *PDF* version of my CV with the link below:
 
-- {{< staticref "[resumé](https://dominiquemakowski.github.io/CV/)" "newtab" >}}CV - PDF{{< /staticref >}}
+- [**CV - PDF**](https://dominiquemakowski.github.io/CV/)
 
 {{% /callout %}}
 
