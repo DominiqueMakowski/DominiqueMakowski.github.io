@@ -1,0 +1,22 @@
+name: Push File
+
+on: push
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'content/post/'
+        destination_repo: 'RealityBending/RealityBending.github.io'
+        destination_folder: 'content/post/'
+        user_email: 'dom.makowski@gmail.com'
+        user_name: 'DominiqueMakowski'
+        commit_message: 'Copying posts from Dom's to REBEL's websites.'
