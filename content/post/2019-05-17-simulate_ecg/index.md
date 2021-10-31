@@ -5,7 +5,7 @@ categories:
 - Python
 - NeuroKit
 - Biosignals
-date: "2020-05-17T00:00:00Z"
+date: "2019-05-17T00:00:00Z"
 draft: false
 featured: false
 image:

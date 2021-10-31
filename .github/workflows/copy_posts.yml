@@ -17,9 +17,9 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_file: 'content/post/'
+        source_file: "content/post/ --exclude '_index.md'""
         destination_repo: 'RealityBending/RealityBending.github.io'
-        destination_folder: 'content/post/'
+        destination_folder: 'content/'
         user_email: 'dom.makowski@gmail.com'
         user_name: 'DominiqueMakowski'
         commit_message: "Copying posts from Dom's to REBEL's websites."
