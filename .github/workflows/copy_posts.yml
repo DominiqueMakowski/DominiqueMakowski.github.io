@@ -19,7 +19,7 @@ jobs:
       with:
         source_file: 'content/post/'
         git_server: 'github.com'
-        destination_repo: 'RealityBending/RealityBending.github.io'
+        destination_repo: 'github.com/RealityBending/RealityBending.github.io'
         destination_folder: 'content/post/'
         user_email: 'dom.makowski@gmail.com'
         user_name: 'DominiqueMakowski'
