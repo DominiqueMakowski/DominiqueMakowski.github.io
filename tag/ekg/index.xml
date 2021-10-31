@@ -5,18 +5,18 @@
     <link>https://dominiquemakowski.github.io/tag/ekg/</link>
       <atom:link href="https://dominiquemakowski.github.io/tag/ekg/index.xml" rel="self" type="application/rss+xml" />
     <description>EKG</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 17 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 17 May 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://dominiquemakowski.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://dominiquemakowski.github.io/media/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_3.png</url>
       <title>EKG</title>
       <link>https://dominiquemakowski.github.io/tag/ekg/</link>
     </image>
     
     <item>
       <title>Generate an articial ECG signal in Python</title>
-      <link>https://dominiquemakowski.github.io/post/simulate_ecg/</link>
-      <pubDate>Sun, 17 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/simulate_ecg/</guid>
+      <link>https://dominiquemakowski.github.io/post/2019-05-17-simulate_ecg/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2019-05-17-simulate_ecg/</guid>
       <description>&lt;h1 id=&#34;create-a-natural-ecg-signal&#34;&gt;Create a natural ECG signal&lt;/h1&gt;
 &lt;p&gt;Generating artificial physiological signals can be very useful to build, test your analysis pipeline or develop and validate a new algorithm.&lt;/p&gt;
 &lt;p&gt;Generating a synthetic, yet realistic, ECG signal in Python can be easily achieved with the &lt;code&gt;ecg_simulate()&lt;/code&gt; function available in the &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit#quick-example&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;NeuroKit2&lt;/strong&gt;&lt;/a&gt; package.&lt;/p&gt;
@@ -46,10 +46,10 @@ nk.signal_plot(simulated_ecg, sampling_rate=200)  # Visualize the signal
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
-               /post/simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_eb07d9ebef8cae5728fb117a8bcf9190.png 400w,
-               /post/simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_8a6cd3fac431c8701f82bab269afeb33.png 760w,
-               /post/simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://dominiquemakowski.github.io/post/simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_eb07d9ebef8cae5728fb117a8bcf9190.png&#34;
+               /post/2019-05-17-simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_eb07d9ebef8cae5728fb117a8bcf9190.png 400w,
+               /post/2019-05-17-simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_8a6cd3fac431c8701f82bab269afeb33.png 760w,
+               /post/2019-05-17-simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://dominiquemakowski.github.io/post/2019-05-17-simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_eb07d9ebef8cae5728fb117a8bcf9190.png&#34;
                width=&#34;760&#34;
                height=&#34;389&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -80,10 +80,10 @@ nk.signal_plot(simulated_ecg, sampling_rate=200)
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
-               /post/simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_ee67a003b71f8927e6d99fbd813fdd9e.png 400w,
-               /post/simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_d315e94a8109361fca3b4498591a9f22.png 760w,
-               /post/simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://dominiquemakowski.github.io/post/simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_ee67a003b71f8927e6d99fbd813fdd9e.png&#34;
+               /post/2019-05-17-simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_ee67a003b71f8927e6d99fbd813fdd9e.png 400w,
+               /post/2019-05-17-simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_d315e94a8109361fca3b4498591a9f22.png 760w,
+               /post/2019-05-17-simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://dominiquemakowski.github.io/post/2019-05-17-simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_ee67a003b71f8927e6d99fbd813fdd9e.png&#34;
                width=&#34;760&#34;
                height=&#34;393&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
