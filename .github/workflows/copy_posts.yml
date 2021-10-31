@@ -13,7 +13,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Pushes test file
-      uses: dmnemec/copy_file_to_another_repo_action@main
+      uses: TomoeMami/copy_file_to_another_repo_action # dmnemec/copy_file_to_another_repo_action@46
       env:
         API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }} # ${{ secrets.API_TOKEN_GITHUB }}
       with:
