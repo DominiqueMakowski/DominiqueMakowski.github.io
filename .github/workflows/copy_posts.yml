@@ -1,6 +1,9 @@
-name: ⏫ Copy posts to REBEL
+on:
+  push:
+     branches:
+       - master
 
-on: push
+name: ⏫ Copy posts to REBEL
 
 jobs:
   copy-file:
