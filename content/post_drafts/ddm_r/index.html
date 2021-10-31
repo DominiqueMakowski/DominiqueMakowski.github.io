@@ -1,0 +1,104 @@
+---
+title: "How to extract individual scores from repeated measures"
+subtitle: "We compare different methods (individual models, Bayesian models with informative priors, random effects from mixed models) to extract individual scores from repeated measures tasks."
+summary: "We compare different methods (individual models, Bayesian models with informative priors, random effects from mixed models) to extract individual scores from repeated measures tasks."
+draft: true
+featured: false
+authors:
+- Dominique Makowski
+date: 2020-09-14
+categories:
+- R
+- Statistics
+tags:
+- Statistics
+- R
+- Neuropsychology
+- Bayesian
+- Individual scores
+image:
+  caption: 'Absolute difference between true individual scores and the scores estimated via different methods.'
+  placement: 1
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="introduction" class="section level3">
+<h3>Introduction</h3>
+</div>
+<div id="data" class="section level3">
+<h3>Data</h3>
+<p>The data comes from the <code>rtdists</code> package, corresponding to 17 participants performing a lexical decision task in which they have to decide if a presented string is a word or non-word.</p>
+<p>Two experimental conditions, under <strong>speed</strong> or <strong>accuracy</strong> instructions in different experimental blocks. This data comes with (which provides the PDF, CDF, and RNG for the full 7-parameter diffusion model).</p>
+<p>After removing some extreme RTs, we restrict the analysis to high-frequency words (frequency = high) and the corresponding high-frequency non-words (frequency = nw_high) to reduce estimation time.</p>
+<p>To setup the model we also need a binary (0 and 1) numeric response variable in which 0 corresponds to responses at the lower response boundary and 1 corresponds to responses at the upper boundary.</p>
+</div>
+<div id="functions" class="section level3">
+<h3>Functions</h3>
+<pre class="r"><code>library(tidyverse)
+library(easystats)
+library(brms)
+
+# http://singmann.org/wiener-model-analysis-with-brms-part-i/
+
+# Get data ----------------------------------------------------------------
+
+
+df &lt;- rtdists::speed_acc %&gt;%
+  filter(censor == FALSE,  # Discard extreme RTs
+         response != &quot;error&quot;,  # Discard wrong input
+         frequency %in% c(&quot;high&quot;, &quot;nw_high&quot;)) %&gt;%  # Keep only high-frequency to reduce computation
+  mutate(Response = ifelse(response == &quot;word&quot;, 1, 0),
+         Error = ifelse(as.character(response) != as.character(stim_cat), 1, 0)) %&gt;%
+  select(Participant = id,
+         Block = block,
+         Condition = condition,
+         Item = stim,
+         Category = stim_cat,
+         Response,
+         Error,
+         RT = rt)
+#
+# formula &lt;- brmsformula(
+#   RT | dec(Response) ~ 0 + Condition + (0 + Condition|Participant),
+#   bs ~ 0 + Condition + (0 + Condition|Participant),
+#   ndt ~ 0 + Condition + (0 + Condition|Participant),
+#   bias ~ 0 + Condition + (0 + Condition|Participant))
+#
+#
+# prior &lt;- c(
+#   prior(&quot;cauchy(0, 5)&quot;, class = &quot;b&quot;),
+#   set_prior(&quot;normal(1.5, 1)&quot;, class = &quot;b&quot;, dpar = &quot;bs&quot;),
+#   set_prior(&quot;normal(0.2, 0.1)&quot;, class = &quot;b&quot;, dpar = &quot;ndt&quot;),
+#   set_prior(&quot;normal(0.5, 0.2)&quot;, class = &quot;b&quot;, dpar = &quot;bias&quot;)
+# )
+#
+# model &lt;- brm(formula,
+#              data = df,
+#              family = wiener(link_bs = &quot;identity&quot;,
+#                              link_ndt = &quot;identity&quot;,
+#                              link_bias = &quot;identity&quot;),
+#              prior = prior,
+#              # inits = initfun,
+#              iter = 1000,
+#              warmup = 500,
+#              chains = 4,
+#              control = list(max_treedepth = 15))
+
+
+#
+# # Save results ------------------------------------------------------------
+#
+#
+# d &lt;- list(&quot;results&quot; = results, &quot;model&quot; = model, &quot;contrasts&quot; = contrasts)
+# save(d, file = &quot;data.Rdata&quot;)</code></pre>
+</div>
+<div id="references" class="section level3">
+<h3>References</h3>
+<p><sub>You can reference this post as follows:</sub></p>
+<p><sub>- Makowski, D. (2020, September 14). How to extract individual scores from repeated measures. Retrieved from <a href="https://dominiquemakowski.github.io/post/individual_scores/" class="uri">https://dominiquemakowski.github.io/post/individual_scores/</a></sub></p>
+<hr />
+<p><em>Thanks for reading! Do not hesitate to share this post, and leave a comment below</em> :hugs:</p>
+<p>🐦 <em>And don’t forget to join me on Twitter</em> <span class="citation">[@Dom_Makowski]</span>(<a href="https://twitter.com/Dom_Makowski" class="uri">https://twitter.com/Dom_Makowski</a>)</p>
+</div>

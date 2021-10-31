@@ -1,0 +1,129 @@
+---
+title: "How to extract individual scores from repeated measures"
+subtitle: "We compare different methods (individual models, Bayesian models with informative priors, random effects from mixed models) to extract individual scores from repeated measures tasks."
+summary: "We compare different methods (individual models, Bayesian models with informative priors, random effects from mixed models) to extract individual scores from repeated measures tasks."
+draft: false
+featured: false
+authors:
+- Dominique Makowski
+date: 2020-09-14
+categories:
+- R
+- Statistics
+tags:
+- Statistics
+- R
+- Neuropsychology
+- Bayesian
+- Individual scores
+image:
+  caption: 'Absolute difference between true individual scores and the scores estimated via different methods.'
+  placement: 1
+---
+
+### Introduction
+
+Many psychology fields require to extract individual scores, i.e., point-estimates (*i.e.*, a single value) for a participant/patient, to be used as an index of something and later interpreted or re-used in further statistical analyses. This single index is often derived from several "trials". For instance, the reaction times in the condition A (let's say, the baseline) will be **averaged** together, and the same will be done with the condition B. Finally, the difference between these two means will be used an the **individual score** for a given participant. 
+
+However, we can intuitively feel that we **lose a lot of information** when averaging these scores. Do we deal appropriately with the variability related to individuals, conditions, or the noise aggravated by potential outliers? This is especially important when working with a limited amount of trials.
+
+With the advent of recent computational advances, new easy-to-implement alternatives emerge. For instance, **one can "model" the effects at an individual level** (e.g., the simplest case, for the two conditions paradigm described above, would be a linear regression with the condition as a unique predictor), and use the **parameters** of each model as individual scores (e.g., the "slope" coefficient of the effect of the manipulation), rather than the raw mean. This opens up the possibility of including covariates and take into account other sources of known variability, which could lead to better estimates.
+
+However, individual models are also sensitive to outliers and noise. Thus, another possibility is to **model the effects at the population level** and, *at the same time*, at the individual level. This can be achieved by modelling the participants as a **random factor in a mixed model**. In this case, the individual estimates might benefit from the population estimates. In other words, the effects at the population level will "constrain" or "guide" the estimation at an individual level to potentially limit extreme parameters.
+
+Unfortunately, the above method requires to have all the data at hand, to be able to fit the population model. This is often not the case in on-going acquisition, or in neuropsychological contexts, in which the practitioners simply acquire data for one patient, and have to compute individual scores, without having access to the detailed population data. Thus, an in-between alternative could make use of **Bayesian models**, in which the population effects (for instance, the mean effect of the condition) could be entered as an informative **prior** in the individual models to, again, "guide" the estimation at an individual level and hopefully limit the impact of noise or outliers observations.
+
+
+In this post, the aim is to compare these 4 methods (basic individual model - equivalent to using the raw mean, population model, individual model with informative priors) in recovering the "true" effects using a simulated dataset.
+
+
+
+### Results
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+library(tidyverse)
+library(parameters)
+library(modelbased)
+library(see)
+
+load("data.Rdata")
+
+means <- d$means
+model <- d$model
+results <- d$results
+contrasts <- d$contrasts
+```
+
+#### Generate Data
+
+We generate several datasets in which we manipulate the number of participants, in which the score of interest is the effect of a manipulation as compared to a baseline condition. 20 trials per condition will be generated with a known "true" effect (the centre of the distribution from which the data is generated). Gaussian noise of varying standard deviation will be added to create a natural variability (See the functions' definition below).
+
+
+
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+library(tidyverse)
+library(easystats)
+
+data <- get_data(n_participants=1000, n_trials=20)
+results <- get_results(data)
+```
+
+```{r message=FALSE, warning=FALSE, eval=TRUE, echo=FALSE, fig.cap="*Example of a dataset containing 20 participants (shown with different colors). As can be seen, we introduced modulations in the inter- and intra- individual variability.*"}
+knitr::include_graphics("individual.png")
+```
+
+We will then compare the scores obtained by each method to the "true" score of each participant by substracting them from one another. As such, for each method, we obtain the absolute "distance" from the true score. 
+
+#### Fit model
+
+
+Contrast analysis will be applied to compare the different methods together. 
+
+```{r message=FALSE, warning=FALSE, eval=FALSE}
+model <- lm(Diff_Abs ~ Method, data=results)
+
+modelbased::estimate_contrasts(model) %>%
+  arrange(Difference) %>%
+  mutate(Level1 = stringr::str_remove(Level1, "Diff_"),
+         Level2 = stringr::str_remove(Level2, "Diff_")) %>% 
+  select(Level1, Level2, Difference, CI_low, CI_high, p)
+```
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+contrasts
+```
+
+
+#### Visualize the results
+
+
+```{r message=FALSE, warning=FALSE, eval=TRUE, echo=FALSE, fig.cap="*Average accuracy of the different methods (the closest to 0 the better).*"}
+knitr::include_graphics("featured.png")
+```
+
+```{r message=FALSE, warning=FALSE, eval=TRUE, echo=FALSE, fig.cap="*Accuracy depending on the number of total participants in the dataset.*"}
+knitr::include_graphics("n_participants.png")
+```
+
+### Conclusion
+
+
+Though not significantly different, it seems that **raw basic estimates** (that rely only on the individual data) **perform consistently worse than the population model or individual models informed by priors**, especially for small datasets (between 10 and 100 participants) - though again, the difference is tiny in our simulated dataset. In the absence of the whole population dataset, it seems that using individual Bayesian model with informative priors (derived from the population model) is a safe alternative.
+
+
+
+### Functions
+
+```{r, code = readLines("make_data.R"), eval=FALSE}
+```
+
+### References
+
+<sub>You can reference this post as follows:</sub>
+
+<sub>- Makowski, D. (2020, September 14). How to extract individual scores from repeated measures. Retrieved from https://dominiquemakowski.github.io/post/individual_scores/</sub>
+
+---
+
+*Thanks for reading! Do not hesitate to share this post, and leave a comment below* :hugs:
+
+🐦 *And don't forget to join me on Twitter* [@Dom_Makowski](https://twitter.com/Dom_Makowski)
