@@ -13,13 +13,15 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Pushes test file
-      uses: TomoeMami/copy_file_to_another_repo_action@main # dmnemec/copy_file_to_another_repo_action@main
+      # Change the following repo after this is fixed:
+      # https://github.com/dmnemec/copy_file_to_another_repo_action/issues/44dmnemec/copy_file_to_another_repo_action@main
+      uses: TomoeMami/copy_file_to_another_repo_action@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_file: 'content/post/'
-        destination_repo: 'RealityBending/RealityBending.github.io'
-        destination_folder: 'content/'
+        source_file: 'content/post/' # Folder to copy
+        destination_repo: 'RealityBending/RealityBending.github.io' # Target repo
+        destination_folder: 'content/' # Folder where to copy it
         user_email: 'dom.makowski@gmail.com'
         user_name: 'DominiqueMakowski'
         commit_message: "AUTO: Copying posts from Dom's to REBEL's websites"
