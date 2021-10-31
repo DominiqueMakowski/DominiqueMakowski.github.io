@@ -101,10 +101,34 @@ nk.signal_plot(simulated_ecg, sampling_rate=200)
     </item>
     
     <item>
+      <title>Cognitive Control</title>
+      <link>https://dominiquemakowski.github.io/project/cognitivecontrol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/project/cognitivecontrol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>NeuroKit</title>
       <link>https://dominiquemakowski.github.io/project/neurokit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/project/neurokit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neuropsydia</title>
+      <link>https://dominiquemakowski.github.io/project/neuropsydia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/project/neuropsydia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pyllusion</title>
+      <link>https://dominiquemakowski.github.io/project/pyllusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/project/pyllusion/</guid>
       <description></description>
     </item>
     
