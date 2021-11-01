@@ -3,7 +3,7 @@ on:
      branches:
        - master
 
-name: ⏫ Copy posts and publications to REBEL
+name: ⏫ Copy content to REBEL
 
 jobs:
   copy-file:
@@ -42,4 +42,20 @@ jobs:
         user_email: 'dom.makowski@gmail.com'
         user_name: 'DominiqueMakowski'
         commit_message: "AUTO: Copying publications from Dom's to REBEL's website"
+        git_server: 'github.com'
+
+    # Copy my profile
+    - name: Push publications
+      # Change the following repo after this is fixed:
+      # https://github.com/dmnemec/copy_file_to_another_repo_action/issues/44dmnemec/copy_file_to_another_repo_action@main
+      uses: TomoeMami/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'content/authors/dominique-makowski' # Folder to copy
+        destination_repo: 'RealityBending/RealityBending.github.io' # Target repo
+        destination_folder: 'content/authors/' # Folder where to copy it
+        user_email: 'dom.makowski@gmail.com'
+        user_name: 'DominiqueMakowski'
+        commit_message: "AUTO: Copying profile from Dom's to REBEL's website"
         git_server: 'github.com'
