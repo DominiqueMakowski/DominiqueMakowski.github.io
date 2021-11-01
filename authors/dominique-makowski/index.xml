@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dominique Makowski | Dr Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/dominique-makowski/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/dominique-makowski/index.xml" rel="self" type="application/rss+xml" />
+    <description>Dominique Makowski</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/authors/dominique-makowski/avatar_hu00a6511eb680d8c6f0be3e6a4cf846b2_2691424_270x270_fill_q75_lanczos_center.jpeg</url>
+      <title>Dominique Makowski</title>
+      <link>https://dominiquemakowski.github.io/authors/dominique-makowski/</link>
+    </image>
+    
+    <item>
+      <title>How to sync two folders in two separate GitHub repositories</title>
+      <link>https://dominiquemakowski.github.io/post/2021-10-31-sync_two_repos/</link>
+      <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2021-10-31-sync_two_repos/</guid>
+      <description>&lt;h1 id=&#34;how-to-sync-two-folders-in-two-separate-github-repositories&#34;&gt;How to sync two folders in two separate GitHub repositories&lt;/h1&gt;
+&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;I have a personal website, stored in a GitHub repo (and hosted via GitHub pages), as well as a lab website (a &amp;ldquo;company&amp;rdquo; website, if you will). Both are fairly similar, as they are built using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;academic theme&lt;/a&gt;. Importantly, there is a blog in the company websites with posts, but I have one on my personal website too. &lt;strong&gt;I would like that every time I post something on my website, that it gets automatically copied over to the company website.&lt;/strong&gt; So that I don&amp;rsquo;t have to manually maintain the content at two separate places.&lt;/p&gt;
+&lt;h2 id=&#34;the-solution&#34;&gt;The Solution&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;The first step is to go to the settings of your GitHub account, to developers settings, and to &lt;a href=&#34;https://github.com/settings/tokens&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;personal access tokens&lt;/em&gt;&lt;/a&gt;. You have to generate a token, and tick the &lt;strong&gt;repo&lt;/strong&gt; authorizations. Copy-paste the key.&lt;/li&gt;
+&lt;li&gt;Go to the settings of the personal website repo (the source from which the content will be copied), to &amp;ldquo;Secrets&amp;rdquo;, and add a new secret called &amp;ldquo;API_TOKEN_GITHUB&amp;rdquo; (with the key you just copied).&lt;/li&gt;
+&lt;li&gt;Create a new GitHub action workflow such as &lt;a href=&#34;https://github.com/DominiqueMakowski/DominiqueMakowski.github.io/blob/master/.github/workflows/copy_posts.yml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;this one&lt;/strong&gt;&lt;/a&gt;. The things to change are the &lt;code&gt;source_file&lt;/code&gt;, &lt;code&gt;destination_repo&lt;/code&gt; and &lt;code&gt;destination_folder&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Tada 🎉 Everytime I push to my personal repo, the new content of one of the subfolder gets copied to another repo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; this is a one-way sync, so updates on the target repo won&amp;rsquo;t affect the source repo (but might get overridden!).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to share or tweet this post, or leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The symbolism behind the ReBeL logo</title>
+      <link>https://dominiquemakowski.github.io/post/2021-06-30-logo_meaning/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2021-06-30-logo_meaning/</guid>
+      <description>&lt;p&gt;The Reality Bending logo includes several references to various concepts. &lt;strong&gt;Can you try to guess them?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;👇 👇 👇 👇 👇 👇 👇 👇&lt;/p&gt;
+&lt;figure align=&#34;center&#34;&gt;
+    &lt;img src=&#39;spoiler_alert.jpg&#39; width=&#34;90%&#34; /&gt;
+&lt;/figure&gt;
+&lt;!-- **.**
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+**.**
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+**.**
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt; --&gt;
+&lt;h3 id=&#34;wizard&#34;&gt;Wizard&lt;/h3&gt;
+&lt;p&gt;One of the most striking feature of the logo is the guy in the middle, which represents a wizard. It represent us, the people who delve in the science of &lt;a href=&#34;https://realitybending.github.io/post/2020-09-28-what_is_realitybending/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;reality bending&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Wizards are a powerful &lt;a href=&#34;https://susannabarlow.com/2021/03/26/understanding-the-magician-archetype/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;archetype&lt;/a&gt;, that are primarily defined through the learned ability (by seeking, studying and gathering arcane knowledge) of controlling and manipulating reality. Though many specializations and facets exist, the understanding of the true nature of the world is a core facets that binds all wizards.&lt;/p&gt;
+&lt;figure align=&#34;center&#34;&gt;
+    &lt;img src=&#39;gandalf.jpeg&#39; width=&#34;90%&#34; /&gt;
+    &lt;figcaption&gt;the wizard Gandalf facing the forces of darkness with his light.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;!-- ### Hat --&gt;
+&lt;!-- Harry potter? --&gt;
+&lt;h3 id=&#34;beard&#34;&gt;Beard&lt;/h3&gt;
+&lt;p&gt;In Greco-Roman antiquity, the beard was seen as the defining feature of a philosopher (see the &lt;a href=&#34;https://en.wikipedia.org/wiki/Beard#The_%22Philosopher%27s_beard%22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Philosopher&amp;rsquo;s beard&lt;/a&gt; on wikipedia), expressing the idea that philosophy is no mere intellectual hobby but rather a way of life that, by definition, transforms every aspect of one&amp;rsquo;s behavior (including one&amp;rsquo;s shaving habits).&lt;/p&gt;
+&lt;p&gt;Show me your beard and I&amp;rsquo;ll tell you what philosopher you are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cynics had long dirty beards to indicate their &lt;em&gt;&amp;ldquo;strict indifference to all external goods and social customs&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Stoics were occasionally trimming and washing their beards in accordance with their view &lt;em&gt;&amp;ldquo;that it is acceptable to prefer certain external goods so long as they are never valued above virtue&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Peripatetics took great care of their beards believing in accordance with Aristotle that &lt;em&gt;&amp;ldquo;external goods and social status were necessary for the good life together with virtue&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure align=&#34;center&#34;&gt;
+    &lt;img src=&#39;beard.jpg&#39; width=&#34;33%&#34; /&gt;
+    &lt;figcaption&gt;A glorious beard.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h3 id=&#34;eyepatch&#34;&gt;Eyepatch&lt;/h3&gt;
+&lt;p&gt;For any mythology fan, a bearded figure with an eyepatch (or a missing eye) is known to represent &lt;a href=&#34;https://en.wikipedia.org/wiki/Odin&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Odin&lt;/strong&gt;&lt;/a&gt;, the chief deity of the norse pantheon. He&amp;rsquo;s a very complex character, with a deeply ambivalent nature. One of the key moment of Odin&amp;rsquo;s story is when he sacrifices one of his eyes in return for wisdom&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Losing &lt;em&gt;direct sight&lt;/em&gt; of reality in return for a &lt;strong&gt;deeper knowledge&lt;/strong&gt; of reality - here is an interesting idea that we can discuss and (over)interpret with some drinks 🍺&lt;/p&gt;
+&lt;figure align=&#34;center&#34;&gt;
+    &lt;img src=&#39;odin.jpg&#39; width=&#34;90%&#34; /&gt;
+    &lt;figcaption&gt;Odin portrayed by one of my favourite actor.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h3 id=&#34;pipe&#34;&gt;Pipe&lt;/h3&gt;
+&lt;p&gt;The pipe refers to the most famous painting of the surrealist René Magritte. One of the common interpretation suggests that it symbolizes the difference between the authentic thing (a real pipe) and its representation. This, we believe, is just one level that differentiates the real from the unreal&amp;hellip;&lt;/p&gt;
+&lt;figure align=&#34;center&#34;&gt;
+    &lt;img src=&#39;pipe.jpg&#39; width=&#34;90%&#34; /&gt;
+    &lt;figcaption&gt;The Treachery of Images (Magritte, 1929).&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h3 id=&#34;smoke&#34;&gt;Smoke&lt;/h3&gt;
+&lt;p&gt;The smoke takes the form of a Psi letter Ψ, which is the symbol of &lt;strong&gt;psychology&lt;/strong&gt;.&lt;/p&gt;
+&lt;figure align=&#34;center&#34;&gt;
+    &lt;img src=&#39;neuropsydia.png&#39; width=&#34;50%&#34; /&gt;
+    &lt;figcaption&gt;The Psi within the brain, a representation of neuropsychology, and the logo of the &lt;a href=&#34;[url](https://github.com/neuropsychology/Neuropsydia.py)&#34;&gt;Neuropsydia&lt;/a&gt; software.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h3 id=&#34;the-flower&#34;&gt;The Flower&lt;/h3&gt;
+&lt;!-- ### The Flower &lt;img src=&#39;Makowski_Poppy.png&#39; title = &#34;The Poppy Flower of the Coat of Arms of the Makowski Family&#34; alt = &#39;The Poppy Flower of the Coat of Arms of the Makowski Family&#39; align=&#34;right&#34; height=&#34;139&#34; /&gt; --&gt;
+&lt;p&gt;The flower in the background is not just any flower. It is a &lt;a href=&#34;https://en.wikipedia.org/wiki/Poppy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poppy flower&lt;/a&gt;, from which the seed have been used throughout history to create diverse substances to alter our perception of reality&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Incidentally, it is also the symbol of the &lt;em&gt;Makowski&lt;/em&gt; family (which names refers to &amp;ldquo;poppy seed&amp;rdquo; in polish).&lt;/p&gt;
+&lt;figure align=&#34;center&#34;&gt;
+    &lt;img src=&#39;Makowski_Poppy.png&#39; title = &#34;The Poppy Flower of the Coat of Arms of the Makowski Family&#34; alt = &#39;The Poppy Flower of the Coat of Arms of the Makowski Family&#39; width=&#34;33%&#34; /&gt;
+    &lt;figcaption&gt;The Makowski&#39;s Poppy Flower.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Did you spot any more 😏? Let us know!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to share data analysis scripts with publications?</title>
+      <link>https://dominiquemakowski.github.io/post/2021-02-10-template_results/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2021-02-10-template_results/</guid>
+      <description>&lt;h1 id=&#34;how-to-share-data-analysis-scripts-with-publications&#34;&gt;How to share data analysis scripts with publications?&lt;/h1&gt;
+&lt;p&gt;Including data analysis as &lt;strong&gt;Supplementary Materials&lt;/strong&gt; can be a tedious task. How can we simplify the sharing of our work? So that it can be fully appreciated, as well as evaluated, improved, worked on, in a transparent and open way?&lt;/p&gt;
+&lt;h2 id=&#34;option-1-dump-the-code-in-a-word-file&#34;&gt;Option 1: Dump the code in a word file&lt;/h2&gt;
+&lt;p&gt;Most publication portals don&amp;rsquo;t directly accept code scripts to be included &amp;ldquo;as is&amp;rdquo;. In other words, you cannot upload your manuscript and your &lt;code&gt;.R&lt;/code&gt; script just like that. So one option is to copy its content, paste it in a word / pdf document, and &lt;em&gt;Voilà!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;But what &lt;strong&gt;if you don&amp;rsquo;t have code&lt;/strong&gt; because you use a point-and-click software? Well, you can note down all the &lt;em&gt;x,y&lt;/em&gt; coordinates of your clicks so that one can reproduce the steps and all the clicks. Just kidding, if you don&amp;rsquo;t have a script, then may god have mercy on your soul.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why is that a terrible solution?&lt;/strong&gt; Because let&amp;rsquo;s face it, unstructured code dumps are horrific. Nobody wants to read it, it does not make justice to your work, and it&amp;rsquo;s still tedious to create! You have to re-do it everytime you modify your code. And it&amp;rsquo;s even worse if you want to include all the &lt;strong&gt;outputs, figures, tables that are generated by the code&lt;/strong&gt;? Data analysis is not just the code, but everything that comes with it and that allowed you to make the conclusions that you made.&lt;/p&gt;
+&lt;h2 id=&#34;option-2-use-rmarkdown&#34;&gt;Option 2: Use &lt;em&gt;Rmarkdown&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-1.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Rmarkdown&lt;/strong&gt;&lt;/a&gt; is a &amp;ldquo;framework&amp;rdquo; that allows you to have files (&lt;code&gt;.Rmd&lt;/code&gt;) that can contain a mix of &lt;strong&gt;text and code&lt;/strong&gt; (and not only &lt;strong&gt;R&lt;/strong&gt;, but also &lt;a href=&#34;https://rstudio.github.io/reticulate/articles/r_markdown.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Python&lt;/strong&gt;&lt;/a&gt; for instance!).&lt;/p&gt;
+&lt;p&gt;It can be used to write comprehensive &amp;ldquo;reports&amp;rdquo; that include all your thoughts, motivations and interpretations of the results. And the great thing about it is that these files can be &lt;strong&gt;converted&lt;/strong&gt; into beautiful and readable documents like &lt;strong&gt;PDF&lt;/strong&gt;, &lt;strong&gt;Word&lt;/strong&gt; or &lt;strong&gt;HTML&lt;/strong&gt;. It will automatically embed the code and &lt;strong&gt;its generated output&lt;/strong&gt; (as text, tables or figures) alongside the text.&lt;/p&gt;
+&lt;p&gt;It is an awesome way to write statistical reports, and can even be used to create many other non-stats related stuff, like &lt;a href=&#34;http://frederikaust.com/papaja_man/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;APA-formatted manuscripts&lt;/strong&gt;&lt;/a&gt; (great for preprints), &lt;a href=&#34;https://bookdown.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;books&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/xaringan.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;presentation slides&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;websites or blogs&lt;/strong&gt;&lt;/a&gt;. It&amp;rsquo;s a must-have skill for every researcher.&lt;/p&gt;
+&lt;p&gt;And it gets better!&lt;/p&gt;
+&lt;h2 id=&#34;option-3-use-our-results-template&#34;&gt;Option 3: Use our &lt;em&gt;Results Template&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;In the &lt;a href=&#34;https://dominiquemakowski.github.io/research/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Reality Bending&lt;/strong&gt;&lt;/a&gt; team, we like to have our different projects and studies organized in a consistent way. We heavily use &lt;a href=&#34;https://dominiquemakowski.github.io/post/github_psychologists/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/a&gt; to store our projects and collaborate on them, and we also like the possibility of making these projects &lt;strong&gt;open&lt;/strong&gt; and &lt;strong&gt;accessible&lt;/strong&gt; (i.e., easy to discover and explore) when the time comes.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s why we came up with a &lt;strong&gt;Template folder&lt;/strong&gt; for storing the materials related to a given study, including well-organized analysis scripts. And what&amp;rsquo;s great about it is that it is setup in a way that allows you to generate multiple files format (&lt;strong&gt;word&lt;/strong&gt;, &lt;strong&gt;pdf&lt;/strong&gt;, &lt;strong&gt;html&lt;/strong&gt;) with a single click (and even without any click, in a fully automatic way)! And what&amp;rsquo;s even greater is that if you decide to upload it to GitHub, you&amp;rsquo;ll have &lt;a href=&#34;https://realitybending.github.io/TemplateResults/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;a whole website&lt;/strong&gt;&lt;/a&gt; presenting your data analysis!&lt;/p&gt;
+&lt;p&gt;We use it to have reproducible analysis that we can easily share with publications. We can upload the .pdf or .docx file generated by the template as &lt;strong&gt;Supplementary Materials&lt;/strong&gt;, but we also link the &lt;a href=&#34;https://github.com/RealityBending/TemplateResults&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;URL of the online repository&lt;/strong&gt;&lt;/a&gt; of the study in the manuscript, where users can access and experience the content in the format that they prefer. &lt;strong&gt;It really improves the appeal of a study when the results are trustworthy.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;All this is easily made possible with our template. &lt;strong&gt;Check it out here:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href=&#34;https://github.com/RealityBending/TemplateResults&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;https://github.com/RealityBending/TemplateResults&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;p&gt;☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️&lt;/p&gt;
+&lt;p&gt;And &lt;strong&gt;let us know what you think!&lt;/strong&gt; You can open an issue on the &lt;a href=&#34;https://github.com/RealityBending/TemplateResults/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;repo&lt;/a&gt; or even contribute to help us improve it :)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What visual agnosia might feel like</title>
+      <link>https://dominiquemakowski.github.io/post/2021-01-03-visual_agnosia/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2021-01-03-visual_agnosia/</guid>
+      <description>&lt;h3 id=&#34;name-one-thing-in-this-photo&#34;&gt;Name One Thing In This Photo&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Can you name &lt;em&gt;one&lt;/em&gt; thing in the image above?&lt;/strong&gt; It all looks familiar, but something is off. The image makes &amp;ldquo;sense&amp;rdquo; overall; there are well-defined shapes and objects, that seem to be placed in a plausible - albeit chaotic - fashion, like some random rubbish thrown in the corner of a room. Even the colors, the lightning, the quality, is coherent, and helps making it believable. And yet, chances are you cannot name one single element that composes it.&lt;/p&gt;
+&lt;p&gt;This image, after appearing on &lt;a href=&#34;https://twitter.com/melip0ne/status/1120503955526750208?s=20&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;twitter&lt;/a&gt; in April 2019, surfaced on reddit with the caption &amp;ldquo;This picture is &lt;strong&gt;designed to give the viewer the simulated experience of having a stroke&lt;/strong&gt; (particularly in the &lt;strong&gt;occipital lobe&lt;/strong&gt; of the cerebral cortex, where visual perception occurs.) &lt;strong&gt;Everything looks hauntingly familiar but you just can&amp;rsquo;t quite recognize anything&lt;/strong&gt;&amp;rdquo;, and became subsequently &lt;a href=&#34;https://www.dailymail.co.uk/news/article-6959547/Extremely-frustrating-slightly-disturbing-image-goes-viral.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;viral&lt;/a&gt;. However, the author of the caption later admitted that he made this description up.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;So where does the image come from?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;One can trace back the original publication to an &lt;a href=&#34;https://youtu.be/0F7XBwFwA-M?t=104&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;instagram account&lt;/a&gt;, which author declared having made the image using &lt;a href=&#34;https://www.artbreeder.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;ArtBreeder.com&lt;/strong&gt;&lt;/a&gt;. This website gives access to an AI algorithm (Generative Adversarial Networks - GAN), commonly used in the processing and generation of images (one mindblowing example can be found on &lt;a href=&#34;https://thispersondoesnotexist.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;thispersondoesnotexist.com&lt;/em&gt;&lt;/a&gt;, which generates realistic pictures of non-existing people). There were even some attempts to &lt;em&gt;reverse engineer&lt;/em&gt; the process to retrieve what the original image could have been like.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://i.kym-cdn.com/photos/images/original/001/486/325/1dd.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;After all, it seems like there is no intelligent design behind this image. No clever neuropsychologist carefully crafting a meaningful experience. Just one of these lucky accident.&lt;/p&gt;
+&lt;p&gt;Nonetheless, it&amp;rsquo;s still an intriguing image, falling in this uncanny abyss of things that we recognize as familiar, but slightly too alien for our sense-seeking brains to dissolve in meaning. &lt;strong&gt;Could it tell something about brain processes?&lt;/strong&gt; Surely, but &lt;strong&gt;brain disorders?&lt;/strong&gt; Maybe.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;&amp;ldquo;occipital stroke&amp;rdquo; hypothesis&lt;/strong&gt; mentioned above suggests, by its formulation, a lesion to the primary visual cortices. However, as neuroscientists know, these brain regions, located at the extreme back of the brain, are mostly supporting lower level aspects of visual processing, and their damage is usually related to alterations of a somewhat different nature than of that above, such as vision loss, visual hallucinations, visual deformations, loss of color, movement, stereoscopy, etc.&lt;/p&gt;
+&lt;p&gt;However, there is another neuropsychological disorder, referred to as &lt;strong&gt;&amp;ldquo;visual agnosia&amp;rdquo;&lt;/strong&gt;, in which patients experience difficulties to recognize visually presented objects, despite preserving an intact vision. In fact, it is more an umbrella term for different subcategories of deficits, and the image above could be reminiscent of visual agnosia of the &lt;em&gt;associative&lt;/em&gt; type, which corresponds to a a specific impairment in the assignment of meaning to a stimulus that is accurately perceived (and can be visually described). This symptom is often related to injuries in the left occipito-temporal region, located on the ventral &amp;ldquo;what&amp;rdquo; stream of the brain (as opposed to the so-called &amp;ldquo;where&amp;rdquo; dorsal stream).&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_93a13644dc29f6fc9b30e3c5cd45f521.png 400w,
+               /post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_ea5f1132740cb9dd7ec199e8489fa888.png 760w,
+               /post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://dominiquemakowski.github.io/post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_93a13644dc29f6fc9b30e3c5cd45f521.png&#34;
+               width=&#34;760&#34;
+               height=&#34;513&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;ivan-seals-art&#34;&gt;Ivan Seal&amp;rsquo;s Art&lt;/h3&gt;
+&lt;p&gt;From there, the youtuber &lt;a href=&#34;https://www.youtube.com/channel/UCR6LasBpceuYUhuLToKBzvQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Solar Sands&lt;/em&gt;&lt;/a&gt; helped me discover the artist &lt;a href=&#34;https://en.wikipedia.org/wiki/Ivan_Seal&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Ivan Seal&lt;/strong&gt;&lt;/a&gt;, which work is somewhat akin to the image above. They are not purely abstract renditions, or depictions of impossible entities, but plausible objects that sit in this awkward space, deep between boring reality and total weirdness.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://rca-media.rca.ac.uk/images/dumtrimiestonmo_blurosperiod150x100_cm_-_Phot.width-1000.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://i.redd.it/ywee14vpk8y41.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post and don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 🐦 &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What visual agnosia might feel like</title>
+      <link>https://dominiquemakowski.github.io/post_drafts/mandelbrot_monk/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post_drafts/mandelbrot_monk/</guid>
+      <description>&lt;p&gt;I find &lt;a href=&#34;https://dominiquemakowski.github.io/post/python_mandelbrot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fractals fascinating&lt;/a&gt;. Their infinitely self-replicating nature illustrates how complex patterns can emerge from very simple rules. But the history of religions and comparative mythology are other hobbies of mine, and today I have a &lt;strong&gt;little story about fractals, God, or Hell&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;science-and-religions&#34;&gt;Science and Religions&lt;/h2&gt;
+&lt;p&gt;People often tend to see religion and science as opposites, one obscurantist and the other enlightening, but such generalization overlooks the vast differences between religions, and thus in the world&amp;rsquo;s understanding of their followers.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take as example some (mostly extinct) religions, like the polytheisms from antiquity. While the interest in humans of the major Gods was often limited &lt;em&gt;(unless it&amp;rsquo;s about beautiful girls, &lt;a href=&#34;https://en.wikipedia.org/wiki/Zeus#Transformation_of_Zeus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zeus&lt;/a&gt; we see you!)&lt;/em&gt;, it was usually considered that regular Men have little say in their destiny, and little power to change it. They were toys in Gods&#39; hands, tools at the mercy of their power struggles and agendas not always in line with any form of anthropic benevolence.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;Fates.jpg&#34; alt=&#34;github for psychologists&#34;/&gt;
+  &lt;figcaption&gt;The Fates presiding on Human&#39;s destinies, from Disney&#39;s Hercules (1997).&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;In other faiths and philosophies (e.g., Eastern traditions), the world is understood at vastly different scale, and the notion of Self (and/or &amp;ldquo;soul&amp;rdquo;) is extended to encompass many lives. The ultimate goal of breaking the cycle of reincarnation and suffering and ascend to higher states of being is layed out over many lives and, for most people, there isn&amp;rsquo;t much they can do in only one life to escape it. If anything, they must follow a just path, minimize karmic loss, and seek the &amp;ldquo;truth&amp;rdquo; within themselves. A process of Self-mastery and introspection facilitated by various practices, such as meditation.&lt;/p&gt;
+&lt;p&gt;Other religions, refered to as &amp;ldquo;orthopraxic&amp;rdquo;, are more than mere beliefs systems (e.g., Islam, as well as some currents of Judeism) and expect followers to follow a set of behaviours and conducts, codifying many aspects of life. The &amp;ldquo;truth&amp;rdquo; has already been revealed to mankind, and we have the choice of following it - and be saved - or not - and be damned. Importantly for our topic, the &amp;ldquo;truth&amp;rdquo; is often contained directly in the scriptures, and can only be attained by studying and learning the sacred texts (with varying degrees of possible interpretation).&lt;/p&gt;
+&lt;p&gt;Christianity is different in regards to several aspects.
+The history of Chritiniarty led it to regards to several aspects.&lt;/p&gt;
+&lt;p&gt;Corruption
+Decadent leaders
+Crusades
+Inquisition&lt;/p&gt;
+&lt;p&gt;One can get closer to God by studying his creation, the world.&lt;/p&gt;
+&lt;p&gt;Other religions, personal responsability is even further simplified:&lt;/p&gt;
+&lt;p&gt;What does it have to do with fractals? You&amp;rsquo;ll see, but first, let us make a brief reminder on the king of fractals, the Mandelbrot set.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://users.math.yale.edu/public_html/People/frame/Fractals/MandelSet/MandelMonk/MandelMonk.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://users.math.yale.edu/public_html/People/frame/Fractals/MandelSet/MandelMonk/MandelMonk.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-is-mandelbrot&#34;&gt;what is mandelbrot&lt;/h2&gt;
+&lt;p&gt;The Mandelbrot set exerts some strange attraction, and these blobs of colour
+One of the vidualization variant of this set has been immediately attributed a sacred meaning, and has now become known as the Buddhabrot for its eerie ressemblance with the traditional representation of the Buddha in the lotus position.&lt;/p&gt;
+&lt;p&gt;Image of Buddhabrot side by side with Buddha.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post and don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 🐦 &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Historical Films in their Chronological Context</title>
+      <link>https://dominiquemakowski.github.io/post_drafts/historical_movies/</link>
+      <pubDate>Sun, 06 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post_drafts/historical_movies/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: It is a work-in-progress. I will add movies as they are out (and when I watch them). Please make suggestions for me to watch and add movies in the comments below.&lt;/p&gt;
+&lt;p&gt;Note also that the dates for the periods (themselves partly subjective and conceptual constructs) are to give some markers based on major events, but do not correspond to any abrupt change.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;One often appreciates content when it makes a deeper sense, when it rings the bells of other knowledge and experiences stored in semantic or episodic memory. This is especially the case with historical material (whether realistic or fictionalized). History being very complex and convoluted, it is often hard to get the &amp;ldquo;bigger picture&amp;rdquo; of the full historical context. Thus, I decided, mostly to help my own understanding, to list here historical movies (mostly about western history) in the chronological order of the content they depict, so that the timeline and connections are clearer.&lt;/p&gt;
+&lt;h2 id=&#34;middle-ages-476---1453&#34;&gt;Middle-Ages (476 - 1453)&lt;/h2&gt;
+&lt;p&gt;Starts with the &lt;strong&gt;Fall of Rome&lt;/strong&gt; until the &lt;strong&gt;Fall of Constantinople&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;early-middle-ages-476---1000&#34;&gt;Early Middle Ages (476 - 1000)&lt;/h3&gt;
+&lt;p&gt;Starts with the &lt;strong&gt;Fall of Rome&lt;/strong&gt; until the 1000 (convenience date).&lt;/p&gt;
+&lt;h3 id=&#34;high-middle-ages-1000---1357&#34;&gt;High Middle Ages (1000 - 1357)&lt;/h3&gt;
+&lt;p&gt;Starts from 1000 until the &lt;strong&gt;Black Plague&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;kingdom-of-heaven-2005&#34;&gt;Kingdom of Heaven (2005)&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://static.rogerebert.com/uploads/movie/movie_poster/kingdom-of-heaven-2005/large_6PP650MaLdMyXGwBtDLuNlrdZ5z.jpg&#34; alt=&#34;Kingdom of Heaven&#34; style=&#34;width:25%&#34;/&gt;
+&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;When:&lt;/strong&gt;&lt;/em&gt; during the Crusades of the 12th century and the reign of the leper &lt;strong&gt;King Baldwin IV of Jerusalem&lt;/strong&gt; (1161 – 1185).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Where:&lt;/strong&gt;&lt;/em&gt; France and Jerusalem.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;What:&lt;/strong&gt;&lt;/em&gt; Battle of Hattin (1187).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Who:&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;King Baldwin IV of Jerusalem&lt;/strong&gt; (1161 – 1185), &lt;strong&gt;Saladin&lt;/strong&gt; (1137 – 1193), &lt;strong&gt;Sibylla, Queen of Jerusalem&lt;/strong&gt; (1160 – 1190).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;braveheart-1995&#34;&gt;Braveheart (1995)&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/A1vggsn4DjL._AC_SL1500_.jpg&#34; alt=&#34;Braveheart&#34; style=&#34;width:25%&#34;/&gt;
+&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;When:&lt;/strong&gt;&lt;/em&gt; during the reign &lt;strong&gt;Edward I &amp;ldquo;Longshanks&amp;rdquo; of England&lt;/strong&gt; (1239 – 1307).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Where:&lt;/strong&gt;&lt;/em&gt; Scotland.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;What:&lt;/strong&gt;&lt;/em&gt; First War of Scottish Independence (1296 - 1328).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Who:&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;William Wallace&lt;/strong&gt; (1270 - 1305), &lt;strong&gt;Robert the Bruce&lt;/strong&gt; (1274 – 1329).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;outlaw-king-2018&#34;&gt;Outlaw King (2018)&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://m.media-amazon.com/images/M/MV5BN2M4YmE2Y2UtNDEwMy00MWQ1LThkNDUtZTc4YWU1ODAyM2Y1XkEyXkFqcGdeQXVyOTIxNTAyMzU@._V1_.jpg&#34; alt=&#34;outlaw king&#34; style=&#34;width:25%&#34;/&gt;
+&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;When:&lt;/strong&gt;&lt;/em&gt; 1304-1307, soon after the death of &lt;strong&gt;William Wallace&lt;/strong&gt; (1270 - 1305), during the reign &lt;strong&gt;Edward I &amp;ldquo;Longshanks&amp;rdquo; of England&lt;/strong&gt; (1239 – 1307).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Where:&lt;/strong&gt;&lt;/em&gt; Scotland.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;What:&lt;/strong&gt;&lt;/em&gt; First War of Scottish Independence (1296 - 1328).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Who:&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;Robert the Bruce&lt;/strong&gt; (1274 – 1329), &lt;strong&gt;Edward I &amp;ldquo;Longshanks&amp;rdquo; of England&lt;/strong&gt; (1239 – 1307), &lt;strong&gt;Edward II of England&lt;/strong&gt; (1284 – 1327)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;late-middle-ages-1347---1453&#34;&gt;Late Middle Ages (1347 - 1453)&lt;/h3&gt;
+&lt;p&gt;Starts with the &lt;strong&gt;Black Plague&lt;/strong&gt; until the &lt;strong&gt;Fall of Constantinople&lt;/strong&gt; and the &lt;strong&gt;Hundred Years&#39; War&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;a-knights-tale-2001&#34;&gt;A Knight&amp;rsquo;s Tale (2001)&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://i.pinimg.com/originals/ca/64/fb/ca64fb8b98ff51713763f0f276fbbee1.jpg&#34; alt=&#34;A Knight&#39;s Tale&#34; style=&#34;width:25%&#34;/&gt;
+&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;When:&lt;/strong&gt;&lt;/em&gt; Few years after the Black Plague (which finished around 1351), during the reign of &lt;strong&gt;King Edward III of England&lt;/strong&gt; (1327 – 1377).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Where:&lt;/strong&gt;&lt;/em&gt; England and France.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;What:&lt;/strong&gt;&lt;/em&gt; Is mentioned the &lt;strong&gt;Battle of Poitiers&lt;/strong&gt; (1356), a major English victory in the Hundred Years&#39; War.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Who:&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;Edward &amp;ldquo;the Black Prince&amp;rdquo;&lt;/strong&gt; (1330 – 1376), son and heir of &lt;strong&gt;King Edward III of England&lt;/strong&gt; (1327 – 1377), and the heir to the English throne, who died before his father and so his son, &lt;strong&gt;Richard II&lt;/strong&gt; (1367 - 1400), succeeded to the throne instead until his deposition and take-over by &lt;strong&gt;Henry IV&lt;/strong&gt; in 1399.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;the-king-2019&#34;&gt;The King (2019)&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://cinematologia.com.br/cine/wp-content/uploads/2019/08/The-King-p%C3%B4ster.jpg&#34; alt=&#34;the King&#34; style=&#34;width:25%&#34;/&gt;
+&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;When:&lt;/strong&gt;&lt;/em&gt; End of the reign of &lt;strong&gt;Henry IV of England&lt;/strong&gt; (1367 - 1413), reign of &lt;strong&gt;Henry V of England&lt;/strong&gt; (1386 – 1422) and &lt;strong&gt;Charles VI &amp;ldquo;le fol&amp;rdquo; of France&lt;/strong&gt; (1368 – 1422).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Where:&lt;/strong&gt;&lt;/em&gt; England and France.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;What:&lt;/strong&gt;&lt;/em&gt; Battle of Agincourt (1415).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Who:&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;Henry IV of England&lt;/strong&gt; (1367 - 1413), &lt;strong&gt;Henry V of England&lt;/strong&gt; (1386 – 1422), &lt;strong&gt;Charles VI &amp;ldquo;le fol&amp;rdquo; of France&lt;/strong&gt; (1368 – 1422)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;the-messenger-the-story-of-joan-of-arc-1999&#34;&gt;The Messenger: The Story of Joan of Arc (1999)&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://i.pinimg.com/originals/6b/32/a5/6b32a506829b4b0c767897f47d072146.jpg&#34; alt=&#34;the King&#34; style=&#34;width:25%&#34;/&gt;
+&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;When:&lt;/strong&gt;&lt;/em&gt; Coronation of the Dauphin &lt;strong&gt;Charles VII of France&lt;/strong&gt; (1403 – 1461) and &lt;strong&gt;Henry VI of England&lt;/strong&gt; (1421 – 1471), the disputed King of France from 1422 to 1453.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Where:&lt;/strong&gt;&lt;/em&gt; France.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;What:&lt;/strong&gt;&lt;/em&gt; Life and death of Joan of Arc (1412 – 1431), the Siege of Orléans (1429).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Who:&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;Joan of Arc&lt;/strong&gt; (1412 – 1431), &lt;strong&gt;Charles VII of France&lt;/strong&gt; (1403 – 1461)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- The Hollow Crown --&gt;
+&lt;h2 id=&#34;renaissance-1453---1715&#34;&gt;Renaissance (1453 - 1715)&lt;/h2&gt;
+&lt;p&gt;Starts with the &lt;strong&gt;Fall of Constantinople&lt;/strong&gt; and the &lt;strong&gt;Hundred Years&#39; War&lt;/strong&gt; until the death of &lt;strong&gt;Louis XIV of France&lt;/strong&gt;.&lt;/p&gt;
+&lt;!-- War of the Roses (1455 – 1487) --&gt;
+&lt;h4 id=&#34;the-other-boleyn-girl-2008&#34;&gt;The Other Boleyn Girl (2008)&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://vignette.wikia.nocookie.net/philippagregory/images/d/dd/The_Other_Boleyn_Girl_%282008%29.jpg&#34; alt=&#34;The Other Boleyn Girl&#34; style=&#34;width:25%&#34;/&gt;
+&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;When:&lt;/strong&gt;&lt;/em&gt; during the reign of &lt;strong&gt;Henry VIII of England&lt;/strong&gt; (1491 – 1547).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Where:&lt;/strong&gt;&lt;/em&gt; England.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;What:&lt;/strong&gt;&lt;/em&gt; Life and death of Anne Boleyn (1501 – 1536), second wife of Henry VIII after Catherine of Aragon (1485 – 1536) and mother of Elizabeth I of England (1533 – 1603).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Who:&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;Henry VIII of England&lt;/strong&gt; (1491 – 1547), &lt;strong&gt;Anne Boleyn&lt;/strong&gt; (1501 – 1536), &lt;strong&gt;Mary Boleyn&lt;/strong&gt; (1500 – 1543)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mary-queen-of-scots-2018&#34;&gt;Mary Queen of Scots (2018)&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWYhm9_IdBGFx49To5Xmzn6okuJgO9hx5QvpE53Wm0tWQQN_5s&#34; alt=&#34;Mary queen of scots&#34; style=&#34;width:25%&#34;/&gt;
+&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;When:&lt;/strong&gt;&lt;/em&gt; during the reign of &lt;strong&gt;Elizabeth I of England&lt;/strong&gt; (1533 – 1603), daughter of Anne Boleyn.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Where:&lt;/strong&gt;&lt;/em&gt; England.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;What:&lt;/strong&gt;&lt;/em&gt; Life of &lt;strong&gt;Mary, Queen of Scots&lt;/strong&gt; (1542 – 1587), daughter of James V of Scotland and Margaret Tudor (daughter of &lt;strong&gt;Henry VII&lt;/strong&gt; and sister of &lt;strong&gt;Henry VIII&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Who:&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;Elizabeth I of England&lt;/strong&gt; (1533 – 1603), &lt;strong&gt;Mary, Queen of Scots&lt;/strong&gt; (1542 – 1587)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;elizabeth-1998&#34;&gt;Elizabeth (1998)&lt;/h4&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://i.pinimg.com/originals/22/38/dc/2238dce514f075561809a58bf889d5e8.jpg&#34; alt=&#34;Elizabeth&#34; style=&#34;width:25%&#34;/&gt;
+&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;When:&lt;/strong&gt;&lt;/em&gt; during the reign of &lt;strong&gt;Elizabeth I of England&lt;/strong&gt; (1533 – 1603), daughter of Anne Boleyn.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Where:&lt;/strong&gt;&lt;/em&gt; England.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;What:&lt;/strong&gt;&lt;/em&gt; Death of &lt;strong&gt;Mary, Queen of Scots&lt;/strong&gt; (1587), defeat of the Spanish Armada (1588)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Who:&lt;/strong&gt;&lt;/em&gt; &lt;strong&gt;Elizabeth I of England&lt;/strong&gt; (1533 – 1603), &lt;strong&gt;Mary, Queen of Scots&lt;/strong&gt; (1542 – 1587), &lt;strong&gt;Philip II of Spain&lt;/strong&gt; (1527 –1598)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enlightment-1715---1789&#34;&gt;Enlightment (1715 - 1789)&lt;/h2&gt;
+&lt;p&gt;Starts with the death of &lt;strong&gt;Louis XIV of France&lt;/strong&gt; until the beginning of the &lt;strong&gt;French revolution&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Please leave any suggestions below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Time as a computational limit</title>
+      <link>https://dominiquemakowski.github.io/post/2020-11-13-time_computational_limit/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-11-13-time_computational_limit/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Note: this is a thought-experiment, not to be taken too seriously.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;we-live-in-a-simulated-universe&#34;&gt;We live in a simulated universe&lt;/h2&gt;
+&lt;p&gt;In his famous simulation argument, the transhumanist Bostrom (2003, 2011) posits that &lt;strong&gt;we are living in a computer-generated reality&lt;/strong&gt;. The logic behind this assumption is that an advanced civilization, with enormous computing power, might want to create agents with a powerful artificial intelligence, that would be evolving in a simulated world (think of an infinitely more advanced &lt;em&gt;&lt;strong&gt;The Sims&lt;/strong&gt;&lt;/em&gt; Game). These sims (i.e., the virtual intelligences populating the simulation) might be endowed with consciousness, and live their lives in this world, unable to distinguish its simulated nature from the &amp;ldquo;primary&amp;rdquo; reality. Moreover, similarly to games that are running on many computers in the world, there could be an important number of these simulated worlds. Moreover, it could reach a point where a simulation could be created inside another simulation. Thus, the number of &amp;ldquo;sims&amp;rdquo; would quickly exceed the number of consciousness&amp;rsquo;s living in the primary (i.e., non-computer-generated) reality. Consequently, &lt;strong&gt;it is statistically plausible that we are, indeed, simulated &amp;ldquo;sims&amp;rdquo; living in a simulated reality&lt;/strong&gt;.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;aliens.jpg&#34; alt=&#34;aliens&#34;/&gt;
+  &lt;figcaption&gt;Aliens watching episode 2020 of &#34;the Earth&#34; unfold, horrified.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;It is to note that Bostrom&amp;rsquo;s argument has been criticized, mocked, revised and updated several times. But beyond the flaws in its argumentation and premisses, it is still a fairly appealing thought experiment, and a fascinating possibility. People have been mis-representing this argument, picturing some alien species playing &lt;em&gt;&lt;strong&gt;The Sims&lt;/strong&gt;&lt;/em&gt; with us on mega computers. But albeit Bostrom indeed mostly presents it as a simulation run by other intelligent agents, &lt;strong&gt;this idea could be generalized&lt;/strong&gt;. The simulating system could take many forms, not necessarily created by an intelligent design. It just means that there&amp;rsquo;s a &amp;ldquo;thing&amp;rdquo; &lt;em&gt;(a very scientific term, I know)&lt;/em&gt; outside the universe that gives rise to it, one way of another.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What does it change for our lives?&lt;/strong&gt; Pretty much nothing. Indeed, this thrilling hypothesis is somehow irrelevant from a phenomenological and psychological perspective, for the majority of people cannot help but experience a fully deployed &lt;a href=&#34;https://dominiquemakowski.github.io/post/what_is_realitybending/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;sense of reality&lt;/strong&gt;&lt;/a&gt;. They are (normally) endowed with an intuitive feeling and belief that they are real, existing and belonging to a real world. They rarely doubt it, and even if they do so, it is mostly in a philosophical fashion, that does not entail a genuine sensation of uncertainty toward the nature of the world. This sense of reality is fascinating topic on its own (though I&amp;rsquo;m biased since its my main research topic), independent from the issue of the nature of the universe. Though we could argue that the latter opens up the possibility of tears in the objective reality (either &lt;em&gt;bugs&lt;/em&gt; of the system or ways of accessing and modifying the fabric of reality), but this &lt;em&gt;&lt;strong&gt;Matrix&lt;/strong&gt;&lt;/em&gt;-like aspect of the simulated reality hypothesis is a topic for another time.&lt;/p&gt;
+&lt;p&gt;So no, the universe being a simulation, aside from being a breath-taking metaphysical consideration, changes practically nothing for our daily lives.&lt;/p&gt;
+&lt;h2 id=&#34;determism&#34;&gt;Determism&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s put aside this idea of a simulated universe for now and think about determinism. I consider myself, for now, as an &lt;strong&gt;ultra-determinist&lt;/strong&gt; (I should rather say, &lt;em&gt;&amp;ldquo;the world has made me into a determinist&amp;rdquo;&lt;/em&gt;). It means that I believe that the universe is unfolding according to some causality laws (many of which are not yet fully known), and that since the origin of the universe (e.g., the Big Bang), things have been evolving according to the only one possible chain of event. Naturally, the hard version of determinism leaves no room for &lt;strong&gt;free will&lt;/strong&gt; (though the &lt;em&gt;illusion&lt;/em&gt; of free will is important) and creates some issues when it comes to responsibility (again, a topic for another time).&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;determinism.jpg&#34; alt=&#34;determinism&#34;/&gt;
+&lt;/figure&gt;
+&lt;p&gt;Note that this position is not incompatible with a &lt;strong&gt;probabilistic view of the world&lt;/strong&gt; (I am also a rather radical Bayesianist 😁). In this context, the probabilistic perspective is mostly a framework to describe uncertainty and hidden mechanisms. For instance, if I flip a coin, a probabilistic approach would be to consider that there is a 50/50 probability on the outcome. That said, if we manage to gather information on all the parameters (the starting position of the coin, the velocity and angle of the tossing, gravity, the weight distribution on the coin, its resistance to air, characteristics of air pressure, wind etc.), one could pretty much accurately predict what the outcome would be. In other words, the outcome is already &amp;ldquo;determined&amp;rdquo; once the coined has been tossed. That doesn&amp;rsquo;t mean that a probabilistic model is not convenient to describe it, especially when we don&amp;rsquo;t have access to all these parameters (or powerful enough models to integrate them).&lt;/p&gt;
+&lt;p&gt;Many attempts have been made to attack determinism (and especially by people trying to defend the possibility of free will), and recent advances in physics have giving them a lot of ammunition (the most striking example being the - often misunderstood - usage of &lt;strong&gt;quantum uncertainty to explain randomness, free-will, consciousness, god&lt;/strong&gt; and pretty much everything). Nonetheless, determinism is one of the simplest assumption that can be made regarding causality and evolution.&lt;/p&gt;
+&lt;h2 id=&#34;the-future-is-now&#34;&gt;The future is now&lt;/h2&gt;
+&lt;p&gt;Determinism has one important consequence. As all events stem one from the others, in a unique chain of causal events, then if we know the exact state of the system (i.e., you know the state of &lt;em&gt;all&lt;/em&gt; of the variables of the system) at one point in time, as well as the rules governing the system, we can predict with certainty the system&amp;rsquo;s state at the next point in time, at &lt;em&gt;t&lt;/em&gt;+1. If we repeat the process, &lt;strong&gt;we know the state of the system at &lt;em&gt;t&lt;/em&gt;+2, and so on, until the end of times.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In other words, the end of the universe is engraved in its beginning. The future is already contained in the now. The whole evolution of the universe is already &amp;ldquo;set&amp;rdquo;. &lt;em&gt;Myself, writing this post, am an expected consequence of the combination of parameters of the universe&amp;rsquo;s origin.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://media.giphy.com/media/1zRd5ZNo0s6kLPifL1/giphy.gif&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;time-as-a-computational-limit-of-human-understanding&#34;&gt;Time as a computational limit of human understanding&lt;/h2&gt;
+&lt;p&gt;The past, and future, are merely but illusions. All the information (about what has been, and what will be) is already known (not known by an intelligent being, but in the sense that the information is existing, encapsulated within each frame of time) &lt;strong&gt;The evolution of the world is, in that regards, similar to that of a movie on a DVD&lt;/strong&gt;. All the movie is there, at once. And a computer can read, and &amp;ldquo;experience&amp;rdquo; (as far as the phenomenological experience of a computer goes) all that information at once.&lt;/p&gt;
+&lt;p&gt;Yet we cannot. We have to watch it unfold over time. We are cognitively constrained in that fourth dimension of time. The perception of time passing appears as some limitation of our own cognitive systems: we have to spend one hour and a half in order to make sense of the information. We cannot process it &amp;ldquo;at once&amp;rdquo; (we cannot yet just download the movie into our brain, and experience it without watching it). &lt;strong&gt;Is time passing a feature (or limitation) of our understanding?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Could we imagine (as a thought experiment) some other forms of being that are not constrained nor ever drifting onwards in the time dimension? Which, through their immensely greater cognitive abilities, are able to process a &lt;em&gt;lot&lt;/em&gt; more information, which renders their prediction and inference of the near past and future very accurate, to a point where they are able to almost &amp;ldquo;move in time&amp;rdquo; (at least in short time ranges as the universe)&lt;/p&gt;
+&lt;h2 id=&#34;time-as-a-computational-limit-of-the-cosmos&#34;&gt;Time as a computational limit of the cosmos&lt;/h2&gt;
+&lt;p&gt;One thing to note is that, in the DVD analogy, the watcher is external to the content. We are not talking about Gandalf&amp;rsquo;s experience of its own movie. Which then begs the question, &lt;strong&gt;who&amp;rsquo;s watching our universe?!&lt;/strong&gt; &lt;sup&gt;&lt;sub&gt;(note that this is a logical fallacy used here as a joke; analogy is not homology).&lt;/sub&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://i.pinimg.com/originals/1f/0b/70/1f0b701c4cb1db137c17182d533ea051.jpg&#34; alt=&#34;god&#34;/&gt;
+  &lt;figcaption&gt;The Ancient of Days (William Blake, 1794).&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;But let&amp;rsquo;s go back to that &amp;ldquo;simulated universe&amp;rdquo; hypothesis that we started with, to try to integrate with it determinism and its consequence on time. When we play the sims, the sims do not really care about what the speed that we, external Humans, play the game. &lt;strong&gt;Their experience (albeit primitive, but you see my point) is dictated by the system&lt;/strong&gt; (the game and the computer). To what extend it can computationally process the information.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s like when playing &lt;strong&gt;Minecraft&lt;/strong&gt; (pardon my video games references). At the start of the game, one must first &amp;ldquo;generate&amp;rdquo; the world. This runs a procedural generation algorithm that spatially lays out and populates a world. This can take up to several minutes, depending on how much of a nerd you are (i.e., the specs of your computer). Following this example, if our universe is itself a simulation, could time be a consequence of some limitation of the system that &amp;ldquo;runs&amp;rdquo; it (or generates it - after all, maybe God is just waiting for our universe to complete building to be able to play his game of &amp;ldquo;Worldcraft&amp;rdquo; &lt;sub&gt;&lt;sup&gt;or, perhaps more appropriately, &amp;ldquo;Minehumans&amp;rdquo;&lt;/sub&gt;&lt;/sup&gt;), which might explain the particular nature of the time dimension in our typical environment.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://thumbs.gfycat.com/BiodegradableSeriousLacewing-size_restricted.gif&#34; alt=&#34;gandalf&#34;/&gt;
+  &lt;figcaption&gt;&#34;Riddles in the dark...&#34;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;While these are fun thought experiments to ponder over, note that until there, I have mainly speculated about time as we phenomenologically experience it. I haven&amp;rsquo;t even touched on the possible relationship between the idea of time as a computational limit, and time as it conceived in modern theoretical physics (for instance, as a geometrical dimension of the time-space continuum that can be deformed and, potentially, navigated in). &lt;strong&gt;But for this, you&amp;rsquo;ll need to get me talking after more beers&lt;/strong&gt; 🍻&lt;/p&gt;
+&lt;p&gt;Cheers!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is Reality Bending?</title>
+      <link>https://dominiquemakowski.github.io/post/2020-09-28-what_is_realitybending/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-09-28-what_is_realitybending/</guid>
+      <description>&lt;p&gt;As you know, &lt;strong&gt;reality bending&lt;/strong&gt; is my primary research direction. However, it is not (yet) a well-established scientific topic, nor is it clearly defined. In fact, &lt;strong&gt;it is not defined at all, hence the purpose of this article&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;But what does it refer too? Is it some kind of &lt;a href=&#34;https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Avatar: The Last Airbender&lt;/em&gt;&lt;/a&gt; thing? Or some &lt;a href=&#34;https://marvel-movies.fandom.com/wiki/Reality_Stone&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Avengers&lt;/em&gt;&lt;/a&gt;-style superpower? Well&amp;hellip; I sure wish it was 😁&lt;/p&gt;
+&lt;p&gt;Essentially, &lt;strong&gt;reality bending&lt;/strong&gt; refers to the study of the internal and external determinants of subjective reality. In other words, we seek to understand the processes that modulate our conscious experience of reality. The word &amp;ldquo;bending&amp;rdquo; encapsulates the active nature of the mechanisms at stake. Indeed, being anything but stable, our perception of reality can be quite easily influenced, whether voluntarily or not, sometimes to extreme degrees of alteration.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;DonQuixote.jpg&#34; alt=&#34;github for psychologists&#34;/&gt;
+  &lt;figcaption&gt;Daumier, H. (1925), Don Quixote attacking the windmills.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Reality benders&lt;/strong&gt; seek to unravel the structure and mechanisms of the sense of reality by studying natural instances of its distortion, or by directly inducing them through a variety of means.&lt;/p&gt;
+&lt;h2 id=&#34;objective-and-subjective-determinants-of-the-sense-of-reality&#34;&gt;Objective and subjective determinants of the sense of reality&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s take for example a guy watching some episode of his favourite TV show, &lt;em&gt;Friends&lt;/em&gt;. As he swiftly moves from laughing to snivelling, we can confidently say that he is fully &lt;strong&gt;immersed&lt;/strong&gt; in the show. He feels like he&amp;rsquo;s &lt;em&gt;present&lt;/em&gt; in the show, from which the fictional characters &lt;em&gt;feel&lt;/em&gt; very real: for a moment, his brain processes the perceived experience almost as if it was real.&lt;/p&gt;
+&lt;p&gt;What leads to this high sense of reality? First, there are &lt;strong&gt;objective characteristics&lt;/strong&gt; of the experience (or rather, of the external source of the experience), i.e., characteristics of the environment. Here, it&amp;rsquo;s a realistic stimulus displayed on a flat screen. But one could wonder what would happen if the sensory input was richer (imagine being physically IN the show by means of some super &lt;strong&gt;virtual reality&lt;/strong&gt; setup), or poorer (the same story presented as comic strips with the characters portrayed as stick figures).&lt;/p&gt;
+&lt;p&gt;However, while such manipulations could indeed be used to manipulate our immersion, there is also a &lt;strong&gt;subjective component&lt;/strong&gt; contributing to our sense of reality, related for instance to the affective response, attentional engagement, or self-relevance, that will cause a stimulus to strum unique strings in each individual, depending on his history and state of mind.&lt;/p&gt;
+&lt;h2 id=&#34;tell-me-your-reality-and-ill-tell-you-who-you-are&#34;&gt;Tell me your reality and I&amp;rsquo;ll tell you who you are&lt;/h2&gt;
+&lt;p&gt;The fact that the sense of reality is, in the end, a subjective experience, means that is is intrinsically connected to the Self (i.e., our physical and mental identity). As such, aside from studying how our sense of reality is influenced by external and internal factors, but also investigate the reverse relationship, i.e., &lt;strong&gt;how the variability of our sense of reality can inform us about oneself&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Note that, although the focus is the subjective aspect of reality, it doesn&amp;rsquo;t mean that we deny the existence, or downplay the importance, of objective reality. Stating that most of our experience is &amp;ldquo;made-up&amp;rdquo; (i.e., is a construction of the brain) does not equate absolute relativism (more on that in another post). Objective truths and facts do exist, and are essential to seek.&lt;/p&gt;
+&lt;h2 id=&#34;altered-states-of-consciousness&#34;&gt;Altered states of consciousness&lt;/h2&gt;
+&lt;p&gt;Naturally, states in which our sense of reality is distorted (as compared to the consensual collective experience) are of particular interest as models or study-cases of our ideas and theories. They include long-term affections (e.g., neuropsychiatric disorders such as schizophrenia) or transcient states (induced by psychoactive substances or specific practices like meditation and trance).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt; 🤗&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to extract individual scores from repeated measures</title>
+      <link>https://dominiquemakowski.github.io/post/2020-09-14-individual_scores/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-09-14-individual_scores/</guid>
+      <description>
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Many psychology fields require to extract individual scores, i.e., point-estimates (&lt;em&gt;i.e.&lt;/em&gt;, a single value) for a participant/patient, to be used as an index of something and later interpreted or re-used in further statistical analyses. This single index is often derived from several “trials”. For instance, the reaction times in the condition A (let’s say, the baseline) will be &lt;strong&gt;averaged&lt;/strong&gt; together, and the same will be done with the condition B. Finally, the difference between these two means will be used an the &lt;strong&gt;individual score&lt;/strong&gt; for a given participant.&lt;/p&gt;
+&lt;p&gt;However, we can intuitively feel that we &lt;strong&gt;lose a lot of information&lt;/strong&gt; when averaging these scores. Do we deal appropriately with the variability related to individuals, conditions, or the noise aggravated by potential outliers? This is especially important when working with a limited amount of trials.&lt;/p&gt;
+&lt;p&gt;With the advent of recent computational advances, new easy-to-implement alternatives emerge. For instance, &lt;strong&gt;one can “model” the effects at an individual level&lt;/strong&gt; (e.g., the simplest case, for the two conditions paradigm described above, would be a linear regression with the condition as a unique predictor), and use the &lt;strong&gt;parameters&lt;/strong&gt; of each model as individual scores (e.g., the “slope” coefficient of the effect of the manipulation), rather than the raw mean. This opens up the possibility of including covariates and take into account other sources of known variability, which could lead to better estimates.&lt;/p&gt;
+&lt;p&gt;However, individual models are also sensitive to outliers and noise. Thus, another possibility is to &lt;strong&gt;model the effects at the population level&lt;/strong&gt; and, &lt;em&gt;at the same time&lt;/em&gt;, at the individual level. This can be achieved by modelling the participants as a &lt;strong&gt;random factor in a mixed model&lt;/strong&gt;. In this case, the individual estimates might benefit from the population estimates. In other words, the effects at the population level will “constrain” or “guide” the estimation at an individual level to potentially limit extreme parameters.&lt;/p&gt;
+&lt;p&gt;Unfortunately, the above method requires to have all the data at hand, to be able to fit the population model. This is often not the case in on-going acquisition, or in neuropsychological contexts, in which the practitioners simply acquire data for one patient, and have to compute individual scores, without having access to the detailed population data. Thus, an in-between alternative could make use of &lt;strong&gt;Bayesian models&lt;/strong&gt;, in which the population effects (for instance, the mean effect of the condition) could be entered as an informative &lt;strong&gt;prior&lt;/strong&gt; in the individual models to, again, “guide” the estimation at an individual level and hopefully limit the impact of noise or outliers observations.&lt;/p&gt;
+&lt;p&gt;In this post, the aim is to compare these 4 methods (basic individual model - equivalent to using the raw mean, population model, individual model with informative priors) in recovering the “true” effects using a simulated dataset.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Results&lt;/h3&gt;
+&lt;div id=&#34;generate-data&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Generate Data&lt;/h4&gt;
+&lt;p&gt;We generate several datasets in which we manipulate the number of participants, in which the score of interest is the effect of a manipulation as compared to a baseline condition. 20 trials per condition will be generated with a known “true” effect (the centre of the distribution from which the data is generated). Gaussian noise of varying standard deviation will be added to create a natural variability (See the functions’ definition below).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(easystats)
+
+data &amp;lt;- get_data(n_participants=1000, n_trials=20)
+results &amp;lt;- get_results(data)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-3&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;individual.png&#34; alt=&#34;*Example of a dataset containing 20 participants (shown with different colors). As can be seen, we introduced modulations in the inter- and intra- individual variability.*&#34; width=&#34;1575&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: &lt;em&gt;Example of a dataset containing 20 participants (shown with different colors). As can be seen, we introduced modulations in the inter- and intra- individual variability.&lt;/em&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;We will then compare the scores obtained by each method to the “true” score of each participant by substracting them from one another. As such, for each method, we obtain the absolute “distance” from the true score.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fit-model&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Fit model&lt;/h4&gt;
+&lt;p&gt;Contrast analysis will be applied to compare the different methods together.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;model &amp;lt;- lm(Diff_Abs ~ Method, data=results)
+
+modelbased::estimate_contrasts(model) %&amp;gt;%
+  arrange(Difference) %&amp;gt;%
+  mutate(Level1 = stringr::str_remove(Level1, &amp;quot;Diff_&amp;quot;),
+         Level2 = stringr::str_remove(Level2, &amp;quot;Diff_&amp;quot;)) %&amp;gt;% 
+  select(Level1, Level2, Difference, CI_low, CI_high, p)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Level1                 |                 Level2 | Difference |            CI |      p
+## -------------------------------------------------------------------------------------
+## IndividualModel_Priors |        PopulationModel |  -1.85e-03 | [-0.01, 0.01] | &amp;gt; .999
+## IndividualModel_Freq   |        PopulationModel |   1.70e-03 | [-0.01, 0.01] | &amp;gt; .999
+## IndividualModel_Freq   | IndividualModel_Priors |   3.55e-03 | [-0.01, 0.01] | &amp;gt; .999&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visualize-the-results&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Visualize the results&lt;/h4&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-6&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;featured.png&#34; alt=&#34;*Average accuracy of the different methods (the closest to 0 the better).*&#34; width=&#34;2250&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: &lt;em&gt;Average accuracy of the different methods (the closest to 0 the better).&lt;/em&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-7&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;n_participants.png&#34; alt=&#34;*Accuracy depending on the number of total participants in the dataset.*&#34; width=&#34;2250&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: &lt;em&gt;Accuracy depending on the number of total participants in the dataset.&lt;/em&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conclusion&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Though not significantly different, it seems that &lt;strong&gt;raw basic estimates&lt;/strong&gt; (that rely only on the individual data) &lt;strong&gt;perform consistently worse than the population model or individual models informed by priors&lt;/strong&gt;, especially for small datasets (between 10 and 100 participants) - though again, the difference is tiny in our simulated dataset. In the absence of the whole population dataset, it seems that using individual Bayesian model with informative priors (derived from the population model) is a safe alternative.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;functions&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Functions&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(easystats)
+library(rstanarm)
+library(ggdist)
+
+
+# Get data ----------------------------------------------------------------
+
+get_data &amp;lt;- function(n_participants = 10, n_trials = 20, d = 1.5, var = 3, noise = 0.1) {
+  scores_baseline &amp;lt;- rnorm(n_participants, 0, 1)
+  scores_condition &amp;lt;- rnorm(n_participants, d, 1)
+  variances &amp;lt;- rbeta(n_participants, 2, 8)
+  variances &amp;lt;- 0.1 + variances * (var / max(variances)) # Rescale
+  noise_sd &amp;lt;- abs(rnorm(n_participants, 0, noise))
+
+  data &amp;lt;- data.frame()
+  for (i in 1:n_participants) {
+    a &amp;lt;- rnorm(n_trials, scores_baseline[i], variances[i])
+    b &amp;lt;- rnorm(n_trials, scores_condition[i], variances[i])
+    a &amp;lt;- a + rnorm(n_trials, 0, noise_sd[i]) # Add noise
+    b &amp;lt;- b + rnorm(n_trials, 0, noise_sd[i]) # Add noise
+    data &amp;lt;- rbind(data, data.frame(
+      &amp;quot;Participant&amp;quot; = sprintf(&amp;quot;S%02d&amp;quot;, i),
+      &amp;quot;Y&amp;quot; = c(a, b),
+      &amp;quot;Score_True&amp;quot; = rep(c(scores_baseline[i], scores_condition[i]), each = n_trials),
+      &amp;quot;Condition&amp;quot; = rep(c(&amp;quot;Baseline&amp;quot;, &amp;quot;Manipulation&amp;quot;), each = n_trials)
+    ))
+  }
+  data
+}
+
+
+
+# Visualize data -----------------------------------------------------------
+
+p &amp;lt;- get_data(n_participants = 20) %&amp;gt;%
+  group_by(Participant, Condition) %&amp;gt;%
+  mutate(mean = mean(Y)) %&amp;gt;%
+  ggplot(aes(y = Y, x = Condition, fill = Participant, color = Participant, group = Participant)) +
+  geom_line(aes(y = mean), position = position_dodge(width = 0.66)) +
+  ggdist::stat_eye(point_interval = ggdist::mean_hdi, alpha = 0.66, position = position_dodge(width = 0.66), .width = c(0.95)) +
+  ylab(&amp;quot;Score&amp;quot;) +
+  theme_modern() +
+  theme(legend.position = &amp;quot;none&amp;quot;)
+ggsave(&amp;quot;individual.png&amp;quot;, p, width = 7, height = 7, dpi = 450)
+
+
+# Get results -------------------------------------------------------------
+
+
+get_results &amp;lt;- function(data) {
+
+  # Raw method ----
+
+  results &amp;lt;- data %&amp;gt;%
+    group_by(Participant, Condition) %&amp;gt;%
+    summarise_all(mean) %&amp;gt;%
+    rename(&amp;quot;Score_Raw&amp;quot; = &amp;quot;Y&amp;quot;) %&amp;gt;%
+    arrange(Condition, Participant) %&amp;gt;%
+    ungroup()
+
+
+  # Population model ----
+
+  model &amp;lt;- lme4::lmer(Y ~ Condition + (1 + Condition | Participant), data = data)
+
+  fixed &amp;lt;- insight::get_parameters(model, effects = &amp;quot;fixed&amp;quot;)$Estimate
+  random &amp;lt;- insight::get_parameters(model, effects = &amp;quot;random&amp;quot;)$Participant
+
+  # Transform coefs into scores
+  pop_baseline &amp;lt;- random[, 1] + fixed[1]
+  pop_manipulation &amp;lt;- pop_baseline + random[, 2] + fixed[2]
+
+  results$Score_PopulationModel &amp;lt;- c(pop_baseline, pop_manipulation)
+
+
+  # Individual model ----
+
+  individual_model_data &amp;lt;- data.frame()
+  for (participant in unique(data$Participant)) {
+    cat(&amp;quot;.&amp;quot;) # Print progress
+
+    dat &amp;lt;- data[data$Participant == participant, ]
+
+    # Frequentist
+    model1 &amp;lt;- lm(Y ~ Condition, data = dat)
+    nopriors &amp;lt;- parameters::parameters(model1)$Coefficient
+
+    # Bayesian without priors
+    # model2 &amp;lt;- stan_glm(Y ~ Condition, data = dat, refresh = 0)
+    # bayes &amp;lt;- parameters::parameters(model2)$Median
+
+    # Bayesian with Priors
+    model3 &amp;lt;- stan_glm(Y ~ Condition,
+      data = dat,
+      refresh = 0,
+      prior = normal(fixed[1]),
+      prior_intercept = normal(fixed[2])
+    )
+    priors &amp;lt;- parameters::parameters(model3)$Median
+
+    individual_model_data &amp;lt;- rbind(
+      individual_model_data,
+      data.frame(
+        &amp;quot;Participant&amp;quot; = c(participant, participant),
+        &amp;quot;Condition&amp;quot; = c(&amp;quot;Baseline&amp;quot;, &amp;quot;Manipulation&amp;quot;),
+        &amp;quot;Score_IndividualModel&amp;quot; = c(nopriors[1], nopriors[1] + nopriors[2]),
+        # &amp;quot;Score_IndividualModel_Bayes&amp;quot; = c(bayes[1], bayes[1] + bayes[2]),
+        &amp;quot;Score_IndividualModel_Priors&amp;quot; = c(priors[1], priors[1] + priors[2])
+      )
+    )
+  }
+
+  results &amp;lt;- merge(results, individual_model_data)
+
+
+  # Clean output ----
+
+  diff &amp;lt;- results %&amp;gt;%
+    mutate(
+      # Diff_Raw = Score_True - Score_Raw,
+      Diff_PopulationModel = Score_True - Score_PopulationModel,
+      Diff_IndividualModel = Score_True - Score_IndividualModel,
+      # Diff_IndividualModel_Bayes = Score_True - Score_IndividualModel_Bayes,
+      Diff_IndividualModel_Priors = Score_True - Score_IndividualModel_Priors
+    ) %&amp;gt;%
+    select(Participant, Condition, starts_with(&amp;quot;Diff&amp;quot;)) %&amp;gt;%
+    pivot_longer(starts_with(&amp;quot;Diff&amp;quot;), names_to = &amp;quot;Method&amp;quot;, values_to = &amp;quot;Diff&amp;quot;) %&amp;gt;%
+    mutate(Diff_Abs = abs(Diff))
+
+  diff
+}
+
+
+
+# Analysis ----------------------------------------------------------------
+results &amp;lt;- data.frame()
+for(n in seq.int(10, 300, length.out = 10)){
+  data &amp;lt;- get_data(n_participants = round(n), n_trials = 20)
+  rez &amp;lt;- get_results(data) %&amp;gt;%
+    select(-Participant) %&amp;gt;%
+    group_by(Condition, Method) %&amp;gt;%
+    summarise_all(mean) %&amp;gt;%
+    mutate(n_Participants = n,
+           Method = as.factor(Method),
+           Dataset=paste0(&amp;quot;Dataset&amp;quot;, round(n, 2)))
+  results &amp;lt;- rbind(results, rez)
+
+  print(n) # Print progress
+}
+
+# model &amp;lt;- mgcv::gam(Diff_Abs ~ Method + s(n_Participants, by = Method), data = results)
+model &amp;lt;- lm(Diff_Abs ~ Method * poly(n_Participants, 3), data = results)
+
+parameters::parameters(model)
+
+
+contrasts &amp;lt;- modelbased::estimate_contrasts(model) %&amp;gt;%
+  arrange(Difference) %&amp;gt;%
+  mutate(
+    Level1 = stringr::str_remove(Level1, &amp;quot;Diff_&amp;quot;),
+    Level2 = stringr::str_remove(Level2, &amp;quot;Diff_&amp;quot;)
+  ) %&amp;gt;%
+  select(Level1, Level2, Difference, CI_low, CI_high, p)
+
+
+
+
+# Visualize results ---------------------------------------------------------
+p &amp;lt;- modelbased::estimate_means(model) %&amp;gt;%
+  arrange(Mean) %&amp;gt;%
+  mutate(
+    Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;),
+    Method = factor(Method, levels = Method)
+  )  %&amp;gt;%
+  ggplot(aes(x = Method, y = Mean, color = Method)) +
+  geom_line(aes(group = 1)) +
+  geom_pointrange(aes(ymin = CI_low, ymax = CI_high), size = 1) +
+  theme_modern() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_color_material()
+ggsave(&amp;quot;featured.png&amp;quot;, p, width = 10, height = 6, dpi = 450)
+
+
+
+p &amp;lt;- modelbased::estimate_relation(model) %&amp;gt;%
+  mutate(Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;))  %&amp;gt;%
+  ggplot(aes(x = n_Participants, y = Predicted)) +
+  geom_point(data=mutate(results, Method = stringr::str_remove(Method, &amp;quot;Diff_&amp;quot;)),
+             aes(y=Diff_Abs, color = Method)) +
+  geom_ribbon(aes(ymin=CI_low, ymax=CI_high, fill=Method), alpha=0.1) +
+  geom_line(aes(color = Method), size=1) +
+  theme_modern() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_color_material() +
+  scale_fill_material()
+ggsave(&amp;quot;n_participants.png&amp;quot;, p, width = 10, height = 6, dpi = 450)
+
+
+# Save results ------------------------------------------------------------
+
+
+d &amp;lt;- list(&amp;quot;results&amp;quot; = results, &amp;quot;model&amp;quot; = model, &amp;quot;contrasts&amp;quot; = contrasts)
+save(d, file = &amp;quot;data.Rdata&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;p&gt;&lt;sub&gt;You can reference this post as follows:&lt;/sub&gt;&lt;/p&gt;
+&lt;p&gt;&lt;sub&gt;- Makowski, D. (2020, September 14). How to extract individual scores from repeated measures. Retrieved from &lt;a href=&#34;https://dominiquemakowski.github.io/post/individual_scores/&#34; class=&#34;uri&#34;&gt;https://dominiquemakowski.github.io/post/individual_scores/&lt;/a&gt;&lt;/sub&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;And don’t forget to join me on Twitter&lt;/em&gt; &lt;span class=&#34;citation&#34;&gt;[@Dom_Makowski]&lt;/span&gt;(&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; class=&#34;uri&#34;&gt;https://twitter.com/Dom_Makowski&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is neuropsychology?</title>
+      <link>https://dominiquemakowski.github.io/post/2020-09-13-what_is_neuropsychology/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-09-13-what_is_neuropsychology/</guid>
+      <description>&lt;h2 id=&#34;the-place-of-neuropsychology&#34;&gt;The place of neuropsychology&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Let&amp;rsquo;s make a simple experiment&lt;/strong&gt;. Pick one young and brilliant neuropsychologist and ask &amp;ldquo;what is neuropsychology?&amp;rdquo;. In some cases, after a few seconds of hesitation, you could hear answers like &amp;ldquo;being a neuropsychologist means doing &lt;em&gt;this&lt;/em&gt; or &lt;em&gt;that&lt;/em&gt;&amp;rdquo;. In other cases, you might come across incomplete - or even false - responses, such as &amp;ldquo;neuropsychology is a tool&amp;rdquo;, &amp;ldquo;a method&amp;rdquo;, &amp;ldquo;a paradigm&amp;rdquo;, or even worse, &amp;ldquo;a point of view&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;That does not mean that our neuropsychologist is incompetent, far from it. But formally defining our field as a whole is not an exercise that we are used to do. Indeed, &lt;strong&gt;the training in neuropsychology usually comes in a fragmented way&lt;/strong&gt;, little by little. &lt;em&gt;A bit of cognitive neuroscience here, a bit of neuropsychological syndromes there, some cognitive tests administration over here, and some cortical neuroanatomy over there&amp;hellip;&lt;/em&gt; Though we might, &lt;em&gt;in fine&lt;/em&gt;, acquire a global vision and understanding of neuropsychology, verbalizing it is seldom necessary.&lt;/p&gt;
+&lt;p&gt;The definition of neuropsychology is actually quite complex to formalize, and can even be hotly debated. The jobs and positions that stem out of this field are many, and &lt;strong&gt;practitioners often tend to circumscribe neuropsychology to their own activity&lt;/strong&gt;. For instance, a neuropsychologist that mainly does cognitive rehabilitation with psychiatric patients might have quite a different vision from another that does, day after day, presurgical cognitive assessments. And that is without mentioning the neuropsychologists pursuing an academic career, or even the ones that have moved to the private sector.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;No problem&lt;/em&gt;, would argue the careful reader, &lt;em&gt;if the definitions are too narrow, let&amp;rsquo;s take more general one&lt;/em&gt;. &lt;strong&gt;It&amp;rsquo;s not that simple&lt;/strong&gt;. Indeed, neuropsychology occupies a very particular place in the network of science, as it is at &lt;strong&gt;the crossroads between social sciences, biological sciences and medical fields&lt;/strong&gt;. Giving a definition that is too large would lose its essence in the nebulous depths of neuroscience and psychology, which would be not be accurate; neuropsychologists, whether they are clinical practitioners or not, have a common training, a specific theoretical grounding, as well as a unique interpretation and analysis framework underpinned by a scientifically rigorous method. Taking these elements into account, I will attempt to give a &lt;strong&gt;simple, comprehensive and informative definition of neuropsychology&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The first axiom that we need to discuss is the notion of science. &lt;strong&gt;Is neuropsychology its &amp;ldquo;own&amp;rdquo; scientific field&lt;/strong&gt;, or is it a mere portion of another one, such as cognitive neuroscience or psychology, which differs from other specializations only through its object of interest? &lt;em&gt;&amp;ldquo;By science&amp;rdquo;&lt;/em&gt;, says Schopenhauer in his PhD thesis with a baroque title (On the Fourfold Root of the Principle of Sufficient Reason), &lt;em&gt;&amp;ldquo;we understand a system of notions, i.e. a totality of connected, as opposed to a mere aggregate of disconnected, notions.&amp;quot;&lt;/em&gt; This definition applies well to neuropsychology, that contains a set of theories, hypotheses, methods and proofs feeding from one another and creating a coherent ensemble. As such, neuropsychology is its own scientific discipline, although a singular one&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Indeed, &lt;strong&gt;what is the &amp;ldquo;bigger&amp;rdquo; box in which neuropsychology fits?&lt;/strong&gt; While neuropsychologists are often initially trained in psychology, one could argue that the focus on the brain makes it more belonging to neuroscience. Well, the organization and structure of Science is a complicated issue. However, the particularity of the topographical location of neuropsychology is quite apparent.&lt;/p&gt;
+&lt;p&gt;On the one hand, neuropsychology belongs to a cluster of sciences interested a specific biological organ: the brain. As such, &lt;strong&gt;neuropsychology is an integral part of neuroscience&lt;/strong&gt;. On the other hand, neuropsychology is interested in the productions of the brain (e.g., thoughts, feelings and behaviours) with a focus on the cognitive level (analyzing things in terms of cognitive processes and mechanisms), which makes it also &lt;strong&gt;belonging to psychology&lt;/strong&gt;. Moreover, one could argue that neuropsychology, through its integration of the study of what we are biologically, and who we are mentally, has been connected to, and used as evidence in, &lt;strong&gt;philosophy of mind&lt;/strong&gt; debates (for instance, famous neuropsychological cases studied by Sacks, Ramachandran or Milner have been widely discussed by contemporary philosophers). Finally, contrary to many other domains, neuropsychology has also an applied, practical component, that can be used in clinical practice. This clinical aspect, registering &lt;strong&gt;neuropsychology withing medical fields&lt;/strong&gt;, takes multiple forms, such as assessment, diagnostic or therapeutic care, and can be used with a wide variety of patients and illnesses. These multiple facets make the wealth of &lt;strong&gt;neuropsychology, which offers an exceptional freedom of practice&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;As we have seen, &lt;strong&gt;neuropsychology is located at the centre of colliding galaxies of knowledge&lt;/strong&gt;, such as neuroscience, psychology, medicine and philosophy. However, the fast development of neuropsychology is gradually leading to the creation of subcomponents within itself, corresponding to different practices and theoretical steps. And these clusters are themselves growing. For instance, clinical neuropsychology was historically focused on diagnostic cognitive assessments, but has recently expanded on the treatment-side of things, with innovations like cognitive training and rehabilitation. This underlines neuropsychology as a rapidly evolving field, moving its potential towards yet uncharted territories.&lt;/p&gt;
+&lt;h2 id=&#34;the-fourfold-structure-of-neuropsychology&#34;&gt;The fourfold structure of neuropsychology&lt;/h2&gt;
+&lt;p&gt;Neuropsychology is born from the convergence of &lt;strong&gt;cognitive neurology&lt;/strong&gt;, with pioneers such as &lt;a href=&#34;https://en.wikipedia.org/wiki/Paul_Broca&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Broca&lt;/a&gt; and &lt;a href=&#34;https://en.wikipedia.org/wiki/Carl_Wernicke&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wernicke&lt;/a&gt; (which made inferences about brain functioning based on the observations of patients with brain lesions) and psychologists such as &lt;a href=&#34;https://en.wikipedia.org/wiki/Th%C3%A9odule-Armand_Ribot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ribot&lt;/a&gt; (focusing on the organization and semiology of cognitive deficits). This history has shaped neuropsychology as a two-faced entity, with one &lt;strong&gt;experimental side&lt;/strong&gt; dedicated to understand the relationship between brain and cognition (by using pathological cases or natural variability of neurocognitive characteristics), and one &lt;strong&gt;clinical aspect&lt;/strong&gt;, focusing on bringing this knowledge to the benefit of the patients suffering from brain disorders.&lt;/p&gt;
+&lt;p&gt;However, beyond these two pillars of neuropsychology, recent advances have outlined a more &lt;strong&gt;theoretical level&lt;/strong&gt; of neuropsychology, dedicated to a high-level integration of the data at hand to elaborate general theories and interfacing them with evolutionary or philosophical principles. Similarly, a &lt;strong&gt;computational&lt;/strong&gt; facet, referring to the operationalization of the functioning in statistical terms, starts to emerge as a pseudo-independent aspect, propelled by the regain of interest and focus on the methodological and statistical aspects of psychology and neuroscience.&lt;/p&gt;
+&lt;p&gt;This structure is not fixed, but driven by the evolution of the field. It is possible that new poles will emerge, or differentiate over time, until maybe they separate from - or create new clusters within - neuropsychology.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;cycle.png&#34; alt=&#34;Structure of neuropsychology&#34;/&gt;
+  &lt;figcaption&gt;The fourfold structure of neuropsychology.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&#34;the-definition-of-neuropsychology&#34;&gt;The definition of neuropsychology&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Neuropsychology is a theoretical and practical science investigating the relationship between 1) the structure and functioning of the brain, and 2) cognitive processes and their related derivatives, such as thoughts, feelings and behaviours.&lt;/strong&gt; It is organised in four interconnected and overlapping dimensions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Experimental neuropsychology&lt;/strong&gt; studies the variability of the brain and cognition (whether from pathological origin or not) to test theories and models through empirical experimentation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clinical neuropsychology&lt;/strong&gt; uses theories and models about mental functioning to better detect and assess disorders and deficits, leading to a precise diagnostic and an adapted treatment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Computational neuropsychology&lt;/strong&gt; transforms the data acquired through experiments and observation into logical or statistical models of mental functioning that are used to operationalize the processes at stake.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Theoretical neuropsychology&lt;/strong&gt; integrates the evidence to elaborate and develop unifying theories to address fundamental questions about mental functioning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Neuropsychology is located at the crossroads between neuroscience and psychology, at the interface between theory and practice. &lt;strong&gt;Its practitioners, the neuropsychologists&lt;/strong&gt;, are bound by a specific training, by unique theoretical and historical references, and are endowed with an analysis and interpretation framework backed by a rigorous and scientific investigation methodology.&lt;/p&gt;
+&lt;!-- La neuropsychologie expérimentale étudie les variabilités du cerveau et de la cognition (qu’elles soient d’origine pathologique ou non) pour tester des modèles et développer des théories sur le fonctionnement mental, visant ainsi à une meilleure compréhension de l’Homme. --&gt;
+&lt;!-- La neuropsychologie clinique utilise les théories et les modèles sur le fonctionnement mental pour mieux détecter et appréhender les troubles et les déficits d’une pathologie, menant à un diagnostic précis, tout en développant et appliquant des prises en charges modernes et adaptées. --&gt;
+&lt;!-- La neuropsychologie se situe au centre de la nébuleuse des neurosciences, au carrefour de la théorie et de la pratique. Ses praticiens, les neuropsychologues, sont liés par une formation commune, des bases théoriques spécifiques, un canevas d’analyse et d’interprétation sous-tendu par une méthode d’investigation rigoureuse et scientifique.  --&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nicolas, S., &amp;amp; Murray, D. J. (1999). Théodule Ribot (1839–1916), founder of French psychology: A biographical introduction. History of Psychology, 2(4), 277.&lt;/li&gt;
+&lt;li&gt;Schopenhauer, A. (1813). &lt;em&gt;On the Fourfold Root of the Principle of Sufficient Reason&lt;/em&gt;. PhD dissertation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;sub&gt;You can reference this post as follows:&lt;/sub&gt;&lt;/p&gt;
+&lt;p&gt;&lt;sub&gt;- Makowski, D. (2020, September 13). What is Neuropsychology?. Retrieved from &lt;a href=&#34;https://dominiquemakowski.github.io/post/what_is_neuropsychology/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://dominiquemakowski.github.io/post/what_is_neuropsychology/&lt;/a&gt;&lt;/sub&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why psychologists should join GitHub</title>
+      <link>https://dominiquemakowski.github.io/post/2020-05-27-github_psychologists/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-05-27-github_psychologists/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Disclaimer:&lt;/strong&gt; I don&amp;rsquo;t have anything to do with GitHub, aside from being a simple user. This article is not an advertisement for it, but rather a perspective on the role of technical social networks in psychology.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;I already mentioned in &lt;a href=&#34;https://dominiquemakowski.github.io/post/r_or_python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;another post&lt;/a&gt; that &lt;strong&gt;technical aspects and skills will play an increasing role in psychology&lt;/strong&gt;. This relationship isn&amp;rsquo;t by any means new. More than a century ago, pioneering psychologists were demonstrating formidable engineering and craftsmanship skills to build new tools and apparatuses to measure what they were interested in (see for instance &lt;a href=&#34;https://dominiquemakowski.github.io/publication/nicolas2016can/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Nicolas &amp;amp; Makowski, 2016&lt;/a&gt;). But years have gone by, and the digital revolution has happened. As a result, most of the &amp;ldquo;technical&amp;rdquo; aspects (a rather vague term covering everything that is not related to the semantic knowledge of psychological theories and facts) are now ultimately tied to &lt;em&gt;software&lt;/em&gt;. Critically, &lt;strong&gt;your ability to use these softwares will determine the speed and ease at which you can achieve your goals and produce high quality assignments&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;As an example, during my studies, most of the statistics course was delivered through the usage of one particular software (Statistica© 🤮). At the exam, your score didn&amp;rsquo;t much depend on your understanding of what a &lt;em&gt;t&lt;/em&gt;-test is, when to use it or anything like that; but rather on your knowledge of the software, and your ability to &lt;strong&gt;click on the right buttons faster than your peers&lt;/strong&gt;. While this is an unfortunate example that can be used to criticize the reliance on tools rather than fundamental knowledge, it also tells us something about the reality of the current world. In research, the better you are for instance at data processing (which involves both the knowledge of how to navigate the software &lt;em&gt;and&lt;/em&gt; the knowledge of what to do in general), the faster you will be able to carry it out, and the less stressed you will be, resulting in a cascade of other positive outcomes (increased well-being, work-quality, productivity, opportunities, etc.).&lt;/p&gt;
+&lt;p&gt;However, &lt;strong&gt;one common mistake is to delay learning&lt;/strong&gt; new stuff (especially things outside our comfort zone) until we have no choice. This is understandable given that in the short term, certain skills may not be absolutely needed (i.e., you can manage without them) and acquiring them can be a steep learning curve (which can be hard, frustrating and effortful). However, you should start investing in your technical skills as soon as possible (as the time devoted to learning will only shrink as you advance) if you don&amp;rsquo;t want to become very &lt;strong&gt;close friends with pressure, stress, hatred, frustration and despair&lt;/strong&gt;. So stay on the light side of the force and embrace the future.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;vader.jpg&#34; alt=&#34;github for psychologists&#34;/&gt;
+  &lt;figcaption&gt;A psychology researcher realizing that he should have learned programming earlier.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;And it&amp;rsquo;s not just about learning to &lt;strong&gt;use&lt;/strong&gt; some software just for the sake of having things done and getting faster results. A lot of science is done &lt;em&gt;through&lt;/em&gt; software, not only &lt;em&gt;with&lt;/em&gt; them. People are actively discussing new methods, algorithms and tools that then expand like never before the possibilities of researchers. &lt;strong&gt;Flaming debates have been going on with frameworks and workflows clashing with thunderous sparks&lt;/strong&gt; (for instance, Bayesian &lt;em&gt;vs.&lt;/em&gt; frequentist statistics, ANOVAs &lt;em&gt;vs.&lt;/em&gt; (mixed) regressions, etc.), and these calls for change find echo because of developments of software, allowing initiated users to test, validate and use new methods.&lt;/p&gt;
+&lt;h2 id=&#34;open-access-software&#34;&gt;Open-access software&lt;/h2&gt;
+&lt;p&gt;It might not seem like it when you&amp;rsquo;re studying it at the university, but science is currently in the middle of a &lt;strong&gt;revolution&lt;/strong&gt;. A massive paradigmatic change, partly fuelled by the growth of &lt;strong&gt;open-science&lt;/strong&gt;, which covers aspects like open-access and open-source. This means, for software, that they are no longer being developed by private companies and sold for money. Instead, they are developed in a public fashion, and &lt;strong&gt;everybody is welcome to chime in and provide input, suggestions, report bugs or improve the code&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Open-source development means faster and better software, and more importantly, the creation of a &lt;strong&gt;true connection between developers and users&lt;/strong&gt;. In fact, the former are often first and foremost also the latter, meaning that in a lot of cases (at least, mine 😅), people started writing a software because they needed it for their own personal job.&lt;/p&gt;
+&lt;p&gt;But the beauty lies in the fact that &lt;strong&gt;users can seemingly become developers&lt;/strong&gt; too, or &lt;strong&gt;contributors&lt;/strong&gt;, at the very least. Sometimes, users end up on a software development page to solve a bug or an issue that they encountered. From there, there can start following the developments, and getting involved. And &lt;strong&gt;not necessarily be writing code&lt;/strong&gt;. It can be by answering to other issues, helping other users, reporting bugs and typos, improving the documentation, giving ideas and suggestions, testing new features and encouraging the developers. There are so many to contribute to the development and, as a result, become an active member of the open-science community. And moreover, doing so is also a great way to learn the theoretical bits. For instance, the most efficient way of learning the complexities of EEG acquisition and processing was to follow the development of an EEG-processing software (namely, &lt;a href=&#34;https://mne.tools/stable/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;MNE-Python&lt;/em&gt;&lt;/a&gt;). Reading issues that users encountered, and replies from experts and developers, trying to understand what functions do, what are the different parameters, what are the possibilities, the limits and so on.&lt;/p&gt;
+&lt;p&gt;All in all, engaging in open-source software is a great way to increase your technical expertise and get involved in the community of researchers. And who knows, you might meet cool people, create new connections, and that&amp;rsquo;s always great!&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;expectations.jpg&#34; alt=&#34;open source software expectations&#34;/&gt;
+  &lt;figcaption&gt;Help making the first pane true.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&#34;software-as-a-social-network&#34;&gt;Software as a social network&lt;/h2&gt;
+&lt;p&gt;Now that you&amp;rsquo;ve buckled up, ready to engage in open-source software, you might wonder; &lt;strong&gt;where does that happen?&lt;/strong&gt; Ladies and gentlemen, let me introduce &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Several years ago, when I was an undergrad student, I had to write a lot of stuff, such as for instance reports, project and theses. All of these documents went through several back and forths with supervisors, which made comments and modifications. But I was terribly afraid to remove some paragraph or sentence that I would need later on. As a result, I ended up in a hell in which my tormentors were named &lt;code&gt;project.docx&lt;/code&gt;, &lt;code&gt;project_v2.docx&lt;/code&gt;, &lt;code&gt;project_v3.docx&lt;/code&gt;, &lt;code&gt;project_v3_modifs.docx&lt;/code&gt;, &lt;code&gt;project_v3_final.docx&lt;/code&gt;, &lt;code&gt;project_v4_comments.docx&lt;/code&gt;, &lt;code&gt;project_v4_final.docx&lt;/code&gt;, &lt;code&gt;project_v4final2.docx&lt;/code&gt;, &lt;code&gt;project_v4_finalfinal.docx&lt;/code&gt;. And what if my computer broke &lt;sub&gt;&lt;sup&gt;(that was before Dropbox)&lt;/sup&gt;&lt;/sub&gt;? I could lose everything 😱&lt;/p&gt;
+&lt;p&gt;This is when I heard about something called &lt;strong&gt;version control&lt;/strong&gt;. Apparently, there was a system out there that allowed you to save &lt;strong&gt;all&lt;/strong&gt; your modifications, and be able to go back at &lt;em&gt;any&lt;/em&gt; point in time. This system was called &lt;em&gt;git&lt;/em&gt;, and it was super obscure. However, I discovered that this system had a, online interface, in the form of a website, on which you can go and upload files and documents for free. This is how &lt;strong&gt;I discovered GitHub&lt;/strong&gt;. And back in the days, it was really mostly used by programmers (because the nature of code makes it very suited for &lt;em&gt;version control&lt;/em&gt;), a world I didn&amp;rsquo;t belong to.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    There several great alternatives go &lt;em&gt;GitHub&lt;/em&gt;, like &lt;em&gt;GitLab&lt;/em&gt;, &lt;em&gt;BitBucket&lt;/em&gt;, etc., that might be just as good, if not better. The reason why I&amp;rsquo;m mainly talking about &lt;em&gt;GitHub&lt;/em&gt; here is because this post is not about the intrinsic quality or features of these platforms &lt;em&gt;for developers&lt;/em&gt;, but rather as a social network. An important part of any social network is its popularity and - as of for now - &lt;em&gt;GitHub&lt;/em&gt; is the most popular.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;I witnessed &lt;strong&gt;GitHub&lt;/strong&gt; growing and becoming a true &lt;em&gt;social network&lt;/em&gt;, improving its accessibility and user-friendliness. It is now more like a hub where all kinds of people gather to discuss software and technical bits, than a den for hairy geeks. There are also many users who are new to programming (e.g. researchers who are using software as a means to an end) and if you belong to this category of people, don&amp;rsquo;t underestimate your contribution to developers! Often it is such users that help developers improve user friendliness and identify code bugs (for example, when running the code on actual data sets). It is also used as a public technical portfolio, in which you can display your achievements, your projects and your interests. And while it was originally centred around programming, it has extended its audience quite a bit, and people are now using GitHub to store data (for instance the COVID-19 data), books, create websites (for instance, this website is stored on GitHub) or write scientific papers!&lt;/p&gt;
+&lt;p&gt;The reason why I&amp;rsquo;m writing this is because I know all too many young researchers, grappling with some software, struggling to find help, that are too shy to just contact the developers or the community. Just jump in there, create a public issue (instead of writing an email, so that your question will benefit future users). Most of the developers will be happy to help, and glad to see their software and code actually used by others.&lt;/p&gt;
+&lt;p&gt;In conclusion, go and dive into the world of open-science and open-source software, you&amp;rsquo;ll be on the right side of history. 😎&lt;/p&gt;
+&lt;h2 id=&#34;what-to-do-once-youre-on-github&#34;&gt;What to do once you&amp;rsquo;re on GitHub&lt;/h2&gt;
+&lt;p&gt;At the very least, the very first step is to create an account. Even if you don&amp;rsquo;t use it now, it will be useful in the future (it shows that you are interested in technical stuff, it allows you to post issues and connect to other platforms, and support developers).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Find&lt;/strong&gt; a package / software that you like. Super biased suggestions include:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/neuropsychology/NeuroKit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;NeuroKit&lt;/em&gt;&lt;/a&gt;: a Python package for Neurophysiological Signal Processing&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/easystats/bayestestR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;bayestestR&lt;/em&gt;&lt;/a&gt;: an R package for Bayesian statistics&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/easystats/correlation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;correlation&lt;/em&gt;&lt;/a&gt;: an R package for correlations&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/easystats/report&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;report&lt;/em&gt;&lt;/a&gt;: an R package to report statistics&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/easystats/effectsize&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;effectsize&lt;/em&gt;&lt;/a&gt;: an R package for effect sizes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/easystats/parameters&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;parameters&lt;/em&gt;&lt;/a&gt;: an R package for understanding statistical models&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/easystats/performance&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;performance&lt;/em&gt;&lt;/a&gt;: an R package for testing how good your model is&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;&lt;strong&gt;Watch it&lt;/strong&gt;&amp;rdquo; (the button in the top-right corner), so you&amp;rsquo;ll be notified of its activity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Read&lt;/strong&gt; the README file (the &amp;ldquo;front page&amp;rdquo;), check-out the issues, understand how to navigate the repository&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Engage&lt;/strong&gt; with the developers, create an issue to report bugs or problems, or just to express support - developing a software takes time and effort, and is often done out of passion and for free. Words of encouragement are always appreciated 🤗&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; your own &lt;a href=&#34;https://guides.github.com/activities/hello-world/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;repository&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make&lt;/strong&gt; your own &lt;a href=&#34;https://pages.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;website&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And if you want to learn how to use &lt;strong&gt;GitHub&lt;/strong&gt; to make contributions, check-out our &lt;a href=&#34;https://neurokit2.readthedocs.io/en/latest/tutorials/contributing.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;tutorial&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Let me know if I forgot something by adding a comment below&lt;/em&gt; 👇&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R or Python for Psychologists</title>
+      <link>https://dominiquemakowski.github.io/post/2020-05-22-r_or_python/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-05-22-r_or_python/</guid>
+      <description>&lt;p&gt;Many psychology students or researchers are faced with the challenge - &lt;em&gt;or the opportunity&lt;/em&gt; - of learning a programming language. &lt;strong&gt;Which one should you learn?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As an ex- psych student and a daily user and developer of both, here&amp;rsquo;s my take on this hot debate.&lt;/p&gt;
+&lt;h2 id=&#34;what-has-programming-to-do-with-psychology&#34;&gt;What has programming to do with psychology?&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;re a very young psychology student, or a future one, you might wonder: &lt;strong&gt;why the heck would I have to learn programming in psychology?&lt;/strong&gt; &lt;em&gt;&amp;ldquo;Psychology is like philosophy, it&amp;rsquo;s just learning how people&amp;rsquo;s minds work by reading books and overthinking stuff&amp;rdquo;&lt;/em&gt;. If you still think that, you&amp;rsquo;re in for &lt;strong&gt;one hell of a ride&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Psychology is, since its very beginning, a hard and experimental science. The founding fathers of psychology were dedicated to find ways to objectively &lt;em&gt;measure&lt;/em&gt; psychological phenomena and uncovering the mathematical laws that govern Human behaviour (one of the fields of psychology is even called psycho&lt;em&gt;physics&lt;/em&gt;). This &lt;em&gt;sciency&lt;/em&gt; nature has been toned down by the booming popularity of &lt;strong&gt;pseudo-scientific approaches like psychoanalysis&lt;/strong&gt;, that contributed to the stereotypical public image of the shrink doodling while listening to a neurotic patient. But that&amp;rsquo;s a distorted and old-fashioned view, clearly not representative of the future of psychology.&lt;/p&gt;
+&lt;p&gt;The fact is that psychology is very closely connected with &lt;strong&gt;statistics&lt;/strong&gt;. Many great statistical advances were made by psychologists, and all true psychological discoveries are backed by statistical findings. And this importance of statistics is - and will be - growing further, partly due to the recent realization of some major issues in the field due to improper statistical procedures (coined the &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/Replication_crisis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;replicability crisis&lt;/strong&gt;&lt;/a&gt;&amp;quot;). Moreover, psychology is more and more relying on advanced data-acquiring methods (smartphone apps, website data, physiological and brain recording devices like EEG, MRI, etc.). And these new formats often require specialized knowledge (web-scraping, database querying, neuroimaging, signal processing, machine learning, &amp;hellip;). Even in the most applied kind of &lt;strong&gt;clinical&lt;/strong&gt; or &lt;strong&gt;psychotherapeutic&lt;/strong&gt; specialization, where you&amp;rsquo;d think you&amp;rsquo;d be safe, they are starting to use data intensive methods like neuro-feedback, virtual reality or smartphone sensing and surveying.&lt;/p&gt;
+&lt;p&gt;Long story short, no matter which branch of psychology you specialize in, you &lt;em&gt;will&lt;/em&gt; be confronted with some technical aspects that won&amp;rsquo;t be able to solve with &lt;em&gt;Excel&lt;/em&gt;. Importantly, these are the skills that will make the most difference between students, and that will matter a lot if you want to pursue research.&lt;/p&gt;
+&lt;p&gt;So, &lt;strong&gt;ready to dive into programming?&lt;/strong&gt; Fear not! It&amp;rsquo;s not that complicated. Moreover, it&amp;rsquo;s &lt;strong&gt;one of the most rewarding skill&lt;/strong&gt; you can develop. I can assure you that you won&amp;rsquo;t regret the time invested in learning it 😊&lt;/p&gt;
+&lt;p&gt;But where should you start?&lt;/p&gt;
+&lt;h2 id=&#34;both-r-and-python&#34;&gt;Both R and Python&lt;/h2&gt;
+&lt;p&gt;This increasing relationship between psychology and statistics on the one hand, and other more general technical aspects on the other, is the reason why R and Python are so popular in psychology. Both languages are &lt;strong&gt;free&lt;/strong&gt;, &lt;strong&gt;open-source&lt;/strong&gt;, suited for &lt;strong&gt;beginners&lt;/strong&gt;, and have a large base of users with a ton of &lt;strong&gt;learning material&lt;/strong&gt; online. What&amp;rsquo;s the difference between them?&lt;/p&gt;
+&lt;p&gt;Put simply, &lt;strong&gt;R is for statistics, Python is for the rest&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;So why is there a virulent debate going on, and a choice to make? It&amp;rsquo;s true that I, &lt;em&gt;in theory&lt;/em&gt;, would recommend &lt;strong&gt;learning both&lt;/strong&gt;, as they are complementary and have their own strengths and weaknesses.&lt;/p&gt;
+&lt;p&gt;However, many opinionated people arguing in favour of one &lt;strong&gt;or&lt;/strong&gt; the other (usually the only one they know) will say that learning both is essentially a waste of time. They will put forth a strong argument: &lt;strong&gt;you can do whatever you do in R in Python, and &lt;em&gt;vice-versa&lt;/em&gt;&lt;/strong&gt;. In other words, both languages can be used to achieve your goals, and it&amp;rsquo;s &lt;strong&gt;better to specialize in one than have a limited knowledge of both&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Although I do not agree with that statement, I do acknowledge that people have limited time and resources to learn. Saying &lt;strong&gt;&amp;ldquo;just learn both&amp;rdquo;&lt;/strong&gt; is easy, but is arguably an unrealistic expectation for the vast majority of people. So why learning both can be a long-term goal (especially if you want to do research), you have to start somewhere. So, &lt;strong&gt;what starter language should you select?&lt;/strong&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;pokemon.png&#34; alt=&#34;r or python&#34;/&gt;
+  &lt;figcaption&gt;Ash choosing his starter programming language. He has the choice between R, Python and Bulbasaur, i.e, Matlab - the one that no one likes.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&#34;what-about-matlab&#34;&gt;What about Matlab?&lt;/h2&gt;
+&lt;p&gt;There was a time when &lt;em&gt;Matlab&lt;/em&gt; was the boss. It was used everywhere and had the best functionalities for neuroimaging, signal processing and maths. But &lt;strong&gt;that time is over&lt;/strong&gt;. Matlab is already a dead language, which burial process will continue in the years to come. Why is it dead? Because it is &lt;strong&gt;expensive&lt;/strong&gt;, &lt;strong&gt;closed&lt;/strong&gt;, &lt;strong&gt;ugly&lt;/strong&gt;, and most importantly the alternatives (namely R and Python) are now more powerful and featured than Matlab.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://media.giphy.com/media/sDOhzJBsFvjMY/giphy.gif&#34; alt=&#34;matlab&#34;/&gt;
+  &lt;figcaption&gt;Agamemnon reacting to king Priam saying &#34;The city of Matlab will never be conquered&#34;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The truth is, there are only two reasons people still use Matlab: &lt;strong&gt;habit&lt;/strong&gt; (it&amp;rsquo;s hard to learn a new approach if your old way of doing things still works) and &lt;strong&gt;SPM&lt;/strong&gt; (a toolbox for neuroimaging that is still - &lt;em&gt;for now&lt;/em&gt; - the leader in the field).&lt;/p&gt;
+&lt;p&gt;But seriously, don&amp;rsquo;t waste time on it if you have limited resources, it&amp;rsquo;s just not worth it. You will learn an outdated tool that you won&amp;rsquo;t be able to use in another lab if they don&amp;rsquo;t agree to pay for an expensive license (unless you&amp;rsquo;re a pirate ☠️). Whereas with open and free languages like R or Python, you have access to the best tools and can use them freely everywhere. Also, it makes you a &lt;strong&gt;supporter of open-science&lt;/strong&gt;, and that&amp;rsquo;s trendy 😁.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-decide-between-r-and-python&#34;&gt;How to decide between R and Python&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Time has come to make a decision.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Despite what people say, &lt;strong&gt;R and Python are not equivalent&lt;/strong&gt;. You can argue as much as you want, but doing statistics and data visualization in Python is not as fast, easy and neat as it is in R. And signal processing or neuroimaging is not as powerful in R as compared to Python. Note that both languages are still growing and changing, and they are influencing themselves: for instance, many popular Python modules (e.g., &lt;strong&gt;pandas&lt;/strong&gt;, &lt;strong&gt;statsmodels&lt;/strong&gt;, &lt;strong&gt;seaborn&lt;/strong&gt;, &amp;hellip;) have been directly inspired by R. As such, the boundaries between the two languages are fading (and I&amp;rsquo;m not even mentioning the great advances in interoperability, with tools like &lt;a href=&#34;https://rstudio.github.io/reticulate/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;reticulate&lt;/strong&gt;&lt;/a&gt; that allow you to use one language directly inside the other).&lt;/p&gt;
+&lt;p&gt;That being said, Python and R remain very different languages at their core, with a different feel and vibe to it. R was made by statisticians for statistics, and the majority of its users are academics and researchers. On the contrary, Python is a true general-purpose &amp;ldquo;programming&amp;rdquo; language, widely used outside of academia, in the private sector.&lt;/p&gt;
+&lt;p&gt;Here are some things to consider when deciding on what language to learn:&lt;/p&gt;
+&lt;h3 id=&#34;reasons-to-choose-python&#34;&gt;Reasons to choose Python&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You have some basic knowledge or familiarity with programming&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For instance, you know what a loop is. Python being a true programming language, having any prior experience will be useful.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are good with logic and spatial representation (like imagining shapes in 3D, rotating them, etc.)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Python, you will have to think with a &amp;ldquo;programming&amp;rdquo; mindset. That means perceiving things in terms of logical statements and blocks, understanding data as 2D or 3D tables that you have to slice and recombine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are comfortable with maths&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Python, numbers and numbers combinations are used a lot. Paradoxically, you will typically see a lot more of maths in Python than in R.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You plan to do signal processing or experimental tasks creation&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are some of the domains where Python is well-established (which doesn&amp;rsquo;t mean that R doesn&amp;rsquo;t have some great tools in development).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are good at googling and don&amp;rsquo;t mind spending time looking for the right answer&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python has so much material online that it&amp;rsquo;s sometimes hard to find the appropriate thing. Harder than in R, in my opinion.&lt;/p&gt;
+&lt;h3 id=&#34;reasons-to-choose-r&#34;&gt;Reasons to choose R&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You have no experience with programming whatsoever&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;R is not made to be used as a traditional &lt;em&gt;programming&lt;/em&gt; language. It&amp;rsquo;s more of finding what functions to apply to what, and that makes it easy for beginners.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are interested in statistical analyses, modelling things, and making inferences from data&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;R excels at this. You can create powerful models super easily and jump into their understanding and interpretation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You like making nice figures and plots&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;R, through the &lt;a href=&#34;https://ggplot2.tidyverse.org/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;ggplot&lt;/strong&gt;&lt;/a&gt; ecosystem, has hands down the best tools for visualization. Your imagination is the limit (check-out the artworks by &lt;a href=&#34;https://www.data-imaginist.com/art&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thomas Lin Pedersen&lt;/a&gt; abd &lt;a href=&#34;https://art.djnavarro.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Danielle Navarro&lt;/a&gt; 😍).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are &lt;em&gt;not&lt;/em&gt; so good with stats or maths&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You heard it right! To start with R you don&amp;rsquo;t need to know stats or maths like a boss. R, in fact, will help you to become proficient at it, by slowly opening more and more layers of complexity to you, if you are deemed worthy.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are interested in joining the academic community&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Because most of its users are academics, R has a fantastic community online, for instance on &lt;a href=&#34;https://twitter.com/hashtag/rstats&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Twitter #rstats&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;other-considerations&#34;&gt;Other considerations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What your peers are learning&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&amp;rsquo;s easier to learn together, so try to discuss it with your class or lab mates if you can.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What your lab is using&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It might be easier if you have mentors that can understand what you are doing and guide you. But that should not be a priority, as it can lead to old habits reproduction (especially if your lab has a tradition of Matlab 🤭).&lt;/p&gt;
+&lt;h2 id=&#34;hands-on&#34;&gt;Hands on!&lt;/h2&gt;
+&lt;p&gt;👉 Looking for places to start? Check out this &lt;a href=&#34;https://neurokit2.readthedocs.io/en/latest/tutorials/learnpython.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;10-min crash course introduction to Python&lt;/strong&gt;&lt;/a&gt; and this &lt;a href=&#34;https://easystats.github.io/blog/resources/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;collection of resources for R&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading!&lt;/em&gt; 🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; (&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;) &lt;em&gt;and leave a comment below&lt;/em&gt; 👇&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to correctly analyze reaction time (RT) data</title>
+      <link>https://dominiquemakowski.github.io/post/2020-05-18-analyze_rt/</link>
+      <pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-05-18-analyze_rt/</guid>
+      <description>&lt;p&gt;This is a very, very important topic given the widespread usage of reaction times in psychology. Most of the time, we analyze it as a regular variable, using traditional models such as &lt;em&gt;linear models&lt;/em&gt;, &lt;em&gt;ANOVAs&lt;/em&gt; etc. The problem is that these models &lt;strong&gt;assume that the RT is normally distributed, which is false&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This leads us to adjustements like &lt;strong&gt;outliers removal&lt;/strong&gt; or &lt;strong&gt;log-transformation&lt;/strong&gt;, distorting the data because of our non-appropriate models.&lt;/p&gt;
+&lt;p&gt;The good news is, it&amp;rsquo;s very easy to use better models, that account for the non-normal distribution of RT. And these alternatives are beautifully presented by &lt;a href=&#34;https://vbn.aau.dk/da/persons/117060&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jonas K. Lindeløv&lt;/a&gt; in the guide below:&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href=&#34;https://lindeloev.github.io/shiny-rt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Reaction time distributions: an interactive overview&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;p&gt;It is a must-read for all psychologist. Do check-it out!!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;And don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>One Python code line for a Mandelbrot fractal</title>
+      <link>https://dominiquemakowski.github.io/post/2020-05-16-python_mandelbrot/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-05-16-python_mandelbrot/</guid>
+      <description>&lt;h2 id=&#34;mandelbrot-set&#34;&gt;Mandelbrot Set&lt;/h2&gt;
+&lt;p&gt;I wrote a small Python function to easily generate and plot a &lt;a href=&#34;https://en.wikipedia.org/wiki/Mandelbrot_set&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mandelbrot set&lt;/a&gt;. This function is now available through the &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit#quick-example&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;NeuroKit2 package&lt;/strong&gt;&lt;/a&gt;, and can be used as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import neurokit2 as nk
+
+nk.fractal_mandelbrot(show=True)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The Mandelbrot set is defined in the between &lt;code&gt;-2&lt;/code&gt; and &lt;code&gt;2&lt;/code&gt; on the &lt;em&gt;x&lt;/em&gt; (real) and &lt;em&gt;y&lt;/em&gt; (imaginary) axes. Following that, the image can be cropped accodingly by changing the coordinates. Moreover, the colors can be tweaked by changing the the colormap (&lt;code&gt;cmap&lt;/code&gt;).&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;m = nk.fractal_mandelbrot(real_range=(-2, 0.75), imaginary_range=(-1.25, 1.25))
+plt.imshow(m.T, cmap=&amp;quot;viridis&amp;quot;)
+plt.axis(&amp;quot;off&amp;quot;)
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;buddhabrot-set&#34;&gt;Buddhabrot Set&lt;/h2&gt;
+&lt;p&gt;It is also possible to generate a &lt;a href=&#34;https://en.wikipedia.org/wiki/Buddhabrot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Buddhabrot&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;b = nk.fractal_mandelbrot(size=1500,
+                          real_range=(-2, 0.75), imaginary_range=(-1.25, 1.25),
+                          buddha=True, iterations=200)
+plt.imshow(b.T, cmap=&amp;quot;gray&amp;quot;)
+plt.axis(&amp;quot;off&amp;quot;)
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Added the option to return a so-called &amp;#39;Buddhabrot&amp;#39;🧘 Amazing to see these shapes emerging from such a simple formula 🤯 &lt;a href=&#34;https://twitter.com/hashtag/fractalart?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#fractalart&lt;/a&gt; &lt;a href=&#34;https://t.co/7nzxsvQa6R&#34;&gt;pic.twitter.com/7nzxsvQa6R&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dominique Makowski 🧙 (@Dom_Makowski) &lt;a href=&#34;https://twitter.com/Dom_Makowski/status/1258376273451053056?ref_src=twsrc%5Etfw&#34;&gt;May 7, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Althoug the NeuroKit Python package is primarily devoted at physiological signal processing, in also includes tons of other useful features.&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit#quick-example&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Discover more about NeuroKit here&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;p&gt;Have fun!&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>In defence of the 95% CI</title>
+      <link>https://dominiquemakowski.github.io/post/2020-05-15-defence_ci95/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-05-15-defence_ci95/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;TLDR;&lt;/strong&gt; &lt;a href=&#34;https://github.com/easystats/bayestestR&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;BayestestR&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;currently uses a 89% threshold by default for Credible Intervals (CI). Should we change that? If so, by what?&lt;/strong&gt; &lt;a href=&#34;https://github.com/easystats/bayestestR/issues/250&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;&lt;strong&gt;Join the discussion here.&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Magical numbers, or conventional thresholds, have bad press in statistics, and there are many of them. For instance, &lt;strong&gt;.05&lt;/strong&gt; (for the &lt;em&gt;p&lt;/em&gt;-value), or the &lt;strong&gt;95%&lt;/strong&gt; range for the &lt;strong&gt;Confidence Interval&lt;/strong&gt; (CI). Indeed, why 95 and not 94 or 90?&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href=&#34;https://easystats.github.io/blog/posts/bayestestr_95/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Read my complete post on the easystats&#39; blog&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Bayesian statistics with R</title>
+      <link>https://dominiquemakowski.github.io/post/2020-05-14-intro_bayestestr/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-05-14-intro_bayestestr/</guid>
+      <description>&lt;p&gt;You are a student or a researcher interested in Bayesian statistics and R? But all the tutorials and courses that you have found are too intimidating?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fear no more!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;With the &lt;a href=&#34;https://github.com/easystats/easystats&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;easystats team&lt;/a&gt;, we have created a very &lt;strong&gt;gentle&lt;/strong&gt; and &lt;strong&gt;introductory&lt;/strong&gt; course for beginners.&lt;/p&gt;
+&lt;p&gt;You can find the link here:&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href=&#34;https://easystats.github.io/bayestestR/articles/bayestestR.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Get Started with Bayesian Statistics using R&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A compilation of the best visual illusions</title>
+      <link>https://dominiquemakowski.github.io/post/2020-05-13-visual_illusions/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-05-13-visual_illusions/</guid>
+      <description>&lt;h3 id=&#34;the-main-source-for-visual-illusions&#34;&gt;The main source for visual illusions&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Welcome to my illusion website!&lt;a href=&#34;https://t.co/1DJIwbj0P9&#34;&gt;https://t.co/1DJIwbj0P9&lt;/a&gt; &lt;a href=&#34;https://t.co/SYiK0JvJJl&#34;&gt;pic.twitter.com/SYiK0JvJJl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Akiyoshi Kitaoka (@AkiyoshiKitaoka) &lt;a href=&#34;https://twitter.com/AkiyoshiKitaoka/status/1253137100582449152?ref_src=twsrc%5Etfw&#34;&gt;April 23, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;comic&#34;&gt;Comic&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A perceptual illusion walks into the bar... &lt;a href=&#34;https://t.co/svD1rtRcpT&#34;&gt;pic.twitter.com/svD1rtRcpT&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jay Van Bavel (@jayvanbavel) &lt;a href=&#34;https://twitter.com/jayvanbavel/status/1295757004124848130?ref_src=twsrc%5Etfw&#34;&gt;August 18, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-deformation&#34;&gt;Illusion of deformation&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Another amazing illusion from the amazing &lt;a href=&#34;https://twitter.com/jagarikin?ref_src=twsrc%5Etfw&#34;&gt;@jagarikin&lt;/a&gt;: The ring on the left seems to be bigger and expanding, the one on the right smaller and contracting... but they&amp;#39;re both the same size and neither is expanding or contracting at all. 😮 &lt;a href=&#34;https://t.co/dchwX994PG&#34;&gt;pic.twitter.com/dchwX994PG&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steve Stewart-Williams (@SteveStuWill) &lt;a href=&#34;https://twitter.com/SteveStuWill/status/1295110751309279232?ref_src=twsrc%5Etfw&#34;&gt;August 16, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-rotation&#34;&gt;Illusion of rotation&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;回転して見えたらRT &lt;a href=&#34;https://t.co/WBoG7rAD2f&#34;&gt;pic.twitter.com/WBoG7rAD2f&lt;/a&gt;&lt;/p&gt;&amp;mdash; じゃがりきん (@jagarikin) &lt;a href=&#34;https://twitter.com/jagarikin/status/1286479003910467584?ref_src=twsrc%5Etfw&#34;&gt;July 24, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-colour&#34;&gt;Illusion of colour&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Both people are the same colour in all three panels - an effect called &amp;#39;colour constancy&amp;#39; &lt;a href=&#34;https://t.co/CacNuJo54H&#34;&gt;pic.twitter.com/CacNuJo54H&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gavin Buckingham (@DrGBuckingham) &lt;a href=&#34;https://twitter.com/DrGBuckingham/status/1279494302968791050?ref_src=twsrc%5Etfw&#34;&gt;July 4, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-sound-escalation&#34;&gt;Illusion of sound escalation&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Something about the continous fall here reminded me of this&lt;a href=&#34;https://t.co/ABeEmdXeNK&#34;&gt;https://t.co/ABeEmdXeNK&lt;/a&gt;&lt;/p&gt;&amp;mdash; Amogha Udupa (@amg_omg) &lt;a href=&#34;https://twitter.com/amg_omg/status/1278919105341386752?ref_src=twsrc%5Etfw&#34;&gt;July 3, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-movement-angle&#34;&gt;Illusion of movement angle&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The curveball illusion&lt;br&gt;&lt;br&gt;The ball is falling straight down, but try not looking directly at it &lt;a href=&#34;https://t.co/ydJlzfZb0F&#34;&gt;pic.twitter.com/ydJlzfZb0F&lt;/a&gt;&lt;/p&gt;&amp;mdash; 〈 Berger |🎃| Dillon 〉 (@InertialObservr) &lt;a href=&#34;https://twitter.com/InertialObservr/status/1278805135850827776?ref_src=twsrc%5Etfw&#34;&gt;July 2, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-shape&#34;&gt;Illusion of shape&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;When you fixate on the yellow point, do you see dark triangles connecting the discs to the yellow point? Thanks to &lt;a href=&#34;https://twitter.com/Pascallisch?ref_src=twsrc%5Etfw&#34;&gt;@Pascallisch&lt;/a&gt;, my old broken movie of the &amp;quot;spokes illusion&amp;quot; has been fixed. &lt;a href=&#34;https://t.co/edvLLXcShO&#34;&gt;pic.twitter.com/edvLLXcShO&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alex Holcombe (@ceptional) &lt;a href=&#34;https://twitter.com/ceptional/status/1278885404142211072?ref_src=twsrc%5Etfw&#34;&gt;July 3, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-deformation-1&#34;&gt;Illusion of deformation&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;None of these lines are any more spikey than the others - really powerful illusion by Takahashi (2017) &lt;a href=&#34;https://t.co/Xr8ncWNNGE&#34;&gt;pic.twitter.com/Xr8ncWNNGE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gavin Buckingham (@DrGBuckingham) &lt;a href=&#34;https://twitter.com/DrGBuckingham/status/1278385871973122050?ref_src=twsrc%5Etfw&#34;&gt;July 1, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-colour-1&#34;&gt;Illusion of colour&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;In a classic visual illusion, two identical dots look very dissimilar against backgrounds of different colors. A new BCS-led study suggests that this visual processing takes place outside the brain’s visual cortex, possibly within the retina. &lt;a href=&#34;https://t.co/D2NIZJUEye&#34;&gt;https://t.co/D2NIZJUEye&lt;/a&gt; &lt;a href=&#34;https://t.co/WrfE4qTmOh&#34;&gt;pic.twitter.com/WrfE4qTmOh&lt;/a&gt;&lt;/p&gt;&amp;mdash; Massachusetts Institute of Technology (MIT) (@MIT) &lt;a href=&#34;https://twitter.com/MIT/status/1273270677798297603?ref_src=twsrc%5Etfw&#34;&gt;June 17, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-different-rotation-direction&#34;&gt;Illusion of different rotation direction&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;If this does not mess with your visual system, I don&amp;#39;t know what will... &lt;a href=&#34;https://t.co/vwxATYx39x&#34;&gt;pic.twitter.com/vwxATYx39x&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tim Kietzmann (@TimKietzmann) &lt;a href=&#34;https://twitter.com/TimKietzmann/status/1272517256845672450?ref_src=twsrc%5Etfw&#34;&gt;June 15, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-different-luminance&#34;&gt;Illusion of different luminance&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Both pears are the same colour and luminance, despite one seeming brighter than the other &lt;a href=&#34;https://t.co/KkUJlTI82R&#34;&gt;pic.twitter.com/KkUJlTI82R&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gavin Buckingham (@DrGBuckingham) &lt;a href=&#34;https://twitter.com/DrGBuckingham/status/1262127098644377601?ref_src=twsrc%5Etfw&#34;&gt;May 17, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-a-light-like-brightness&#34;&gt;Illusion of a &amp;lsquo;light-like&amp;rsquo; brightness&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;And as I have tweeted before, your pupil actually constricts when you look at this illusion, just as it would if you looked at a bright light.  Here&amp;#39;s a paper looking at this phenomenon.  It&amp;#39;s a wonderful illusion.&lt;a href=&#34;https://t.co/EAxK4hGLAH&#34;&gt;https://t.co/EAxK4hGLAH&lt;/a&gt; &lt;a href=&#34;https://t.co/aClvekrSN6&#34;&gt;https://t.co/aClvekrSN6&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mel_Goodale (@action_brain) &lt;a href=&#34;https://twitter.com/action_brain/status/1261831522216292352?ref_src=twsrc%5Etfw&#34;&gt;May 17, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-deformation-2&#34;&gt;Illusion of deformation&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;「サクラソウの丘」&lt;br&gt;The checker pattern is aligned vertically and horizontally, but the image appears to bulge out. &lt;a href=&#34;https://t.co/CyCmTPYaDz&#34;&gt;pic.twitter.com/CyCmTPYaDz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Akiyoshi Kitaoka (@AkiyoshiKitaoka) &lt;a href=&#34;https://twitter.com/AkiyoshiKitaoka/status/1250001227233906689?ref_src=twsrc%5Etfw&#34;&gt;April 14, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-colour-2&#34;&gt;Illusion of colour&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;This is a black and white photograph. Only the lines have colour.&lt;br&gt;&lt;br&gt;What you “see” is what your 🧠 predicts the reality to be, given the imperfect information it gets. &lt;a href=&#34;https://t.co/gwttlcC2Zw&#34;&gt;pic.twitter.com/gwttlcC2Zw&lt;/a&gt;&lt;/p&gt;&amp;mdash; Lionel Page (@page_eco) &lt;a href=&#34;https://twitter.com/page_eco/status/1155077311399489536?ref_src=twsrc%5Etfw&#34;&gt;July 27, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-deformation-3&#34;&gt;Illusion of deformation&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Adding small crosses at each intersection makes this perfectly normal grid all wonky! &lt;a href=&#34;https://t.co/DONyCqyh9A&#34;&gt;pic.twitter.com/DONyCqyh9A&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gavin Buckingham (@DrGBuckingham) &lt;a href=&#34;https://twitter.com/DrGBuckingham/status/1248880110163427330?ref_src=twsrc%5Etfw&#34;&gt;April 11, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-different-movement-speed&#34;&gt;Illusion of different movement speed&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Interesting illusion. The upper rectangle appears to be moving faster. &lt;a href=&#34;https://t.co/LI9Eh7vezy&#34;&gt;https://t.co/LI9Eh7vezy&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mel_Goodale (@action_brain) &lt;a href=&#34;https://twitter.com/action_brain/status/1247373232010862592?ref_src=twsrc%5Etfw&#34;&gt;April 7, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-different-rotation-direction-1&#34;&gt;Illusion of different rotation direction&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Rings appear to rotate clockwise, though they actually rotate counterclockwise.&lt;br&gt;&lt;br&gt;(a demo of &amp;quot;reversed phi&amp;quot; produced with phenomenal phenomena) &lt;a href=&#34;https://t.co/NyfTd12eAl&#34;&gt;pic.twitter.com/NyfTd12eAl&lt;/a&gt;&lt;/p&gt;&amp;mdash; Akiyoshi Kitaoka (@AkiyoshiKitaoka) &lt;a href=&#34;https://twitter.com/AkiyoshiKitaoka/status/1245547434547109888?ref_src=twsrc%5Etfw&#34;&gt;April 2, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-movement&#34;&gt;Illusion of movement&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Extremely strong effect. One of the best I’ve seen &lt;a href=&#34;https://t.co/hCK0URgWrd&#34;&gt;https://t.co/hCK0URgWrd&lt;/a&gt;&lt;/p&gt;&amp;mdash; Thomas Lin Pedersen (@thomasp85) &lt;a href=&#34;https://twitter.com/thomasp85/status/1228614789473198081?ref_src=twsrc%5Etfw&#34;&gt;February 15, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-different-size&#34;&gt;Illusion of different size&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;I&amp;#39;m biased here, but this is one of the strongest visual illusions I have ever seen.&lt;br&gt;&lt;br&gt;None of the colored lines are moving. &lt;a href=&#34;https://t.co/QcW3u6WFB4&#34;&gt;pic.twitter.com/QcW3u6WFB4&lt;/a&gt;&lt;/p&gt;&amp;mdash; Chris Said (@Chris_Said) &lt;a href=&#34;https://twitter.com/Chris_Said/status/1213217943414136833?ref_src=twsrc%5Etfw&#34;&gt;January 3, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-colour-3&#34;&gt;Illusion of colour&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Stare at the centre and see green which is never there! &lt;a href=&#34;https://t.co/kHys53GbUz&#34;&gt;pic.twitter.com/kHys53GbUz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gavin Buckingham (@DrGBuckingham) &lt;a href=&#34;https://twitter.com/DrGBuckingham/status/1173212442089984003?ref_src=twsrc%5Etfw&#34;&gt;September 15, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;illusion-of-different-luminance-1&#34;&gt;Illusion of different luminance&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The word &amp;quot;Gray&amp;quot; is always exactly the same shade of gray. &lt;a href=&#34;https://t.co/KYhk3xE0r5&#34;&gt;pic.twitter.com/KYhk3xE0r5&lt;/a&gt;&lt;/p&gt;&amp;mdash; Robert Volcic (@VolcicR) &lt;a href=&#34;https://twitter.com/VolcicR/status/1140882128189743105?ref_src=twsrc%5Etfw&#34;&gt;June 18, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Do you know other cool visual illusions? Let me know in the comments below!&lt;/strong&gt; 🤗&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post and don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 🐦 &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The funniest academic tweets</title>
+      <link>https://dominiquemakowski.github.io/post/2020-05-12-funny_academic/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-05-12-funny_academic/</guid>
+      <description>&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Every. Damn. Time. &lt;a href=&#34;https://t.co/Bs8NzSLz00&#34;&gt;pic.twitter.com/Bs8NzSLz00&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dan Quintana (@dsquintana) &lt;a href=&#34;https://twitter.com/dsquintana/status/1284177394052534274?ref_src=twsrc%5Etfw&#34;&gt;July 17, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;it me during my postdoc &lt;a href=&#34;https://t.co/KKgXXntsL1&#34;&gt;pic.twitter.com/KKgXXntsL1&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Stevie Chancellor (@snchancellor) &lt;a href=&#34;https://twitter.com/snchancellor/status/1215313878311211008?ref_src=twsrc%5Etfw&#34;&gt;January 9, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;my plans                                           2020 &lt;a href=&#34;https://t.co/n3vlR1Tcfo&#34;&gt;pic.twitter.com/n3vlR1Tcfo&lt;/a&gt;&lt;/p&gt;&amp;mdash; John Borghi (@JohnBorghi) &lt;a href=&#34;https://twitter.com/JohnBorghi/status/1263243077059096576?ref_src=twsrc%5Etfw&#34;&gt;May 20, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Academics looking for happiness be like...  &lt;a href=&#34;https://t.co/dR3ZUQsJ7G&#34;&gt;https://t.co/dR3ZUQsJ7G&lt;/a&gt;&lt;/p&gt;&amp;mdash; josh grubbs (@JoshuaGrubbsPhD) &lt;a href=&#34;https://twitter.com/JoshuaGrubbsPhD/status/1260592038350897152?ref_src=twsrc%5Etfw&#34;&gt;May 13, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Hi everyone, here&amp;#39;s some quality content to brighten your day: &lt;a href=&#34;https://t.co/RrxgKf5tpg&#34;&gt;pic.twitter.com/RrxgKf5tpg&lt;/a&gt;&lt;/p&gt;&amp;mdash; Nathaniel Haines (@Nate__Haines) &lt;a href=&#34;https://twitter.com/Nate__Haines/status/1238465188132564998?ref_src=twsrc%5Etfw&#34;&gt;March 13, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;When you go to a conference and only know one other person &lt;a href=&#34;https://t.co/eHJEVKlH2Z&#34;&gt;pic.twitter.com/eHJEVKlH2Z&lt;/a&gt;&lt;/p&gt;&amp;mdash; David Howard (@Used_For_Glue) &lt;a href=&#34;https://twitter.com/Used_For_Glue/status/1216757285277577216?ref_src=twsrc%5Etfw&#34;&gt;January 13, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;What every submission site should have &lt;a href=&#34;https://t.co/0AhenF0aB5&#34;&gt;pic.twitter.com/0AhenF0aB5&lt;/a&gt;&lt;/p&gt;&amp;mdash; PHD Comics (@PHDcomics) &lt;a href=&#34;https://twitter.com/PHDcomics/status/1206739056194834433?ref_src=twsrc%5Etfw&#34;&gt;December 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The postdoc to PI transition: &lt;a href=&#34;https://t.co/wzqB5nBcpm&#34;&gt;https://t.co/wzqB5nBcpm&lt;/a&gt;&lt;/p&gt;&amp;mdash; Mike Feigin (@mikefeigin) &lt;a href=&#34;https://twitter.com/mikefeigin/status/1206575693787742208?ref_src=twsrc%5Etfw&#34;&gt;December 16, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Reading stats twitter. &lt;a href=&#34;https://t.co/8dLyCBoTbM&#34;&gt;pic.twitter.com/8dLyCBoTbM&lt;/a&gt;&lt;/p&gt;&amp;mdash; Daniël Lakens (@lakens) &lt;a href=&#34;https://twitter.com/lakens/status/1198892743554191360?ref_src=twsrc%5Etfw&#34;&gt;November 25, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Scientist: carefully designs experiment&lt;br&gt;&lt;br&gt;Participant:&lt;a href=&#34;https://t.co/1a8FqbfCZc&#34;&gt;https://t.co/1a8FqbfCZc&lt;/a&gt;&lt;/p&gt;&amp;mdash; Lionel Page (@page_eco) &lt;a href=&#34;https://twitter.com/page_eco/status/1199785753842089984?ref_src=twsrc%5Etfw&#34;&gt;November 27, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“As requested by the reviewer, we double-checked the page numbers for each of our references” &lt;a href=&#34;https://t.co/9a4y1SGlEh&#34;&gt;pic.twitter.com/9a4y1SGlEh&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dan Quintana (@dsquintana) &lt;a href=&#34;https://twitter.com/dsquintana/status/1196015741423804416?ref_src=twsrc%5Etfw&#34;&gt;November 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://t.co/hlfDFOIt5L&#34;&gt;pic.twitter.com/hlfDFOIt5L&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Jess Hartnett 📊 (@Notawful) &lt;a href=&#34;https://twitter.com/Notawful/status/1188046694619009024?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Publisher: &amp;quot;unless we charge USD 10,000 per article, we won&amp;#39;t be able to survive&amp;quot;&lt;br&gt;&lt;br&gt;Researchers: &lt;a href=&#34;https://t.co/oh2i4i4KdI&#34;&gt;pic.twitter.com/oh2i4i4KdI&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Alejandro Montenegro (@aemonten) &lt;a href=&#34;https://twitter.com/aemonten/status/1187792397285154816?ref_src=twsrc%5Etfw&#34;&gt;October 25, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;when double-blind peer review isn&amp;#39;t&lt;a href=&#34;https://t.co/POYerkoHtw&#34;&gt;pic.twitter.com/POYerkoHtw&lt;/a&gt;&lt;/p&gt;&amp;mdash; Chaz Firestone (@chazfirestone) &lt;a href=&#34;https://twitter.com/chazfirestone/status/1184719136229863424?ref_src=twsrc%5Etfw&#34;&gt;October 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;For my upcoming 2-day R workshop. &lt;a href=&#34;https://t.co/cJjmqi2aLp&#34;&gt;pic.twitter.com/cJjmqi2aLp&lt;/a&gt;&lt;/p&gt;&amp;mdash; Darren Dahly, PhD (@statsepi) &lt;a href=&#34;https://twitter.com/statsepi/status/795574223439876100?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Me post submission proofing and finding mistakes everywhere &lt;a href=&#34;https://twitter.com/AcademicChatter?ref_src=twsrc%5Etfw&#34;&gt;@AcademicChatter&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/academictwitter?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#academictwitter&lt;/a&gt;&lt;br&gt;&lt;br&gt; &lt;a href=&#34;https://t.co/WB2gkft53t&#34;&gt;pic.twitter.com/WB2gkft53t&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sam Westwood (@westwoodsam1) &lt;a href=&#34;https://twitter.com/westwoodsam1/status/1184547741185257473?ref_src=twsrc%5Etfw&#34;&gt;October 16, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Buying a high spec computer to run t-tests &lt;a href=&#34;https://t.co/DQvlDUtAzh&#34;&gt;pic.twitter.com/DQvlDUtAzh&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dan Quintana (@dsquintana) &lt;a href=&#34;https://twitter.com/dsquintana/status/1180315419506163712?ref_src=twsrc%5Etfw&#34;&gt;October 5, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Moving a figure in Word &lt;a href=&#34;https://t.co/ef7ctQn3R4&#34;&gt;pic.twitter.com/ef7ctQn3R4&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Alejandro Montenegro (@aemonten) &lt;a href=&#34;https://twitter.com/aemonten/status/1173072125143474176?ref_src=twsrc%5Etfw&#34;&gt;September 15, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Academics: read the syllabus&lt;br&gt;&lt;br&gt;Also academics: did you send that to me already, I get a lot of emails, I didn&amp;#39;t read it, what did it say, can you send it again &lt;a href=&#34;https://t.co/xFaOwV9Z9h&#34;&gt;pic.twitter.com/xFaOwV9Z9h&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr Meryl Kenny (@merylkenny) &lt;a href=&#34;https://twitter.com/merylkenny/status/1172102323751084034?ref_src=twsrc%5Etfw&#34;&gt;September 12, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;when your deep learning model is literally just a logistic regression &lt;a href=&#34;https://t.co/YB1j1qqML0&#34;&gt;pic.twitter.com/YB1j1qqML0&lt;/a&gt;&lt;/p&gt;&amp;mdash; 🔥 Kareem Carr 🔥 (@kareem_carr) &lt;a href=&#34;https://twitter.com/kareem_carr/status/1167081972453109760?ref_src=twsrc%5Etfw&#34;&gt;August 29, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;How reimbursements in academia work: &lt;a href=&#34;https://t.co/XWEtz3rfXO&#34;&gt;pic.twitter.com/XWEtz3rfXO&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Dani Beck (@_DaniBeck) &lt;a href=&#34;https://twitter.com/_DaniBeck/status/1164511425257189378?ref_src=twsrc%5Etfw&#34;&gt;August 22, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;🐿: Me&lt;br&gt;🌼: a sufficiently large sample size &lt;a href=&#34;https://t.co/W5ypnRbzhS&#34;&gt;pic.twitter.com/W5ypnRbzhS&lt;/a&gt;&lt;/p&gt;&amp;mdash; Chelsea Parlett-Pelleriti (@ChelseaParlett) &lt;a href=&#34;https://twitter.com/ChelseaParlett/status/1156942822248988673?ref_src=twsrc%5Etfw&#34;&gt;August 1, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;manuscript_submission.mp4 &lt;a href=&#34;https://t.co/rkyJE1FbF5&#34;&gt;pic.twitter.com/rkyJE1FbF5&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dan Quintana (@dsquintana) &lt;a href=&#34;https://twitter.com/dsquintana/status/1053898526667739136?ref_src=twsrc%5Etfw&#34;&gt;October 21, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Me, looking into the psychometrics literature to see if they&amp;#39;ve any analysis insights I should be using &lt;a href=&#34;https://t.co/2HYDmM3E7J&#34;&gt;pic.twitter.com/2HYDmM3E7J&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tom Stafford (@tomstafford) &lt;a href=&#34;https://twitter.com/tomstafford/status/1154659873583501312?ref_src=twsrc%5Etfw&#34;&gt;July 26, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Stack Overflow releases its own keyboard. &lt;a href=&#34;https://t.co/Nw7ts0Rf4V&#34;&gt;pic.twitter.com/Nw7ts0Rf4V&lt;/a&gt;&lt;/p&gt;&amp;mdash; Khalil (@sehnaoui) &lt;a href=&#34;https://twitter.com/sehnaoui/status/1142103495061004290?ref_src=twsrc%5Etfw&#34;&gt;June 21, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&amp;quot;There&amp;#39;s free food at this conference&amp;quot;&lt;br&gt;&lt;br&gt;Me: &lt;a href=&#34;https://t.co/DMsXarXqRz&#34;&gt;pic.twitter.com/DMsXarXqRz&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Dani Beck (@_DaniBeck) &lt;a href=&#34;https://twitter.com/_DaniBeck/status/1131863630264320001?ref_src=twsrc%5Etfw&#34;&gt;May 24, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;this is upsettingly accurate &lt;a href=&#34;https://t.co/QLKIIYSVkf&#34;&gt;pic.twitter.com/QLKIIYSVkf&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rebecca Buxton (@RebeccaBuxton) &lt;a href=&#34;https://twitter.com/RebeccaBuxton/status/1121840870737764353?ref_src=twsrc%5Etfw&#34;&gt;April 26, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Characterising today&amp;#39;s attempts at trying to do research: &lt;a href=&#34;https://t.co/qhS3ydehk6&#34;&gt;pic.twitter.com/qhS3ydehk6&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jon Tennant (@Protohedgehog) &lt;a href=&#34;https://twitter.com/Protohedgehog/status/1095506462040838145?ref_src=twsrc%5Etfw&#34;&gt;February 13, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstatsmemes?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstatsmemes&lt;/a&gt; &lt;a href=&#34;https://t.co/MZBNvVseeO&#34;&gt;pic.twitter.com/MZBNvVseeO&lt;/a&gt;&lt;/p&gt;&amp;mdash; R Memes for Statistical Fiends (@rstatsmemes) &lt;a href=&#34;https://twitter.com/rstatsmemes/status/1044581826423996417?ref_src=twsrc%5Etfw&#34;&gt;September 25, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Do you know other funny tweets? Let me know in the comments below!&lt;/strong&gt; 🤗&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post and don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 🐦 &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Generate an articial ECG signal in Python</title>
+      <link>https://dominiquemakowski.github.io/post/2019-05-17-simulate_ecg/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2019-05-17-simulate_ecg/</guid>
+      <description>&lt;h1 id=&#34;create-a-natural-ecg-signal&#34;&gt;Create a natural ECG signal&lt;/h1&gt;
+&lt;p&gt;Generating artificial physiological signals can be very useful to build, test your analysis pipeline or develop and validate a new algorithm.&lt;/p&gt;
+&lt;p&gt;Generating a synthetic, yet realistic, ECG signal in Python can be easily achieved with the &lt;code&gt;ecg_simulate()&lt;/code&gt; function available in the &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit#quick-example&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;NeuroKit2&lt;/strong&gt;&lt;/a&gt; package.&lt;/p&gt;
+&lt;p&gt;In the example below, we will generate &lt;strong&gt;8&lt;/strong&gt; seconds of ECG, sampled at &lt;strong&gt;200 Hz&lt;/strong&gt; (i.e., 200 points per second) - hence the length of the signal will be &lt;code&gt;8 * 200 = 1600&lt;/code&gt; data points. We can also specify the average heart rate, although note that there will be some natural variability (which is a good thing, because it makes it realistic).&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import neurokit2 as nk  # Load the package
+
+simulated_ecg = nk.ecg_simulate(duration=8, sampling_rate=200, heart_rate=80)
+
+nk.signal_plot(simulated_ecg, sampling_rate=200)  # Visualize the signal
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
+               /post/2019-05-17-simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_eb07d9ebef8cae5728fb117a8bcf9190.png 400w,
+               /post/2019-05-17-simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_8a6cd3fac431c8701f82bab269afeb33.png 760w,
+               /post/2019-05-17-simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://dominiquemakowski.github.io/post/2019-05-17-simulate_ecg/output_1_0_hu301c55808c524ccedc27d6987a9931d0_65591_eb07d9ebef8cae5728fb117a8bcf9190.png&#34;
+               width=&#34;760&#34;
+               height=&#34;389&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The simulation is based on the &lt;strong&gt;ECGSYN&lt;/strong&gt; algorithm (McSharry et al., 2003).&lt;/p&gt;
+&lt;p&gt;However, for fast and stable results (as the realistic algorithm naturally generates some variability), one can approximate the QRS complex by a &lt;strong&gt;Daubechies&lt;/strong&gt; wavelet. An ECG based on this method can also be obtained in &lt;strong&gt;NeuroKit&lt;/strong&gt; by changing the &lt;code&gt;method&lt;/code&gt; as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;simulated_ecg = nk.ecg_simulate(duration=8, sampling_rate=200, method=&amp;quot;daubechies&amp;quot;)
+
+nk.signal_plot(simulated_ecg, sampling_rate=200)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;png&#34; srcset=&#34;
+               /post/2019-05-17-simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_ee67a003b71f8927e6d99fbd813fdd9e.png 400w,
+               /post/2019-05-17-simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_d315e94a8109361fca3b4498591a9f22.png 760w,
+               /post/2019-05-17-simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://dominiquemakowski.github.io/post/2019-05-17-simulate_ecg/output_2_0_hu1de2e204eb6440421cb1558530d93b9a_48080_ee67a003b71f8927e6d99fbd813fdd9e.png&#34;
+               width=&#34;760&#34;
+               height=&#34;393&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;While faster and stable, the generated ECG is far from being realistic.&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit#quick-example&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Discover more about NeuroKit here&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;p&gt;Have fun!&lt;/p&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;p&gt;McSharry, P. E., Clifford, G. D., Tarassenko, L., &amp;amp; Smith, L. A. (2003). A dynamical model for generating synthetic electrocardiogram signals. IEEE transactions on biomedical engineering, 50(3), 289-294.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How virtual embodiment affects episodic memory functioning: a proof-of-concept study</title>
+      <link>https://dominiquemakowski.github.io/publication/tuena2017virtual/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/tuena2017virtual/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

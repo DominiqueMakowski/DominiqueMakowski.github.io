@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Memory | Dr Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/tag/memory/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tag/memory/index.xml" rel="self" type="application/rss+xml" />
+    <description>Memory</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/media/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_3.png</url>
+      <title>Memory</title>
+      <link>https://dominiquemakowski.github.io/tag/memory/</link>
+    </image>
+    
+    <item>
+      <title>How virtual embodiment affects episodic memory functioning: a proof-of-concept study</title>
+      <link>https://dominiquemakowski.github.io/publication/tuena2017virtual/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/tuena2017virtual/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
