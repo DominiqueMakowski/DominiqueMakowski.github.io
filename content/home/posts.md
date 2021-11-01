@@ -16,7 +16,7 @@ content:
   # Page type to display. E.g. post, talk, publication...
   page_type: post
   # Choose how many pages you would like to display (0 = all pages)
-  count: 2
+  count: 3
   # Filter on criteria
   filters:
     author: ""
@@ -31,6 +31,7 @@ content:
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
 
+
 design:
   # Choose a view for the listings:
   #   1 = List
@@ -38,4 +39,11 @@ design:
   #   3 = Card
   #   4 = Citation (publication only)
   view: 2
+  # background:
+  #   image: library.jpg
+  #   image_darken: 0.33
+  #   image_parallax: true
+  #   image_position: left
+  #   image_size: cover
+  #   text_color_light: true
 ---

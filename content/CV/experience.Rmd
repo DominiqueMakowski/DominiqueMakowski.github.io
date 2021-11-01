@@ -1,0 +1,60 @@
+---
+# An instance of the Blank widget.
+# Documentation: https://wowchemy.com/docs/page-builder/
+widget: blank
+
+# Activate this widget? true/false
+active: true
+
+# This file represents a page section.
+headless: true
+
+# Order that this section appears on the page.
+weight: 60
+
+title: "Experience"
+subtitle: ""
+
+design:
+  columns: "1"
+  # background:
+  #   image: matrix.jpg
+  #   image_darken: 0
+  #   image_parallax: true
+  #   image_position: center
+  #   image_size: cover
+  #   text_color_light: true
+  # spacing:
+  #   padding: ["20px", "0", "20px", "0"]
+# advanced:
+#   css_class: fullscreen
+---
+
+## Research
+
+```{r ExperienceResearch, echo=FALSE}
+clean_string <- function(x) {
+  x <- gsub("\\\\.*\\}\\{", '', x)
+  gsub("\\}\\}", '', x)
+}
+
+data <- read.csv("https://raw.githubusercontent.com/DominiqueMakowski/CV/main/data/experience_research.csv", fileEncoding= "UTF-8")
+data$Activity <- clean_string(data$Activity)
+knitr::kable(data)
+```
+
+## Clinical
+
+```{r ExperienceClinical, echo=FALSE}
+data <- read.csv("https://raw.githubusercontent.com/DominiqueMakowski/CV/main/data/experience_clinical.csv", fileEncoding= "UTF-8")
+data$Activity <- clean_string(data$Activity)
+knitr::kable(data)
+```
+
+## Teaching
+
+```{r ExperienceTeaching, echo=FALSE}
+data <- read.csv("https://raw.githubusercontent.com/DominiqueMakowski/CV/main/data/experience_teaching.csv", fileEncoding= "UTF-8")
+data$Activity <- clean_string(data$Activity)
+knitr::kable(data)
+```
