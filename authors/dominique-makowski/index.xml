@@ -34,6 +34,14 @@
     </item>
     
     <item>
+      <title>see: An R Package for Visualizing Statistical Models</title>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2021see/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2021see/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The symbolism behind the ReBeL logo</title>
       <link>https://dominiquemakowski.github.io/post/2021-06-30-logo_meaning/</link>
       <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
@@ -123,6 +131,14 @@
     </item>
     
     <item>
+      <title>performance: An R Package for Assessment, Comparison and Testing of Statistical Models</title>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2021performance/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2021performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>How to share data analysis scripts with publications?</title>
       <link>https://dominiquemakowski.github.io/post/2021-02-10-template_results/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
@@ -150,6 +166,14 @@
 &lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
 &lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>NeuroKit2: A Python toolbox for neurophysiological signal processing</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2021neurokit/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2021neurokit/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -296,6 +320,14 @@ One of the vidualization variant of this set has been immediately attributed a s
 &lt;hr&gt;
 &lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post and don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; 🐦 &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>effectsize: Estimation of Effect Size Indices and Standardized Parameters</title>
+      <link>https://dominiquemakowski.github.io/publication/benshachar2020effectsize/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/benshachar2020effectsize/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -849,6 +881,22 @@ save(d, file = &amp;quot;data.Rdata&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
+      <title>Extracting, Computing and Exploring the Parameters of Statistical Models using R</title>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2020parameters/</link>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2020parameters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Methods and Algorithms for Correlation Analysis in R</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2020correlation/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2020correlation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Why psychologists should join GitHub</title>
       <link>https://dominiquemakowski.github.io/post/2020-05-27-github_psychologists/</link>
       <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
@@ -911,6 +959,14 @@ save(d, file = &amp;quot;data.Rdata&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;em&gt;Thanks for reading! Let me know if I forgot something by adding a comment below&lt;/em&gt; 👇&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>In Medio Stat Virtus: intermediate levels of mind wandering improve episodic memory encoding in a virtual environment</title>
+      <link>https://dominiquemakowski.github.io/publication/blonde2020medio/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/blonde2020medio/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -1318,6 +1374,54 @@ plt.show()
     </item>
     
     <item>
+      <title>The impact of state and dispositional mindfulness on prospective memory: A virtual reality study</title>
+      <link>https://dominiquemakowski.github.io/publication/girardeau2020impact/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/girardeau2020impact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Indices of Effect Existence and Significance in the Bayesian Framework</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019indices/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019indices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptation and Validation of a Short French Version of the Affective Style Questionnaire</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bayestestR: Describing effects and their uncertainty, existence and significance within the Bayesian framework</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>insight: A Unified Interface to Access Information from Model Objects in R</title>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2019insight/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2019insight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The heart of cognitive control: Cardiac phase modulates processing speed and inhibition</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019heart/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019heart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Generate an articial ECG signal in Python</title>
       <link>https://dominiquemakowski.github.io/post/2019-05-17-simulate_ecg/</link>
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
@@ -1406,6 +1510,38 @@ nk.signal_plot(simulated_ecg, sampling_rate=200)
     </item>
     
     <item>
+      <title>Dispositional mindfulness attenuates the emotional attentional blink</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phenomenal, bodily and brain correlates of fictional reappraisal as an implicit emotion regulation strategy</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019phenomenal/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019phenomenal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The psycho Package: an Efficient and Publishing-Oriented Workflow for Psychological Science</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2018psycho/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2018psycho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>&#34;Being there&#34; and remembering it: Presence improves memory encoding</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2017being/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2017being/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Centenaire Ribot (première partie). La réception de l&#39;oeuvre de Théodule Ribot publiée chez l’éditeur Ladrange (1870-1873)</title>
       <link>https://dominiquemakowski.github.io/publication/nicolas2017centenaire/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
@@ -1438,6 +1574,14 @@ nk.signal_plot(simulated_ecg, sampling_rate=200)
     </item>
     
     <item>
+      <title>Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The distinctive role of executive functions in implicit emotion regulation</title>
       <link>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
@@ -1466,6 +1610,14 @@ nk.signal_plot(simulated_ecg, sampling_rate=200)
       <link>https://dominiquemakowski.github.io/publication/sperduti2016protective/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/publication/sperduti2016protective/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emotion regulation and the cognitive decline in aging: beyond the paradox</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2015emotion/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2015emotion/</guid>
       <description></description>
     </item>
     

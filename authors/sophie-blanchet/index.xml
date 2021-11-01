@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sophie Blanchet | Dr Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/sophie-blanchet/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/sophie-blanchet/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sophie Blanchet</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/media/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_3.png</url>
+      <title>Sophie Blanchet</title>
+      <link>https://dominiquemakowski.github.io/authors/sophie-blanchet/</link>
+    </image>
+    
+    <item>
+      <title>Emotion regulation and the cognitive decline in aging: beyond the paradox</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2015emotion/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2015emotion/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

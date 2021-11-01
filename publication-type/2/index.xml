@@ -5,12 +5,20 @@
     <link>https://dominiquemakowski.github.io/publication-type/2/</link>
       <atom:link href="https://dominiquemakowski.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 09 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/media/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
       <link>https://dominiquemakowski.github.io/publication-type/2/</link>
     </image>
+    
+    <item>
+      <title>see: An R Package for Visualizing Statistical Models</title>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2021see/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2021see/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Heart Rate Variability in Psychology: A Review of HRV Indices and an Analysis Tutorial</title>
@@ -25,6 +33,134 @@
       <link>https://dominiquemakowski.github.io/publication/makowski2021structure/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/publication/makowski2021structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance: An R Package for Assessment, Comparison and Testing of Statistical Models</title>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2021performance/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2021performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NeuroKit2: A Python toolbox for neurophysiological signal processing</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2021neurokit/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2021neurokit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>effectsize: Estimation of Effect Size Indices and Standardized Parameters</title>
+      <link>https://dominiquemakowski.github.io/publication/benshachar2020effectsize/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/benshachar2020effectsize/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Extracting, Computing and Exploring the Parameters of Statistical Models using R</title>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2020parameters/</link>
+      <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2020parameters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Methods and Algorithms for Correlation Analysis in R</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2020correlation/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2020correlation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>In Medio Stat Virtus: intermediate levels of mind wandering improve episodic memory encoding in a virtual environment</title>
+      <link>https://dominiquemakowski.github.io/publication/blonde2020medio/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/blonde2020medio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of state and dispositional mindfulness on prospective memory: A virtual reality study</title>
+      <link>https://dominiquemakowski.github.io/publication/girardeau2020impact/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/girardeau2020impact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Indices of Effect Existence and Significance in the Bayesian Framework</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019indices/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019indices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptation and Validation of a Short French Version of the Affective Style Questionnaire</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bayestestR: Describing effects and their uncertainty, existence and significance within the Bayesian framework</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019bayestestr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>insight: A Unified Interface to Access Information from Model Objects in R</title>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2019insight/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2019insight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The heart of cognitive control: Cardiac phase modulates processing speed and inhibition</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019heart/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019heart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dispositional mindfulness attenuates the emotional attentional blink</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phenomenal, bodily and brain correlates of fictional reappraisal as an implicit emotion regulation strategy</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019phenomenal/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019phenomenal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The psycho Package: an Efficient and Publishing-Oriented Workflow for Psychological Science</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2018psycho/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2018psycho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>&#34;Being there&#34; and remembering it: Presence improves memory encoding</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2017being/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2017being/</guid>
       <description></description>
     </item>
     
@@ -61,6 +197,14 @@
     </item>
     
     <item>
+      <title>Neuropsydia.py: A Python Module for Creating Experiments, Tasks and Questionnaires</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The distinctive role of executive functions in implicit emotion regulation</title>
       <link>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
@@ -89,6 +233,14 @@
       <link>https://dominiquemakowski.github.io/publication/sperduti2016protective/</link>
       <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/publication/sperduti2016protective/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emotion regulation and the cognitive decline in aging: beyond the paradox</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2015emotion/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2015emotion/</guid>
       <description></description>
     </item>
     

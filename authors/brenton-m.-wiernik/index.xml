@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brenton M. Wiernik | Dr Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/brenton-m.-wiernik/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/brenton-m.-wiernik/index.xml" rel="self" type="application/rss+xml" />
+    <description>Brenton M. Wiernik</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 06 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/media/icon_hud75d04f2b1977d0bc7efdcf2aeb84fcd_760423_512x512_fill_lanczos_center_3.png</url>
+      <title>Brenton M. Wiernik</title>
+      <link>https://dominiquemakowski.github.io/authors/brenton-m.-wiernik/</link>
+    </image>
+    
+    <item>
+      <title>see: An R Package for Visualizing Statistical Models</title>
+      <link>https://dominiquemakowski.github.io/publication/ludecke2021see/</link>
+      <pubDate>Fri, 06 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/ludecke2021see/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
