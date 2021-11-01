@@ -16,5 +16,5 @@ header:
 ---
 
 {{< callout warning >}}
-**Disclaimer:** The rights of the publications go to the publishers. As a token of respect for their tremendous contribution to science, please refrain from downloading the PDFs if you're not my friend. Fortunately, all visitors of my website are my friends :hugs:
+**Disclaimer:** The rights of the publications go to the publishers. As a token of respect for their tremendous contribution to science, please refrain from downloading the PDFs if you're not my friend. Fortunately, all visitors of this website are my friends :hugs:
 {{< /callout >}}
