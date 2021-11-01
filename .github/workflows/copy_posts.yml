@@ -3,7 +3,7 @@ on:
      branches:
        - master
 
-name: ⏫ Copy posts to REBEL
+name: ⏫ Copy posts and publications to REBEL
 
 jobs:
   copy-file:

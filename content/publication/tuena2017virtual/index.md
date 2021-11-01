@@ -17,7 +17,7 @@ publication_short: ""
 publication_types:
 - "2"
 publishDate: "2017-09-01T00:00:00Z"
-summary: A study on virtual reality, embodiment, and memory
+summary: ""
 tags:
 - Virtual reality
 - Memory

@@ -14,7 +14,7 @@ publication_short: ""
 publication_types:
 - "2"
 publishDate: "2017-09-01T00:00:00Z"
-summary: 'Review of the link between meditation and ageing (in French).'
+summary: ''
 tags:
 - Source Themes
 title: 'Meditation and successful aging: can meditative practices counteract age-related cognitive decline?'
