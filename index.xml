@@ -107,6 +107,22 @@
     </item>
     
     <item>
+      <title>Heart Rate Variability in Psychology: A Review of HRV Indices and an Analysis Tutorial</title>
+      <link>https://dominiquemakowski.github.io/publication/pham2021hrv/</link>
+      <pubDate>Wed, 09 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/pham2021hrv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Structure of Deception: Validation of the Lying Profile Questionnaire</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2021structure/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2021structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>How to share data analysis scripts with publications?</title>
       <link>https://dominiquemakowski.github.io/post/2021-02-10-template_results/</link>
       <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
@@ -1390,10 +1406,26 @@ nk.signal_plot(simulated_ecg, sampling_rate=200)
     </item>
     
     <item>
+      <title>Centenaire Ribot (première partie). La réception de l&#39;oeuvre de Théodule Ribot publiée chez l’éditeur Ladrange (1870-1873)</title>
+      <link>https://dominiquemakowski.github.io/publication/nicolas2017centenaire/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/nicolas2017centenaire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>How virtual embodiment affects episodic memory functioning: a proof-of-concept study</title>
       <link>https://dominiquemakowski.github.io/publication/tuena2017virtual/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/publication/tuena2017virtual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interaction between attentional systems and episodic memory encoding: the impact of conflict on binding of information</title>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2017interaction/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2017interaction/</guid>
       <description></description>
     </item>
     
@@ -1406,22 +1438,35 @@ nk.signal_plot(simulated_ecg, sampling_rate=200)
     </item>
     
     <item>
-      <title>An example conference paper</title>
-      <link>https://dominiquemakowski.github.io/publication/example/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/publication/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>The distinctive role of executive functions in implicit emotion regulation</title>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2017distinctive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Can mental fatigue be measured by Weber&#39;s compass? Alfred Binet&#39;s answer on the value of aesthesiometry (tactile sensitivity) as an objective measure of mental fatigue</title>
+      <link>https://dominiquemakowski.github.io/publication/nicolas2016can/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/nicolas2016can/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The paradox of fiction: Emotional response toward fiction and the modulatory role of self-relevance</title>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2016paradox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The protective role of long-term meditation on the decline of the executive component of attention in aging: a preliminary cross-sectional study</title>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2016protective/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2016protective/</guid>
+      <description></description>
     </item>
     
     <item>
