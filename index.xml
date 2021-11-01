@@ -1398,6 +1398,14 @@ nk.signal_plot(simulated_ecg, sampling_rate=200)
     </item>
     
     <item>
+      <title>Meditation and successful aging: can meditative practices counteract age-related cognitive decline?</title>
+      <link>https://dominiquemakowski.github.io/publication/sperduti2017meditation/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/sperduti2017meditation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>An example conference paper</title>
       <link>https://dominiquemakowski.github.io/publication/example/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
