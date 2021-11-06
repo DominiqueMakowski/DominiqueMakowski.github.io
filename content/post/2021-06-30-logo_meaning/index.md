@@ -26,7 +26,7 @@ The Reality Bending logo includes several references to various concepts. **Can 
 
 
 <figure align="center">
-    <img src='spoiler_alert.jpg' width="90%" />
+    <img src='Spoiler_alert.jpg' width="90%" />
 </figure>
 
 <!-- **.**
