@@ -5,12 +5,57 @@
     <link>https://dominiquemakowski.github.io/category/reproducibility/</link>
       <atom:link href="https://dominiquemakowski.github.io/category/reproducibility/index.xml" rel="self" type="application/rss+xml" />
     <description>Reproducibility</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 05 Nov 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
       <title>Reproducibility</title>
       <link>https://dominiquemakowski.github.io/category/reproducibility/</link>
     </image>
+    
+    <item>
+      <title>&#34;Your sample is too small&#34;: How to Answer to Reviewers</title>
+      <link>https://dominiquemakowski.github.io/post/2021-11-05-sample-too-small/</link>
+      <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2021-11-05-sample-too-small/</guid>
+      <description>&lt;h1 id=&#34;your-sample-is-too-small-how-to-answer-to-reviewers&#34;&gt;&amp;ldquo;Your sample is too small&amp;rdquo;: How to Answer to Reviewers&lt;/h1&gt;
+&lt;p&gt;Reviewers questioning the statistical power of a study, while often valid, is common and unoriginal. The problem of possible lack of power, and thus possible false positives, can also be combined with the desire for stringent &lt;strong&gt;multiple comparisons / tests&lt;/strong&gt; &amp;ldquo;corrections&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;In many real-life scenarios, we simply cannot increase the sample size (because of money, time, COVID or any other reason). And sometimes, the many tests / comparisons are all needed as we have many hypotheses or variables. Naturally, the best &lt;strong&gt;pre-study&lt;/strong&gt; weapon against power-related issues are &lt;strong&gt;preregistration&lt;/strong&gt; (and registered-reports) with proper &lt;strong&gt;power-analysis&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;That being said, imagine that for one reason or another we don&amp;rsquo;t have that. We cannot recruit more participants and have to deal with the data that what we have. &lt;strong&gt;What can we do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Some useful tips can be grouped and referred to as &lt;strong&gt;PoSCA&lt;/strong&gt; (Power, Stringency, Coherence, Acknowledgment):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Po&lt;/strong&gt;wer: Don&amp;rsquo;t waste power
+&lt;ul&gt;
+&lt;li&gt;Use all the information that you have. In particular, the information &lt;em&gt;within&lt;/em&gt; participants (if you have multiple trials per participant, don&amp;rsquo;t average over them!), by using methods such as &lt;strong&gt;mixed-models&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S&lt;/strong&gt;tringent significance
+&lt;ul&gt;
+&lt;li&gt;Increase the significance threshold, either arbitrarily (e.g., lower the &lt;em&gt;p&lt;/em&gt;-value threshold to .005; Ioannidis, 2018) or pseudo-arbitrarily (using multiple-comparisons corrections such as the Bonferroni method). This, under the Bayesian framework, is &lt;sub&gt;(somewhat)&lt;/sub&gt; equivalent to being more script with whatever indices that we use. For instance, consider only Bayes Factors (BF) &amp;gt; 30 instead of 10, or &lt;a href=&#34;https://easystats.github.io/bayestestR/articles/guidelines.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Probabilities of Direction (&lt;em&gt;pd&lt;/em&gt;)&lt;/a&gt; of 99.9% instead of 97%, or widening the Region of Practical Equivalence (ROPE).&lt;/li&gt;
+&lt;li&gt;Constrain the parameters towards 0. We can also make it harder for models to have parameters (i.e., &amp;ldquo;effects&amp;rdquo;) that deviate from 0. This is easy to do within the Bayesian framework by setting narrower priors centred around 0. This will naturally pull (known as &amp;ldquo;shrinkage&amp;rdquo;) the results towards 0 and is a natural way of &amp;ldquo;controlling&amp;rdquo; for false positives. Under the frequentist framework, there are methods of regularization that can introduce a bias, such as LASSO or Ridge regressions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C&lt;/strong&gt;oherence: cross-validate results
+&lt;ul&gt;
+&lt;li&gt;There is a need to look at the bigger picture, including non-significant and &amp;ldquo;trending&amp;rdquo; effects. Look at all the data together, and all the variables measuring related concepts: do the results go in the same direction? Are they internally coherent? Do they follow the same trend? In a small sample study, I would trust more a conclusion based on 10 tests with independent indices measuring aspects related to &amp;ldquo;depression&amp;rdquo;, all barely significant but going in the same direction, over one super-significant (but possibly cherry-picked) result interpreted as a proof of the effect of &amp;ldquo;depression&amp;rdquo; in general. In other words, don&amp;rsquo;t focus on &amp;ldquo;significant&amp;rdquo; effects and assess results in their entirety.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A&lt;/strong&gt;cknowledgment: be honest and humble
+&lt;ul&gt;
+&lt;li&gt;Quantify the evidence &lt;em&gt;against&lt;/em&gt; the null hypothesis. Maybe an effect is not &amp;ldquo;significant&amp;rdquo;, but that doesn&amp;rsquo;t necessarily mean there is a lot of evidence that it has no effect either. Quantifying evidence against the null can be easily done using for instance Bayes Factors.&lt;/li&gt;
+&lt;li&gt;Be honest and acknowledge the limited power of the study. Don&amp;rsquo;t try to hide it.&lt;/li&gt;
+&lt;li&gt;Temper the interpretation of the results. Don&amp;rsquo;t over-interpret them if they are not super robust.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Science must be open, replicable &amp;amp; reproductible, slow, and based on methodological best-practices. But first and foremost, it must be honest.&lt;/p&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Ioannidis, J. P. (2018). The proposal to lower P value thresholds to .005. Jama, 319(14), 1429-1430.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to share or tweet this post, or leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How to sync two folders in two separate GitHub repositories</title>
@@ -28,22 +73,6 @@
 &lt;/ol&gt;
 &lt;p&gt;Tada 🎉 Everytime I push to my personal repo, the new content of one of the subfolder gets copied to another repo.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; this is a one-way sync, so updates on the target repo won&amp;rsquo;t affect the source repo (but might get overridden!).&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to share or tweet this post, or leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>&#34;Your sample is too small&#34;: How to Answer to Reviewers</title>
-      <link>https://dominiquemakowski.github.io/post/2021-11-05-sample-too-small/</link>
-      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://dominiquemakowski.github.io/post/2021-11-05-sample-too-small/</guid>
-      <description>&lt;h1 id=&#34;your-sample-is-too-small-how-to-answer-to-reviewers&#34;&gt;&amp;ldquo;Your sample is too small&amp;rdquo;: How to Answer to Reviewers&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Preregistration,&lt;/li&gt;
-&lt;li&gt;Power Analysis&lt;/li&gt;
-&lt;li&gt;Registered reports&lt;/li&gt;
-&lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to share or tweet this post, or leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
 </description>

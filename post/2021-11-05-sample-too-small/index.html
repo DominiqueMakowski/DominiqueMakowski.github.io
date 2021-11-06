@@ -342,10 +342,10 @@
     
       <meta
         property="article:published_time"
-        content="2021-05-11T00:00:00&#43;00:00"
+        content="2021-11-05T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2021-05-11T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-11-05T00:00:00&#43;00:00">
   
 
   
@@ -377,8 +377,8 @@
     "https://dominiquemakowski.github.io/post/2021-11-05-sample-too-small/featured.jpg"
   ],
   
-  "datePublished": "2021-05-11T00:00:00Z",
-  "dateModified": "2021-05-11T00:00:00Z",
+  "datePublished": "2021-11-05T00:00:00Z",
+  "dateModified": "2021-11-05T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -826,7 +826,7 @@
     
       
     
-    May 11, 2021
+    Nov 5, 2021
   </span>
   
 
@@ -835,7 +835,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    3 min read
   </span>
   
 
@@ -877,10 +877,39 @@
 
     <div class="article-style">
       <h1 id="your-sample-is-too-small-how-to-answer-to-reviewers">&ldquo;Your sample is too small&rdquo;: How to Answer to Reviewers</h1>
+<p>Reviewers questioning the statistical power of a study, while often valid, is common and unoriginal. The problem of possible lack of power, and thus possible false positives, can also be combined with the desire for stringent <strong>multiple comparisons / tests</strong> &ldquo;corrections&rdquo;.</p>
+<p>In many real-life scenarios, we simply cannot increase the sample size (because of money, time, COVID or any other reason). And sometimes, the many tests / comparisons are all needed as we have many hypotheses or variables. Naturally, the best <strong>pre-study</strong> weapon against power-related issues are <strong>preregistration</strong> (and registered-reports) with proper <strong>power-analysis</strong>.</p>
+<p>That being said, imagine that for one reason or another we don&rsquo;t have that. We cannot recruit more participants and have to deal with the data that what we have. <strong>What can we do?</strong></p>
+<p>Some useful tips can be grouped and referred to as <strong>PoSCA</strong> (Power, Stringency, Coherence, Acknowledgment):</p>
 <ul>
-<li>Preregistration,</li>
-<li>Power Analysis</li>
-<li>Registered reports</li>
+<li><strong>Po</strong>wer: Don&rsquo;t waste power
+<ul>
+<li>Use all the information that you have. In particular, the information <em>within</em> participants (if you have multiple trials per participant, don&rsquo;t average over them!), by using methods such as <strong>mixed-models</strong>.</li>
+</ul>
+</li>
+<li><strong>S</strong>tringent significance
+<ul>
+<li>Increase the significance threshold, either arbitrarily (e.g., lower the <em>p</em>-value threshold to .005; Ioannidis, 2018) or pseudo-arbitrarily (using multiple-comparisons corrections such as the Bonferroni method). This, under the Bayesian framework, is <sub>(somewhat)</sub> equivalent to being more script with whatever indices that we use. For instance, consider only Bayes Factors (BF) &gt; 30 instead of 10, or <a href="https://easystats.github.io/bayestestR/articles/guidelines.html" target="_blank" rel="noopener">Probabilities of Direction (<em>pd</em>)</a> of 99.9% instead of 97%, or widening the Region of Practical Equivalence (ROPE).</li>
+<li>Constrain the parameters towards 0. We can also make it harder for models to have parameters (i.e., &ldquo;effects&rdquo;) that deviate from 0. This is easy to do within the Bayesian framework by setting narrower priors centred around 0. This will naturally pull (known as &ldquo;shrinkage&rdquo;) the results towards 0 and is a natural way of &ldquo;controlling&rdquo; for false positives. Under the frequentist framework, there are methods of regularization that can introduce a bias, such as LASSO or Ridge regressions.</li>
+</ul>
+</li>
+<li><strong>C</strong>oherence: cross-validate results
+<ul>
+<li>There is a need to look at the bigger picture, including non-significant and &ldquo;trending&rdquo; effects. Look at all the data together, and all the variables measuring related concepts: do the results go in the same direction? Are they internally coherent? Do they follow the same trend? In a small sample study, I would trust more a conclusion based on 10 tests with independent indices measuring aspects related to &ldquo;depression&rdquo;, all barely significant but going in the same direction, over one super-significant (but possibly cherry-picked) result interpreted as a proof of the effect of &ldquo;depression&rdquo; in general. In other words, don&rsquo;t focus on &ldquo;significant&rdquo; effects and assess results in their entirety.</li>
+</ul>
+</li>
+<li><strong>A</strong>cknowledgment: be honest and humble
+<ul>
+<li>Quantify the evidence <em>against</em> the null hypothesis. Maybe an effect is not &ldquo;significant&rdquo;, but that doesn&rsquo;t necessarily mean there is a lot of evidence that it has no effect either. Quantifying evidence against the null can be easily done using for instance Bayes Factors.</li>
+<li>Be honest and acknowledge the limited power of the study. Don&rsquo;t try to hide it.</li>
+<li>Temper the interpretation of the results. Don&rsquo;t over-interpret them if they are not super robust.</li>
+</ul>
+</li>
+</ul>
+<p>Science must be open, replicable &amp; reproductible, slow, and based on methodological best-practices. But first and foremost, it must be honest.</p>
+<h1 id="references">References</h1>
+<ul>
+<li>Ioannidis, J. P. (2018). The proposal to lower P value thresholds to .005. Jama, 319(14), 1429-1430.</li>
 </ul>
 <hr>
 <p><em>Thanks for reading! Do not hesitate to share or tweet this post, or leave a comment below</em> 🤗</p>
