@@ -1,9 +1,9 @@
 ---
 date: "2021"
 external_link: https://dominiquemakowski.github.io/NeuropsyXart/
-summary: Piano arrangements and scores
+summary: Body and Brain Art
 # tags:
-title: NeuropsyXart
+title: "Neuropsy*X*art"
 
 links:
 - icon: palette
