@@ -22,7 +22,7 @@ summary: ''
 tags:
 - Source Themes
 title: 'NeuroKit2: A Python toolbox for neurophysiological signal processing'
-url_code: ""
+url_code: "https://github.com/neuropsychology/NeuroKit"
 url_dataset: ""
 url_pdf: https://dominiquemakowski.github.io/publication/makowski2021neurokit/makowski2021neurokit.pdf
 url_poster: ""

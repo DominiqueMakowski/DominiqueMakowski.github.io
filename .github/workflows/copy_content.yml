@@ -14,9 +14,7 @@ jobs:
 
     # Copy the 'post' folder
     - name: Push posts
-      # Change the following repo after this is fixed:
-      # https://github.com/dmnemec/copy_file_to_another_repo_action/issues/44dmnemec/copy_file_to_another_repo_action@main
-      uses: TomoeMami/copy_file_to_another_repo_action@main
+      uses: dmnemec/copy_file_to_another_repo_action@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
@@ -30,9 +28,7 @@ jobs:
 
     # Copy the 'publication' folder
     - name: Push publications
-      # Change the following repo after this is fixed:
-      # https://github.com/dmnemec/copy_file_to_another_repo_action/issues/44dmnemec/copy_file_to_another_repo_action@main
-      uses: TomoeMami/copy_file_to_another_repo_action@main
+      uses: dmnemec/copy_file_to_another_repo_action@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
