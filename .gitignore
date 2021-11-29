@@ -46,3 +46,4 @@ vignettes/*.pdf
 public/
 jsconfig.json
 node_modules/
+.Rhistory
