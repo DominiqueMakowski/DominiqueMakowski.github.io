@@ -12,4 +12,8 @@ links:
   icon_pack: fab
   name: GitHub
   url: https://github.com/neuropsychology/neuropsydia
+url_code: ""
+url_pdf: "https://dominiquemakowski.github.io/publication/makowski2017neuropsydia/makowski2017neuropsydia.pdf"
+url_slides: ""
+url_video: ""
 ---
