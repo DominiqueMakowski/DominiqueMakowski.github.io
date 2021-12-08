@@ -12,7 +12,7 @@ featured: false
 image:
   caption: ''
   placement: 0
-title: "Pyllusion has been published!"
+title: "Pyllusion has been published"
 subtitle: 'Pyllusion, the software for creating illusions in Python, has been published.'
 summary: 'Pyllusion, the software for creating illusions in Python, has been published.'
 tags:

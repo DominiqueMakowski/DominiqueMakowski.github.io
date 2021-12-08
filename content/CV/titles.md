@@ -39,7 +39,7 @@ experience:
     #     * Modelling
     #     * Deploying
 
-  - title: Doctor of Psychology (PhD)
+  - title: Doctor in Psychology (PhD)
     company: Université de Paris
     company_url: 'https://www.theses.fr/2018USPCB188'
     company_logo: org-uniparis
@@ -55,7 +55,7 @@ experience:
     date_start: '2014-01-01'
     date_end: '2017-01-01'
 
-  - title: Clinical Neuropsychologist (BSc, MSc)
+  - title: Clinical Neuropsychologist (BSc, MSc/MPsych)
     company: Université de Paris
     company_url: 'https://psychologie.u-paris.fr/'
     company_logo: org-uniparis
