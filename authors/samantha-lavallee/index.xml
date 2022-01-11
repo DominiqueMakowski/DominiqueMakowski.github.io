@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Samantha Lavallée | Dr Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/samantha-lavallee/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/samantha-lavallee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Samantha Lavallée</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
+      <title>Samantha Lavallée</title>
+      <link>https://dominiquemakowski.github.io/authors/samantha-lavallee/</link>
+    </image>
+    
+    <item>
+      <title>Adaptation and Validation of a Short French Version of the Affective Style Questionnaire</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019adaptation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dispositional mindfulness attenuates the emotional attentional blink</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2019dispositional/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

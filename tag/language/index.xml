@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Language | Dr Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/tag/language/</link>
+      <atom:link href="https://dominiquemakowski.github.io/tag/language/index.xml" rel="self" type="application/rss+xml" />
+    <description>Language</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
+      <title>Language</title>
+      <link>https://dominiquemakowski.github.io/tag/language/</link>
+    </image>
+    
+    <item>
+      <title>R or Python for Psychologists</title>
+      <link>https://dominiquemakowski.github.io/post/2020-05-22-r_or_python/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2020-05-22-r_or_python/</guid>
+      <description>&lt;p&gt;Many psychology students or researchers are faced with the challenge - &lt;em&gt;or the opportunity&lt;/em&gt; - of learning a programming language. &lt;strong&gt;Which one should you learn?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As an ex- psych student and a daily user and developer of some of them, here&amp;rsquo;s my take on this hot debate.&lt;/p&gt;
+&lt;h2 id=&#34;what-has-programming-to-do-with-psychology&#34;&gt;What has programming to do with psychology?&lt;/h2&gt;
+&lt;p&gt;If you&amp;rsquo;re a very young psychology student, or a future one, you might wonder: &lt;strong&gt;why the heck would I have to learn programming in psychology?&lt;/strong&gt; &lt;em&gt;&amp;ldquo;Psychology is kinda like philosophy, it&amp;rsquo;s just learning how people&amp;rsquo;s minds work by reading books and overthinking stuff&amp;rdquo;&lt;/em&gt;. If you still think that, you&amp;rsquo;re in for &lt;strong&gt;one hell of a ride&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;Psychology is, since its very beginning, a hard and experimental science. The founding fathers of psychology were dedicated to find ways to objectively &lt;em&gt;measure&lt;/em&gt; psychological phenomena and uncovering the mathematical laws that govern Human behaviour (one of the fields of psychology is even called psycho&lt;em&gt;physics&lt;/em&gt;). True, this &lt;em&gt;sciency&lt;/em&gt; nature has been toned down by the booming popularity of &lt;strong&gt;pseudo-scientific approaches like psychoanalysis&lt;/strong&gt; throughout the 20th century, that contributed to the stereotypical public image of the shrink doodling while listening to a neurotic patient. But that&amp;rsquo;s a distorted and old-fashioned view, not really representative of the future of psychology.&lt;/p&gt;
+&lt;p&gt;The fact is that psychology is very closely connected with &lt;strong&gt;statistics&lt;/strong&gt;. Many great statistical advances were made by psychologists, and all true psychological discoveries are backed by statistical findings. And this importance of statistics is - and will be - growing further, partly due to the recent realization of some major issues in the field due to improper statistical procedures (coined the &amp;ldquo;&lt;a href=&#34;https://en.wikipedia.org/wiki/Replication_crisis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;replicability crisis&lt;/strong&gt;&lt;/a&gt;&amp;quot;). Moreover, psychology is more and more relying on advanced data-acquiring methods (smartphone apps, website behaviour data, online surveys, physiological and brain recording devices like EEG, MRI, etc.). And these new formats often require specialized knowledge (web-scraping, database querying, neuroimaging, signal processing, machine learning, &amp;hellip;). &lt;em&gt;And with great data-power comes great data-analysis-responsibilities&lt;/em&gt;. Even in the most applied kind of &lt;strong&gt;clinical&lt;/strong&gt; or &lt;strong&gt;psychotherapeutic&lt;/strong&gt; specializations, where you&amp;rsquo;d think you&amp;rsquo;d be safe, they are starting to use data intensive methods like neuro-feedback, virtual reality, experience sampling, and other forms of smartphone sensing and surveying.&lt;/p&gt;
+&lt;p&gt;Long story short, no matter which branch of psychology you specialize in, you &lt;em&gt;will&lt;/em&gt; be confronted with some technical aspects that won&amp;rsquo;t be able to solve with &lt;em&gt;Excel&lt;/em&gt;. Moreover, these technical skills are the ones that will make the most difference between students, and that will matter a lot if you want to pursue research or want to go work in the private sector. The golden era where people were recruited in research based on their theoretical expertise is over: technical skills are now the golden ticket to enter - &lt;em&gt;and successfully leave&lt;/em&gt; - academia.&lt;/p&gt;
+&lt;p&gt;So, &lt;strong&gt;ready to dive into programming?&lt;/strong&gt; Fear not! It&amp;rsquo;s not that complicated. Moreover, it&amp;rsquo;s &lt;strong&gt;one of the most rewarding skill&lt;/strong&gt; you can develop. I can assure you that you won&amp;rsquo;t regret the time invested in learning it 😊&lt;/p&gt;
+&lt;p&gt;But where should you start?&lt;/p&gt;
+&lt;h2 id=&#34;learn-both-r-and-python&#34;&gt;Learn both R and Python&lt;/h2&gt;
+&lt;p&gt;This increasing relationship between psychology and statistics on the one hand, and other more general technical aspects on the other, is the reason why R and Python are so popular in psychology. Both languages are &lt;strong&gt;free&lt;/strong&gt;, &lt;strong&gt;open-source&lt;/strong&gt;, suited for &lt;strong&gt;beginners&lt;/strong&gt;, and have a large base of users with a ton of &lt;strong&gt;learning material&lt;/strong&gt; online. What&amp;rsquo;s the difference between them?&lt;/p&gt;
+&lt;p&gt;Put simply, &lt;strong&gt;R is for statistics, Python is for the rest&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;So why is there a virulent debate going on, and a choice to make? It&amp;rsquo;s true that I, &lt;em&gt;in theory&lt;/em&gt;, would agree with some popular recommandations and suggest &lt;strong&gt;learning both&lt;/strong&gt;, as they are complementary and have their own strengths and weaknesses. I myself use both on a daily basis, so why would preach what I practice?&lt;/p&gt;
+&lt;p&gt;That said, many opinionated people are also arguing in favour of one &lt;strong&gt;or&lt;/strong&gt; the other (usually the only one they know&amp;hellip;) will say that learning both is essentially a waste of time. They will put forth a strong argument: &lt;strong&gt;you can do whatever you do in R in Python, and &lt;em&gt;vice-versa&lt;/em&gt;&lt;/strong&gt;. In other words, both languages can be used to achieve your goals, so it&amp;rsquo;s &lt;strong&gt;better to specialize in one than have a limited knowledge of both&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Although I do not agree with that statement, I do acknowledge that people have limited time and resources to learn. Saying &lt;strong&gt;&amp;ldquo;just learn both&amp;rdquo;&lt;/strong&gt; is easy, but is arguably an unrealistic expectation for the vast majority of people. So why learning both can be a long-term goal (especially if you want to do research), you have to start somewhere. So, &lt;strong&gt;what starter language should you select?&lt;/strong&gt;&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;pokemon.png&#34; alt=&#34;r or python&#34;/&gt;
+  &lt;figcaption&gt;Ash choosing his starter programming language. He has the choice between R, Python and Bulbasaur, i.e, Matlab - the one that no one likes.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&#34;what-about-matlab&#34;&gt;What about Matlab?&lt;/h2&gt;
+&lt;p&gt;There was a time when &lt;em&gt;Matlab&lt;/em&gt; was the boss. It was used everywhere and had the best functionalities for neuroimaging, signal processing and maths. But &lt;strong&gt;that time is over&lt;/strong&gt;. Matlab is already a zombie language, which burial process will continue in the years to come. Why is it dead? Because it is &lt;strong&gt;expensive&lt;/strong&gt;, &lt;strong&gt;closed&lt;/strong&gt;, &lt;strong&gt;ugly&lt;/strong&gt;, and most importantly because the alternatives (namely R and Python) are now more powerful and featured than Matlab.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;https://media.giphy.com/media/sDOhzJBsFvjMY/giphy.gif&#34; alt=&#34;matlab&#34;/&gt;
+  &lt;figcaption&gt;Agamemnon reacting to king Priam saying &#34;The city of Matlab will never be conquered&#34;.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The truth is, there are only two reasons people still use Matlab: &lt;strong&gt;habit&lt;/strong&gt; (it&amp;rsquo;s hard to learn a new approach if your old way of doing things still works) and &lt;strong&gt;SPM&lt;/strong&gt; (a toolbox for neuroimaging that is still - &lt;em&gt;for now&lt;/em&gt; - the leader in the field).&lt;/p&gt;
+&lt;p&gt;But seriously, don&amp;rsquo;t waste time on it if you have limited resources, it&amp;rsquo;s just not worth it. You will learn an outdated tool that you won&amp;rsquo;t be able to use in another lab if they don&amp;rsquo;t agree to pay for an expensive license (unless you&amp;rsquo;re a pirate ☠️). Whereas with open and free languages like R or Python, you have access to the best tools and can use them freely everywhere. Also, it makes you a &lt;strong&gt;supporter of open-science&lt;/strong&gt;, which is good 😁.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-decide-between-r-and-python&#34;&gt;How to decide between R and Python&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Time has come to make a decision.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Despite what people say, &lt;strong&gt;R and Python are not equivalent&lt;/strong&gt;. You can argue as much as you want, but doing statistics and data visualization in Python is not as fast, easy and neat as it is in R. And signal processing or neuroimaging is not as powerful in R as compared to Python. Note that both languages are still growing and changing, and they are influencing themselves: for instance, many popular Python modules (e.g., &lt;strong&gt;pandas&lt;/strong&gt;, &lt;strong&gt;statsmodels&lt;/strong&gt;, &lt;strong&gt;seaborn&lt;/strong&gt;, &amp;hellip;) have been directly inspired by R. As such, the boundaries between the two languages are fading (and I&amp;rsquo;m not even mentioning the great advances in interoperability, with tools like &lt;a href=&#34;https://rstudio.github.io/reticulate/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;reticulate&lt;/strong&gt;&lt;/a&gt; that allow you to use one language directly inside the other).&lt;/p&gt;
+&lt;p&gt;That being said, Python and R remain very different languages at their core, with a different feel and vibe to it. R was made by statisticians for statistics, and the majority of its users are academics and researchers. On the contrary, Python is a true general-purpose &amp;ldquo;programming&amp;rdquo; language, widely used outside of academia, in the private sector.&lt;/p&gt;
+&lt;p&gt;Here are some things to consider when deciding on what language to learn:&lt;/p&gt;
+&lt;h3 id=&#34;reasons-to-choose-python&#34;&gt;Reasons to choose Python&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You have some basic knowledge or familiarity with programming&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For instance, you know what a &lt;em&gt;logical loop&lt;/em&gt; is. Python being a true programming language, having any prior experience will be useful.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are good with logic and spatial representation (like imagining shapes in 3D, rotating them, etc.)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Python, you will have to think with a &amp;ldquo;programming&amp;rdquo; mindset. That means perceiving things in terms of logical statements and blocks, understanding data as 2D or 3D tables that you have to slice and recombine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are comfortable with maths&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Python, numbers and numbers combinations are used a lot. Paradoxically, you will typically see a lot more maths in Python than in R.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You plan to do signal processing or experimental tasks creation&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are some of the domains where Python is well-established (which doesn&amp;rsquo;t mean that R doesn&amp;rsquo;t have some great tools in development).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are good at googling and don&amp;rsquo;t mind spending time looking for the right answer&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Python has so much material online that it&amp;rsquo;s sometimes hard to find the appropriate thing. Harder than in R, in my opinion, which has more well-defined &amp;ldquo;gold-standard&amp;rdquo; textbooks and tutorials.&lt;/p&gt;
+&lt;h3 id=&#34;reasons-to-choose-r&#34;&gt;Reasons to choose R&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You have no experience with programming whatsoever&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;R is not made to be used as a traditional &lt;em&gt;programming&lt;/em&gt; language. It&amp;rsquo;s more of finding what functions to apply to what, and that makes it easy for beginners.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are interested in statistical analyses, modelling things, and making inferences from data&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;R excels at this. You can create powerful models super easily and jump into their understanding and interpretation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You like making nice figures and plots&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;R, through the &lt;a href=&#34;https://ggplot2.tidyverse.org/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;ggplot&lt;/strong&gt;&lt;/a&gt; ecosystem, has hands down the best tools for visualization. Your imagination is the limit, and you can even create art (check-out the artworks by &lt;a href=&#34;https://www.data-imaginist.com/art&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thomas Lin Pedersen&lt;/a&gt; and &lt;a href=&#34;https://art.djnavarro.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Danielle Navarro&lt;/a&gt; 😍).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are &lt;em&gt;not&lt;/em&gt; so good with stats or maths&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You heard it right! To start with R you don&amp;rsquo;t need to know stats or maths like a boss. R, in fact, will help you to become proficient at it, by slowly opening more and more layers of complexity to you, if you are deemed worthy.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;You are interested in joining the academic community&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Because most of its users are academics, R has a fantastic community online, for instance on &lt;a href=&#34;https://twitter.com/hashtag/rstats&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Twitter #rstats&lt;/strong&gt;&lt;/a&gt;. It&amp;rsquo;s also super inclusive (e.g., the &lt;a href=&#34;https://rladies.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R-Ladies&lt;/a&gt;).&lt;/p&gt;
+&lt;h3 id=&#34;other-considerations&#34;&gt;Other considerations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What your peers are learning&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&amp;rsquo;s easier to learn together, so try to discuss it with your class or lab mates if you can.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What your lab is using&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It might be easier if you have mentors that can understand what you are doing and guide you. But that should not be a priority, as it can lead to &lt;a href=&#34;https://en.wikipedia.org/wiki/Cargo_cult&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cargo cult&lt;/a&gt;-like old habits reproduction (especially if your lab has a tradition of Matlab 🤭). Instead of submitting to the tradition, assess what the goals and objectives are, and pick the best tool to achieve them. And if you have any issue convincing your boss / supervisor about it, ask some help on Twitter, I bet you&amp;rsquo;ll get a lot of it.&lt;/p&gt;
+&lt;h2 id=&#34;hands-on&#34;&gt;Hands on!&lt;/h2&gt;
+&lt;p&gt;👉 Looking for places to start? Check out this &lt;a href=&#34;https://neurokit2.readthedocs.io/en/latest/tutorials/learnpython.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;10-min crash course introduction to Python&lt;/strong&gt;&lt;/a&gt; and this &lt;a href=&#34;https://easystats.github.io/blog/resources/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;collection of resources for R&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading!&lt;/em&gt; 🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; (&lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;) &lt;em&gt;and leave a comment below&lt;/em&gt; 👇&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

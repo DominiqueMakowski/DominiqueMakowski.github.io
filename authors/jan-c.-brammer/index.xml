@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jan C. Brammer | Dr Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/jan-c.-brammer/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/jan-c.-brammer/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jan C. Brammer</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
+      <title>Jan C. Brammer</title>
+      <link>https://dominiquemakowski.github.io/authors/jan-c.-brammer/</link>
+    </image>
+    
+    <item>
+      <title>NeuroKit2: A Python toolbox for neurophysiological signal processing</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2021neurokit/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2021neurokit/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
