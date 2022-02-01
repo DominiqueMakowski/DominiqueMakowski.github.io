@@ -5,12 +5,25 @@
     <link>https://dominiquemakowski.github.io/authors/dominique-makowski/</link>
       <atom:link href="https://dominiquemakowski.github.io/authors/dominique-makowski/index.xml" rel="self" type="application/rss+xml" />
     <description>Dominique Makowski</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/authors/dominique-makowski/avatar_hu8ec970fed8493c9666eb1aeeafcfd774_2053074_270x270_fill_lanczos_center_3.png</url>
       <title>Dominique Makowski</title>
       <link>https://dominiquemakowski.github.io/authors/dominique-makowski/</link>
     </image>
+    
+    <item>
+      <title>Podcast &#39;Learn Bayesian Stats&#39; with Dominique Makowski</title>
+      <link>https://dominiquemakowski.github.io/post/2022-02-01-learnbayesstats/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2022-02-01-learnbayesstats/</guid>
+      <description>&lt;h2 id=&#34;the-learning-bayesian-statistics-podcast&#34;&gt;The &amp;lsquo;Learning Bayesian Statistics&amp;rsquo; Podcast&lt;/h2&gt;
+&lt;p&gt;I had the chance of being invited to talk about R, Python, Reality Bending and much more! It was my first experience of that kind, so thanks a ton to the host of the podcast &lt;a href=&#34;https://twitter.com/alex_andorra&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alex Andorra&lt;/a&gt;. Listen to it here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.learnbayesstats.com/episode/55-neuropsychology-illusions-bending-reality-dominique-makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.learnbayesstats.com/episode/55-neuropsychology-illusions-bending-reality-dominique-makowski&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>We&#39;re recruiting a Research Assistant!</title>
@@ -1225,6 +1238,8 @@ plt.show()
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;h3 id=&#34;comic&#34;&gt;Comic&lt;/h3&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A perceptual illusion walks into the bar... &lt;a href=&#34;https://t.co/svD1rtRcpT&#34;&gt;pic.twitter.com/svD1rtRcpT&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jay Van Bavel (@jayvanbavel) &lt;a href=&#34;https://twitter.com/jayvanbavel/status/1295757004124848130?ref_src=twsrc%5Etfw&#34;&gt;August 18, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;h3 id=&#34;illusion-of-deformation&#34;&gt;Illusion of deformation&lt;/h3&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Another amazing illusion from the amazing &lt;a href=&#34;https://twitter.com/jagarikin?ref_src=twsrc%5Etfw&#34;&gt;@jagarikin&lt;/a&gt;: The ring on the left seems to be bigger and expanding, the one on the right smaller and contracting... but they&amp;#39;re both the same size and neither is expanding or contracting at all. 😮 &lt;a href=&#34;https://t.co/dchwX994PG&#34;&gt;pic.twitter.com/dchwX994PG&lt;/a&gt;&lt;/p&gt;&amp;mdash; Steve Stewart-Williams (@SteveStuWill) &lt;a href=&#34;https://twitter.com/SteveStuWill/status/1295110751309279232?ref_src=twsrc%5Etfw&#34;&gt;August 16, 2020&lt;/a&gt;&lt;/blockquote&gt;
@@ -1243,7 +1258,7 @@ plt.show()
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;h3 id=&#34;illusion-of-movement-angle&#34;&gt;Illusion of movement angle&lt;/h3&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The curveball illusion&lt;br&gt;&lt;br&gt;The ball is falling straight down, but try not looking directly at it &lt;a href=&#34;https://t.co/ydJlzfZb0F&#34;&gt;pic.twitter.com/ydJlzfZb0F&lt;/a&gt;&lt;/p&gt;&amp;mdash; 〈 Berger |🎄| Dillon 〉 (@InertialObservr) &lt;a href=&#34;https://twitter.com/InertialObservr/status/1278805135850827776?ref_src=twsrc%5Etfw&#34;&gt;July 2, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;The curveball illusion&lt;br&gt;&lt;br&gt;The ball is falling straight down, but try not looking directly at it &lt;a href=&#34;https://t.co/ydJlzfZb0F&#34;&gt;pic.twitter.com/ydJlzfZb0F&lt;/a&gt;&lt;/p&gt;&amp;mdash; 〈 Berger | Dillon 〉 (@InertialObservr) &lt;a href=&#34;https://twitter.com/InertialObservr/status/1278805135850827776?ref_src=twsrc%5Etfw&#34;&gt;July 2, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;h3 id=&#34;illusion-of-shape&#34;&gt;Illusion of shape&lt;/h3&gt;
