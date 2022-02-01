@@ -69,7 +69,7 @@ related:
       weight: 100
     - name: categories
       weight: 70
-security:
+security: # (https://stackoverflow.com/questions/70429317/blogdownserve-site-fails-to-produce-template-site)
   funcs:
     getenv:
       - ^HUGO_
