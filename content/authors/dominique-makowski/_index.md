@@ -84,7 +84,7 @@ Useful links
 
 {{< icon name="download" pack="fas" >}} Download my [**resumé**](https://dominiquemakowski.github.io/CV/).
 
-{{< icon name="users" pack="fas" >}} Learn more about the [**research**](https://realitybending.github.io/) that we do.
+{{< icon name="users" pack="fas" >}} Learn more about my [**research**](https://realitybending.github.io/) team and topics.
 
 {{% /callout %}}
 
