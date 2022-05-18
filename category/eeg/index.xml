@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EEG | Dr Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/category/eeg/</link>
+      <atom:link href="https://dominiquemakowski.github.io/category/eeg/index.xml" rel="self" type="application/rss+xml" />
+    <description>EEG</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 May 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
+      <title>EEG</title>
+      <link>https://dominiquemakowski.github.io/category/eeg/</link>
+    </image>
+    
+    <item>
+      <title>NeuroKit2 0.2.0 is out 🎉</title>
+      <link>https://dominiquemakowski.github.io/post/2022-05-18-neurokit_release_2/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2022-05-18-neurokit_release_2/</guid>
+      <description>&lt;h2 id=&#34;neurokit2-020-is-out-&#34;&gt;NeuroKit2 0.2.0 is out! 🎉&lt;/h2&gt;
+&lt;p&gt;What was supposed to be a small release turned out in a massive update. A big thanks - and a warm welcome - to &lt;a href=&#34;https://github.com/anshu-97&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;An Shu&lt;/a&gt; and &lt;a href=&#34;https://github.com/Max-ZiLiang&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Max&lt;/a&gt;, the newest member of the &lt;a href=&#34;https://realitybending.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reality Bending Team&lt;/a&gt;, and thus maintainers of NeuroKit. They worked massively to update &lt;em&gt;all&lt;/em&gt; of the examples and docstrings. New features include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;a href=&#34;https://neuropsychology.github.io/NeuroKit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;BRAND NEW WEBSITE&lt;/strong&gt;&lt;/a&gt; with a revamped documentation, now hopefully much more useful to navigate. Check-it out: &lt;a href=&#34;https://neuropsychology.github.io/NeuroKit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://neuropsychology.github.io/NeuroKit/&lt;/a&gt; and let us know what you think!!&lt;/li&gt;
+&lt;li&gt;An overhaul of the &lt;a href=&#34;https://neuropsychology.github.io/NeuroKit/functions/complexity.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Complexity Indices&lt;/strong&gt;&lt;/a&gt;: With more than a 100 indices, NeuroKit is now the most comprehensive package to quantify &lt;strong&gt;chaos&lt;/strong&gt;, &lt;strong&gt;entropy&lt;/strong&gt; and &lt;strong&gt;fractal dimension&lt;/strong&gt; of signals.&lt;/li&gt;
+&lt;li&gt;Tons of other improvements and fixes ☺️&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once again, a big thanks to all the &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit/releases/tag/v0.2.0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;contributors&lt;/a&gt; for their help in making NeuroKit an awesome open-source software for physiological signal processing!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

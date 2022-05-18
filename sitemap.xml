@@ -4,15 +4,43 @@
   
   
   <url>
-    <loc>https://dominiquemakowski.github.io/authors/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
+    <loc>https://dominiquemakowski.github.io/authors/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://dominiquemakowski.github.io/post/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
+    <loc>https://dominiquemakowski.github.io/post/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://dominiquemakowski.github.io/categories/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
+    <loc>https://dominiquemakowski.github.io/categories/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://dominiquemakowski.github.io/authors/dominique-makowski/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
+    <loc>https://dominiquemakowski.github.io/tag/complexity-science/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://dominiquemakowski.github.io/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
+    <loc>https://dominiquemakowski.github.io/tag/documentation/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/authors/dominique-makowski/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/category/eeg/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/tag/fractal/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/tag/neurokit2/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/post/2022-05-18-neurokit_release_2/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/tag/neurophysiology/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/tag/nonlinear-dynamics/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/tag/psychology/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/category/psychology/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/tag/python/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/category/python/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/tag/sphinx/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/tags/</loc><lastmod>2022-05-18T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://dominiquemakowski.github.io/tag/neuroaesthetics/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
   <url>
@@ -24,12 +52,6 @@
   <url>
     <loc>https://dominiquemakowski.github.io/post/2022-02-01-learnbayesstats/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://dominiquemakowski.github.io/tag/psychology/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://dominiquemakowski.github.io/tag/python/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://dominiquemakowski.github.io/category/python/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
-  <url>
     <loc>https://dominiquemakowski.github.io/tag/r/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://dominiquemakowski.github.io/category/r/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
@@ -37,8 +59,6 @@
     <loc>https://dominiquemakowski.github.io/tag/reality-bending/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://dominiquemakowski.github.io/category/reality-bending/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://dominiquemakowski.github.io/tags/</loc><lastmod>2022-02-01T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://dominiquemakowski.github.io/tag/jobs/</loc><lastmod>2021-12-01T00:00:00+00:00</lastmod></url>
   <url>
@@ -160,17 +180,15 @@
   <url>
     <loc>https://dominiquemakowski.github.io/category/philosophy/</loc><lastmod>2020-11-13T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://dominiquemakowski.github.io/category/science-fiction/</loc><lastmod>2020-11-13T00:00:00+00:00</lastmod></url>
-  <url>
     <loc>https://dominiquemakowski.github.io/tag/science-fiction/</loc><lastmod>2020-11-13T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://dominiquemakowski.github.io/category/science-fiction/</loc><lastmod>2020-11-13T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://dominiquemakowski.github.io/tag/time/</loc><lastmod>2020-11-13T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://dominiquemakowski.github.io/post/2020-11-13-time_computational_limit/</loc><lastmod>2020-11-13T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://dominiquemakowski.github.io/tag/transhumanism/</loc><lastmod>2020-11-13T00:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://dominiquemakowski.github.io/category/psychology/</loc><lastmod>2020-09-28T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://dominiquemakowski.github.io/post/2020-09-28-what_is_realitybending/</loc><lastmod>2020-09-28T00:00:00+00:00</lastmod></url>
   <url>
@@ -225,8 +243,6 @@
     <loc>https://dominiquemakowski.github.io/tag/rt/</loc><lastmod>2020-05-18T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://dominiquemakowski.github.io/tag/buddhabrot/</loc><lastmod>2020-05-16T00:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://dominiquemakowski.github.io/tag/fractal/</loc><lastmod>2020-05-16T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://dominiquemakowski.github.io/tag/mandelbrot/</loc><lastmod>2020-05-16T00:00:00+00:00</lastmod></url>
   <url>
