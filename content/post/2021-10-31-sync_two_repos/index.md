@@ -27,7 +27,7 @@ I have a personal website, stored in a GitHub repo (and hosted via GitHub pages)
 
 1. The first step is to go to the settings of your GitHub account, to developers settings, and to [*personal access tokens*](https://github.com/settings/tokens). You have to generate a token, and tick the **repo** authorizations. Copy-paste the key.
 2. Go to the settings of the personal website repo (the source from which the content will be copied), to "Secrets", and add a new secret called "API_TOKEN_GITHUB" (with the key you just copied).
-3. Create a new GitHub action workflow such as [**this one**](https://github.com/DominiqueMakowski/DominiqueMakowski.github.io/blob/master/.github/workflows/copy_posts.yml). The things to change are the `source_file`, `destination_repo` and `destination_folder`.
+3. Create a new GitHub action workflow such as [**this one**](https://github.com/DominiqueMakowski/DominiqueMakowski.github.io/blob/master/.github/workflows/copy_content.yml). The things to change are the `source_file`, `destination_repo` and `destination_folder`.
 
 Tada :tada: Everytime I push to my personal repo, the new content of one of the subfolder gets copied to another repo.
 

@@ -1,0 +1,2 @@
+- Move wordcloud to lower and add video of animation of trajectory instead
+- ajouter sur website altmetric
