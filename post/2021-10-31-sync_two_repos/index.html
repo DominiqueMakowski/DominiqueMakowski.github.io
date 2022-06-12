@@ -891,7 +891,7 @@
 <ol>
 <li>The first step is to go to the settings of your GitHub account, to developers settings, and to <a href="https://github.com/settings/tokens" target="_blank" rel="noopener"><em>personal access tokens</em></a>. You have to generate a token, and tick the <strong>repo</strong> authorizations. Copy-paste the key.</li>
 <li>Go to the settings of the personal website repo (the source from which the content will be copied), to &ldquo;Secrets&rdquo;, and add a new secret called &ldquo;API_TOKEN_GITHUB&rdquo; (with the key you just copied).</li>
-<li>Create a new GitHub action workflow such as <a href="https://github.com/DominiqueMakowski/DominiqueMakowski.github.io/blob/master/.github/workflows/copy_posts.yml" target="_blank" rel="noopener"><strong>this one</strong></a>. The things to change are the <code>source_file</code>, <code>destination_repo</code> and <code>destination_folder</code>.</li>
+<li>Create a new GitHub action workflow such as <a href="https://github.com/DominiqueMakowski/DominiqueMakowski.github.io/blob/master/.github/workflows/copy_content.yml" target="_blank" rel="noopener"><strong>this one</strong></a>. The things to change are the <code>source_file</code>, <code>destination_repo</code> and <code>destination_folder</code>.</li>
 </ol>
 <p>Tada 🎉 Everytime I push to my personal repo, the new content of one of the subfolder gets copied to another repo.</p>
 <p><strong>Note:</strong> this is a one-way sync, so updates on the target repo won&rsquo;t affect the source repo (but might get overridden!).</p>
@@ -1257,7 +1257,7 @@
       
 
     
-    <script src="/js/vendor-bundle.min.583938d79e0d9d038283176d43703bc5.js"></script>
+    <script src="/js/vendor-bundle.min.7f632ea429b2189fa80232d9afedded1.js"></script>
 
     
     
