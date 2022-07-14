@@ -145,6 +145,9 @@ It's easier to learn together, so try to discuss it with your class or lab mates
 
 It might be easier if you have mentors that can understand what you are doing and guide you. But that should not be a priority, as it can lead to [cargo cult](https://en.wikipedia.org/wiki/Cargo_cult)-like old habits reproduction (especially if your lab has a tradition of Matlab 🤭). Instead of submitting to the tradition, assess what the goals and objectives are, and pick the best tool to achieve them. And if you have any issue convincing your boss / supervisor about it, ask some help on Twitter, I bet you'll get a lot of it.
 
+## See Also
+
+- [R vs. Python for Data Science](https://github.com/matloff/R-vs.-Python-for-Data-Science)
 
 
 ## Hands on!
