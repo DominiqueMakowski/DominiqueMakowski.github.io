@@ -984,6 +984,10 @@ save(d, file = &amp;quot;data.Rdata&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;&lt;strong&gt;What your lab is using&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;It might be easier if you have mentors that can understand what you are doing and guide you. But that should not be a priority, as it can lead to &lt;a href=&#34;https://en.wikipedia.org/wiki/Cargo_cult&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cargo cult&lt;/a&gt;-like old habits reproduction (especially if your lab has a tradition of Matlab 🤭). Instead of submitting to the tradition, assess what the goals and objectives are, and pick the best tool to achieve them. And if you have any issue convincing your boss / supervisor about it, ask some help on Twitter, I bet you&amp;rsquo;ll get a lot of it.&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See Also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/matloff/R-vs.-Python-for-Data-Science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R vs. Python for Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;hands-on&#34;&gt;Hands on!&lt;/h2&gt;
 &lt;p&gt;👉 Looking for places to start? Check out this &lt;a href=&#34;https://neurokit2.readthedocs.io/en/latest/tutorials/learnpython.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;10-min crash course introduction to Python&lt;/strong&gt;&lt;/a&gt; and this &lt;a href=&#34;https://easystats.github.io/blog/resources/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;collection of resources for R&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
@@ -1221,7 +1225,7 @@ plt.show()
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://t.co/hlfDFOIt5L&#34;&gt;pic.twitter.com/hlfDFOIt5L&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Jess Hartnett 📊 (@Notawful) &lt;a href=&#34;https://twitter.com/Notawful/status/1188046694619009024?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;zxx&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://t.co/hlfDFOIt5L&#34;&gt;pic.twitter.com/hlfDFOIt5L&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Jess Hartnett 📊 (@Notawful) &lt;a href=&#34;https://twitter.com/Notawful/status/1188046694619009024?ref_src=twsrc%5Etfw&#34;&gt;October 26, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
@@ -1281,13 +1285,15 @@ plt.show()
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;this is upsettingly accurate &lt;a href=&#34;https://t.co/QLKIIYSVkf&#34;&gt;pic.twitter.com/QLKIIYSVkf&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rebecca Buxton (@RebeccaBuxton) &lt;a href=&#34;https://twitter.com/RebeccaBuxton/status/1121840870737764353?ref_src=twsrc%5Etfw&#34;&gt;April 26, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Characterising today&amp;#39;s attempts at trying to do research: &lt;a href=&#34;https://t.co/qhS3ydehk6&#34;&gt;pic.twitter.com/qhS3ydehk6&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jon Tennant (@Protohedgehog) &lt;a href=&#34;https://twitter.com/Protohedgehog/status/1095506462040838145?ref_src=twsrc%5Etfw&#34;&gt;February 13, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstatsmemes?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstatsmemes&lt;/a&gt; &lt;a href=&#34;https://t.co/MZBNvVseeO&#34;&gt;pic.twitter.com/MZBNvVseeO&lt;/a&gt;&lt;/p&gt;&amp;mdash; R Memes for Statistical Fiends (@rstatsmemes) &lt;a href=&#34;https://twitter.com/rstatsmemes/status/1044581826423996417?ref_src=twsrc%5Etfw&#34;&gt;September 25, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;qme&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstatsmemes?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstatsmemes&lt;/a&gt; &lt;a href=&#34;https://t.co/MZBNvVseeO&#34;&gt;pic.twitter.com/MZBNvVseeO&lt;/a&gt;&lt;/p&gt;&amp;mdash; R Memes for Statistical Fiends (@rstatsmemes) &lt;a href=&#34;https://twitter.com/rstatsmemes/status/1044581826423996417?ref_src=twsrc%5Etfw&#34;&gt;September 25, 2018&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;hr&gt;

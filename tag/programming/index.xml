@@ -165,6 +165,10 @@
 &lt;li&gt;&lt;strong&gt;What your lab is using&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;It might be easier if you have mentors that can understand what you are doing and guide you. But that should not be a priority, as it can lead to &lt;a href=&#34;https://en.wikipedia.org/wiki/Cargo_cult&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cargo cult&lt;/a&gt;-like old habits reproduction (especially if your lab has a tradition of Matlab 🤭). Instead of submitting to the tradition, assess what the goals and objectives are, and pick the best tool to achieve them. And if you have any issue convincing your boss / supervisor about it, ask some help on Twitter, I bet you&amp;rsquo;ll get a lot of it.&lt;/p&gt;
+&lt;h2 id=&#34;see-also&#34;&gt;See Also&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/matloff/R-vs.-Python-for-Data-Science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R vs. Python for Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;hands-on&#34;&gt;Hands on!&lt;/h2&gt;
 &lt;p&gt;👉 Looking for places to start? Check out this &lt;a href=&#34;https://neurokit2.readthedocs.io/en/latest/tutorials/learnpython.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;10-min crash course introduction to Python&lt;/strong&gt;&lt;/a&gt; and this &lt;a href=&#34;https://easystats.github.io/blog/resources/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;collection of resources for R&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;hr&gt;
