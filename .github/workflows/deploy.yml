@@ -7,7 +7,7 @@ name: 🚀 Build and Deploy
 
 jobs:
   build:
-    runs-on: macOS-latest
+    runs-on: windows-latest # macOS-latest
     steps:
       - name: Checkout
         uses: actions/checkout@main
