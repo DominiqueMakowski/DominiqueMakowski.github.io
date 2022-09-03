@@ -5,7 +5,7 @@
     <link>https://dominiquemakowski.github.io/publication/</link>
       <atom:link href="https://dominiquemakowski.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 19 Aug 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -13,9 +13,17 @@
     </image>
     
     <item>
+      <title>Brain entropy, fractal dimensions and predictability: A review of complexity measures for EEG in healthy and neuropsychiatric populations</title>
+      <link>https://dominiquemakowski.github.io/publication/lau2022brain/</link>
+      <pubDate>Fri, 19 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/lau2022brain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The Structure of Chaos: An Empirical Comparison of Fractal Physiology Complexity Indices Using NeuroKit2</title>
       <link>https://dominiquemakowski.github.io/publication/makowski2022structure/</link>
-      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://dominiquemakowski.github.io/publication/makowski2022structure/</guid>
       <description></description>
     </item>
