@@ -48,10 +48,9 @@
       <description>&lt;h2 id=&#34;pyllusion-has-been-published&#34;&gt;Pyllusion has been published!&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/RealityBending/Pyllusion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pyllusion&lt;/a&gt; is a package for &lt;strong&gt;Python&lt;/strong&gt; that implements a systematic way to manipulate and generate illusions using a set of parameters.&lt;/p&gt;
 &lt;p&gt;For instance, the famous &lt;a href=&#34;https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Müller-Lyer&lt;/a&gt; illusion below, which causes the observer to perceive the 2 segments of being different lengths depending on the shape of the arrows, can be generated wit the following lines of code:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;mullerlyer = pyllusion.MullerLyer(illusion_strength=30)
-mullerlyer.to_image()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;mullerlyer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pyllusion&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MullerLyer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;illusion_strength&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;mullerlyer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to_image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 
 
 
@@ -73,12 +72,11 @@ mullerlyer.to_image()
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;To understand more about the parametric approach being implemented in the &lt;em&gt;Pyllusion&lt;/em&gt; package, we recommend reading our &lt;a href=&#34;https://dominiquemakowski.github.io/publication/makowski2021parametric/makowski2021parametric.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper&lt;/a&gt;, which includes a hands-on example on how to generate some classic illusions (such as the &lt;a href=&#34;https://en.wikipedia.org/wiki/Delboeuf_illusion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Delbeouf Illusion&lt;/a&gt;), and discusses how &lt;em&gt;Pyllusion&lt;/em&gt; contributes to address conceptual and methodological issues in illusion science.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pyllusion
-
-delboeuf = pyllusion.Delboeuf(illusion_strength=3)
-delboeuf.to_image()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pyllusion&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;delboeuf&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pyllusion&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Delboeuf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;illusion_strength&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;delboeuf&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to_image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
 
 
 
@@ -157,10 +155,10 @@ delboeuf.to_image()
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_93a13644dc29f6fc9b30e3c5cd45f521.png 400w,
-               /post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_ea5f1132740cb9dd7ec199e8489fa888.png 760w,
-               /post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_1200x1200_fit_lanczos_3.png 1200w&#34;
-               src=&#34;https://dominiquemakowski.github.io/post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_93a13644dc29f6fc9b30e3c5cd45f521.png&#34;
+               /post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_95f8a76f1c53f82cbec4d1702d02d3f5.webp 400w,
+               /post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_e70bb1dbafa790ae59e5e184befc5bb7.webp 760w,
+               /post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://dominiquemakowski.github.io/post/2021-01-03-visual_agnosia/whatstream_hu7b3e2a15287cf91a80e194bf11a946d3_304646_95f8a76f1c53f82cbec4d1702d02d3f5.webp&#34;
                width=&#34;760&#34;
                height=&#34;513&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;

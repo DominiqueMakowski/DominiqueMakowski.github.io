@@ -5,12 +5,28 @@
     <link>https://dominiquemakowski.github.io/tag/complexity-science/</link>
       <atom:link href="https://dominiquemakowski.github.io/tag/complexity-science/index.xml" rel="self" type="application/rss+xml" />
     <description>Complexity Science</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 18 May 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
       <title>Complexity Science</title>
       <link>https://dominiquemakowski.github.io/tag/complexity-science/</link>
     </image>
+    
+    <item>
+      <title>About signal complexity</title>
+      <link>https://dominiquemakowski.github.io/post/2022-12-05-complexity_paper/</link>
+      <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2022-12-05-complexity_paper/</guid>
+      <description>&lt;p&gt;The signals recorded from the brain or the body are rich in information, and there are many ways to analyze them. For instance, for EEG, one can focus on &lt;strong&gt;Event Related Potentials&lt;/strong&gt; (ERP), time-frequency analyses, &lt;a href=&#34;https://neuropsychology.github.io/NeuroKit/examples/eeg_microstates/eeg_microstates.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;microstates&lt;/strong&gt;&lt;/a&gt;, etc.&lt;/p&gt;
+&lt;p&gt;An alternative framework, used to characterize the general characteristics of the signal, relies on the extraction of indices of &lt;strong&gt;&amp;ldquo;complexity&amp;rdquo;&lt;/strong&gt; (a general term for constructs such as entropy, chaos, fractal dimension, predictability). However, that field is quite &lt;em&gt;complex&lt;/em&gt; (no pun intended), drawing heavily onto mathematical concepts that psychologists or neuroscientists might not be familiar with.&lt;/p&gt;
+&lt;p&gt;In order to better understand the world of complexity indices as applied to neurophysiology, we have done some groundwork to help us make better decisions in our future usage of this type of analysis.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;a href=&#34;https://onlinelibrary.wiley.com/doi/10.1111/ejn.15800&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;gentle introduction&lt;/strong&gt;&lt;/a&gt; to complexity indices applied to neuroscience.&lt;/li&gt;
+&lt;li&gt;A &lt;a href=&#34;https://www.mdpi.com/1099-4300/24/8/1036&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;indices selection guide&lt;/strong&gt;&lt;/a&gt; in which we compare how different indices relate to one another.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Additionally, we also provide an easy way to compute them in Python in our &lt;strong&gt;NeuroKit&lt;/strong&gt; package (see &lt;a href=&#34;https://neuropsychology.github.io/NeuroKit/functions/complexity.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;here&lt;/strong&gt;&lt;/a&gt; for the list of functions and &lt;a href=&#34;https://neuropsychology.github.io/NeuroKit/examples/eeg_complexity/eeg_complexity.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;here&lt;/strong&gt;&lt;/a&gt; for an EEG application).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>NeuroKit2 0.2.0 is out 🎉</title>
@@ -25,6 +41,38 @@
 &lt;li&gt;Tons of other improvements and fixes ☺️&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Once again, a big thanks to all the &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit/releases/tag/v0.2.0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;contributors&lt;/a&gt; for their help in making NeuroKit an awesome open-source software for physiological signal processing!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NeuroKit2 0.1.5 &#39;Complexity&#39; is out 🎉</title>
+      <link>https://dominiquemakowski.github.io/post/2021-11-12-complexity_neurokit/</link>
+      <pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2021-11-12-complexity_neurokit/</guid>
+      <description>&lt;h2 id=&#34;neurokit2-015-is-out-&#34;&gt;NeuroKit2 0.1.5 is out! 🎉&lt;/h2&gt;
+&lt;p&gt;In the &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit/releases/tag/v0.1.5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;latest 0.1.5 release&lt;/a&gt; of &lt;em&gt;&lt;strong&gt;NeuroKit2&lt;/strong&gt;&lt;/em&gt;, our team has fixed several bugs in existing functionalities and in particular, overhauled the support for computing &lt;strong&gt;complexity measures&lt;/strong&gt; of neurophysiological signals. We added a ton of new indices of &lt;strong&gt;entropy&lt;/strong&gt; and &lt;strong&gt;fractal dimensions&lt;/strong&gt;, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Petrosian&amp;rsquo;s, Katz&amp;rsquo;s and Sevcik fractal dimension&lt;/li&gt;
+&lt;li&gt;Differential, Permutation, Spectral, SVD entropy&lt;/li&gt;
+&lt;li&gt;Fisher information&lt;/li&gt;
+&lt;li&gt;Hjorth&amp;rsquo;s and Lempel-Ziv&amp;rsquo;s complexity&lt;/li&gt;
+&lt;li&gt;Relative Roughness&lt;/li&gt;
+&lt;li&gt;Hurst and Lyapunov exponent(s)&lt;/li&gt;
+&lt;li&gt;Detrended Fluctuation Analysis (as well as MFDFA)&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can compute them all using the new &lt;code&gt;nk.complexity()&lt;/code&gt; function!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;neurokit2&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;nk&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;signal&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nk&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;signal_simulate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;frequency&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;noise&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;0.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;results&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;info&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nk&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;complexity&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;signal&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;which&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;fast&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;results&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  DiffEn       FI    Hjorth       KFD  PEn  ...      PFD        RR       SFD
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1.536573  0.01524  1.355543  4.720953  1.0  ... 1.017423  1.638357  1.691036
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To understand more about complexity science, we recommend reading our &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;preprint&lt;/a&gt;, which introduces the theoretical (and mathematical) meanings of complexity and reviews the existing studies of complexity analysis across multiple fields of psychology.&lt;/p&gt;
+&lt;p&gt;Of course, the &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;NeuroKit2&lt;/em&gt; Python package&lt;/a&gt; also includes tons of other useful features for physiological signal processing (see this &lt;a href=&#34;https://github.com/neuropsychology/NeuroKit#quick-example&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;quick example&lt;/strong&gt;&lt;/a&gt;)!&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to watch our repo to keep a look out for more complexity functionalities coming up! 👀&lt;/p&gt;
 </description>
     </item>
     

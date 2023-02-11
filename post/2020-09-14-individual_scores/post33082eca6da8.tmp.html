@@ -1,0 +1,278 @@
+<div id="introduction" class="section level3" number="0.0.1">
+<h3><span class="header-section-number">0.0.1</span> Introduction</h3>
+<p>Many psychology fields require to extract individual scores, i.e., point-estimates (<em>i.e.</em>, a single value) for a participant/patient, to be used as an index of something and later interpreted or re-used in further statistical analyses. This single index is often derived from several “trials”. For instance, the reaction times in the condition A (let’s say, the baseline) will be <strong>averaged</strong> together, and the same will be done with the condition B. Finally, the difference between these two means will be used an the <strong>individual score</strong> for a given participant.</p>
+<p>However, we can intuitively feel that we <strong>lose a lot of information</strong> when averaging these scores. Do we deal appropriately with the variability related to individuals, conditions, or the noise aggravated by potential outliers? This is especially important when working with a limited amount of trials.</p>
+<p>With the advent of recent computational advances, new easy-to-implement alternatives emerge. For instance, <strong>one can “model” the effects at an individual level</strong> (e.g., the simplest case, for the two conditions paradigm described above, would be a linear regression with the condition as a unique predictor), and use the <strong>parameters</strong> of each model as individual scores (e.g., the “slope” coefficient of the effect of the manipulation), rather than the raw mean. This opens up the possibility of including covariates and take into account other sources of known variability, which could lead to better estimates.</p>
+<p>However, individual models are also sensitive to outliers and noise. Thus, another possibility is to <strong>model the effects at the population level</strong> and, <em>at the same time</em>, at the individual level. This can be achieved by modelling the participants as a <strong>random factor in a mixed model</strong>. In this case, the individual estimates might benefit from the population estimates. In other words, the effects at the population level will “constrain” or “guide” the estimation at an individual level to potentially limit extreme parameters.</p>
+<p>Unfortunately, the above method requires to have all the data at hand, to be able to fit the population model. This is often not the case in on-going acquisition, or in neuropsychological contexts, in which the practitioners simply acquire data for one patient, and have to compute individual scores, without having access to the detailed population data. Thus, an in-between alternative could make use of <strong>Bayesian models</strong>, in which the population effects (for instance, the mean effect of the condition) could be entered as an informative <strong>prior</strong> in the individual models to, again, “guide” the estimation at an individual level and hopefully limit the impact of noise or outliers observations.</p>
+<p>In this post, the aim is to compare these 4 methods (basic individual model - equivalent to using the raw mean, population model, individual model with informative priors) in recovering the “true” effects using a simulated dataset.</p>
+</div>
+<div id="results" class="section level3" number="0.0.2">
+<h3><span class="header-section-number">0.0.2</span> Results</h3>
+<div id="generate-data" class="section level4" number="0.0.2.1">
+<h4><span class="header-section-number">0.0.2.1</span> Generate Data</h4>
+<p>We generate several datasets in which we manipulate the number of participants, in which the score of interest is the effect of a manipulation as compared to a baseline condition. 20 trials per condition will be generated with a known “true” effect (the centre of the distribution from which the data is generated). Gaussian noise of varying standard deviation will be added to create a natural variability (See the functions’ definition below).</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(easystats)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">get_data</span>(<span class="at">n_participants=</span><span class="dv">1000</span>, <span class="at">n_trials=</span><span class="dv">20</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">get_results</span>(data)</span></code></pre></div>
+<div class="figure">
+<img src="individual.png" alt="*Example of a dataset containing 20 participants (shown with different colors). As can be seen, we introduced modulations in the inter- and intra- individual variability.*" width="1575" />
+<p class="caption">
+(#fig:unnamed-chunk-3)<em>Example of a dataset containing 20 participants (shown with different colors). As can be seen, we introduced modulations in the inter- and intra- individual variability.</em>
+</p>
+</div>
+<p>We will then compare the scores obtained by each method to the “true” score of each participant by substracting them from one another. As such, for each method, we obtain the absolute “distance” from the true score.</p>
+</div>
+<div id="fit-model" class="section level4" number="0.0.2.2">
+<h4><span class="header-section-number">0.0.2.2</span> Fit model</h4>
+<p>Contrast analysis will be applied to compare the different methods together.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(Diff_Abs <span class="sc">~</span> Method, <span class="at">data=</span>results)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>modelbased<span class="sc">::</span><span class="fu">estimate_contrasts</span>(model) <span class="sc">%&gt;%</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Difference) <span class="sc">%&gt;%</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Level1 =</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(Level1, <span class="st">&quot;Diff_&quot;</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">Level2 =</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(Level2, <span class="st">&quot;Diff_&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Level1, Level2, Difference, CI_low, CI_high, p)</span></code></pre></div>
+<pre><code>## Level1                 |                 Level2 | Difference |            CI |      p
+## -------------------------------------------------------------------------------------
+## IndividualModel_Priors |        PopulationModel |  -1.85e-03 | [-0.01, 0.01] | &gt; .999
+## IndividualModel_Freq   |        PopulationModel |   1.70e-03 | [-0.01, 0.01] | &gt; .999
+## IndividualModel_Freq   | IndividualModel_Priors |   3.55e-03 | [-0.01, 0.01] | &gt; .999</code></pre>
+</div>
+<div id="visualize-the-results" class="section level4" number="0.0.2.3">
+<h4><span class="header-section-number">0.0.2.3</span> Visualize the results</h4>
+<div class="figure">
+<img src="featured.png" alt="*Average accuracy of the different methods (the closest to 0 the better).*" width="2250" />
+<p class="caption">
+(#fig:unnamed-chunk-6)<em>Average accuracy of the different methods (the closest to 0 the better).</em>
+</p>
+</div>
+<div class="figure">
+<img src="n_participants.png" alt="*Accuracy depending on the number of total participants in the dataset.*" width="2250" />
+<p class="caption">
+(#fig:unnamed-chunk-7)<em>Accuracy depending on the number of total participants in the dataset.</em>
+</p>
+</div>
+</div>
+</div>
+<div id="conclusion" class="section level3" number="0.0.3">
+<h3><span class="header-section-number">0.0.3</span> Conclusion</h3>
+<p>Though not significantly different, it seems that <strong>raw basic estimates</strong> (that rely only on the individual data) <strong>perform consistently worse than the population model or individual models informed by priors</strong>, especially for small datasets (between 10 and 100 participants) - though again, the difference is tiny in our simulated dataset. In the absence of the whole population dataset, it seems that using individual Bayesian model with informative priors (derived from the population model) is a safe alternative.</p>
+</div>
+<div id="functions" class="section level3" number="0.0.4">
+<h3><span class="header-section-number">0.0.4</span> Functions</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(easystats)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rstanarm)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggdist)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Get data ----------------------------------------------------------------</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>get_data <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">n_participants =</span> <span class="dv">10</span>, <span class="at">n_trials =</span> <span class="dv">20</span>, <span class="at">d =</span> <span class="fl">1.5</span>, <span class="at">var =</span> <span class="dv">3</span>, <span class="at">noise =</span> <span class="fl">0.1</span>) {</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  scores_baseline <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n_participants, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  scores_condition <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n_participants, d, <span class="dv">1</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  variances <span class="ot">&lt;-</span> <span class="fu">rbeta</span>(n_participants, <span class="dv">2</span>, <span class="dv">8</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  variances <span class="ot">&lt;-</span> <span class="fl">0.1</span> <span class="sc">+</span> variances <span class="sc">*</span> (var <span class="sc">/</span> <span class="fu">max</span>(variances)) <span class="co"># Rescale</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  noise_sd <span class="ot">&lt;-</span> <span class="fu">abs</span>(<span class="fu">rnorm</span>(n_participants, <span class="dv">0</span>, noise))</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_participants) {</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    a <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n_trials, scores_baseline[i], variances[i])</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    b <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n_trials, scores_condition[i], variances[i])</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    a <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="fu">rnorm</span>(n_trials, <span class="dv">0</span>, noise_sd[i]) <span class="co"># Add noise</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    b <span class="ot">&lt;-</span> b <span class="sc">+</span> <span class="fu">rnorm</span>(n_trials, <span class="dv">0</span>, noise_sd[i]) <span class="co"># Add noise</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(data, <span class="fu">data.frame</span>(</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Participant&quot;</span> <span class="ot">=</span> <span class="fu">sprintf</span>(<span class="st">&quot;S%02d&quot;</span>, i),</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Y&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(a, b),</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Score_True&quot;</span> <span class="ot">=</span> <span class="fu">rep</span>(<span class="fu">c</span>(scores_baseline[i], scores_condition[i]), <span class="at">each =</span> n_trials),</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;Condition&quot;</span> <span class="ot">=</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">&quot;Baseline&quot;</span>, <span class="st">&quot;Manipulation&quot;</span>), <span class="at">each =</span> n_trials)</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  data</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize data -----------------------------------------------------------</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> <span class="fu">get_data</span>(<span class="at">n_participants =</span> <span class="dv">20</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Participant, Condition) <span class="sc">%&gt;%</span></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">mean =</span> <span class="fu">mean</span>(Y)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">y =</span> Y, <span class="at">x =</span> Condition, <span class="at">fill =</span> Participant, <span class="at">color =</span> Participant, <span class="at">group =</span> Participant)) <span class="sc">+</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> mean), <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.66</span>)) <span class="sc">+</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>  ggdist<span class="sc">::</span><span class="fu">stat_eye</span>(<span class="at">point_interval =</span> ggdist<span class="sc">::</span>mean_hdi, <span class="at">alpha =</span> <span class="fl">0.66</span>, <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> <span class="fl">0.66</span>), <span class="at">.width =</span> <span class="fu">c</span>(<span class="fl">0.95</span>)) <span class="sc">+</span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">&quot;Score&quot;</span>) <span class="sc">+</span></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_modern</span>() <span class="sc">+</span></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>)</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&quot;individual.png&quot;</span>, p, <span class="at">width =</span> <span class="dv">7</span>, <span class="at">height =</span> <span class="dv">7</span>, <span class="at">dpi =</span> <span class="dv">450</span>)</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a><span class="co"># Get results -------------------------------------------------------------</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>get_results <span class="ot">&lt;-</span> <span class="cf">function</span>(data) {</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Raw method ----</span></span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>  results <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(Participant, Condition) <span class="sc">%&gt;%</span></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise_all</span>(mean) <span class="sc">%&gt;%</span></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(<span class="st">&quot;Score_Raw&quot;</span> <span class="ot">=</span> <span class="st">&quot;Y&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>    <span class="fu">arrange</span>(Condition, Participant) <span class="sc">%&gt;%</span></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ungroup</span>()</span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Population model ----</span></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>  model <span class="ot">&lt;-</span> lme4<span class="sc">::</span><span class="fu">lmer</span>(Y <span class="sc">~</span> Condition <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> Condition <span class="sc">|</span> Participant), <span class="at">data =</span> data)</span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>  fixed <span class="ot">&lt;-</span> insight<span class="sc">::</span><span class="fu">get_parameters</span>(model, <span class="at">effects =</span> <span class="st">&quot;fixed&quot;</span>)<span class="sc">$</span>Estimate</span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>  random <span class="ot">&lt;-</span> insight<span class="sc">::</span><span class="fu">get_parameters</span>(model, <span class="at">effects =</span> <span class="st">&quot;random&quot;</span>)<span class="sc">$</span>Participant</span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Transform coefs into scores</span></span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>  pop_baseline <span class="ot">&lt;-</span> random[, <span class="dv">1</span>] <span class="sc">+</span> fixed[<span class="dv">1</span>]</span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>  pop_manipulation <span class="ot">&lt;-</span> pop_baseline <span class="sc">+</span> random[, <span class="dv">2</span>] <span class="sc">+</span> fixed[<span class="dv">2</span>]</span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>  results<span class="sc">$</span>Score_PopulationModel <span class="ot">&lt;-</span> <span class="fu">c</span>(pop_baseline, pop_manipulation)</span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Individual model ----</span></span>
+<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a>  individual_model_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span>
+<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (participant <span class="cf">in</span> <span class="fu">unique</span>(data<span class="sc">$</span>Participant)) {</span>
+<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">&quot;.&quot;</span>) <span class="co"># Print progress</span></span>
+<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a>    dat <span class="ot">&lt;-</span> data[data<span class="sc">$</span>Participant <span class="sc">==</span> participant, ]</span>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Frequentist</span></span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a>    model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(Y <span class="sc">~</span> Condition, <span class="at">data =</span> dat)</span>
+<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>    nopriors <span class="ot">&lt;-</span> parameters<span class="sc">::</span><span class="fu">parameters</span>(model1)<span class="sc">$</span>Coefficient</span>
+<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Bayesian without priors</span></span>
+<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>    <span class="co"># model2 &lt;- stan_glm(Y ~ Condition, data = dat, refresh = 0)</span></span>
+<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>    <span class="co"># bayes &lt;- parameters::parameters(model2)$Median</span></span>
+<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Bayesian with Priors</span></span>
+<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a>    model3 <span class="ot">&lt;-</span> <span class="fu">stan_glm</span>(Y <span class="sc">~</span> Condition,</span>
+<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>      <span class="at">data =</span> dat,</span>
+<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a>      <span class="at">refresh =</span> <span class="dv">0</span>,</span>
+<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a>      <span class="at">prior =</span> <span class="fu">normal</span>(fixed[<span class="dv">1</span>]),</span>
+<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a>      <span class="at">prior_intercept =</span> <span class="fu">normal</span>(fixed[<span class="dv">2</span>])</span>
+<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>    priors <span class="ot">&lt;-</span> parameters<span class="sc">::</span><span class="fu">parameters</span>(model3)<span class="sc">$</span>Median</span>
+<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a>    individual_model_data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(</span>
+<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>      individual_model_data,</span>
+<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>      <span class="fu">data.frame</span>(</span>
+<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Participant&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(participant, participant),</span>
+<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Condition&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">&quot;Baseline&quot;</span>, <span class="st">&quot;Manipulation&quot;</span>),</span>
+<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Score_IndividualModel&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(nopriors[<span class="dv">1</span>], nopriors[<span class="dv">1</span>] <span class="sc">+</span> nopriors[<span class="dv">2</span>]),</span>
+<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>        <span class="co"># &quot;Score_IndividualModel_Bayes&quot; = c(bayes[1], bayes[1] + bayes[2]),</span></span>
+<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Score_IndividualModel_Priors&quot;</span> <span class="ot">=</span> <span class="fu">c</span>(priors[<span class="dv">1</span>], priors[<span class="dv">1</span>] <span class="sc">+</span> priors[<span class="dv">2</span>])</span>
+<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>  results <span class="ot">&lt;-</span> <span class="fu">merge</span>(results, individual_model_data)</span>
+<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Clean output ----</span></span>
+<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a>  diff <span class="ot">&lt;-</span> results <span class="sc">%&gt;%</span></span>
+<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Diff_Raw = Score_True - Score_Raw,</span></span>
+<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a>      <span class="at">Diff_PopulationModel =</span> Score_True <span class="sc">-</span> Score_PopulationModel,</span>
+<span id="cb4-123"><a href="#cb4-123" aria-hidden="true" tabindex="-1"></a>      <span class="at">Diff_IndividualModel =</span> Score_True <span class="sc">-</span> Score_IndividualModel,</span>
+<span id="cb4-124"><a href="#cb4-124" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Diff_IndividualModel_Bayes = Score_True - Score_IndividualModel_Bayes,</span></span>
+<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a>      <span class="at">Diff_IndividualModel_Priors =</span> Score_True <span class="sc">-</span> Score_IndividualModel_Priors</span>
+<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(Participant, Condition, <span class="fu">starts_with</span>(<span class="st">&quot;Diff&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-128"><a href="#cb4-128" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(<span class="fu">starts_with</span>(<span class="st">&quot;Diff&quot;</span>), <span class="at">names_to =</span> <span class="st">&quot;Method&quot;</span>, <span class="at">values_to =</span> <span class="st">&quot;Diff&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-129"><a href="#cb4-129" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">Diff_Abs =</span> <span class="fu">abs</span>(Diff))</span>
+<span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a>  diff</span>
+<span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a><span class="co"># Analysis ----------------------------------------------------------------</span></span>
+<span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span>
+<span id="cb4-138"><a href="#cb4-138" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(n <span class="cf">in</span> <span class="fu">seq.int</span>(<span class="dv">10</span>, <span class="dv">300</span>, <span class="at">length.out =</span> <span class="dv">10</span>)){</span>
+<span id="cb4-139"><a href="#cb4-139" aria-hidden="true" tabindex="-1"></a>  data <span class="ot">&lt;-</span> <span class="fu">get_data</span>(<span class="at">n_participants =</span> <span class="fu">round</span>(n), <span class="at">n_trials =</span> <span class="dv">20</span>)</span>
+<span id="cb4-140"><a href="#cb4-140" aria-hidden="true" tabindex="-1"></a>  rez <span class="ot">&lt;-</span> <span class="fu">get_results</span>(data) <span class="sc">%&gt;%</span></span>
+<span id="cb4-141"><a href="#cb4-141" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>Participant) <span class="sc">%&gt;%</span></span>
+<span id="cb4-142"><a href="#cb4-142" aria-hidden="true" tabindex="-1"></a>    <span class="fu">group_by</span>(Condition, Method) <span class="sc">%&gt;%</span></span>
+<span id="cb4-143"><a href="#cb4-143" aria-hidden="true" tabindex="-1"></a>    <span class="fu">summarise_all</span>(mean) <span class="sc">%&gt;%</span></span>
+<span id="cb4-144"><a href="#cb4-144" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">n_Participants =</span> n,</span>
+<span id="cb4-145"><a href="#cb4-145" aria-hidden="true" tabindex="-1"></a>           <span class="at">Method =</span> <span class="fu">as.factor</span>(Method),</span>
+<span id="cb4-146"><a href="#cb4-146" aria-hidden="true" tabindex="-1"></a>           <span class="at">Dataset=</span><span class="fu">paste0</span>(<span class="st">&quot;Dataset&quot;</span>, <span class="fu">round</span>(n, <span class="dv">2</span>)))</span>
+<span id="cb4-147"><a href="#cb4-147" aria-hidden="true" tabindex="-1"></a>  results <span class="ot">&lt;-</span> <span class="fu">rbind</span>(results, rez)</span>
+<span id="cb4-148"><a href="#cb4-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-149"><a href="#cb4-149" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(n) <span class="co"># Print progress</span></span>
+<span id="cb4-150"><a href="#cb4-150" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-151"><a href="#cb4-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-152"><a href="#cb4-152" aria-hidden="true" tabindex="-1"></a><span class="co"># model &lt;- mgcv::gam(Diff_Abs ~ Method + s(n_Participants, by = Method), data = results)</span></span>
+<span id="cb4-153"><a href="#cb4-153" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(Diff_Abs <span class="sc">~</span> Method <span class="sc">*</span> <span class="fu">poly</span>(n_Participants, <span class="dv">3</span>), <span class="at">data =</span> results)</span>
+<span id="cb4-154"><a href="#cb4-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-155"><a href="#cb4-155" aria-hidden="true" tabindex="-1"></a>parameters<span class="sc">::</span><span class="fu">parameters</span>(model)</span>
+<span id="cb4-156"><a href="#cb4-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-157"><a href="#cb4-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-158"><a href="#cb4-158" aria-hidden="true" tabindex="-1"></a>contrasts <span class="ot">&lt;-</span> modelbased<span class="sc">::</span><span class="fu">estimate_contrasts</span>(model) <span class="sc">%&gt;%</span></span>
+<span id="cb4-159"><a href="#cb4-159" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Difference) <span class="sc">%&gt;%</span></span>
+<span id="cb4-160"><a href="#cb4-160" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb4-161"><a href="#cb4-161" aria-hidden="true" tabindex="-1"></a>    <span class="at">Level1 =</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(Level1, <span class="st">&quot;Diff_&quot;</span>),</span>
+<span id="cb4-162"><a href="#cb4-162" aria-hidden="true" tabindex="-1"></a>    <span class="at">Level2 =</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(Level2, <span class="st">&quot;Diff_&quot;</span>)</span>
+<span id="cb4-163"><a href="#cb4-163" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb4-164"><a href="#cb4-164" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(Level1, Level2, Difference, CI_low, CI_high, p)</span>
+<span id="cb4-165"><a href="#cb4-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-166"><a href="#cb4-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-167"><a href="#cb4-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-168"><a href="#cb4-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-169"><a href="#cb4-169" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize results ---------------------------------------------------------</span></span>
+<span id="cb4-170"><a href="#cb4-170" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> modelbased<span class="sc">::</span><span class="fu">estimate_means</span>(model) <span class="sc">%&gt;%</span></span>
+<span id="cb4-171"><a href="#cb4-171" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(Mean) <span class="sc">%&gt;%</span></span>
+<span id="cb4-172"><a href="#cb4-172" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb4-173"><a href="#cb4-173" aria-hidden="true" tabindex="-1"></a>    <span class="at">Method =</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(Method, <span class="st">&quot;Diff_&quot;</span>),</span>
+<span id="cb4-174"><a href="#cb4-174" aria-hidden="true" tabindex="-1"></a>    <span class="at">Method =</span> <span class="fu">factor</span>(Method, <span class="at">levels =</span> Method)</span>
+<span id="cb4-175"><a href="#cb4-175" aria-hidden="true" tabindex="-1"></a>  )  <span class="sc">%&gt;%</span></span>
+<span id="cb4-176"><a href="#cb4-176" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Method, <span class="at">y =</span> Mean, <span class="at">color =</span> Method)) <span class="sc">+</span></span>
+<span id="cb4-177"><a href="#cb4-177" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb4-178"><a href="#cb4-178" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> CI_low, <span class="at">ymax =</span> CI_high), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb4-179"><a href="#cb4-179" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_modern</span>() <span class="sc">+</span></span>
+<span id="cb4-180"><a href="#cb4-180" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb4-181"><a href="#cb4-181" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_material</span>()</span>
+<span id="cb4-182"><a href="#cb4-182" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&quot;featured.png&quot;</span>, p, <span class="at">width =</span> <span class="dv">10</span>, <span class="at">height =</span> <span class="dv">6</span>, <span class="at">dpi =</span> <span class="dv">450</span>)</span>
+<span id="cb4-183"><a href="#cb4-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-184"><a href="#cb4-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-185"><a href="#cb4-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-186"><a href="#cb4-186" aria-hidden="true" tabindex="-1"></a>p <span class="ot">&lt;-</span> modelbased<span class="sc">::</span><span class="fu">estimate_relation</span>(model) <span class="sc">%&gt;%</span></span>
+<span id="cb4-187"><a href="#cb4-187" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Method =</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(Method, <span class="st">&quot;Diff_&quot;</span>))  <span class="sc">%&gt;%</span></span>
+<span id="cb4-188"><a href="#cb4-188" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> n_Participants, <span class="at">y =</span> Predicted)) <span class="sc">+</span></span>
+<span id="cb4-189"><a href="#cb4-189" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span><span class="fu">mutate</span>(results, <span class="at">Method =</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(Method, <span class="st">&quot;Diff_&quot;</span>)),</span>
+<span id="cb4-190"><a href="#cb4-190" aria-hidden="true" tabindex="-1"></a>             <span class="fu">aes</span>(<span class="at">y=</span>Diff_Abs, <span class="at">color =</span> Method)) <span class="sc">+</span></span>
+<span id="cb4-191"><a href="#cb4-191" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>CI_low, <span class="at">ymax=</span>CI_high, <span class="at">fill=</span>Method), <span class="at">alpha=</span><span class="fl">0.1</span>) <span class="sc">+</span></span>
+<span id="cb4-192"><a href="#cb4-192" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">color =</span> Method), <span class="at">size=</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb4-193"><a href="#cb4-193" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_modern</span>() <span class="sc">+</span></span>
+<span id="cb4-194"><a href="#cb4-194" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb4-195"><a href="#cb4-195" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_material</span>() <span class="sc">+</span></span>
+<span id="cb4-196"><a href="#cb4-196" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_material</span>()</span>
+<span id="cb4-197"><a href="#cb4-197" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&quot;n_participants.png&quot;</span>, p, <span class="at">width =</span> <span class="dv">10</span>, <span class="at">height =</span> <span class="dv">6</span>, <span class="at">dpi =</span> <span class="dv">450</span>)</span>
+<span id="cb4-198"><a href="#cb4-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-199"><a href="#cb4-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-200"><a href="#cb4-200" aria-hidden="true" tabindex="-1"></a><span class="co"># Save results ------------------------------------------------------------</span></span>
+<span id="cb4-201"><a href="#cb4-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-202"><a href="#cb4-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-203"><a href="#cb4-203" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="st">&quot;results&quot;</span> <span class="ot">=</span> results, <span class="st">&quot;model&quot;</span> <span class="ot">=</span> model, <span class="st">&quot;contrasts&quot;</span> <span class="ot">=</span> contrasts)</span>
+<span id="cb4-204"><a href="#cb4-204" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(d, <span class="at">file =</span> <span class="st">&quot;data.Rdata&quot;</span>)</span></code></pre></div>
+</div>
+<div id="references" class="section level3" number="0.0.5">
+<h3><span class="header-section-number">0.0.5</span> References</h3>
+<p><sub>You can reference this post as follows:</sub></p>
+<p><sub>- Makowski, D. (2020, September 14). How to extract individual scores from repeated measures. Retrieved from https://dominiquemakowski.github.io/post/individual_scores/</sub></p>
+<hr />
+<p><em>Thanks for reading! Do not hesitate to share this post, and leave a comment below</em> :hugs:</p>
+<p>🐦 <em>And don’t forget to join me on Twitter</em> <a href="https://twitter.com/Dom_Makowski"><span class="citation">(<strong>Dom_Makowski?</strong>)</span></a></p>
+</div>
