@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: February 11, 2023 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.0f229d4b7ebad1917a9a357cba2effab.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DWR0E4SB8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-DWR0E4SB8S', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Dominique Makowski" />
+
+
+
+
+
+  
+
+<meta name="description" content="Ever felt like reality was dull as compared to a fictional world? You might have experienced Cypher&#39;s Complex" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://dominiquemakowski.github.io/post/2023-02-07-cypherscomplex/" />
+<link rel="canonical" href="https://dominiquemakowski.github.io/post/2023-02-07-cypherscomplex/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@@Dom_Makowski" />
+  <meta property="twitter:creator" content="@@Dom_Makowski" />
+<meta property="twitter:image" content="https://dominiquemakowski.github.io/post/2023-02-07-cypherscomplex/featured.jfif" />
+<meta property="og:site_name" content="Dr Dominique Makowski" />
+<meta property="og:url" content="https://dominiquemakowski.github.io/post/2023-02-07-cypherscomplex/" />
+<meta property="og:title" content="When fiction is better than reality: Cypher&#39;s Complex | Dr Dominique Makowski" />
+<meta property="og:description" content="Ever felt like reality was dull as compared to a fictional world? You might have experienced Cypher&#39;s Complex" /><meta property="og:image" content="https://dominiquemakowski.github.io/post/2023-02-07-cypherscomplex/featured.jfif" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2023-02-07T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2023-02-07T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dominiquemakowski.github.io/post/2023-02-07-cypherscomplex/"
+  },
+  "headline": "When fiction is better than reality: Cypher's Complex",
+  
+  "image": [
+    "https://dominiquemakowski.github.io/post/2023-02-07-cypherscomplex/featured.jfif"
+  ],
+  
+  "datePublished": "2023-02-07T00:00:00Z",
+  "dateModified": "2023-02-07T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dominique Makowski"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Reality Bending Lab",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Ever felt like reality was dull as compared to a fictional world? You might have experienced Cypher's Complex"
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>When fiction is better than reality: Cypher&#39;s Complex | Dr Dominique Makowski</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="8b041ee9e4d18addc20c14b7d9211d91" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.fe8634e7d00f14d07fb33caf14cc8e55.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Dr Dominique Makowski</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Dr Dominique Makowski</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>About</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/cv/"><span>CV</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication/"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://realitybending.github.io/" target="_blank" rel="noopener"><span>Lab</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://twitter.com/Dom_Makowski" target="_blank" rel="noopener"><span><i class="fab fa-twitter"; font-size: 1rem; line-height: 1.25"></i></span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://github.com/DominiqueMakowski" target="_blank" rel="noopener"><span><i class="fab fa-github"; font-size: 1rem; line-height: 1.25"></i></span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>When fiction is better than reality: Cypher&#39;s Complex</h1>
+
+  
+  <p class="page-subtitle">Ever felt like reality was dull as compared to a fictional world? You might have experienced Cypher&rsquo;s Complex</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      Dominique Makowski</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Feb 7, 2023
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/fiction/">Fiction</a>, <a href="/category/reality/">Reality</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 276px; max-height: 183px;">
+  <div style="position: relative">
+    <img src="/post/2023-02-07-cypherscomplex/featured_huf000ead880261aab53db3db9f73f3093_7442_720x2500_fit_q75_h2_lanczos.webp" width="276" height="183" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Did you ever feel empty after finishing a good book? <strong>Like (your) reality was dull and boring</strong> as compared to the fictional world you were immersed in? Yearning to stay in longer, and at the same time knowing well that it had to come to an end? You might have experienced what we can call <strong>Cypher&rsquo;s Complex</strong>.</p>
+<p>In the movie <strong>The Matrix</strong>, Cypher is a &ldquo;redpill&rdquo;, i.e., an individual that has been awaken from the matrix (a virtual world). However, he becomes disappointed and unhappy with the true nature of reality, and actively seeks to <strong>return to the illusory world</strong> of the matrix. Interestingly, he also explicitly desires to forget everything about the true reality, as if keeping the awareness of living in an illusion could prevent him from fully enjoying it.</p>
+<figure>
+  <img src="cypher.gif" alt="Cypher"/>
+  <figcaption><i>"You know.. I know this steak doesn't exist. I know that when I put it in my mouth; the Matrix is telling my brain that it is juicy, and delicious. After nine years.. you know what I realize? Ignorance is bliss."</i></figcaption>
+</figure>
+<p>From a scientific perspective, the latter part can find some echo in the down-regulatory effect of <a href="https://link.springer.com/article/10.3758/s13415-018-00681-0" target="_blank" rel="noopener"><strong>fictional reappraisal</strong></a>. In a few studies, we showed that believing that a stimulus is &ldquo;fictional&rdquo; (not real) dampens our emotional state. <a href="https://www.sciencedirect.com/science/article/pii/S2589004222017138?via%3Dihub" target="_blank" rel="noopener"><strong>Tucciarelli et al. (2023)</strong></a> also showed that the simple knowledge that a set of images of faces contains AI-generated images decreased the perceived trustworthiness of all the faces. These results suggest that being aware that the causes of our experience (the events and stimuli) are fictional can be a barrier to enjoyment and engagement. And yet, the desire to supplant reality with a fictional world can be found in real life.</p>
+<p>Cypher&rsquo;s Complex is common in mild forms. Examples can be found in the feelings of emptiness, disconnection and dullness (itself a transient and mild form of <a href="https://en.wikipedia.org/wiki/Depersonalization-derealization_disorder" target="_blank" rel="noopener"><strong>depersonalization/derealization</strong></a>) that follows the return from an engaging fictional world (be it in a novel, a movie or a video-game). For instance, many reported feeling blue <strong>after watching the Avatar (2009)</strong> movie, to the extent where it has been coined the <a href="https://www.theguardian.com/film/2022/dec/15/post-avatar-depression-syndrome-why-do-fans-feel-blue-after-watching-james-camerons-film" target="_blank" rel="noopener"><strong>&ldquo;post-Avatar depression syndrome&rdquo;</strong></a>. Most of the time, the negative affects passes, and the dissonance gets resolved either through closure (acceptance of the fictional or impermanent nature of the alternative reality), or a compromise that allows the fictional world to take a delimited space in one&rsquo;s reality. For example, people might engage in activities (e.g., role playing games) or create content (writing a book or doing fan art) to integrate the fictional world into their reality.</p>
+<p>However, <strong>Cypher&rsquo;s Complex can also give rise to more severe issues</strong> with conscious or unconscious attempts at forgetting or ignoring reality (delusions, denial, &hellip;), which can lead to dire outcomes.</p>
+<p><strong>Interested in doing research related to effects of reality and fiction?</strong> We are looking for research assistants and PhD students at the <em>Reality Bending Lab</em> (check-out the <a href="http://localhost:4321/jobs/" target="_blank" rel="noopener">join us tab</a>)!</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/reality-bending-lab/">Reality Bending Lab</a>
+  
+  <a class="badge badge-light" href="/tag/rebel/">ReBeL</a>
+  
+  <a class="badge badge-light" href="/tag/university-of-sussex/">University of Sussex</a>
+  
+  <a class="badge badge-light" href="/tag/psychology/">Psychology</a>
+  
+  <a class="badge badge-light" href="/tag/neuropsychology/">Neuropsychology</a>
+  
+  <a class="badge badge-light" href="/tag/matrix/">Matrix</a>
+  
+  <a class="badge badge-light" href="/tag/cyphers-complex/">Cypher&#39;s Complex</a>
+  
+  <a class="badge badge-light" href="/tag/fiction/">Fiction</a>
+  
+  <a class="badge badge-light" href="/tag/emotion-regulation/">Emotion regulation</a>
+  
+  <a class="badge badge-light" href="/tag/fictional-reappraisal/">Fictional reappraisal</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-02-07-cypherscomplex%2F&amp;text=When&#43;fiction&#43;is&#43;better&#43;than&#43;reality%3A&#43;Cypher%27s&#43;Complex" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-02-07-cypherscomplex%2F&amp;t=When&#43;fiction&#43;is&#43;better&#43;than&#43;reality%3A&#43;Cypher%27s&#43;Complex" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=When%20fiction%20is%20better%20than%20reality%3A%20Cypher%27s%20Complex&amp;body=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-02-07-cypherscomplex%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-02-07-cypherscomplex%2F&amp;title=When&#43;fiction&#43;is&#43;better&#43;than&#43;reality%3A&#43;Cypher%27s&#43;Complex" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=When&#43;fiction&#43;is&#43;better&#43;than&#43;reality%3A&#43;Cypher%27s&#43;Complex%20https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-02-07-cypherscomplex%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-02-07-cypherscomplex%2F&amp;title=When&#43;fiction&#43;is&#43;better&#43;than&#43;reality%3A&#43;Cypher%27s&#43;Complex" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://dominiquemakowski.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/dominique-makowski/avatar_hu8ec970fed8493c9666eb1aeeafcfd774_2053074_270x270_fill_lanczos_center_3.png" alt="Dominique Makowski"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://dominiquemakowski.github.io/">Dominique Makowski</a></h5>
+      <h6 class="card-subtitle">Lecturer in Psychology</h6>
+      <p class="card-text">Trained as neuropsychologist and CBT psychotherapist, I am currently working as a lecturer at the University of Sussex, on the neuroscience of reality perception.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Dom_Makowski" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.fr/citations?user=bg0BZ-QAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Dominique_Makowski" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/DominiqueMakowski" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Dominique Makowski. All rights reserved.
+  </p>
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

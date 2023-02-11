@@ -54,12 +54,12 @@ plt.axis("off")
 plt.show()
 ```
 
-{{< tweet "1258376273451053056" >}}
+{{< tweet user="Dom_Makowski" id="1258376273451053056" >}}
 
 
 
 Althoug the NeuroKit Python package is primarily devoted at physiological signal processing, in also includes tons of other useful features.
- 
+
 
 👉 [**Discover more about NeuroKit here**](https://github.com/neuropsychology/NeuroKit#quick-example) 👈
 

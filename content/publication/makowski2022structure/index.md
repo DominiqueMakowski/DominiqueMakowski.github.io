@@ -19,8 +19,8 @@ summary: ''
 tags:
 - Source Themes
 title: 'The Structure of Chaos: An Empirical Comparison of Fractal Physiology Complexity Indices Using NeuroKit2'
-url_code: ""
-url_dataset: ""
+url_code: "https://github.com/DominiqueMakowski/ComplexityStructure"
+url_dataset: "https://github.com/DominiqueMakowski/ComplexityStructure"
 url_pdf: https://dominiquemakowski.github.io/publication/makowski2022structure/makowski2022structure.pdf
 url_poster: ""
 url_project: ""

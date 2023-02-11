@@ -4,7 +4,10 @@ authors:
 - Zen J. Lau
 - Tam Pham
 - S. H. Annabel Chen
-- Dominique Makowski
+- dominique-makowski
+author_notes:
+- Equal contribution
+- Equal contribution
 date: "2022-08-19T00:00:00Z"
 doi: "https://doi.org/10.1111/ejn.15800"
 featured: false

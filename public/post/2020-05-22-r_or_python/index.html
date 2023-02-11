@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: February 11, 2023 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.0f229d4b7ebad1917a9a357cba2effab.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DWR0E4SB8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-DWR0E4SB8S', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Dominique Makowski" />
+
+
+
+
+
+  
+
+<meta name="description" content="Most psychology students or researchers are faced with the challenge of learning a programming language. Which one should you pick?" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://dominiquemakowski.github.io/post/2020-05-22-r_or_python/" />
+<link rel="canonical" href="https://dominiquemakowski.github.io/post/2020-05-22-r_or_python/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@@Dom_Makowski" />
+  <meta property="twitter:creator" content="@@Dom_Makowski" />
+<meta property="twitter:image" content="https://dominiquemakowski.github.io/post/2020-05-22-r_or_python/featured.png" />
+<meta property="og:site_name" content="Dr Dominique Makowski" />
+<meta property="og:url" content="https://dominiquemakowski.github.io/post/2020-05-22-r_or_python/" />
+<meta property="og:title" content="R or Python for Psychologists | Dr Dominique Makowski" />
+<meta property="og:description" content="Most psychology students or researchers are faced with the challenge of learning a programming language. Which one should you pick?" /><meta property="og:image" content="https://dominiquemakowski.github.io/post/2020-05-22-r_or_python/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2020-05-22T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2020-05-22T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dominiquemakowski.github.io/post/2020-05-22-r_or_python/"
+  },
+  "headline": "R or Python for Psychologists",
+  
+  "image": [
+    "https://dominiquemakowski.github.io/post/2020-05-22-r_or_python/featured.png"
+  ],
+  
+  "datePublished": "2020-05-22T00:00:00Z",
+  "dateModified": "2020-05-22T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dominique Makowski"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Reality Bending Lab",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Most psychology students or researchers are faced with the challenge of learning a programming language. Which one should you pick?"
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>R or Python for Psychologists | Dr Dominique Makowski</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="f737771fcdb72e3cc23418b44a768a27" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.fe8634e7d00f14d07fb33caf14cc8e55.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Dr Dominique Makowski</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Dr Dominique Makowski</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>About</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/cv/"><span>CV</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication/"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://realitybending.github.io/" target="_blank" rel="noopener"><span>Lab</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://twitter.com/Dom_Makowski" target="_blank" rel="noopener"><span><i class="fab fa-twitter"; font-size: 1rem; line-height: 1.25"></i></span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://github.com/DominiqueMakowski" target="_blank" rel="noopener"><span><i class="fab fa-github"; font-size: 1rem; line-height: 1.25"></i></span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>R or Python for Psychologists</h1>
+
+  
+  <p class="page-subtitle">Most psychology students or researchers are faced with the challenge of learning a programming language. Which one should you pick?</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      Dominique Makowski</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    May 22, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    9 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/r/">R</a>, <a href="/category/python/">Python</a>, <a href="/category/psychology/">Psychology</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 540px;">
+  <div style="position: relative">
+    <img src="/post/2020-05-22-r_or_python/featured_hu3430934f9a4b797bc014df98970597ed_75403_720x2500_fit_q75_h2_lanczos_3.webp" width="720" height="540" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Many psychology students or researchers are faced with the challenge - <em>or the opportunity</em> - of learning a programming language. <strong>Which one should you learn?</strong></p>
+<p>As an ex- psych student and a daily user and developer of some of them, here&rsquo;s my take on this hot debate.</p>
+<h2 id="what-has-programming-to-do-with-psychology">What has programming to do with psychology?</h2>
+<p>If you&rsquo;re a very young psychology student, or a future one, you might wonder: <strong>why the heck would I have to learn programming in psychology?</strong> <em>&ldquo;Psychology is kinda like philosophy, it&rsquo;s just learning how people&rsquo;s minds work by reading books and overthinking stuff&rdquo;</em>. If you still think that, you&rsquo;re in for <strong>one hell of a ride</strong>!</p>
+<p>Psychology is, since its very beginning, a hard and experimental science. The founding fathers of psychology were dedicated to find ways to objectively <em>measure</em> psychological phenomena and uncovering the mathematical laws that govern Human behaviour (one of the fields of psychology is even called psycho<em>physics</em>). True, this <em>sciency</em> nature has been toned down by the booming popularity of <strong>pseudo-scientific approaches like psychoanalysis</strong> throughout the 20th century, that contributed to the stereotypical public image of the shrink doodling while listening to a neurotic patient. But that&rsquo;s a distorted and old-fashioned view, not really representative of the future of psychology.</p>
+<p>The fact is that psychology is very closely connected with <strong>statistics</strong>. Many great statistical advances were made by psychologists, and all true psychological discoveries are backed by statistical findings. And this importance of statistics is - and will be - growing further, partly due to the recent realization of some major issues in the field due to improper statistical procedures (coined the &ldquo;<a href="https://en.wikipedia.org/wiki/Replication_crisis" target="_blank" rel="noopener"><strong>replicability crisis</strong></a>&rdquo;). Moreover, psychology is more and more relying on advanced data-acquiring methods (smartphone apps, website behaviour data, online surveys, physiological and brain recording devices like EEG, MRI, etc.). And these new formats often require specialized knowledge (web-scraping, database querying, neuroimaging, signal processing, machine learning, &hellip;). <em>And with great data-power comes great data-analysis-responsibilities</em>. Even in the most applied kind of <strong>clinical</strong> or <strong>psychotherapeutic</strong> specializations, where you&rsquo;d think you&rsquo;d be safe, they are starting to use data intensive methods like neuro-feedback, virtual reality, experience sampling, and other forms of smartphone sensing and surveying.</p>
+<p>Long story short, no matter which branch of psychology you specialize in, you <em>will</em> be confronted with some technical aspects that won&rsquo;t be able to solve with <em>Excel</em>. Moreover, these technical skills are the ones that will make the most difference between students, and that will matter a lot if you want to pursue research or want to go work in the private sector. The golden era where people were recruited in research based on their theoretical expertise is over: technical skills are now the golden ticket to enter - <em>and successfully leave</em> - academia.</p>
+<p>So, <strong>ready to dive into programming?</strong> Fear not! It&rsquo;s not that complicated. Moreover, it&rsquo;s <strong>one of the most rewarding skill</strong> you can develop. I can assure you that you won&rsquo;t regret the time invested in learning it 😊</p>
+<p>But where should you start?</p>
+<h2 id="learn-both-r-and-python">Learn both R and Python</h2>
+<p>This increasing relationship between psychology and statistics on the one hand, and other more general technical aspects on the other, is the reason why R and Python are so popular in psychology. Both languages are <strong>free</strong>, <strong>open-source</strong>, suited for <strong>beginners</strong>, and have a large base of users with a ton of <strong>learning material</strong> online. What&rsquo;s the difference between them?</p>
+<p>Put simply, <strong>R is for statistics, Python is for the rest</strong>.</p>
+<p>So why is there a virulent debate going on, and a choice to make? It&rsquo;s true that I, <em>in theory</em>, would agree with some popular recommandations and suggest <strong>learning both</strong>, as they are complementary and have their own strengths and weaknesses. I myself use both on a daily basis, so why would preach what I practice?</p>
+<p>That said, many opinionated people are also arguing in favour of one <strong>or</strong> the other (usually the only one they know&hellip;) will say that learning both is essentially a waste of time. They will put forth a strong argument: <strong>you can do whatever you do in R in Python, and <em>vice-versa</em></strong>. In other words, both languages can be used to achieve your goals, so it&rsquo;s <strong>better to specialize in one than have a limited knowledge of both</strong>.</p>
+<p>Although I do not agree with that statement, I do acknowledge that people have limited time and resources to learn. Saying <strong>&ldquo;just learn both&rdquo;</strong> is easy, but is arguably an unrealistic expectation for the vast majority of people. So why learning both can be a long-term goal (especially if you want to do research), you have to start somewhere. So, <strong>what starter language should you select?</strong></p>
+<figure>
+  <img src="pokemon.png" alt="r or python"/>
+  <figcaption>Ash choosing his starter programming language. He has the choice between R, Python and Bulbasaur, i.e, Matlab - the one that no one likes.</figcaption>
+</figure>
+<h2 id="what-about-matlab">What about Matlab?</h2>
+<p>There was a time when <em>Matlab</em> was the boss. It was used everywhere and had the best functionalities for neuroimaging, signal processing and maths. But <strong>that time is over</strong>. Matlab is already a zombie language, which burial process will continue in the years to come. Why is it dead? Because it is <strong>expensive</strong>, <strong>closed</strong>, <strong>ugly</strong>, and most importantly because the alternatives (namely R and Python) are now more powerful and featured than Matlab.</p>
+<figure>
+  <img src="https://media.giphy.com/media/sDOhzJBsFvjMY/giphy.gif" alt="matlab"/>
+  <figcaption>Agamemnon reacting to king Priam saying "The city of Matlab will never be conquered".</figcaption>
+</figure>
+<p>The truth is, there are only two reasons people still use Matlab: <strong>habit</strong> (it&rsquo;s hard to learn a new approach if your old way of doing things still works) and <strong>SPM</strong> (a toolbox for neuroimaging that is still - <em>for now</em> - the leader in the field).</p>
+<p>But seriously, don&rsquo;t waste time on it if you have limited resources, it&rsquo;s just not worth it. You will learn an outdated tool that you won&rsquo;t be able to use in another lab if they don&rsquo;t agree to pay for an expensive license (unless you&rsquo;re a pirate ☠️). Whereas with open and free languages like R or Python, you have access to the best tools and can use them freely everywhere. Also, it makes you a <strong>supporter of open-science</strong>, which is good 😁.</p>
+<h2 id="how-to-decide-between-r-and-python">How to decide between R and Python</h2>
+<p><strong>Time has come to make a decision.</strong></p>
+<p>Despite what people say, <strong>R and Python are not equivalent</strong>. You can argue as much as you want, but doing statistics and data visualization in Python is not as fast, easy and neat as it is in R. And signal processing or neuroimaging is not as powerful in R as compared to Python. Note that both languages are still growing and changing, and they are influencing themselves: for instance, many popular Python modules (e.g., <strong>pandas</strong>, <strong>statsmodels</strong>, <strong>seaborn</strong>, &hellip;) have been directly inspired by R. As such, the boundaries between the two languages are fading (and I&rsquo;m not even mentioning the great advances in interoperability, with tools like <a href="https://rstudio.github.io/reticulate/" target="_blank" rel="noopener"><strong>reticulate</strong></a> that allow you to use one language directly inside the other).</p>
+<p>That being said, Python and R remain very different languages at their core, with a different feel and vibe to it. R was made by statisticians for statistics, and the majority of its users are academics and researchers. On the contrary, Python is a true general-purpose &ldquo;programming&rdquo; language, widely used outside of academia, in the private sector.</p>
+<p>Here are some things to consider when deciding on what language to learn:</p>
+<h3 id="reasons-to-choose-python">Reasons to choose Python</h3>
+<ul>
+<li><strong>You have some basic knowledge or familiarity with programming</strong></li>
+</ul>
+<p>For instance, you know what a <em>logical loop</em> is. Python being a true programming language, having any prior experience will be useful.</p>
+<ul>
+<li><strong>You are good with logic and spatial representation (like imagining shapes in 3D, rotating them, etc.)</strong></li>
+</ul>
+<p>In Python, you will have to think with a &ldquo;programming&rdquo; mindset. That means perceiving things in terms of logical statements and blocks, understanding data as 2D or 3D tables that you have to slice and recombine.</p>
+<ul>
+<li><strong>You are comfortable with maths</strong></li>
+</ul>
+<p>In Python, numbers and numbers combinations are used a lot. Paradoxically, you will typically see a lot more maths in Python than in R.</p>
+<ul>
+<li><strong>You plan to do signal processing or experimental tasks creation</strong></li>
+</ul>
+<p>These are some of the domains where Python is well-established (which doesn&rsquo;t mean that R doesn&rsquo;t have some great tools in development).</p>
+<ul>
+<li><strong>You are good at googling and don&rsquo;t mind spending time looking for the right answer</strong></li>
+</ul>
+<p>Python has so much material online that it&rsquo;s sometimes hard to find the appropriate thing. Harder than in R, in my opinion, which has more well-defined &ldquo;gold-standard&rdquo; textbooks and tutorials.</p>
+<h3 id="reasons-to-choose-r">Reasons to choose R</h3>
+<ul>
+<li><strong>You have no experience with programming whatsoever</strong></li>
+</ul>
+<p>R is not made to be used as a traditional <em>programming</em> language. It&rsquo;s more of finding what functions to apply to what, and that makes it easy for beginners.</p>
+<ul>
+<li><strong>You are interested in statistical analyses, modelling things, and making inferences from data</strong></li>
+</ul>
+<p>R excels at this. You can create powerful models super easily and jump into their understanding and interpretation.</p>
+<ul>
+<li><strong>You like making nice figures and plots</strong></li>
+</ul>
+<p>R, through the <a href="https://ggplot2.tidyverse.org/index.html" target="_blank" rel="noopener"><strong>ggplot</strong></a> ecosystem, has hands down the best tools for visualization. Your imagination is the limit, and you can even create art (check-out the artworks by <a href="https://www.data-imaginist.com/art" target="_blank" rel="noopener">Thomas Lin Pedersen</a> and <a href="https://art.djnavarro.net/" target="_blank" rel="noopener">Danielle Navarro</a> 😍).</p>
+<ul>
+<li><strong>You are <em>not</em> so good with stats or maths</strong></li>
+</ul>
+<p>You heard it right! To start with R you don&rsquo;t need to know stats or maths like a boss. R, in fact, will help you to become proficient at it, by slowly opening more and more layers of complexity to you, if you are deemed worthy.</p>
+<ul>
+<li><strong>You are interested in joining the academic community</strong></li>
+</ul>
+<p>Because most of its users are academics, R has a fantastic community online, for instance on <a href="https://twitter.com/hashtag/rstats" target="_blank" rel="noopener"><strong>Twitter #rstats</strong></a>. It&rsquo;s also super inclusive (e.g., the <a href="https://rladies.org/" target="_blank" rel="noopener">R-Ladies</a>).</p>
+<h3 id="other-considerations">Other considerations</h3>
+<ul>
+<li><strong>What your peers are learning</strong></li>
+</ul>
+<p>It&rsquo;s easier to learn together, so try to discuss it with your class or lab mates if you can.</p>
+<ul>
+<li><strong>What your lab is using</strong></li>
+</ul>
+<p>It might be easier if you have mentors that can understand what you are doing and guide you. But that should not be a priority, as it can lead to <a href="https://en.wikipedia.org/wiki/Cargo_cult" target="_blank" rel="noopener">cargo cult</a>-like old habits reproduction (especially if your lab has a tradition of Matlab 🤭). Instead of submitting to the tradition, assess what the goals and objectives are, and pick the best tool to achieve them. And if you have any issue convincing your boss / supervisor about it, ask some help on Twitter, I bet you&rsquo;ll get a lot of it.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="https://github.com/matloff/R-vs.-Python-for-Data-Science" target="_blank" rel="noopener">R vs. Python for Data Science</a></li>
+</ul>
+<h2 id="hands-on">Hands on!</h2>
+<p>👉 Looking for places to start? Check out this <a href="https://neurokit2.readthedocs.io/en/latest/tutorials/learnpython.html" target="_blank" rel="noopener"><strong>10-min crash course introduction to Python</strong></a> and this <a href="https://easystats.github.io/blog/resources/" target="_blank" rel="noopener"><strong>collection of resources for R</strong></a>.</p>
+<hr>
+<p><em>Thanks for reading!</em> 🐦 <em>Don&rsquo;t forget to join me on Twitter</em> (<a href="https://twitter.com/Dom_Makowski" target="_blank" rel="noopener">@Dom_Makowski</a>) <em>and leave a comment below</em> 👇</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/r/">R</a>
+  
+  <a class="badge badge-light" href="/tag/python/">Python</a>
+  
+  <a class="badge badge-light" href="/tag/language/">Language</a>
+  
+  <a class="badge badge-light" href="/tag/psychology/">Psychology</a>
+  
+  <a class="badge badge-light" href="/tag/programming/">Programming</a>
+  
+  <a class="badge badge-light" href="/tag/best-language/">Best language</a>
+  
+  <a class="badge badge-light" href="/tag/psychologist/">Psychologist</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2020-05-22-r_or_python%2F&amp;text=R&#43;or&#43;Python&#43;for&#43;Psychologists" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2020-05-22-r_or_python%2F&amp;t=R&#43;or&#43;Python&#43;for&#43;Psychologists" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=R%20or%20Python%20for%20Psychologists&amp;body=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2020-05-22-r_or_python%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2020-05-22-r_or_python%2F&amp;title=R&#43;or&#43;Python&#43;for&#43;Psychologists" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=R&#43;or&#43;Python&#43;for&#43;Psychologists%20https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2020-05-22-r_or_python%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2020-05-22-r_or_python%2F&amp;title=R&#43;or&#43;Python&#43;for&#43;Psychologists" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://dominiquemakowski.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/dominique-makowski/avatar_hu8ec970fed8493c9666eb1aeeafcfd774_2053074_270x270_fill_lanczos_center_3.png" alt="Dominique Makowski"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://dominiquemakowski.github.io/">Dominique Makowski</a></h5>
+      <h6 class="card-subtitle">Lecturer in Psychology</h6>
+      <p class="card-text">Trained as neuropsychologist and CBT psychotherapist, I am currently working as a lecturer at the University of Sussex, on the neuroscience of reality perception.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Dom_Makowski" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.fr/citations?user=bg0BZ-QAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Dominique_Makowski" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/DominiqueMakowski" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Dominique Makowski. All rights reserved.
+  </p>
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

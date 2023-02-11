@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reproducibility | Dr Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/category/reproducibility/</link>
+      <atom:link href="https://dominiquemakowski.github.io/category/reproducibility/index.xml" rel="self" type="application/rss+xml" />
+    <description>Reproducibility</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 30 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
+      <title>Reproducibility</title>
+      <link>https://dominiquemakowski.github.io/category/reproducibility/</link>
+    </image>
+    
+    <item>
+      <title>Pyllusion has been published</title>
+      <link>https://dominiquemakowski.github.io/post/2021-11-30-pyllusion/</link>
+      <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2021-11-30-pyllusion/</guid>
+      <description>&lt;h2 id=&#34;pyllusion-has-been-published&#34;&gt;Pyllusion has been published!&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/RealityBending/Pyllusion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pyllusion&lt;/a&gt; is a package for &lt;strong&gt;Python&lt;/strong&gt; that implements a systematic way to manipulate and generate illusions using a set of parameters.&lt;/p&gt;
+&lt;p&gt;For instance, the famous &lt;a href=&#34;https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Müller-Lyer&lt;/a&gt; illusion below, which causes the observer to perceive the 2 segments of being different lengths depending on the shape of the arrows, can be generated wit the following lines of code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;mullerlyer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pyllusion&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;MullerLyer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;illusion_strength&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;mullerlyer&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to_image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/RealityBending/Pyllusion/blob/master/docs/img/README_mullerlyer1.png?raw=true&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;To understand more about the parametric approach being implemented in the &lt;em&gt;Pyllusion&lt;/em&gt; package, we recommend reading our &lt;a href=&#34;https://dominiquemakowski.github.io/publication/makowski2021parametric/makowski2021parametric.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper&lt;/a&gt;, which includes a hands-on example on how to generate some classic illusions (such as the &lt;a href=&#34;https://en.wikipedia.org/wiki/Delboeuf_illusion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Delbeouf Illusion&lt;/a&gt;), and discusses how &lt;em&gt;Pyllusion&lt;/em&gt; contributes to address conceptual and methodological issues in illusion science.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pyllusion&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;delboeuf&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pyllusion&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Delboeuf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;illusion_strength&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;delboeuf&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to_image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/RealityBending/Pyllusion/blob/master/docs/img/README_delboeuf1.png?raw=true&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to keep a look out for our &lt;a href=&#34;https://github.com/RealityBending/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;repo&lt;/a&gt; for more exciting open-source projects!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>&#34;Your sample is too small&#34;: How to Answer to Reviewers</title>
+      <link>https://dominiquemakowski.github.io/post/2021-11-05-sample-too-small/</link>
+      <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2021-11-05-sample-too-small/</guid>
+      <description>&lt;h1 id=&#34;your-sample-is-too-small-how-to-answer-to-reviewers&#34;&gt;&amp;ldquo;Your sample is too small&amp;rdquo;: How to Answer to Reviewers&lt;/h1&gt;
+&lt;p&gt;Reviewers questioning the statistical power of a study, while often valid, is common and unoriginal. The problem of possible lack of power, and thus possible false positives, can also be combined with the desire for stringent &lt;strong&gt;multiple comparisons / tests&lt;/strong&gt; &amp;ldquo;corrections&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;In many real-life scenarios, we simply cannot increase the sample size (because of money, time, COVID or any other reason). And sometimes, the many tests / comparisons are all needed as we have many hypotheses or variables. Naturally, the best &lt;strong&gt;pre-study&lt;/strong&gt; weapon against power-related issues are &lt;strong&gt;preregistration&lt;/strong&gt; (and registered-reports) with proper &lt;strong&gt;power-analysis&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;That being said, imagine that for one reason or another we don&amp;rsquo;t have that. We cannot recruit more participants and have to deal with the data that what we have. &lt;strong&gt;What can we do?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Some useful tips can be grouped and referred to as &lt;strong&gt;PoSCA&lt;/strong&gt; (Power, Stringency, Coherence, Acknowledgment):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Po&lt;/strong&gt;wer: Don&amp;rsquo;t waste power
+&lt;ul&gt;
+&lt;li&gt;Use all the information that you have. In particular, the information &lt;em&gt;within&lt;/em&gt; participants (if you have multiple trials per participant, don&amp;rsquo;t average over them!), by using methods such as &lt;strong&gt;mixed-models&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S&lt;/strong&gt;tringent significance
+&lt;ul&gt;
+&lt;li&gt;Increase the significance threshold, either arbitrarily (e.g., lower the &lt;em&gt;p&lt;/em&gt;-value threshold to .005; Ioannidis, 2018) or pseudo-arbitrarily (using multiple-comparisons corrections such as the Bonferroni method). This, under the Bayesian framework, is &lt;sub&gt;(somewhat)&lt;/sub&gt; equivalent to being more script with whatever indices that we use. For instance, consider only Bayes Factors (BF) &amp;gt; 30 instead of 10, or &lt;a href=&#34;https://easystats.github.io/bayestestR/articles/guidelines.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Probabilities of Direction (&lt;em&gt;pd&lt;/em&gt;)&lt;/a&gt; of 99.9% instead of 97%, or widening the Region of Practical Equivalence (ROPE).&lt;/li&gt;
+&lt;li&gt;Constrain the parameters towards 0. We can also make it harder for models to have parameters (i.e., &amp;ldquo;effects&amp;rdquo;) that deviate from 0. This is easy to do within the Bayesian framework by setting narrower priors centred around 0. This will naturally pull (known as &amp;ldquo;shrinkage&amp;rdquo;) the results towards 0 and is a natural way of &amp;ldquo;controlling&amp;rdquo; for false positives. Under the frequentist framework, there are methods of regularization that can introduce a bias, such as LASSO or Ridge regressions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C&lt;/strong&gt;oherence: cross-validate results
+&lt;ul&gt;
+&lt;li&gt;There is a need to look at the bigger picture, including non-significant and &amp;ldquo;trending&amp;rdquo; effects. Look at all the data together, and all the variables measuring related concepts: do the results go in the same direction? Are they internally coherent? Do they follow the same trend? In a small sample study, I would trust more a conclusion based on 10 tests with independent indices measuring aspects related to &amp;ldquo;depression&amp;rdquo;, all barely significant but going in the same direction, over one super-significant (but possibly cherry-picked) result interpreted as a proof of the effect of &amp;ldquo;depression&amp;rdquo; in general. In other words, don&amp;rsquo;t focus on &amp;ldquo;significant&amp;rdquo; effects and assess results in their entirety.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A&lt;/strong&gt;cknowledgment: be honest and humble
+&lt;ul&gt;
+&lt;li&gt;Quantify the evidence &lt;em&gt;against&lt;/em&gt; the null hypothesis. Maybe an effect is not &amp;ldquo;significant&amp;rdquo;, but that doesn&amp;rsquo;t necessarily mean there is a lot of evidence that it has no effect either. Quantifying evidence against the null can be easily done using for instance Bayes Factors.&lt;/li&gt;
+&lt;li&gt;Be honest and acknowledge the limited power of the study. Don&amp;rsquo;t try to hide it.&lt;/li&gt;
+&lt;li&gt;Temper the interpretation of the results. Don&amp;rsquo;t over-interpret them if they are not super robust.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Science must be open, replicable &amp;amp; reproductible, slow, and based on methodological best-practices. But first and foremost, it must be honest.&lt;/p&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Ioannidis, J. P. (2018). The proposal to lower P value thresholds to .005. Jama, 319(14), 1429-1430.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to share or tweet this post, or leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to sync two folders in two separate GitHub repositories</title>
+      <link>https://dominiquemakowski.github.io/post/2021-10-31-sync_two_repos/</link>
+      <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2021-10-31-sync_two_repos/</guid>
+      <description>&lt;h1 id=&#34;how-to-sync-two-folders-in-two-separate-github-repositories&#34;&gt;How to sync two folders in two separate GitHub repositories&lt;/h1&gt;
+&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;I have a personal website, stored in a GitHub repo (and hosted via GitHub pages), as well as a lab website (a &amp;ldquo;company&amp;rdquo; website, if you will). Both are fairly similar, as they are built using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;academic theme&lt;/a&gt;. Importantly, there is a blog in the company websites with posts, but I have one on my personal website too. &lt;strong&gt;I would like that every time I post something on my website, that it gets automatically copied over to the company website.&lt;/strong&gt; So that I don&amp;rsquo;t have to manually maintain the content at two separate places.&lt;/p&gt;
+&lt;h2 id=&#34;the-solution&#34;&gt;The Solution&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;The first step is to go to the settings of your GitHub account, to developers settings, and to &lt;a href=&#34;https://github.com/settings/tokens&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;personal access tokens&lt;/em&gt;&lt;/a&gt;. You have to generate a token, and tick the &lt;strong&gt;repo&lt;/strong&gt; authorizations. Copy-paste the key.&lt;/li&gt;
+&lt;li&gt;Go to the settings of the personal website repo (the source from which the content will be copied), to &amp;ldquo;Secrets&amp;rdquo;, and add a new secret called &amp;ldquo;API_TOKEN_GITHUB&amp;rdquo; (with the key you just copied).&lt;/li&gt;
+&lt;li&gt;Create a new GitHub action workflow such as &lt;a href=&#34;https://github.com/DominiqueMakowski/DominiqueMakowski.github.io/blob/master/.github/workflows/copy_content.yml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;this one&lt;/strong&gt;&lt;/a&gt;. The things to change are the &lt;code&gt;source_file&lt;/code&gt;, &lt;code&gt;destination_repo&lt;/code&gt; and &lt;code&gt;destination_folder&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Tada 🎉 Everytime I push to my personal repo, the new content of one of the subfolder gets copied to another repo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; this is a one-way sync, so updates on the target repo won&amp;rsquo;t affect the source repo (but might get overridden!).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to share or tweet this post, or leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to share data analysis scripts with publications?</title>
+      <link>https://dominiquemakowski.github.io/post/2021-02-10-template_results/</link>
+      <pubDate>Wed, 10 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2021-02-10-template_results/</guid>
+      <description>&lt;h1 id=&#34;how-to-share-data-analysis-scripts-with-publications&#34;&gt;How to share data analysis scripts with publications?&lt;/h1&gt;
+&lt;p&gt;Including data analysis as &lt;strong&gt;Supplementary Materials&lt;/strong&gt; can be a tedious task. How can we simplify the sharing of our work? So that it can be fully appreciated, as well as evaluated, improved, worked on, in a transparent and open way?&lt;/p&gt;
+&lt;h2 id=&#34;option-1-dump-the-code-in-a-word-file&#34;&gt;Option 1: Dump the code in a word file&lt;/h2&gt;
+&lt;p&gt;Most publication portals don&amp;rsquo;t directly accept code scripts to be included &amp;ldquo;as is&amp;rdquo;. In other words, you cannot upload your manuscript and your &lt;code&gt;.R&lt;/code&gt; script just like that. So one option is to copy its content, paste it in a word / pdf document, and &lt;em&gt;Voilà!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;But what &lt;strong&gt;if you don&amp;rsquo;t have code&lt;/strong&gt; because you use a point-and-click software? Well, you can note down all the &lt;em&gt;x,y&lt;/em&gt; coordinates of your clicks so that one can reproduce the steps and all the clicks. Just kidding, if you don&amp;rsquo;t have a script, then may god have mercy on your soul.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why is that a terrible solution?&lt;/strong&gt; Because let&amp;rsquo;s face it, unstructured code dumps are horrific. Nobody wants to read it, it does not make justice to your work, and it&amp;rsquo;s still tedious to create! You have to re-do it everytime you modify your code. And it&amp;rsquo;s even worse if you want to include all the &lt;strong&gt;outputs, figures, tables that are generated by the code&lt;/strong&gt;? Data analysis is not just the code, but everything that comes with it and that allowed you to make the conclusions that you made.&lt;/p&gt;
+&lt;h2 id=&#34;option-2-use-rmarkdown&#34;&gt;Option 2: Use &lt;em&gt;Rmarkdown&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://rmarkdown.rstudio.com/lesson-1.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Rmarkdown&lt;/strong&gt;&lt;/a&gt; is a &amp;ldquo;framework&amp;rdquo; that allows you to have files (&lt;code&gt;.Rmd&lt;/code&gt;) that can contain a mix of &lt;strong&gt;text and code&lt;/strong&gt; (and not only &lt;strong&gt;R&lt;/strong&gt;, but also &lt;a href=&#34;https://rstudio.github.io/reticulate/articles/r_markdown.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Python&lt;/strong&gt;&lt;/a&gt; for instance!).&lt;/p&gt;
+&lt;p&gt;It can be used to write comprehensive &amp;ldquo;reports&amp;rdquo; that include all your thoughts, motivations and interpretations of the results. And the great thing about it is that these files can be &lt;strong&gt;converted&lt;/strong&gt; into beautiful and readable documents like &lt;strong&gt;PDF&lt;/strong&gt;, &lt;strong&gt;Word&lt;/strong&gt; or &lt;strong&gt;HTML&lt;/strong&gt;. It will automatically embed the code and &lt;strong&gt;its generated output&lt;/strong&gt; (as text, tables or figures) alongside the text.&lt;/p&gt;
+&lt;p&gt;It is an awesome way to write statistical reports, and can even be used to create many other non-stats related stuff, like &lt;a href=&#34;http://frederikaust.com/papaja_man/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;APA-formatted manuscripts&lt;/strong&gt;&lt;/a&gt; (great for preprints), &lt;a href=&#34;https://bookdown.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;books&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/xaringan.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;presentation slides&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;websites or blogs&lt;/strong&gt;&lt;/a&gt;. It&amp;rsquo;s a must-have skill for every researcher.&lt;/p&gt;
+&lt;p&gt;And it gets better!&lt;/p&gt;
+&lt;h2 id=&#34;option-3-use-our-results-template&#34;&gt;Option 3: Use our &lt;em&gt;Results Template&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;In the &lt;a href=&#34;https://dominiquemakowski.github.io/research/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Reality Bending&lt;/strong&gt;&lt;/a&gt; team, we like to have our different projects and studies organized in a consistent way. We heavily use &lt;a href=&#34;https://dominiquemakowski.github.io/post/github_psychologists/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;/a&gt; to store our projects and collaborate on them, and we also like the possibility of making these projects &lt;strong&gt;open&lt;/strong&gt; and &lt;strong&gt;accessible&lt;/strong&gt; (i.e., easy to discover and explore) when the time comes.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s why we came up with a &lt;strong&gt;Template folder&lt;/strong&gt; for storing the materials related to a given study, including well-organized analysis scripts. And what&amp;rsquo;s great about it is that it is setup in a way that allows you to generate multiple files format (&lt;strong&gt;word&lt;/strong&gt;, &lt;strong&gt;pdf&lt;/strong&gt;, &lt;strong&gt;html&lt;/strong&gt;) with a single click (and even without any click, in a fully automatic way)! And what&amp;rsquo;s even greater is that if you decide to upload it to GitHub, you&amp;rsquo;ll have &lt;a href=&#34;https://realitybending.github.io/TemplateResults/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;a whole website&lt;/strong&gt;&lt;/a&gt; presenting your data analysis!&lt;/p&gt;
+&lt;p&gt;We use it to have reproducible analysis that we can easily share with publications. We can upload the .pdf or .docx file generated by the template as &lt;strong&gt;Supplementary Materials&lt;/strong&gt;, but we also link the &lt;a href=&#34;https://github.com/RealityBending/TemplateResults&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;URL of the online repository&lt;/strong&gt;&lt;/a&gt; of the study in the manuscript, where users can access and experience the content in the format that they prefer. &lt;strong&gt;It really improves the appeal of a study when the results are trustworthy.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;All this is easily made possible with our template. &lt;strong&gt;Check it out here:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href=&#34;https://github.com/RealityBending/TemplateResults&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;https://github.com/RealityBending/TemplateResults&lt;/strong&gt;&lt;/a&gt; 👈&lt;/p&gt;
+&lt;p&gt;☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️☝️&lt;/p&gt;
+&lt;p&gt;And &lt;strong&gt;let us know what you think!&lt;/strong&gt; You can open an issue on the &lt;a href=&#34;https://github.com/RealityBending/TemplateResults/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;repo&lt;/a&gt; or even contribute to help us improve it :)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to tweet and share this post, and leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
+&lt;p&gt;🐦 &lt;em&gt;Don&amp;rsquo;t forget to join me on Twitter&lt;/em&gt; &lt;a href=&#34;https://twitter.com/Dom_Makowski&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Dom_Makowski&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

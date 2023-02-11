@@ -1,42 +1,42 @@
-on:
-  push:
-     branches:
-       - master
+# on:
+#   push:
+#      branches:
+#        - master
 
-name: ⏫ Copy content to REBEL
+# name: ⏫ Copy content to REBEL
 
-jobs:
-  copy-file:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+# jobs:
+#   copy-file:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@v2
 
-    # Copy the 'post' folder
-    - name: Push posts
-      uses: dmnemec/copy_file_to_another_repo_action@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-      with:
-        source_file: 'content/post/' # Folder to copy
-        destination_repo: 'RealityBending/RealityBending.github.io' # Target repo
-        destination_folder: 'content/' # Folder where to copy it
-        user_email: 'dom.makowski@gmail.com'
-        user_name: 'DominiqueMakowski'
-        commit_message: "AUTO: Copying posts from Dom's to REBEL's website"
-        git_server: 'github.com'
+#     # Copy the 'post' folder
+#     - name: Push posts
+#       uses: dmnemec/copy_file_to_another_repo_action@main
+#       env:
+#         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+#       with:
+#         source_file: 'content/post/' # Folder to copy
+#         destination_repo: 'RealityBending/RealityBending.github.io' # Target repo
+#         destination_folder: 'content/' # Folder where to copy it
+#         user_email: 'dom.makowski@gmail.com'
+#         user_name: 'DominiqueMakowski'
+#         commit_message: "AUTO: Copying posts from Dom's to REBEL's website"
+#         git_server: 'github.com'
 
-    # Copy the 'publication' folder
-    - name: Push publications
-      uses: dmnemec/copy_file_to_another_repo_action@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-      with:
-        source_file: 'content/publication/' # Folder to copy
-        destination_repo: 'RealityBending/RealityBending.github.io' # Target repo
-        destination_folder: 'content/' # Folder where to copy it
-        user_email: 'dom.makowski@gmail.com'
-        user_name: 'DominiqueMakowski'
-        commit_message: "AUTO: Copying publications from Dom's to REBEL's website"
-        git_server: 'github.com'
+#     # Copy the 'publication' folder
+#     - name: Push publications
+#       uses: dmnemec/copy_file_to_another_repo_action@main
+#       env:
+#         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+#       with:
+#         source_file: 'content/publication/' # Folder to copy
+#         destination_repo: 'RealityBending/RealityBending.github.io' # Target repo
+#         destination_folder: 'content/' # Folder where to copy it
+#         user_email: 'dom.makowski@gmail.com'
+#         user_name: 'DominiqueMakowski'
+#         commit_message: "AUTO: Copying publications from Dom's to REBEL's website"
+#         git_server: 'github.com'
 
