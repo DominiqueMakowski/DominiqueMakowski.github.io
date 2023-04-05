@@ -14,7 +14,7 @@ organizations:
   url: https://www.sussex.ac.uk/schools/psychology/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Trained as neuropsychologist and CBT psychotherapist, I am currently working as a lecturer at the University of Sussex, on the neuroscience of reality perception.
+bio: Trained as neuropsychologist, I am currently working as a lecturer at the University of Sussex, on the neuroscience of the perception of reality and how it relates to who we are.
 
 # Interests to show in About widget
 interests:
@@ -76,7 +76,7 @@ user_groups:
 - Principal Investigator
 ---
 
-Trained as clinical neuropsychologist, CBT psychotherapist <sub><sup>(*and* [***others***](https://dominiquemakowski.github.io/cv/))</sup></sub>, I am currently a lecturer at the University of Sussex, in which I lead the [**Reality Bending Lab**](https://realitybending.github.io/) 🧙 (ReBeL). I'm fluent in French, English, Polish, Python, and can order food in Italian. My main figures of reference are Marcus Aurelius, Sisyphus and Yoda. My interests include scientific methodology, history of art and religion, and philosophy. My research focuses on aspects of [**reality bending**](https://realitybending.github.io/research/) (e.g., fiction, deception, fake news, illusions, and altered states of consciousness such as through meditation or immersion). I also try to improve the access to advanced analysis techniques by developing [**open-source**](https://github.com/DominiqueMakowski) software and tools.
+Trained as clinical neuropsychologist, CBT psychotherapist <sub><sup>(*and* [***others***](https://dominiquemakowski.github.io/cv/))</sup></sub>, I am currently a lecturer at the University of Sussex, in which I lead the [**Reality Bending Lab**](https://realitybending.github.io/) 🧙 (ReBeL), where we study the neurophysiological underpinnings of reality perception. I'm fluent in French, English, Polish, Python, and can order food in Italian. My main figures of reference are Marcus Aurelius, Sisyphus and Yoda. My interests include scientific methodology, history of art and religion, and philosophy. My research focuses on aspects of [**reality bending**](https://realitybending.github.io/research/) (e.g., fiction, deception, fake news, illusions, and altered states of consciousness such as through meditation or immersion). I also try to improve the access to advanced analysis techniques by developing [**open-source**](https://github.com/DominiqueMakowski) software and tools.
 
 {{% callout warning %}}
 
