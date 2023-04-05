@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: April 5, 2023 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.0f229d4b7ebad1917a9a357cba2effab.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DWR0E4SB8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-DWR0E4SB8S', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Dominique Makowski" />
+
+
+
+
+
+  
+
+<meta name="description" content="A lot of diverse and interesting perspectives have been recently discussed is regards to chatGPT and AGI, but there is one opinion that I found particularly relevant that I wanted to expand on." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://dominiquemakowski.github.io/post/2023-04-04-psychologychatgpt/" />
+<link rel="canonical" href="https://dominiquemakowski.github.io/post/2023-04-04-psychologychatgpt/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@@Dom_Makowski" />
+  <meta property="twitter:creator" content="@@Dom_Makowski" />
+<meta property="twitter:image" content="https://dominiquemakowski.github.io/post/2023-04-04-psychologychatgpt/featured.png" />
+<meta property="og:site_name" content="Dr Dominique Makowski" />
+<meta property="og:url" content="https://dominiquemakowski.github.io/post/2023-04-04-psychologychatgpt/" />
+<meta property="og:title" content="We should treat AIs like Human participants in psychological experiments | Dr Dominique Makowski" />
+<meta property="og:description" content="A lot of diverse and interesting perspectives have been recently discussed is regards to chatGPT and AGI, but there is one opinion that I found particularly relevant that I wanted to expand on." /><meta property="og:image" content="https://dominiquemakowski.github.io/post/2023-04-04-psychologychatgpt/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2023-04-05T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2023-04-05T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dominiquemakowski.github.io/post/2023-04-04-psychologychatgpt/"
+  },
+  "headline": "We should treat AIs like Human participants in psychological experiments",
+  
+  "image": [
+    "https://dominiquemakowski.github.io/post/2023-04-04-psychologychatgpt/featured.png"
+  ],
+  
+  "datePublished": "2023-04-05T00:00:00Z",
+  "dateModified": "2023-04-05T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Dominique Makowski"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Reality Bending Lab",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "A lot of diverse and interesting perspectives have been recently discussed is regards to chatGPT and AGI, but there is one opinion that I found particularly relevant that I wanted to expand on."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>We should treat AIs like Human participants in psychological experiments | Dr Dominique Makowski</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ef348df2f4a28dd7c0d513f3489fc0f6" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.fe8634e7d00f14d07fb33caf14cc8e55.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Dr Dominique Makowski</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Dr Dominique Makowski</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>About</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/cv/"><span>CV</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication/"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://realitybending.github.io/" target="_blank" rel="noopener"><span>Lab</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://twitter.com/Dom_Makowski" target="_blank" rel="noopener"><span><i class="fab fa-twitter"; font-size: 1rem; line-height: 1.25"></i></span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://github.com/DominiqueMakowski" target="_blank" rel="noopener"><span><i class="fab fa-github"; font-size: 1rem; line-height: 1.25"></i></span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>We should treat AIs like Human participants in psychological experiments</h1>
+
+  
+  <p class="page-subtitle">A lot of diverse and interesting perspectives have been recently discussed in regards to chatGPT and AGI, but there is one opinion that I found particularly relevant that I wanted to expand on.</p>
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      Dominique Makowski</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Apr 5, 2023
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/fiction/">Fiction</a>, <a href="/category/reality/">Reality</a>, <a href="/category/ai/">AI</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 720px;">
+  <div style="position: relative">
+    <img src="/post/2023-04-04-psychologychatgpt/featured_hud2fd1f8bc7818df1949b17e6d87a02e3_1629689_720x2500_fit_q75_h2_lanczos_3.webp" width="720" height="720" alt="" class="featured-image">
+    <span class="article-header-caption">Cyborg generated with DALL-E, a bit creepy in my opinion. I like the side cut tho.</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>A lot of diverse and interesting perspectives have been recently discussed in regards to chatGPT and AGI (artificial <em><strong>global</strong></em> intelligence), but there is one opinion that I found particularly relevant that I wanted to share and expand on.</p>
+<p>In his recent <a href="https://www.youtube.com/watch?v=AaTRHFaaPG8" target="_blank" rel="noopener">interview with Lex Fridman</a>, Eliezer Yudkowsky underlines the <strong>existential threat posed by current and future AIs</strong>, and laments about the fact that we don&rsquo;t really know what is actually going on inside these giant &ldquo;matrices of floating-point numbers&rdquo;. He draws a parallel to <strong>neuroimaging</strong>, that enabled us to take leaps in the understanding of the brain, hoping for an alternative to be invented and applied to these AIs.</p>
+<p>While such &ldquo;cognitive imaging&rdquo; techniques are yet to be developed to map out and understand how the capabilities of such AI models are implemented within their architecture, <a href="https://twitter.com/mcxfrank/status/1643296168276033538" target="_blank" rel="noopener">Michael C. Frank</a> highlights the - at least equally important - need to first truly understand the extend of said abilities. What are these models actually capable of in terms of Human-like thinking (and, hopefully, answer the much harder question of whether they are endowed with true cognitive processes or merely pseudo-cognition). Frank proposes to apply <strong>experimental psychology</strong> methods and paradigms to them. In essence, whenever testing a particular &ldquo;skill&rdquo; of chatGPT (or other AI systems), a researcher should consider developing an actual scientific paradigm consisting of multiple trials/items (e.g., different prompt formulations) and participants (e.g., independent instances of the AI), a control condition, and a demonstration of the paradigm validity.</p>
+<p>I agree that we must take AIs seriously and study them with the best methods available for complex systems like ourselves (&ldquo;complex&rdquo; at least from our intelligence level), and likely should strive at improving and generalize these methods. However, I would also argue that we psychologists might seriously need to consider including AI systems alongside Human participants in cognitive experiments. These systems will be able, in the very near future, to perform all kinds of tasks beyond language manipulation, such as perception or complex problem solving, thus opening the possibility of studies with one group of human participants, and one &ldquo;group&rdquo; of AI-based attempts. <strong>How would that help psychological science?</strong></p>
+<iframe src="https://giphy.com/embed/1M9fmo1WAFVK0" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<ol>
+<li>It would help us <strong>understand the abilities of AI-systems</strong> in similar contexts and to highlight some intuitive comparisons with Humans</li>
+<li>If we show that AI cannot perform the task, well it is informative with regards to their abilities (previous point).</li>
+<li>If we show that AI can perform the task similarly to Humans (same response patterns), it does <strong>not mean that AI have Human-like intelligence</strong>, just that their algorithm (and training data) is able to encapsulate and imitate Human performance. This is interesting with regards to the debate of whether cognition, conscience and &ldquo;Human-ness&rdquo; is present within the vast amount of data on which we train AIs.</li>
+<li>If we show that AI performs differently to Humans, this helps us understand the logic and processes at stake under AI&rsquo;s hood.</li>
+<li>In any case, publishing the results by one particular AI system at one particular moment in time will helps us to objectively monitor and track their performance as these systems improve over time.</li>
+</ol>
+<p>Comparing Human performance to that of emerging AI-systems will be both beneficial to Human-oriented psychology, to understand the particularities and idiosyncrasies of Human-like cognition, and well as to AI-oriented cognitive science by approaching the issue of artificial intelligence with the seriousness and cautiousness it deserves.</p>
+<hr>
+<p><strong>Interested in doing research related to effects of reality and fiction?</strong> We are looking for research assistants and PhD students at the <em>Reality Bending Lab</em> (check-out the <a href="http://localhost:4321/jobs/" target="_blank" rel="noopener">join us tab</a>)!</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/reality-bending-lab/">Reality Bending Lab</a>
+  
+  <a class="badge badge-light" href="/tag/rebel/">ReBeL</a>
+  
+  <a class="badge badge-light" href="/tag/university-of-sussex/">University of Sussex</a>
+  
+  <a class="badge badge-light" href="/tag/psychology/">Psychology</a>
+  
+  <a class="badge badge-light" href="/tag/neuropsychology/">Neuropsychology</a>
+  
+  <a class="badge badge-light" href="/tag/cognitive-imaging/">Cognitive Imaging</a>
+  
+  <a class="badge badge-light" href="/tag/ai/">AI</a>
+  
+  <a class="badge badge-light" href="/tag/chatgpt/">ChatGPT</a>
+  
+  <a class="badge badge-light" href="/tag/gpt-5/">GPT-5</a>
+  
+  <a class="badge badge-light" href="/tag/gpt-4/">GPT-4</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-04-04-psychologychatgpt%2F&amp;text=We&#43;should&#43;treat&#43;AIs&#43;like&#43;Human&#43;participants&#43;in&#43;psychological&#43;experiments" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-04-04-psychologychatgpt%2F&amp;t=We&#43;should&#43;treat&#43;AIs&#43;like&#43;Human&#43;participants&#43;in&#43;psychological&#43;experiments" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=We%20should%20treat%20AIs%20like%20Human%20participants%20in%20psychological%20experiments&amp;body=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-04-04-psychologychatgpt%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-04-04-psychologychatgpt%2F&amp;title=We&#43;should&#43;treat&#43;AIs&#43;like&#43;Human&#43;participants&#43;in&#43;psychological&#43;experiments" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=We&#43;should&#43;treat&#43;AIs&#43;like&#43;Human&#43;participants&#43;in&#43;psychological&#43;experiments%20https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-04-04-psychologychatgpt%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fdominiquemakowski.github.io%2Fpost%2F2023-04-04-psychologychatgpt%2F&amp;title=We&#43;should&#43;treat&#43;AIs&#43;like&#43;Human&#43;participants&#43;in&#43;psychological&#43;experiments" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://dominiquemakowski.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/dominique-makowski/avatar_hu8ec970fed8493c9666eb1aeeafcfd774_2053074_270x270_fill_lanczos_center_3.png" alt="Dominique Makowski"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://dominiquemakowski.github.io/">Dominique Makowski</a></h5>
+      <h6 class="card-subtitle">Lecturer in Psychology</h6>
+      <p class="card-text">Trained as neuropsychologist, I am currently working as a lecturer at the University of Sussex, on the neuroscience of the perception of reality and how it relates to who we are.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/Dom_Makowski" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.fr/citations?user=bg0BZ-QAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Dominique_Makowski" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/DominiqueMakowski" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Dominique Makowski. All rights reserved.
+  </p>
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -5,12 +5,35 @@
     <link>https://dominiquemakowski.github.io/tag/psychology/</link>
       <atom:link href="https://dominiquemakowski.github.io/tag/psychology/index.xml" rel="self" type="application/rss+xml" />
     <description>Psychology</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 07 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
       <title>Psychology</title>
       <link>https://dominiquemakowski.github.io/tag/psychology/</link>
     </image>
+    
+    <item>
+      <title>We should treat AIs like Human participants in psychological experiments</title>
+      <link>https://dominiquemakowski.github.io/post/2023-04-04-psychologychatgpt/</link>
+      <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2023-04-04-psychologychatgpt/</guid>
+      <description>&lt;p&gt;A lot of diverse and interesting perspectives have been recently discussed in regards to chatGPT and AGI (artificial &lt;em&gt;&lt;strong&gt;global&lt;/strong&gt;&lt;/em&gt; intelligence), but there is one opinion that I found particularly relevant that I wanted to share and expand on.&lt;/p&gt;
+&lt;p&gt;In his recent &lt;a href=&#34;https://www.youtube.com/watch?v=AaTRHFaaPG8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;interview with Lex Fridman&lt;/a&gt;, Eliezer Yudkowsky underlines the &lt;strong&gt;existential threat posed by current and future AIs&lt;/strong&gt;, and laments about the fact that we don&amp;rsquo;t really know what is actually going on inside these giant &amp;ldquo;matrices of floating-point numbers&amp;rdquo;. He draws a parallel to &lt;strong&gt;neuroimaging&lt;/strong&gt;, that enabled us to take leaps in the understanding of the brain, hoping for an alternative to be invented and applied to these AIs.&lt;/p&gt;
+&lt;p&gt;While such &amp;ldquo;cognitive imaging&amp;rdquo; techniques are yet to be developed to map out and understand how the capabilities of such AI models are implemented within their architecture, &lt;a href=&#34;https://twitter.com/mcxfrank/status/1643296168276033538&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Michael C. Frank&lt;/a&gt; highlights the - at least equally important - need to first truly understand the extend of said abilities. What are these models actually capable of in terms of Human-like thinking (and, hopefully, answer the much harder question of whether they are endowed with true cognitive processes or merely pseudo-cognition). Frank proposes to apply &lt;strong&gt;experimental psychology&lt;/strong&gt; methods and paradigms to them. In essence, whenever testing a particular &amp;ldquo;skill&amp;rdquo; of chatGPT (or other AI systems), a researcher should consider developing an actual scientific paradigm consisting of multiple trials/items (e.g., different prompt formulations) and participants (e.g., independent instances of the AI), a control condition, and a demonstration of the paradigm validity.&lt;/p&gt;
+&lt;p&gt;I agree that we must take AIs seriously and study them with the best methods available for complex systems like ourselves (&amp;ldquo;complex&amp;rdquo; at least from our intelligence level), and likely should strive at improving and generalize these methods. However, I would also argue that we psychologists might seriously need to consider including AI systems alongside Human participants in cognitive experiments. These systems will be able, in the very near future, to perform all kinds of tasks beyond language manipulation, such as perception or complex problem solving, thus opening the possibility of studies with one group of human participants, and one &amp;ldquo;group&amp;rdquo; of AI-based attempts. &lt;strong&gt;How would that help psychological science?&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;https://giphy.com/embed/1M9fmo1WAFVK0&#34; width=&#34;480&#34; height=&#34;270&#34; frameBorder=&#34;0&#34; class=&#34;giphy-embed&#34; allowFullScreen&gt;&lt;/iframe&gt;
+&lt;ol&gt;
+&lt;li&gt;It would help us &lt;strong&gt;understand the abilities of AI-systems&lt;/strong&gt; in similar contexts and to highlight some intuitive comparisons with Humans&lt;/li&gt;
+&lt;li&gt;If we show that AI cannot perform the task, well it is informative with regards to their abilities (previous point).&lt;/li&gt;
+&lt;li&gt;If we show that AI can perform the task similarly to Humans (same response patterns), it does &lt;strong&gt;not mean that AI have Human-like intelligence&lt;/strong&gt;, just that their algorithm (and training data) is able to encapsulate and imitate Human performance. This is interesting with regards to the debate of whether cognition, conscience and &amp;ldquo;Human-ness&amp;rdquo; is present within the vast amount of data on which we train AIs.&lt;/li&gt;
+&lt;li&gt;If we show that AI performs differently to Humans, this helps us understand the logic and processes at stake under AI&amp;rsquo;s hood.&lt;/li&gt;
+&lt;li&gt;In any case, publishing the results by one particular AI system at one particular moment in time will helps us to objectively monitor and track their performance as these systems improve over time.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Comparing Human performance to that of emerging AI-systems will be both beneficial to Human-oriented psychology, to understand the particularities and idiosyncrasies of Human-like cognition, and well as to AI-oriented cognitive science by approaching the issue of artificial intelligence with the seriousness and cautiousness it deserves.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Interested in doing research related to effects of reality and fiction?&lt;/strong&gt; We are looking for research assistants and PhD students at the &lt;em&gt;Reality Bending Lab&lt;/em&gt; (check-out the &lt;a href=&#34;http://localhost:4321/jobs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;join us tab&lt;/a&gt;)!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>When fiction is better than reality: Cypher&#39;s Complex</title>
