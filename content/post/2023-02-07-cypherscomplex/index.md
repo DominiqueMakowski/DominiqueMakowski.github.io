@@ -42,7 +42,7 @@ Cypher's Complex is common in mild forms. Examples can be found in the feelings 
 
 However, **Cypher's Complex can also give rise to more severe issues** with conscious or unconscious attempts at forgetting or ignoring reality (delusions, denial, ...), which can lead to dire outcomes.
 
-**Interested in doing research related to effects of reality and fiction?** We are looking for research assistants and PhD students at the *Reality Bending Lab* (check-out the [join us tab](http://localhost:4321/jobs/))!
+**Interested in doing research related to effects of reality and fiction?** We are looking for research assistants and PhD students at the *Reality Bending Lab* (check-out the [join us tab](https://realitybending.github.io/))!
 
 
 

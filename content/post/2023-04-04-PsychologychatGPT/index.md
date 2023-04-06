@@ -48,7 +48,7 @@ Comparing Human performance to that of emerging AI-systems will be both benefici
 
 ---
 
-**Interested in doing research related to effects of reality and fiction?** We are looking for research assistants and PhD students at the *Reality Bending Lab* (check-out the [join us tab](http://localhost:4321/jobs/))!
+**Interested in doing research related to effects of reality and fiction?** We are looking for research assistants and PhD students at the *Reality Bending Lab* (check-out the [join us tab](https://realitybending.github.io/))!
 
 
 
