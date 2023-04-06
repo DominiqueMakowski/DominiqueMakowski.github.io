@@ -5,12 +5,48 @@
     <link>https://dominiquemakowski.github.io/tag/ai/</link>
       <atom:link href="https://dominiquemakowski.github.io/tag/ai/index.xml" rel="self" type="application/rss+xml" />
     <description>AI</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
       <title>AI</title>
       <link>https://dominiquemakowski.github.io/tag/ai/</link>
     </image>
+    
+    <item>
+      <title>I got ChatGPT to do a personality test. You won&#39;t believe what happened next!</title>
+      <link>https://dominiquemakowski.github.io/post/2023-04-06-chatgptpersonality/</link>
+      <pubDate>Thu, 06 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/post/2023-04-06-chatgptpersonality/</guid>
+      <description>&lt;p&gt;Related to this &lt;a href=&#34;https://dominiquemakowski.github.io/post/2023-04-04-psychologychatgpt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;blogpost&lt;/strong&gt;&lt;/a&gt; about including AIs in psychological experiments, I proceeded to do a small experiment to see whether we could administer a personality scale to ChatGPT.&lt;/p&gt;
+&lt;p&gt;I started by copy-pasting the instructions and the items from the Mini IPIP-6 personality scale. However, it appeared that having the following context &lt;em&gt;&amp;ldquo;Please answer the following questions based on how accurately each statement describes you in general&amp;rdquo;&lt;/em&gt; often led to ChatGPT simply refusing to answer. In most of the cases, it explained that as an AI it does not have a personality and therefore cannot answer related questions (or any &amp;ldquo;subjective statements&amp;rdquo;). Perhaps that makes sense and we should just stop trying to force Human characteristics on an AI. &lt;strong&gt;But can we, for fun, bamboozle ChatGPT into answering personality items?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sometimes yes, at least for ChatGPT 3.5 (free version). I created a prompt that emphasized AI research and safety, and that I was interested in the &amp;ldquo;trends&amp;rdquo; present in te AI&amp;rsquo;s training data. And sometimes it answered, so I compiled the responses, computed the trait scores, and &lt;em&gt;voilà&lt;/em&gt;, &lt;strong&gt;it got me a personality profile!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/DominiqueMakowski/ChatGPTpersonality/raw/main/figures/unnamed-chunk-3-1.png&#34; alt=&#34;https://github.com/DominiqueMakowski/ChatGPTpersonality&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;sub&gt;&lt;em&gt;This plot shows the average personality profile (with a 95% confidence interval) based on ChatGPT&amp;rsquo;s answers. ChatGPT tells us that it is particularly &lt;strong&gt;agreeable&lt;/strong&gt; (kind, understanding, empathetic of emotions, socially adjusted) and &lt;strong&gt;honest&lt;/strong&gt; (though with strong variability).&lt;/em&gt;&lt;/sub&gt;&lt;/p&gt;
+&lt;p&gt;A personality profile of &lt;em&gt;&lt;strong&gt;what&lt;/strong&gt;&lt;/em&gt; is another question though&amp;hellip; Please take a look at the &lt;a href=&#34;https://github.com/DominiqueMakowski/ChatGPTpersonality&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;GitHub repo&lt;/strong&gt;&lt;/a&gt; for &lt;strong&gt;data, code and details&lt;/strong&gt;. It was a fun little thing to do, and I am looking forward to better future attempts at including AIs in cognitive experiments.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Interested in doing research on the perception of reality?&lt;/strong&gt; We are looking for research assistants and PhD students at the &lt;em&gt;Reality Bending Lab&lt;/em&gt; (check-out the &lt;a href=&#34;https://realitybending.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;join us page&lt;/a&gt;)!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>We should treat AIs like Human participants in psychological experiments</title>
@@ -31,7 +67,7 @@
 &lt;/ol&gt;
 &lt;p&gt;Comparing Human performance to that of emerging AI-systems will be both beneficial to Human-oriented psychology, to understand the particularities and idiosyncrasies of Human-like cognition, and well as to AI-oriented cognitive science by approaching the issue of artificial intelligence with the seriousness and cautiousness it deserves.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;Interested in doing research related to effects of reality and fiction?&lt;/strong&gt; We are looking for research assistants and PhD students at the &lt;em&gt;Reality Bending Lab&lt;/em&gt; (check-out the &lt;a href=&#34;http://localhost:4321/jobs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;join us tab&lt;/a&gt;)!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Interested in doing research related to effects of reality and fiction?&lt;/strong&gt; We are looking for research assistants and PhD students at the &lt;em&gt;Reality Bending Lab&lt;/em&gt; (check-out the &lt;a href=&#34;https://realitybending.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;join us tab&lt;/a&gt;)!&lt;/p&gt;
 </description>
     </item>
     
