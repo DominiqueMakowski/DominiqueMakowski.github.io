@@ -9,7 +9,7 @@ date: "2023-04-06"
 draft: false
 featured: false
 image:
-  caption: 'A clickbait are .'
+  caption: 'A clickbaity title and a clickbaity thumbnail. Check.'
   placement: 0
 title: "I got ChatGPT to do a personality test. You won't believe what happened next!"
 subtitle: "Following my previous blog post about including AIs in psychological experiments, I proceeded to do a small experiment to see whether we could administer a personality scale to ChatGPT."
