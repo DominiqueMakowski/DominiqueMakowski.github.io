@@ -32,7 +32,7 @@ Related to this [**blogpost**](https://dominiquemakowski.github.io/post/2023-04-
 
 I started by copy-pasting the instructions and the items from the Mini IPIP-6 personality scale. However, it appeared that having the following context *"Please answer the following questions based on how accurately each statement describes you in general"* often led to ChatGPT simply refusing to answer. In most of the cases, it explained that as an AI it does not have a personality and therefore cannot answer related questions (or any "subjective statements"). Perhaps that makes sense and we should just stop trying to force Human characteristics on an AI. **But can we, for fun, bamboozle ChatGPT into answering personality items?**
 
-Sometimes yes, at least for ChatGPT 3.5 (free version). I created a prompt that emphasized AI research and safety, and that I was interested in the "trends" present in te AI's training data. And sometimes it answered, so I compiled the responses, computed the trait scores, and *voilà*, **it got me a personality profile!**
+Sometimes yes, at least for ChatGPT 3.5 (free version). I created a prompt that emphasized AI research and safety, and the fact that I was interested in the "trends" present in the AI's training data (instead of explicitly saying its personality). And sometimes it answered, so I compiled the responses, computed the trait scores, and *voilà*, **it got me a personality profile!**
 
 ![https://github.com/DominiqueMakowski/ChatGPTpersonality](https://github.com/DominiqueMakowski/ChatGPTpersonality/raw/main/figures/unnamed-chunk-3-1.png)
 
