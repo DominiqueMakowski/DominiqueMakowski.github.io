@@ -30,6 +30,7 @@
 &lt;li&gt;In any case, publishing the results by one particular AI system at one particular moment in time will helps us to objectively monitor and track their performance as these systems improve over time.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Comparing Human performance to that of emerging AI-systems will be both beneficial to Human-oriented psychology, to understand the particularities and idiosyncrasies of Human-like cognition, and well as to AI-oriented cognitive science by approaching the issue of artificial intelligence with the seriousness and cautiousness it deserves.&lt;/p&gt;
+&lt;p&gt;EDIT (09/04/2023): François Chollet, expert in deep learning, &lt;a href=&#34;https://twitter.com/fchollet/status/1644435265795280897&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;underlines&lt;/a&gt; an important caveat when testing AIs (and especially LLM that are trained on written material existing on the internet): it is possible that the system has already seen and &amp;ldquo;learned&amp;rdquo; a given task. Thus, cross-validating any findings with diverse and new tasks is important.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Interested in doing research related to effects of reality and fiction?&lt;/strong&gt; We are looking for research assistants and PhD students at the &lt;em&gt;Reality Bending Lab&lt;/em&gt; (check-out the &lt;a href=&#34;https://realitybending.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;join us tab&lt;/a&gt;)!&lt;/p&gt;
 </description>
