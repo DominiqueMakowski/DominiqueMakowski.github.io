@@ -46,6 +46,8 @@ I agree that we must take AIs seriously and study them with the best methods ava
 
 Comparing Human performance to that of emerging AI-systems will be both beneficial to Human-oriented psychology, to understand the particularities and idiosyncrasies of Human-like cognition, and well as to AI-oriented cognitive science by approaching the issue of artificial intelligence with the seriousness and cautiousness it deserves.
 
+EDIT (09/04/2023): François Chollet, expert in deep learning, [underlines](https://twitter.com/fchollet/status/1644435265795280897) an important caveat when testing AIs (and especially LLM that are trained on written material existing on the internet): it is possible that the system has already seen and "learned" a given task. Thus, cross-validating any findings with diverse and new tasks is important.
+
 ---
 
 **Interested in doing research related to effects of reality and fiction?** We are looking for research assistants and PhD students at the *Reality Bending Lab* (check-out the [join us tab](https://realitybending.github.io/))!

@@ -21,13 +21,13 @@ tags:
 ---
 
 
-I find [fractals fascinating](https://dominiquemakowski.github.io/post/python_mandelbrot/). Their infinitely self-replicating nature illustrates how complex patterns can emerge from very simple rules. But the history of religions and comparative mythology are other hobbies of mine, and today I have a **little story about fractals, God, or Hell**.
+I find [fractals fascinating](https://dominiquemakowski.github.io/post/python_mandelbrot/). Their infinitely self-replicating nature illustrates how complex patterns can emerge from very simple rules. But the history of religions and comparative mythology are other hobbies of mine, and today I have a **little story about fractals, God, and Hell**.
 
 ## Science and Religions
 
 People often tend to see religion and science as opposites, one obscurantist and the other enlightening, but such generalization overlooks the vast differences between religions, and thus in the world's understanding of their followers.
 
-Let's take as example some (mostly extinct) religions, like the polytheisms from antiquity. While the interest in humans of the major Gods was often limited *(unless it's about beautiful girls, [Zeus](https://en.wikipedia.org/wiki/Zeus#Transformation_of_Zeus) we see you!)*, it was usually considered that regular Men have little say in their destiny, and little power to change it. They were toys in Gods' hands, tools at the mercy of their power struggles and agendas not always in line with any form of anthropic benevolence.
+Let's take as example some (mostly extinct) religions, like the polytheisms from antiquity. While the interest in humans of the major Gods was often limited *(unless it's about beautiful girls, [Zeus](https://en.wikipedia.org/wiki/Zeus#Transformation_of_Zeus) we see you)*, it was usually considered that regular Men have little say in their destiny, and little power to change it. They were toys in Gods' hands, tools at the mercy of their power struggles and agendas not always in line with any form of anthropic benevolence.
 
 <figure>
   <img src="Fates.jpg" alt="github for psychologists"/>
@@ -35,7 +35,7 @@ Let's take as example some (mostly extinct) religions, like the polytheisms from
 </figure>
 
 
-In other faiths and philosophies (e.g., Eastern traditions), the world is understood at vastly different scale, and the notion of Self (and/or "soul") is extended to encompass many lives. The ultimate goal of breaking the cycle of reincarnation and suffering and ascend to higher states of being is layed out over many lives and, for most people, there isn't much they can do in only one life to escape it. If anything, they must follow a just path, minimize karmic loss, and seek the "truth" within themselves. A process of Self-mastery and introspection facilitated by various practices, such as meditation.
+In other faiths and philosophies (e.g., Eastern traditions), the world is understood at vastly different scale, and the notion of Self (and/or "soul") is extended to encompass many lives. The ultimate goal of breaking the cycle of reincarnation and suffering and ascend to higher states of being is layed out over many lives and, for most people, there isn't much they can do in only one life to escape it. If anything, they must follow a just path, minimize karmic loss, and seek the "truth" swithin themselves. A process of Self-mastery and introspection facilitated by various practices, such as meditation.
 
 Other religions, refered to as "orthopraxic", are more than mere beliefs systems (e.g., Islam, as well as some currents of Judeism) and expect followers to follow a set of behaviours and conducts, codifying many aspects of life. The "truth" has already been revealed to mankind, and we have the choice of following it - and be saved - or not - and be damned. Importantly for our topic, the "truth" is often contained directly in the scriptures, and can only be attained by studying and learning the sacred texts (with varying degrees of possible interpretation).
 

@@ -33,7 +33,7 @@ In the movie **The Matrix**, Cypher is a "redpill", i.e., an individual that has
 
 <figure>
   <img src="cypher.gif" alt="Cypher"/>
-  <figcaption><i>"You know.. I know this steak doesn't exist. I know that when I put it in my mouth; the Matrix is telling my brain that it is juicy, and delicious. After nine years.. you know what I realize? Ignorance is bliss."</i></figcaption>
+  <figcaption><i>"You know... I know this steak doesn't exist. I know that when I put it in my mouth; the Matrix is telling my brain that it is juicy, and delicious. After nine years... you know what I realize? Ignorance is bliss."</i></figcaption>
 </figure>
 
 From a scientific perspective, the latter part can find some echo in the down-regulatory effect of [**fictional reappraisal**](https://link.springer.com/article/10.3758/s13415-018-00681-0). In a few studies, we showed that believing that a stimulus is "fictional" (not real) dampens our emotional state. [**Tucciarelli et al. (2023)**](https://www.sciencedirect.com/science/article/pii/S2589004222017138?via%3Dihub) also showed that the simple knowledge that a set of images of faces contains AI-generated images decreased the perceived trustworthiness of all the faces. These results suggest that being aware that the causes of our experience (the events and stimuli) are fictional can be a barrier to enjoyment and engagement. And yet, the desire to supplant reality with a fictional world can be found in real life.
