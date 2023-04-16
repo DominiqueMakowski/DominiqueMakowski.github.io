@@ -5,12 +5,20 @@
     <link>https://dominiquemakowski.github.io/</link>
       <atom:link href="https://dominiquemakowski.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Dr Dominique Makowski</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 11 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 12 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
       <title>Dr Dominique Makowski</title>
       <link>https://dominiquemakowski.github.io/</link>
     </image>
+    
+    <item>
+      <title>Where Are We Going with Statistical Computing? From Mathematical Statistics to Collaborative Data Science</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2023editorial/</link>
+      <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2023editorial/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>How do we know what is real? The &#39;Affective Reality Theory&#39;</title>
