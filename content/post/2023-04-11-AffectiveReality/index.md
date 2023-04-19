@@ -50,13 +50,13 @@ The **Affective Reality** hypothesis posits that simulation monitoring is strong
 
 **Isn't it the other way round**, you might wonder: that real stimuli (as opposed to ones believed to be non-real) are associated with a stronger emotional reactions? And that **it is the believed reality that drives the emotional response**? Indeed, we do believe that there is a two-ways relationship between simulation monitoring and emotions. But it is not exactly that beliefs of reality are associated with stronger emotions, but rather that beliefs that something is *not* real leads to a lower emotional response (the usage of fiction as an emotion regulation strategy - "fictional reappraisal" - was the main topic of my doctoral dissertation). In fact, the Affective Reality theory posits that this regulatory effect of **simulation monitoring starts to dominate after a certain point where the emotion becomes too strong** and unbearable: beliefs such as "it can't be real", and other forms of reality denials are invoked automatically to protect us and help us cope with distressing information.
 
-To summarize this summary, the Affective Reality hypothesis claims that from mild to relatively strong emotional stimuli, the effect of affect on simulation monitoring dominates (**+affect -> +reality**) and will bias our judgment towards "reality" (strengthening awareness and confidence), up until a point where the emotion regulation benefits of unreality will be automatically invoked (**-reality -> -affect**), increasing the likelihood and confidence of judgments of simulation (potentially far into psychopathological terrains).
+To summarize this summary, the Affective Reality hypothesis claims that from mild to relatively strong emotional stimuli, the effect of affect on simulation monitoring dominates (**+affect → +reality**) and will bias our judgment towards "reality" (strengthening awareness and confidence), up until a point where the emotion regulation benefits of unreality will be automatically invoked (**-reality → -affect**), increasing the likelihood and confidence of judgments of simulation (potentially far into psychopathological terrains).
 
 ## Open questions
 
 The Affective Reality theory is for now a working hypothesis that we are trying to empirically prove or disprove at the [**Reality Bending Lab**](https://realitybending.github.io/). Moreover, some questions remain open:
 
-- Is it actually **embodied reality or emotional reality?**. While we used the term "affective" reality to remain general, the question of whether it is emotions as a subjective psychological reaction, or merely bodily arousal (reactions of the body, e.g., stronger heart rate variability), that is the key ingredient remains unclear. The role of **interoception** (the ability and tendency to detect, track, attend to and rely on internal signals), while likely important, also remains to be specified.
+- Is it actually **embodied reality or emotional reality?** While we used the term "affective" reality to remain general, the question of whether it is emotions as a subjective psychological reaction, or merely bodily arousal (reactions of the body, e.g., stronger heart rate variability), that is the key ingredient remains unclear. The role of **interoception** (the ability and tendency to detect, track, attend to and rely on internal signals), while likely important, also remains to be specified.
 - Is it the affective **context or stimulus** that matters? Let's assume we have affective reaction concomitant to the experience of an object, but not directly related to the object. Would that bias simulation monitoring? Does perceived causality between a bodily reaction and the object of experience matters?
 
 <!-- Experiment  with loud unpleasant noises around images vs. pleasant noises. -->
@@ -66,7 +66,7 @@ The Affective Reality theory is for now a working hypothesis that we are trying 
 
 ## Notes
 
-[^1]: You may notice that I used different words related to the concept of "unreal", such as simulated, fake, artificial, virtual, fictional. While they can be used interchangeably in the context above, they are not exact synonyms.
+[^1]: You may notice that I used different words related to the concept of "unreal", such as simulated, fake, artificial, virtual, simulated, fictional. While they can be used interchangeably in the context above, they are not exact synonyms.
 [^2]: Like that pesky *reviewer 2*, obviously.
 [^3]: Note that "reality monitoring" already exists  as a concept and refers to a (possibly related) mechanism involved in tracking the origin of an experience (e.g., a memory) as internal vs. external.
 [^4]: "Affective" is in this context used as a generic term to encompass emotions, feelings and bodily activity (the question of which exactly of these aspects is the key remains to be answered).
