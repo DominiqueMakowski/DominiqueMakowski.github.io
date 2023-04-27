@@ -5,12 +5,20 @@
     <link>https://dominiquemakowski.github.io/publication-type/2/</link>
       <atom:link href="https://dominiquemakowski.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 12 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 22 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://dominiquemakowski.github.io/media/icon_hu1b87c1310da332ba1b18c001e4f10dac_153312_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
       <link>https://dominiquemakowski.github.io/publication-type/2/</link>
     </image>
+    
+    <item>
+      <title>A Novel Visual Illusion Paradigm Provides Evidence for a General Factor of Illusion Sensitivity and Personality Correlates</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2023novel/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2023novel/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Where Are We Going with Statistical Computing? From Mathematical Statistics to Collaborative Data Science</title>

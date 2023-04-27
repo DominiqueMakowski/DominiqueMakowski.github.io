@@ -3,26 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dominiquemakowski.github.io/publication-type/2/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/publication/makowski2023novel/</loc>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://dominiquemakowski.github.io/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/factor-i/</loc>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/illusions/</loc>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/personality/</loc>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://dominiquemakowski.github.io/publication_types/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://dominiquemakowski.github.io/publication/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://dominiquemakowski.github.io/tag/source-themes/</loc>
-    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <loc>https://dominiquemakowski.github.io/tag/pyllusion/</loc>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://dominiquemakowski.github.io/tags/</loc>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/visual-illusions/</loc>
+    <lastmod>2023-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/collaboration/</loc>
+    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/data-science/</loc>
+    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/easystats/</loc>
+    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/mathematics/</loc>
+    <lastmod>2023-04-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/packages/</loc>
     <lastmod>2023-04-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -138,10 +178,6 @@
     <lastmod>2023-04-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://dominiquemakowski.github.io/tag/personality/</loc>
-    <lastmod>2023-04-06T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://dominiquemakowski.github.io/category/personality/</loc>
     <lastmod>2023-04-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -156,6 +192,10 @@
   </url><url>
     <loc>https://dominiquemakowski.github.io/post/2023-04-04-psychologychatgpt/</loc>
     <lastmod>2023-04-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/source-themes/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://dominiquemakowski.github.io/publication/lee2023beauty/</loc>
@@ -342,10 +382,6 @@
     <lastmod>2021-11-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://dominiquemakowski.github.io/tag/pyllusion/</loc>
-    <lastmod>2021-11-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://dominiquemakowski.github.io/post/2021-11-30-pyllusion/</loc>
     <lastmod>2021-11-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -402,7 +438,27 @@
     <lastmod>2021-06-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/deception/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/lies/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/lying/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/questionnaire/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://dominiquemakowski.github.io/publication/makowski2021structure/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/tag/validation/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -770,6 +826,9 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://dominiquemakowski.github.io/dominique-makowski/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://dominiquemakowski.github.io/services/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://dominiquemakowski.github.io/project/cognitivecontrol/</loc>
