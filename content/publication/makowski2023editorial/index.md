@@ -14,7 +14,11 @@ publication_types:
 publishDate: ""
 summary: ''
 tags:
-- Source Themes
+- Data science
+- Mathematics
+- Collaboration
+- Packages
+- Easystats
 title: 'Where Are We Going with Statistical Computing? From Mathematical Statistics to Collaborative Data Science'
 url_code: ""
 url_dataset: ""

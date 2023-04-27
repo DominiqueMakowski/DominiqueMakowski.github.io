@@ -16,15 +16,18 @@ main:
     - name: Blog
       url: "post/"
       weight: 40
+    - name: Services
+      url: "services/"
+      weight: 50
     - name: Lab
       url: "https://realitybending.github.io/"
-      weight: 50
+      weight: 60
     - name: '<i class="fab fa-twitter"; font-size: 1rem; line-height: 1.25"></i>' # "<i class=\"fab fa-twitter\" style=\"color: #55acee; font-size: 1rem; line-height: 1.25\"></i>"
       url: "https://twitter.com/Dom_Makowski"
-      weight: 60
+      weight: 70
     - name: '<i class="fab fa-github"; font-size: 1rem; line-height: 1.25"></i>' # "<i class=\"fab fa-twitter\" style=\"color: #55acee; font-size: 1rem; line-height: 1.25\"></i>"
       url: "https://github.com/DominiqueMakowski"
-      weight: 70
+      weight: 80
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
 #  - name: CV

@@ -17,7 +17,11 @@ publication_types:
 publishDate: ""
 summary: ''
 tags:
-- Source Themes
+- Deception
+- Lies
+- Questionnaire
+- Lying
+- Validation
 title: 'The Structure of Deception: Validation of the Lying Profile Questionnaire'
 url_code: ""
 url_dataset: ""
