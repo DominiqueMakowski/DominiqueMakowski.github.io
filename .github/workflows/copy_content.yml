@@ -23,7 +23,7 @@ jobs:
                   destination_folder: "content/" # Folder where to copy it
                   user_email: "dom.makowski@gmail.com"
                   user_name: "DominiqueMakowski"
-                  commit_message: "AUTO: Copying posts from Dom's to REBEL's website"
+                  commit_message: "AUTO: Copying posts from Dom's to REBEL's website" # Change it to ${{ github.event.head_commit.message }} to preserve the original commit message
                   git_server: "github.com"
 
             # Copy the 'publication' folder
