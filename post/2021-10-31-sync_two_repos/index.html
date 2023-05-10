@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Wowchemy. https://www.wowchemy.com -->
-<!-- Last Published: April 27, 2023 --><html lang="en-us" >
+<!-- Last Published: May 10, 2023 --><html lang="en-us" >
 
 
 <head>
@@ -967,15 +967,19 @@
     <div class="article-style">
       <h1 id="how-to-sync-two-folders-in-two-separate-github-repositories">How to sync two folders in two separate GitHub repositories</h1>
 <h2 id="the-problem">The Problem</h2>
-<p>I have a personal website, stored in a GitHub repo (and hosted via GitHub pages), as well as a lab website (a &ldquo;company&rdquo; website, if you will). Both are fairly similar, as they are built using Wowchemy&rsquo;s <a href="https://wowchemy.com/" target="_blank" rel="noopener">academic theme</a>. Importantly, there is a blog in the company websites with posts, but I have one on my personal website too. <strong>I would like that every time I post something on my website, that it gets automatically copied over to the company website.</strong> So that I don&rsquo;t have to manually maintain the content at two separate places.</p>
+<p>I have a personal website, stored in a GitHub repo (and hosted via GitHub pages), as well as a lab website (a &ldquo;company&rdquo; website, if you will). Both are fairly similar, as they are built using Wowchemy&rsquo;s <a href="https://wowchemy.com/" target="_blank" rel="noopener">academic theme</a>. Importantly, there is a blog in the company websites with posts, but I have one on my personal website too. What I would like is that <strong>every time I post something on my website, it gets automatically copied over to the company website.</strong> So that I don&rsquo;t have to manually maintain the content at two separate places.</p>
 <h2 id="the-solution">The Solution</h2>
 <ol>
-<li>The first step is to go to the settings of your GitHub account, to developers settings, and to <a href="https://github.com/settings/tokens" target="_blank" rel="noopener"><em>personal access tokens</em></a>. You have to generate a token, and tick the <strong>repo</strong> authorizations. Copy-paste the key.</li>
+<li>The first step is to go to the settings of your <strong>GitHub <em>account</em></strong>, to developers settings, and to <a href="https://github.com/settings/tokens" target="_blank" rel="noopener"><em>personal access tokens</em></a>. You have to generate a token, and tick the <strong>repo</strong> authorizations. Copy-paste the key.</li>
 <li>Go to the settings of the personal website repo (the source from which the content will be copied), to &ldquo;Secrets&rdquo;, and add a new secret called &ldquo;API_TOKEN_GITHUB&rdquo; (with the key you just copied).</li>
 <li>Create a new GitHub action workflow such as <a href="https://github.com/DominiqueMakowski/DominiqueMakowski.github.io/blob/master/.github/workflows/copy_content.yml" target="_blank" rel="noopener"><strong>this one</strong></a>. The things to change are the <code>source_file</code>, <code>destination_repo</code> and <code>destination_folder</code>.</li>
 </ol>
 <p>Tada 🎉 Everytime I push to my personal repo, the new content of one of the subfolder gets copied to another repo.</p>
-<p><strong>Note:</strong> this is a one-way sync, so updates on the target repo won&rsquo;t affect the source repo (but might get overridden!).</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>This is a one-way sync, so updates on the target repo won&rsquo;t affect the source repo (but might get overridden!).</li>
+<li>if you want to preserve the original commit message, set <code>commit_message: ${{ github.event.head_commit.message }}</code> <sub>(thanks <a href="https://github.com/DominiqueMakowski/DominiqueMakowski.github.io/issues/2" target="_blank" rel="noopener">@dobbelina</a>)</sub></li>
+</ul>
 <hr>
 <p><em>Thanks for reading! Do not hesitate to share or tweet this post, or leave a comment below</em> 🤗</p>
 

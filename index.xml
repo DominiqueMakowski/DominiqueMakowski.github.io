@@ -442,15 +442,19 @@
       <guid>https://dominiquemakowski.github.io/post/2021-10-31-sync_two_repos/</guid>
       <description>&lt;h1 id=&#34;how-to-sync-two-folders-in-two-separate-github-repositories&#34;&gt;How to sync two folders in two separate GitHub repositories&lt;/h1&gt;
 &lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
-&lt;p&gt;I have a personal website, stored in a GitHub repo (and hosted via GitHub pages), as well as a lab website (a &amp;ldquo;company&amp;rdquo; website, if you will). Both are fairly similar, as they are built using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;academic theme&lt;/a&gt;. Importantly, there is a blog in the company websites with posts, but I have one on my personal website too. &lt;strong&gt;I would like that every time I post something on my website, that it gets automatically copied over to the company website.&lt;/strong&gt; So that I don&amp;rsquo;t have to manually maintain the content at two separate places.&lt;/p&gt;
+&lt;p&gt;I have a personal website, stored in a GitHub repo (and hosted via GitHub pages), as well as a lab website (a &amp;ldquo;company&amp;rdquo; website, if you will). Both are fairly similar, as they are built using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;academic theme&lt;/a&gt;. Importantly, there is a blog in the company websites with posts, but I have one on my personal website too. What I would like is that &lt;strong&gt;every time I post something on my website, it gets automatically copied over to the company website.&lt;/strong&gt; So that I don&amp;rsquo;t have to manually maintain the content at two separate places.&lt;/p&gt;
 &lt;h2 id=&#34;the-solution&#34;&gt;The Solution&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;The first step is to go to the settings of your GitHub account, to developers settings, and to &lt;a href=&#34;https://github.com/settings/tokens&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;personal access tokens&lt;/em&gt;&lt;/a&gt;. You have to generate a token, and tick the &lt;strong&gt;repo&lt;/strong&gt; authorizations. Copy-paste the key.&lt;/li&gt;
+&lt;li&gt;The first step is to go to the settings of your &lt;strong&gt;GitHub &lt;em&gt;account&lt;/em&gt;&lt;/strong&gt;, to developers settings, and to &lt;a href=&#34;https://github.com/settings/tokens&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;personal access tokens&lt;/em&gt;&lt;/a&gt;. You have to generate a token, and tick the &lt;strong&gt;repo&lt;/strong&gt; authorizations. Copy-paste the key.&lt;/li&gt;
 &lt;li&gt;Go to the settings of the personal website repo (the source from which the content will be copied), to &amp;ldquo;Secrets&amp;rdquo;, and add a new secret called &amp;ldquo;API_TOKEN_GITHUB&amp;rdquo; (with the key you just copied).&lt;/li&gt;
 &lt;li&gt;Create a new GitHub action workflow such as &lt;a href=&#34;https://github.com/DominiqueMakowski/DominiqueMakowski.github.io/blob/master/.github/workflows/copy_content.yml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;this one&lt;/strong&gt;&lt;/a&gt;. The things to change are the &lt;code&gt;source_file&lt;/code&gt;, &lt;code&gt;destination_repo&lt;/code&gt; and &lt;code&gt;destination_folder&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Tada 🎉 Everytime I push to my personal repo, the new content of one of the subfolder gets copied to another repo.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; this is a one-way sync, so updates on the target repo won&amp;rsquo;t affect the source repo (but might get overridden!).&lt;/p&gt;
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;This is a one-way sync, so updates on the target repo won&amp;rsquo;t affect the source repo (but might get overridden!).&lt;/li&gt;
+&lt;li&gt;if you want to preserve the original commit message, set &lt;code&gt;commit_message: ${{ github.event.head_commit.message }}&lt;/code&gt; &lt;sub&gt;(thanks &lt;a href=&#34;https://github.com/DominiqueMakowski/DominiqueMakowski.github.io/issues/2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@dobbelina&lt;/a&gt;)&lt;/sub&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;em&gt;Thanks for reading! Do not hesitate to share or tweet this post, or leave a comment below&lt;/em&gt; 🤗&lt;/p&gt;
 </description>
