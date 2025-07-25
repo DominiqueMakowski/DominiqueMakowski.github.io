@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>An Shu Te | Dr Dominique Makowski</title>
+    <link>https://dominiquemakowski.github.io/authors/an-shu-te/</link>
+      <atom:link href="https://dominiquemakowski.github.io/authors/an-shu-te/index.xml" rel="self" type="application/rss+xml" />
+    <description>An Shu Te</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 22 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dominiquemakowski.github.io/media/icon_hu13488136031635242556.png</url>
+      <title>An Shu Te</title>
+      <link>https://dominiquemakowski.github.io/authors/an-shu-te/</link>
+    </image>
+    
+    <item>
+      <title>A Novel Visual Illusion Paradigm Provides Evidence for a General Factor of Illusion Sensitivity and Personality Correlates</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2023novel/</link>
+      <pubDate>Sat, 22 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2023novel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Structure of Chaos: An Empirical Comparison of Fractal Physiology Complexity Indices Using NeuroKit2</title>
+      <link>https://dominiquemakowski.github.io/publication/makowski2022structure/</link>
+      <pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://dominiquemakowski.github.io/publication/makowski2022structure/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
