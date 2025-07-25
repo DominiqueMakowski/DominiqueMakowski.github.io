@@ -1,6 +1,5 @@
-theme: "starter-hugo-academic"
+# theme: "starter-hugo-academic"
 # Configuration of Hugo
-# Guide: https://wowchemy.com/docs/getting-started/
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
@@ -22,10 +21,9 @@ removePathAccents: true
 
 module:
     imports:
-        - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify-cms
-        - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify
-        - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal
-        - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
+        - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
+        - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal
+        - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap
 
 ############################
 ## ADVANCED
@@ -33,7 +31,8 @@ module:
 
 enableGitInfo: false
 summaryLength: 30
-paginate: 10
+pagination:
+    pagerSize: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>

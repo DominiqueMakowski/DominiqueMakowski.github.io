@@ -1,5 +1,4 @@
 ---
-date: "2020"
 external_link: https://github.com/RealityBending/Pyllusion
 summary: A Python module for generating visual illusions
 tags:

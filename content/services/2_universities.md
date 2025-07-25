@@ -43,9 +43,16 @@ tags:
 
 Your postgrad students (master, PhDs) could benefit from short specialist workshops to complement their set of skills and help them successfully go through through their degree. Typically demanded (by students) training that I can provide involve EEG and physiological **signal processing in Python**, open-source / open-science, programming, **statistics in R** (e.g., Bayesian, mixed models, ...), **experiment design and implementation** with PsychoPy or JsPsych (for online experiments).
 
+### Workshop Ideas
+
+- **Psychophysiology: From Theory to Practice.** Start using bodily signals in your research
+- **Free, transparent and replicable online experiments pipeline with GitHub and JsPsych**
+
+
 ### Experience
 
 <ul style="list-style-type: '✔ ';">
+  <li>2024 - University of Basel: Workshop for PhD students on "Using psychophysiological methods for psychology and neuroscience research".</li>
   <li>2022 - University of Zurich: Workshop for PhD students on "Programming and Data Science with Python".</li>
 </ul>
 

@@ -37,9 +37,9 @@ design:
 
 
 {{% callout warning %}}
-A detailed overview of my research themes are available on the website of my team:
+A detailed overview of my research themes are available on the website of my lab:
 
-- [**realitybending.github.io/research/**](https://realitybending.github.io/research/)
+- [**realitybending.github.io/**](https://realitybending.github.io/)
 
 {{% /callout %}}
 

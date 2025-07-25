@@ -1,5 +1,4 @@
 ---
-date: "2021"
 external_link: https://dominiquemakowski.github.io/NeuropsyXart/
 summary: Body and Brain Art
 # tags:

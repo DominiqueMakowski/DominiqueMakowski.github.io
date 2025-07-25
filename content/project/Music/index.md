@@ -1,5 +1,4 @@
 ---
-date: "2020"
 external_link: https://github.com/DominiqueMakowski/Music
 summary: Piano arrangements and scores
 # tags:

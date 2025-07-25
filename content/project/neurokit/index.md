@@ -1,8 +1,6 @@
 ---
 title: NeuroKit
 summary: A Python toolbox for neurophysiological signal processing
-date: "2020"
-
 # Optional external URL for project (replaces project detail page).
 external_link: https://github.com/neuropsychology/NeuroKit
 

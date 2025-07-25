@@ -1,0 +1,97 @@
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderHooks:
+      link:
+        # Process backlinks hook
+        enableDefault: true
+    renderer:
+      # Render HTML in Markdown
+      unsafe: true
+    parser:
+      # Support Latex math(?)
+      attribute:
+        block: true
+        title: true
+    extensions:
+      # Support Latex math
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - - \[
+              - \]
+            - - $$
+              - $$
+          inline:
+            - - \(
+              - \)
+            - - $
+              - $
+      extras:
+        # Enable subscript, superscript, and highlighting with ~,^, and == wrappers
+        insert:
+          enable: false
+        mark:
+          enable: true
+        subscript:
+          enable: true
+        superscript:
+          enable: true
+  highlight:
+    # Enable code highlighting
+    codeFences: true
+    noHl: false
+    lineNumbersInTable: false
+    noClasses: false
+    guessSyntax: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+minify:
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepComments: true
+      keepSpecialComments: true
+sitemap:
+  changefreq: weekly
+module:
+  hugoVersion:
+    min: '0.134.1'
+    extended: true
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-analytics
+  mounts:
+    - source: content
+      target: content
+    - source: static
+      target: static
+    - source: layouts
+      target: layouts
+    - source: data
+      target: data
+    - source: assets
+      target: assets
+    - source: i18n
+      target: i18n
+    - source: archetypes
+      target: archetypes
+security:
+  funcs:
+    getenv:
+      # Allow HUGO_ and HUGO_BLOX_ vars
+      - ^HUGO_
+      # Allow continuous integration vars
+      - ^CI$
+outputFormats:
+  backlinks:
+    mediaType: application/json
+    baseName: backlinks
+    isPlainText: true
+    notAlternative: true
+params:
+  locale:
+    date_format: 'Jan 2, 2006'
+    time_format: '3:04 PM'
+    address_format: en-us

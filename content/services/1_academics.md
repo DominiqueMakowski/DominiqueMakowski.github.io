@@ -51,6 +51,9 @@ Including a training for you and/or your team **in a grant application** is a gr
 
 {{% /callout %}}
 
+Funding opportunities:
+- **Society Psychophysiological Research** (SPR) [Research Training Grant](https://sprweb.org/page/Research_Training_Grant) (up to 5000$ to invite an expert to provide training to your team)
+
 
 
 ![](climb.png)
