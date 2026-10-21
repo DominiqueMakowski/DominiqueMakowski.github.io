@@ -2,14 +2,14 @@
 <!-- This page, plus the project sites served under the same address that it links to -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://dominiquemakowski.github.io/</loc>
+        <loc>https://dominiquemakowski.com/</loc>
         <lastmod>2026-10-21</lastmod>
     </url>
-    <url><loc>https://dominiquemakowski.github.io/CV/</loc></url>
-    <url><loc>https://dominiquemakowski.github.io/cogmod/</loc></url>
-    <url><loc>https://dominiquemakowski.github.io/SubjectiveScalesModels.jl/</loc></url>
-    <url><loc>https://dominiquemakowski.github.io/RemotePhysiology/</loc></url>
-    <url><loc>https://dominiquemakowski.github.io/NeuropsyXart/</loc></url>
-    <url><loc>https://dominiquemakowski.github.io/Music/tabs/</loc></url>
-    <url><loc>https://dominiquemakowski.github.io/StatsAndSorcery/</loc></url>
+    <url><loc>https://dominiquemakowski.com/CV/</loc></url>
+    <url><loc>https://dominiquemakowski.com/cogmod/</loc></url>
+    <url><loc>https://dominiquemakowski.com/SubjectiveScalesModels.jl/</loc></url>
+    <url><loc>https://dominiquemakowski.com/RemotePhysiology/</loc></url>
+    <url><loc>https://dominiquemakowski.com/NeuropsyXart/</loc></url>
+    <url><loc>https://dominiquemakowski.com/Music/tabs/</loc></url>
+    <url><loc>https://dominiquemakowski.com/StatsAndSorcery/</loc></url>
 </urlset>
