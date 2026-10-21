@@ -1,0 +1,57 @@
+# Dominique Makowski
+
+> Assistant Professor in Psychology at the University of Sussex (Brighton, UK) and leader of the Reality Bending Lab. Trained as a clinical neuropsychologist and CBT psychotherapist, Dominique Makowski studies how we come to take things as real (illusions, deception, fake news, fiction and altered states of consciousness) and the part the body and emotions play in it, builds open-source research software in R, Python and Julia, and is engaged in open science.
+
+This page (https://dominiquemakowski.github.io/) is a signpost: research news, posts and publications are on the lab website.
+
+- Email: D.Makowski@sussex.ac.uk
+- ORCID: https://orcid.org/0000-0001-5375-9967
+- Google Scholar: https://scholar.google.com/citations?user=bg0BZ-QAAAAJ
+- GitHub: https://github.com/DominiqueMakowski
+- LinkedIn: https://www.linkedin.com/in/dominiquemakowski/
+- X / Twitter: https://x.com/Dom_Makowski
+
+## Research and career
+
+- [Reality Bending Lab](https://realitybendinglab.com/): the lab's team, projects and news
+- [Publications](https://realitybendinglab.com/publications/): list of papers, on the lab website
+- [Curriculum vitae](https://dominiquemakowski.github.io/CV/): full academic CV
+
+## Teaching and consulting
+
+- [Teaching slides](https://github.com/DominiqueMakowski/teaching): Bayesian statistics, interoception and psychophysiology, R and Python programming, GitHub and agentic coding
+- [Workshops and consulting](https://realitybendinglab.com/information/services/): upskilling workshops, expertise on neurophysiological signals, bespoke research software and websites
+
+## Software
+
+- [NeuroKit2](https://neuropsychology.github.io/NeuroKit/): Python toolbox for neurophysiological signal processing
+- [easystats](https://easystats.github.io/easystats/): R packages for easy statistics and good practices
+- [Pyllusion](https://github.com/RealityBending/Pyllusion): Python module for generating visual illusions
+- [cogmod](https://dominiquemakowski.github.io/cogmod/): R package for cognitive models of decisions and subjective scales
+- [bayestestR](https://easystats.github.io/bayestestR/): describe Bayesian models and posteriors (R)
+- [report](https://easystats.github.io/report/): automated reporting of statistical models, in plain English (R)
+- [correlation](https://easystats.github.io/correlation/): Bayesian, partial, multilevel and robust correlations (R)
+- [modelbased](https://easystats.github.io/modelbased/): model-based predictions, marginal means and contrasts (R)
+- [parameters](https://easystats.github.io/parameters/): extract, compute and format model parameters and their uncertainty (R)
+- [performance](https://easystats.github.io/performance/): model quality, R², ICC, model checks and comparisons (R)
+- [effectsize](https://easystats.github.io/effectsize/): compute, convert and interpret effect sizes (R)
+- [see](https://easystats.github.io/see/): publication-ready plots for statistical models (R)
+- [insight](https://easystats.github.io/insight/): easy access to information from any statistical model (R)
+- [datawizard](https://easystats.github.io/datawizard/): easy data wrangling and statistical transformations (R)
+- [experdyn](https://github.com/RealityBending/experdyn): nonlinear dynamics and complexity of experience sampling data (R)
+- [psycho](https://neuropsychology.github.io/psycho.R/): the ancestor of easystats, an R toolbox for psychologists
+- [OpenMuse](https://github.com/DominiqueMakowski/OpenMuse): record and stream EEG and fNIRS from the Muse S Athena headband (Python)
+- [MuseLSL2](https://github.com/DominiqueMakowski/MuseLSL2): light, updated interface to stream and record Muse EEG (Python)
+- [Neuropsydia](https://github.com/neuropsychology/Neuropsydia.py): create experiments, tasks and questionnaires (Python)
+- [SubjectiveScalesModels.jl](https://dominiquemakowski.github.io/SubjectiveScalesModels.jl/): beta-like regression models for Likert and slider scales (Julia)
+- [SequentialSamplingModels.jl](https://github.com/itsdfish/SequentialSamplingModels.jl): evidence accumulation models of decision making (Julia)
+- [RemotePhysiology](https://dominiquemakowski.github.io/RemotePhysiology/): measure heart rate via webcam in online experiments (JavaScript)
+- [Patient Assessment App](https://neuropsychology.shinyapps.io/patientassessmentapp): Bayesian assessment of neuropsychological patient scores
+- [apaquasi](https://github.com/DominiqueMakowski/apaquasi): template for APA-style preprints and manuscripts (Quarto)
+
+## Optional
+
+- [NeuropsyXart](https://dominiquemakowski.github.io/NeuropsyXart/): body and mind art
+- [Music](https://musescore.com/dominiquemakowski): piano arrangements and compositions
+- [Guitar chords](https://dominiquemakowski.github.io/Music/tabs/): personal app of guitar chords for the songs Dominique plays
+- [Stats & Sorcery](https://dominiquemakowski.github.io/StatsAndSorcery/): a wizard-duelling game to build statistical intuition
