@@ -1,0 +1,500 @@
+:root {
+    --bg: #faf8f4;
+    --card: #ffffff;
+    --text: #1d1f1c;
+    --muted: #6a6d66;
+    --rule: #e6e2d9;
+    --accent: #2f6b4f;
+    --shadow: rgba(40, 36, 28, 0.28);
+    --band: var(--bg);
+    --band-alt: #efe9dd;
+    --serif: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #131513;
+        --card: #1b1e1b;
+        --text: #e9e7e2;
+        --muted: #9a9d95;
+        --rule: #2c302c;
+        --accent: #8cc7a6;
+        --shadow: rgba(0, 0, 0, 0.6);
+        --band-alt: #202320;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 72px 24px 80px;
+}
+
+a {
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    text-decoration-color: var(--accent);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+h1 {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: clamp(1.9rem, 5vw, 2.7rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+}
+
+.tagline {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 0.98rem;
+}
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.pills a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 13px 5px 11px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--card);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+.pills svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    fill: currentColor;
+}
+
+.pills a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.bio {
+    margin: 44px 0 0;
+    line-height: 1.65;
+}
+
+.intro {
+    margin: 52px 0 28px;
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--muted);
+}
+
+/* Sections */
+
+section {
+    margin-top: 36px;
+}
+
+.section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+h2 {
+    margin: 0 0 14px;
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--accent);
+}
+
+/* Bands: each category sits on its own full-width strip, alternating light and dark cream */
+
+.band {
+    --fill: var(--band);
+    margin-top: 0;
+    padding: 36px 0 44px;
+    background: var(--fill);
+    box-shadow: 0 0 0 100vmax var(--fill);
+    clip-path: inset(0 -100vmax);
+}
+
+.band:nth-child(even of .band) {
+    --fill: var(--band-alt);
+}
+
+/* The last band runs to the bottom of the page */
+main:has(> .band:last-child) {
+    padding-bottom: 0;
+}
+
+.band:last-child {
+    padding-bottom: 64px;
+}
+
+.pair section {
+    margin-top: 0;
+}
+
+.more {
+    color: var(--muted);
+    font-size: 0.88rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.more:hover {
+    color: var(--accent);
+}
+
+.pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.gallery.four {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Side-by-side sections share rows (heading, optional lede, card), so the
+   cards line up even when one lede runs longer than the other */
+.pair section {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+}
+
+.pair .gallery {
+    grid-row: 3;
+    grid-template-columns: 1fr;
+}
+
+.lede {
+    margin: -4px 0 16px;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+/* Software beyond the flagship cards: compact tiles with the package's logo */
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+}
+
+/* The flexible first and last rows centre the name and description beside
+   the logo when the logo is the taller of the two */
+.pkg {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
+    column-gap: 12px;
+    padding: 8px 14px 8px 8px;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    background: var(--card);
+    text-decoration: none;
+    transition: border-color 0.15s, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pkg:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -14px var(--shadow);
+}
+
+/* Logos sit on a white chip so dark marks (Neuropsydia) survive dark mode;
+   packages without a logo get a monogram in their language colour */
+.logo {
+    grid-row: 1 / -1;
+    align-self: center;
+    width: 68px;
+    height: 68px;
+    border-radius: 13px;
+}
+
+img.logo {
+    padding: 2px;
+    background: #fff;
+    object-fit: contain;
+}
+
+.mono {
+    display: grid;
+    place-items: center;
+    background: color-mix(in srgb, var(--lang) 16%, var(--card));
+    color: color-mix(in srgb, var(--lang) 55%, var(--text));
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.pkg strong {
+    grid-area: 2 / 2;
+    font-size: 0.95rem;
+    font-weight: 600;
+    overflow-wrap: break-word;
+}
+
+.pkg.r {
+    --lang: #198ce7;
+}
+
+.pkg.py {
+    --lang: #3572a5;
+}
+
+.pkg.jl {
+    --lang: #a270ba;
+}
+
+.pkg.js {
+    --lang: #f1e05a;
+}
+
+.pkg.qmd {
+    --lang: #75aadb;
+}
+
+.pkg .desc {
+    grid-area: 3 / 2;
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: 0.84rem;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+/* Cards */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    background: var(--card);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px -16px var(--shadow);
+}
+
+.thumb {
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    border-bottom: 1px solid var(--rule);
+}
+
+.thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .thumb img {
+    transform: scale(1.04);
+}
+
+.text {
+    display: block;
+    padding: 14px 18px 18px;
+}
+
+.text strong {
+    display: block;
+    font-size: 1.02rem;
+    font-weight: 600;
+}
+
+.text span {
+    display: block;
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card,
+    .card:hover,
+    .card:hover .thumb img,
+    .pkg,
+    .pkg:hover {
+        transform: none;
+        transition: none;
+    }
+}
+
+/* Medium screens: the denser grids drop to two columns. The package tiles go
+   first, as three columns only keep descriptions to two lines at full width. */
+
+@media (max-width: 1040px) {
+    .packages {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery.four {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Narrow screens: one column, side-by-side cards */
+
+@media (max-width: 720px) {
+    main {
+        padding: 40px 16px 56px;
+    }
+
+    header {
+        gap: 18px;
+        align-items: flex-start;
+    }
+
+    .avatar {
+        width: 76px;
+        height: 76px;
+    }
+
+    .bio {
+        margin-top: 28px;
+        font-size: 0.97rem;
+    }
+
+    .intro {
+        margin-top: 36px;
+        font-size: 1.12rem;
+    }
+
+    section {
+        margin-top: 28px;
+    }
+
+    .pair,
+    .gallery,
+    .gallery.four,
+    .packages {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .pair {
+        gap: 24px;
+    }
+
+    .pair section {
+        display: block;
+        grid-row: auto;
+    }
+
+    .packages {
+        gap: 8px;
+        margin-top: 16px;
+    }
+
+    .pkg {
+        padding: 8px 12px 8px 8px;
+    }
+
+    .band {
+        padding: 28px 0 32px;
+    }
+
+    main > section .card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    main > section .thumb {
+        flex: 0 0 40%;
+        align-self: stretch;
+        border-bottom: 0;
+        border-right: 1px solid var(--rule);
+    }
+
+    .text {
+        padding: 10px 14px;
+    }
+
+    .text strong {
+        font-size: 0.98rem;
+    }
+
+    .text span {
+        font-size: 0.84rem;
+    }
+}

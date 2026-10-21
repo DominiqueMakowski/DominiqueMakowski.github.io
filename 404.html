@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found · Dominique Makowski</title>
+    <meta name="robots" content="noindex" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <script>
+        // Pages of the old (Hugo) website and where they live now. GitHub Pages
+        // cannot redirect on the server, so a missing page lands here and is
+        // forwarded. Keys are lowercase paths without leading or trailing slashes.
+        // Search engines do not run this script on a 404 page, so the deploy also
+        // writes a small redirect page at each of these paths
+        // (.github/redirect_pages.py): keep one "path": "url" entry per line.
+        const REDIRECTS = {
+            "cv": "https://dominiquemakowski.github.io/CV/",
+            "services": "https://realitybendinglab.com/information/services/",
+            "dominique-makowski": "https://dominiquemakowski.github.io/",
+            "authors/dominique-makowski": "https://realitybendinglab.com/people/dominique-makowski/",
+            "post": "https://realitybendinglab.com/news/",
+            "post_drafts": "https://realitybendinglab.com/news/",
+            "publication": "https://realitybendinglab.com/publications/",
+            "project": "https://dominiquemakowski.github.io/",
+            "post_drafts/mandelbrot_monk": "https://realitybendinglab.com/news/2021-visual-agnosia/",
+            "project/neurokit": "https://neuropsychology.github.io/NeuroKit/",
+            "project/easystats": "https://easystats.github.io/easystats/",
+            "project/pyllusion": "https://realitybending.github.io/Pyllusion/",
+            "project/neuropsydia": "https://github.com/neuropsychology/neuropsydia.py",
+            "project/cognitivecontrol": "https://github.com/DominiqueMakowski/CoCon.py",
+            "project/patientassessmentapp": "https://neuropsychology.shinyapps.io/patientassessmentapp/",
+            "project/neuropsyxart": "https://dominiquemakowski.github.io/NeuropsyXart/",
+            "project/music": "https://musescore.com/dominiquemakowski",
+            "post/2019-05-17-simulate_ecg": "https://realitybendinglab.com/news/2019-simulate-ecg/",
+            "post/2020-05-14-intro_bayestestr": "https://realitybendinglab.com/news/2020-intro-bayesian-stats-r/",
+            "post/2020-05-15-defence_ci95": "https://realitybendinglab.com/news/2020-defence-of-95-ci/",
+            "post/2020-05-16-python_mandelbrot": "https://realitybendinglab.com/news/2020-python-mandelbrot/",
+            "post/2020-05-18-analyze_rt": "https://realitybendinglab.com/news/2020-analyze-reaction-times/",
+            "post/2020-05-22-r_or_python": "https://realitybendinglab.com/news/2020-r-or-python/",
+            "post/2020-05-27-github_psychologists": "https://realitybendinglab.com/news/2020-github-for-psychologists/",
+            "post/2020-09-13-what_is_neuropsychology": "https://realitybendinglab.com/news/2020-what-is-neuropsychology/",
+            "post/2020-09-14-individual_scores": "https://realitybendinglab.com/news/2020-individual-scores/",
+            "post/2020-09-28-what_is_realitybending": "https://realitybendinglab.com/news/2020-what-is-reality-bending/",
+            "post/2020-11-13-time_computational_limit": "https://realitybendinglab.com/news/2020-time-as-a-computational-limit/",
+            "post/2021-01-03-visual_agnosia": "https://realitybendinglab.com/news/2021-visual-agnosia/",
+            "post/2021-02-10-template_results": "https://realitybendinglab.com/news/2021-share-analysis-scripts/",
+            "post/2021-06-30-logo_meaning": "https://realitybendinglab.com/news/2021-logo-symbolism/",
+            "post/2021-10-31-sync_two_repos": "https://realitybendinglab.com/news/2021-sync-github-repos/",
+            "post/2021-11-05-sample-too-small": "https://realitybendinglab.com/news/2021-sample-too-small/",
+            "post/2021-11-12-complexity_neurokit": "https://realitybendinglab.com/news/2021-neurokit-015-complexity/",
+            "post/2021-11-30-pyllusion": "https://realitybendinglab.com/news/2021-pyllusion-published/",
+            "post/2021-12-01-recruiting_nice": "https://realitybendinglab.com/join/research-assistant/",
+            "post/2022-02-01-learnbayesstats": "https://realitybendinglab.com/news/2022-learn-bayesian-stats-podcast/",
+            "post/2022-05-18-neurokit_release_2": "https://realitybendinglab.com/news/2022-neurokit-020/",
+            "post/2022-12-05-complexity_paper": "https://realitybendinglab.com/news/2022-signal-complexity/",
+            "post/2023-02-01-new_logo": "https://realitybendinglab.com/news/2023-new-logo/",
+            "post/2023-02-07-cypherscomplex": "https://realitybendinglab.com/news/2023-cyphers-complex/",
+            "post/2023-04-04-psychologychatgpt": "https://realitybendinglab.com/news/2023-ai-participants/",
+            "post/2023-04-06-chatgptpersonality": "https://realitybendinglab.com/news/2023-chatgpt-personality/",
+            "post/2023-04-11-affectivereality": "https://realitybendinglab.com/news/2023-affective-reality-theory/",
+            "publication/benshachar2020effectsize": "https://realitybendinglab.com/publications/2020_Effectsize/",
+            "publication/blonde2020medio": "https://realitybendinglab.com/publications/2021_InMedioStatVirtus/",
+            "publication/girardeau2020impact": "https://realitybendinglab.com/publications/2020_MindfulnessProspectiveMemory/",
+            "publication/kovarski2022movie": "https://realitybendinglab.com/publications/2022_MovieEditingInfluencesSpectators/",
+            "publication/lau2022brain": "https://realitybendinglab.com/publications/2022_BrainEntropyFractalDimensions/",
+            "publication/lee2023beauty": "https://realitybendinglab.com/publications/2024_TheBeautyAndTheSelf/",
+            "publication/ludecke2019insight": "https://realitybendinglab.com/publications/2019_Insight/",
+            "publication/ludecke2020parameters": "https://realitybendinglab.com/publications/2020_Parameters/",
+            "publication/ludecke2021performance": "https://realitybendinglab.com/publications/2021_Performance/",
+            "publication/ludecke2021see": "https://realitybendinglab.com/publications/2021_See/",
+            "publication/makowski2015emotion": "https://realitybendinglab.com/publications/2015_EmotionRegulationAging/",
+            "publication/makowski2017being": "https://realitybendinglab.com/publications/2017_BeingThereAndRemembering/",
+            "publication/makowski2017neuropsydia": "https://realitybendinglab.com/publications/2017_Neuropsydia/",
+            "publication/makowski2018psycho": "https://realitybendinglab.com/publications/2018_Psycho/",
+            "publication/makowski2019adaptation": "https://realitybendinglab.com/publications/2020_AffectiveStyleQuestionnaire/",
+            "publication/makowski2019bayestestr": "https://realitybendinglab.com/publications/2019_Bayestestr/",
+            "publication/makowski2019dispositional": "https://realitybendinglab.com/publications/2019_DispositionalMindfulness/",
+            "publication/makowski2019heart": "https://realitybendinglab.com/publications/2020_TheHeartOfCognitiveControl/",
+            "publication/makowski2019indices": "https://realitybendinglab.com/publications/2019_IndicesOfEffectExistence/",
+            "publication/makowski2019phenomenal": "https://realitybendinglab.com/publications/2019_FictionalReappraisal/",
+            "publication/makowski2020correlation": "https://realitybendinglab.com/publications/2020_Correlation/",
+            "publication/makowski2021neurokit": "https://realitybendinglab.com/publications/2021_Neurokit2/",
+            "publication/makowski2021parametric": "https://realitybendinglab.com/publications/2021_Pyllusion/",
+            "publication/makowski2021structure": "https://realitybendinglab.com/publications/2021_TheStructureOfDeception/",
+            "publication/makowski2022structure": "https://realitybendinglab.com/publications/2022_TheStructureOfChaos/",
+            "publication/makowski2023editorial": "https://realitybendinglab.com/publications/2023_WhereAreWeGoing/",
+            "publication/makowski2023novel": "https://realitybendinglab.com/publications/2023_NovelVisualIllusionParadigm/",
+            "publication/nicolas2016can": "https://realitybendinglab.com/publications/2016_MentalFatigueWeberCompass/",
+            "publication/nicolas2017centenaire": "https://realitybendinglab.com/publications/2017_CentenaireRibotPremierePartie/",
+            "publication/patil2022datawizard": "https://realitybendinglab.com/publications/2022_Datawizard/",
+            "publication/pham2021hrv": "https://realitybendinglab.com/publications/2021_HeartRateVariabilityPsychology/",
+            "publication/sperduti2016paradox": "https://realitybendinglab.com/publications/2016_TheParadoxOfFiction/",
+            "publication/sperduti2016protective": "https://realitybendinglab.com/publications/2016_LongTermMeditationExecutive/",
+            "publication/sperduti2017distinctive": "https://realitybendinglab.com/publications/2017_ExecutiveFunctionsEmotionRegulation/",
+            "publication/sperduti2017interaction": "https://realitybendinglab.com/publications/2017_InteractionBetweenAttentionalSystems/",
+            "publication/sperduti2017meditation": "https://realitybendinglab.com/publications/2017_MeditationAndSuccessfulAging/",
+            "publication/tuena2017virtual": "https://realitybendinglab.com/publications/2017_VirtualEmbodimentMemory/",
+        }
+
+        // Anything else under these sections goes to the section's new index;
+        // the old tag, category and author listings go to the home page.
+        const HOME = "https://dominiquemakowski.github.io/"
+        const SECTIONS = {
+            "post": REDIRECTS["post"],
+            "post_drafts": REDIRECTS["post_drafts"],
+            "publication": REDIRECTS["publication"],
+            "publication-type": REDIRECTS["publication"],
+            "publication_types": REDIRECTS["publication"],
+            "project": REDIRECTS["project"],
+            "authors": HOME,
+            "tag": HOME,
+            "tags": HOME,
+            "category": HOME,
+            "categories": HOME,
+        }
+
+        const path = location.pathname
+            .toLowerCase()
+            .replace(/index\.html$/, "")
+            .replace(/^\/+|\/+$/g, "")
+        const target = REDIRECTS[path] || SECTIONS[path.split("/")[0]]
+        // Never forward a page to itself (e.g. /CV/ if that project site disappears).
+        if (target && target.toLowerCase() !== location.href.toLowerCase()) location.replace(target)
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Page not found</h1>
+        <p class="intro">This website has been simplified and the page you were looking for is gone.</p>
+        <p>Try the <a href="/">home page</a>, or the <a href="https://realitybendinglab.com/">Reality Bending Lab</a> for research, posts and publications.</p>
+    </main>
+</body>
+</html>
